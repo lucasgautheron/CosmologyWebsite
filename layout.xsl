@@ -159,7 +159,17 @@
     </script>
     </head>
     <body>
-      <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a> | Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.</div>
+      <div id="navigation">
+        <a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a>
+        <ul class="share-buttons">
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="images/icons/Facebook.png"></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="images/icons/Twitter.png"></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="images/icons/Google+.png"></a></li>
+          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="images/icons/Reddit.png"></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&title=History%20of%20Modern%20Cosmology&summary=&source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="images/icons/LinkedIn.png"></a></li>
+      </ul>
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+      </div>
       <div id="timeline-container">
       <h1>Histoire de la Cosmologie Moderne</h1>
         <ul id="timeline">
