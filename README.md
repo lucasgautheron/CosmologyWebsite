@@ -7,7 +7,7 @@ Status : http://cosmologie.sciencestechniques.fr/timeline/graph.html
 
 Archive : http://cosmologie.sciencestechniques.fr/timeline/archive.tar.gz
 
-[![Build Status](https://travis-ci.org/lucasgautheron/Cosmologie.svg?branch=master)](https://travis-ci.org/lucasgautheron/Cosmologie) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lucasgautheron/Cosmologie?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/lucasgautheron/CosmologyWebsite.svg?branch=master)](https://travis-ci.org/lucasgautheron/CosmologyWebsite) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lucasgautheron/CosmologyWebsite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Build instructions
 
