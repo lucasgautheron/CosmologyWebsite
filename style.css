@@ -1,0 +1,182 @@
+p,ul,li,div,span,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 0 auto;
+    width: 100%;
+    font-family: "DejaVu Serif", serif;
+    font-size: 14px;
+}
+
+ul,    ol    { list-style-position: inside; margin: 5px; }
+ul li, ol li { padding: 3px; }
+
+h1 { margin: 1em 0; font-size: 180%; }
+h2 { margin: 0.7em 0; font-size: 150%; }
+h3 { margin: 0.4em 0; font-size: 120%; }
+
+div#timeline-container h1
+{
+   padding: 0.5em;
+}
+
+ul#timeline
+{
+  list-style-position: outside;
+  margin-left: 10px; 
+}
+#timeline > li
+{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 1.2em;
+}
+#timeline .timeline-date
+{
+  text-align: right;
+  width: 110px;
+  padding: 0 15px 0 0;
+  float: left;
+  margin: 0;
+}
+#timeline .timeline-content
+{
+  padding: 0;
+  margin: 0;
+  width: 75%;
+  float: left;
+  border-left: 3px #e5e5d1 solid;
+  padding-left: 15px;
+  min-height: 2.4em;
+}
+#timeline .timeline-content:before
+{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: black;
+  position: absolute;
+  left: 120px;
+  top: 5px;
+  border-radius: 100%;
+}
+
+p { margin-bottom: 1em; }
+
+a { color: #BF1717; }
+
+div#content, div#ressource, div#image
+{
+    line-height: 1.4em;
+    margin: 5px;
+    padding: 10px;
+}
+
+div#content
+{
+    float: left;
+    width: 55%;
+}
+
+div#ressource, div#image
+{
+    float: left;
+    width: 32%;
+    display: none;
+    /*background-color: #444;
+    color: white;*/
+}
+
+div#image img { width: 100%; }
+
+div#navigation
+{
+    padding: 1em;
+    background-color: #BBB;
+}
+
+div.meta
+{
+    padding: 1em;
+}
+
+div.figure, div.feynman
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.8em;
+    width: 100%;
+}
+
+div.figure img, div.feynman div.diagram
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+div.figure .label { margin: 5px; font-weight: bold; }
+div.figure .caption { margin: 5px; text-align: left; font-size: 80%; }
+
+div.spoiler
+{
+    width:100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+div.spoiler div
+{
+    display: none;
+}
+
+span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
+
+div.quote
+{
+    margin: 10px 10px 10px 20px;
+    padding: 10px;
+    border-left: 2px solid gray;
+}
+
+div.quote div
+{
+    font-style: italic;
+}
+
+div.quote span.quote
+{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+a.note_indicator { font-size:75%; vertical-align:25%; }
+
+div.note
+{
+    display: none;
+    background-color: #FF9D7D;
+    border: 1px solid black;
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 500px;
+}
+
+div.text
+{
+    text-align: justify;
+    padding: 5px 0;
+}
+
+div.clear
+{
+    clear: both;
+}
+

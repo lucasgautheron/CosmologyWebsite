@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ressources>
+    <!--            -->
+    <!-- PHYSICISTS -->
+    <!--            -->
+
+    <ressource id="1">
+        <title>Albert Einstein</title>
+        <text><p>1879-1965. Physicien d'abord Allemand puis Helvético-Américain.</p>
+        
+            <p>La contribution d'Einstein n'est pas limité à la théorie de la relativité qu'il a élaborée au début du 20ème siècle. Il a également travaillé sur la nature de la lumière en proposant une explication de différents phénomènes tels que l'effet photoélectrique à partir de l'hypothèse selon laquelle la lumière serait constituée de "quanta" d'énergie (à l'origine du concept de photon). Ceci lui vaut le prix Nobel en 1921. Einstein a également montré comment le mouvement brownien pouvait être expliqué par le concept d'atomes ce qui fut à l'origine d'un nouveau test expérimental de leur existence ainsi que d'une nouvelle méthode de mesure de la constante d'Avogadro.</p></text>
+        <linkwords>
+            <linkword>Albert Einstein</linkword>
+            <linkword>A. Einstein</linkword>
+            <!--<linkword> Einstein</linkword>-->
+        </linkwords>
+    </ressource>
+    
+    
+    <ressource id="2">
+        <title>Vesto Slipher</title>
+        <text><p>1875-1969. Astrononome Américain. </p>
+        
+            <p>Slipher utilise la spectroscopie et le décalage spectral par effet Doppler pour effectuer des mesures de vitesses sur différents objets astronomiques. Il applique notamment cette technique à Andromède en 1912 et à bien d'autres "nébuleuses spirales" - comme on appelait ces galaxies à l'époque - dans les années qui suivent. Ses observations ont joué un rôle fondamental dans la découverte de l'expansion de l'Univers.</p></text>
+        <linkwords>
+            <linkword>Vesto Slipher</linkword>
+            <linkword>V. Slipher</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="3">
+        <title>Henrietta Leavitt</title>
+        <text><p>1868-1921. Astrononome Américaine. </p>
+            
+            <p>Le travail réalisé par H. Leavitt à l'observatoire d'Harvard dès la fin du 19ème sicèle et sa découverte de la relation luminosité-période des céphéides a ouvert d'importantes perspectives pour l'astronomie en offrant un nouveau moyen de mesures de distances.</p></text>
+        <linkwords>
+            <linkword>Henrietta Leavitt</linkword>
+            <linkword>Leavitt</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="4">
+        <title>Eddington</title>
+        <text><p>1882-1944. Physicien britannique. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Eddington</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="6">
+        <title>Willem de Sitter</title>
+        <text><p>1872-1934. Physicien et mathématicien néerlandais. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Willem de Sitter</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="7">
+        <title>Alexandre Friedmann</title>
+        <text><p>1888-1925. Physicien et mathématicien russe. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Alexandre Friedmann</linkword>
+            <linkword>A. Friedmann</linkword>
+        </linkwords>
+    </ressource>
+    
+       <ressource id="8">
+        <title>Georges Lemaitre</title>
+        <text><p>1894-1966. Physicien belge. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Georges Lemaitre</linkword>
+            <linkword>Lemaitre</linkword>
+        </linkwords>
+    </ressource>
+    
+       <ressource id="9">
+        <title>Fred Hoyle</title>
+        <text><p>1915-2001. Physicien britannique. </p>
+            
+            <p>Fred Hoyle est connu pour sa théorie de l'état stationnaire, qui est demeurée pendant longtemps une concurrente très plausible de la théorie du Big Bang. Il a également largement contribué à la théorie de la nucléosynthèse stellaire, et est connu pour avoir prédit la réaction triple $\alpha$ (formation de carbone par triple fusion de noyaux d'hélium). </p>
+            <p>En 1983, Fowler se voit attribué le prix Nobel pour le travail qu'il avait mené avec Hoyle sur la formation des éléments au sein des étoiles. Mais Hoyle, lui, n'est pas récompensé. ce qui est perçu comme une décision injuste davantage motivée par la personnalité de Hoyle que des critères scientifiques.
+            </p></text>
+        <linkwords>
+            <linkword>Fred Hoyle</linkword>
+            <linkword>F. Hoyle</linkword>
+            <linkword>Hoyle</linkword>
+        </linkwords>
+    </ressource>
+
+    <!--           -->
+    <!-- EQUATIONS -->
+    <!--           -->
+
+    <ressource id="100">
+        <title>Équation d'Einstein</title>
+        <text><p>L'équation d'Einstein est l'équation centrale de la Relativité Générale : elle relie le tenseur énergie-impulsion $T^{\mu\nu}$ à la géométrie de l'espace-temps et plus exactement à sa courbure via le tenseur de Ricci $R^{\mu\nu}$. Dans sa forme générale l'équation prend la forme suivante :
+
+\begin{equation}
+R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+\end{equation}</p>
+
+            <p>Le paramètre $\Lambda$ est appelé constante cosmologique. Einstein avait proposé de le rajouter dans l'équation afin de la rendre compatible avec un Univers statique (l'Univers d'Einstein)</p>
+</text>
+        <linkwords>
+            <linkword>Équation d'Einstein</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="101">
+        <title>Tenseur Énergie-Impulsion</title>
+        <text><p>Description, déf, fluide parfait. Construction formalisme lagrangien + réduction par liberté en requérant symétrie. </p></text>
+        <linkwords>
+            <linkword>tenseur énergie-impulsion</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="102">
+        <title>Tenseur de Ricci</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>tenseur de Ricci</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="103">
+        <title>Transformation de Lorentz</title>
+        <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. </p>
+        
+        <p>On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et tels que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
+        Si $(t,x,y,z)$ sont les coordonnées d'un évènement $A$ dans $\mathcal{R}$, et $(t',x',y',z')$ ses coordonnées dans $\mathcal{R}'$, alors : 
+        
+        \begin{equation}\left\{\begin{matrix}
+        ct' &amp; = &amp; \gamma (ct-\beta x)\\ 
+        x' &amp;  = &amp; \gamma (x-\beta ct)\\ 
+        y' &amp; = &amp;  y\\ 
+        z' &amp; = &amp; z
+        \end{matrix}\right.\end{equation}
+        
+        Où $\gamma = \dfrac{1}{\sqrt{1-v^2/c^2}}$ est le facteur de Lorentz et $\beta = v/c$ le nombre de Lorentz.</p>
+        
+            <p>La notion de transformation de Lorentz se généralise à d'autres quantités que les coordonnées : on appelle Quadrivecteur tout vecteur dont les composantes sont changées par passage d'un référentiel inertiel à un autre selon la transformation de Lorentz. C'est le cas par exemple des quadrivecteurs vitesses et accélérations $dx^\mu/ds$ et $d^2x^\mu/ds^2$, du quadrivecteur énergie-impulsion $p^\mu = (E/c, -\vec{p})$, ou encore du quadrivecteur potentiel $A^\mu = (\phi/c, -\vec{A})$.</p>
+        
+            <p>La transformation de Lorentz laisse invariante la pseudo-norme d'un quadrivecteur. C'est par exemple le cas de $dx_\mu dx^\mu = ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps. On peut construire d'autres invariants comme le produit scalaire de deux 4-vecteur $A_\mu B^\mu = A^t B^t - A^x B^x - A^y B^y - A^z B^z$.</p>
+        
+            <p>La loi de transformation relativiste des vitesses se déduit directement de cette transformation. On suppose, sans perdre de généralité, la même définition des référentiels $\mathcal{R}$ et $\mathcal{R}'$ que celle précédemment donnée; on suppose de plus qu'un corps se déplace à la vitesse $\vec{u} = (u_x,u_y,u_z)$ dans $\mathcal{R}$ et on cherche sa vitesse $\vec{u}'$ dans $\mathcal{R}'$. On remarque que $u_i = dx_i/dt$ et $u_i' = dx_i'/dt'$. De là :
+                \begin{equation}\left\{\begin{matrix}
+                \dfrac{dx'}{dt'} &amp;  = &amp; \dfrac{c\gamma (dx-\beta c dt)}{\gamma(c dt-\beta dx)} = \dfrac{c(u_x dt-\beta c dt)}{(c dt-\beta u_x dt)}\\ 
+                \dfrac{dy'}{dt'} &amp;  = &amp; \dfrac{c dy}{(c dt-\beta dx)} = \dfrac{c u_y dt}{(c dt-\beta u_x dt)}\\ 
+                \dfrac{dz'}{dt'} &amp;  = &amp; \dfrac{c dz}{(c dt-\beta dx)} = \dfrac{c u_z dt}{(c dt-\beta u_x dt)}\\ 
+                \end{matrix}\right.\end{equation}
+            
+            Ce qui donne :
+            
+            \begin{equation}\left\{\begin{matrix}
+            u_x' &amp;  = &amp; \dfrac{u_x-v}{1-v u_x/c^2}\\ 
+            u_y' &amp;  = &amp; \dfrac{u_y}{\gamma (1-v u_x/ c^2 )}\\ 
+            u_z' &amp;  = &amp; \dfrac{u_z}{\gamma (1-v u_x/ c^2 )}\\ 
+            \end{matrix}\right.\end{equation}
+            
+            </p>
+        </text>
+        
+        <linkwords>
+            <linkword>Transformation de Lorentz</linkword>
+            <linkword>transformation de Lorentz</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="104">
+        <title>Équations de Friedmann</title>
+        <text><p>Les équations de Friedmann sont les équations qui décrivent un Univers homogène isotrope obéissant aux équations d'Einstein. Pour un univers de facteur d'échelle $a$, de rayon de courbure $R$ et constitué de différentes formes d'énergie de densités $\rho_i$, de pression $P_i$ et d'équation d'état $f_i(\rho_i,P_i) = 0$ :\begin{equation}\left\{\begin{matrix}
+            \dot{a}^2-\dfrac{8 \pi G}{3c^2} \displaystyle \sum_i \rho_i a^2 &amp; = &amp; \dfrac{kc^2}{R^2}  &amp; \mbox{ (1)}\\ 
+            \dfrac{d}{dt}\left ( \rho_i a^3 \right ) &amp; = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) &amp;  \mbox{ (2)}\\ 
+            f_i(\rho_i,P_i) &amp; = &amp;0  &amp; \mbox{ (3)}\\ 
+            \end{matrix}\right.\end{equation}
+        La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. On distingue <!--aujourd'hui--> trois formes d'énergie caractéristiques d'équations d'état particulières :
+            <ul>
+                <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$. L'équation (2) donne alors $\rho a^3 = \mbox{ cste } = \rho_0$.</li>
+                <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. L'équation (2) donne cette fois $\rho a^4 = \mbox{ cste } = \rho_0$.</li>
+                <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique. Selon l'équation (2), $\rho = \mbox{cste} = \rho_0$. </li>
+                <li>De façon plus générale, pour une énergie d'équation d'état $P=w\rho$ où $w$ est une constante, alors l'équation (2) implique $\rho a^{3(1+w)} = \mbox{cste}$</li>
+            </ul></p>
+        <h3>Paramètres de densité</h3>
+        <p>On divise l'équation (1) par le carré de la constante de Hubble actuelle $H_0 = \dot{a}/a (t=0)$, puis on la redivise par $a^2$. On trouve alors :
+            \begin{equation}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} =  \dfrac{kc^2}{R^2 H_0^2 a^2}
+            \end{equation}
+            
+            Où $\rho_c = \dfrac{3c^2 H_0^2}{8\pi G}$ est une nouvelle constante appelée densité critique.
+            
+            On suppose que l'Univers est constitué de matière froide ($\rho_m = \rho_m^0/a^3$), de rayonnement ($\rho_r = \rho_r^0/a^4$), d'énergie du vide ($\rho_v = \rho_v^0$) et d'une espèce telle que $P = w\rho$ donc $\rho_w = \rho_w^0 a^{-3(1+w)}$.
+            
+            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2}$, l'équation devient :
+            
+            \begin{equation}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \Omega_v + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
+            \end{equation}
+            
+            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus utilisées que les densités elles mêmes. Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
+            En évaluant l'équation à $t=0$ il vient :
+            
+            \begin{equation}
+            1-\Omega_m - \Omega_r - \Omega_v - \Omega_w = \Omega_k
+            \end{equation}
+            
+            Cette équation signifie que la courbure de l'Univers est imposée différence entre la densité critique et la densité totale $\rho_{total}$. Une densité totale inférieure à $\rho_c$ implique $\Omega_k > 0$ et donc un Univers hyperbolique. A l'inverse, $\rho_{total} &lt; \rho_c$ implique une géométrie sphérique. Le cas d'égalité correspond à un Univers plat. 
+        </p>   
+        <h3>Démonstration</h3>
+        <p><spoiler>...</spoiler></p>
+        <h3>Solutions particulières de l'équation de Friedmann</h3>
+        <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
+        <p><b>Univers de poussière</b> : 
+        Dans un tel univers, $P=0$. De là le facteur d'échelle obéit à l'équation :
+        \begin{equation}
+        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
+        \end{equation}
+        Cette équation ressemble beaucoup à l'équation du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ (problème à deux corps) :
+        
+        \begin{equation}
+        \dfrac{1}{2}\dot{x}^2 - \dfrac{GM}{x} = E
+        \end{equation}
+        
+        Cela est naturel puisque la matière froide n'est pas relativiste et la matière non relativiste est décrite par la mécanique newtonienne.
+        
+        Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
+        
+        TODO ajouter plots
+        <ul>
+            <li>Pour un Univers plat ($k/R^2 = 0$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  $a^{3/2}(t) = 1 + \dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t$
+                Cet univers "nait" à $t= - \dfrac{2}{3}\sqrt{\dfrac{3c^2}{8\pi G \rho_0}}$ et ne cesse de s'expandre depuis. Il a donc un âge fini $T = \sqrt{\dfrac{c^2}{6\pi G \rho_0}}$.</li>
+            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
+            Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
+            \begin{equation}
+            \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
+            \end{equation} _et_ périodique</li>
+            <li>\begin{equation}
+                \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
+                \end{equation}</li>
+        </ul>
+        <spoiler>
+            En univers plat en expansion : ($\dot{a} \geq 0$) 
+            \begin{equation}
+            \dot{a} \sqrt{a} = \alpha = \sqrt{\dfrac{8\pi G}{3c^2}}
+            \end{equation}
+            Donc 
+            \begin{equation}
+            a^{3/2} (t) = a(0) + \sqrt{\dfrac{8\pi G}{3c^2}} t
+            \end{equation}
+        </spoiler>
+        </p>
+        <p><b>Univers de lumière</b> : Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
+        Alors l'équation à résoudre est :
+        \begin{equation}
+        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
+        \end{equation}
+            <ul>
+                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{32\pi G\rho_0}{3c^2}} t$</li>
+                <li>Pour $k \neq 0$ 
+                   
+                    \begin{equation}
+                    \dfrac{R}{c} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
+                \end{equation}
+                
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $T = \sqrt{\dfrac{kc^2}{R^2}+\dfrac{8
+                \pi G \rho_0}{3c^2}}$.
+                
+                Preuve : 
+                <spoiler>
+                    On réécrit l'équation sous la forme :
+                    \begin{equation}
+                    \left (\dfrac{da}{dt} \right )^2 - \dfrac{\beta}{a^2} = \alpha
+                    \end{equation}
+                    
+                    Qu'on résout par séparation des variables :
+                    \begin{equation}
+                    \dfrac{da}{\sqrt{\alpha + \beta/a^2}} = \dfrac{a da}{\sqrt{\alpha a^2 + \beta}} = dt
+                    \end{equation}
+                    
+                    Ce qui intégré entre $a(t=0)=1$ et $a(t)$ donne :
+                    \begin{equation}
+                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) \\ = \dfrac{1}{\sqrt{\alpha}} \left ( \sqrt{a^2 + \dfrac{\beta}{\alpha}} - \sqrt{1+\dfrac{\beta}{\alpha}} \right )  = t
+                    \end{equation}
+                    
+                     Cet Univers existe tant que $a^2 \geq - \dfrac{\alpha}{\beta}$. Si $k&lt;0$, alors ceci requiert $a \geq \sqrt{\dfrac{-\alpha}{\beta}} = a_{min}$. Ce facteur d'échelle minimum est atteint pour $t = -\sqrt{\alpha+\beta}$.  
+                </spoiler></li>
+            </ul>
+        </p>
+            
+            <p><b>Univers d'énergie du vide :</b>
+            L'énergie du vide a pour équation d'état $P=-\rho$ ce qui après résolution de (2) donne $\rho = \mbox{ cste } = \rho_0$. Dès lors :
+            \begin{equation}
+            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \rho_0 a^2 = \dfrac{kc^2}{R^2}
+            \end{equation}
+            <ul>
+                <li>La solution en Univers plat est alors :
+                    \begin{equation}
+                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{3c^2}{8 \pi G \rho_0} } 
+                    \end{equation}
+                    Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
+                <li>$k>0$ (géométrie hyperbolique) : 
+                    
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) = &amp;A\cosh \left [ (t-T)/\tau \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
+                    A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
+                </li>
+                <li>$k&lt;0$ (géométrie sphérique)
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) = &amp;A\sinh \left [ (t-T)/\tau \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
+                    A = &amp;-\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
+                </li>
+                
+                Preuve 
+                <spoiler>
+                    L'équation de Friedmann peut être réécrite sous la forme 
+                    \begin{equation}
+                    \dot{a}^2 - \beta a^2 = \alpha
+                    \end{equation}
+                    En la dérivant il vient alors :
+                    \begin{equation}
+                    \ddot{a} - \beta a = 0
+                    \end{equation}
+                    La solution générale de cette équation a donc pour forme :
+                    \begin{equation}
+                    a(t) = \lambda \cosh(\sqrt{\beta} t) + \mu \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    Par ailleurs $a(0) = 1$ donc $\lambda = 1$.
+                    D'autre part $\dot{a}^2(0) = \alpha+\beta$
+                    Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \pm \sqrt{1+\dfrac{\alpha}{\beta}}$
+                     
+                    Et finalement :
+                    \begin{equation}
+                    a(t) = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    
+                    On veut mettre ceci sous la forme $a(t) = A \cosh {\sqrt{\beta}(t-T)}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
+                    On a alors :
+                    \begin{equation}
+                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} + A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    De cela on tire à la fois $A\cosh {\sqrt{\beta}T} = 1$ et $\pm A\sinh{\sqrt{\beta}T} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
+                    Ce qui entraine :
+                    \begin{equation}\left\{\begin{matrix}
+                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                    A = &amp; -\dfrac{\alpha}{\beta}
+                    \end{matrix}\right.\end{equation}
+                    
+                    Ceci n'est donc possible que si $\alpha &lt; 0$. Dans ce cas on a bien :
+                    \begin{equation}
+                    a(t) = -\dfrac{\alpha}{\beta} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
+                    \end{equation}
+                    
+                    Dans le cas $\alpha &gt; 0$, on peut écrire $a(t)$ sous la forme $A \sinh {\sqrt{\beta}(t-T)}$. On invoque cette fois l'égalité $\sinh (x+y) = \sinh(x)\cosh(y) + \sinh(y)\cosh(x)$. Cette fois il apparait que :
+                    \begin{equation}\left\{\begin{matrix}
+                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
+                    A = &amp; +\dfrac{\alpha}{\beta}
+                    \end{matrix}\right.\end{equation}
+                    
+                    Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
+                </spoiler>
+            
+            </ul></p>
+            <p><b>Univers vide :</b>
+            Un univers vide vérifie simplement l'équation 
+            \begin{equation}
+            \dot{a}^2 = \dfrac{kc^2}{R^2}
+            \end{equation}
+            Un tel Univers ne peut être de géométrie sphérique !
+            La solution est alors ($k \geq 0$) :
+            \begin{equation}
+            a(t) = \pm \dfrac{c}{R} t + 1
+            \end{equation}
+            
+            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c$. Un Univers plat et vide est statique. </p>
+        </text>
+        <linkwords>
+            <linkword>équations de Friedmann</linkword>
+        </linkwords>
+    </ressource>
+    
+<!--    <ressource id="104_poussiere">
+        <title>Univers de poussière</title>
+        <text><p>Dans un tel univers, $P=0$. L'équation (2) donne par ailleurs $\rho a^3 = \mbox{ cste } = \rho_0$. De là le facteur d'échelle obéit à l'équation :
+            \begin{equation}
+            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
+            \end{equation}
+            Cette équation ressemble beaucoup à l'équation newtonienne du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ :
+            
+            \begin{equation}
+            \dfrac{1}{2}\dot{x}^2 - \dfrac{GM}{x} = E
+            \end{equation}
+            
+            Cela est naturel puisque la matière froide interagit uniquement de façon gravitationnelle et non relativiste ce qui correspond au champ d'application de la mécanique newtonienne.
+            
+            Il y a alors 3 solutions possibles :
+            <ul>
+                <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a(t) = \left [ a_i^{3/2} + \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i) \right ]^{2/3}
+                    Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" </li>
+                <li>Pour un Univers hyperbolique ($k&lt;0$), la solution est alors :
+                \begin{equation}
+                \end{equation}</li>
+                <li>Pour un Univers hyperbolique ($k&lt;0$), la solution est alors :
+                    \begin{equation}
+                    \end{equation}</li>
+            </ul>
+        </p>
+        </text>
+        <linkwords>
+            <linkword>Univers de poussière</linkword>
+        </linkwords>
+    </ressource>-->
+    
+    <ressource id="105">
+        <title>Principe Cosmologique</title>
+        <text><p>Le principe cosmologique est un ensemble d'hypothèses faites sur l'Univers à grande échelle. Ces hypothèses sont les suivantes :</p> 
+        <p><b>L'Univers est homogène</b> : A chaque instant les propriétés de l'Univers sont identiques en tout point de l'espace</p>
+        <p><b>L'Univers est isotrope</b> : Il n'existe aucune direction privilégiée en aucun point de l'espace à chaque instant</p>
+        
+        Certains modèles cosmologiques sont basés sur le principe cosmologique dit "parfait", qui en plus du principe cosmologique standard contient l'hypothèse d'homogénéité du temps. Un exemple de modèle respectant ce principe est la théorie de l'état stationnaire.</text>
+        <linkwords>
+            <linkword>principe cosmologique</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="106">
+        <title>L'Univers d'Einstein</title>
+        <text><p>L'univers d'Einstein (aussi appelé "modèle A") est un modèle d'Univers statique essentiellement constitué de matière non relativiste. On montre (par exemple en partant des équations de Friedmann) que dans un tel Univers, avec constante cosmologique, le facteur d'échelle $a$ vérifie l'équation :
+        \begin{equation}
+        \dot{a}^2 + E(a) = K
+        \end{equation}
+        Où $E(a)$ peut être considéré comme un terme "d'énergie potentielle" d'expression :
+        \begin{equation}
+        E(a) = -\dfrac{8\pi G}{3} \left ( \dfrac{\rho_0}{a} + \rho_v a^2\right )
+        \end{equation}
+        Ici, $\rho_0$ est la densité d'énergie sous forme de matière non relativiste à notre époque (date à laquelle $a = 1$) et $\rho_v = \dfrac{\Lambda c^2}{8\pi G}$ représente l'"énergie du vide". 
+        La première équation se lit alors : "l'énergie cinétique de l'Univers + son énergie potentielle est égale à une constante K". La courbe de l'énergie potentielle est représentée sur la figure suivante : <figure src="einstein_universe.svg" title="Courbe d'énergie potentielle en fonction du facteur d'échelle." plot="einstein_universe"> On en déduit l'existence d'une position d'équilibre (instable), et que $K&lt;0$. </figure></p>
+        <p>Einstein pensant l'Univers statique, il est nécessaire que son modèle autorise une situation d'équilibre. Cet équilibre est atteint lorsque $E'(a) = 0$. Cela n'est possible que si $\rho_v \neq 0$ : c'est la raison pour laquelle Einstein fit intervenir la constante cosmologique. Le terme en $-1/a$ est un potentiel attractif de type gravitationnel newtonien classique. Le terme en $-a^2$ est un terme répulsif qui autorise un équilibre. Celui-ci est atteint si $\rho_o = 2\rho_v$, ce qui impose une valeur exacte pour $\Lambda$ ("fine-tuning").</p>
+        <p>Le fait que $K$ doive être négatif signifie qu'un tel Univers possède une géométrie sphérique. Il faut également noter que l'équilibre est instable, et donc ne peut expliquer seul le caractère statique.</p></text>
+        <linkwords>
+            <linkword>Univers d'Einstein</linkword>
+            <linkword>modèle A</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="107">
+        <title>L'Univers de De Sitter</title>
+        <text><p>L'univers de Sitter aussi appelé "modèle B" est ...</p></text>
+        <linkwords>
+            <linkword>Univers de Sitter</linkword>
+            <linkword>modèle B</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="108">
+        <title>Facteur d'échelle</title>
+        <text><p>Le facteur d'échelle à l'instant $t$ noté $a(t)$ est le rapport entre la distance séparant deux points immobiles dans l'espace homogène isotrope à l'instant $t$ et cette distance à un instant de référence $t_0$ tel que $a(t_0)=1$. Ainsi, dans un univers en expansion, $a$ augmente.</p>
+            <p>Dans une métrique homogène isotrope, le facteur d'échelle intervient dans le tenseur métrique. L'intervalle $ds^2$ est alors donné par :
+            \begin{equation}
+            ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1+kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
+            \end{equation}
+            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible).
+            On peut introduire la coordonnée comobile $\chi$ telle que :
+            
+            \begin{equation}\left\{\begin{matrix}
+            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+            r &amp; = &amp; \chi \mbox{ si } k=0\\ 
+            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            \end{matrix}\right.\end{equation}
+            
+            On écrit parfois :
+            \begin{equation}
+            r = S_k(\chi)
+            \end{equation}
+            
+            Où : 
+             \begin{equation}\left\{\begin{matrix}
+            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+            S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            \end{matrix}\right.\end{equation}</p>
+        </text>
+        <linkwords>
+            <linkword>facteur d'échelle</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="109">
+        <title>Univers d'Einstein-de Sitter </title>
+        <text><p>L'Univers d'Enstein-De Sitter est un modèle cosmologique minimal proposé au début des années 1930 par les deux physiciens ayant pour but de répondre aux observations faites à l'époque. Un tel Univers doit être en expansion, plat (pas de signe de courbure à l'époque), constitué uniquement de matière non relativiste et sans constante cosmologique.</p>
+            <p>La solution est donnée par les équations de Friedmann :
+            \begin{equation}
+            a^{3/2}(t) = 1+\dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t
+            \end{equation}
+            
+            Afin de vérifier la validité de ce modèle, Einstein et de Sitter calculent la "constante de Hubble" associée :
+            \begin{equation}
+            H_0^2 = \left ( \dfrac{\dot{a}}{a}(t=0) \right)^2 = \dfrac{8\pi G \rho_0}{3c^2}
+            \end{equation}
+            
+            Soit
+            
+            \begin{equation}
+            \rho_0 = \dfrac{3(cH_0)^2}{8\pi G}
+            \end{equation}
+            
+            A l'époque, on pense d'après les travaux d'Hubble que $H_0 \simeq $ 500 km/s/Mpc, ce qui donne $\rho_0/c^2 \simeq 4 \times 10^{-25} \mbox{ kg.m}^3$.
+            De même, en 1930, la distance à la galaxie la plus proche est évaluée à environ $L = 10^6$ années lumières et la masse de la notre à $M = 10^{11} M_{\odot}$ (d'après Oort) ce qui suggère $\rho \sim M/L^3 \sim 2 \times 10^{-25} \mbox{ kg.m}^3$. Le modèle est alors considéré comme plutôt en accord avec les observations.</p> 
+            
+            <p>Par ailleurs l'âge maximal d'un tel univers est $T = \dfrac{2}{3}\dfrac{1}{H_0} $. D'après la valeur de $H_0$ de 1932, $T \simeq 1,3 \times 10^{9} \mbox{ Ga}$. On pense d'abord que l'âge de la Terre est aux alentours de 2 Ga avec une grande incertitude. 
+            Plus tard on découvre qu'en fait, la Terre est plus vieille, et qu'il y a donc un problème soit avec la valeur de $H_0$ soit avec le modèle utilisé.
+            D'autre part, la densité de matière froide est en fait de l'ordre de $3 \times 10^{-27} \mbox{ kg.m}^3$. 
+            </p>
+            <h3>Singularité initiale ?</h3>
+            <p>Ce modèle a la particularité de faire apparaitre une "singularité", un état de densité infinie. Ceci fait apparaitre un âge maximal pour l'Univers, mais on ne sait pas dans les années 1930-1940 si celui-ci est vraiment "né" de cet état particulier. Certains physiciens rejettent alors cette idée pour des raisons philosophiques (un tel scénario rappelant certaines thèses religieuses). </p>
+            <h3>Abandon de la constante cosmologique</h3>
+            <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus absolument nécessaire à Einstein et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoretically for the existence of a fiinite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
+            Einstein dira plus tard que son introduction était "la plus grande erreur de sa vie".</p>
+            <figure src="einstein-ds_universe.svg" title="Evolution du facteur d'échelle" plot="einstein-ds_universe">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
+        </text>
+        <linkwords>
+            <linkword>espace d'Einstein-de Sitter</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="110">
+        <title>Théorie de l'état stationnaire</title>
+        <text>
+            <p>La théorie de l'état stationnaire, ou "steady-state theory" en anglais, est une théorie avancée par Fred Hoyle en 1948. Son objectif était de résoudre un certain nombre de problèmes des modèles d'Einstein-de Sitter et de Lemaitre-Friedmann, notamment celui de l'âge de l'Univers que ces théories prédisaient puisqu'il était trop petit par rapport à l'âge de certains objets comme la Terre.</p>
+            <p>Cette théorie repose sur l'idée que de la matière est créée en permanence dans l'univers de façon à compenser exactement la diminution de densité due à l'expansion. Ainsi, dans ce modèle, la densité de matière demeure constante et l'Univers est en tout âge semblable bien qu'il soit en expansion : il respecte le principe cosmologique parfait. L'apport de matière se ferait par la création ininterrompue et homogène de particules dans l'espace (par exemple des atomes d'hydrogène). </p>
+            <p>Un tel Univers se comporte comme un Univers vide avec constante cosmologique non nulle (puisque celle-ci est équivalente à une densité d'énergie constante). S'il est plat, alors le facteur d'échelle évolue simplement selon :
+            \begin{equation}
+            a(t) = \exp{\left ( H_0 t \right )} \mbox{ et } H_0 = \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}
+            \end{equation}
+            
+            Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). </p>
+            <h3>Formalisme</h3>
+            <p></p>
+            <h3>Échecs du modèle</h3>
+            <p>Voir l'article <contentlink id="10" /></p>
+        </text>
+        <linkwords>
+            <linkword>théorie de l'état stationnaire</linkword>
+            <linkword>steady-state universe</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="111">
+        <title>Distance de luminosité</title>
+        <text>
+            <p>
+                La distance de luminosité d'une source irradiant de la lumière est la distance $d_L$ telle que le flux $F$ que l'on en reçoit est égal à :
+                \begin{equation}
+                F = \dfrac{L}{4\pi d_L^2}
+                \end{equation}
+                Où $L$ est la luminosité (en W) de la source.
+                
+                Cette grandeur est très utile en astronomie et a permis de grandes avancées en cosmologie. En effet, elle est accessible expérimentalement pour tous les objets dont on connait la magnitude absolue (ou luminosité intrinsèque), comme les céphéides ou les supernovas Ia. Pour de petites distances, la distance de luminosité est égale à la "distance" usuelle et cela en donne une mesure directe (c'est ainsi que furent mesurées les distances aux nébuleuses spirales et que fut découverte la loi de Hubble). 
+                Pour de grandes distances, dans un Univers en expansion, $d_L$ évolue de façon particulière : le redshift (décalage vers le rouge) et l'augmentation du temps de parcours de la lumière avec le temps diluent l'énergie de la source ; par ailleurs l'expansion affecte directement la taille du front d'onde lumineux. Pour un modèle cosmologique donné, on peut calculer la distance $d_L$ à partir du seul redshift $z$ d'un objet céleste. Or, le redshift $z$ est également accessible expérimentalement. Cela permet de contraindre ou rejeter des modèles d'expansion.
+                
+            </p>
+            <h3>Calcul de $z \mapsto d_L(z)$ </h3>
+            <p>
+                Soit une source $A$ comobile émettant $\Delta N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
+                La puissance émise est alors $L = \dfrac{\Delta N}{\Delta t_e} h \nu_e$.
+                On place un récepteur $B$ comobile à une distance comobile $\chi$ de $A$.
+                L'onde lumineuse se propage et atteint sa cible au temps $t_r$. Le rayon du front d'onde est alors donné par :
+                \begin{equation}
+                l(\chi) = r(\chi) a(t_r) = a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
+                
+                où : 
+                \begin{equation}\left\{\begin{matrix}
+                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+                S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+                S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                
+                La surface du front d'onde vaut alors $4\pi l^2$.
+                Les $\Delta N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
+                \begin{equation}
+                \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} = \displaystyle\int_{t_e+\Delta t_e}^{t_r+\Delta t_r} \dfrac{cdt}{a(t)}
+                \end{equation}
+                Dans la limite où $\Delta t_e \to 0$ (on étudie le flux instantané de photons), alors en décomposant cette intégrale par relation de Chasles et en négligeant les variations de $a(t)$ on trouve :
+                \begin{equation}
+                \dfrac{\Delta t_r}{\Delta t_e} = \dfrac{a(t_r)}{a(t_e)} = 1+z
+                \end{equation}
+                
+                Par ailleurs les photons qui arrivent en B ont subi un décalage spectral $z$ de même valeur si bien que leur fréquence à l'"arrivée" vérifie :
+                \begin{equation}
+                \dfrac{\nu_r}{\nu_e} = \dfrac{a(t_e)}{a(t_r)} = 1+z = \dfrac{\Delta t_r}{\Delta t_e}
+                \end{equation}
+                
+                Finalement il vient donc que la puissance reçue sur la totalité du front d'onde est :
+                
+                \begin{equation}
+                P = \dfrac{\Delta N}{\Delta t_r} h \nu_r = \dfrac{L}{(1+z)^2}
+                \end{equation}
+                
+                Par ailleurs puisque le front d'onde a une surface $4\pi l^2$ il vient :
+                
+                \begin{equation}
+                F = \dfrac{P}{4\pi l^2} = \dfrac{L}{4\pi \left ( l (1+z) \right ) ^2}
+                \end{equation}
+                
+                De là :
+                \begin{equation}
+                d_L = (1+z) a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
+                
+                Les observations que nous faisons sont réalisées à $t_r = 0$, donc :
+                
+                \begin{equation}
+                d_L = (1+z) S_k \left ( \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
+                
+                On peut montrer à partir de l'équation de Friedmann que cette intégrale vaut, dans un Univers de poussière et d'énergie du vide :
+                \begin{equation}
+                \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} = \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }}
+                \end{equation}
+                
+                Et : 
+                
+                \begin{equation}
+                d_L = (1+z) S_k \left (\displaystyle\int_{0}^{z} \dfrac{c dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }} \right )
+                \end{equation}
+                
+                Pour un Univers plat cette expression se simplifie en :
+                \begin{equation}
+                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{dz'}{\sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
+                \end{equation}
+            </p>
+            <h3>Comparaison entre modèles d'Univers</h3>
+            <p>
+                Dans le graphe ci-dessous, la relation $z\mapsto d_L(z)$ est calculée pour 3 modèles différents. Pour des valeurs suffisantes de $z$ les divergences permettent de contraindre les paramètres cosmologiques.
+                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift" plot="dl" source="distance_luminosite">
+                    Courbe $z \mapsto d_L(z)$ pour plusieurs modèles cosmologiques : Einstein-de Sitter, Hoyle, et $\Lambda$CDM d'après Planck 2013.
+                </figure>
+            </p>
+            
+            <p>
+                <video width="480" height="960" source="animations_expansion" mp4="accelerated_lum.mp4"  webm="accelerated_lum.webm">
+                    La première image représente le front d'onde d'un signal lumineux d'une source à $z = 5$, reçu aujourd'hui (à $t = 0$). Le quadrillage représente les coordonnées comobiles. Le facteur d'échelle évolue selon $a(t) = \exp(H_0 t)$ (expansion accélérée)
+                    Le deuxième graphe représente la distance comobile parcourue par le signal au cours du temps. 
+                    Le dernier graphe représente la distance de luminosité telle qu'évaluée en tout point du front d'onde à chaque instant.
+                </video>
+            </p>
+            <p>
+                <video width="480" height="960" source="animations_expansion" mp4="decelerated_lum.mp4"  webm="decelerated_lum.webm">
+                    La première image représente le front d'onde d'un signal lumineux d'une source à $z = 5$, reçu aujourd'hui (à $t = 0$). Le quadrillage représente les coordonnées comobiles. Le facteur d'échelle évolue selon $a(t) = \left ( \dfrac{3 H_0 t}{2}\right)^{2/3} $ (expansion ralentie)
+                    Le deuxième graphe représente la distance comobile parcourue par le signal au cours du temps. 
+                    Le dernier graphe représente la distance de luminosité telle qu'évaluée en tout point du front d'onde à chaque instant.
+                </video>
+            </p>
+            
+            <h3>Découverte de l'accélération de l'expansion de l'Univers</h3>
+            <p>
+               En 1998 blabla
+            </p>
+            <p>Les supernovas de type Ia constituent de bonnes chandelles standard. On connait donc à la fois leur magnitude absolue et apparente ce qui donne leur distance de luminosité $d_L$. Un fit est réalisé ci-dessous dans le cadre d'un Univers plat constitué de matière froide et d'énergie noire.
+            <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle $\Lambda$CDM" plot="SNIa">
+                La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique $\Lambda$CDM ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord. Ici on trouve $\Omega_m = 0,25$ et $\Omega_v = 0.75$.
+            </figure>
+            </p>
+        </text>
+        <linkwords>
+            <linkword>distance de luminosité</linkword>
+            <linkword>distance lumineuse</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="112">
+        <title>Distance angulaire</title>
+        <text>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>distance angulaire</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="113">
+        <title>Distances en cosmologie</title>
+        <text>
+            <p>En cosmologie, la notion générale de "distance" devient floue. Il est facile de s'en rendre compte en remarquant déjà que dans un Univers en expansion, si deux objets sont "immobiles" par rapport à l'expansion (leurs coordonnées comobiles ne changent pas, comme les coordonnées angulaires d'un point à la surface d'un ballon qui gonfle ne changent pas), leur distance en terme de ces coordonnées (dites "comobile") ne doit pas varier. Pourtant, du fait de l'expansion, la distance effective entre ces deux objets augmente. 
+            Il convient donc de définir très méticuleusement toutes les distances que l'on introduit. </p>
+            <h3>Distance comobile</h3>
+            <p>La distance comobile $\chi$ entre deux points est ... Elle est constante entre deux objets comobiles, c'est-à-dire qui ne possèdent pas de mouvement propre par rapport à l'expansion.<note>rephrase?</note></p>
+            <h3>Distance physique</h3>
+            <p>La distance physique est la distance entre deux objets telle qu'elle pourrait être mesurée à l'aide d'une "règle" fictive (en comptant le nombre d'atomes qu'il faudrait aligner pour rattacher ces deux points). Evidemment ceci est impossible pour des objets astronomiques et cette distance n'est pas directement accessible expérimentalement. Pour deux objets comobiles, cette distance évolue avec l'expansion, proportionnellement au facteur d'échelle $a(t)$.</p>
+            <h3>Distance de luminosité</h3>
+            <p>La distance de luminosité d'une source irradiant de la lumière est la distance $d_L$ telle que le flux $F$ que l'on en reçoit est égal à :
+                \begin{equation}
+                F = \dfrac{L}{4\pi d_L^2}
+                \end{equation}
+                Où $L$ est la luminosité (en W) de la source.</p>
+            <h3>Distance de angulaire</h3>
+            <p></p>
+            <p>
+                <video width="320" height="512" source="animations_expansion" mp4="accelerated_redshift.mp4"  webm="accelerated_redshift.webm">
+                    
+                </video>
+            </p>
+            <p>
+                <video width="320" height="512" source="animations_expansion" mp4="decelerated_redshift.mp4"  webm="decelerated_redshift.webm">
+                    
+                </video>
+            </p>
+        </text>
+        <linkwords>
+            <linkword>distances en cosmologie</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="114">
+        <title>Modèle Lambda CDM</title>
+        <text>
+            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Deux composantes dominent : la constante cosmologique (équivalente à une énergie du vide appelée "énergie noire"), et de la matière à pression nulle (cold) n'interragissant pas avec les photons du fond diffus cosmologique (dark matter).</p>
+            <p> </p>
+        </text>
+        <linkwords>
+            <linkword>modèle $\Lambda$CDM</linkword>
+        </linkwords>
+    </ressource>
+    
+
+    <!--           -->
+    <!-- CONSTANTS -->
+    <!--           -->
+
+    <ressource id="201">
+        <title>Constante cosmologique</title>
+        <text><p>La constante cosmologique notée $\Lambda$ est un paramètre introduit par Einstein dans son équation afin qu'elle autorise un Univers fait de matière non relativiste à demeurer <i>statique</i>. L'équation d'Einstein en présence de cette constante devient :
+            \begin{equation}
+            R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} - \Lambda g^{\mu\nu} = \dfrac{8\pi G}{c^4} T^{\mu\nu}
+            \end{equation}</p>
+            <p>On peut interpréter la constante cosmologique comme une forme particulière d'énergie (souvent appelée "énergie du vide") vérifiant l'équation d'état $P_v = -\rho_v$. En effet, en écrivant $\tilde{T}^{\mu\nu} = T^{\mu\nu} + T_{vide}^{\mu\nu}$ où $T_{vide}^{\mu\nu} = \dfrac{\Lambda c^4}{8\pi G} g^{\mu\nu}$ on a :
+                \begin{equation}
+                R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = \dfrac{8\pi G}{c^4} \tilde{T}^{\mu\nu}
+                \end{equation}
+                Et dans ce cas le tenseur $T_{vide}^{\mu\nu}$ est le tenseur énergie impulsion d'un fluide parfait tel que $P_v = -\rho_v = -\dfrac{\Lambda c^4}{8\pi G}$</p>
+            <h3>Effet sur l'Univers</h3>
+            <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
+            <h3>Formes possibles d'énergie du vide :</h3>
+            <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur-énergie impulsion associé à ce champ a pour expression :
+            \begin{equation}
+            T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
+            \end{equation}
+            Si le champ $\phi$ est homogène, ses dérivées spatiales sont nulles et $T^{\mu\nu}$ est diagonal. La composante temporo-temporelle vaut donc $T^{00} = \dfrac{1}{2c^2}\dot{\phi}^2 + V(\phi)$ et les composantes spatiales $T^{ii} = \dfrac{1}{2c^2}\dot{\phi}^2 - V(\phi)$. L'équation d'état du champ prend alors la forme :
+            \begin{equation}
+            w = \dfrac{P}{\rho} = \dfrac{\dfrac{1}{2c^2}\dot{\phi}^2 - V(\phi)}{\dfrac{1}{2c^2}\dot{\phi}^2 + V(\phi)}
+            \end{equation}
+            Dans le cas où le champ varie très lentement (énergie cinétique du champ nulle), alors $w=-1$ et son énergie se comporte bien comme une constante cosmologique.
+            Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 de forme $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{g}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple).
+            Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire homogène :
+            \begin{equation}
+            \partial_\mu \partial^\mu \phi + V'(\phi) = 0 \mbox{ donc } \ \ddot{\phi} + c^2 V'(\phi) = 0
+            \end{equation}<!--TODO FIXME http://physics.princeton.edu/~steinh/steinhardt.pdf-->
+            </p>
+            <p><b>Création de matière</b> :
+                La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
+                <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
+            </p>
+        </text>
+        <linkwords>
+            <linkword>constante cosmologique</linkword>
+            <linkword>énergie du vide</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="202">
+        <title>Constante de Hubble</title>
+        <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z=\lambda_{rec}/\lambda_{em}$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v/c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
+            <p>Démonstration de la relation entre taux d'expansion et distance et de la loi de Hubble
+                <spoiler>
+                Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
+                Le signal ayant une certaine période $T_e$, un second "bip" est émis à un instant $t_e+T_e$ et est reçu par l'observateur à un instant $t_r+T_r$.
+                On suppose l'observateur ainsi que la source immobiles dans l'espace en expansion (càd "comobiles"). Les deux signaux parcourent donc la même distance comobile $\chi$ : 
+
+                \begin{equation}
+                \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T}^{t_r+T'} \dfrac{cdt'}{a(t')} \mbox{ (1)}
+                \end{equation}
+                L'intégrale de droite peut être décomposée en trois si bien que : 
+                \begin{equation}
+                \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T_e}^{t_e} \dfrac{cdt'}{a(t')} + \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} + \displaystyle\int_{t_r}^{t_r+T_r} \dfrac{cdt'}{a(t')}
+                \end{equation}
+                
+                Donc
+                \begin{equation}
+                \displaystyle\int_{t_e}^{t_e+T_e} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_r}^{t_r+T_r} \dfrac{cdt'}{a(t')}
+                \end{equation}
+                
+                La période $T$ a vocation à être très petite devant le temps de variation de $a$ (l'expansion de l'Univers pendant un cycle de lumière - $10^{14}$ Hz dans le visible - est négligeable).
+                Ainsi l'expression ci-dessus devient :
+                \begin{equation}
+                \dfrac{T_r}{T_e} = \dfrac{a(t_r)}{a(t_e)}
+                \end{equation}
+                
+                Soit en terme de l'ongueur d'onde et de redshift $z$ :
+                \begin{equation}
+                1+z \equiv \dfrac{\lambda_r}{\lambda_e} = \dfrac{a(t_r)}{a(t_e)} 
+                \end{equation}
+                On constate qu'un Univers en expansion se traduit bien par un allongement des longueurs d'ondes. 
+                
+                Pour de faibles distances, $t_r - t_e \simeq d/c$, et donc $a(t_e) \simeq a(t_r) - d \dot{a}(t_r)/c$.
+                Par ailleurs si $t_r$ correspond au temps présent, alors $a(t_r) = 1$ et $\dot{a}(t_r) = H_0$ donc :
+                \begin{equation}
+                z = \dfrac{\lambda_r-\lambda_e}{\lambda_e} \simeq H_0 d / c
+                \end{equation}
+                
+                </spoiler>
+            </p>
+        </text>
+        <linkwords>
+            <linkword>constante de Hubble</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="203">
+        <title>Paramètre de décélération</title>
+        <text>
+          <p>Le paramètre de décélération noté $q$ est défini comme :
+          \begin{equation}
+          q(t) \equiv -\dfrac{\ddot{a}(t)a(t)}{\dot{a}(t)^2}
+          \end{equation}
+
+          Il peut également être réécrit en terme du paramètre de Hubble : 
+
+          \begin{equation}
+          q \equiv -\dfrac{\dot{H}}{H^2} - 1
+          \end{equation}
+
+          En exprimant $H$ en fonction des paramètres de densité pour chaque type de matière grâce aux équations de Friedmann, on trouve finalement pour la valeur du paramètre de décélération au temps présent, notée $q_0$ :  
+
+          \begin{equation}
+          q_0 \equiv \dfrac{1}{2}\left [\Omega_m + 2 \Omega_r + (1+3w) \Omega_w - 2 \Omega_v \right ]
+          \end{equation}
+
+          Démonstration :
+          <spoiler>
+          D'après l'équation de Friedmann on a :
+          \begin{equation}
+              H(t) = H_0 \sqrt{\dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \Omega_v + \dfrac{\Omega_w}{a^{3(1+w)}} + \dfrac{\Omega_k}{a^2}}
+          \end{equation}
+          En évaluant cette expression au temps présent, il vient que la racine vaut 1.
+
+          Et donc, en dérivant $H$ et en évaluant la valeur de sa dérivée en 0 (dès lors $a_0=1$), et en se rappelant que $\Omega_k = 1-\Omega_m - \Omega_r - \Omega_w - \Omega_v $ :
+          \begin{equation}
+              \dot{H}_0= \dfrac{1}{2} H_0^2 \left (-3\Omega_m -4\Omega_r -3(1+w)\Omega_w -2(1-\Omega_m-\Omega_r-\Omega_w-\Omega_v)\right )
+          \end{equation}
+
+          De là :
+          \begin{equation}
+              \dfrac{\dot{H}_0}{H_0^2} = -\dfrac{1}{2}\left (\Omega_m + 2\Omega_r +3(1+w)\Omega_w - 2\Omega_v\right )-1
+          \end{equation}
+
+          Et donc
+          \begin{equation}
+          q_0 \equiv \dfrac{1}{2}\left [\Omega_m + 2 \Omega_r + (1+3w) \Omega_w - 2 \Omega_v \right ]
+          \end{equation}
+          </spoiler>
+
+          En particulier, pour un Univers exclusivement composé de matière froide et d'énergie du vide :
+          \begin{equation}
+          q_0 = \dfrac{\Omega_m}{2} \Omega_m - \Omega_v
+          \end{equation}
+
+          On retrouve bien que la matière froide (poussière) tend à ralentir l'expansion, alors que l'énergie du vide l'accélère.              
+          </p>
+        </text>
+        <linkwords>
+            <linkword>paramètre de décélération</linkword>
+        </linkwords>
+    </ressource>
+
+    <!--             -->
+    <!-- EXPERIMENTS -->
+    <!--             -->
+
+    <ressource id="301">
+        <title>Expérience de Michelson-Morley</title>
+        <text><p>L'expérience de Michelson-Morley est une expérience interférométrique réalisée par Michelson et Morley et qui avait pour but à l'époque de calculer la vitesse de la Terre par rapport à un hypothétique "éther". Le résultat négatif, à savoir que tout se passait comme si la Terre était immobile dans l'éther, conduisit avec d'autres constatations expérimentales à l'invention de la relativité restreinte.</p>
+        <!--<p>TODO: calculs + schémas. relier aux déplacements attendus etc</p>-->
+        <p><a href="http://culturesciencesphysique.ens-lyon.fr/ressources-videos/relativite-restreinte/michelson" target="_blank">Voir l'animation du site de l'ENS de Lyon</a></p>
+        </text>
+        <linkwords>
+            <linkword>Michelson-Morley</linkword>
+        </linkwords>
+    </ressource>
+    
+    <!--         -->
+    <!-- EFFECTS -->
+    <!--         -->
+    
+    <ressource id="402">
+        <title>Effet Doppler</title>
+        <text><p>L'effet Doppler caractérise le fait qu'un observateur en mouvement par rapport à une source émettant une onde perçoit celle-ci à une fréquence différente de la fréquence d'émission. Cet effet concerne aussi bien les ondes mécaniques comme les ondes sonores que les ondes électromagnétiques (donc la lumière). Si la source et l'observateur se rapprochent, la fréquence de réception est supérieure à la fréquence d'émission. Si au contraire la source s'éloigne de l'observateur, alors la fréquence du signal reçue est inférieure à celle perçue par la source. <figure src="doppler_effect.gif" title="Représentation graphique de l'effet Doppler.">Source : <a href="https://commons.wikimedia.org/wiki/File:Doppler_Effect.gif">Wikipédia</a></figure></p>
+            <p>Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v constante par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que : 
+        
+        \begin{equation}
+        \nu_{rec} = \nu_0 \sqrt{\dfrac{1-\beta}{1+\beta}}
+        \end{equation}
+        
+        Pour de petites vitesses, cette expression vaut environ $\nu_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. </p>
+        
+        (La preuve est rapide à partir de la transformation de Lorentz)
+        </text>
+        <linkwords>
+            <linkword>effet Doppler</linkword>
+            <linkword>Effet Doppler</linkword>
+        </linkwords>
+    </ressource>
+    
+    <!--         -->
+    <!-- OBJECTS -->
+    <!--         -->
+    
+    <ressource id="500">
+        <title>Céphéides</title>
+        <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
+        <p>La luminosité intrinsèque (c'est-à-dire la puissance rayonnée) des céphéides présente la particularité de ne dépendre que de leur période de variation lumineuse (la relation dépendant en revanche du type de céphéide dont il s'agit). Or, le flux reçu par unité de surface à une distance $d$ d'une source lumineuse est égal à $\Phi = L/(4\pi d^2)$ où $L$ est sa luminosité. En observant une céphéide, on connait à la fois $L$ par le biais de sa période $T$ facilement observable (de l'ordre de grandeur de la journée) et d'autre part  la puissance reçue par unité de surface. Cela donne donc la distance $d = \sqrt{\dfrac{L}{4 \pi \Phi}}$. On appelle de tels objets, pour lesquel la luminosité intrinsèque est connue, des "chandelles standards". </p>
+         <p>
+             <b>Découverte de la relation luminosité-période</b> : La découverte de l'existence d'une relation entre luminosité et période des céphéides et due à Henrietta Leavitt. En 1908, cette astronome de l'observatoire de l'université d'Harvard étudie des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (deux galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède) et mesure leur magnitude apparente (grandeur plus pratique en Astronomie pour représenter la brillance que le flux lumineux en $W/m^2$)  et leur période. Elle suppose alors que toutes les étoiles d'un "nuage" sont approximativement à la même distance de la Terre, ce qui entraine que la différence entre leur magnitude apparente et absolue (qui ne dépend que de la distance entre elles et la Terre) est une constante : $m-M = C$. Elle remarque que la magnitude apparente de certaines de ces étoiles variables est une fonction de leur période, autrement dit, $m_{magellan} = m_{magellan}(T)$.
+             <figure src="luminosity_period.png" title="Magnitude des céphéides en fonction de leur période (Leavitt 1912)">La courbe de gauche donne les magnitudes apparentes maximale et minimale des étoiles en fonction de leur période. La courbe de droite donne les mêmes magnitudes en fonction du logarithme de la période.</figure>
+             Cependant, ce n'est pas suffisant pour mesurer des distances. En effet, ceci requiert de connaitre la luminosité <i>intrinsèque</i> ou encore la magnitude <i>absolue</i> en fonction de la période, sans quoi la relation ainsi obtenue ne permet d'évaluer que le rapport entre la distance d'une céphéide avec la distance de celles qui ont permis d'établir cette relation (qui est inconnue). Il faut alors attendre les travaux de Hertzsprung et Shapley dans les années qui suivent pour étalonner cette relation et obtenir la courbe de la magnitude absolue cette fois. Pour cela, ces astronomes ont mesuré la magnitude et la période d'une céphéide proche dont la distance était connue (par la méthode de la parallaxe). Ils ont ainsi pu calculer sa magnitude absolue $M$. En reportant cette mesure dans la courbe de Leavitt, ils ont pu déterminer quelle était la constante $C$ qui séparait $m_{magellan}$ et $M$. De là ils en ont déduit la loi $T\mapsto M(T)$. </p>
+        <p>
+            <b>Explication théorique par Eddington</b> :
+        </p>
+        <p>
+            <b>Découverte d'une nouvelle classe de céphéides</b> :
+        </p>
+        </text>
+        <linkwords>
+            <linkword>céphéides</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="501">
+        <title>Fond diffus cosmologique</title>
+        <text>
+            <p>Le fond diffus cosmologique (ou "cosmic microwave background") est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière. Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone.</p>
+            <h3>Premières observations et prédictions</h3>
+            <p>Avant les travaux de Alpher, Gamow et Herman à la fin des années 1940, on pense que le rayonnement dans l'Univers est essentiellement d'origine stellaire (interprétation d'Eddington). La température du milieu interstellaire serait donc la température d'équilibre d'un objet dans ce milieu avec le rayonnement provenant des étoiles. Cette température vérifierait donc :
+            \begin{equation}
+            \sigma T_{univers}^4 = p
+            \end{equation}
+            Où $p$ est la puissance moyenne reçue par unité de surface d'origine stellaire en moyenne dans le milieu interstellaire (il s'agit de la puissance totale, la forme du spectre n'ayant ici pas d'importance). Celle-ci doit valoir, si la luminosité moyenne des étoiles est proche de celle du Soleil, de l'ordre de $L_{\odot}/d^2$ où $L_{\odot}$ est la puissance émise par le Soleil et $d$ la distance moyenne entre étoiles.
+            Selon la région sur laquelle la moyenne $d$ est calculée, la valeur peut beaucoup varier - pour l'Univers observable, $d \sim $ 300 al. Mais globalement cela conduit à une valeur $T_{univers}$ de l'ordre de 0,1 K à quelques kelvins (la valeur étant bien sure plus élevée dans les zones où la densité d'étoiles est plus grande).
+            
+            Dans ce cas, le rayonnement possède une caractéristique particulière : son spectre est celui des étoiles qui l'émettent, c'est-à-dire entre l'IR, le visible et l'UV (soit des températures de rayonnement de quelques milliers à quelques dizaines de Kelvins).
+            
+            <quote author="Arthur Eddington" date="1926">
+            The total light received by us from the stars is estimated to be equivalent to about 1000 stars of the first magnitude. [...] We shall first calculate the energy density of this radiation. [...] Accordingly the total radiation of the stars has an energy density of [...] E = 7.67 10-13 erg/cm3. By the formula E = a T4 the effective temperature corresponding to this density is 3.18 K absolute. [...] Radiation in interstellar space is about as far from thermodynamical equilibrium as it is possible to imagine, and although its density corresponds to 3.18 K it is much richer in high-frequency constituents than equilibrium radiation of that temperature. 
+            </quote>
+            </p>
+            <p>La première observation indiquant la présence du fond diffus cosmologique fut faite en 1940 par McKellar, bien qu'elle ne fut pas comprise comme telle à l'époque. McKellar étudiait avait employé un spectrographe installé à l'Observatoire du Mont Wilson pour mesurer le spectre de plusieurs régions du ciel. Les mesures indiquent notamment la présence d'un doublet associé à des transitions rotationnelles de la molécule $CN$, aux alentours de 4000 MHz. McKellar évalue à partir de cette observation une témparature limite pour le milieu interstellaire d'environ 2,3 K, mais reconnait ne pas être capable de déterminer si cette valeur a vraiment un sens.</p>
+            <p>La première prédiction cosmologique d'un fond de rayonnement est due à Alpher et Herman. En établissant avec Gamow leur théorie de la nucléosynthèse primordiale dans un Univers en Big Bang, ceux-ci remarquèrent que l'Univers devait être très chaud et surtout dominé par le rayonnement à son orgine. Ils soulignèrent alors que ceci impliquerait la présence aujourd'hui d'un fond de rayonnement vestige de cette ère où les photons étaient très énergétiques et gouvernaient l'expansion. A partir de 1948 ils firent plusieurs estimations de la température actuelle de ce rayonnement, estimée entre quelques Kelvins et quelques dizaines de Kelvins. Cependant, leur théorie de la nucléosynthèse semblait une impasse à l'époque, et leurs travaux ne reçurent pas beaucoup d'attention.
+            La différence majeure avec l'interprétation stellaire du fond de rayonnement est le spectre de celui-ci. Dans le cas d'un rayonnement issu des étoiles, le spectre est globalement autour du visible. Dans l'interprétation d'un rayonnement relique du Big Bang, le spectre est celui d'un corps noir à la température du fond (quelques K). Ainsi, cette température peut être mesurée en trouvant la température $T$ telle qu'un corps noir à cette température corresponde au fond diffus (attendu dans les micro-ondes). Cette valeur doit être plus homogène encore que la température d'équilibre stellaire d'Eddington puisqu'elle ne dépend pas de la position relative de l'observateur avec les étoiles.</p>
+            <!--<p>TODO évoquer les premières "découvertes" non officiellement admises comme telles e.g. emile le roux.</p>-->
+            
+            <h3>Découverte de 1964</h3>
+            <p>Voir l'article <contentlink id="9" /></p>
+    	    <p>
+    	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
+    	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique, par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
+    	        Malgré toutes ces précautions, les deux phyisiciens observèrent en mesurant le signal à une longueur d'onde de 7,35cm (4080 MHz) un bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
+    	    </p>
+    	    
+    	    <p>
+    	    Parallèlement, Dicke, Peebles, Roll et Wilkinson réétablissent indépendamment l'existence d'un fond de rayonnement photonique dans l'hypothèse d'un Univers né d'un Big Bang chaud. Ils entreprennent même d'établir un instrument pour mesurer cet hypothétique rayonnement. 
+    	    Penzias finit par avoir vent de leurs recherches, et finit par contacter Dicke par téléphone pour lui exposer leur problème. Celui-ci comprend que le bruit mesuré par Penzias et Wilson doit être ce fameux rayonnement qu'ils cherchaient à mesurer.
+    	    En 1965, les deux groupes publient simultanément un papier tenant compte de leurs résultats, marquant la découverte du fond diffus cosmologique ou CMB (pour Cosmic Microwave Background).
+    	    </p>
+            <h3>De nouvelles mesures</h3>
+            <p>
+                La première observation du CMB considérée comme une découverte fut réalisée à une seule longueur d'onde (7,35 cm, soit 4080 MHz) avec l'antenne d'Holmdel. Il était alors possible d'en déduire la température d'un corps noir correspondant mais pas de vérifier que le spectre du rayonnement était bien celui d'un corps noir. 
+                Rapidement Penzias et Wilson réalisent une nouvelle mesure avec le même dispositif cette fois à une longueur d'onde 
+            </p>
+        </text>
+        <linkwords>
+            <linkword>fond diffus cosmologique</linkword>
+            <linkword>CMB</linkword>
+            <linkword>cosmic microwave background</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="502">
+        <title>Supernovas Ia</title>
+        <text>
+           <h3></h3>
+            <h3>Masse de Chandrasekhar</h3>
+                <h3>Démonstration</h3>
+                <h4>Equation d'état du gaz d'électrons</h4>
+                <p>
+                On considère l'ensemble des électrons qui constituent l'étoile. Ceux-ci sont confinés à d'importantes pressions et densités, et leur comportement est à la fois quantique et relativiste. 
+                On cherche à établir l'équation d'état du gaz d'électrons.
+                Pour les décrire, on apparente le système qu'ils forment à une boite de dimension $L\times L \times L$ remplie d'électrons. 
+                Pour commencer, il faut déterminer les différents états microscopiques autorisés. Pour cela on résout l'équation de Dirac (pour conserver une description quantique et relativiste), en considérant que les électrons ne peuvent s'échapper de la boite (fonction d'onde nulle aux bords) :
+                \begin{equation}
+                i\hbar \gamma^\mu \partial_\mu \psi - mc \psi = 0 \mbox{ et } \psi (t, \vec{x}) = 0 \mbox{ si } x_i \in \{ 0, L \}
+                \end{equation}
+                
+                En recherchant les solutions sous formes d'ondes on trouve :
+                
+                \begin{equation}
+                \psi (t,\vec{x}) = \begin{pmatrix}
+                \phi\\ 
+                \left [ \dfrac{\vec{\sigma} \vec{p}}{E+mc^2} \right ] \phi
+                \end{pmatrix} e^{\frac{i}{\hbar}\left( Et - \vec{p} \cdot \vec{x}\right )}
+                \end{equation}
+                
+                où $E = +\sqrt{m^2c^4 + p^2c^2}$, l'expression relativiste de l'énergie.
+                
+                L'application des conditions aux limites donne $p_i = h n_i / L$ avec $n_i \in \mathbb{Z}$. (Même résultat avec l'équation de Schrodinger, donc non relativiste).
+                
+                Maintenant que l'on connait l'ensemble des micro-états, la question est de connaitre les grandeurs thermodynamiques que sont la densité, la densité d'énergie et la pression et de les relier. 
+                
+                On définit la fonction $f_i(E_i)$ définie comme le nombre d'électrons dans l'état $i$. 
+                
+                Les électrons étant des fermions, pour un équilibre thermique, ils suivent la distribution de Fermi-Dirac. Ainsi, le nombre d'électrons $n_i$ dans un état $i$ est dans ce cas donné par :
+                \begin{equation}
+                f_i(E_i) = \dfrac{g}{e^{E_i/k_B T} + 1}
+                \end{equation}
+                
+                Où $g$ est la dégénérescence de spin (pour un spin 1/2 comme c'est le cas pour les électrons, $g=2$).
+                
+                Ici, chaque état est déterminé par les nombres quantique $n_x,n_y,n_z$ tels que $p^2 = \frac{h^2}{L^2} (n_x^2 + n_y^2 + n_z^2)$. 
+                
+                Le nombre $N$ d'électrons est donné par la somme des espérances moyennes associées à chaque état :
+                
+                \begin{equation}
+                N = f_i(E_i) = g \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty} f \left (E(n_x, n_y, n_z)\right )
+                \end{equation}
+                
+                Remarquons que les niveaux d'impulsions (et donc d'énergie) sont de moins en moins espacés quand $L\to +\infty$, si bien que l'écart entre deux niveaux consécutifs devient infinitésimal. 
+                On peut donc transformer les sommes en intégrales selon :
+                
+                \begin{equation}
+                \sum_{n_x = -\infty}^{+\infty} \to \dfrac{L}{h} \displaystyle\int_{-\infty}^{+\infty} dp_x
+                \end{equation}
+                
+                L'expression du nombre d'électrons $N$ devient alors :
+                
+                \begin{equation}
+                N = g\dfrac{L^3}{h^3}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty} f \left (E(p_x, p_y, p_z)\right ) dp_x dp_y dp_z
+                \end{equation}
+                
+                L'intégrande ne dépendant que de $E$ qui ne dépend que de la norme de $\vec{p}$ (pas de sa direction), il est intéressant de passer en coordonnées sphériques : 
+                
+                \begin{equation}
+                N = g\dfrac{L^3}{h^3}  \displaystyle\int_{\theta = 0}^{2\pi}  \displaystyle\int_{\phi = 0}^{\pi}  \displaystyle\int_{p = 0}^{+\infty}p^2 \sin{(\phi)} f(E(p))dp \\ = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} f(E(p)) p^2 dp
+                \end{equation}
+                
+                Enfin, la densité d'électrons $n$ vaut simplement $N/L^3$ et donc :
+                \begin{equation}
+                n =\dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} f(E(p)) p^2 dp
+                \end{equation}
+                
+                Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. Cette relation est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. 
+                
+                
+                L'énergie totale du système $U$ est donnée par la somme des énergies moyennes de chaque état $U_i = f_i E_i$. En sommant sur tous les états autorisés on trouve :
+                
+                \begin{equation}
+                U = g \displaystyle \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty}  f \left (E(p_x, p_y, p_z)\right )  E(n_x, n_y, n_z) 
+                \end{equation}
+                
+                Cette somme peut être transformée en intégrale par le même processus de continuisation que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale :
+                
+                \begin{equation}
+                U = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} f \left (E(p)\right )  E(p) p^2 dp
+                \end{equation}
+                
+                La densité d'énergie est simplement $\rho = U/L^3$, et donc :              
+                
+                \begin{equation}
+                \rho = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  E(p) p^2 dp
+                \end{equation}
+                
+                La pression des électrons d'impulsion $p$ est $pv/3$ <note>La pression est la quantité de mouvement transmise à une paroi contenant le gaz par unité de surface et de temps. Montrer pv/3</note>
+                Par ailleurs $v = pc^2/E$.
+                    <note>
+                        \begin{equation}p = \dfrac{mv}{\sqrt{1-v^2/c^2}}\end{equation}
+                        donc \begin{equation}v^2\left (1+\frac{p^2}{m^2c^2} \right ) = \frac{p^2}{m^2c^2}\end{equation}
+                        et \begin{equation}v^2 = \dfrac{p^2}{m^2 + p^2/c^2} = \dfrac{p^2 c^4}{E^2}\end{equation}
+                    </note> De là :
+                \begin{equation}
+                P = \dfrac{4\pi g}{3h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  \dfrac{p^4 c^2}{E(p)} dp
+                \end{equation}
+                
+                Si les électrons sont à l'équilibre thermique, ils suivent la distribution de fermi-dirac et donc :
+                
+                
+                \begin{equation}\left\{\begin{matrix}
+                n &amp; = &amp; \dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 dp}{e^{E(p)/k_B T} + 1}\\ 
+                \rho &amp;  = &amp; \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1} \\
+                P &amp;  = &amp; \dfrac{4\pi g}{3h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{1}{E(p)} \dfrac{p^4 c^2 dp}{e^{E(p)/k_B T} + 1} 
+                \end{matrix}\right.\end{equation}
+                
+                Les intégrales peuvent être réécrites à l'aide des variables $u = E/mc^2 = 1+\frac{p^2}{m^2c^2}$ et $x = mc^2/(k_B T)$ :
+                
+                \begin{equation}\left\{\begin{matrix}
+                n &amp; = &amp; \dfrac{ 4\pi g m^3 c^3}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u \sqrt{u^2-1} du}{e^{ux} + 1}\\ 
+                \rho &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u^2 \sqrt{u^2-1} du}{e^{ux} + 1} \\
+                P &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{3h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{(u^2-1)^{3/2} du}{e^{ux} + 1} 
+                \end{matrix}\right.\end{equation}
+                
+                On s'intéresse ici à l'équation d'état $n \to P (n)$ puisque la relation nécessaire à la résolution du problème est celle entre la densité de masse d'électrons $\rho_m = n m$ et la pression $P$. 
+                
+                Les intégrales peuvent être évaluées numériquement. 
+                
+                Si les effets thermiques ne dominent plus, un cas extrême à envisager est le cas où tous les niveaux en dessous d'une certaine énergie de seuil $E_F$ sont occupé. On parle d'état dégénéré. Ceci permet de maximiser la densité d'électrons à une énergie totale donnée. Dans ce cas la fonction $f(E)$ vaut 1 en dessous de $E_F$ et 0 au dessus :
+                
+                \begin{equation}
+                f_d(E) = \left\{\begin{matrix}
+                1 &amp; \mbox{ si } &amp; E \leq E_F \\
+                0 &amp; \mbox{ si } &amp; E > E_F
+                \end{matrix}\right.
+                \end{equation}
+                
+                Et donc :
+                
+                \begin{equation}\left\{\begin{matrix}
+                n_d &amp; = &amp; \dfrac{ 4\pi g m^3 c^3}{h^3}  \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du\\ 
+                P_d &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{3h^3}  \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du
+                \end{matrix}\right.\end{equation}
+                
+                On note $n_0 = \dfrac{ 4\pi g m^3 c^3}{h^3} $ et $P_0 = \dfrac{4\pi g m^4 c^5}{3h^3}$.
+                
+                Le régime dégénéré peut être résolu analytiquement :
+                \begin{equation}
+                \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du = \dfrac{1}{2} \displaystyle\int_{0}^{u_F^2 - 1} \sqrt{t} dt = \dfrac{1}{3} \left (u_F^2 - 1\right )^{3/2}
+                \end{equation}
+                
+                Et 
+                
+                \begin{equation}
+                \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du = \displaystyle\int_{0}^{\cosh^{-1} u_F}\sinh^4{(t)} dt \\
+                = \dfrac{3}{8} \cosh^{-1} u_F - \dfrac{1}{2} u_F \sqrt{u_F^2 - 1} + \dfrac{1}{8} u_F \sqrt{u_F^2 - 1} (2u_F^2 - 1) 
+                \end{equation}
+                
+                Ce qui donne, en définissant $x \equiv 3\dfrac{n}{n_0}$ : 
+                \begin{equation}
+                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( \dfrac{1}{4}x- \dfrac{3}{8} x^{1/3} \right ) \right ]
+                \end{equation}
+                
+                Similairement on peut montrer que la densité d'énergie peut s'écrire :
+                \begin{equation}
+                \rho_e =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
+                \end{equation}
+                
+                Les courbes $n/n_0 \mapsto P/P_0$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve
+                
+                <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons" plot="fermi_state">
+                    Diagramme de phase d'un gaz d'électrons sans interactions. La courbe noire correspond à une distribution de fermi-dirac. La courbe rouge correspond à un gaz dégénéré, dans lequel tous les états en dessous d'une certaine énergie sont systématiquement occupés. La zone rouge est interdite par le principe d'exclusion de Pauli.
+                    Il existe deux régimes asymptotiques pour le gaz dégénéré.
+                </figure>
+
+                On observe pour un gaz dégénéré deux régimes différents :
+                <ul>
+                    <li>Faible densité : $P \sim P_0 \left ( \dfrac{n}{n_0} \right )^{5/3}$ (courbe en pointillés)</li>
+                    <li>Haute densité : $P \sim P_0 \left ( \dfrac{n}{n_0} \right )^{4/3}$ (courbe en traits discontinus)</li>
+                </ul>
+                    
+                Un gaz dicté par les effets thermiques se comporte comme un gaz dégénéré à forte densité et comme un gaz parfait à basse densité. (La relation pression/densité pour fermi dirac est une droite, 
+                
+
+                </p>
+                
+                <h4>Résistance à la gravité</h4>
+                
+                <p>Dans une naine blanche, la force qui compense la pression de dégénérescence des électrons est la gravité. On peut montrer à partir de la relativité générale que l'équilibre se traduit par l'équation de Tolman-Oppenheimer :</p>
+                <p>\begin{equation}
+                \left( 1 - \frac{2 G M(r)}{c^2 r} \right) P'(r) = - \frac{G}{r^2}\dfrac{1}{c^2} \left( \rho_m(r) + \rho_e(r) + P(r) \right) \left(M(r) + 4 \pi r^3 \frac{P(r)}{c^2} \right)
+                \end{equation}
+                
+                $P$ est la pression, $\rho_m$ la densité d'énergie de masse de la matière baryonique (qui constitue l'essentiel de la masse d'une étoile), et $\rho_e$ celle du gaz d'électrons. $M(r)$ est la masse comprise dans la sphère de rayon $r$ centrée au coeur de l'étoile.
+                La pression qui domine est celle de dégénérescence donc $P$ est la pression du gaz d'électrons. 
+                
+                Par ailleurs la masse est reliée à la densité de matière et d'énergie par :
+                et \begin{equation}
+                M'(r) = 4\pi r^2 \dfrac{\rho_m(r) + \rho_e(r)}{c^2}
+                \end{equation}
+                
+                On peut écrire $\rho_m \simeq n_b m_p c^2 $. où on définit le rapport entre densité baryonique et d'électron $\mu \equiv n_b / n_e$. Alors on a $n_e = \rho_m / (\mu m_p c^2)$. En définissant $\rho_0 \equiv n_0 m_p c^2$, il vient que $x = 3 \rho_m / (\mu \rho_0)$. 
+                Les naines blanches étant principalement constituées d'éléments tels que le carbone, il y a en moyenne un proton et un neutron pour chaque électron donc $\mu = 2$
+                
+                On définit les variables adimensionnées associées :
+                $p \equiv P/P_0$, $\epsilon = \rho_e/\rho_0$, $\xi = r/R_{\odot}$ et $m = M/M_{\odot}$
+                
+                L'équation devient :
+                \begin{equation}
+                \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0R_{\odot}^2 }{G R_{\odot}}p'(\xi) = - \frac{1}{\xi^2 c^2} \left( \rho_0 \mu x/ 3 + \rho_0 \epsilon + P_0 p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
+                \end{equation}
+                
+                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0} = \dfrac{m_e}{3 m_p}$ et $\beta = \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}c^2} = \dfrac{ 4\pi g m_e^3 m_H c^3}{h^3} \dfrac{R_{\odot}^3}{M_{\odot}}$ ainsi que le rayon de schwarszchild du Soleil $r_s = 2GM_{\odot}/c^2$   alors :
+                 <note>
+             	     \begin{equation}
+            	     \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0R_{\odot }}{G M_{\odot}\rho_0}p'(\xi) = -\frac{1}{\xi^2 } \left(  \mu x (\xi)/ 3+  \epsilon + \dfrac{P_0}{\rho_0} p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
+           	     \end{equation}
+	                
+             	     \begin{equation}
+            	     \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)  2 \alpha \dfrac{R_{\odot}}{r_s} p'(\xi) = -\frac{1}{\xi^2} \left( \mu x (\xi)/ 3 + \epsilon(\xi) + \alpha p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
+           	     \end{equation}
+                 </note>
+                
+                \begin{equation}
+                2 \alpha \dfrac{R_{\odot}}{r_s} \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right) p'(\xi) = - \frac{1}{\xi^2} \left( \mu x (\xi) /3 +  \epsilon(\xi) + \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \beta \pi  \xi^3  p(\xi) \right)
+                \end{equation}
+                     
+	     Et par ailleurs :
+                \begin{equation}
+                m'(\xi) = 4\pi \xi^2 \dfrac{\rho(\xi)}{\rho_0} = \dfrac{4}{3} \pi\xi^2 \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}}(\mu x + 3\epsilon )
+                \end{equation}
+                
+                On peut aussi employer l'équation hydrostatique non relativiste :
+                \begin{equation}
+                 2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = -\dfrac{\mu m(\xi) x(\xi)}{3 \xi^2}
+                \end{equation}
+                </p>
+                
+                <h4>Résultat</h4>
+                <p>Les équations d'équilibre sont résolues (Relativité générale ou gravitation newtonienne) et conduisent au résultat suivant :</p>
+                <p>
+                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon." plot="wd_mass_radius" source="naine_blanche">
+                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot}$ avec une approche entièrement relativiste. ($\mu = 2$).
+                	</figure>
+                </p>
+                
+                 <p>
+                	<figure src="wd_profile.svg" title="Profil de densité d'une naine blanche." plot="wd_profile" source="naine_blanche">
+                	    Profil de densité d'une naine blanche de rayon $R = $ 3700 km.  
+                	</figure>
+                </p>
+                
+                <h4>Implications</h4>
+                <p>
+                     
+                </p>
+        </text>
+        <linkwords>
+            <linkword>supernovas Ia</linkword>
+            <linkword>supernovae de type Ia</linkword>
+        </linkwords>
+    </ressource>
+    
+    <!--         -->
+    <!--  MISC   -->
+    <!--         -->
+    
+    <ressource id="600">
+        <title>Le grand débat</title>
+        <text><p>Le "grand débat" (en anglais: "great debate") fait référence à un débat donné en 1920 entre les astronomes Heber Curtis et Harlow Shapley à propos de la situation des "nébuleuses spirales" (qu'on appelle aujourd'hui "galaxies spirales") vis à vis de la Voie Lactée. Pour premier, ces nébuleuses étaient des galaxies indépendantes semblables à la Voie Lactée. Pour le second, elles appartenaient au contraire à la Voie Lactée qui aurait en fait été l'ensemble de l'Univers. La raison pour laquelle la réponse n'était pas évidente à l'époque était l'impossibilité de déterminer la distance de tels objets. Très vite cependant, les travaux d'Hubble permirent de trancher grâce à l'observation des céphéides : les nébuleuses spirales étaient bien plus distantes que les autres objets alors observés, bien au-delà du plan galactique de la Voie Lactée.</p>
+        </text>
+        <linkwords>
+            <linkword>le grand débat</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="601">
+        <title>Principe d'équivalence</title>
+        <text><p>Le principe d'équivalence formule de façon générale l'idée selon laquelle la nature d'un objet n'affecte pas la façon dont il se meut dans un champ de gravitation. Cette idée était déjà présente en mécanique Newtonienne, dans laquelle un corps de masse $m$ dans un champ de gravitation $\vec{g}$ obéit à la troisième loi de Newton $m_i\dfrac{d\vec{v}}{dt} = m_g\vec{g}$. La masse inertielle $m_i$ étant considérée comme identique à la masse $m_g$ chez Newton, il vient que pour tout corps $\dfrac{d\vec{v}}{dt} = \vec{g}$. 
+        </p>
+        <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
+        <p>On distingue deux formulations type du principe d'équivalence :</p>
+            <p><b>Principe d'équivalence faible</b>: Des masses "tests" (d'influence gravitationnelle négligeable) se meuvent de la même façon dans un champ gravitationnel indépendamment de leur nature : leur mouvement ne dépend que de leur position et vitesse initiale dans l'espace-temps.</p>
+            <p><b>Principe d'équivalence fort</b>: Le résultat de toute expérience physique, pouvant inclure notamment la gravitation elle-même, est le même dans tout référentiel en chute libre, quelque soit sa position dans l'espace-temps..</p>
+            <p><b>Du principe d'équivalence au formalisme tensoriel :</b> Le principe d'équivalence suggère une formulation particulière de la gravitation. En particulier, si tous les objets en chute libre suivent la même trajectoire, cette trajectoire a un caractère universel. En relativité générale, celle-ci est une géodésique dans une variété riemannienne.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>principe d'équivalence</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="602">
+        <title>Magnitude</title>
+        <text><p>La <b>magnitude apparente</b> $m$ d'un objet céleste est une quantité mesurant le rapport entre le flux lumineux qu'un appareil reçoit de cet objet et un flux lumineux de référence (la définition actuelle est le flux émis par l'étoile Vega reçu sur Terre).
+            Plus exactement :
+            \begin{equation}
+            m = -2.5 \log {\dfrac{F_{objet}}{F_{reference}}}
+            \end{equation}
+            Souvent le flux est mesuré dans un intervalle restreint de longueurs d'ondes (appelé "bande") en opposition à la magnitude dite "bolométrique" qui utilise le flux total.
+        </p>
+            <p>La <b>magnitude absolue</b> $M$ d'un objet céleste la magnitude apparente qu'on mesurerait si il se trouvait à une distance de 10 parsecs.
+                Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'il émet).</p>
+           <p> On peut établir une relation simple entre $m$ et $M$. Par définition on a :
+           \begin{equation}
+           M = -2.5 \log {\dfrac{F_{objet,10pc}}{F_{reference}}} = -2.5 \left ( \log {\dfrac{F_{objet,10pc}}{F_{objet}}} + \log {\dfrac{F_{objet}}{F_{reference}}}\right )
+           \end{equation}
+           
+           Or la luminosité est inversement proportionnelle au carré de la distance $d$ et donc :
+           \begin{equation}
+           M = -2.5 \left ( 2\log {\dfrac{d}{10\mbox{ pc}}} \right ) + m = m - 5 \log{\dfrac{d}{10 \mbox{ pc}}}
+           \end{equation}
+           </p>
+           <p>On écrit ainsi parfois $M = m + 5 - 5 \log D$ où $D$ est la distance en parsecs.
+           </p>
+        </text>
+        <linkwords>
+            <linkword>magnitude</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="603">
+      <title>Problème de la platitude</title>
+      <text>
+          <p>
+           Le problème de la platitude est la question soulevée par la nécessité dans un Univers en Big Bang que pour que l'Univers soit relativement plat aujourd'hui (ce qui semble être le cas), il a fallu qu'il le soit bien davantage encore à ses débuts. Le paramètre de courbure $\Omega_k$ est estimé avoir du être inférieur à $10^{-60}$ à un moment donné de l'histoire de l'Univers pour être compatible avec sa valeur actuelle estimée inférieure à $10^{-4}$. Cela requiert donc que ce paramètre prenne une valeur très particulière (ajustement fin) ce qui suggérerait que notre Univers a des caractéristiques improbables.
+          </p>
+          <h3>Evaluation du problème</h3>
+          <p>
+          En définissant  la densité critique à chaque instant donné de l'histoire de l'Univers $\rho_c(t) = \dfrac{3c^2 H(t)^2}{8\pi G}$, avec $H(t) = \dot{a}/a$, la première des équations de Friedmann peut s'écrire :
+          \begin{equation}
+          \left (\rho_c - \rho \right ) a^2 = \dfrac{3c^4}{8 \pi G} \dfrac{k}{R^2}
+          \end{equation}
+          
+          En introduisant le paramètre de courbure $\Omega_k = \dfrac{\rho - \rho_c}{\rho_c}$ qui représente à une date donnée la différence relative entre la densité d'énergie dans l'Univers et la densité critique, il vient que :
+          \begin{equation}
+          \Omega_k \rho a^2 = -\dfrac{3c^4}{8 \pi G} \dfrac{k}{R^2}
+          \end{equation}
+          
+          Le membre de droite étant une fonction de constantes uniquement, il apparait que  : 
+          \begin{equation}
+          \Omega_k \rho a^2 = \mbox{ cste }
+          \end{equation}
+          
+          Si la densité d'énergie dans l'Univers aujourd'hui est relativement proche de la densité critique, disons $|\Omega_{k0}| &lt; M$ où M de l'ordre de la dizaine au maximum, cela signifie donc que le rayon de courbure de l'Univers $R$ est comparable ou supérieure à l'horizon $\sim c/H$ et donc que l'Univers est à peu près plat.
+          La limite $M$ peut être évaluée expérimentalement. Au début des années 1980 elle est évaluée à la dizaine, aujourd'hui à $10^{-4}$. C'est pourquoi on considère que l'Univers est "plat".
+          
+          Or, d'après la relation précédente, on doit avoir :
+          
+          \begin{equation}
+          |\Omega_k(t)|  = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}
+          \end{equation}
+          
+          Dans les phases où l'expansion de l'Univers était la plus importante, la densité d'énergie a évolué en $\mathcal{O}(a^{-4})$ puis en $\mathcal{O}(a^{-3})$ si bien que $\Omega_k(t)$ a évolué en $\mathcal{O}(a^{n})$ avec $1 \leq n \leq 2$. 
+          La valeur du paramètre $\Omega_k$ était donc bien plus petite qu'actuellement vers les débuts de l'Univers - d'un facteur au moins inférieur à celui du facteur d'échelle à l'époque. 
+          Si l'on suppose que la physique du big bang est comprise et peut être décrite avec les théories jusqu'à une situation ou sa température était en dessous de $T_{max}$ cela permet d'affirmer que le paramètre de courbure devait à cet instant être au moins aussi petit qu'une certaine valeur.
+          Puisque $T(t) a(t) = \mbox{cste}$, et qu'au début de l'expansion $\rho(t) a^4(t) = \mbox{cste}$ alors :
+          
+          \begin{equation}
+          |\Omega_k(t)|  \sim |\Omega_{k0}| \left ( \dfrac{2,7 \mbox{K}}{T_{max}} \right)^2
+          \end{equation}
+          
+          
+          Pour $T_{max} \sim $ TeV (c'est-à-dire à la limite de la physique que l'on sait reproduire dans les accélérateurs de particules), et $\Omega_{k0} \sim 10^{-4}$ alors $|Omega_k|$ devait valoir de l'ordre de $10^{-36}$ !
+          Si à cette température le paramètre de courbure avait été un peu différent, cela aurait eu un impact très important sur sa valeur actuelle.
+          
+          </p>
+      </text>
+      <linkwords>
+           <linkword>Problème de la platitude</linkword>
+           <linkword>flatness problem</linkword>
+      </linkwords>
+    </ressource>
+    
+     <ressource id="604">
+      <title>Problème de l'Horizon</title>
+      <text>
+         <p>
+         Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques identiques alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
+         </p>
+         
+         <h3>Évaluation du problème</h3>
+         
+          <p>
+          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").
+          </p>
+          
+         <p>
+         On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
+         
+                   
+          La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang jusqu'à $t_0$ est :
+          \begin{equation}
+          l(0,t_0) = a(t) \int_{0}^{t_0} \dfrac{c dt'}{a(t')}
+          \end{equation}
+          En comparaison, la taille à $t_0$ d'une région de taille $L$ à $t$ est 
+          \begin{equation}
+          L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
+          \end{equation}
+          
+          De là : 
+          \begin{equation}
+          l(0,t_0) = 2 ct_0
+          \end{equation}
+          et
+          \begin{equation}
+           \dfrac{l(t_0)}{L(t_0)} = \dfrac{2ct_0}{L} \sqrt{\dfrac{t}{t_0}} = 2 \sqrt{\dfrac{t_0}{t}}
+          \end{equation}
+          
+          Si $a(t)T(t) = \mbox{cste}$, alors $\dfrac{t_0}{t} \sim \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^2$
+          
+          \begin{equation}
+          \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 =2 \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^3
+          \end{equation}
+          
+          Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{32}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
+          C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.
+          
+          <spoiler>
+          TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
+          </spoiler>
+          
+          <!--Et donc : 
+          \begin{equation}
+          \dfrac{l(t_0, t)}{L(t_0, t)} = \dfrac{c}{L}  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{dt'}{a(t')}
+          \end{equation}-->
+          </p>
+          <h3>Solution au problème</h3>
+          <p>
+              Une solution à ce problème peut être apportée par la théorie de l'inflation cosmique.
+          </p>
+      </text>
+      <linkwords>
+           <linkword>Problème de l'Horizon</linkword>
+      </linkwords>
+    </ressource>
+
+  <ressource id="605">
+      <title>Théorie de Grande Unification</title>
+      <text>
+         <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer. SU(3) x SU(2) x U(1)</p>
+          <p>TODO exemple. GUT scale energy. Modèle standard, paramètres libres etc.</p>
+          <h3>Interaction électrofaible</h3>
+          <p>
+            TODO exemple unification U(1) et SU(2) en U(1) x SU(2). champ de Higgs.
+          </p>
+          <p>Application Inflation</p>
+      </text>
+      <linkwords>
+           <linkword>Théorie de Grande Unification</linkword>
+           <linkword>Théories de Grande Unification</linkword>
+           <linkword>Grand Unified Theory</linkword>
+           <linkword>GUT</linkword>
+      </linkwords>
+    </ressource>
+    
+  <ressource id="606">
+      <title>Invariance de Jauge</title>
+      <text>
+         <p>Une invariance de jauge est la propriété d'un champ de pouvoir subir une transformation mathématique sans que cela n'en change les manifestations physiques. Les invariances imposent une certaine structure au champ et induisent des lois de conservations conformément au théorème de Noether.</p>
+         <h3>Exemple : invariance U(1) et électromagnétisme</h3>
+         <p>
+         Le Lagrangien pour un fermion (par exemple un électron) libre de masse $m$ est le lagrangien de Dirac :
+         \begin{equation}
+         \mathcal{L}_{\mbox{Dirac}} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \partial_\mu \psi + mc \bar{\psi} \psi 
+         \end{equation}
+         
+         Si on impose une invariance $U(1)$, donc par transformation unitaire - qui préserve la norme - alors la transformation $\psi(x_\mu) \to \psi'(x_\mu) = \psi e^{i k \phi(x_\mu)}$ (qui change localement la phase du champ $\psi$) doit préserver les résultats physiques.
+         Or, on remarque que le lagrangien de dirac n'est pas invariant par une telle transformation :
+         
+         \begin{equation}
+         \mathcal{L}_{\mbox{Dirac}}' = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + mc \bar{\psi} \psi 
+         \end{equation}
+         
+         On peut alors substituer l'opérateur $\partial_\mu$ par l'opérateur de différentiation $D_\mu = \partial_\mu + ikA_\mu$ où $A_\mu$ est un nouveau champ vectoriel. Le nouveau lagrangien devient :
+         
+         \begin{equation}
+         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu D_\mu \psi + mc \bar{\psi} \psi  = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu + ikA_\mu  \right ) \psi + mc \bar{\psi} \psi 
+         \end{equation}
+         
+         \begin{equation}
+         \mathcal{L}' = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + mc \bar{\psi} \psi 
+         \end{equation}
+         
+         Et donc
+         
+         \begin{equation}
+         \mathcal{L}' = i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + mc \bar{\psi} \psi 
+         \end{equation}
+         
+         Si la physique est invariante par la transformation $A_\mu \to A_\mu' = A_\mu + \partial_\mu \phi$ alors ...
+         
+         On peut rajouter un terme proportionnel à $F_{\mu\nu}F^{\mu\nu}$ où $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ (tenseur électromagnétique) qui est bien un invariant de Lorentz, et ne dépend que des dérivées d'ordre 1 du champ $A_\mu$ et par ailleurs respecte l'invariance par la transformation $A_\mu \to A_\mu'$. 
+         
+         Le Lagrangien s'écrit alors, en définissant $q = -k$ : 
+         
+         \begin{equation}
+         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu  - iqA_\mu  \right ) \psi + mc \bar{\psi} \psi - \dfrac{1}{4\mu_0 c} F_{\mu\nu}F^{\mu\nu}
+         \end{equation}
+         
+         TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!
+
+        <h3>Invariance SU(2) et interaction faible</h3>
+
+Et
+
+\begin{equation}
+\mathcal{L} = ...
+\end{equation}</p>
+      </text>
+      <linkwords>
+           <linkword>Invariance de jauge</linkword>
+           <linkword>Gauge Invariance</linkword>
+      </linkwords>
+    </ressource>
+    
+      <ressource id="607">
+      <title>Lentille gravitationnelle</title>
+      <text>
+         <p>TODO</p>
+      </text>
+      <linkwords>
+           <linkword>lentille gravitationnelle</linkword>
+      </linkwords>
+    </ressource>
+
+
+    <!--          -->
+    <!-- THEORIES -->
+    <!--          -->
+
+     <ressource id="700">
+      <title>Supersymétrie</title>
+      <text>
+         <p>La supersymétrie est une théorie en physique des particules visant à compléter le Modèle Standard. TODO explain</p>
+      </text>
+      <linkwords>
+           <linkword>SUSY</linkword>
+           <linkword>supersymétrie</linkword>
+           <linkword>supersymétrique</linkword>
+           <linkword>supersymmetry</linkword>
+      </linkwords>
+    </ressource>
+
+     <ressource id="701">
+      <title>WIMP</title>
+      <text>
+         <p>Les WIMP (Weakly Interacting Massive Particles, particules massives interagissant faiblement) sont des particules postulées afin de donner une réponse au problème de la matière noire. De telles particules sont prédites par différentes théories telles que la supersymétrie.</p>
+         <h4>Les WIMP comme relique thermale</h4>
+         <p>Les WIMP n'interagissant que très faiblement, il est proposé que leur présence (dominante) dans l'Univers s'explique par un équilibre du type :
+       \begin{equation}
+       X+X \rightleftharpoons \mbox{ SM }
+       \end{equation}</p>
+       Il s'agit donc d'un équilibre enter annihilation des particules WIMP ("X") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
+       \begin{equation}
+       \Gamma_{ann} \sim n_{X} \langle \sigma v \rangle
+       \end{equation}
+       Où $n_X$ est la densité de particules WIMP, $\sigma$ leur section efficace d'annihilation et $v$ leur vitesse relative.
+       Puisque $n_X \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $1/H$, le phénomène d'annihilation devient négligeable et la quantité de WIMP est relativement constante. C'est le "freeze-out". 
+         <h4>Mécanisme</h4>
+         <p>
+            Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_X/(k_B T)$ : 
+            <ol>
+                <li>Tant que $k_B T \gg m_X$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_X \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
+                <li>Dès que $x \geq 1$, les WIMPs suivent une statistique de Boltzmann grâce à l'équilibre annihilation-création et donc $n_X^{eq}/n_\gamma \propto x^{3/2} e^{-x}$ (Fermi-Dirac non relativiste).</li>
+                <li>Avec l'expansion, les WIMPs sont dilués et il est de plus en plus rare que des paires se forment. Le nombre de WIMP devient constant et $n_X \propto x^3$.</li>
+            </ol>
+            Il est possible d'écrire l'équation cinétique qui gouverne l'évolution du nombre de particules WIMPs dans un volume comobile $V$ noté $N_X$ lors de la phase 2. Il s'agit simplement d'écrire que le taux de variation de $N_X$ par unité de temps est égale au nombre de particules formées à chaque instant moins le nombre de particules s'annihilant. On suppose une symmétrie entre $X$ et son antiparticule $\bar{X}$, c'est-à-dire $N_X = N_{\bar{X}}$. Alors :
+            \begin{equation}
+            \dfrac{dN_x}{dt} = -\langle \sigma_{ann} v \rangle n_X^2 + \alpha n_{SM}^2
+            \end{equation}
+            Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $X$ à partir de particules du modèle standard, qui est inconnu. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
+
+            \begin{equation}
+            \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right ) V(t)
+            \end{equation}
+
+            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(1+z(t))^3}$. L'équation peut alors être réécrite :
+
+            \begin{equation}
+            -\dfrac{H(z)}{(1+z)^2}\dfrac{dn_x}{dz} = - 3 \dfrac{H(z)}{(1+z)^3} n_x + \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( K n_{\gamma}^2 x(z)^{3} e^{-2x(z)} - n_X(z)^2 \right )
+            \end{equation}
+
+            \begin{equation}
+            (1+z)H(z)\dfrac{dn_x}{dz} = 3 H(z) n_x + \langle \sigma_{ann} v \rangle \left ( n_X(z)^2 - K n_{\gamma}^2 x(z)^{3} e^{-2x(z)}\right )
+            \end{equation}
+
+
+            Cette équation peut être couplée à l'équation de Friedmann qui donne directement $H(z)$ !
+         </p>
+
+         <h4>Candidats</h4>
+         <p>neutralino, sneutrino...</p>
+      </text>
+      <linkwords>
+           <linkword>WIMP</linkword>
+      </linkwords>
+     </ressource>
+
+     <ressource id="702">
+      <title>Axions</title>
+      <text>
+          <p>Les axions sont des particules hypothétiques initialement introduites dans le cadre de la théorie Peccei–Quinn afin de résoudre le problème CP-fort. Ils se sont révélés être de bons candidats pour la matière noire par la suite.</p>
+          <h4>Problème CP fort</h4>
+          <h4>Axions</h4>
+          <h4>Candidat pour la matière noire</h4>
+      </text>
+      <linkwords>
+           <linkword>axions</linkword>
+      </linkwords>
+    </ressource>
+</ressources>

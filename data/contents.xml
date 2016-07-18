@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+    <content id="1" type="timeline" ready="1">
+        <title>Développement de la relativité</title>
+        <image src="einstein.jpg">
+            Einstein en 1916, photographié par Paul Ehrenfest.
+        </image>
+        <color>#7730c9</color>
+        <text><p>A la fin du 19ème siècle, plusieurs questions restent ouvertes pour les physiciens. Parmi ces problèmes se pose celui de la conciliation des équations de Maxwell avec la transformation de Galilée. En effet, les équations de Maxwell suggèrent que la lumière se propage à une vitesse $c$ constante. Or, selon la transformation de Galilée, la lumière ne peut se propager à $c$ dans tous les référentiels galiléens. On suppose alors à l'époque qu'il existe un référentiel particulier dans lequel les équations de Maxwell sont vérifiées, celui de l'"éther", considéré comme le support des ondes électromagnétiques. Si tout cela est correct, on devrait pouvoir mesurer la vitesse de la Terre par rapport à l'hypothétique éther en observant les déviations du comportement de la lumière par rapport à celui attendu dans le référentiel de l'éther. De nombreuses expériences en ce sens ont été effectuées, la plus célèbre étant sans doute celle de Michelson-Morley, effectuée à l'aide d'un interféromètre. Toutes ces expériences eurent un résultat négatif : la lumière se comportait comme prédit par les équations de Maxwell, même sur Terre, où sa vitesse de propagation semble donc également valoir $c$.</p>
+
+            <p>En 1905, A. Einstein publie un article intitulé "Zur Elektrodynamik bewegter Körper" ("Sur l'électrodynamique des corps en mouvement") dans lequel il propose une théorie fondée sur le postulat selon lequel la lumière se propage à une même vitesse $c$ dans tous les référentiels galiléens. En d'autres mots, Einstein étend le principe de relativité selon lequel les lois de la Physique doivent être les mêmes dans tout référentiel Galiléen à l'électromagnétisme et donc au comportement de la lumière. Il en déduit qu'il faut abandonner la transformation de galilée au profit de la transformation de Lorentz et parvient à expliquer les observations faites concernant la propagation de la lumière avec succès. Il montre également comment la mécanique classique en est changée. </p>
+            
+        <quote author="Einstein" date="1905"><p>1. The laws by which the states of physical systems undergo change are not
+            affected, whether these changes of state be referred to the one or the other of
+            two systems of co-ordinates in uniform translatory motion.</p>
+            <p>2. Any ray of light moves in the “stationary” system of co-ordinates with
+                the determined velocity c, whether the ray be emitted by a stationary or by a
+                moving body. </p>
+        </quote>
+        
+            <p>Si la relativité restreinte décrit avec succès l'électrodynamique, elle souffre d'un inconvénient majeur : elle est incompatible avec la théorie de la gravitation de Newton (par exemple, l'action gravitationnelle d'une masse sur une autre est instantanée selon la vision Newtonienne alors que la relativité fait apparaitre une vitesse limite $c$ pour les interactions). Pourtant, celle-ci parait tout à fait correcte puisqu'elle semble expliquer tous les phénomènes gravitationnels en accord avec l'expérience. Einstein élabore donc une théorie "relativiste" de la gravitation, appelée relativité générale, qu'il met au point jusqu'en 1915. Cette théorie repose sur le principe d'équivalence : un champ de gravitation est équivalent à l'accélération d'un référentiel non inertiel par rapport à un référentiel inertiel. D'après ce constat, tous les corps en chute libre dans un même état initial suivent une même trajectoire dans un champ de gravitation, ce qui suggère que cette trajectoire ayant une nature universelle est une propriété de l'espace-temps. </p> 
+            <p>Pour cela, avec l'aide de Marcel Grossmann, Einstein établit d'abord vers 1913 une première tentative de description de la gravitation comme une déformation de l'espace-temps induite par la masse et l'énergie, et propose une relation de proportionnalité entre le tenseur énergie-impulsion (qui contient l'information sur la densité d'énergie et son transport) $T^{\mu\nu}$ et le tenseur de Ricci $R^{\mu\nu}$ (qui décrit la courbure de l'espace-temps) :
+            \begin{equation}
+            R^{\mu\nu} = \dfrac{8\pi G}{c^2}  T^{\mu\nu}
+            \end{equation}
+            Cette première équation s'avère incorrecte (en particulier elle ne redonne pas le régime newtonien dans les situations où elle le devrait, c'est-à-dire petites vitesses et champs faible), et Einstein propose finalement en 1915 l'équation qui porte désormais son nom (équation d'Einstein) :
+            \begin{equation}
+            R^{\mu\nu} = \dfrac{8\pi G}{c^2} \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+            \end{equation}
+            Parallèlement, Hilbert propose une dérivation de cette équation à partir du principe de moindre action.
+            La théorie de la Relativité Générale est née !
+            </p>
+            
+            <p>
+            Cette nouvelle théorie appelle évidemment à être testée. Dès 1915, Einstein montre qu'elle permet d'expliquer l'écart entre l'avance du périhélie de Mercure observée et celle calculée. En effet, l'influence perturbative des autres planètes du système solaire et de la non perfection de la rotondicité du Soleil entrainent une précession du périhélie de Mercure de près de 5500 secondes d'arc par siècle. Cependant, il existe à l'époque un écart de 43 secondes d'arc par sicèle entre la valeur prédite par les lois de Newton et la valeur observée. 
+            Grâce à sa théorie, Einstein prédit précisément un terme de précession supplémentaire égal à 43 secondes d'arc par siècle : c'est le premier succès de la Relativité Générale.
+            </p>
+            <p>En 1919, Arthur Eddington profite d'une éclipse solaire pour tester une autre prédiction de la Relativité Générale. Celle-ci prévoit que la déviation d'origine gravitationnelle d'un rayon lumineux passant près d'une masse importante est le double de celle prédite par la mécanique newtonienne. Or, lors d'une éclipse solaire totale, il est possible d'observer des étoiles dont les photons qui nous en parviennent passent près du Soleil (et dont la lumière émise a donc été légèrement déviée). En comparant leur position apparente et celle attendue en l'absence de déflexion des rayons lumineux, on peut trancher entre les deux théories.
+            Les résultats indiquèrent que la prédiction correcte était donnée par la Relativité Générale, cependant leur significance fut remise en cause. (Voir l'activité "<contentlink id="15" />").
+            </p>
+            </text>
+    </content>
+    
+    <content id="2" type="timeline" ready="1" reviewed="1">
+        <title>Découverte de l'éloignement des galaxies</title>
+        <image src="nebulae.jpg">Nébuleuse spirale M51</image>
+        <color>#8d0e01</color>
+        <text><p>En 1912, Vesto Slipher mesure la vitesse de la galaxie Andromède par rapport à nous. Pour cela, il utilise la spectroscopie : en étudiant le spectre d'Andromède, il observe que certaines raies d'émission associées à des atomes bien connus sont légèrement déplacées. C'est le cas par exemple de la raie $H\alpha$ qui correspond à une transition électronique particulière dans l'atome d'hydrogène, qui émet à une longueur d'onde de 656,3 nm mais qui est observée à une longeur d'onde légèrement inférieure (un décalage d'un millième en valeur relative !). V. Slipher pense que cet écart est dû à l'effet Doppler : une onde émise par une source en mouvement est perçue à une longueur d'onde différente de la longueur d'onde d'émission. Il connait aussi la relation entre la vitesse radiale d'éloignement de la source et la différence de longueur d'onde :
+        \begin{equation}
+        v_{radiale} = \dfrac{\lambda_{rec} - \lambda_0}{\lambda_0} c
+        \end{equation}
+        
+        Pour Andromède, il trouve une valeur d'environ -300 km/s ! Le signe moins indique qu'elle se rapproche de nous. Cette valeur est un peu surprenante : elle est un ordre de grandeur supérieur à la vitesse typique des étoiles et des nébuleuses planétaires dont on avait mesuré les spectres<note>ceci est un exemple de note</note>. Cela a une conséquence importante, puisque cette vitesse exclut que les galaxies soient fortement liées gravitationnellement à la nôtre. On comprend alors à ce moment que cela favorise l'hypothèse selon laquelle ces objets sont relativement indépendants et de même nature que la Voie Lactée. Il n'était en effet pas exclu à l'époque que ces galaxies qu'on appelait alors "spirales nébuleuses" ne fassent partie de la Voie Lactée. </p>
+        
+        <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre elles. Le résultat est étonnant : seules 4 parmi les 25 se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Slipher trouve des vitesses dépassant 1000 km/s : il est clair que ces "spirales nébuleuses" sont des objets indépendants de notre galaxie, la Voie Lactée.</p></text>
+    </content>
+    
+    <content id="3" type="timeline" ready="1" reviewed="0">
+        <title>Débuts de la Cosmologie relativiste</title>
+        <image src="lemaitre.jpg">Georges Lemaître</image>
+        <color>#79136f</color>
+        <text><p>Une première application de la théorie de la relativité à la cosmologie est due à Einstein lui-même, en 1917. Il suppose que l'Univers respecte le principe cosmologique, c'est-à-dire qu'il est homogène et isotrope. Il suppose de plus que celui-ci est statique, et qu'il ne contient que de la matière non relativiste. Il réalise que pour concilier ces hypothèses, il faut introduire un nouveau terme dans l'équation d'Einstein : c'est ainsi qu'il ajoute à son modèle la constante cosmologique. Il trouve par ailleurs qu'un tel Univers doit avoir une courbure positive, c'est-à-dire une géométrie sphérique. Ce modèle, appelé Univers d'Einstein, présente quelques problèmes : d'abord, il est instable. D'autre part, la constante cosmologique, introduite comme paramètre, doit prendre une valeur très précise pour que l'Univers demeure statique.</p>
+        <p>A cette époque, Einstein correspond avec Willem de Sitter, un physicien néerlandais. Celui-ci propose une alternative à l'Univers d'Einstein en requérant une certaine symétrie entre toutes les coordonnées de l'espace-temps, y compris le temps.<!-- (TODO: expliquer, voir pdf de sitter einstein, de sitter space = 4-sphere avec imaginary t-coordinate)-->. Il remarque qu'un tel Univers est une solution du vide - c'est-à-dire en l'absence de toute forme de matière ou d'énergie - des équations d'Einstein avec une constante cosmologique quelconque. Selon la valeur de cette constante, un tel univers peut être en expansion ou au contraire en contraction.</p>
+        <p>Une alternative à ces deux modèles est présentée quelques années plus tard par Alexandre Friedmann, un physicien et mathématicien russe. En 1922, il publie un article intitulé "Sur la courbure de l'espace", dans lequel il applique l'équation d'Einstein avec une constante cosmologique de valeur quelconque à un Univers homogène, isotrope, de géométrie sphérique ou plate et constitué de matière non relativiste. Cependant, à la différence d'Einstein, il ne le suppose pas statique. Il obtient alors ce qu'on appelle aujourd'hui les équations de Friedmann et trouve que l'Univers peut évoluer de plusieurs façons, comme s'expandre indéfiniment, ou observer une dynamique périodique. En 1924, il montre qu'il existe des solutions de géométrie hyperbolique.
+        Ces résultats purement théoriques - Friedmann ne suggérant aucune expérience ou observation permettant de les confronter n'auront pas d'impact immédiat<!-- (TODO rephrase). --></p>
+        <p>Il faut attendre les travaux de Georges Lemaître pour qu'un lien soit établi entre modèle cosmologique et observations astronomiques. En 1927, il propose un modèle qu'il appelle "Univers d'Einstein à rayon variable" (sphérique), c'est-à-dire similaire à celui décrit par Friedmann en 1922, mais avec quelques avancées notoires. En effet, en plus de la présence de matière non relativiste et de l'effet d'une constante cosmologique, Lemaître intègre une composante ultrarelativiste de matière (rayonnement) à ses calculs. Mais surtout, il donne des arguments physiques en faveur de son modèle d'Univers variable. Premièrement, il note que le "modèle A" d'Einstein est pertinent puisqu'il tient compte de la présence de masse dans l'Univers. Mais il montre aussi un résultat très important : un Univers en expansion (comme dans le "modèle B" de De Sitter) peut expliquer la fuite apparente des "nébuleuses spirales" observée par Slipher ! Il est alors naturel de proposer un modèle d'Univers fait de matière et en expansion. Lemaître obtient par ailleurs une relation liant la vitesse apparente de fuite $v$ d'une nébuleuse spirale telle que mesurée par effet doppler, la distance $d$ qui nous sépare de celle ci et le taux d'expansion de l'Univers (de rayon $R$) :
+        \begin{equation}
+        v = \left (\dfrac{c}{R} \dfrac{dR}{dt} \right ) d \textrm{ si } \ v \ll c \textrm{ càd } \ \ d \ll R
+        \end{equation}
+        Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{c\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
+    </content>
+    
+    <content id="4" type="timeline" ready="1">
+        <title>Découverte de l'expansion de l'Univers</title>
+        <image src="edwin_hubble.jpg">Edwin Hubble</image>
+        <color>#c14630</color>
+        <text><p>D'après les mesures de vitesse des nébuleuses spirales dues à Slipher, ces objets ne semblent pas appartenir à la Voie Lactée : ils se déplacent trop vite par rapport à elle pour y être liées gravitationnellement. Il est donc naturel pour mettre fin à ce débat de se demander à quelle distance celles-ci se trouvent. Les mesures de distance classiques comme la parallaxe ne s'appliquent pas à des objets si lointains : il faut trouver une autre méthode.</p>
+        <p>La solution au problème de mesure de distance de ces objets lointains sera apportée par l'étude des céphéides. Les céphéides sont des étoiles variables périodiques : la puissance lumineuse qu'elles rayonnent varie avec une période $T$ de l'ordre de grandeur du jour. En 1908, l'astronome Henrietta Leavitt découvre une relation entre la luminosité de ces étoiles et leur période. Elle fait cette découverte à partir d'observations réalisées à l'observatoire de l'université d'Harvard sur des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (des galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède). Ce résultat est très important : il permet de calculer la luminosité d'une céphéide à partir de sa seule période (qui est facilement mesurable). Or, connaissant la luminosité intrinsèque $L$ d'une étoile ainsi que le flux que l'on en reçoit par unité de surface sur Terre $F$ on peut en déduire sa distance $d$. ($F \propto L/d^2$). <!--TODO:(optionnel car rallonge) expliquer le travail de Hertzsprung et Harlow Shapley qui a calibré la relation de Leavitt puisque celle-ci faisait intervenir la magnitude apparente et non absolue ne connaissant pas la distance des nuages de magellan)--></p>
+        <p>Edwin Hubble, un physicien américain, comprend très vite l'intérêt de cette méthode d'évaluation des distances. Durant les années 20, il applique cette méthode d'observation à des nébuleuses spirales suffisamment proches pour identifier individuellement des céphéides et appliquer la relation luminosité-distance alors connue. Connaissant la distance, il peut calculer la luminosité intrinsèque des plus brillantes des étoiles de ces nébuleuses. Il fit l'hypothèse que cette luminosité maximale devait être la même dans toutes les autres plus éloignées pour lesquelles il était impossible d'identifier les céphéides de façon individuelle. Ce faisant il disposait d'une nouvelle référence (la luminosité absolue des étoiles les plus brillantes) pour calculer la distance de chaque nébuleuse. En 1924, il annonce ainsi qu'il estime la distance d'Andromède à 900 000 années-lumière. Ce résultat met fin à la question du "grand débat" : les spirales nébuleuses sont bien des galaxies au même titre que la Voie Lactée à laquelle elles n'appartiennent pas.</p>
+        <p>Dans son papier de 1927, Lemaître propose un modèle de l'Univers dans lequel les galaxies environnantes peuvent paraitre s'éloigner avec une vitesse proportionnelle à leur distance du fait d'une expansion. A l'aide des premiers résultats combinés de mesures de distances d'Hubble et de vitesses radiales il établit même une estimation la valeur du coefficient de proportionnalité : $v = Kd$ et $K \sim $ 625 km/s/Mpc, mais les données lui manquent alors pour établir qu'il y a bien proportionnalité. Cette publication passe inaperçue*.</p>
+        <p>En 1929, Hubble publie "A relation between distance and radial velocity among extra-galactic nebulae" (Une relation entre la distance et la vitesse radiale des nébuleuses extra-galactiques). Son article montre à partir de mesures de distances et vitesses radiales portant sur 46 nébuleuses qu'il existe une proportionnalité entre les deux. Hubble trouve donc $v = Kd$ où il estime la valeur de $K$ à 530 km/s/Mpc. Ce résultat, aujourd'hui appelé "Loi de Hubble", constitue la preuve de l'expansion de l'Univers, même aux yeux d'Einstein qui renonce alors à son modèle statique. La constante $K$ est aujourd'hui appelée "constante de Hubble" et notée $H_0$ ("H" pour Hubble, et "0" pour faire indiquer qu'il s'agit de la valeur de la constante au temps présent).
+        
+            <figure src="hubble_law.png" title="Figure issue du papier d'Hubble en 1929.">Légende originale traduite : <b>Relation vitesse-distance pour les nébuleuses extra-galactiques</b>. 
+                Les vitesses radiales, corrigées du mouvement du Soleil, sont représentées en fonction des distances estimées à partir des étoiles contenues et des luminosités moyennes des nébuleuses d'un amas. Les disques noirs et le trait plein représentent la solution pour un mouvement solaire estimé en se basant sur les données individuelles des nébuleuses ; les cercles et la ligne pointillée représentent la solution obtenue et regroupant les nébuleuses en 9 groupes distincts ; la croix représente la vitesse moyenne et la distance moyenne de 22 nébuleuses dont les distances n'ont pu être estimées inidividuellement. </figure></p></text>
+    </content>
+    
+    <content id="5" type="timeline" ready="1">
+        <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
+        <image>bigbang.jpg</image>
+        <color>#108b57</color>
+        <text><p>Après la découverte de l'expansion de l'Univers par Hubble, Einstein, qui était jusqu'alors sceptique au sujet des travaux de Friedmann et Lemaître sur des modèles cosmologiques non statiques, comprend leur valeur. Ainsi, au début des années 1930, il aide à répandre ces idées parmi les physiciens. En 1932, lui-même et De Sitter proposent un modèle cosmologique minimal, auquel on réfère aujourd'hui par le nom d'espace d'Einstein-de Sitter, conforme aux observations de l'époque : 
+            <ul>
+                <li>Géométrie plate</li>
+                <li>Uniquement constitué de matière non-relativiste, de pression nulle (pas de rayonnement)</li>
+                <li>Sans constante cosmologique</li>
+            </ul>
+            Il s'agit donc d'un Univers de Lemaître-Friedmann à constante cosmologique nulle. 
+            Ce modèle permet de déduire la densité de matière dans l'Univers directement à partir de la constante de Hubble $H_0$. On trouve ainsi avec les données de l'époque une densité de $10^{-25} \mbox{ kg.m}^{-3}$. Or il se trouve qu'il s'agit de l'ordre de grandeur de la densité telle qu'évaluée à partir des estimations de distances et masses des galaxies.
+            Un élément majeur de ce modèle est qu'il implique l'apparition d'une singularité initiale : l'Univers semble naitre d'un état de densité infinie (facteur d'échelle nul), et ce il y a un peu plus d'un milliard d'années.
+            Lemaître qui avait déjà remarqué ce fait suggère en 1931 une explication. Il propose que l'Univers soit né de la désintégration d'un "atome", un état lié de la matière qui en se pulvérisant aurait engendré l'expansion. Il considère que ceci donne une explication aux rayons cosmiques et que la présence d'autres particules parmi ce rayonnement (alors non prouvée) en accréditerait la vraisemblance. Ainsi, pour Lemaître, cette singularité est tout à fait physique.
+            </p> 
+            <p>
+                En 1948, F. Hoyle pointe quelques problèmes qui suggèrent le besoin de formuler une autre théorie pour l'Univers :
+                <ul>
+                    <li>Problème de l'Âge de l'Univers : puisque le modèle d'Einstein-de Sitter implique que l'Univers soit né d'une singularité il entraine que celui-ci a un certain âge et que ses structures doivent être plus jeunes : dans ce cadre, et d'après la constante d'Hubble mesurée à l'époque, cet âge doit être d'un peu plus d'1 milliard d'années. Cependant, l'âge de la Terre était estimé à l'époque entre 1.5 et 3 milliards d'années (par des techniques radiométriques). </li>
+                    <li>Problème de la formation des galaxies : selon Hoyle, les galaxies n'ont pu se former que lorsque l'expansion est devenue suffisamment lente pour que l'attraction gravitationnelle l'emporte localement, ce qui est inconsistent avec leur âge tel qu'estimé</li>
+                    <!-- TODO EXPAND <li>http://www.iac.es/congreso/isapp2012/media/Longair-lectures/Longair3.pdf TODO</li>-->
+                </ul>
+                Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. 
+            </p>
+            <p>
+                En 1950 on peut donc considérer qu'il existe deux classes de théories principales :
+                <ul>
+                    <li>Les univers d'Einstein-de Sitter et Friedmann-Lemaître, avec singularité initiale et âge fini.</li>
+                    <li>L'Univers stationnaire de Hoyle</li>
+                </ul>
+                Hoyle critiquera également la théorie de Lemaître de l'atome primitif et l'idée d'un état initial très dense de l'Univers en général par des arguments notamment philosophiques : il apparente la théorie de Lemaître - qui est par ailleurs prêtre - à la Création biblique. Il fera référence à ce modèle qu'il conteste sous le nom de "Big Bang". C'est le premier emploi de cette dénomination dans la cosmologie. Les observations disponibles à l'époque ne permettant pas d'éliminer l'une de ces théories, et le débat prend une tournure philosophique.
+            </p>
+        </text>
+    </content>
+    
+    
+    <content id="6">
+        <title>Premières indications matière noire</title>
+        <image>dm.jpg</image>
+        <color>#e5d223</color>
+        <text>
+            <p>oort etc.</p>
+            <p>TODO: mettre le truc classique avec l'application du viriel en ressource.</p>
+        </text>
+    </content>
+    
+    <content id="7" type="timeline" ready="1">
+        <title>Les débuts de la nucléosynthèse primordiale</title>
+        <image>nucleosynthese.jpg</image>
+        <color>#32a818</color>
+        <text>
+            <h3>La synthèse des éléments</h3>
+            <p>Introduire un peu formation des éléments etc. + parler de hoyle </p>
+            <p>Au début des années 1940, une hypothèse à l'étude est l'abondance relative des atomes dans l'Univers s'explique par un équilibre thermique rapide ayant eu lieu à une température $T$ qui aurait gelé les proportions des différentes espèces. Très approximativement, ces proportions devraient suivre une distribution de type Maxwell-Boltzmann $n \propto e^{-E/(k_B T)}$ où $E$ est leur énergie nucléaire de liaison. L'énergie de liaison augmentant linéairement avec la masse atomique, l'abondance des espèces devrait décroitre exponentiellement avec celle-ci. Mais ce n'est pas ce qu'on observe : au lieu de cela, l'abondance des espèces lourdes est à peu près constante. L'idée d'un équilibre thermique rapide est donc rejetée.
+                <spoiler><figure src="abondance_equilibre_thermique.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="abondance_equilibre_thermique"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
+                <!--TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)--></figure></spoiler></p>
+            <p>A partir de 1946, Gamow propose, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
+            <!--<p>TODO parler de l'hélium
+            </p>-->
+            <ol>
+               <li>Dans ses premiers instants, l'Univers se trouve dans un état où il est dominé par des neutrons</li> 
+               <li>Les neutrons s'agglomèrent très vite par capture neutronique pour former successivement des éléments contenant de plus en plus de nucléons. Ceci doit se faire très rapidement étant donné le temps de demie-vie du neutron qui se désintègre en environ 1000 s : sinon, tous les neutrons seraient devenus des protons avant de s'agglomérer.</li> 
+               <li>Ces éléments lourds qui se forment se stabilisent par radioactivité $\beta^-$ (leurs neutrons deviennent des protons) donnant les atomes stables dont on mesure aujourd'hui l'abondance.</li>
+               <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations.</li>
+            </ol>
+            
+                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<note>Alpher et Herman, Physical Review 22.153</note> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
+            </p>
+            
+            <h3>L'univers jeune dominé par les photons</h3>
+            <p>En 1948, Gamow, Alpher et Herman publient de nombreux papiers dans le cadre de cette théorie. Ils comprennent que pour expliquer la présence importante d'hydrogène, il est nécessaire que les protons issus de la désintégration des neutrons libres n'aient pas tous formé avec eux du deutéron (noyau constitué d'un proton et d'un neutron). Ils proposent alors que la formation du deutéron soit en fait un équilibre :
+            \begin{equation}
+            n+p \rightleftharpoons d+\gamma 
+            \end{equation}
+            Cet équilibre maintient la quantité de neutrons en empêchant leur désintégration (les neutrons libres réagissent pour former du deutéron dans lequel ils sont stables puis sont libérés à nouveau très vite par rapport à leur temps de demi-vie). 
+            Pour que la réaction inverse (et donc l'équilibre) soit possible, il faut que l'Univers contienne de l'énergie sous forme de photons à un niveau comparable à l'énergie de dissociation du deutéron, ce qui correspond d'après les trois physiciens à un rayonnement d'une température de l'ordre de ($10^9$ K). Avec l'expansion, l'énergie des photons diminue jusqu'à ce que la réaction inverse soit impossible.  
+            Ils comprennent alors que l'Univers devait être très chaud, et que la densité d'énergie de radiation $\sim \sigma T^4/c$ était très supérieure à la densité d'énergie de la matière non relativiste. Ceci a plusieurs implications. D'abord, d'après les équations de Friedmann, cela signifie que l'expansion était gouvernée par le rayonnement. De plus, ce rayonnement qui a du refroidir avec l'expansion devrait toujours exister, et en connaissant sa température à un instant donné (ici celui où les photons cessent de contribuer à l'équilibre du deutéron), il est possible d'en déduire la valeur actuelle. Ce sont Alpher et Herman qui proposent ainsi pour la première fois l'existence de ce qui est aujourd'hui appelé fond diffus cosmologique ("CMB" en anglais pour cosmic microwave background); Ils établissent plusieurs estimations de sa température variant entre quelques Kelvins et quelques dizaines de Kelvins</p>
+            
+            <p>En 1950, des travaux menés par Enrico Fermi et Anthony Turkevich portant sur les réactions nucléaires entre éléments de taille $A \leq 7$ améliorent de façon significative la nature des processus en jeu dans ce modèle et de leur section efficace. Il apparait alors que ces réactions ne peuvent expliquer la formation d'éléments plus lourds que le béryllium (TODO: $A = 5,8$ posent pb).</p>
+            <p>Parallèlement, Hayashi suggère que des mécanismes (électrofaibles|fort?) ont instauré un équilibre qui a imposé le rapport $p/n$ avant la nucléosynthèse, en contradiction avec l'hypothèse initiale de Gamow d'un état initial constitué uniquement de neutrons dont la désintégration serait la seule source de protons.
+            \begin{equation}
+            p+e^- \rightleftharpoons n+\nu_e
+            \end{equation}
+            Ainsi, Hayashi trouve un ratio protons/neutrons $n_p/n_n \sim 4$ au lieu de $1/7$ environ comme estimé par Gamow, Alpher et Herman en ne considérant que la désintégration des neutrons. Or, cette valeur ne permet pas de rendre compte de l'abondance observée des éléments pour une nucléosynthèse par capture neutronique successive. 
+            
+            Puisque la détermination de ce ratio $p/n$ est cruciale pour déterminer la vraisemblance de la nucléosynthèse par capture neutronique, Alpher, Herman et Follin publient un papier en 1953 visant à estimer l'état initial de l'Univers avant la nucléosynthèse, selon les développements théoriques à leur disposition (qui leur permettent de décrire assez précisemment les phénomènes en jeu jusqu'à une température d'environ 100 MeV ~ $10^{12}$ K) et en étudiant la dépendance en certaines valeurs expérimentales mal connues (par exemple, le temps de demie-vie du neutron). Ils estiment que $p/n$ est compris entre $4,5$ et $6$, ce qui remet en effet en cause la nucléosynthèse par capture neutronique. Ce papier constitue cependant une base importante en tant que description alors la plus détaillée des premiers instants d'un big bang chaud.
+            <figure src="1953_bigbang_timetable.png" title="Récapitulatif des différentes étapes du Big Bang selon Alpher-Hermann-Follin 1953" width="300">
+                
+            </figure>
+            </p>
+            
+            <p>
+                Grâce aux travaux d'Alpher, Gamow et Herman, on sait décrire dès le début des années 1950 un Univers en évolution de type Big Bang dans son jeune âge. On sait que dans un contexte de refroidissement rapide depuis des températures très élevées des éléments légers peuvent se former (jusqu'à $A = 5$) par le biais d'un réseau de réactions nucléaires, mais pas des éléments plus lourds a priori. On sait par ailleurs qu'il doit subsister, d'après ce modèle, une densité de rayonnement non nulle à notre époque, équivalente à un rayonnement de corps noir dont la température actuelle devrait être de l'ordre de grandeur $1-10 K$. Cependant, à l'époque, l'idée de Big Bang demeure assez spéculative et souffre de plusieurs problèmes<note>cosmic age problem</note> et la nucléosynthèse primordiale semble être une impasse puisqu'elle échoue apparemment à donner une explication exhaustive de la courbe d'abondance des éléments. Pour ces raisons, ces résultats n'attirent pas vraiment l'attention au moment de leur publication.
+            </p>
+        </text>
+    </content>
+    
+    <content type="timeline" id="8">
+        <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
+        <image>nucleosynthese_stellaire.jpg</image>
+        <color>#0562a3</color>
+        <text>
+
+            <p>
+                Bien que la nucléosynthèse primordiale dans un Big Bang semble une impasse au début des années 1950, l'idée selon laquelle il est nécessaire d'étudier les réactions nucléaires en détail pour comprendre le mécanisme à l'origine de l'abondance des éléments est plutôt bien admise. D'autre part, la seconde guerre mondiale ayant pris fin il y a peu, la physique nucléaire qui a fait l'objet d'intenses recherches à des fins militaires <note>Las Alamos etc. je n'ai pas énormément de références en faveur de cet argument, mais il semble correct et cest bien la déclassification de certains données qui a permis à Gamow de déceler la corrélation abondance -- neutron capture cross section</note> est en plein essor. Les données s'accumulent et permettent d'établir des réseaux de réactions nucléaires (et leurs sections efficaces) de façon assez complète.
+            </p>
+            <!--<p>TODO FIXME parler ici de Fermi/Turkevich ?</p>-->
+            <p>
+                En 1957, Geoffrey Burbidge, Margarett Burbidge, William Fowler et Fred Hoyle publient un article très détaillé intitulé "Synthesis of the Elements in Stars", dans lequel ils classent et décrivent très précisément différents processus nucléaires possibles dans les étoiles, afin d'expliquer la formation de la plupart des éléments naturels, des plus légers aux plus lourds (jusqu'à l'Uranium), à partir de l'hydrogène seulement. On peut résumer très rapidement cette classification ainsi :
+                <ul>
+                    <li>Hydrogen Burning, Helium Burning et Processus $\alpha$ : Fusions consécutives d'éléments $X_i$ et d'hydrogène ou d'hélium. Formation d'éléments plutôt légers $A \leq 25$, notamment le carbone et l'oxygène. </li>
+                    <li>Processus $e$ : Atteinte d'un état d'équilibre thermique des protons et neutrons qui s'associent en partie pour former de façon privilégiée des éléments très stables (autour du Fer, $45 \leq A \leq 65$, intervalle dans laquelle elle domine)</li>
+                    <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
+                    <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
+                    <li>Processus $p$ : Capture protonique. Explique la formation d'éléments relativement riches en protons.</li>
+                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}H$, $^{3}He$, $^{4}He$ et $^{7}Li$. </li>
+                </ul>
+                L'ensemble de ces mécanismes de formation d'éléments au sein des étoiles est regroupé sous le nom de "nucléosynthèse stellaire". 
+                Le succès de ce modèle est que les étoiles évoluant lentement, elles offrent une variétés de conditions physiques et donc de processus différents qui peuvent s'effectuer pendant un temps suffisant pour former une grande variété d'éléments.
+                
+                Les auteurs motivent ce travail par l'échec des tentatives précédentes de donner une explication à la courbe d'abondance (comme la théorie de Gamow d'une capture neutronique primordiale dans un Univers en Big Bang, ou celle d'un équilibre thermique).
+                Ils avancent par ailleurs que la nucléosynthèse stellaire se distingue de la nucléosynthèse primordiale dans la propagation des éléments : dans la première, ils sont formés dans des sites précis puis éventuellement accélérés et distribués dans l'Univers. Dans la seconde, leur formation est homogène et la répartition des éléments devrait le demeurer également.
+                Or, selon les auteurs, on ne peut confirmer le caractère universel de la courbe d'abondance des éléments.
+            </p>
+            <p>
+               La nucléosynthèse stellaire parait donc très satisfaisante, même si elle échoue apparemment à expliquer la formation de l'hélium. Cependant, l'abondance de cet élément n'étant pas clairement établie, le besoin de faire appel à d'autres processus de synthèse ne l'est pas non plus.
+            </p>
+        </text>
+    </content>
+    
+       <content id="9" type="timeline" ready="1">
+    	<title>Découverte du fond diffus cosmologique</title>
+    	<image>cmb.jpg</image>
+    	<color>#e4ee86</color>
+    	<text>
+    	    <p>
+    	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
+    	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique, par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
+    	        Malgré toutes ces précautions, les deux phyisiciens observèrent en mesurant le signal à une longueur d'onde de 7,35cm (4080 MHz) un bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
+    	    </p>
+    	    
+    	    <figure title="Antenne d'Holmdel" src="antenne_holmdel.jpg">
+    	        Antenne d'Holmdel, dans le New Jersey.
+    	    </figure>
+    	    
+    	    <p>
+    	    Parallèlement, Dicke, Peebles, Roll et Wilkinson réétablissent indépendamment l'existence d'un fond de rayonnement photonique dans l'hypothèse d'un Univers né d'un Big Bang chaud. Ils entreprennent même de construire un instrument pour mesurer cet hypothétique rayonnement. 
+    	    Penzias finit par avoir vent de leurs recherches, et décide donc de contacter Dicke par téléphone pour lui exposer leur problème. Celui-ci comprend que le bruit observé par Penzias et Wilson doit être ce fameux rayonnement qu'ils cherchaient à mesurer.
+    	    En 1965, les deux groupes publient simultanément un papier tenant compte de leurs résultats, marquant la découverte du fond diffus cosmologique ou CMB (pour Cosmic Microwave Background).
+    	    </p>
+    	    <p>
+    	        Il faut noter qu'avant 1965, le CMB avait déjà été prédit plus ou moins correctement par Alpher et Herman (1948), et que plusieurs expériences en avaient détecté la trace sans que l'on ne s'en rende compte.
+    	        En 1940, McKellar avait déjà mesuré une excitation d'une transition vibrationnelle dans la molécule $CN$ en étudiant le spectre micro-onde de certaines régions du ciel, associée à une longueur d'onde d'environ 7 cm. 
+    	        Durant les années 1950, plus expériences de mesures dans les ondes radios comme celle d'Emile Le Roux ont rapporté l'existence d'un bruit d'une valeur d'environ 3 K mais avec de larges incertitudes.
+    	        En 1960, Ohm, qui travaillait sur l'antenne d'Holmdel (plusieurs années avant Penzias et Wilson), avait déjà décelé et évalué un bruit de quelques Kelvins. Ce résultat avait été cité par deux physiciens russes en 1964 qui firent le lien avec un papier de Gamow évoquant le fond de rayonnement d'origine cosmologique, mais ils conclurent qu'une origine atmosphérique du bruit n'était pas écartée par les résultats de Ohms. Or, il s'agissait d'une erreur d'intérprétation puisqu'Ohm avait précisé dans son rapport que l'origine atmosphérique était écartée.
+    	        Par ailleurs, Dicke assura qu'il n'était pas informé des travaux d'Alpher, Gamow et Herman sur un rayonnement d'origine primordiale, bien qu'il assista des années auparavant à un séminaire de Gamow sur ses recherches autour de la nucléosynthèse primordiale.
+    	    </p>
+    	    
+    	    <p>
+    	       Cette découverte est majeure, puisqu'elle a deux conséquences immédiates :
+    	       <ul>
+    	           <li>Remise en cause de la théorie de l'état stationnaire au profit du Big Bang</li>
+    	           <li>Nouvelles perspectives observationnelles en Cosmologie puisque la mesure du CMB (température, spectre, anisotropies) est riche en informations</li>
+    	       </ul>
+    	    </p>
+            <!--
+            TODO sach wolf = début de la cosmologie non homogène
+            -->
+    	</text>
+    </content>
+    
+    <content id="10" type="timeline" ready="1">
+      <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
+      <image>bigbang.jpg</image>
+      <color>#8681f0</color>
+      <text>
+        <p>Entre les années 1950 et 1960, les données expérimentales vont s'accumuler en faveur du Big Bang, excluant de plus en plus la théorie de l'état stationnaire. 
+        </p>
+        <h3>Découverte du fond diffus cosmologique</h3>
+        <p>
+           La découverte du fond diffus cosmologique en 1965 porte un coup sérieux à la théorie de l'Univers stationnaire et semble au contraire une confirmation solide de celle du Big Bang.
+           La présence de ce fond y est en effet très naturelle : si l'Univers a traversé une phase très chaude, le rayonnement devait dominer. En se découplant du reste de la matière, il a refroidi avec l'expansion jusqu'à atteindre sa température actuelle d'environ 3 K. Son spectre est alors très caractéristique, puisque c'est celui d'un corps noir à cette température.
+           L'Univers stationnaire possède aussi un fond de rayonnement mais aux caractéristiques bien différentes. Celui-ci est d'origine stellaire : le rayonnement émis par les étoiles emplit l'espace, et thermalise la poussière de l'Univers à une certaine température, qui varie localement avec la densité d'étoiles, mais grossièrement de l'ordre du Kelvin.
+           Il existe donc un rayonnement qui est la somme du rayonnement stellaire et du rayonnement thermique induit de la poussière qui y est exposé.
+           La matière étant distribuée de façon anisotrope à courte échelle (préférentiellement dans le plan galactique pour nous sur Terre), le rayonnement observé, s'il émanait des étoiles et poussières, devrait être anisotrope or il est remarquablement isotrope (il est équivalent à une même température quelque soit la direction, au premier ordre).
+           D'autre part, la poussière devrait émettre avec des écarts significatifs au spectre du corps noir. Des mesures plus précises montreront que le fond diffus suit très précisément le spectre du corps noir à une température de 2,7 K.
+        </p>
+        
+        <h3>Distribution des sources radios</h3>
+        
+        <p>
+            La radiométrie permet d'autres tests cosmologiques que la découverte du CMB. En comptant le nombre de sources d'ondes radio en fonction de leur intensité, on peut en effet évaluer la vraisemblance de la théorie de l'Univers stationnaire à partir du raisonnement suivant :
+            <!-- http://www.astro.ubc.ca/people/jvw/ASTROSTATS/Answers/Chap7/ans_7_1.pdf -->
+            Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. (En réalité, toutes les sources n'ont pas la même luminosité, mais suivent une distribution qui est constante dans le cas de l'Univers stationnaire, mais ceci ne change pas fondamentalement le résultat). Dans un Univers en Big Bang, la densité $n$ varie, et la pente de cette courbe doit être plus forte.
+            En réalité, la relation est plus complexe, il faut bien sur tenir compte des effets de l'expansion à redshift élevé<note>
+            
+            \begin{equation}
+            N = \dfrac{4\pi n}{3} (a(t) \chi)^3  
+            \end{equation}
+            
+            \begin{equation}
+            S = \dfrac{L}{4\pi d_L^2}  = \dfrac{L}{4\pi (1+z) (a(t) \chi)^2}
+            \end{equation}
+            
+            Donc 
+            \begin{equation}
+            N(s\geq S,z) = \dfrac{4\pi n}{3} \left (\dfrac{L}{4\pi(1+z)S} \right)^{3/2} \propto \dfrac{1}{\left((1+z)S \right)}^{3/2}
+            \end{equation}
+            
+            <!-- Résultat sur la pente : S est corrélé négativement au redshift. Comment ? Ds tous les cas c'est déjà a priori suffisant pour conclure que cela "aplatit la pente". --></note>
+            
+            Dans les années 1950, une équipe d'astronomes de Cambridge publient plusieurs catalogues de sources d'ondes radio. On découvre alors parmi ces sources les quasars, des objects très caractéristiques (compacts, très lumineux). Martin Ryle argue à partir de ces résultats, que la relation $\log S \to \log N$ présente une pente plus forte que prédite par la théorie de l'état stationnaire (environ -2.5 au lieu de -1.5). Cependant après plusieurs corrections successives Ryle révise son estimation à environ -1.8. D'autres travaux conduisent mêmes à des valeurs proches de -1.5. Il s'ensuit alors une controverse entre Hoyle et Ryle, le premier jugeant irrecevable les conclusions établies à partir de ces observations.
+        </p>
+        
+        <h3>Nouvelles mesures de la constante de Hubble</h3>
+        
+        <p>
+            Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            
+            Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
+            Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
+            En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
+        </p>
+      </text>
+    </content>
+    
+      <content id="11" type="timeline">
+    	<title>Réapparition de la nucléosynthèse primordiale</title>
+    	<image>nucleosynthese_bigbang.jpg</image>
+    	<text>
+    	    <p>
+    	        Problème de l'hélium. Regain d'intérêt pour la nucléosynthèse primordiale. Doutes : http://adsabs.harvard.edu/full/1967QJRAS...8..313T.
+    	    </p>
+    	</text>
+    </content>
+    
+      <content id="12" type="timeline">
+    	<title>Découverte de la matière noire</title>
+    	<image>matierenoire.jpg</image>
+    	<text>
+    	    <p>
+    	        Depuis les années 1930 avec Yann Oort, plusieurs physiciens ont suggéré qu'il exisait dans l'Univers une certaine quantité de matière "invisible" afin d'expliquer la dynamique des galaxies observées. Cette idée reposait sur le fait qu'on peut estimer la masse d'une galaxie de deux façons différentes :
+    	        <ul>
+    	            <li>En "décomptant" le nombre de sources lumineuses, et en estimant leur masse à partir de leur luminosité, on peut calculer la masse "lumineuse" totale $M_L$</li>
+    	            <li>En observant la courbe de vitesse supposée d'origine gravitationnelle des objets d'une galaxie, on peut estimer la masse "gravifique" $M_G$ nécessaire pour que celles-ci se meuvent comme elles le font (une estimation rapide peut être obtenue à l'aide du théorème du Viriel)</li>
+    	        </ul>
+    	        
+    	        Le problème est que, si l'on fait ce calcul, par exemple pour la Voie Lactée, on trouve que $M_L$ ne représente qu'un dixième de $M_G$ ! Il semble donc qu'une composante essentielle de la masse soit "invisible". 
+    	        
+    	        Dans les années 1970, Vera Rubin mène des recherches avec l'aide de Kent Ford qui avait mis au point un nouveau spectrographe très performant afin d'étudier la distribution de vitesses orbitales des galaxies en fonction de la distance au centre.
+                En 1980, les deux physiciens publient dans un papier le résultat de leurs mesures portées sur 21 galaxies Sc (galaxies spirales à plus de deux bras, dans la séquence de Hubble). Ils trouvent systématiquement une courbe de vitesse devenant plate à des distances importantes du centre galactique.
+                
+                <figure src="rotation_curves.jpg" title="Courbes de vitesse rotationnelle">
+                    Légende originale traduite : "vitesses moyennes dans le plan galactique, en fonction de la distance au noyau pour 21 galaxies Sc, classées par rayon croissant. La courbe  dessinée est la courbe de rotation obtenue à partir de la moyenne des vitesses de chaque côté de l'axe principale. [...] Les tirets proches du noyau galactique indiquent les régions dans lesquelles les vitesses ne sont pas disponibles pour des raisons d'échelle. Les tirets à grande distance du noyau indiquent une vitesse chutant plus vite que la loi Képlerienne ($r^{-1/2}$)"
+                </figure>
+    	        Grâce à la troisième loi de Képler il est alors possible de remonter au profil de densité $r \to \rho(r)$ selon :
+                
+                \begin{equation}
+                \rho (r) = \dfrac{3v^2}{4\pi G r} \left ( 1 + 2 \dfrac{r}{v(r)} v'(r) \right )
+                \end{equation}
+                
+                Ce profil peut être comparé à celui estimé à partir de la courbe de luminosité dans différentes bandes. La décroissance attendue en $1/r$ de la densité d'après les courbes de vitesse ne correspond pas à la matière visible ! Il y a bien de la matière invisible qui s'étend jusqu'hors des limites visibles des galaxies.
+    	        <!-- FIXME 1/r^2 -->
+    	        <!--\begin{equation}
+    	        v(r) = \sqrt{\dfrac{4\pi G}{r} \int_{0}^{r} \rho(r') r'^2 dr'}
+    	        \end{equation}
+    	        
+    	        \begin{equation}
+    	        v'(r) =  \dfrac{1}{r} \sqrt{\dfrac{4\pi G}{r}} \left [ \dfrac{\rho(r) r^3 - \int_{0}^{r} \rho(r') r'^2 dr'}{\sqrt{\int_{0}^{r} \rho(r') r'^2 dr'}} \right ]
+    	        \end{equation}-->
+    	    </p>
+    	</text>
+    </content>
+    
+     <content id="13" type="timeline">
+    	<title>Inflation</title>
+    	<image>inflation.jpg</image>
+    	<color>#46c4e5</color>
+    	<text>
+    	TODO Parler de zeldovic
+    	    <p>
+    	        Vers la fin des années 1970, le modèle du Big Bang fait consensus. Pourtant, il soulève déjà plusieurs problèmes :
+    	        <ul>
+    	            <li><b>Problème de la platitude</b> (flatness problem) : A l'époque, on n'observe aucune indication d'une courbure éventuelle de l'Univers. Le paramètre de courbure $\Omega_k$ étant relié à la densité d'énergie et la densité critique de l'Univers par $\Omega_k = \frac{\rho - \rho_c}{\rho_c}$, ces deux densités doivent être raisonnablement proches (pas plus d'un ordre de grandeur d'écart), $\Omega_k$ devant être raisonnablement petit. Si elles ne l'étaient pas, l'Univers serait très différent, et la formation des grandes structures en aurait été grandement affectée. Or, le paramètre de courbure évolue au cours du temps :
+          \begin{equation}
+          |\Omega_k(t)| = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2}
+          \end{equation}
+          Dans une phase où l'Univers est dominé par le rayonnement (ce qui est le cas pour l'Univers à ses débuts dans le cadre d'un Big-Bang chaud) alors $\rho \propto T^4$, $a \propto T^{-1}$ et donc :
+
+          \begin{equation}
+          |\Omega_k(t)| = |\Omega_{k0}| \dfrac{T_0^2}{T(t)^2}
+          \end{equation}
+
+          Plus on remonte dans le temps, plus l'Univers devait être chaud et plus il devait donc être plat ! En prenant $T_0 = $ 3 K, et l'instant $t$ tel que $T(t) = $ 1 TeV $ = 10^{16}$ K, alors la courbure de l'Univers devait être $10^{32}$ fois plus faible qu'aujourd'hui à cette époque, donc remarquablement minuscule. Si elle n'avait pas été ajustée alors pour être si petite, l'Univers aurait été très différent aujourd'hui.
+</li>
+    	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et soient "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
+    	        </ul>
+                </p>
+                <p>
+                
+                Parallèlement à ces problèmes relevant du domaine de la Cosmologie, la physique des particules connait de très grands progrès durant les années 1970, qui virent en effet le modèle standard prendre forme. La découverte des courants neutres (interactions avec des neutrinos ne faisant par intervenir de charge électrique) en 1973 supporta largement la théorie d'unification des interactions faible et électromagnétique construite à la décennie précédente par Sheldon Glashow, Abdus Salam et Steven Weinberg, ce qui leur valut le prix nobel en 1979. De même, la théorie de la chromodynamique quantique dont le but est de décrire l'interaction forte prend alors forme et en 1979 l'expérience PETRA confirme l'existence des gluons. TODO expliquer mieux.
+
+                Le modèle standard qui se construit requiert un nombre importants de paramètres, et certaines symétries ne sont pas bien expliquées (par exemple, l'égalité en valeur absolue de la charge de l'électron et du proton). Il est alors proposé (TODO citer noms) que les différentes interactions du modèle standard soient la manifestation d'une brisure de symétrie à partir d'une configuration plus simple. TODO rephrase. Les théories qui visent à unifier ces interactions sont appelées "Théories de Grande Unification".
+                </p>
+                <p>
+                Par ailleurs, plusieurs théories de grande unification suggèrent l'existence de monopôles magnétiques (des particules qui possédraient une "charge magnétique" ayant le même effet sur le champ $\vec{B}$ qu'une charge électrique a sur le champ $\vec{E}$).
+                Cependant, il est attendu qu'il n'y a pas vraiment espoir de détecter de telles particules - si elles existent - dans des accélérateurs. Le physicien Henry Tye suggère alors à son collègue Alan Guth, qui a déjà travaillé sur les monopôles magnétiques, de réfléchir à leur éventuelle production et existence au début du Big Bang, lorsque la température de l'Univers était suffisante.
+                Incidemment, Alan Guth assiste à un séminaire donné par R. Dicke dans lequel celui-ci expose le problème de la platitude.
+                </p>
+                <p>
+                A. Guth et ses collaborateurs remarquent que les théories GUT prédisent dans le cadre de la théorie du Big Bang de l'époque la création de monopôles magnétiques en très grande quantité (TODO donner ordres de grandeurs) ce qui n'est <i>a priori</i> pas possible puisque ceux-ci n'ont pour l'instant pas été observés.
+                Pour l'expliquer, ils suggèrent une phase de refroidissement très rapide. (TODO expliquer impact. requiert d'expliquer champ scalaire ?). Or, Guth remarque que cela équivaut à une expansion dramatiquement rapide de l'Univers ; de plus, il comprend que cette expansion très rapide permet à la fois de résoudre le problème de la platitude, ainsi que celui de l'Horizon !
+                
+                
+    	        
+    	        <!--La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier-->
+    	    </p>
+    	</text>
+    </content>
+    
+    <content id="14" type="timeline">
+    	<title>Découverte de l'accélération de l'expansion de l'Univers</title>
+    	<image>acceleration_expansion.jpg</image>
+    	<color>#a9680d</color>
+    	<text>
+            <p>
+                Au début des années 1990, le modèle le plus accepté parmi les cosmologistes est le modèle $S-CDM$, c'est-à-dire un Univers proche de sa densité de fermeture (plat) constitué en quasi totalité de matière noire froide, et également de matière baryonique froide. Ce modèle montre de plus en plus de faiblesses d'après les dernières observations, et de nouvelles données observationnelles sont nécessaires pour en comprendre les raisons.
+            </p>
+            <p>
+                 Les supernovae sont des évènements consécutifs à la "mort" d'une étoile. Ils libèrent une énergie colossale et sont donc très lumineux. Au début des années 1990, on distingue deux catégories principales de supernovae (SN) :
+                <ul>
+                    <li>Les <b>SN de type I</b> : Elles sont dues à l'effondrement de naines blanches (des étoiles compactes de masse proche de celle du Soleil mais de rayon 100 fois plus petit) maintenues en équilibre contre l'effondrement gravitationnel par la pression de dégénérescence de leurs électrons<note>La pression de dégénérescence d'un gaz d'électron est la pression de ces électrons du au principe d'exclusion de Pauli qui en interdisant deux fermions d'être dans le même état quantique entraine que pour une pression donnée la densité d'électrons ne peut dépasser une certaine valeur.</note></li>
+                    <li>Les <b>SN de type II</b> : Elles sont dues à l'effondrement d'une plus grande variétés d'étoiles lorsque notamment celles-ci ne produisent plus suffisamment d'énergie à partir des réactions nucléaires en leur sein.</li>
+                </ul>
+                Parmi les premières, les supernovae de type Ia présentent la caractéristique de contenir du silicium dans leur spectre.
+                Elles ont surtout une autre propriété majeur : elles possèdent des luminosités intrinsèques proches ! Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe (notamment la vitesse à laquelle elle décroit) permet de remonter encore plus précisément à leur luminosité intrinsèque maximale. Cela signifie que l'on peut connaitre leur magnitude absolue sans connaitre leur distance !
+                Les supernovae Ia sont donc des "chandelles standard", à la manière des céphéides variables, mais leur importante luminosité permet de mesurer des distances plus lointaines. Ce constat est supporté par des modélisations et il y a de bonnes raisons d'avoir confiance en le potentiel des SN Ia en tant que chandelles standard. 
+                
+                Ainsi, observer la courbe de luminosité des SN Ia permet d'en déduire leur magnitude absolue et donc leur distance de luminosité. On peut par ailleurs mesurer leur redshift. Or, la relation entre distance de luminosité et redshift est fixée pour un modèle cosmologique donné. 
+                
+                Deux équipes sont alors formées pour recenser ces évènements et en déduire les paramètres de densité de notre Univers : la High-Z Supernovae search team menée par Brian Schimdt et la Supernova Cosmology Project menée par Saul Perlmutter. 
+                En 1998, les deux projets font part de leurs résultats, après étude d'une quarantaine de SN Ia. Ils parviennent ainsi à contraindre :
+                <ul>
+                    <li>La constante de Hubble</li>
+                    <li>La densité de matière froide $\Omega_m$</li>
+                    <li>La densité d'énergie du vide $\Omega_\Lambda$ (équivalant à un terme de constante cosmologique)</li>
+                    <li>Le paramètre de décélération $q_0 = -\dot{H_0}/H_0^2-1$</li>
+                    <li>L'âge de l'Univers</li>
+                </ul>
+                La conclusion est alors que l'Univers est incompatible avec une absence d'énergie du vide ou une constante cosmologique nulle. Dans un Univers plat, les données indiquent $\Omega_m = 0,24$ et $\Omega_\Lambda = 0,76$ (L'Univers serait dominé par l'énergie du vide !) et que le paramètre de décélération $q$ est strictement négatif. L'expansion de l'Univers accélère !
+                <figure src="accelerating_expansion.jpg" title="Courbes de luminosité de quelques supernovae et fit de la relation distance de luminosité-redshift">
+                   La gauche de la figure montre les courbes de luminosité de 10 supernovae Ia, dans deux bandes différentes, en fonction du temps. La forme de la courbe est utilisée pour affiner l'estimation de la luminosité maximale. La courbe de droite représente la relation distance de luminosité-redshift observée, confrontée à plusieurs modèles cosmologiques. Le meilleur fit correspond à $(\Omega_m = 0,24 \Omega_\Lambda = 0,76)$ pour un Univers plat. $(\Omega_m = 1, \Omega_\Lambda = 0)$ (Univers plat et sans constante cosmologique, conforme au modèle $S-CDM$) est exclus.
+                </figure>
+            </p>
+    	</text>
+    </content>
+    
+        <content id="16" type="timeline">
+    	<title>Recherche de la matière noire</title>
+    	<image>dark_matter.jpg</image>
+    	<color>#a9F00d</color>
+    	<text>
+    	  <h3>Les traces de la matière noire</h3>
+            <p>
+              Aujourd'hui, nombreuses sont les observations qui révèlent par le biais de la gravitation la présence d'une quantité importante de matière invisible. 
+              TODO donner chiffres dans la liste qui suit.
+              <ul>
+                  <li><b>Courbes de rotation des galaxies </b> : La distribution des vitesses observée au sein des galaxies indique une présence de masse significativement plus importante que celle estimée à partir des ondes électromagnétiques qu'elles émettent ("lumière"). </li>  
+                  <li><b>Densité de matière froide de l'Univers</b> : Les observations cosmologiques et la structure de l'Univers révèlent que parmi la matière "froide" (non relativiste) qui compose l'Univers, un peu moins de 20 % seulement est visible (étoiles, planètes, gaz interstellaire). Le reste est inexpliqué !</li>
+                  <li><b>Effet de lentille gravitationnelle</b> : Des rayons lumineux passant près d'une masse importante sont déviés. Cet effet dit de "lentille gravitationnelle" permet donc de déceler la présence de matière même si celle-ci est invisible directement.</li>
+              </ul>          
+            </p>
+             <h3>Candidats pour la matière noire</h3>
+             <p>
+               Les explications proposées pour expliquer l'origine de la matière noire sont nombreuses. La liste suivante n'est pas exhaustive mais regroupe certaines des suggestions faisant l'objet du plus d'attention :
+             </p>
+                <h4>WIMP</h4>
+              <p>
+                  Il a été proposé que la matière noire soit principalement constituée de particules massives interagissant faiblement (Weakly Interacting Massive Particles, WIMP). Ces particules auraient été formées à l'époque où l'Univers était suffisamment chaud. Un équilire thermique entre annihilation et formation aurait imposé leur densité jusqu'à ce que celle-ci devienne trop faible pour que la réaction d'annihilation se produise : leur quantité demeure alors constante ("freeze-out"). Les WIMP sont attendues à l'échelle électrofaible ($\sim$ TeV), et pourraient donc être expliquées par des théories de type SUSY. Leur masse est en effet bornée par une limite supérieure : des particules très massives ($> 100$ TeV) seraient trop stables et présentes en trop large quantité aujourd'hui par rapport à celle de matière noire.
+              </p>
+
+               <p>Cependant, si le freeze-out intervient hors-équilibre, cette contrainte sur la masse est levée. Il a donc été proposé que la matière noire soit en fait des WIMP très massifs appelés WIMPZILLAS.</p>
+
+                <h4>Axions</h4>
+              <p>
+                  Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
+              </p>
+
+              <h4>Trous noirs primordiaux</h4>
+              <p>
+              </p>
+
+              <h4>MOND</h4>
+              <p></p>
+
+
+              <h4>Gravité $f(R)$</h4>
+              <p>
+              La Relativité Générale est contenue dans l'action d'Hilbert-Einstein de forme :
+              \begin{equation} 
+              S = \int \dfrac{c^4}{16\pi G} R \sqrt{-g} d^4x
+              \end{equation}
+              Les équations du mouvements (équation d'Einstein) s'obtiennent alors par application du principe de moindre action.
+              L'idée des théories $f(R)$ est que l'action est en réalité donnée par :
+
+              \begin{equation} 
+              S = \int \dfrac{c^4}{16\pi G} f(R) \sqrt{-g} d^4x
+              \end{equation}
+
+              TODO motivation. Application FLRW.
+              </p>
+              
+
+             
+
+             <h3>Recherches actuelles</h3>
+
+             <h4>Dans les accélérateurs/collisionneurs de particules</h4>
+             <p>
+                 Les données collectées dans les expériences de collisions de particules sont analysées à la recherche de matière noire. Celle-ci devant interagir très faiblement avec la matière ordinaire, plusieurs modèles prévoient que la détection directe (par l'étude des produits de désintégration ou par interaction avec les différents instruments comme les calorimètres) soit impossible. Cependant, il est possible d'utiliser de telles expériences pour réaliser une détection indirecte de la matière noire. Pour cela, on utilise la conservation de l'énergie-impulsion : l'énergie et la quantité de mouvement des produits de la collision doivent être égale à celle disponible. En particulier, l'impulsion totale dans le plan perpendiculaire aux faisceaux des protons qu'on collisionne (appelée impulsion transverse et notée $\vec{p}_T$) doit être nulle. Les expériences ATLAS et CMS menées au LHC ayant une couverture angulaire hermétique ($\sim$ 4$\pi$), il est attendu qu'elles soient capables de détecter la plupart des particules ayant une impulsion transverse non négligeable. En sommant cette composante sur l'ensemble des particules issues d'une collision, on devrait retrouver $\vec{0}$. En réalité ce n'est pas ce qu'on observe pour plusieurs raisons. D'abord, le détecteur possède certaines limitations (limite de résolution en énergie, efficacité de reconstruction des traces). De plus, les neutrinos pouvant être produits dans les collisions n'interagissent pas avec le détecteur et emportent souvent une quantité de mouvement non négligeable. L'écart entre la valeur d'énergie transverse attendue et l'énergie transverse observée est appelée "énergie transverse manquante" ou en anglais "missing transverse energy" et est notée $E_T^{miss}$ et vaut donc :
+
+\begin{equation}
+E_T^{miss} = ||\sum_{i} \vec{p}_i||
+\end{equation}
+
+             Le nombre d'évènements attendu pour une énergie transverse manquante donnée dans le cadre du modèle standard (bruit de fond) peut-être estimé à l'aide de simulations Monte-Carlo. Si de la matière noire est produite dans les collisionneurs, et qu'elle traverse les instruments du détecteur sans réagir, il y aura un surplus d'énergie transverse manquante, et un signal se dégagera au-delà du bruit de fond. Aucune déviation significative n'a été observée par les expériences ATLAS et CMS à l'issue du Run1 terminé en 2012.
+
+                <figure src="atlas_1j_etm.png" title="Distribution $E_T^{miss}$ pour les évènements associés avec la production d'un jet dans ATLAS">
+                   L'objet ici est de rechercher la production de matière noire associée à la production d'un jet (matière hadronique/quarks/gluons émise dans une certaine direction)
+                   Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. 
+                </figure>
+             </p>
+             
+                         
+<!--
+               <ul>
+                 <li><b>WIMP</b> : Weakly Interacting Massive Particles, c'est-à-dire des particules massives ($m \geq $ GeV) (FIXME), interagissant faiblement avec les autres particules.</li>
+                 <li><b>Axions</b> : Particules de masse $&lt; $ eV.</li>  
+                 <li><b>Trous noirs primordiaux</b> : Trous noirs formés aux débuts de l'expansion de l'Univers par condensation de petites inhomogénéités. </li>
+               </ul>
+-->
+  <!--          <h3>Un cas concret avec Vivian Poulin</h3>-->
+    	</text>
+    </content>
+
+<!--
+
+    <content id="20" type="activity">
+        <title>Utiliser une éclipse pour tester la relativité générale</title>
+    	<image>eclipse.jpg</image>
+    	<text>
+        <p>TODO background historique : expérience de 1919 par Eddington. Principe, histoire, résultat, controverse (rapidement).</p>
+         
+        <h3>Réalisation</h3>
+        <h4>Principe</h4>
+        <h4>Matériel</h4>
+        <p> 
+        <ul>
+          <li> Trépied photo </li>
+          <li> Appareil photo avec focale &lt; 1m </li>
+        </ul>
+        </p>
+        <h4>Exploitation résultats</h4>
+        <p>
+        <ul>
+          <li> Repérer précisément la position des étoiles observer sur l'image</li>
+          <li> Tenir compte de la projection sur le "fond de ciel"</li>
+          <li> Comparer aux positions mesurées avant l'éclipse pour mettre en évidence le phénomène de lentille gravitationnelle.</li>
+        </ul>
+        </p>
+        </text>
+    </content>
+
+    <content id="21" type="activity">
+        <title>Mesurer des redshifts</title>
+    	<image>redshift.jpg</image>
+    	<text>
+          <p>radiotéléscope. (HI?). Savoir comprendre et expliquer les courbes. Tenir compte du mouvement composé terre + soleil + galaxie. Objets à regarder ?</p>
+        </text>
+    </content>
+
+-->
+    
+    <content id="100">
+        <title>Evolution de la physique des particules</title>
+        <image></image>
+        <text>
+            <p>Test</p>
+            <feynman id="test" title="Test !">
+                description: 'Four-gluon vertex for QCD',
+                width: 480,
+                height: 140,
+                incoming: {i1: '40,120', i2: '140,120', i3: '40,20', i4: '140,20'},
+                vertex: {v1: '90,70'},
+                gluon: {line: 'v1-i1,v1-i2,v1-i3,v1-i4'},
+                node: {show: 'v', type: 'dot', fill: 'black', radius: 2},
+                label: {t1: ['15,110', '$c,\\rho$', 30], t2: ['140,110', '$d,\\sigma$', 30],
+                t3: ['15,10', '$b,\\nu$', 30], t4: ['140,10', '$a,\\mu$', 30],
+                t5: ['190,15', '$=-ig^2\\big[\\!f^{abe}f^{cde}(\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ace}f^{bde}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ade}f^{bce}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma})\\big]$', 290, 100]},
+                mathjax: true
+            </feynman>
+            
+            <feynman id="nu_e" title="electron neutrino scattering">
+                description: 'Neutrino / electron pair annihilation',
+                width: 480,
+                height: 220,
+                incoming: {i1: '40,20', i2: '40,140'},
+                outgoing: {o1: '240,20', o2: '240,140'},
+                vertex: {v1: '140,50', v2:'140,110'},
+                fermion: {line: 'i2-v2-o2,i1-v1-o1'},
+                photon: {line: 'v1-v2'},
+                label: {t1: ['50,0', '$\\nu_e$'], t2: ['50,150', '$e^-$'], 
+                t3: ['100,80', '$W^-$'],
+                t4: ['230,0', '$e^-$'], t5: ['230,150', '$\\nu_e$']},
+                mathjax: true
+            </feynman>
+        </text>
+    </content>
+</contents>

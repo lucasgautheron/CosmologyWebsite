@@ -1,0 +1,22 @@
+sudo: false
+
+language: php
+
+cache: apt
+
+addons:
+  apt:
+    packages:
+    - libsaxonb-java
+    - gnuplot
+    - default-jre
+
+script: php compile.php -V
+
+notifications:
+  email:
+    recipients:
+      - lucas.gautheron@gmail.com
+    on_success: change # default: change
+    on_failure: always
+

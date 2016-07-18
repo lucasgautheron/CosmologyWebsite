@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event date="1905" content-id="1" hidden="0">Albert Einstein publie sa théorie de la Relativité Restreinte qui décrit l'électrodynamique classique </event>
+    <event date="1912" content-id="2">Vesto M. Slipher mesure la vitesse de la galaxie d'Andromède par rapport à la Voie Lactée grâce au red-shift</event>
+    <event date="1911" content-id="100" hidden="1">Découverte du noyau atomique par Rutherford</event>
+    <event date="1919" content-id="100" hidden="1">Découverte du proton</event>
+    <event date="1912" content-id="100" hidden="1">Victor F. Hess découvre le rayonnement cosmique</event>
+    <event date="1915" content-id="1">Albert Einstein finalise la théorie de la Relativité Générale, une théorie relativiste de la gravitation</event>
+    <event date="1917" content-id="3">A. Einstein propose un modèle statique de l'Univers dans le cadre de la Relativité Générale</event>
+    <event date="1917" content-id="2">V. Slipher montre que la plupart des galaxies s'éloignent de nous</event>
+    <event date="1922" content-id="3">Alexandre Friedmann publie une théorie décrivant un Univers en expansion de courbure positive basé sur la Relativité Générale</event>
+    <event date="1925" content-id="100"  hidden="1">Erwin Schrödinger propose l'équation qui porte son nom.</event>
+    <event date="1927" content-id="3">Georges Lemaître publie un article dans lequel il décrit un Univers en expansion homogène isotrope de masse constante et prédit la future "Loi de Hubble" en expliquant la fuite des galaxies par cette expansion</event>
+    <event date="1929" content-id="4">Découverte de l'expansion de l'Univers par Hubble et preuve expérimentale de la loi portant son nom</event>
+    <event date="1931" content-id="5">G. Lemaître suggère que l'expansion de l'Univers l'a amené d'une taille arbitrairement petite à sa taille actuelle en un temps fini, qu'il explique par la désintégration d'un état dense appelé "atome primitif"</event>
+    <event date="1931" content-id="100"  hidden="1">Découverte du neutron par Chadwick</event>
+    <event date="1932" content-id="5">Einstein et De Sitter proposent un modèle dynamique d'Univers</event>
+    <!--<event date="1932" content-id="12">Yann Oort propose l'existence de matière noire pour expliquer la vitesse des étoiles de la voie lactée</event>-->
+    <event date="1948" content-id="5">F. Hoyle propose un modèle stationnaire de l'Univers, en accord avec le principe cosmologique parfait, dans lequel une création continue de matière compense la diminution de densité due à l'expansion, en contradiction avec le modèle de Lemaître que Hoyle surnomme théorie du "Big Bang"</event>
+    <event date="1946" content-id="7">Gamow propose un mécanisme de formation des noyaux atomiques aux premiers stades d'un Univers en expansion</event>
+    <event date="1948" content-id="7">Ralph Alpher et Robert Herman suggèrent un rayonnement fossile émis au découplage de la lumière et de la matière dans le cadre du modèle du Big Bang</event>
+    <event date="1952" content-id="10">Walter Baade découvre un nouveau genre d'étoile Céphéide variable, impliquant une nouvelle valeur de la constante de Hubble. D'autres corrections apportées à la mesure de cette constante permettent de rendre l'estimation de l'âge de l'Univers davantage compatible avec celui des diffèrents objets célestes.</event>
+    <event date="1953" content-id="7" hidden="1">Alpher, Herman et Follin décrivent précisément l'état d'un Univers en Big Bang à partir de l'instant ou sa densité est telle qu'il peut être décrit par la physique connue</event>
+    <event date="1957" content-id="8">G. Burbidge, M. Burbidge, W. Fowler et F. Hoyle expliquent de façon très détaillée comment les noyaux de toutes masses peuvent être produits dans les étoiles</event>
+    <event date="1963" content-id="10">Maarten Schmidt découvre un nouveau type d'objet astronomique plus tard appelé "Quasar". Les observations montrent qu'on en trouve surtout à une distance importante, ce sont donc des objets anciens, en contradiction avec le principe cosmologique parfait, ce qui porte un coup au modèle stationnaire de l'Univers.  </event>
+    <event date="1964" content-id="9">Découverte fond diffus cosmologique par Arno Penzias et Robert Wilson.</event>
+    <event date="1966" content-id="9">Rainer K. Sachs et Arthur M. Wolfe décrivent l'effet Sachs-Wolfe, qui relie les fluctuations directionnelles de densité de matière aux fluctuations de température du rayonnement fossile</event>
+    <event date="1980" content-id="12">Les travaux menés par Kent Ford et Vera Rubin montrent que la plupart des galaxies qu'ils ont pu étudier sont principalement constituées de matière noire</event>
+    <event date="1980" content-id="13">Alan Guth suggère un scénario d'expansion très rapide de l'Univers à son commencement qu'il appelle "Inflation". Ce scénario vise à résoudre plusieurs problèmes comme celui de l'ajustement fin de la densité ou encore de l'homogénéité de l'Univers incluant des régions causalement séparées.</event>
+    <event date="1990" content-id="9">Des expériences menées grâce au satellite COBE permettent une mesure précise du spectre du fond diffus cosmologique</event>
+    <event date="1998" content-id="14">Découverte de l'accélération de l'expansion de l'Univers</event>
+    <event date="1998" content-id="14">Introduction de la notion d'"Énergie sombre" par Dragan Huterer et Michael S. Turner pour expliquer l'accélération de l'expansion. Ceci comprend entre autres hypothèses la réintroduction de la constante cosmologique.</event>
+    <event date="2015" content-id="15">Les résultats de l'expérience Planck permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
+    <event date="Aujourd'hui" content-id="16">Rercherche de la matière noire</event>
+    <!--<event date="Aujourd'hui" content-id="17">Energie noire</event>-->
+</events>
