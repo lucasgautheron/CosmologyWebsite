@@ -203,7 +203,11 @@
           </ul>
         </div>
         <div>
-          Pour signaler toute erreur, ou simplement pour poser des questions relatives au contenu, vous pouvez envoyer un email à l'adresse lucas <i>dot</i> gautheron <i>at</i> gmail <i>dot</i> com
+          Pour signaler toute erreur, ou simplement pour poser des questions relatives au contenu, vous pouvez : 
+          <ul>
+            <li><a href="https://github.com/lucasgautheron/CosmologyWebsite">Enregistrer un ticket sur github</a></li>
+            <li><a href="mailto:lucas.gautheron@gmail.com">Envoyer un email à l'adresse</a> lucas <i>dot</i> gautheron <i>at</i> gmail <i>dot</i> com</li>
+          </ul>
         </div>
 
       </div>
