@@ -1,5 +1,7 @@
 # History of Cosmology
 
+[![Join the chat at https://gitter.im/lucasgautheron/CosmologyWebsite](https://badges.gitter.im/lucasgautheron/CosmologyWebsite.svg)](https://gitter.im/lucasgautheron/CosmologyWebsite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 http://histoiredelacosmologie.fr/
 
 Development version : http://cosmology.sciencestechniques.fr/timeline/ 
