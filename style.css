@@ -175,6 +175,35 @@ div.text
     padding: 5px 0;
 }
 
+div.interview_short
+{
+    display: flex;
+    padding: 5px;
+}
+
+div.interview_short img
+{
+    width: 128px;
+    height: 128px;
+    margin: 8px;
+}
+
+div.interview_short .description
+{
+    font-style: italic;
+}
+
+div.interview_short .who
+{
+    font-weight: bold;
+}
+
+div.interview_content
+{
+    display: none;
+    padding: 5px;
+}
+
 div.clear
 {
     clear: both;

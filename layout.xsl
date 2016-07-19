@@ -120,6 +120,14 @@
      </div>
    </div>
   </xsl:template>
+
+  <xsl:template match="question">
+    <p class="question"><b><xsl:value-of select="../../by/@initials" />:</b> <xsl:apply-templates /></p>
+  </xsl:template>
+
+  <xsl:template match="answer">
+    <p class="answer"><b><xsl:value-of select="../../who/@initials" />:</b> <xsl:apply-templates /></p>
+  </xsl:template>
   
   <xsl:template match="contentlink">
     <xsl:variable name="id" select="./@id"/>
@@ -226,6 +234,7 @@
         <h2 class="title"></h2>
         <div id="horizontal-timeline"></div>
         <div class="text"></div>
+        <div class="interviews"></div>
         <div class="references"></div>
       </div>
       
@@ -264,6 +273,22 @@
         <xsl:for-each select="./text//note">
           <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
         </xsl:for-each></div>
+
+      <div id="interviews">
+        <xsl:for-each select="./interviews/interview">
+          <div class="interview" data-iid="{generate-id(.)}">
+            <div class="interview_short">
+              <img src="{./who/@src}" />
+              <div class="description">
+                <span class="who"><xsl:value-of select="./who/@name" /></span>.
+                <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
+            </div>
+            <div class="interview_content">
+              <xsl:apply-templates select="questions" />
+            </div>
+          </div>
+        </xsl:for-each>
+      </div>
     
       <div id="references">
         <ul>

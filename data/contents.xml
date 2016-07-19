@@ -528,6 +528,21 @@ E_T^{miss} = ||\sum_{i} \vec{p}_i||
 -->
   <!--          <h3>Un cas concret avec Vivian Poulin</h3>-->
     	</text>
+        <interviews>
+          <interview>
+            <description>Physicien actuellement en poste à l'université d'Adélaïde, Martin White est impliqué dans plusieurs domaines de recherche, comme la phénoménologie en physique des particules et la recherche de traces de supersymmétrie pour l'expérience ATLAS ainsi que de l'astrophysique des particules en tant que membre de la collaboration CTA. Il nous parle de son rôle au sein de ses expériences, ainsi que du projet GAMBIT.</description>
+              <who name="Martin White" initials="M.W." src="people/martin_white.png">
+                Doctor, University of Adelaide
+              </who>
+              <by name="Lucas Gautheron" initials="L.G." />
+              <questions>
+                <question>What's the meaning of life ?</question>
+                <answer>...</answer>
+                <question>Another question</question>
+                <answer>...</answer>
+              </questions>
+           </interview>
+         </interviews>
     </content>
 
 <!--
