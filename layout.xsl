@@ -276,7 +276,7 @@
 
       <div id="interviews">
         <xsl:for-each select="./interviews/interview">
-          <div class="interview" data-iid="{generate-id(.)}">
+          <div class="interview" id="{generate-id(.)}">
             <div class="interview_short">
               <img src="{./who/@src}" />
               <div class="description">
