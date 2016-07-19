@@ -122,11 +122,11 @@
   </xsl:template>
 
   <xsl:template match="question">
-    <p class="question"><b><xsl:value-of select="../../by/@initials" />:</b> <xsl:apply-templates /></p>
+    <p class="question"><b><xsl:value-of select="../../by/@initials" />: </b> <xsl:apply-templates /></p>
   </xsl:template>
 
   <xsl:template match="answer">
-    <p class="answer"><b><xsl:value-of select="../../who/@initials" />:</b> <xsl:apply-templates /></p>
+    <p class="answer"><b><xsl:value-of select="../../who/@initials" />: </b> <xsl:apply-templates /></p>
   </xsl:template>
   
   <xsl:template match="contentlink">
@@ -278,7 +278,7 @@
         <xsl:for-each select="./interviews/interview">
           <div class="interview" id="{generate-id(.)}">
             <div class="interview_short">
-              <img src="{./who/@src}" />
+              <img src="images/{./who/@src}" />
               <div class="description">
                 <span class="who"><xsl:value-of select="./who/@name" /></span>.
                 <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
