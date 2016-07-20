@@ -6,6 +6,10 @@ $(document).ready(function() {
       show_content($(this).data('cid'), true);
       return false;
   });
+  $("a.interview-link").click(function() {
+      $("div#" + $(this).data('iid') + " div.interview_content").show();
+      return false;
+  });
   $("a.ressource").click(function() {
       show_ressource($(this).data('rid'), true);
       return false;
@@ -54,6 +58,11 @@ function update()
     $("a.content-link").unbind("click");
     $("a.content-link").click(function() {
       show_content($(this).data('cid'), true);
+      return false;
+    });
+    $("a.interview-link").unbind("click");
+    $("a.interview-link").click(function() {
+      $("div#" + $(this).data('iid') + " div.interview_content").show();
       return false;
     });
     $("a.ressource").unbind("click");
@@ -185,6 +194,7 @@ function show_content(id, updatehash)
       $('#content #horizontal-timeline').html(data_object.find('#horizontal-timeline').html());
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
+      $('#content .interviews').html(data_object.find('#interviews').html());
       $('#content .references').html(data_object.find('#references').html());
       $('#image').html(data_object.find('#image').html());
       if(!current_ressource) $('#image').show();
