@@ -906,6 +906,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>Michelson-Morley</linkword>
         </linkwords>
     </ressource>
+
+    <ressource id="302">
+        <title>ATLAS</title>
+        <text><p><b>ATLAS</b> (A Toroidal Large ApparatuS) est un détecteur installé sur le LHC (Large Hadron Collider), le plus grand accélérateur de particules au monde. Cette expérience étudie les produits de collisions entre deux faisceaux de protons à une énergie de centre de masse de plusieurs TeV (8 TeV jusqu'en 2012, 13 TeV à partir de 2015). Cette expérience a notamment permis la découverte du boson de Higgs en 2012 conjointement avec CMS, un autre détecteur du LHC.</p>
+        </text>
+        <linkwords>
+            <linkword>ATLAS</linkword>
+        </linkwords>
+    </ressource>
     
     <!--         -->
     <!-- EFFECTS -->
