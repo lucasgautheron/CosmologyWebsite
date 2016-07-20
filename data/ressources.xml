@@ -132,7 +132,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="103">
         <title>Transformation de Lorentz</title>
-        <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. </p>
+        <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. Elle découle naturellement de l'hypothèse selon laquelle un corps se propageant à la vitesse de la lumière $c$ dans un tel référentiel doit se propager à cette vitesse dans tous ces référentiels.</p>
         
         <p>On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et tels que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
         Si $(t,x,y,z)$ sont les coordonnées d'un évènement $A$ dans $\mathcal{R}$, et $(t',x',y',z')$ ses coordonnées dans $\mathcal{R}'$, alors : 
