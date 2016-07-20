@@ -507,14 +507,14 @@
                  Les données collectées dans les expériences de collisions de particules sont analysées à la recherche de matière noire. Celle-ci devant interagir très faiblement avec la matière ordinaire, plusieurs modèles prévoient que la détection directe (par l'étude des produits de désintégration ou par interaction avec les différents instruments comme les calorimètres) soit impossible. Cependant, il est possible d'utiliser de telles expériences pour réaliser une détection indirecte de la matière noire. Pour cela, on utilise la conservation de l'énergie-impulsion : l'énergie et la quantité de mouvement des produits de la collision doivent être égale à celle disponible. En particulier, l'impulsion totale dans le plan perpendiculaire aux faisceaux des protons qu'on collisionne (appelée impulsion transverse et notée $\vec{p}_T$) doit être nulle. Les expériences ATLAS et CMS menées au LHC ayant une couverture angulaire hermétique ($\sim$ 4$\pi$), il est attendu qu'elles soient capables de détecter la plupart des particules ayant une impulsion transverse non négligeable. En sommant cette composante sur l'ensemble des particules issues d'une collision, on devrait retrouver $\vec{0}$. En réalité ce n'est pas ce qu'on observe pour plusieurs raisons. D'abord, le détecteur possède certaines limitations (limite de résolution en énergie, efficacité de reconstruction des traces). De plus, les neutrinos pouvant être produits dans les collisions n'interagissent pas avec le détecteur et emportent souvent une quantité de mouvement non négligeable. L'écart entre la valeur d'énergie transverse attendue et l'énergie transverse observée est appelée "énergie transverse manquante" ou en anglais "missing transverse energy" et est notée $E_T^{miss}$ et vaut donc :
 
 \begin{equation}
-E_T^{miss} = ||\sum_{i} \vec{p}_i||
+E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
 \end{equation}
 
              Le nombre d'évènements attendu pour une énergie transverse manquante donnée dans le cadre du modèle standard (bruit de fond) peut-être estimé à l'aide de simulations Monte-Carlo. Si de la matière noire est produite dans les collisionneurs, et qu'elle traverse les instruments du détecteur sans réagir, il y aura un surplus d'énergie transverse manquante, et un signal se dégagera au-delà du bruit de fond. Aucune déviation significative n'a été observée par les expériences ATLAS et CMS à l'issue du Run1 terminé en 2012.
 
                 <figure src="atlas_1j_etm.png" title="Distribution $E_T^{miss}$ pour les évènements associés avec la production d'un jet dans ATLAS">
                    L'objet ici est de rechercher la production de matière noire associée à la production d'un jet (matière hadronique/quarks/gluons émise dans une certaine direction)
-                   Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. 
+                   Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. Des exemples de signatures de nouvelle physique (dimensions supplémentaires ou supersymmétrie) sont représentées en pointillés.
                 </figure>
              </p>
              
