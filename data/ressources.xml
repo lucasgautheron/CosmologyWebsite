@@ -132,7 +132,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="103">
         <title>Transformation de Lorentz</title>
-        <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. Elle découle naturellement de l'hypothèse selon laquelle un corps se propageant à la vitesse de la lumière $c$ dans un tel référentiel doit se propager à cette vitesse dans tous ces référentiels.</p>
+        <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. Elle découle naturellement de l'hypothèse selon laquelle un corps se déplaçant à la vitesse de la lumière $c$ dans un tel référentiel doit se déplacer à cette vitesse dans tous ces référentiels.</p>
         
         <p>On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et tels que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
         Si $(t,x,y,z)$ sont les coordonnées d'un évènement $A$ dans $\mathcal{R}$, et $(t',x',y',z')$ ses coordonnées dans $\mathcal{R}'$, alors : 
@@ -459,7 +459,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="107">
         <title>L'Univers de De Sitter</title>
-        <text><p>L'univers de Sitter aussi appelé "modèle B" est ...</p></text>
+        <text><p>L'univers de Sitter aussi appelé "modèle B" est un Univers vide avec constante cosmologique quelconque. Il est équivalent à une Univers sans d'autre forme d'énergie que d'énergie du vide.</p></text>
         <linkwords>
             <linkword>Univers de Sitter</linkword>
             <linkword>modèle B</linkword>
@@ -780,6 +780,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
             </p>
+            <h3>Constante cosmologique et théorie quantique des champs</h3>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
@@ -1451,11 +1452,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <text>
          <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer. SU(3) x SU(2) x U(1)</p>
           <p>TODO exemple. GUT scale energy. Modèle standard, paramètres libres etc.</p>
-          <h3>Interaction électrofaible</h3>
+          <h3>Interaction électrofaible : un exemple d'unification</h3>
           <p>
-            TODO exemple unification U(1) et SU(2) en U(1) x SU(2). champ de Higgs.
+            TODO exemple unification U(1) et SU(2) en U(1) x SU(2). champ de Higgs. Voir Zee
           </p>
-          <p>Application Inflation</p>
+          <h3>GUT et monopôles magnétiques</h3>
+          <p></p>
+          <h3>Lien avec l'inflation</h3>
       </text>
       <linkwords>
            <linkword>Théorie de Grande Unification</linkword>
