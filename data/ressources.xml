@@ -116,7 +116,22 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="101">
         <title>Tenseur Énergie-Impulsion</title>
-        <text><p>Description, déf, fluide parfait. Construction formalisme lagrangien + réduction par liberté en requérant symétrie. </p></text>
+        <text><p>Le tenseur énergie-impulsion est, en relativité, un tenseur, ou plus exactement un champ tensoriel, représentant l'énergie et son flux en un point de l'espace-temps. Il s'agit d'un tenseur de rang 2, en général noté $T^{\mu\nu}$. La composante $T^{\mu\nu}$ est en fait le flux à travers une hypersurface normale à l'axe $\nu$ de la composante $\mu$ du quadrivecteur énergie-impulsion. </p>
+          <h3>Exemples</h3>
+          <p><b>Tenseur énergie-impulsion d'un fluide parfait</b> : Un fluide parfait à l'équilibre thermodynamique de densité d'énergie $\rho$ et de pression $p$ possède un tenseur énergie impulsion de la forme :  \begin{equation}T^{\mu\nu} = \left ( \rho + p \right) v^\mu v^\nu /c^2 + p g^{\mu\nu} \end{equation}</p>
+
+            <p><b>Tenseur énergie-impulsion d'une particule libre</b> de masse $m$ et trajectoire $t\mapsto \vec{q}(t)$:
+                \begin{equation}
+                T^{\mu\nu}(x^\alpha) = \gamma(v) m v^{\mu}v^{\nu} \delta^3(\vec{x}-\vec{q}(x^0))
+                \end{equation}</p>
+            
+            <p><b>Tenseur énergie-impulsion d'un champ</b> : Pour des champs $\phi$ dont la dynamique est décrite par un lagrangian $\mathcal{L}$, le tenseur énergie impulsion s'écrit :
+                \begin{equation}
+                T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\nu}\vec{\phi})} \partial_{\mu} \vec{\phi} - \eta^{\mu\nu} \mathcal{L}
+                \end{equation}
+                (Obtenu en variant l'action par une translation infinitésimale locale de l'espace temps $x^{\mu} \to x^{\mu} + \epsilon^{\mu}(x^\mu)$, pour des champs classiques, solutions des équations du mouvements (les équations d'Euler-Lagrange) (dits "on-shell").</p>
+        </text>
+<!--        <text><p>Description, déf, fluide parfait. Construction formalisme lagrangien + réduction par liberté en requérant symétrie. </p></text>-->
         <linkwords>
             <linkword>tenseur énergie-impulsion</linkword>
         </linkwords>
