@@ -779,7 +779,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <title>Tenseur de Riemann</title>
         <text><p>Le tenseur de Riemann est un tenseur d'ordre 4 et décrit la courbure d'une variété Riemanienne. Pour une surface infinitésimal $dS^{\alpha\beta}$, la composante $\mu$ d'un vecteur $X$ varie de par transport parallèle le long du contour de cette surface d'une quantité :
         \begin{equation}
-        dA^{\mu} = R^{\nu}{\mu\alpha\beta} A^{\nu} dS^{\alpha\beta}
+        dA^{\mu} = R^{\nu}_{\mu\alpha\beta} A^{\nu} dS^{\alpha\beta}
         \end{equation}</p></text>
         <linkwords>
             <linkword>tenseur de Riemann</linkword>
