@@ -139,7 +139,25 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="102">
         <title>Tenseur de Ricci</title>
-        <text>...</text>
+        <text><p>Le tenseur est Ricci, noté $R^{\mu\nu}$, est, en géométrie Riemanienne, un tenseur de rang 2 décrivant la courbure d'une variété Riemanienne (objet mathématique représentant l'espace-temps).</p>
+            <h3>Définition</h3>
+        <p>Ce tenseur $R$ peut-être défini mathématiquement à partir de la connexion de Levi-Civita $\nabla$. La connexion de Levi-Civita est elle même définie pour deux champs vectoriels $A^{\mu}$ et $B^{\mu}$ comme la dérivée de $B$ dans la direction $A$ notée $\nabla_{A}B$.
+            On a alors :
+            \begin{equation}
+            R(X,Y) = \nabla_{X}\nabla_{Y} - \nabla_{Y}\nabla_{X} - \nabla_{[X,Y]}
+            \end{equation}
+            Le lien avec la notation tensorielle est donné par :
+            \begin{equation}
+            R = R_{\mu\nu} dx^\mu \otimes dx^\nu
+            \end{equation}
+            
+            Une définition à partir d'une tenseur de Riemann est également possible : 
+            \begin{equation}
+            R^{\mu\nu} = R^{\rho}_{\mu\rho\nu}
+            \end{equation}
+            
+            Ces éléments sont tirés de <a href="https://en.wikipedia.org/wiki/Ricci_curvature" target="_blank">l'article wikipédia sur le tenseur de Ricci</a>.
+        </p></text>
         <linkwords>
             <linkword>tenseur de Ricci</linkword>
         </linkwords>
@@ -754,6 +772,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </text>
         <linkwords>
             <linkword>modèle $\Lambda$CDM</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="115">
+        <title>Tenseur de Riemann</title>
+        <text><p>Le tenseur de Riemann est un tenseur d'ordre 4 et décrit la courbure d'une variété Riemanienne. Pour une surface infinitésimal $dS^{\alpha\beta}$, la composante $\mu$ d'un vecteur $X$ varie de par transport parallèle le long du contour de cette surface d'une quantité :
+        \begin{equation}
+        dA^{\mu} = R^{\nu}{\mu\alpha\beta} A^{\nu} dS^{\alpha\beta}
+        \end{equation}</p></text>
+        <linkwords>
+            <linkword>tenseur de Riemann</linkword>
         </linkwords>
     </ressource>
     
