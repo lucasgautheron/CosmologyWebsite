@@ -1592,7 +1592,7 @@ Et
             <p>
                 Dans le modèle Standard, le boson de Higgs de champ $\phi$ intervient dans le lagrangien via des termes de la forme :
                 \begin{equation}
-                \mathcal{L} \supset (D_\mu \phi)(D^{\mu}\phi)^{\dagger} -\dfrac{1}{2}\mu^2 \phi\phi^{\dagger} + \dfrac{\lambda}{4} (\phi\phi^{\dagger})^2
+                \mathcal{L} \supset \dfrac{1}{2}(D_\mu \phi)(D^{\mu}\phi)^{\dagger} -\dfrac{1}{2}\mu^2 \phi\phi^{\dagger} + \dfrac{\lambda}{4} (\phi\phi^{\dagger})^2
                 \end{equation}
                 
                 Le terme en $-\mu^2$ est le terme de masse. 
