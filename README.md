@@ -1,11 +1,10 @@
 # History of Cosmology
 
-http://histoiredelacosmologie.fr/
+http://cosmology.education/
 
-Development version : http://cosmology.sciencestechniques.fr/
-Status : http://cosmology.sciencestechniques.fr/graph.html
+Status : http://cosmology.education/graph.html
 
-Archive : http://cosmology.sciencestechniques.fr/archive.tar.gz
+Archive : http://cosmology.education/archive.tar.gz
 
 [![Build Status](https://travis-ci.org/lucasgautheron/CosmologyWebsite.svg?branch=master)](https://travis-ci.org/lucasgautheron/CosmologyWebsite) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lucasgautheron/CosmologyWebsite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
