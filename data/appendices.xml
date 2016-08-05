@@ -127,7 +127,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             <p><b>Tenseur énergie-impulsion d'un champ</b> : Pour des champs $\phi$ dont la dynamique est décrite par un lagrangian $\mathcal{L}$, le tenseur énergie impulsion s'écrit :
                 \begin{equation}
-                T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\nu}\vec{\phi})} \partial_{\mu} \vec{\phi} - \eta^{\mu\nu} \mathcal{L}
+                T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\mu}\vec{\phi})} \partial_{\nu} \vec{\phi} - \eta^{\mu\nu} \mathcal{L}
                 \end{equation}
                 (Obtenu en variant l'action par une translation infinitésimale locale de l'espace temps $x^{\mu} \to x^{\mu} + \epsilon^{\mu}(x^\mu)$, pour des champs classiques, solutions des équations du mouvements (les équations d'Euler-Lagrange) (dits "on-shell").</p>
         </text>
@@ -805,7 +805,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Effet sur l'Univers</h3>
             <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
             <h3>Formes possibles d'énergie du vide :</h3>
-            <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur-énergie impulsion associé à ce champ a pour expression :
+            <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
             \begin{equation}
             T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
             \end{equation}
@@ -814,7 +814,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             w = \dfrac{P}{\rho} = \dfrac{\dfrac{1}{2c^2}\dot{\phi}^2 - V(\phi)}{\dfrac{1}{2c^2}\dot{\phi}^2 + V(\phi)}
             \end{equation}
             Dans le cas où le champ varie très lentement (énergie cinétique du champ nulle), alors $w=-1$ et son énergie se comporte bien comme une constante cosmologique.
-            Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 de forme $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{g}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple).
+            Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 de forme $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{\lambda}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple).
             Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire homogène :
             \begin{equation}
             \partial_\mu \partial^\mu \phi + V'(\phi) = 0 \mbox{ donc } \ \ddot{\phi} + c^2 V'(\phi) = 0
