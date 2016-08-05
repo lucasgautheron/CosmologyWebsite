@@ -284,6 +284,15 @@
                 <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
             </div>
             <div class="interview_content">
+              <xsl:if test="./record">
+                <div class="interview_record">
+                  <audio controls="controls">
+                    <source src="records/{./record}.ogg" type="audio/ogg" />
+                    <source src="records/{./record}.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio> 
+                </div>
+              </xsl:if>
               <xsl:apply-templates select="questions" />
             </div>
           </div>
