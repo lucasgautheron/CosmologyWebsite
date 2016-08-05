@@ -1581,6 +1581,70 @@ Et
            <linkword>lentille gravitationnelle</linkword>
       </linkwords>
     </ressource>
+    
+    <ressource id="608">
+        <title>Problème de la hiérarchie</title>
+        <text>
+            <p>Le problème de la hiérarchie fait référence à la différence d'échelle d'énergie extrêmement élevée entre l'interaction électrofaible ($\sim$ 100 GeV) et l'interaction gravitationnelle ($\sim M_{planck} \sim 10^{19} $ GeV).
+                Cette différence est jugée problématique puisqu'on attend en général des théories physiques qu'elles fassent intervenir des paramètres libres sans dimension d'un ordre de grandeur proche de l'unité (la <b>naturalité</b>), ce qui n'est pas le cas de $M_{planck}/M_{H} \sim 10^{17}$ par exemple.
+            Ce problème est parfois formulé comme l'extrême faiblesse de l'intensité de l'interaction gravitationnelle en comparaison des autres interactions connues, l'échelle de Planck étant si élevée.</p>
+            <h3>Correction de masse du Higgs</h3>
+            <p>
+                Dans le modèle Standard, le boson de Higgs de champ $\phi$ intervient dans le lagrangien via des termes de la forme :
+                \begin{equation}
+                \mathcal{L} \supset (D_\mu \phi)(D^{\mu}\phi)^{\dagger} -\dfrac{1}{2}\mu^2 \phi\phi^{\dagger} + \dfrac{\lambda}{4} (\phi\phi^{\dagger})^2
+                \end{equation}
+                
+                Le terme en $-\mu^2$ est le terme de masse. 
+                Le terme d'auto-interaction ($\propto \lambda$) donne lieu à des corrections d'ordre $> 0$ du propagateur (amplitude pour un Higgs de "passer" de $x$ à $y$). Un diagramme de Feynman possible pour une correction d'ordre 1 avec boucle est :
+                
+                <feynman id="higgs-one-loop-mass" title="Energie d'auto-interaction du Higgs à boucle simple">
+                    description: 'One-loop Higgs self-energy diagram',
+                    width: 200,
+                    height: 120,
+                    incoming: {i1: '10,90'},
+                    outgoing: {o1: '190,90'},
+                    vertex: {v1: '58.5,90', v2: '141.5,90'},
+                    scalar: {line: 'i1-v1'},
+                    scalar: {line: 'v2-o1'},
+                    scalar: {loop: 'v2-v1'},
+                    symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
+                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
+                    t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
+                </feynman>
+                
+                L'amplitude associée à la boucle est de l'ordre de : 
+                \begin{equation}
+                \lambda \displaystyle\int_{0}^{\Lambda} \dfrac{d^4 k}{k^2 - m^2} = \lambda \mathcal{O}(\Lambda^2)  
+                \end{equation}
+                Où la divergence de l'intégrale a été gérée en introduisant un "cut-off" $\Lambda$, une énergie maximale au-delà de laquelle on attend que la théorie s'effonde (typiquement $\Lambda &lt; M_{planck} = 10^{19} $ GeV).
+                
+                Il en résulte une correction du terme de masse $\mu_{effectif}^2 \sim \mu^2 - \lambda \mathcal{O}(\Lambda^2)$. 
+                Cette masse corrigée doit être de l'ordre de l'échelle électrofaible. Le terme d'interaction est attendu <i>a priori</i> aux alentours de l'échelle de Planck (si le modèle standard est valide jusqu'à cet échelle).
+                Dans ce cas, le terme $\mu^2$ doit être extrêmement élevé, de l'ordre de l'échelle de Planck, mais ajustement très finement de façon à ce que la différence avec le terme d'auto-interaction soit inférieur de 17 ordres de grandeur.
+                Cet ajustement très fin semble contraire à l'idée de naturalité. Cela suggère l'émergence de nouvelle physique en-deça de l'échelle de Planck.
+                
+                Notons que cette divergence n'intervient qu'avec le Higgs, les corrections d'énergie d'auto-interaction des fermions n'étant que logarithmique en le cut-off $\Lambda$ et donc l'ajustement négligeable. C'est le cas pour l'électron par exemple :
+                
+                <feynman id="fermion-one-loop-mass" title="Energie d'auto-interaction de l'électron à boucle simple">
+                    description: 'One-loop electron self-energy diagram in QED',
+                    width: 200,
+                    height: 120,
+                    incoming: {i1: '10,90'},
+                    outgoing: {o1: '190,90'},
+                    vertex: {v1: '58.5,90', v2: '141.5,90'},
+                    fermion: {line: 'i1-v1-v2-o1'},
+                    photon: {arc: 'v2-v1'},
+                    symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
+                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
+                    t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
+                </feynman>
+            </p>
+        </text>
+        <linkwords>
+            <linkword>problème de la hiérarchie</linkword>
+        </linkwords>
+    </ressource>
 
 
     <!--          -->
