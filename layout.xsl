@@ -285,6 +285,7 @@
             </div>
             <div class="interview_content">
               <xsl:if test="./record">
+                <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
                 <div class="interview_record">
                   <audio controls="controls">
                     <source src="records/{./record}.ogg" type="audio/ogg" />
@@ -293,6 +294,7 @@
                   </audio> 
                 </div>
               </xsl:if>
+              <h4>Script</h4>
               <xsl:apply-templates select="questions" />
             </div>
           </div>

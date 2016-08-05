@@ -534,7 +534,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
               <who name="Martin White" initials="M.W." src="people/martin_white.png">
                 Doctor, University of Adelaide
               </who>
-              <record>martin_white</record>
+              <record language="English">martin_white</record>
               <by name="Lucas Gautheron" initials="L.G." />
               <questions>
                 <question>What's the meaning of life ?</question>
