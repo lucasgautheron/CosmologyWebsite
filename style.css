@@ -70,7 +70,7 @@ p { margin-bottom: 1em; }
 
 a { color: #BF1717; }
 
-div#content, div#ressource, div#image
+div#content, div#appendix, div#image
 {
     line-height: 1.4em;
     margin: 5px;
@@ -83,7 +83,7 @@ div#content
     width: 55%;
 }
 
-div#ressource, div#image
+div#appendix, div#image
 {
     float: left;
     width: 32%;

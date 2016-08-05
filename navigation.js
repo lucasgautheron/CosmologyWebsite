@@ -1,5 +1,5 @@
 var current_content = null;
-var current_ressource = null;
+var current_appendix = null;
 
 $(document).ready(function() {
   $("a.content-link").click(function() {
@@ -10,8 +10,8 @@ $(document).ready(function() {
       $("div#" + $(this).data('iid') + " div.interview_content").show();
       return false;
   });
-  $("a.ressource").click(function() {
-      show_ressource($(this).data('rid'), true);
+  $("a.appendix").click(function() {
+      show_appendix($(this).data('rid'), true);
       return false;
   });
   $("div.spoiler a.spoiler_toggle").click(function() {
@@ -49,7 +49,7 @@ $(document).ready(function() {
       if(!!event.state) load_hash();
     });
     var url = build_hash();
-    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, ressource_id: current_ressource, randomData: window.Math.random()}, "", url);
+    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, appendix_id: current_appendix, randomData: window.Math.random()}, "", url);
   }
 });
 
@@ -65,9 +65,9 @@ function update()
       $("div#" + $(this).data('iid') + " div.interview_content").show();
       return false;
     });
-    $("a.ressource").unbind("click");
-    $("a.ressource").click(function() {
-         show_ressource($(this).data('rid'), true);
+    $("a.appendix").unbind("click");
+    $("a.appendix").click(function() {
+         show_appendix($(this).data('rid'), true);
          return false;
     });
     $("div.spoiler a.spoiler_toggle").unbind();
@@ -94,9 +94,9 @@ function build_hash()
     var url = '#!';
     if(current_content!=null)
     {
-        if(current_ressource!=null)
+        if(current_appendix!=null)
         {
-            url = '#!content=' + current_content + '&ressource=' + current_ressource;
+            url = '#!content=' + current_content + '&appendix=' + current_appendix;
         }
         else url = '#!content=' + current_content;
     }
@@ -106,7 +106,7 @@ function build_hash()
 function update_hash()
 {
     var url = build_hash();
-    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
+    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, appendix_id: current_appendix}, "", url);
     else window.location.hash = url;
 }
 
@@ -123,16 +123,16 @@ function load_hash()
         return;
     }
     data['content'] = data['content'] === undefined ? null : data['content'];
-    data['ressource'] = data['ressource'] === undefined ? null : data['ressource'];
+    data['appendix'] = data['appendix'] === undefined ? null : data['appendix'];
 
     var new_content = current_content != data['content'];
-    var new_ressource = current_ressource != data['ressource'];
-    var change = new_content || new_ressource;
+    var new_appendix = current_appendix != data['appendix'];
+    var change = new_content || new_appendix;
     current_content = data['content'];
-    current_ressource = data['ressource'];
+    current_appendix = data['appendix'];
     if(change)
     {
-        if(!current_content && !current_ressource) show_timeline();
+        if(!current_content && !current_appendix) show_timeline();
         else
         {
             if(current_content != null)
@@ -140,13 +140,13 @@ function load_hash()
                 if(new_content) show_content(current_content, false);
             }
             else hide_content();
-            if(current_ressource != null)
+            if(current_appendix != null)
             {
-                 if(new_ressource) show_ressource(current_ressource, false);
+                 if(new_appendix) show_appendix(current_appendix, false);
             }
             else
             {
-                hide_ressource();
+                hide_appendix();
                 if(current_content) $('#image').show();
             }
         }
@@ -156,7 +156,7 @@ function load_hash()
 function show_timeline()
 {
   hide_content();
-  hide_ressource();
+  hide_appendix();
   //$("#show_timeline").hide();
   $("#timeline-container").show();
 }
@@ -197,7 +197,7 @@ function show_content(id, updatehash)
       $('#content .interviews').html(data_object.find('#interviews').html());
       $('#content .references').html(data_object.find('#references').html());
       $('#image').html(data_object.find('#image').html());
-      if(!current_ressource) $('#image').show();
+      if(!current_appendix) $('#image').show();
       $('#content').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);
@@ -218,22 +218,22 @@ function hide_content(id)
   $("#content").hide();
 }
 
-function show_ressource(id, updatehash)
+function show_appendix(id, updatehash)
 {
   hide_timeline();
   $.ajax({
-    url: 'html/ressources/ressource_' + id + '.html',
+    url: 'html/appendices/appendix_' + id + '.html',
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
-      current_ressource = id;
+      current_appendix = id;
       if(updatehash) update_hash();
       data_object = $($.parseHTML(data, document, true)); 
-      $('#ressource .title').text(data_object.find('#title').text());
-      $('#ressource .text').html(data_object.find('#text').html());
-      $('#ressource .references').html(data_object.find('#references').html());
+      $('#appendix .title').text(data_object.find('#title').text());
+      $('#appendix .text').html(data_object.find('#text').html());
+      $('#appendix .references').html(data_object.find('#references').html());
       $('#image').hide();
-      $('#ressource').show();
+      $('#appendix').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);
       });
@@ -245,8 +245,8 @@ function show_ressource(id, updatehash)
   });
 }
 
-function hide_ressource(id)
+function hide_appendix(id)
 {
-  current_ressource = null;
-  $("#ressource").hide();
+  current_appendix = null;
+  $("#appendix").hide();
 }

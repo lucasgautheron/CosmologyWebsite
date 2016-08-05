@@ -50,10 +50,10 @@
                                     <li><xsl:value-of select="."/></li>
                                 </xsl:for-each>
                             </ul>
-                            <h4>Ressources</h4>
+                            <h4>appendices</h4>
                             <ul>
-                                <xsl:for-each select="//ressources/ressource/linkwords/linkword[contains($text, .)]">
-                                    <li><a href="index.html#!content={$id}&amp;ressource={../../@id}"><xsl:value-of select="."/></a></li>
+                                <xsl:for-each select="//appendices/appendix/linkwords/linkword[contains($text, .)]">
+                                    <li><a href="index.html#!content={$id}&amp;appendix={../../@id}"><xsl:value-of select="."/></a></li>
                                 </xsl:for-each>
                             </ul>
                             <h4>Références</h4>

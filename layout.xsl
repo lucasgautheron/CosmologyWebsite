@@ -4,7 +4,7 @@
   xmlns:doc="http://sciencestechniques.fr"
   exclude-result-prefixes="xs doc">
   
-  <xsl:variable name="linkwords" select="//ressources/ressource/linkwords/linkword"/>
+  <xsl:variable name="linkwords" select="//appendices/appendix/linkwords/linkword"/>
   <xsl:function name="doc:find-matching-linkword">
     <xsl:param name="cid"/>
     <xsl:param name="text"/>
@@ -17,7 +17,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="#!content={$cid}&amp;ressource={$linkword[1]}" class="ressource" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+        <a href="#!content={$cid}&amp;appendix={$linkword[1]}" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -238,7 +238,7 @@
         <div class="references"></div>
       </div>
       
-      <div id="ressource">
+      <div id="appendix">
         <h2 class="title"></h2>
         <div class="text"></div>
         <div class="references"></div>
@@ -308,16 +308,16 @@
 </xsl:result-document>
 </xsl:for-each>
   
-<xsl:for-each select="root/ressources/ressource">
+<xsl:for-each select="root/appendices/appendix">
   <xsl:variable name="id" select="./@id"/>
-  <xsl:result-document method="html" href="html/ressources/ressource_{./@id}.html">
+  <xsl:result-document method="html" href="html/appendices/appendix_{./@id}.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 <html lang="fr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
-    <div id="ressource">
+    <div id="appendix">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" />
       <xsl:for-each select="./text//note">
@@ -325,7 +325,7 @@
       </xsl:for-each></div>
       <div id="references">
         <ul>
-          <xsl:for-each select="/root/references/reference[@ressource-id=$id]">
+          <xsl:for-each select="/root/references/reference[@appendix-id=$id]">
             <xsl:sort select="./date" />
             <li><i><a href="references/{./file}" target="_blank"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
           </xsl:for-each>
