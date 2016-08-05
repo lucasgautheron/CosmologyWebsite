@@ -1602,11 +1602,10 @@ Et
                     description: 'One-loop Higgs self-energy diagram',
                     width: 200,
                     height: 120,
-                    incoming: {i1: '10,90'},
-                    outgoing: {o1: '190,90'},
-                    vertex: {v1: '58.5,90', v2: '141.5,90'},
+                    incoming: {i1: '10,60'},
+                    outgoing: {o1: '190,60'},
+                    vertex: {v1: '58.5,90', v2: '141.5,60'},
                     scalar: {line: 'i1-v1,v2-o1', loop: 'v2-v1'},
-                    symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
                     label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
                     t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
                 </feynman>
