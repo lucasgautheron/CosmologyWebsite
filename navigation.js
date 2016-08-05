@@ -228,7 +228,7 @@ function show_ressource(id, updatehash)
     success: function(data) {
       current_ressource = id;
       if(updatehash) update_hash();
-      data_object = $($.parseHTML(data)); 
+      data_object = $($.parseHTML(data, document, true)); 
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
       $('#ressource .references').html(data_object.find('#references').html());
