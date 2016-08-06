@@ -680,20 +680,20 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Comparaison entre modèles d'Univers</h3>
             <p>
                 Dans le graphe ci-dessous, la relation $z\mapsto d_L(z)$ est calculée pour 3 modèles différents. Pour des valeurs suffisantes de $z$ les divergences permettent de contraindre les paramètres cosmologiques.
-                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift" plot="dl" source="distance_luminosite">
+                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift" plot="dl" source="luminosity_distance">
                     Courbe $z \mapsto d_L(z)$ pour plusieurs modèles cosmologiques : Einstein-de Sitter, Hoyle, et $\Lambda$CDM d'après Planck 2013.
                 </figure>
             </p>
             
             <p>
-                <video width="480" height="960" source="animations_expansion" mp4="accelerated_lum.mp4"  webm="accelerated_lum.webm">
+                <video width="480" height="960" source="expansion_animations" mp4="accelerated_lum.mp4"  webm="accelerated_lum.webm">
                     La première image représente le front d'onde d'un signal lumineux d'une source à $z = 5$, reçu aujourd'hui (à $t = 0$). Le quadrillage représente les coordonnées comobiles. Le facteur d'échelle évolue selon $a(t) = \exp(H_0 t)$ (expansion accélérée)
                     Le deuxième graphe représente la distance comobile parcourue par le signal au cours du temps. 
                     Le dernier graphe représente la distance de luminosité telle qu'évaluée en tout point du front d'onde à chaque instant.
                 </video>
             </p>
             <p>
-                <video width="480" height="960" source="animations_expansion" mp4="decelerated_lum.mp4"  webm="decelerated_lum.webm">
+                <video width="480" height="960" source="expansion_animations" mp4="decelerated_lum.mp4"  webm="decelerated_lum.webm">
                     La première image représente le front d'onde d'un signal lumineux d'une source à $z = 5$, reçu aujourd'hui (à $t = 0$). Le quadrillage représente les coordonnées comobiles. Le facteur d'échelle évolue selon $a(t) = \left ( \dfrac{3 H_0 t}{2}\right)^{2/3} $ (expansion ralentie)
                     Le deuxième graphe représente la distance comobile parcourue par le signal au cours du temps. 
                     Le dernier graphe représente la distance de luminosité telle qu'évaluée en tout point du front d'onde à chaque instant.
@@ -1295,13 +1295,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <h4>Résultat</h4>
                 <p>Les équations d'équilibre sont résolues (Relativité générale ou gravitation newtonienne) et conduisent au résultat suivant :</p>
                 <p>
-                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon." plot="wd_mass_radius" source="naine_blanche">
+                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon." plot="wd_mass_radius" source="white_dwarfs">
                 		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot}$ avec une approche entièrement relativiste. ($\mu = 2$).
                 	</figure>
                 </p>
                 
                  <p>
-                	<figure src="wd_profile.svg" title="Profil de densité d'une naine blanche." plot="wd_profile" source="naine_blanche">
+                     <figure src="wd_profile.svg" title="Profil de densité d'une naine blanche." plot="wd_profile" source="white_dwarfs">
                 	    Profil de densité d'une naine blanche de rayon $R = $ 3700 km.  
                 	</figure>
                 </p>
