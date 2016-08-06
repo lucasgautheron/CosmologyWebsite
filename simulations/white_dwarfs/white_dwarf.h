@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <math.h>
-#include <omp.h>
-
 #define PI 3.141592654
 
 #define max(a,b) ((a)>(b)? (a) : (b))
@@ -42,18 +38,7 @@ double find_x_from_pressure(double p, double x0 = 1)
     return x;
 }
 
-const double mu = 2;
-
-const double radmodifier = 0.001;
-
-const double alpha = 0.00018181636;
-const double beta = 499699.060742 * (radmodifier * radmodifier * radmodifier);
-const double r = 0.00000424425 / radmodifier; // r scharw / r sun
-
-const double dchi = 0.0000001;
-const int steps = 5000000;
-
-bool calculate_star(const double x0, const bool relativistic, double &radius, double &mass, double &external_mass)
+bool calculate_star(const double x0, const double _dchi, const bool relativistic, double &radius, double &mass, double &external_mass, bool save_profile = false)
 {
     double x[2], m[2], M[2], p[2], e[2], chi[2];
     
@@ -68,14 +53,16 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
     x[0] = x0;
     p[0] = pressure(x[0]);
     
+    
     char filename[64] = "";
-    sprintf(filename, "masse_%.5f.res", x0);
-    FILE *fp = fopen(filename, "w+");
+    FILE *fp = NULL;
+    if(save_profile)
+    {
+        sprintf(filename, "mass_%.5f.res", x0);
+        fp = fopen(filename, "w+");
+    }
     
     bool converged = false;
-    double _dchi = x0 > 1e4 ? 0.000001 : 0.00001;
-    if(x0 > 1e6) _dchi /= 2.0;
-    //double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
     int i = 1;
     for(; i < steps; ++i)
     {
@@ -108,7 +95,7 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
             break;
         }
         
-        fprintf(fp, "%f %f %f %f %f %f\n", chi[1] * radmodifier, m[1], M[1], p[1], x[1]/3.0, x[1]/3.0 + e_correction);
+        if(save_profile) fprintf(fp, "%f %f %f %f %f %f\n", chi[1] * radmodifier, m[1], M[1], p[1], x[1]/3.0, x[1]/3.0 + e_correction);
         m[0] = m[1];
         M[0] = M[1];
         p[0] = p[1];
@@ -119,18 +106,5 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
     if(!converged) printf("DID NOT CONVERGE : ADD MORE STEPS");
     else printf("%d steps\n", i);
     
-    fclose(fp);
-}
-
-
-int main()
-{
-    double radius, mass, external_mass, x0 = 1000;
-    
-    //calculate_star(0.1, true, radius, mass, external_mass);
-    //calculate_star(1, true, radius, mass, external_mass);
-    //calculate_star(10, true, radius, mass, external_mass);
-    calculate_star(100, true, radius, mass, external_mass);
-    //calculate_star(10000, true, radius, mass, external_mass);
-    return 0;
+    if(save_profile) fclose(fp);
 }

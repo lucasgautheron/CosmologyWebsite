@@ -1,6 +1,6 @@
 rm -rf files/*
 
-php plots_vitesse.php $1 $2
+php velocity_plots.php $1 $2
 
 rm "../../videos/$1elerated_redshift.mp4"
 rm "../../videos/$1elerated_redshift.webm"

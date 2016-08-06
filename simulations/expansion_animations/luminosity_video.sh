@@ -1,6 +1,6 @@
 rm -rf files/*
 
-php plots_luminosite.php $1 $2
+php luminosity_plots.php $1 $2
 
 rm "../../videos/$1elerated_lum.mp4"
 rm "../../videos/$1elerated_lum.webm"
