@@ -3,7 +3,7 @@ set xrange [1:1000]
 set yrange [10**-20:10**5]
 
 set xlabel 'x = mc^{2}/k_{B}T'
-set ylabel 'm n_{X}(x)/n_{eq}(x=1)'
+set ylabel 'm n_{X}(x)/n_{eq}(x=1) x 100 GeV'
 
 set format x "10^{%T}" 
 set format y "10^{%T}" 
