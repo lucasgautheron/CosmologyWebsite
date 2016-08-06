@@ -2,12 +2,12 @@
 
 gX := 2.
 sigmav := 2
-gS[x_] := 10.+90.*(1.+Tanh[mass/x-0.5])
+gS[x_] := 10.+90.*(1.+Tanh[Log[mass/x]-Log[0.5]])/2
 Yeq[x_] := 0.145 * gX/gS[x] * x^1.5 * Exp[-x]
 lambda := 2.76*10^9*mass*sigmav
 
-(*dgS[x_?NumericQ] := Evaluate[D[Log[10.+90.*(1.+Tanh[x-0.5])],x]]/x*)
-dgS[x_?NumericQ] := (90*Sech[x-0.5]/(10.+90.*(1.+Tanh[x-0.5])))/x
+dgS[x_?NumericQ] := 0
+(*dgS[x_?NumericQ] := (45. Sech[0.693147 + Log[x]]^2)/(10. + 45. (1. + Tanh[0.693147 + Log[x]]))*)
 dgSx[x_] := dgS[mass/x]
 
 xmin := 1
