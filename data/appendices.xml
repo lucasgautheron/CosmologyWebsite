@@ -1677,15 +1677,15 @@ Et
        \begin{equation}
        X+X \rightleftharpoons \mbox{ SM }
        \end{equation}</p>
-       Il s'agit donc d'un équilibre enter annihilation des particules WIMP ("X") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
+       Il s'agit donc d'un équilibre entre annihilation des particules WIMP ("X") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
        \begin{equation}
        \Gamma_{ann} \sim n_{X} \langle \sigma v \rangle
        \end{equation}
        Où $n_X$ est la densité de particules WIMP, $\sigma$ leur section efficace d'annihilation et $v$ leur vitesse relative.
-       Puisque $n_X \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $1/H$, le phénomène d'annihilation devient négligeable et la quantité de WIMP est relativement constante. C'est le "freeze-out". 
+       Puisque $n_X \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $H$, le phénomène d'annihilation devient négligeable et la quantité de WIMP est relativement constante. C'est le "freeze-out". 
          <h4>Mécanisme</h4>
          <p>
-            Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_X/(k_B T)$ : 
+            Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_{X}c^2/(k_B T)$ : 
             <ol>
                 <li>Tant que $k_B T \gg m_X$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_X \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
                 <li>Dès que $x \geq 1$, les WIMPs suivent une statistique de Boltzmann grâce à l'équilibre annihilation-création et donc $n_X^{eq}/n_\gamma \propto x^{3/2} e^{-x}$ (Fermi-Dirac non relativiste).</li>
@@ -1695,13 +1695,13 @@ Et
             \begin{equation}
             \dfrac{dN_x}{dt} = -\langle \sigma_{ann} v \rangle n_X^2 + \alpha n_{SM}^2
             \end{equation}
-            Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $X$ à partir de particules du modèle standard, qui est inconnu. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
+            Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $X$ à partir de particules du modèle standard, qui est inconnu et <i>a priori</i> modèle-dépendant. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
 
             \begin{equation}
             \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right ) V(t)
             \end{equation}
 
-            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(t)}$, et $n_X^{eq}(t) = K n_{\gamma}^2(t) x(t)^{3}$L'équation peut alors être réécrite :
+            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(t)}$, et $n_X^{eq}(t) = K n_{\gamma}(t) x(t)^{3/2} e^{-x}$L'équation peut alors être réécrite :
 
             \begin{equation}
             \dfrac{dn_x}{dt} + 3 H(t) n_x(t) + \langle \sigma_{ann} v \rangle \left ( n_X^2  - {n_X^{eq}}^2\right ) = 0
