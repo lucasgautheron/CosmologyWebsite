@@ -127,9 +127,25 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             <p><b>Tenseur énergie-impulsion d'un champ</b> : Pour des champs $\phi$ dont la dynamique est décrite par un lagrangian $\mathcal{L}$, le tenseur énergie impulsion s'écrit :
                 \begin{equation}
-                T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\mu}\vec{\phi})} \partial_{\nu} \vec{\phi} - \eta^{\mu\nu} \mathcal{L}
+                T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\mu}\vec{\phi})} \partial_{\nu} \vec{\phi} - g^{\mu\nu} \mathcal{L}
                 \end{equation}
                 (Obtenu en variant l'action par une translation infinitésimale locale de l'espace temps $x^{\mu} \to x^{\mu} + \epsilon^{\mu}(x^\mu)$, pour des champs classiques, solutions des équations du mouvements (les équations d'Euler-Lagrange) (dits "on-shell").</p>
+            <h3>Conservation locale et symétrie</h3>
+            <p>
+                Le tenseur énergie-impulsion d'un champ, d'un fluide, ou d'une particule, en négligeant les interactions gravitationnelles, vérifie l'équation de conservation locale (divergence nulle) :
+                \begin{equation}
+                \partial_\mu T^{\mu\nu} = 0
+                \end{equation}
+                
+                Le tenseur $T^{\mu\nu}$ intervenant dans l'équation d'Einstein est symétrie. Or, l'expression donnée ci-dessus pour le tenseur énergie-impulsion d'un champ ne l'est pas forcément.
+                Mais il est possible de trouver un champ physiquement équivalent, vérifiant également l'équation de conservation locale, en réalisant une substituion :
+                \begin{equation}
+                T^{\mu\nu} \to T^{\mu\nu} + \partial_{\alpha} G^{\alpha\mu\nu}
+                \end{equation}
+                Il suffit alors que $G$ soit anti-symétrique en ses deux premiers indices pour que l'équation de conservation soit toujours vérifiée, et que ce terme supplémentaire absorbe la composante antisymétrique de la représentation non symétrique de $T^{\mu\nu}$.
+            </p>
+            
+            
         </text>
 <!--        <text><p>Description, déf, fluide parfait. Construction formalisme lagrangien + réduction par liberté en requérant symétrie. </p></text>-->
         <linkwords>
