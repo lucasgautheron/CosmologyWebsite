@@ -10,7 +10,7 @@ const double alpha = 0.00018181636;
 const double beta = 499699.060742 * (radmodifier * radmodifier * radmodifier);
 const double r = 0.00000424425 / radmodifier; // r scharw / r sun
 
-const double dchi = 0.000001;
+const double dchi = 0.00005;
 const int steps = 20000000;
 
 #include "white_dwarf.h"
