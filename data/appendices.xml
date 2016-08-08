@@ -1630,7 +1630,7 @@ Et
                 \begin{equation}
                 \lambda \displaystyle\int_{0}^{\Lambda} \dfrac{d^4 k}{k^2 - m^2} = \lambda \mathcal{O}(\Lambda^2)  
                 \end{equation}
-                Où la divergence de l'intégrale a été gérée en introduisant un "cut-off" $\Lambda$, une énergie maximale au-delà de laquelle on attend que la théorie s'effonde (typiquement $\Lambda &lt; M_{planck} = 10^{19} $ GeV).
+                Où la divergence de l'intégrale a été gérée en introduisant un "cut-off" $\Lambda$, une énergie maximale au-delà de laquelle on attend que la théorie s'effondre (typiquement $\Lambda &lt; M_{planck} = 10^{19} $ GeV).
                 
                 Il en résulte une correction du terme de masse $\mu_{effectif}^2 \sim \mu^2 - \lambda \mathcal{O}(\Lambda^2)$. 
                 Cette masse corrigée doit être de l'ordre de l'échelle électrofaible. Le terme d'interaction est attendu <i>a priori</i> aux alentours de l'échelle de Planck (si le modèle standard est valide jusqu'à cet échelle).
