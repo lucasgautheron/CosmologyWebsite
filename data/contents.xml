@@ -480,7 +480,7 @@
                 Le processus de formation détermine la distribution de leur masse attendue notée $M_{PBH}$, qui peut s'étaler sur un très grand spectre a priori. Des trous noirs primordiaux de masse $M_{PBH}$ inférieure à $\sim 10^{-16} M_{\odot}$ se seraient déjà évaporés, un intervalle de plusieurs dizaines d'ordre de grandeurs au-dessus de ce seuil est encore permis.
                 En raison de l'importance de cet intervalle des techniques très différentes sont employées pour en contraindre des régions particulières. L'état de la recherche sur le sujet est représenté par la figure suivante :
 
-                <figure src="images/pbh_constraints.png" title="Contraintes actuelles sur les trous-noirs primordiaux.">
+                <figure src="pbh_constraints.png" title="Contraintes actuelles sur les trous-noirs primordiaux.">
                   La figure montre l'état des limites supérieures sur la portion de matière noire ($\Omega_m - \Omega_b$) pouvant être contenue sous forme de trous noirs primordiaux d'une masse $M_{PBH}$ donnée, et la technique ayant conduit à ces limites.
                 </figure>
 
