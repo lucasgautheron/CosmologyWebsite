@@ -1705,7 +1705,7 @@ Et
          <p>
             Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_{X}c^2/(k_B T)$ :
             <ol>
-                <li>Tant que $k_B T \gg m_X$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_X \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
+                <li>Tant que $k_B T \gg m_X c^2$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_X \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
                 <li>Dès que $x \geq 1$, les WIMPs suivent une statistique de Boltzmann grâce à l'équilibre annihilation-création et donc $n_X^{eq}/n_\gamma \propto x^{3/2} e^{-x}$ (Fermi-Dirac non relativiste).</li>
                 <li>Avec l'expansion, les WIMPs sont dilués et il est de plus en plus rare que des paires se forment. Le nombre de WIMP devient constant et $n_X \propto x^3$.</li>
             </ol>
@@ -1719,28 +1719,41 @@ Et
             \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right ) V(t)
             \end{equation}
 
-            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(t)}$, et $n_X^{eq}(t) = K n_{\gamma}(t) x(t)^{3/2} e^{-x}$L'équation peut alors être réécrite :
+            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(t)}$, et $n_X^{eq}(t) = K n_{\gamma}(t) x(t)^{3/2} e^{-\chi}$L'équation peut alors être réécrite :
 
             \begin{equation}
-            \dfrac{dn_x}{dt} + 3 H(t) n_x(t) + \langle \sigma_{ann} v \rangle \left ( n_X^2  - {n_X^{eq}}^2\right ) = 0
+            \dfrac{dn_\chi}{dt} + 3 H(t) n_\chi(t) + \langle \sigma_{ann} v \rangle \left ( n_\chi^2  - {n_\chi^{eq}}^2\right ) = 0
             \end{equation}
 
             Le second terme donne la diminution de la densité due à l'expansion, le troisième celui du à l'annihilation.
-            Le Freeze-out intervient donc lorsque $\langle \sigma_{ann} v \rangle n_X \sim H(t)$.
+            Le Freeze-out intervient donc lorsque $\langle \sigma_{ann} v \rangle n_\chi \sim H(t)$.
 
             L'équation d'évolution de la densité peut-être résolue en réalisant quelques hypothèses supplémentaires, notamment sur la dépendance de $\sigma_{ann}$ en l'énergie $E$ (ou la vitesse relative entre WIMP $v$).
             Si elle est supposée constante, on attend, pour des particules de masse proche de 100 GeV, que $\langle \sigma v \rangle \sim 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Or il se trouve que cette valeur est proche de ce qui est attendu pour des processus liés à l'interaction faible !
             C'est le "WIMP miracle" : des particules à l'échelle électrofaible, et interagissant via l'interaction faible, pourraient expliquer entièrement le phénomène de la matière noire.
 
             <figure src="wimp_abundance.svg" plot="wimp_abundance" source="WIMP" title="Densité massique normalisée d'un WIMP en fonction de $m/k_B T$">
-                Densité massique de WIMP pour divers hypothèses de masse, avec $\langle \sigma v \rangle = 2 \times 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Cette densité est comparée à la densité d'équilibre. On observe très clairement une rupture de l'équilibre thermodynamique (freeze-out) pour $T \sim m/20$.
+                Densité massique de WIMP pour divers hypothèses de masse, avec $\langle \sigma v \rangle = 2 \times 10^{-26} \mbo\chi{cm}^2.\mbo\chi{s}^{-1}$. Cette densité est comparée à la densité d'équilibre. On observe très clairement une rupture de l'équilibre thermodynamique (freeze-out) pour $T \sim m/20$.
                 La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
             </figure>
 
 
-            Pour approfondir, voir ces <a href="https://www.mpi-hd.mpg.de/lin/events/isapp2011/pages/lectures/Schwetz.pdf" target="_blank">excellentes diapositives sur le sujet</a>.
+            Pour approfondir, voir ces <a href="https://www.mpi-hd.mpg.de/lin/events/isapp2011/pages/lectures/Schwetz.pdf" target="_blank">e\chicellentes diapositives sur le sujet</a>.
          </p>
-
+         <h4>Contraintes obtenues grâce au fond diffus cosmologique</h4>
+         <p>Des limites supérieures pour le taux d'annihilation $\langle \sigma v \rangle$ grâce aux mesures effectuées sur le CMB. En effet, l'annihilation de paires conduit à un dépôt d'énergie sous forme de rayonnement qui modifie son spectre.
+         Par exemple, pour une annihilation $\chi\chi\toe^+ e^-$, la paire électron/positron formée est susceptible de rayonner et des photons seront créés. L'énergie déposée est proportionnelle à $f_{eff} \langle \sigma v \rangle$, où $f_{eff}$ détermine la fraction d'énergie finalement déposée dans le fond diffus.
+         Ce phénomène permet d'établir des limites sur $\langle \sigma v \rangle$ en fonction de $m_\chi$. Les meilleurs résultats ont ainsi été obtenus par Planck : 
+         <figure src="cmb_wimp_constraints.png" title="Limites sur la section d'annihilation de WIMP obtenus à partir des mesures de Planck">
+         Limites à CL = 95 % sur la section-efficace d'annihilation et la masse des WIMP en supposant qu'ils rendent compte de l'intégrité de la matière noire.
+         La zone en bleu représente l'espace des paramètres exclu par Planck. La zone rouge représente l'espace des paramètres compatible avec des WIMPs comme relatique thermale en tant que responsable de l'intégrité de la matière noire.
+         Les zones hachurées correspondent aux valeurs de $(\langle \sigma v \rangle, m)$ qui pourraient rendre compte dans une interprétation WIMP des anomalies du spectre de positrons observé par AMS, Fermi et Pamela, et de l'excès dans les rayons gamma observé par Fermi dans le centre galactique.
+         La limite verte pointillée correspond à la limite maximale intrinsèque à la méthode due à la variance cosmique.
+         Source : <a href="http://www.insu.cnrs.fr/node/5108">http://www.insu.cnrs.fr/node/5108</a>.
+         </figure>
+         On observe ainsi que ce type de mesure permet déjà de contraindre la masse des WIMP qui doit être supérieure à la dizaine de GeV. Par ailleurs l'interprétation de l'excès du spectre de positrons du rayonnement cosmique en terme de WIMPs semble exclue.
+         Il existe une espace des paramètres non exclu pouvant rendre compte à la fois de l'intégrité de la matière noire, et de l'excès Fermi-<acronym title="Galactic Center">GC</acronym> mais cet excès peut avoir beaucoup d'autres explications plus plausibles.
+         </p>
          <h4>Candidats</h4>
          <p>La supersymétrie prévoit plusieurs bons candidats pour les WIMPs, notamment le neutralino.</p>
       </text>
