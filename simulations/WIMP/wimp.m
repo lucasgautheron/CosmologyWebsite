@@ -16,7 +16,7 @@ cell[x_, y_] := 1.*Evaluate[xmin+x*(xmax-xmin)/Npts]
 cell[x_, y_] := 1.*Evaluate[(xmax/xmin)^((x+1)/Npts)]
 
 Npts := 500
-testing = Array[cell, {Npts, 6}, {0, 0}]
+testing = Array[cell, {Npts, 8}, {0, 0}]
 
 
 For[i = 0, i <= Npts, i++, testing[[i,2]] = Evaluate[Yeq[testing[[i,1]]]/Yeq[1.]]]
@@ -47,7 +47,14 @@ Clear[sol];
 Clear[W];
 mass = 50000.
 sol = NDSolve[{W'[x] == (lambda/(x*x)) * (1.+3.*dgSx[x]) * (Exp[2*Log[Yeq[x]]-W[x]] - Exp[W[x]] ) , W[xmin] == Log[Yeq[xmin]]}, W, {x, xmin, xmax}]
-For[i = 0, i <= Npts, i++, testing[[i,6]] = mass*Evaluate[Exp[W[testing[[i,1]]]]/Yeq[1.] /. sol][[1]]]
+For[i = 0, i <= Npts, i++, testing[[i,7]] = mass*Evaluate[Exp[W[testing[[i,1]]]]/Yeq[1.] /. sol][[1]]]
+
+Clear[sol];
+Clear[W];
+mass = 100.
+sigmav := 200.
+sol = NDSolve[{W'[x] == (lambda/(x*x)) * (1.+3.*dgSx[x]) * (Exp[2*Log[Yeq[x]]-W[x]] - Exp[W[x]] ) , W[xmin] == Log[Yeq[xmin]*1.01]}, W, {x, xmin, xmax}]
+For[i = 0, i <= Npts, i++, testing[[i,8]] = mass*Evaluate[Exp[W[testing[[i,1]]]]/Yeq[1.] /. sol][[1]]]
 
 (*LogLogPlot[Evaluate[Exp[W[x]]/Yeq[1.] /. s], {x, xmin, xmax}, PlotRange -> All]*)
 
