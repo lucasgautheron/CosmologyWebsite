@@ -971,8 +971,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <appendix id="302">
         <title>ATLAS</title>
         <text><p><b>ATLAS</b> (A Toroidal Large ApparatuS) est un détecteur installé sur le LHC (Large Hadron Collider), le plus grand accélérateur de particules au monde. Cette expérience étudie les produits de collisions entre deux faisceaux de protons à une énergie de centre de masse de plusieurs TeV (8 TeV jusqu'en 2012, 13 TeV à partir de 2015). Cette expérience a notamment permis la découverte du boson de Higgs en 2012 conjointement avec CMS, un autre détecteur du LHC.</p>
-        </text>
-        
         <h4>Recherche de matière noire</h4>
              <p>
                  Les données collectées dans les expériences de collisions de particules sont analysées à la recherche de matière noire. Celle-ci devant interagir très faiblement avec la matière ordinaire, plusieurs modèles prévoient que la détection directe (par l'étude des produits de désintégration ou par interaction avec les différents instruments comme les calorimètres) soit impossible. Cependant, il est possible d'utiliser de telles expériences pour réaliser une détection indirecte de la matière noire. Pour cela, on utilise la conservation de l'énergie-impulsion : l'énergie et la quantité de mouvement des produits de la collision doivent être égale à celle disponible. En particulier, l'impulsion totale dans le plan perpendiculaire aux faisceaux des protons qu'on collisionne (appelée impulsion transverse et notée $\vec{p}_T$) doit être nulle. Les expériences ATLAS et CMS menées au LHC ayant une couverture angulaire hermétique ($\sim$ 4$\pi$), il est attendu qu'elles soient capables de détecter la plupart des particules ayant une impulsion transverse non négligeable. En sommant cette composante sur l'ensemble des particules issues d'une collision, on devrait retrouver $\vec{0}$. En réalité ce n'est pas ce qu'on observe pour plusieurs raisons. D'abord, le détecteur possède certaines limitations (limite de résolution en énergie, efficacité de reconstruction des traces). De plus, les neutrinos pouvant être produits dans les collisions n'interagissent pas avec le détecteur et emportent souvent une quantité de mouvement non négligeable. L'écart entre la valeur d'énergie transverse attendue et l'énergie transverse observée est appelée "énergie transverse manquante" ou en anglais "missing transverse energy" et est notée $E_T^{miss}$ et vaut donc :
@@ -988,6 +986,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                    Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. Des exemples de signatures de nouvelle physique (dimensions supplémentaires ou supersymmétrie) sont représentées en pointillés.
                 </figure>
              </p>
+        </text>
         <linkwords>
             <linkword>ATLAS</linkword>
         </linkwords>
