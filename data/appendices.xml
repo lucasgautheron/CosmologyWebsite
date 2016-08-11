@@ -1779,7 +1779,7 @@ Et
           Où $G$ est le tenseur de force du champ de gluons, et $G_{a}^{\mu\nu} = \epsilon^{\alpha\beta\mu\nu} G_{a\alpha\beta}$ est un pseudo-tenseur, et donc non-invariant par réflection, et donc viole la symétrie $T$. 
           En conséquence, il viole aussi la symétrie $CP$.
           
-          $\bar{\theta}$ est la contribution de deux termes : $\theta$, un paramètre libre quelconque, et $\theta_{q} \sim - \arg \det m_q$ où $\textbf{m_q}$ est la matrice des masses des quarks.
+          $\bar{\theta}$ est la contribution de deux termes : $\theta$, un paramètre libre quelconque, et $\theta_{q} \sim - \arg \det \mathbf{m_q}$ où $\mathbf{m_q}$ est la matrice des masses des quarks.
           
           Une solution serait de considérer que ce paramètre doit être nul en postulant la symétrie $CP$, mais celle-ci étant violée par l'interaction faible, il n'y a pas de forte motivation pour cela, pas même suggérée par des raisons anthropiques. Par ailleurs le paramètre effectif $\bar{\theta}$ étant la somme de la contribution de deux effets sans lien a priori, imposer sa nullité revient à requérir que $\theta$ et $\theta_q$ soient très proches, de différence relative inférieur à $10^{-10}$, un ajustement fin qui semble très non naturel.
           </p>
@@ -1789,7 +1789,7 @@ Et
               Un champ scalaire associé $\phi_a$ est introduit, ainsi qu'un paramètre $f_a$, de sorte que la transformation $U(1)_{PQ}$ d'angle $\alpha$ le transforme en :
               \begin{equation}
               \phi_a \to \phi_a + \alpha f_a
-              \end{equation
+              \end{equation}
               Le Lagrangien se réécrit alors :
               \begin{equation}
               \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a \partial^{\mu}\phi_a + \left [ \bar{\theta} - \dfrac{\phi_a}{f_a} \right ]  \dfrac{\alpha_s}{8\pi}  G_{a\mu\nu}\tilde{F}_{a}^{\mu\nu} + ...
@@ -1824,12 +1824,14 @@ Et
               <ul>
                   <li>Production stellaire, testée par l'expérience <a href="http://cast.web.cern.ch/CAST/CAST.php" target="_blank">CAST</a> notamment</li>
                   <li>Effets sur la polarisation : les axions se couplant avec les photons, ils induisent une modification des équations de Maxwell. L'expérience <a href="http://pvlas.ts.infn.it/" target="_blank">PVLAS</a> recherche de tels effets.</li>
-                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}$ survient avant l'obstacle et une reconversion dans le sens opposé à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
+                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}$ survient avant l'obstacle et une reconversion dans le sens $\mbox{Axion}\to\gamma$ à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
               </ul>
           </p>
       </text>
       <linkwords>
            <linkword>axions</linkword>
+           <linkword>Axion</linkword>
+           <linkword>axion</linkword>
       </linkwords>
     </appendix>
 </appendices>
