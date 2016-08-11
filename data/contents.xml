@@ -474,6 +474,9 @@
                 <h4>Axions</h4>
               <p>
                   Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
+                  Leur prédiction repose sur le fait que selon le modèle standard, le neutron possède un moment dipolaire électrique $d_n$ non nul, proportionnel à un paramètre sans dimension noté $\bar{\theta}$. La mesure de $d_n$ est obtenue en comparant la fréquence de précession de Larmor de neutrons plongés dans un des champs (E,B) parallèles ou de sens opposés. La valeur ainsi obtenue donne $\bar{\theta}  &lt; 10^{-10}$.
+                  Cette valeur étant très faible, Roberto Peccei et Helen Quinn ont suggéré en 1977 qu'il puisse prendre son origine dans un champ scalaire (le champ d'axion) associé à une nouvelle symétrie $U(1)$. Le paramètre $\bar{\theta}$ serait proportionnel à la valeur moyenne de ce champ qui tendrait vers 0, et dont l'équation d'état serait celle d'un condensat de pression nulle, donc équivalent à de la matière noire froide.
+                  Le couplage des actions avec la matière entraîne des prédictions testables, notamment dans des processus stellaires.
               </p>
               
               <h4>MACHOs</h4>

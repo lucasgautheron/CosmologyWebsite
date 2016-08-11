@@ -1755,7 +1755,7 @@ Et
          Il existe une espace des paramètres non exclu pouvant rendre compte à la fois de l'intégrité de la matière noire, et de l'excès Fermi-<acronym title="Galactic Center">GC</acronym> mais cet excès peut avoir beaucoup d'autres explications plus plausibles.
          </p>
          <h4>Candidats</h4>
-         <p>La supersymétrie prévoit plusieurs bons candidats pour les WIMPs, notamment le neutralino.</p>
+         <p>La supersymétrie prévoit plusieurs candidats pour les WIMPs, notamment le neutralino, qui pourrait être détecté au LHC.</p>
       </text>
       <linkwords>
            <linkword>WIMP</linkword>
@@ -1765,10 +1765,68 @@ Et
      <appendix id="702">
       <title>Axions</title>
       <text>
-          <p>Les axions sont des particules hypothétiques initialement introduites dans le cadre de la théorie Peccei–Quinn afin de résoudre le problème CP-fort. Ils se sont révélés être de bons candidats pour la matière noire par la suite.</p>
+        <p>
+          Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
+          Leur prédiction repose sur le fait que selon le modèle standard, le neutron possède un moment dipolaire électrique $d_n \sim e m_q \bar{\theta} / m_n^2$ non nul, proportionnel à un paramètre sans dimension noté $\bar{\theta}$. La mesure de $d_n$ est obtenue en comparant la fréquence de précession de Larmor de neutrons plongés dans un des champs (E,B) parallèles ou de sens opposés. Les mesures indiquent $|\bar{\theta}|  &lt; 10^{-10}$.
+          Cette valeur étant très faible, Roberto Peccei et Helen Quinn ont suggéré en 1977 qu'il puisse prendre son origine dans un champ scalaire (le champ d'axion) associé à une nouvelle symétrie $U(1)$. Le paramètre $\bar{\theta}$ serait proportionnel à la valeur moyenne de ce champ qui tendrait vers 0, et dont l'équation d'état serait celle d'un condensat de pression nulle, donc équivalent à de la matière noire froide.
+          Le couplage des actions avec la matière entraîne des prédictions testables, notamment dans des processus stellaires.
+         </p>
           <h4>Problème CP fort</h4>
+          <p>Le problème CP fort prend son origine, après réécriture du modèle standard sous une forme appropriée, dans un terme effectif de la forme :
+          \begin{equation}
+          \mathcal{L} \supset \dfrac{\bar{\theta}\alpha_s}{8\pi} G_{a\mu\nu}\tilde{G}_{a}^{\mu\nu}
+          \end{equation}
+          Où $G$ est le tenseur de force du champ de gluons, et $G_{a}^{\mu\nu} = \epsilon^{\alpha\beta\mu\nu} G_{a\alpha\beta}$ est un pseudo-tenseur, et donc non-invariant par réflection, et donc viole la symétrie $T$. 
+          En conséquence, il viole aussi la symétrie $CP$.
+          
+          $\bar{\theta}$ est la contribution de deux termes : $\theta$, un paramètre libre quelconque, et $\theta_{q} \sim - \arg \det m_q$ où $\textbf{m_q}$ est la matrice des masses des quarks.
+          
+          Une solution serait de considérer que ce paramètre doit être nul en postulant la symétrie $CP$, mais celle-ci étant violée par l'interaction faible, il n'y a pas de forte motivation pour cela, pas même suggérée par des raisons anthropiques. Par ailleurs le paramètre effectif $\bar{\theta}$ étant la somme de la contribution de deux effets sans lien a priori, imposer sa nullité revient à requérir que $\theta$ et $\theta_q$ soient très proches, de différence relative inférieur à $10^{-10}$, un ajustement fin qui semble très non naturel.
+          </p>
           <h4>Axions</h4>
+          <p>
+              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn.
+              Un champ scalaire associé $\phi_a$ est introduit, ainsi qu'un paramètre $f_a$, de sorte que la transformation $U(1)_{PQ}$ d'angle $\alpha$ le transforme en :
+              \begin{equation}
+              \phi_a \to \phi_a + \alpha f_a
+              \end{equation
+              Le Lagrangien se réécrit alors :
+              \begin{equation}
+              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a \partial^{\mu}\phi_a + \left [ \bar{\theta} - \dfrac{\phi_a}{f_a} \right ]  \dfrac{\alpha_s}{8\pi}  G_{a\mu\nu}\tilde{F}_{a}^{\mu\nu} + ...
+              \end{equation}
+              
+              Il apparait que le terme violant la symétrie CP s'annulle si $\bar{\theta} = \dfrac{\phi_a}{f_a}$. 
+              Or le second terme dans l'équation précédente correspond à un potentiel pour $\phi_a$ qui ramène sa valeur moyenne dans le vide (VEV) $\langle \phi_a \rangle$ à $f_a \bar{\theta}$, restaurant la symétrie $CP$.
+              En définissant $\phi_a' = \phi_a - \langle \phi_a \rangle$ le Lagrangian contient les termes :
+              
+              \begin{equation}
+              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a' \partial^{\mu}\phi_a' - m_a^2 \phi_a' \phi_a'  + V(\phi_a')
+              \end{equation}
+              
+              Comme montré par Weinberg et Wilczek, ce champ $\phi_a'$ est celui d'un nouveau boson pseudo-scalaire, l'axion.
+              
+          </p>
           <h4>Candidat pour la matière noire</h4>
+          <p>
+              Lorsque l'univers était très chaud, et que $T \sim f_a c^2 /k_B$, alors le champ d'axion vérifiait approximativement $\phi_a' \sim f_a$.
+              En refroidissant, une transition s'est produite ramenant $\phi_a'$ vers sa VEV, c'est-à-dire 0. Dès lors, l'équation cosmologique gouvernant $\phi_a'$ au cours du temps est :
+              \begin{equation}
+              \dfrac{d^2\phi_a'}{dt^2} + 3 H \dfrac{d\phi_a'}{dt} + \dfrac{m_a^2 c^2}{\hbar^2} \phi_a' = 0
+              \end{equation}
+              Il s'agit de l'équation d'un oscillateur amorti, donc le champ d'axion tend bien vers 0. Ce faisant, il oscille très rapidement : $m_a \sim \Lambda_{QCD}^2/f_a \sim 10^{-5}$ eV, donc $\omega_a = m_a c /\hbar \sim 10^{18} s^{-1} \gg H_0$
+              Par ailleurs la densité d'énergie moyenne de ce champ est $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 + \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle$, la somme des énergies cinétiques et potentielles, donc les valeur moyennes sont égales pour un oscillateur.
+              Cependant, la pression moyenne est donnée par $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 - \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle \simeq 0$
+              Donc le champ d'axion se refroidissant a l'équation d'état $P=0$, comme la matière froide : l'axion est un candidat à la matière froide.              
+          </p>
+          <h4>Recherche</h4>
+          <p>
+              Selon les modèles, l'axion se couple différemment avec le reste de la matière, et plusieurs tests expérimentaux existent :
+              <ul>
+                  <li>Production stellaire, testée par l'expérience <a href="http://cast.web.cern.ch/CAST/CAST.php" target="_blank">CAST</a> notamment</li>
+                  <li>Effets sur la polarisation : les axions se couplant avec les photons, ils induisent une modification des équations de Maxwell. L'expérience <a href="http://pvlas.ts.infn.it/" target="_blank">PVLAS</a> recherche de tels effets.</li>
+                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}$ survient avant l'obstacle et une reconversion dans le sens opposé à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
+              </ul>
+          </p>
       </text>
       <linkwords>
            <linkword>axions</linkword>
