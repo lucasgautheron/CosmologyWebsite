@@ -1824,7 +1824,7 @@ Et
               <ul>
                   <li>Production stellaire, testée par l'expérience <a href="http://cast.web.cern.ch/CAST/CAST.php" target="_blank">CAST</a> notamment</li>
                   <li>Effets sur la polarisation : les axions se couplant avec les photons, ils induisent une modification des équations de Maxwell. L'expérience <a href="http://pvlas.ts.infn.it/" target="_blank">PVLAS</a> recherche de tels effets.</li>
-                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}\$ survient avant l'obstacle et une reconversion dans le sens $\mbox{Axion}\to\gamma$ à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
+                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}\hphantom{s}$ survient avant l'obstacle et une reconversion dans le sens $\mbox{Axion}\to\gamma$ à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
               </ul>
           </p>
       </text>
