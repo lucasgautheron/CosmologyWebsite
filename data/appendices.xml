@@ -1807,7 +1807,7 @@ Et
               \end{equation}
               Le Lagrangien se réécrit alors :
               \begin{equation}
-              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a \partial^{\mu}\phi_a + \left [ \bar{\theta} - \dfrac{\phi_a}{f_a} \right ]  \dfrac{\alpha_s}{8\pi}  G_{a\mu\nu}\tilde{F}_{a}^{\mu\nu} + ...
+              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a \partial^{\mu}\phi_a + \left [ \bar{\theta} - \dfrac{\phi_a}{f_a} \right ]  \dfrac{\alpha_s}{8\pi}  G_{a\mu\nu}\tilde{G}_{a}^{\mu\nu} + ...
               \end{equation}
               
               Il apparait que le terme violant la symétrie CP s'annulle si $\bar{\theta} = \dfrac{\phi_a}{f_a}$. 

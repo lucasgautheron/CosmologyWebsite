@@ -445,18 +445,17 @@
         <content id="16" type="timeline">
     	<title>Recherche de la matière noire</title>
         <image src="dark_matter.jpg">
-            Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. <a href="chandra.harvard.edu/photo/2006/1e0657/index.html" target="_blank">Source</a>.
+            Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
         </image>
     	<color>#a9F00d</color>
     	<text>
     	  <h3>Les traces de la matière noire</h3>
             <p>
               Aujourd'hui, nombreuses sont les observations qui révèlent par le biais de la gravitation la présence d'une quantité importante de matière invisible. 
-              TODO donner chiffres dans la liste qui suit.
               <ul>
-                  <li><b>Courbes de rotation des galaxies </b> : La distribution des vitesses observée au sein des galaxies indique une présence de masse significativement plus importante que celle estimée à partir des ondes électromagnétiques qu'elles émettent ("lumière"). </li>  
+                  <li><b>Courbes de rotation des galaxies </b> : La distribution des vitesses observée au sein des galaxies indique une présence de masse significativement plus importante que celle estimée à partir des ondes électromagnétiques qu'elles émettent ("lumière"), et s'étendant aux-delà des bords visibles.</li>  
                   <li><b>Densité de matière froide de l'Univers</b> : Les observations cosmologiques et la structure de l'Univers révèlent que parmi la matière "froide" (non relativiste) qui compose l'Univers, un peu moins de 20 % seulement est visible (étoiles, planètes, gaz interstellaire). Le reste est inexpliqué !</li>
-                  <li><b>Effet de lentille gravitationnelle</b> : Des rayons lumineux passant près d'une masse importante sont déviés. Cet effet dit de "lentille gravitationnelle" permet donc de déceler la présence de matière même si celle-ci est invisible directement.</li>
+                  <li><b>Effet de lentille gravitationnelle</b> : Des rayons lumineux passant près d'une masse importante sont déviés. Cet effet dit de "lentille gravitationnelle" permet donc de déceler la présence de matière même si celle-ci est invisible directement (voir image ci-contre).</li>
               </ul>          
             </p>
              <h3>Candidats pour la matière noire</h3>
