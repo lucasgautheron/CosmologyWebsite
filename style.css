@@ -87,11 +87,9 @@ div#appendix, div#image
 {
     float: left;
     width: 32%;
-    display: none;
-    /*background-color: #444;
-    color: white;*/
 }
 
+div#appendix { display: none; }
 div#image img { width: 100%; }
 
 div#navigation
