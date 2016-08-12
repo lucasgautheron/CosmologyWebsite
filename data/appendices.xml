@@ -971,6 +971,21 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <appendix id="302">
         <title>ATLAS</title>
         <text><p><b>ATLAS</b> (A Toroidal Large ApparatuS) est un détecteur installé sur le LHC (Large Hadron Collider), le plus grand accélérateur de particules au monde. Cette expérience étudie les produits de collisions entre deux faisceaux de protons à une énergie de centre de masse de plusieurs TeV (8 TeV jusqu'en 2012, 13 TeV à partir de 2015). Cette expérience a notamment permis la découverte du boson de Higgs en 2012 conjointement avec CMS, un autre détecteur du LHC.</p>
+        <h4>Recherche de matière noire</h4>
+             <p>
+                 Les données collectées dans les expériences de collisions de particules sont analysées à la recherche de matière noire. Celle-ci devant interagir très faiblement avec la matière ordinaire, plusieurs modèles prévoient que la détection directe (par l'étude des produits de désintégration ou par interaction avec les différents instruments comme les calorimètres) soit impossible. Cependant, il est possible d'utiliser de telles expériences pour réaliser une détection indirecte de la matière noire. Pour cela, on utilise la conservation de l'énergie-impulsion : l'énergie et la quantité de mouvement des produits de la collision doivent être égale à celle disponible. En particulier, l'impulsion totale dans le plan perpendiculaire aux faisceaux des protons qu'on collisionne (appelée impulsion transverse et notée $\vec{p}_T$) doit être nulle. Les expériences ATLAS et CMS menées au LHC ayant une couverture angulaire hermétique ($\sim$ 4$\pi$), il est attendu qu'elles soient capables de détecter la plupart des particules ayant une impulsion transverse non négligeable. En sommant cette composante sur l'ensemble des particules issues d'une collision, on devrait retrouver $\vec{0}$. En réalité ce n'est pas ce qu'on observe pour plusieurs raisons. D'abord, le détecteur possède certaines limitations (limite de résolution en énergie, efficacité de reconstruction des traces). De plus, les neutrinos pouvant être produits dans les collisions n'interagissent pas avec le détecteur et emportent souvent une quantité de mouvement non négligeable. L'écart entre la valeur d'énergie transverse attendue et l'énergie transverse observée est appelée "énergie transverse manquante" ou en anglais "missing transverse energy" et est notée $E_T^{miss}$ et vaut donc :
+
+\begin{equation}
+E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
+\end{equation}
+
+             Le nombre d'évènements attendu pour une énergie transverse manquante donnée dans le cadre du modèle standard (bruit de fond) peut-être estimé à l'aide de simulations Monte-Carlo. Si de la matière noire est produite dans les collisionneurs, et qu'elle traverse les instruments du détecteur sans réagir, il y aura un surplus d'énergie transverse manquante, et un signal se dégagera au-delà du bruit de fond. Aucune déviation significative n'a été observée par les expériences ATLAS et CMS à l'issue du Run1 terminé en 2012.
+
+                <figure src="atlas_1j_etm.png" title="Distribution $E_T^{miss}$ pour les évènements associés avec la production d'un jet dans ATLAS">
+                   L'objet ici est de rechercher la production de matière noire associée à la production d'un jet (matière hadronique/quarks/gluons émise dans une certaine direction)
+                   Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. Des exemples de signatures de nouvelle physique (dimensions supplémentaires ou supersymmétrie) sont représentées en pointillés.
+                </figure>
+             </p>
         </text>
         <linkwords>
             <linkword>ATLAS</linkword>
@@ -1680,83 +1695,82 @@ Et
      <appendix id="701">
       <title>WIMP</title>
       <text>
-         <p>Les WIMP (Weakly Interacting Massive Particles, particules massives interagissant faiblement) sont des particules postulées afin de donner une réponse au problème de la matière noire. De telles particules sont prédites par différentes théories telles que la supersymétrie.</p>
+         <p>Les WIMP (Weakly Interacting Massive Particles, particules massives interagissant faiblement) sont des particules postulées afin de donner une réponse au problème de la matière noire, et en sont même des candidats privilégiés. En effet, leur masse ne doit pas être très éloignée de l'échelle électrofaible (au plus quelques centaines de TeV) et leur section-efficace d'interaction de l'ordre l'interaction faible : c'est le "miracle WIMP". A ce titre il existe un espoir de détecteur leur présence dans des accélérateurs de particules par exemple. De telles particules sont prédites par différentes théories telles que la supersymétrie.</p>
          <h4>Caractéristiques des WIMP</h4>
          <p>
+            Afin d'être des candidats à la matière noire les WIMP (qu'on notera $\chi$) doivent vérifier certaines propriétés :
              <ul>
-                 <li>Ce sont des particules très stables, $\tau \gg t_{H}$, sans quoi on ne saurait expliquer leur abondance relativement constante dans l'Univers puisque leur taux de production doit être faible.</li>
-                 <li></li>
+                 <li>Ce sont des particules très stables,de temps de vie $\tau \gg t_{H}$, sans quoi on ne saurait expliquer leur abondance relativement constante dans l'Univers puisque leur taux de production doit être faible.</li>
+                 <li>Elles ne portent pas de charge électrique car alors elles seraient visibles (au sens qu'elles interagissent électromagnétiquement)</li>
+                 <li>Leur section efficace d'annihilation par paire en particules du modèle standard ($\chi+\chi\to \mbox{SM}$) doit être faible sans quoi elles ne seraient plus assez abondantes aujourd'hui.</li>
              </ul>
          </p>
          <h4>Les WIMP comme relique thermale</h4>
          <p>Les WIMP n'interagissant que très faiblement, il est proposé que leur présence (dominante) dans l'Univers s'explique par un équilibre du type :
        \begin{equation}
-       X+X \rightleftharpoons \mbox{ SM }
+       \chi+\chi \rightleftharpoons \mbox{ SM }
        \end{equation}</p>
-       Il s'agit donc d'un équilibre entre annihilation des particules WIMP ("X") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
+       Il s'agit donc d'un équilibre entre annihilation des particules WIMP ("\chi") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
        \begin{equation}
-       \Gamma_{ann} \sim n_{X} \langle \sigma v \rangle
+       \Gamma_{ann} \sim n_{\chi} \langle \sigma v \rangle
        \end{equation}
-       Où $n_X$ est la densité de particules WIMP, $\sigma$ leur section efficace d'annihilation et $v$ leur vitesse relative.
-       Puisque $n_X \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $H$, le phénomène d'annihilation devient négligeable et la quantité de WIMP est relativement constante. C'est le "freeze-out". 
+       Où $n_\chi$ est la densité de particules WIMP, $\sigma$ leur section efficace d'annihilation et $v$ leur vitesse relative.
+       Puisque $n_\chi \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $H$, le phénomène d'annihilation devient négligeable et la quantité de WIMP est relativement constante. C'est le "freeze-out".
          <h4>Mécanisme</h4>
          <p>
-            Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_{X}c^2/(k_B T)$ : 
+            Le mécanisme d'évolution de la densité de WIMP au cours de l'expansion peut-être résumé par les étapes suivantes, en définissant $x\equiv m_{\chi}c^2/(k_B T)$ :
             <ol>
-                <li>Tant que $k_B T \gg m_X$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_X \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
-                <li>Dès que $x \geq 1$, les WIMPs suivent une statistique de Boltzmann grâce à l'équilibre annihilation-création et donc $n_X^{eq}/n_\gamma \propto x^{3/2} e^{-x}$ (Fermi-Dirac non relativiste).</li>
-                <li>Avec l'expansion, les WIMPs sont dilués et il est de plus en plus rare que des paires se forment. Le nombre de WIMP devient constant et $n_X \propto x^3$.</li>
+                <li>Tant que $k_B T \gg m_\chi c^2$, ou encore $x \ll 1$ c'est-à-dire tant que les WIMPs sont ultrarelativistes, ils se comportent comme du rayonnement et $n_\chi \sim n_\gamma \propto T^3 \propto x^{-3}$</li>
+                <li>Dès que $x \geq 1$, les WIMPs suivent une statistique de Boltzmann grâce à l'équilibre annihilation-création et donc $n_\chi^{eq}/n_\gamma \propto x^{3/2} e^{-x}$ (Fermi-Dirac non relativiste).</li>
+                <li>Avec l'expansion, les WIMPs sont dilués et il est de plus en plus rare que des paires se forment. Le nombre de WIMP devient constant et $n_\chi \propto x^3$.</li>
             </ol>
-            Il est possible d'écrire l'équation cinétique qui gouverne l'évolution du nombre de particules WIMPs dans un volume comobile $V$ noté $N_X$ lors de la phase 2. Il s'agit simplement d'écrire que le taux de variation de $N_X$ par unité de temps est égale au nombre de particules formées à chaque instant moins le nombre de particules s'annihilant. On suppose une symmétrie entre $X$ et son antiparticule $\bar{X}$, c'est-à-dire $N_X = N_{\bar{X}}$. Alors :
+            Il est possible d'écrire l'équation cinétique qui gouverne l'évolution du nombre de particules WIMPs dans un volume comobile $V$ noté $N_\chi$ lors de la phase 2. Il s'agit simplement d'écrire que le taux de variation de $N_\chi$ par unité de temps est égale au nombre de particules formées à chaque instant moins le nombre de particules s'annihilant. On suppose une symmétrie entre $\chi$ et son antiparticule $\bar{\chi}$, c'est-à-dire $N_\chi = N_{\bar{\chi}}$. Alors :
             \begin{equation}
-            \dfrac{dN_x}{dt} = -\langle \sigma_{ann} v \rangle n_X^2 + \alpha n_{SM}^2
+            \dfrac{dN_x}{dt} = -\langle \sigma_{ann} v \rangle n_\chi^2 + \alpha n_{SM}^2
             \end{equation}
-            Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $X$ à partir de particules du modèle standard, qui est inconnu et <i>a priori</i> modèle-dépendant. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
+            Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $\chi$ à partir de particules du modèle standard, qui est inconnu et <i>a priori</i> modèle-dépendant. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
 
             \begin{equation}
-            \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right ) V(t)
+            \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_\chi^{eq}}^2 - n_\chi^2 \right ) V(t)
             \end{equation}
 
-            Par ailleurs, $n_X(t) = \dfrac{N_x}{V(t)}$, et $n_X^{eq}(t) = K n_{\gamma}(t) x(t)^{3/2} e^{-x}$L'équation peut alors être réécrite :
+            Par ailleurs, $n_\chi(t) = \dfrac{N_x}{V(t)}$, et $n_\chi^{eq}(t) = K n_{\gamma}(t) x(t)^{3/2} e^{-\chi}$L'équation peut alors être réécrite :
 
             \begin{equation}
-            \dfrac{dn_x}{dt} + 3 H(t) n_x(t) + \langle \sigma_{ann} v \rangle \left ( n_X^2  - {n_X^{eq}}^2\right ) = 0
+            \dfrac{dn_\chi}{dt} + 3 H(t) n_\chi(t) + \langle \sigma_{ann} v \rangle \left ( n_\chi^2  - {n_\chi^{eq}}^2\right ) = 0
             \end{equation}
 
             Le second terme donne la diminution de la densité due à l'expansion, le troisième celui du à l'annihilation.
-            Le Freeze-out intervient donc lorsque $\langle \sigma_{ann} v \rangle n_X \sim H(t)$.
-            <!--Il est possible d'en déduire l'ordre de grandeur de $\langle \sigma_{ann} v \rangle$. En effet, la densité de particules de matière noire $\Omega_{DM}$ peut s'exprimer en fonction du paramètre de densité de la matière noire actuelle ($\Omega_{DM} \equiv $\rho_{DM}/\rho_c$), de la densité critique $\rho_c$, et de la constante d'hubble $H$ au temps présent.
-            On a alors : 
-            \begin{equation}
-            n_X(t_{FO}) = \dfrac{\Omega_{DM}\rho_c}{mc^2} = 3\dfrac{H^2(t_{FO}) \Omega_{DM}}{8 \pi G m} \dfrac{T(t_{FO})^3}{T_{0}^3}
-            \end{equation}
-            
-            Le facteur du rapport de température provient de la diminution de densité de matière noire due à l'expansion depuis le freeze-out ($\propto a^3 \propto T^{-3}$).
-            
-            
-            De là l'expression du freeze-out se réécrit : 
-            
-            \begin{equation}
-            \dfrac{\langle \sigma_{ann} v}{m} \rangle \sim \dfrac{8 \pi G}{3 H \Omega_{DM}} \dfrac{T_{0}^3}{T(t_{FO})^3}
-            \end{equation}
-            
-            Avec $\Omega_{DM} = \Omega_m - \Omega_b \sim 0.22$-->
-            
+            Le Freeze-out intervient donc lorsque $\langle \sigma_{ann} v \rangle n_\chi \sim H(t)$.
+
             L'équation d'évolution de la densité peut-être résolue en réalisant quelques hypothèses supplémentaires, notamment sur la dépendance de $\sigma_{ann}$ en l'énergie $E$ (ou la vitesse relative entre WIMP $v$).
             Si elle est supposée constante, on attend, pour des particules de masse proche de 100 GeV, que $\langle \sigma v \rangle \sim 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Or il se trouve que cette valeur est proche de ce qui est attendu pour des processus liés à l'interaction faible !
             C'est le "WIMP miracle" : des particules à l'échelle électrofaible, et interagissant via l'interaction faible, pourraient expliquer entièrement le phénomène de la matière noire.
-            
-            <figure src="wimp_abundance.svg" plot="wimp_abundance" source="WIMP" title="Densité massique normalisée d'un WIMP en fonction de $m/k_B T$">
+
+            <figure src="wimp_abundance.svg" plot="wimp_abundance" source="WIMP" title="Densité massique normalisée d'un WIMP en fonction de $mc^2/k_B T$">
                 Densité massique de WIMP pour divers hypothèses de masse, avec $\langle \sigma v \rangle = 2 \times 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Cette densité est comparée à la densité d'équilibre. On observe très clairement une rupture de l'équilibre thermodynamique (freeze-out) pour $T \sim m/20$.
-                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations. 
+                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
             </figure>
-            
-            
+
+
             Pour approfondir, voir ces <a href="https://www.mpi-hd.mpg.de/lin/events/isapp2011/pages/lectures/Schwetz.pdf" target="_blank">excellentes diapositives sur le sujet</a>.
          </p>
-
+         <h4>Contraintes obtenues grâce au fond diffus cosmologique</h4>
+         <p>Des limites supérieures pour le taux d'annihilation $\langle \sigma v \rangle$ grâce aux mesures effectuées sur le CMB. En effet, l'annihilation de paires conduit à un dépôt d'énergie sous forme de rayonnement qui modifie son spectre.
+         Par exemple, pour une annihilation $\chi\chi\to e^+ e^-$, la paire électron/positron formée est susceptible de rayonner et des photons seront créés. L'énergie déposée est proportionnelle à $f_{eff} \langle \sigma v \rangle$, où $f_{eff}$ détermine la fraction d'énergie finalement déposée dans le fond diffus.
+         Ce phénomène permet d'établir des limites sur $\langle \sigma v \rangle$ en fonction de $m_\chi$. Les meilleurs résultats ont ainsi été obtenus par Planck : 
+         <figure src="cmb_wimp_constraints.png" title="Limites sur la section d'annihilation de WIMP obtenus à partir des mesures de Planck">
+         Limites à CL = 95 % sur la section-efficace d'annihilation et la masse des WIMP en supposant qu'ils rendent compte de l'intégrité de la matière noire.
+         La zone en bleu représente l'espace des paramètres exclu par Planck. La zone rouge représente l'espace des paramètres compatible avec des WIMPs comme relatique thermale en tant que responsable de l'intégrité de la matière noire.
+         Les zones hachurées correspondent aux valeurs de $(\langle \sigma v \rangle, m)$ qui pourraient rendre compte dans une interprétation WIMP des anomalies du spectre de positrons observé par AMS, Fermi et Pamela, et de l'excès dans les rayons gamma observé par Fermi dans le centre galactique.
+         La limite verte pointillée correspond à la limite maximale intrinsèque à la méthode due à la variance cosmique.
+         Source : <a href="http://www.insu.cnrs.fr/node/5108">http://www.insu.cnrs.fr/node/5108</a>.
+         </figure>
+         On observe ainsi que ce type de mesure permet déjà de contraindre la masse des WIMP qui doit être supérieure à la dizaine de GeV. Par ailleurs l'interprétation de l'excès du spectre de positrons du rayonnement cosmique en terme de WIMPs semble exclue.
+         Il existe une espace des paramètres non exclu pouvant rendre compte à la fois de l'intégrité de la matière noire, et de l'excès Fermi-<acronym title="Galactic Center">GC</acronym> mais cet excès peut avoir beaucoup d'autres explications plus plausibles.
+         </p>
          <h4>Candidats</h4>
-         <p>La supersymétrie prévoit plusieurs bons candidats pour les WIMPs, notamment le neutralino.</p>
+         <p>La supersymétrie prévoit plusieurs candidats pour les WIMPs, notamment le neutralino, qui pourrait être détecté au LHC.</p>
       </text>
       <linkwords>
            <linkword>WIMP</linkword>
@@ -1766,13 +1780,73 @@ Et
      <appendix id="702">
       <title>Axions</title>
       <text>
-          <p>Les axions sont des particules hypothétiques initialement introduites dans le cadre de la théorie Peccei–Quinn afin de résoudre le problème CP-fort. Ils se sont révélés être de bons candidats pour la matière noire par la suite.</p>
+        <p>
+          Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
+          Leur prédiction repose sur le fait que selon le modèle standard, le neutron possède un moment dipolaire électrique $d_n \sim e m_q \bar{\theta} / m_n^2$ non nul, proportionnel à un paramètre sans dimension noté $\bar{\theta}$. La mesure de $d_n$ est obtenue en comparant la fréquence de précession de Larmor de neutrons plongés dans un des champs (E,B) parallèles ou de sens opposés. Les mesures indiquent $|\bar{\theta}|  &lt; 10^{-10}$.
+          Cette valeur étant très faible, Roberto Peccei et Helen Quinn ont suggéré en 1977 qu'il puisse prendre son origine dans un champ scalaire (le champ d'axion) associé à une nouvelle symétrie $U(1)$. Le paramètre $\bar{\theta}$ serait proportionnel à la valeur moyenne de ce champ qui tendrait vers 0, et dont l'équation d'état serait celle d'un condensat de pression nulle, donc équivalent à de la matière noire froide.
+          Le couplage des actions avec la matière entraîne des prédictions testables, notamment dans des processus stellaires.
+         </p>
           <h4>Problème CP fort</h4>
+          <p>Le problème CP fort prend son origine, après réécriture du modèle standard sous une forme appropriée, dans un terme effectif de la forme :
+          \begin{equation}
+          \mathcal{L} \supset \dfrac{\bar{\theta}\alpha_s}{8\pi} G_{a\mu\nu}\tilde{G}_{a}^{\mu\nu}
+          \end{equation}
+          Où $G$ est le tenseur de force du champ de gluons, et $G_{a}^{\mu\nu} = \epsilon^{\alpha\beta\mu\nu} G_{a\alpha\beta}$ est un pseudo-tenseur, et donc non-invariant par réflection, et donc viole la symétrie $T$. 
+          En conséquence, il viole aussi la symétrie $CP$.
+          
+          $\bar{\theta}$ est la contribution de deux termes : $\theta$, un paramètre libre quelconque, et $\theta_{q} \sim - \arg \det \mathbf{m_q}$ où $\mathbf{m_q}$ est la matrice des masses des quarks.
+          
+          Une solution serait de considérer que ce paramètre doit être nul en postulant la symétrie $CP$, mais celle-ci étant violée par l'interaction faible, il n'y a pas de forte motivation pour cela, pas même suggérée par des raisons anthropiques. Par ailleurs le paramètre effectif $\bar{\theta}$ étant la somme de la contribution de deux effets sans lien a priori, imposer sa nullité revient à requérir que $\theta$ et $\theta_q$ soient très proches, de différence relative inférieur à $10^{-10}$, un ajustement fin qui semble très non naturel.
+          </p>
           <h4>Axions</h4>
+          <p>
+              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn.
+              Un champ scalaire associé $\phi_a$ est introduit, ainsi qu'un paramètre $f_a$, de sorte que la transformation $U(1)_{PQ}$ d'angle $\alpha$ le transforme en :
+              \begin{equation}
+              \phi_a \to \phi_a + \alpha f_a
+              \end{equation}
+              Le Lagrangien se réécrit alors :
+              \begin{equation}
+              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a \partial^{\mu}\phi_a + \left [ \bar{\theta} - \dfrac{\phi_a}{f_a} \right ]  \dfrac{\alpha_s}{8\pi}  G_{a\mu\nu}\tilde{G}_{a}^{\mu\nu} + ...
+              \end{equation}
+              
+              Il apparait que le terme violant la symétrie CP s'annulle si $\bar{\theta} = \dfrac{\phi_a}{f_a}$. 
+              Or le second terme dans l'équation précédente correspond à un potentiel pour $\phi_a$ qui ramène sa valeur moyenne dans le vide (VEV) $\langle \phi_a \rangle$ à $f_a \bar{\theta}$, restaurant la symétrie $CP$.
+              En définissant $\phi_a' = \phi_a - \langle \phi_a \rangle$ le Lagrangian contient les termes :
+              
+              \begin{equation}
+              \mathcal{L} \supset \dfrac{1}{2}\partial_{\mu} \phi_a' \partial^{\mu}\phi_a' - m_a^2 \phi_a' \phi_a'  + V(\phi_a')
+              \end{equation}
+              
+              Comme montré par Weinberg et Wilczek, ce champ $\phi_a'$ est celui d'un nouveau boson pseudo-scalaire, l'axion.
+              
+          </p>
           <h4>Candidat pour la matière noire</h4>
+          <p>
+              Lorsque l'univers était très chaud, et que $T \sim f_a c^2 /k_B$, alors le champ d'axion vérifiait approximativement $\phi_a' \sim f_a$.
+              En refroidissant, une transition s'est produite ramenant $\phi_a'$ vers sa VEV, c'est-à-dire 0. Dès lors, l'équation cosmologique gouvernant $\phi_a'$ au cours du temps est :
+              \begin{equation}
+              \dfrac{d^2\phi_a'}{dt^2} + 3 H \dfrac{d\phi_a'}{dt} + \dfrac{m_a^2 c^2}{\hbar^2} \phi_a' = 0
+              \end{equation}
+              Il s'agit de l'équation d'un oscillateur amorti, donc le champ d'axion tend bien vers 0. Ce faisant, il oscille très rapidement : $m_a \sim \Lambda_{QCD}^2/f_a \sim 10^{-5}$ eV, donc $\omega_a = m_a c /\hbar \sim 10^{18} s^{-1} \gg H_0$
+              Par ailleurs la densité d'énergie moyenne de ce champ est $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 + \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle$, la somme des énergies cinétiques et potentielles, donc les valeur moyennes sont égales pour un oscillateur.
+              Cependant, la pression moyenne est donnée par $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 - \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle \simeq 0$
+              Donc le champ d'axion se refroidissant a l'équation d'état $P=0$, comme la matière froide : l'axion est un candidat à la matière froide.              
+          </p>
+          <h4>Recherche</h4>
+          <p>
+              Selon les modèles, l'axion se couple différemment avec le reste de la matière, et plusieurs tests expérimentaux existent :
+              <ul>
+                  <li>Production stellaire, testée par l'expérience <a href="http://cast.web.cern.ch/CAST/CAST.php" target="_blank">CAST</a> notamment</li>
+                  <li>Effets sur la polarisation : les axions se couplant avec les photons, ils induisent une modification des équations de Maxwell. L'expérience <a href="http://pvlas.ts.infn.it/" target="_blank">PVLAS</a> recherche de tels effets.</li>
+                  <li>Le couplage lumière-axion laisse à penser que des photons peuvent être reçus derrière un obstacle obstruant une source de photons si une conversion $\gamma \to \mbox{Axion}\hphantom{s}$ survient avant l'obstacle et une reconversion dans le sens $\mbox{Axion}\to\gamma$ à sa sortie. Cette recherche est menée par l'expérience <a href="https://alps.desy.de/" target="_blank">ALPS</a></li>
+              </ul>
+          </p>
       </text>
       <linkwords>
            <linkword>axions</linkword>
+           <linkword>Axions</linkword>
+           <linkword>axion</linkword>
       </linkwords>
     </appendix>
 </appendices>
