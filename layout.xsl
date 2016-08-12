@@ -54,13 +54,13 @@
   
   <xsl:template match="figure">
     <div class="figure">
-      <a href="images/{./@src}" target="_blank">
+      <a href="/images/{./@src}" target="_blank">
         <xsl:choose>
           <xsl:when test="string(./@width)">
-            <img src="images/{./@src}" title="{.}" width="{./@width}" />
+            <img src="/images/{./@src}" title="{.}" width="{./@width}" />
           </xsl:when>
           <xsl:otherwise>
-            <img src="images/{./@src}" title="{.}" />
+            <img src="/images/{./@src}" title="{.}" />
           </xsl:otherwise>
         </xsl:choose>
       </a>
@@ -68,13 +68,13 @@
         <xsl:value-of select="./@title" />
         <xsl:choose>
            <xsl:when test="./@source and ./@plot">
-                (<a href="plots/{./@plot}.gnuplot">gnuplot</a> | <a href="simulations/{./@source}.tar.gz">source</a>)
+                (<a href="/plots/{./@plot}.gnuplot">gnuplot</a> | <a href="/simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            <xsl:when test="./@plot">
-                (<a href="plots/{./@plot}.gnuplot">gnuplot</a>)
+                (<a href="/plots/{./@plot}.gnuplot">gnuplot</a>)
            </xsl:when>
            <xsl:when test="./@source">
-                (<a href="simulations/{./@source}.tar.gz">source</a>)
+                (<a href="/simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            </xsl:choose>
       </div>
@@ -106,14 +106,14 @@
     <div class="video">
       <video width="{./@width}" height="{./@height}" controls="controls">
         <xsl:if test="./@mp4">
-          <source src="videos/{./@mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          <source src="/videos/{./@mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
         </xsl:if>
         <xsl:if test="./@webm">
-          <source src="videos/{./@webm}" type='video/webm; codecs="vp8, vorbis"' />
+          <source src="/videos/{./@webm}" type='video/webm; codecs="vp8, vorbis"' />
         </xsl:if>
       </video>
     <xsl:if test="./@source">
-      (<a href="simulations/{./@source}.tar.gz">source</a>)
+      (<a href="/simulations/{./@source}.tar.gz">source</a>)
     </xsl:if>
      <div class="caption">
        <xsl:apply-templates />
@@ -131,7 +131,7 @@
   
   <xsl:template match="contentlink">
     <xsl:variable name="id" select="./@id"/>
-    <a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
+    <a class="content-link" href="/content/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
   </xsl:template>
   
 <xsl:template match="/">
@@ -139,9 +139,9 @@
     <head>
       <title>Histoire de la Cosmologie</title>
       <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" type="text/css" href="/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="feynman.js"></script>
+    <script src="/feynman.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       config: ["MMLorHTML.js"],
@@ -163,7 +163,7 @@
     <script type="text/javascript"
       src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> 
     </script>
-    <script type="text/javascript" src="navigation.js">
+    <script type="text/javascript" src="/navigation.js">
     </script>
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -179,11 +179,11 @@
       <div id="navigation">
         <a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a>
         <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="images/icons/Facebook.png" /></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="images/icons/Twitter.png" /></a></li>
-          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="images/icons/Google+.png" /></a></li>
-          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="images/icons/Reddit.png" /></a></li>
-          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="images/icons/LinkedIn.png" /></a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
+          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
       </ul>
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
@@ -193,10 +193,10 @@
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
             <xsl:sort select="./@date" />
             <xsl:variable name="cid" select="./@content-id"/>
-            <xsl:if test="/root/contents/content[@id=$cid][1]/color">            
-            <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@id=$cid][1]/color" />;}</style>
+            <xsl:if test="/root/contents/content[@uid=$cid][1]/color">            
+            <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@uid=$cid][1]/color" />;}</style>
             </xsl:if>
-            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
+            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="/{/root/contents/content[@uid=$cid][1]/@id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
 
@@ -204,7 +204,7 @@
           <h2>Activités</h2>
           <ul id="activities">
             <xsl:for-each select="/root/contents/content[@type='activity']">
-              <li><a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="./title" /></a></li>
+              <li><a class="content-link" href="/content/{./@content-id}/"><xsl:value-of select="./title" /></a></li>
             </xsl:for-each>
           </ul>
         </div>
@@ -261,13 +261,61 @@
 
 <xsl:for-each select="root/contents/content">
  <xsl:variable name="id" select="./@id"/>
-<xsl:result-document method="html" href="html/contents/content_{./@id}.html">
+<xsl:result-document method="html" href="./content/{./@id}/index.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
-<html lang="fr">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  </head>
-  <body>
+  <html>
+    <head>
+      <title>Histoire de la Cosmologie</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/feynman.js"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      config: ["MMLorHTML.js"],
+      jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/CommonHTML"],
+      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "CHTML-preview.js"],
+      TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+      },
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+      },
+      "HTML-CSS": {
+          availableFonts: ["TeX"]
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> 
+    </script>
+    <script type="text/javascript" src="/navigation.js">
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82070644-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    </head>
+    <body>
+      <div id="navigation">
+        <a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a>
+        <ul class="share-buttons">
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
+          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
+      </ul>
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+      </div>
+      
     <div id="content">
       <div id="horizontal-timeline">
         <ul>
@@ -277,17 +325,17 @@
         </xsl:for-each>
         </ul>
       </div>
-      <h2 id="title"><xsl:value-of select="./title" /></h2>
-      <div id="text"><xsl:apply-templates select="text" />
+      <h2 class="title"><xsl:value-of select="./title" /></h2>
+      <div class="text"><xsl:apply-templates select="text" />
         <xsl:for-each select="./text//note">
           <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
         </xsl:for-each></div>
 
-      <div id="interviews">
+      <div class="interviews">
         <xsl:for-each select="./interviews/interview">
           <div class="interview" id="{generate-id(.)}">
             <div class="interview_short">
-              <img src="images/{./who/@src}" />
+              <img src="/images/{./who/@src}" />
               <div class="description">
                 <span class="who"><xsl:value-of select="./who/@name" /></span>.
                 <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
@@ -310,7 +358,7 @@
         </xsl:for-each>
       </div>
     
-      <div id="references">
+      <div class="references">
         <ul>
           <xsl:for-each select="./references/reference">
             <xsl:sort select="./date" />
@@ -318,19 +366,27 @@
           </xsl:for-each>
         </ul>
       </div>
+      </div>
+      
+      <div id="appendix">
+        <h2 class="title"></h2>
+        <div class="text"></div>
+        <div class="references"></div>
+      </div>
+
       <div id="image">
-        <img src="images/{./image/@src}" />
+        <img src="/images/{./image/@src}" />
         <span class="caption"><xsl:value-of select="./image/." /></span>
       </div>
-    </div>
-  </body>
-</html>
+    <div class="clear"></div>
+    </body>
+  </html>
 </xsl:result-document>
 </xsl:for-each>
   
 <xsl:for-each select="root/appendices/appendix">
   <xsl:variable name="id" select="./@id"/>
-  <xsl:result-document method="html" href="html/appendices/appendix_{./@id}.html">
+  <xsl:result-document method="html" href="./appendices/{./@id}/index.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 <html lang="fr">
   <head>
