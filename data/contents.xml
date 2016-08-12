@@ -444,7 +444,9 @@
     
         <content id="16" type="timeline">
     	<title>Recherche de la matière noire</title>
-    	<image>dark_matter.jpg</image>
+        <image src="dark_matter.jpg">
+            Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. <a href="chandra.harvard.edu/photo/2006/1e0657/index.html" target="_blank">Source</a>.
+        </image>
     	<color>#a9F00d</color>
     	<text>
     	  <h3>Les traces de la matière noire</h3>
