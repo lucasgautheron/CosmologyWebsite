@@ -1,3 +1,6 @@
+# HTML generated files
+**/*.html
+
 # Object files
 *.o
 *.ko

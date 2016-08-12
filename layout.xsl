@@ -17,7 +17,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="#!content={$cid}&amp;appendix={$linkword[1]}" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+        <a href="#!appendix={$linkword[1]}" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -177,7 +177,7 @@
     </head>
     <body>
       <div id="navigation">
-        <a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a>
+        <a href="/" id="show_timeline">Frise</a>
         <ul class="share-buttons">
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
           <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
@@ -260,7 +260,7 @@
   </html>
 
 <xsl:for-each select="root/contents/content">
- <xsl:variable name="id" select="./@id"/>
+ <xsl:variable name="uid" select="./@uid"/>
 <xsl:result-document method="html" href="./{./@id}/index.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
@@ -305,7 +305,13 @@
     </head>
     <body>
       <div id="navigation">
-        <a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a>
+        <a href="/" id="show_timeline">Frise</a> |
+        <xsl:if test="./preceding-sibling::content[last()]/@id">
+          <a href="/{./preceding-sibling::content[last()]/@id}">Précédent</a> |
+        </xsl:if>
+        <xsl:if test="./following-sibling::content[1]/@id">
+          <a href="/{./following-sibling::content[1]/@id}">Suivant</a> |
+        </xsl:if>
         <ul class="share-buttons">
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
           <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
@@ -319,7 +325,7 @@
     <div id="content">
       <div id="horizontal-timeline">
         <ul>
-        <xsl:for-each select="/root/events/event[@content-id=$id]">
+        <xsl:for-each select="/root/events/event[@content-id=$uid]">
           <xsl:sort select="./@date" />
           <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
         </xsl:for-each>
