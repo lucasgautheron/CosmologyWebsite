@@ -131,7 +131,7 @@
   
   <xsl:template match="contentlink">
     <xsl:variable name="id" select="./@id"/>
-    <a class="content-link" href="/content/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
+    <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
   </xsl:template>
   
 <xsl:template match="/">
@@ -204,7 +204,7 @@
           <h2>Activités</h2>
           <ul id="activities">
             <xsl:for-each select="/root/contents/content[@type='activity']">
-              <li><a class="content-link" href="/content/{./@content-id}/"><xsl:value-of select="./title" /></a></li>
+              <li><a class="content-link" href="/{./@content-id}/"><xsl:value-of select="./title" /></a></li>
             </xsl:for-each>
           </ul>
         </div>
@@ -261,7 +261,7 @@
 
 <xsl:for-each select="root/contents/content">
  <xsl:variable name="id" select="./@id"/>
-<xsl:result-document method="html" href="./content/{./@id}/index.html">
+<xsl:result-document method="html" href="./{./@id}/index.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
