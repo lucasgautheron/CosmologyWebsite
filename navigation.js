@@ -87,7 +87,6 @@ function update_hash()
 
 function load_hash()
 {
-
    var subject = window.location.hash.substring(2);
    var data = subject?JSON.parse('{"' + subject.replace(/&/g, '","').replace(/=/g,'":"') + '"}',
                  function(key, value) { return key===""?value:decodeURIComponent(value) }):{};
@@ -108,7 +107,6 @@ function load_hash()
             hide_appendix();
             $('#image').show();
         }
-    }
     }
 }
 
