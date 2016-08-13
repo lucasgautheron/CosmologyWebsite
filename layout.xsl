@@ -319,7 +319,7 @@
           <div class="interview_short">
            <img src="/images/people/lucas_gautheron.jpg" />
            <div class="description"><span class="who">Lucas Gautheron</span>. 
-             Actuellement étudiant en physique à l'ENS de Cachan (M1), originaire de Haute-Savoie, mes intérêts portent principalement sur la physique des particule et l'astrophysique. Je travaille sur plusieurs projets open-source, disponibles tout comme mes simulations sur <a href="http://github.com/lucasgautheron/">github</a>.
+             Actuellement étudiant en physique à l'ENS de Cachan (M1), originaire de Haute-Savoie, mes intérêts portent principalement sur la physique des particules et l'astrophysique. Je travaille sur plusieurs projets open-source, disponibles tout comme mes simulations sur <a href="http://github.com/lucasgautheron/">github</a>.
            </div>
           </div>
         </div>
@@ -328,8 +328,8 @@
         <h2>Remerciements</h2>
         <p>
           <ul>
-            <li><b><a href="http://lapth.cnrs.fr/pg-nomin/taillet/">Richard Taillet</a></b> bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.</li>
-            <li><b><a href="https://www.scalawilliam.com/">William Vykintas Narmontas</a></b>, qui a été de précieux conseil lors de la réalisation technique du site.</li>
+            <li><a name="richard-taillet"></a><b><a href="http://lapth.cnrs.fr/pg-nomin/taillet/">Richard Taillet</a></b> bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.</li>
+            <li><b><a href="https://www.scalawilliam.com/">William Vykintas Narmontas</a></b>, pour ses précieux conseils lors de la réalisation technique du site.</li>
             <li><b><a href="http://www.coepp.org.au/people/martin-white">Martin White</a></b>, qui a accepté de répondre à mes questions, malgré un calendrier chargé.</li>
             <li>Le <a href="http://lapth.in2p3.fr/">LAPTh</a>, le <a href="http://lapp.in2p3.fr/">LAPP</a> et le <a href="http://lpnhe.in2p3.fr/">LPNHE</a> pour leur accueil.</li>
           </ul>
