@@ -199,7 +199,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
-        <a href="/about/">A propos du site</a> | 
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
@@ -258,7 +258,7 @@
     </body>
   </html>
 
-<xsl:result-document method="html" href="about/index.html">
+<xsl:result-document method="html" href="a-propos/index.html">
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
@@ -268,14 +268,13 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
-        <a href="/about/">A propos du site</a> | 
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
 
-      <h1>Histoire de la Cosmologie Moderne </h1>
-
       <div class="meta">
+        <h1>Histoire de la Cosmologie Moderne </h1>
         <h2>Qu'est-ce que la cosmologie ?</h2>
         <p>
           La cosmologie est le domaine de la physique qui se préoccupe de l'Univers à grande échelle, de sa dynamique globale, de son contenu.
@@ -354,7 +353,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
-        <a href="/about/">A propos du site</a> | 
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:if test="./preceding-sibling::content[1]/@id">
           <a href="/{./preceding-sibling::content[1]/@id}">Précédent</a> |
         </xsl:if>
@@ -448,7 +447,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
-        <a href="/about/">A propos du site</a> | 
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:if test="$pagecontent/preceding-sibling::content[1]/@id">
           <a href="/{$pagecontent/preceding-sibling::content[1]/@id}">Précédent</a> |
         </xsl:if>
