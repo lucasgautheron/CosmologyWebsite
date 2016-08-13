@@ -234,7 +234,7 @@
             <li><a href="http://github.com/">github</a> pour la gestion du projet</li>
           </ul>
         </div>
-        <div>
+        <div class="meta">
           Pour signaler toute erreur, ou simplement pour poser des questions relatives au contenu, vous pouvez : 
           <ul>
             <li><a href="https://github.com/lucasgautheron/CosmologyWebsite">Enregistrer un ticket sur github</a></li>
