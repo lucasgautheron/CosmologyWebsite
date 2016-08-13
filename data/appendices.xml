@@ -807,7 +807,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <!-- CONSTANTS -->
     <!--           -->
 
-    <appendix id="constant-cosmologique" uid="cosmological-constant">
+    <appendix id="constante-cosmologique" uid="cosmological-constant">
         <title>Constante cosmologique</title>
         <text><p>La constante cosmologique notée $\Lambda$ est un paramètre introduit par Einstein dans son équation afin qu'elle autorise un Univers fait de matière non relativiste à demeurer <i>statique</i>. L'équation d'Einstein en présence de cette constante devient :
             \begin{equation}
