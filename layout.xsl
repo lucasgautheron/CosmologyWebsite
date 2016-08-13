@@ -306,8 +306,8 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
-        <xsl:if test="./preceding-sibling::content[last()]/@id">
-          <a href="/{./preceding-sibling::content[last()]/@id}">Précédent</a> |
+        <xsl:if test="./preceding-sibling::content[1]/@id">
+          <a href="/{./preceding-sibling::content[1]/@id}">Précédent</a> |
         </xsl:if>
         <xsl:if test="./following-sibling::content[1]/@id">
           <a href="/{./following-sibling::content[1]/@id}">Suivant</a> |
