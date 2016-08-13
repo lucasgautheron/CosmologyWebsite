@@ -27,7 +27,7 @@
                         <xsl:variable name="id" select="./@id"/>
                         <xsl:variable name="text" select="./text"/>
 
-                        <li><h3><a href="index.html#/content/{$id}"><xsl:value-of select="./title" /></a></h3>
+                        <li><h3><a href="/{$id}/"><xsl:value-of select="./title" /></a></h3>
                         <xsl:choose>
                         <xsl:when test="./@ready">
                            <span class="label-color" style="background-color: #fcfc29;" title="ready">ready</span>
@@ -53,7 +53,7 @@
                             <h4>appendices</h4>
                             <ul>
                                 <xsl:for-each select="//appendices/appendix/linkwords/linkword[contains($text, .)]">
-                                    <li><a href="index.html#!content={$id}&amp;appendix={../../@id}"><xsl:value-of select="."/></a></li>
+                                    <li><a href="/{$id}/{../../@id}/"><xsl:value-of select="."/></a></li>
                                 </xsl:for-each>
                             </ul>
                             <h4>Références</h4>
