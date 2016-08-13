@@ -272,10 +272,10 @@
         <h2>Pourquoi la cosmologie ?</h2>
         <p>
           D'abord, elle a la première qualité d'être une synthèse de toute la physique moderne. Donc, étudier la cosmologie et ses enjeux, cela implique d'aborder la relativité générale, la physique statistique et la thermodynamique, la théorie quantique des champs, le modèle standard, et même certaines de ses extensions. C'est en partie pour ces raisons, et également grâce à la grande richesse des conditions physiques offertes au cours du Big Bang, que l'on compte beaucoup à l'avenir sur la cosmologie pour nous donner des indications expérimentales afin de mesurer la réalité physique de théories non testables autrement.
-          Donc, la cosmologie ouvre à de nombreux pans de la physique, et les recherches qui y sont consacrées peuvent potentiellement améliorer considérablement notre vision de la nature dans le futur.
+          Donc, la cosmologie ouvre à de nombreux pans de la physique, et les recherches qui y sont consacrées peuvent potentiellement améliorer considérablement notre conception de la nature dans le futur.
         </p>
         <p>
-          Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est fascinant de voir comment notre conception de l'Univers a radicalement changé en un siècle, au fil de divers rebondissements et révolutions majeures, parfois accidentellement. C'est aussi un bon sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser et susciter parfois des débats d'ordre philosophiques. Aujourd'hui encore, cette science jeune mais très prometteuse suscite parfois des controverses.
+          Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est fascinant de voir comment notre vision de l'Univers a radicalement changé en un siècle, au fil de découvertes majeures parfois accidentelles et de divers rebondissements. C'est aussi un excellent sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser la communauté scientifique et susciter parfois des débats d'ordre plutôt philosophiques. Aujourd'hui encore, cette science toujours jeune mais très prometteuse suscite parfois des controverses.
         </p>
 
         <h2>Pourquoi ce site ?</h2>
