@@ -17,14 +17,14 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="#!appendix={$linkword[1]}" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+        <a href="/{$cid}/{$linkword[1]}/" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
     </xsl:choose>
   </xsl:function>
-  <xsl:template match="text//text()">
-    <xsl:copy-of select="doc:add-links(../@id, .)"/>
+  <xsl:template match="text//node()|@*">
+    <xsl:copy-of select="doc:add-links(../../@id, .)"/>
   </xsl:template>
   <xsl:template match="node()|@*">
     <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
@@ -133,13 +133,10 @@
     <xsl:variable name="id" select="./@id"/>
     <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
   </xsl:template>
-  
-<xsl:template match="/">
-  <html>
-    <head>
-      <title>Histoire de la Cosmologie</title>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="/style.css" />
+
+  <xsl:template name="commonheader">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/feynman.js"></script>
     <script type="text/x-mathjax-config">
@@ -174,6 +171,13 @@
       ga('create', 'UA-82070644-1', 'auto');
       ga('send', 'pageview');
     </script>
+  </xsl:template>
+  
+<xsl:template match="/">
+  <html>
+    <head>
+      <xsl:call-template name="commonheader"/>
+      <title>Chronologie - Histoire de la Cosmologie</title>
     </head>
     <body>
       <div id="navigation">
@@ -265,43 +269,8 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
-      <title>Histoire de la Cosmologie</title>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="/feynman.js"></script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      config: ["MMLorHTML.js"],
-      jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/CommonHTML"],
-      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "CHTML-preview.js"],
-      TeX: {
-        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-      },
-      tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: true
-      },
-      "HTML-CSS": {
-          availableFonts: ["TeX"]
-      }
-    });
-    </script>
-    <script type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> 
-    </script>
-    <script type="text/javascript" src="/navigation.js">
-    </script>
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-82070644-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+      <xsl:call-template name="commonheader"/>
+      <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
       <div id="navigation">
@@ -389,6 +358,108 @@
   </html>
 </xsl:result-document>
 </xsl:for-each>
+
+<xsl:for-each select="//root/contents/content">
+<xsl:variable name="pagecontent" select="."/>
+<xsl:variable name="cuid" select="./@uid"/>
+<xsl:for-each select="//root/appendices/appendix">
+<xsl:variable name="appendixcontent" select="."/>
+<xsl:result-document method="html" href="./{$pagecontent/@id}/{$appendixcontent/@id}/index.html">
+<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+  <html>
+    <head>
+      <xsl:call-template name="commonheader"/>
+      <title><xsl:value-of select="$pagecontent/title" /> - Histoire de la Cosmologie</title>
+    </head>
+    <body>
+      <div id="navigation">
+        <a href="/" id="show_timeline">Frise</a> |
+        <xsl:if test="$pagecontent/preceding-sibling::content[1]/@id">
+          <a href="/{$pagecontent/preceding-sibling::content[1]/@id}">Précédent</a> |
+        </xsl:if>
+        <xsl:if test="$pagecontent/following-sibling::content[1]/@id">
+          <a href="/{$pagecontent/following-sibling::content[1]/@id}">Suivant</a> |
+        </xsl:if>
+        <ul class="share-buttons">
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
+          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
+      </ul>
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+      </div>
+      
+    <div id="content">
+      <div id="horizontal-timeline">
+        <ul>
+        <xsl:for-each select="/root/events/event[@content-id=$cuid]">
+          <xsl:sort select="./@date" />
+          <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
+        </xsl:for-each>
+        </ul>
+      </div>
+      <h2 class="title"><xsl:value-of select="$pagecontent/title" /></h2>
+      <div class="text"><xsl:apply-templates select="$pagecontent/text" />
+        <xsl:for-each select="$pagecontent/text//note">
+          <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+        </xsl:for-each></div>
+
+      <div class="interviews">
+        <xsl:for-each select="$pagecontent/interviews/interview">
+          <div class="interview" id="{generate-id(.)}">
+            <div class="interview_short">
+              <img src="/images/{./who/@src}" />
+              <div class="description">
+                <span class="who"><xsl:value-of select="./who/@name" /></span>.
+                <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
+            </div>
+            <div class="interview_content">
+              <xsl:if test="./record">
+                <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
+                <div class="interview_record">
+                  <audio controls="controls">
+                    <source src="records/{./record}.ogg" type="audio/ogg" />
+                    <source src="records/{./record}.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio> 
+                </div>
+              </xsl:if>
+              <h4>Script</h4>
+              <xsl:apply-templates select="questions" />
+            </div>
+          </div>
+        </xsl:for-each>
+      </div>
+    
+      <div class="references">
+        <ul>
+          <xsl:for-each select="$pagecontent/references/reference">
+            <xsl:sort select="./date" />
+            <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+          </xsl:for-each>
+        </ul>
+      </div>
+      </div>
+      
+      <div id="appendix">
+      <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
+      <div class="text"><xsl:apply-templates select="$appendixcontent/text" />
+      <xsl:for-each select="$appendixcontent/text//note">
+        <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+      </xsl:for-each></div>
+      </div>
+
+      <div id="image">
+        <img src="/images/{./image/@src}" />
+        <span class="caption"><xsl:value-of select="$pagecontent/image/." /></span>
+      </div>
+    <div class="clear"></div>
+    </body>
+  </html>
+</xsl:result-document>
+</xsl:for-each>
+</xsl:for-each>
   
 <xsl:for-each select="root/appendices/appendix">
   <xsl:variable name="id" select="./@id"/>
@@ -405,14 +476,6 @@
       <xsl:for-each select="./text//note">
         <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
       </xsl:for-each></div>
-      <div id="references">
-        <ul>
-          <xsl:for-each select="/root/references/reference[@appendix-id=$id]">
-            <xsl:sort select="./date" />
-            <li><i><a href="references/{./file}" target="_blank"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
-          </xsl:for-each>
-        </ul>
-      </div>
     </div>
   </body>
 </html>

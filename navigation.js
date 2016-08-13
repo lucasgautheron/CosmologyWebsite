@@ -87,7 +87,7 @@ function update_hash()
 
 function load_hash()
 {
-   var subject = window.location.hash.substring(2);
+   var subject = window.location.hash.substring(window.location.hash.indexOf('!')+1);
    var data = subject?JSON.parse('{"' + subject.replace(/&/g, '","').replace(/=/g,'":"') + '"}',
                  function(key, value) { return key===""?value:decodeURIComponent(value) }):{};
 
@@ -122,7 +122,6 @@ function show_appendix(id, updatehash)
       data_object = $($.parseHTML(data, document, true)); 
       $('#appendix .title').text(data_object.find('#title').text());
       $('#appendix .text').html(data_object.find('#text').html());
-      $('#appendix .references').html(data_object.find('#references').html());
       $('#image').hide();
       $('#appendix').show();
       data_object.find('#text script').each(function(){
