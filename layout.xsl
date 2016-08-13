@@ -17,7 +17,14 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="/{$cid}/{$linkword[1]}/" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+          <xsl:choose>
+            <xsl:when test="$cid">
+              <a href="/{$cid}/{$linkword[1]}/" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+            </xsl:when>
+            <xsl:otherwise>
+              <a href="#!appendix={$linkword[1]}" class="appendix" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+            </xsl:otherwise>
+          </xsl:choose>
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -134,7 +141,7 @@
     <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
   </xsl:template>
 
-  <xsl:template name="commonheader">
+  <xsl:template name="common-header">
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -186,7 +193,7 @@
 <xsl:template match="/">
   <html>
     <head>
-      <xsl:call-template name="commonheader"/>
+      <xsl:call-template name="common-header"/>
       <title>Chronologie - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -256,7 +263,7 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
-      <xsl:call-template name="commonheader" />
+      <xsl:call-template name="common-header" />
       <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -349,7 +356,7 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
-      <xsl:call-template name="commonheader"/>
+      <xsl:call-template name="common-header"/>
       <title><xsl:value-of select="$pagecontent/title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
