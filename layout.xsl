@@ -179,16 +179,6 @@
       ga('send', 'pageview');
     </script>
   </xsl:template>
-
-  <xsl:template name="sharebuttons">
-    <ul class="share-buttons">
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
-      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
-      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
-      <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
-      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
-    </ul>
-  </xsl:template>
   
 <xsl:template match="/">
   <html>
@@ -200,7 +190,6 @@
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
         <a href="/a-propos/">A propos du site</a> | 
-        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       <div id="timeline-container">
@@ -360,7 +349,6 @@
         <xsl:if test="./following-sibling::content[1]/@id">
           <a href="/{./following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       
@@ -454,7 +442,6 @@
         <xsl:if test="$pagecontent/following-sibling::content[1]/@id">
           <a href="/{$pagecontent/following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       
