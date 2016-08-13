@@ -101,7 +101,9 @@ div#navigation
 
 div.meta
 {
-    padding: 1em;
+    padding: 2em;
+    max-width: 1024px;
+    text-align: justify;
 }
 
 div.figure, div.feynman
