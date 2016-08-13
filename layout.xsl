@@ -23,8 +23,8 @@
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
     </xsl:choose>
   </xsl:function>
-  <xsl:template match="text//node()|@*">
-    <xsl:copy-of select="doc:add-links(../../@id, .)"/>
+  <xsl:template match="text//text()">
+    <xsl:copy-of select="doc:add-links(../@id, .)"/>
   </xsl:template>
   <xsl:template match="node()|@*">
     <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
