@@ -18,6 +18,8 @@ h1 { margin: 1em 0; font-size: 180%; }
 h2 { margin: 0.7em 0; font-size: 150%; }
 h3 { margin: 0.4em 0; font-size: 120%; }
 
+.hidden { display: none; }
+
 div#timeline-container h1
 {
    padding: 0.5em;
@@ -89,7 +91,6 @@ div#appendix, div#image
     width: 32%;
 }
 
-div#appendix { display: none; }
 div#image img { width: 100%; }
 
 div#navigation

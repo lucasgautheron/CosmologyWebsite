@@ -24,7 +24,7 @@
     </xsl:choose>
   </xsl:function>
   <xsl:template match="text//text()">
-    <xsl:copy-of select="doc:add-links(../@id, .)"/>
+    <xsl:copy-of select="doc:add-links(ancestor::content/@id, .)"/>
   </xsl:template>
   <xsl:template match="node()|@*">
     <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
@@ -172,6 +172,16 @@
       ga('send', 'pageview');
     </script>
   </xsl:template>
+
+  <xsl:template name="sharebuttons">
+    <ul class="share-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
+      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
+      <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
+    </ul>
+  </xsl:template>
   
 <xsl:template match="/">
   <html>
@@ -182,13 +192,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a>
-        <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
-          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
-          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
-          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
-      </ul>
+        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       <div id="timeline-container">
@@ -242,23 +246,6 @@
         </div>
 
       </div>
-      
-      <div id="content">
-        <h2 class="title"></h2>
-        <div id="horizontal-timeline"></div>
-        <div class="text"></div>
-        <div class="interviews"></div>
-        <div class="references"></div>
-      </div>
-      
-      <div id="appendix">
-        <h2 class="title"></h2>
-        <div class="text"></div>
-        <div class="references"></div>
-      </div>
-      
-        <div id="image"></div>
-
     <div class="clear"></div>
     </body>
   </html>
@@ -269,7 +256,7 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
-      <xsl:call-template name="commonheader"/>
+      <xsl:call-template name="commonheader" />
       <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -281,13 +268,7 @@
         <xsl:if test="./following-sibling::content[1]/@id">
           <a href="/{./following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
-          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
-          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
-          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
-      </ul>
+        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       
@@ -343,7 +324,7 @@
       </div>
       </div>
       
-      <div id="appendix">
+      <div id="appendix" class="hidden">
         <h2 class="title"></h2>
         <div class="text"></div>
         <div class="references"></div>
@@ -380,13 +361,7 @@
         <xsl:if test="$pagecontent/following-sibling::content[1]/@id">
           <a href="/{$pagecontent/following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;t=History%20of%20Modern%20Cosmology" title="Share on Facebook" target="_blank"><img src="/images/icons/Facebook.png" /></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;text=History%20of%20Modern%20Cosmology:%20http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png" /></a></li>
-          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on Google+"><img src="/images/icons/Google+.png" /></a></li>
-          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology" target="_blank" title="Submit to Reddit"><img src="/images/icons/Reddit.png" /></a></li>
-          <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F&amp;title=History%20of%20Modern%20Cosmology&amp;summary=&amp;source=http%3A%2F%2Fcosmology.sciencestechniques.fr%2F" target="_blank" title="Share on LinkedIn"><img src="/images/icons/LinkedIn.png" /></a></li>
-      </ul>
+        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       
@@ -444,7 +419,12 @@
       
       <div id="appendix">
       <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
-      <div class="text"><xsl:apply-templates select="$appendixcontent/text" />
+      <xsl:variable name="appendixtext">
+        <content id="{$pagecontent/@id}">
+          <text><xsl:copy-of select="$appendixcontent/text"/></text>
+        </content>
+      </xsl:variable>
+      <div class="text"><xsl:apply-templates select="$appendixtext/content/text" />
       <xsl:for-each select="$appendixcontent/text//note">
         <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
       </xsl:for-each></div>
