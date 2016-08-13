@@ -258,7 +258,6 @@
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
         <a href="/a-propos/">A propos du site</a> | 
-        <xsl:call-template name="sharebuttons" />
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
 
