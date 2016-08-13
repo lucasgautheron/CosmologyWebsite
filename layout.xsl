@@ -188,7 +188,8 @@
     </head>
     <body>
       <div id="navigation">
-        <a href="/" id="show_timeline">Frise</a>
+        <a href="/" id="show_timeline">Frise</a> |
+        <a href="/a-propos/">A propos du site</a> | 
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       <div id="timeline-container">
@@ -246,6 +247,89 @@
     </body>
   </html>
 
+<xsl:result-document method="html" href="a-propos/index.html">
+<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+  <html>
+    <head>
+      <xsl:call-template name="common-header" />
+      <title>A propos - Histoire de la Cosmologie</title>
+    </head>
+    <body>
+      <div id="navigation">
+        <a href="/" id="show_timeline">Frise</a> |
+        <a href="/a-propos/">A propos du site</a> | 
+        <xsl:call-template name="sharebuttons" />
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+      </div>
+
+      <div class="meta">
+        <h1>Histoire de la Cosmologie Moderne </h1>
+        <h2>Qu'est-ce que la cosmologie ?</h2>
+        <p>
+          La cosmologie est le domaine de la physique qui se préoccupe de l'Univers à grande échelle, de sa dynamique globale, de son contenu.
+        </p>
+
+
+        <h2>Pourquoi la cosmologie ?</h2>
+        <p>
+          D'abord, elle a la première qualité d'être une synthèse de toute la physique moderne. Donc, étudier la cosmologie et ses enjeux, cela implique d'aborder la relativité générale, la physique statistique et la thermodynamique, la théorie quantique des champs, le modèle standard, et même certaines de ses extensions. C'est en partie pour ces raisons, et également grâce à la grande richesse des conditions physiques offertes au cours du Big Bang, que l'on compte beaucoup à l'avenir sur la cosmologie pour nous donner des indications expérimentales afin de mesurer la réalité physique de théories non testables autrement.
+          Donc, la cosmologie ouvre à de nombreux pans de la physique, et les recherches qui y sont consacrées peuvent potentiellement améliorer considérablement notre vision de la nature dans le futur.
+        </p>
+        <p>
+          Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est fascinant de voir comment notre conception de l'Univers a radicalement changé en un siècle, au fil de divers rebondissements et révolutions majeures, parfois accidentellement. C'est aussi un bon sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser et susciter parfois des débats d'ordre philosophiques. Aujourd'hui encore, cette science jeune mais très prometteuse suscite parfois des controverses.
+        </p>
+
+        <h2>Pourquoi ce site ?</h2>
+        <p>
+          A l'origine, le projet a été lancé durant un stage que j'ai effectué au LAPTh, et supervisé par <a href="#richard-taillet">Richard Taillet</a>. Alors en pleine préparation de nouveaux <a href="http://podcast.grenet.fr/podcast/cours-de-cosmologie/">cours au format vidéo sur la cosmologie</a>, il m'avait suggéré de réaliser une sorte de frise chronologique des événements clés de la cosmologie moderne, sous un format à définir, éventuellement un site Internet. J'ai alors réfléchi à une mise en page qui rende l'essentiel accessible à un public plutôt large (mais au moins des étudiants de première année) tout en permettant à ceux qui le souhaitent d'approfondir certaines notions au cours de la lecture sans en interrompre le flux. Conformément à l'idée initiale, la navigation est centrée sur une frise chronologique qui énumère des événements marquants de l'histoire de la cosmologie. 
+        </p>
+
+        <h2>Comment naviguer ?</h2>
+        <p>
+          <ul>
+            <li>Le point de départ est bien-sûr la <a href="/">frise chronologique</a>.</li>
+            <li>Chaque <b>événement</b> marquant est relié à un <b>article</b> décrivant une page associée de l'histoire de la cosmologie.</li>
+            <li>Des mots-clés cliquables permettent d'avoir accès à des <b>annexes</b> développant un aspect en particulier, en parallèle du contenu principal (à sa droite).</li>
+          </ul>
+        </p>
+
+        <h2>Que peut-on trouver d'original ?</h2>
+        <p>
+          <ul>
+            <li>Les <b>annexes</b> couvrent de nombreux domaines de la physique. Leur construction permet au site d'être enrichi progressivement.</li>
+            <li>Autant que possible, les <b>graphiques</b> ont été produits spécialement pour le site, et le <b>code</b> des simulations utilisé pour les générer est <b>téléchargeable</b>.</li>
+            <li>Des <b>interviews</b> de physiciens permettent de mieux saisir les enjeux de la recherche actuelle, et le travail concret de chercheur.</li>
+            <li>Des liens vers des <b>papiers</b> ayant joué un rôle important sont proposés, et leur lecture est très riche d'enseignement sur la pensée de leurs auteurs à l'époque de leur écriture.</li>
+          </ul>
+        </p>
+
+        <h2>Qui est l'auteur ?</h2>
+        <div class="interview">
+          <div class="interview_short">
+           <img src="/images/people/lucas_gautheron.jpg" />
+           <div class="description"><span class="who">Lucas Gautheron</span>. 
+             Actuellement étudiant en physique à l'ENS de Cachan (M1), originaire de Haute-Savoie, mes intérêts portent principalement sur la physique des particules et l'astrophysique. Je travaille sur plusieurs projets open-source, disponibles tout comme mes simulations sur <a href="http://github.com/lucasgautheron/">github</a>.
+           </div>
+          </div>
+        </div>
+
+
+        <h2>Remerciements</h2>
+        <p>
+          <ul>
+            <li><a name="richard-taillet"></a><b><a href="http://lapth.cnrs.fr/pg-nomin/taillet/">Richard Taillet</a></b> bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.</li>
+            <li><b><a href="https://www.scalawilliam.com/">William Vykintas Narmontas</a></b>, pour ses précieux conseils lors de la réalisation technique du site.</li>
+            <li><b><a href="http://www.coepp.org.au/people/martin-white">Martin White</a></b>, qui a accepté de répondre à mes questions, malgré un calendrier chargé.</li>
+            <li>Le <a href="http://lapth.in2p3.fr/">LAPTh</a>, le <a href="http://lapp.in2p3.fr/">LAPP</a> et le <a href="http://lpnhe.in2p3.fr/">LPNHE</a> pour leur accueil.</li>
+          </ul>
+        </p>
+      </div>
+
+    <div class="clear"></div>
+    </body>
+  </html>
+</xsl:result-document>
+
 <xsl:for-each select="root/contents/content">
  <xsl:variable name="uid" select="./@uid"/>
 <xsl:result-document method="html" href="./{./@id}/index.html">
@@ -258,6 +342,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:if test="./preceding-sibling::content[1]/@id">
           <a href="/{./preceding-sibling::content[1]/@id}">Précédent</a> |
         </xsl:if>
@@ -350,6 +435,7 @@
     <body>
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
+        <a href="/a-propos/">A propos du site</a> | 
         <xsl:if test="$pagecontent/preceding-sibling::content[1]/@id">
           <a href="/{$pagecontent/preceding-sibling::content[1]/@id}">Précédent</a> |
         </xsl:if>
