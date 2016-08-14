@@ -91,6 +91,13 @@ div#appendix, div#image
     width: 32%;
 }
 
+@media all and (max-width: 850px)   {
+    div#content, div#appendix, div#image {
+        width:100%;  
+        float: none;
+    }    
+}
+
 div#image img { width: 100%; }
 
 div#navigation
