@@ -95,6 +95,8 @@ div#appendix, div#image
 {
     float: left;
     width: 32%;
+    box-sizing: border-box;
+    padding-left: 2em;
 }
 
 @media screen and (max-width: 850px)   {
