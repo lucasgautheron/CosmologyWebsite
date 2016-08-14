@@ -192,19 +192,21 @@
         <a href="/a-propos/">A propos du site</a> | 
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
-      <div id="timeline-container">
-      <h1>Histoire de la Cosmologie Moderne</h1>
-        <ul id="timeline">
-          <xsl:for-each select="root/events/event[not(@hidden=1)]">
-            <xsl:sort select="./@date" />
-            <xsl:variable name="cid" select="./@content-id"/>
-            <xsl:if test="/root/contents/content[@uid=$cid][1]/color">            
-            <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@uid=$cid][1]/color" />;}</style>
-            </xsl:if>
-            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="/{/root/contents/content[@uid=$cid][1]/@id}"><xsl:value-of select="." /></a></div></li>
-          </xsl:for-each>
-        </ul>
 
+      <div id="main">
+        <div id="timeline-container">
+        <h1>Histoire de la Cosmologie Moderne</h1>
+          <ul id="timeline">
+            <xsl:for-each select="root/events/event[not(@hidden=1)]">
+              <xsl:sort select="./@date" />
+              <xsl:variable name="cid" select="./@content-id"/>
+              <xsl:if test="/root/contents/content[@uid=$cid][1]/color">            
+              <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@uid=$cid][1]/color" />;}</style>
+              </xsl:if>
+              <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="/{/root/contents/content[@uid=$cid][1]/@id}"><xsl:value-of select="." /></a></div></li>
+            </xsl:for-each>
+         </ul>
+        </div>
         <div class="meta">
           <h2>Activités</h2>
           <ul id="activities">
@@ -240,10 +242,8 @@
             <li><a href="https://github.com/lucasgautheron/CosmologyWebsite">Enregistrer un ticket sur github</a></li>
             <li><a href="mailto:lucas.gautheron@gmail.com">Envoyer un email à l'adresse</a> lucas <i>dot</i> gautheron <i>at</i> gmail <i>dot</i> com</li>
           </ul>
-        </div>
-
+        </div>      
       </div>
-    <div class="clear"></div>
     </body>
   </html>
 
@@ -261,70 +261,72 @@
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
 
-      <div class="meta">
-        <h1>Histoire de la Cosmologie Moderne </h1>
-        <h2>Qu'est-ce que la cosmologie ?</h2>
-        <p>
-          La cosmologie est le domaine de la physique qui se préoccupe de l'Univers à grande échelle, de sa dynamique globale, de son contenu.
-        </p>
+      <div id="main">
+        <div class="meta">
+          <h1>Histoire de la Cosmologie Moderne </h1>
+          <h2>Qu'est-ce que la cosmologie ?</h2>
+          <p>
+            La cosmologie est le domaine de la physique qui se préoccupe de l'Univers à grande échelle, de sa dynamique globale, de son contenu.
+          </p>
 
 
-        <h2>Pourquoi la cosmologie ?</h2>
-        <p>
-          D'abord, elle a la première qualité d'être une synthèse de toute la physique moderne. Donc, étudier la cosmologie et ses enjeux, cela implique d'aborder la relativité générale, la physique statistique et la thermodynamique, la théorie quantique des champs, le modèle standard, et même certaines de ses extensions. C'est en partie pour ces raisons, et également grâce à la grande richesse des conditions physiques offertes au cours du Big Bang, que l'on compte beaucoup à l'avenir sur la cosmologie pour nous donner des indications expérimentales afin de mesurer la réalité physique de théories non testables autrement.
-          Donc, la cosmologie ouvre à de nombreux pans de la physique, et les recherches qui y sont consacrées peuvent potentiellement améliorer considérablement notre conception de la nature dans le futur.
-        </p>
-        <p>
-          Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est fascinant de voir comment notre vision de l'Univers a radicalement changé en un siècle, au fil de découvertes majeures parfois accidentelles et de divers rebondissements. C'est aussi un excellent sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser la communauté scientifique et susciter parfois des débats d'ordre plutôt philosophiques. Aujourd'hui encore, cette science toujours jeune mais très prometteuse suscite parfois des controverses.
-        </p>
+          <h2>Pourquoi la cosmologie ?</h2>
+          <p>
+            D'abord, elle a la première qualité d'être une synthèse de toute la physique moderne. Donc, étudier la cosmologie et ses enjeux, cela implique d'aborder la relativité générale, la physique statistique et la thermodynamique, la théorie quantique des champs, le modèle standard, et même certaines de ses extensions. C'est en partie pour ces raisons, et également grâce à la grande richesse des conditions physiques offertes au cours du Big Bang, que l'on compte beaucoup à l'avenir sur la cosmologie pour nous donner des indications expérimentales afin de mesurer la réalité physique de théories non testables autrement.
+            Donc, la cosmologie ouvre à de nombreux pans de la physique, et les recherches qui y sont consacrées peuvent potentiellement améliorer considérablement notre conception de la nature dans le futur.
+          </p>
+          <p>
+            Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est fascinant de voir comment notre vision de l'Univers a radicalement changé en un siècle, au fil de découvertes majeures parfois accidentelles et de divers rebondissements. C'est aussi un excellent sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser la communauté scientifique et susciter parfois des débats d'ordre plutôt philosophiques. Aujourd'hui encore, cette science toujours jeune mais très prometteuse suscite parfois des controverses.
+          </p>
 
-        <h2>Pourquoi ce site ?</h2>
-        <p>
-          A l'origine, le projet a été lancé durant un stage que j'ai effectué au LAPTh, et supervisé par <a href="#richard-taillet">Richard Taillet</a>. Alors en pleine préparation de nouveaux <a href="http://podcast.grenet.fr/podcast/cours-de-cosmologie/">cours au format vidéo sur la cosmologie</a>, il m'avait suggéré de réaliser une sorte de frise chronologique des événements clés de la cosmologie moderne, sous un format à définir, éventuellement un site Internet. J'ai alors réfléchi à une mise en page qui rende l'essentiel accessible à un public plutôt large (mais au moins des étudiants de première année) tout en permettant à ceux qui le souhaitent d'approfondir certaines notions au cours de la lecture sans en interrompre le flux. Conformément à l'idée initiale, la navigation est centrée sur une frise chronologique qui énumère des événements marquants de l'histoire de la cosmologie. 
-        </p>
+          <h2>Pourquoi ce site ?</h2>
+          <p>
+            A l'origine, le projet a été lancé durant un stage que j'ai effectué au LAPTh, et supervisé par <a href="#richard-taillet">Richard Taillet</a>. Alors en pleine préparation de nouveaux <a href="http://podcast.grenet.fr/podcast/cours-de-cosmologie/">cours au format vidéo sur la cosmologie</a>, il m'avait suggéré de réaliser une sorte de frise chronologique des événements clés de la cosmologie moderne, sous un format à définir, éventuellement un site Internet. J'ai alors réfléchi à une mise en page qui rende l'essentiel accessible à un public plutôt large (mais au moins des étudiants de première année) tout en permettant à ceux qui le souhaitent d'approfondir certaines notions au cours de la lecture sans en interrompre le flux. Conformément à l'idée initiale, la navigation est centrée sur une frise chronologique qui énumère des événements marquants de l'histoire de la cosmologie. 
+          </p>
 
-        <h2>Comment naviguer ?</h2>
-        <p>
-          <ul>
-            <li>Le point de départ est bien-sûr la <a href="/">frise chronologique</a>.</li>
-            <li>Chaque <b>événement</b> marquant est relié à un <b>article</b> décrivant une page associée de l'histoire de la cosmologie.</li>
-            <li>Des mots-clés cliquables permettent d'avoir accès à des <b>annexes</b> développant un aspect en particulier, en parallèle du contenu principal (à sa droite).</li>
-          </ul>
-        </p>
+          <h2>Comment naviguer ?</h2>
+          <p>
+            <ul>
+              <li>Le point de départ est bien-sûr la <a href="/">frise chronologique</a>.</li>
+              <li>Chaque <b>événement</b> marquant est relié à un <b>article</b> décrivant une page associée de l'histoire de la cosmologie.</li>
+              <li>Des mots-clés cliquables permettent d'avoir accès à des <b>annexes</b> développant un aspect en particulier, en parallèle du contenu principal (à sa droite).</li>
+            </ul>
+          </p>
 
-        <h2>Que peut-on trouver d'original ?</h2>
-        <p>
-          <ul>
-            <li>Les <b>annexes</b> couvrent de nombreux domaines de la physique. Leur construction permet au site d'être enrichi progressivement.</li>
-            <li>Autant que possible, les <b>graphiques</b> ont été produits spécialement pour le site, et le <b>code</b> des simulations utilisé pour les générer est <b>téléchargeable</b>.</li>
-            <li>Des <b>interviews</b> de physiciens permettent de mieux saisir les enjeux de la recherche actuelle, et le travail concret de chercheur.</li>
-            <li>Des liens vers des <b>papiers</b> ayant joué un rôle important sont proposés, et leur lecture est très riche d'enseignement sur la pensée de leurs auteurs à l'époque de leur écriture.</li>
-          </ul>
-        </p>
+          <h2>Que peut-on trouver d'original ?</h2>
+          <p>
+            <ul>
+              <li>Les <b>annexes</b> couvrent de nombreux domaines de la physique. Leur construction permet au site d'être enrichi progressivement.</li>
+              <li>Autant que possible, les <b>graphiques</b> ont été produits spécialement pour le site, et le <b>code</b> des simulations utilisé pour les générer est <b>téléchargeable</b>.</li>
+              <li>Des <b>interviews</b> de physiciens permettent de mieux saisir les enjeux de la recherche actuelle, et le travail concret de chercheur.</li>
+              <li>Des liens vers des <b>papiers</b> ayant joué un rôle important sont proposés, et leur lecture est très riche d'enseignement sur la pensée de leurs auteurs à l'époque de leur écriture.</li>
+            </ul>
+          </p>
 
-        <h2>Qui est l'auteur ?</h2>
-        <div class="interview">
-          <div class="interview_short">
-           <img src="/images/people/lucas_gautheron.jpg" />
-           <div class="description"><span class="who">Lucas Gautheron</span>. 
-             Actuellement étudiant en physique à l'ENS de Cachan (M1), originaire de Haute-Savoie, mes intérêts portent principalement sur la physique des particules et l'astrophysique. Je travaille sur plusieurs projets open-source, disponibles tout comme mes simulations sur <a href="http://github.com/lucasgautheron/">github</a>.
-           </div>
+          <h2>Qui est l'auteur ?</h2>
+          <div class="interview">
+            <div class="interview_short">
+             <img src="/images/people/lucas_gautheron.jpg" />
+             <div class="description"><span class="who">Lucas Gautheron</span>. 
+               Actuellement étudiant en physique à l'ENS de Cachan (M1), originaire de Haute-Savoie, mes intérêts portent principalement sur la physique des particules et l'astrophysique. Je travaille sur plusieurs projets open-source, disponibles tout comme mes simulations sur <a href="http://github.com/lucasgautheron/">github</a>.
+             </div>
+            </div>
           </div>
+
+
+          <h2>Remerciements</h2>
+          <p>
+            <ul>
+              <li><a name="richard-taillet"></a><b><a href="http://lapth.cnrs.fr/pg-nomin/taillet/">Richard Taillet</a></b> bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.</li>
+              <li><b><a href="https://www.scalawilliam.com/">William Vykintas Narmontas</a></b>, pour ses précieux conseils lors de la réalisation technique du site.</li>
+              <li><b><a href="http://www.coepp.org.au/people/martin-white">Martin White</a></b>, qui a accepté de répondre à mes questions, malgré un calendrier chargé.</li>
+              <li>Le <a href="http://lapth.in2p3.fr/">LAPTh</a>, le <a href="http://lapp.in2p3.fr/">LAPP</a> et le <a href="http://lpnhe.in2p3.fr/">LPNHE</a> pour leur accueil.</li>
+            </ul>
+          </p>
         </div>
 
-
-        <h2>Remerciements</h2>
-        <p>
-          <ul>
-            <li><a name="richard-taillet"></a><b><a href="http://lapth.cnrs.fr/pg-nomin/taillet/">Richard Taillet</a></b> bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.</li>
-            <li><b><a href="https://www.scalawilliam.com/">William Vykintas Narmontas</a></b>, pour ses précieux conseils lors de la réalisation technique du site.</li>
-            <li><b><a href="http://www.coepp.org.au/people/martin-white">Martin White</a></b>, qui a accepté de répondre à mes questions, malgré un calendrier chargé.</li>
-            <li>Le <a href="http://lapth.in2p3.fr/">LAPTh</a>, le <a href="http://lapp.in2p3.fr/">LAPP</a> et le <a href="http://lpnhe.in2p3.fr/">LPNHE</a> pour leur accueil.</li>
-          </ul>
-        </p>
-      </div>
-
-    <div class="clear"></div>
+      <div class="clear"></div>
+    </div>
     </body>
   </html>
 </xsl:result-document>
@@ -351,69 +353,71 @@
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
       
-    <div id="content">
-      <div id="horizontal-timeline">
-        <ul>
-        <xsl:for-each select="/root/events/event[@content-id=$uid]">
-          <xsl:sort select="./@date" />
-          <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
-        </xsl:for-each>
-        </ul>
-      </div>
-      <h2 class="title"><xsl:value-of select="./title" /></h2>
-      <div class="text"><xsl:apply-templates select="text" />
-        <xsl:for-each select="./text//note">
-          <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
-        </xsl:for-each></div>
-
-      <div class="interviews">
-        <xsl:for-each select="./interviews/interview">
-          <div class="interview" id="{generate-id(.)}">
-            <div class="interview_short">
-              <img src="/images/{./who/@src}" />
-              <div class="description">
-                <span class="who"><xsl:value-of select="./who/@name" /></span>.
-                <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
-            </div>
-            <div class="interview_content">
-              <xsl:if test="./record">
-                <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
-                <div class="interview_record">
-                  <audio controls="controls">
-                    <source src="records/{./record}.ogg" type="audio/ogg" />
-                    <source src="records/{./record}.mp3" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio> 
-                </div>
-              </xsl:if>
-              <h4>Script</h4>
-              <xsl:apply-templates select="questions" />
-            </div>
-          </div>
-        </xsl:for-each>
-      </div>
-    
-      <div class="references">
-        <ul>
-          <xsl:for-each select="./references/reference">
-            <xsl:sort select="./date" />
-            <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+    <div id="main">
+      <div id="content">
+        <div id="horizontal-timeline">
+          <ul>
+          <xsl:for-each select="/root/events/event[@content-id=$uid]">
+            <xsl:sort select="./@date" />
+            <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
           </xsl:for-each>
-        </ul>
-      </div>
-      </div>
-      
-      <div id="appendix" class="hidden">
-        <h2 class="title"></h2>
-        <div class="text"></div>
-        <div class="references"></div>
-      </div>
+          </ul>
+        </div>
+        <h2 class="title"><xsl:value-of select="./title" /></h2>
+        <div class="text"><xsl:apply-templates select="text" />
+          <xsl:for-each select="./text//note">
+            <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+          </xsl:for-each></div>
 
-      <div id="image">
-        <img src="/images/{./image/@src}" />
-        <span class="caption"><xsl:value-of select="./image/." /></span>
-      </div>
-    <div class="clear"></div>
+        <div class="interviews">
+          <xsl:for-each select="./interviews/interview">
+            <div class="interview" id="{generate-id(.)}">
+              <div class="interview_short">
+                <img src="/images/{./who/@src}" />
+                <div class="description">
+                  <span class="who"><xsl:value-of select="./who/@name" /></span>.
+                  <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
+              </div>
+              <div class="interview_content">
+                <xsl:if test="./record">
+                  <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
+                  <div class="interview_record">
+                    <audio controls="controls">
+                      <source src="records/{./record}.ogg" type="audio/ogg" />
+                      <source src="records/{./record}.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio> 
+                  </div>
+                </xsl:if>
+                <h4>Script</h4>
+                <xsl:apply-templates select="questions" />
+              </div>
+            </div>
+          </xsl:for-each>
+        </div>
+      
+        <div class="references">
+          <ul>
+            <xsl:for-each select="./references/reference">
+              <xsl:sort select="./date" />
+              <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+            </xsl:for-each>
+          </ul>
+        </div>
+        </div>
+        
+        <div id="appendix" class="hidden">
+          <h2 class="title"></h2>
+          <div class="text"></div>
+          <div class="references"></div>
+        </div>
+
+        <div id="image">
+          <img src="/images/{./image/@src}" />
+          <span class="caption"><xsl:value-of select="./image/." /></span>
+        </div>
+      <div class="clear"></div>
+    </div>
     </body>
   </html>
 </xsl:result-document>
@@ -443,77 +447,78 @@
         </xsl:if>
         Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
       </div>
+    <div id="main"> 
+      <div id="content">
+        <div id="horizontal-timeline">
+          <ul>
+          <xsl:for-each select="/root/events/event[@content-id=$cuid]">
+            <xsl:sort select="./@date" />
+            <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
+          </xsl:for-each>
+          </ul>
+        </div>
+        <h2 class="title"><xsl:value-of select="$pagecontent/title" /></h2>
+        <div class="text"><xsl:apply-templates select="$pagecontent/text" />
+          <xsl:for-each select="$pagecontent/text//note">
+            <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+          </xsl:for-each></div>
+
+        <div class="interviews">
+          <xsl:for-each select="$pagecontent/interviews/interview">
+            <div class="interview" id="{generate-id(.)}">
+              <div class="interview_short">
+                <img src="/images/{./who/@src}" />
+                <div class="description">
+                  <span class="who"><xsl:value-of select="./who/@name" /></span>.
+                  <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
+              </div>
+              <div class="interview_content">
+                <xsl:if test="./record">
+                  <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
+                  <div class="interview_record">
+                    <audio controls="controls">
+                      <source src="records/{./record}.ogg" type="audio/ogg" />
+                      <source src="records/{./record}.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio> 
+                  </div>
+                </xsl:if>
+                <h4>Script</h4>
+                <xsl:apply-templates select="questions" />
+              </div>
+            </div>
+          </xsl:for-each>
+        </div>
       
-    <div id="content">
-      <div id="horizontal-timeline">
-        <ul>
-        <xsl:for-each select="/root/events/event[@content-id=$cuid]">
-          <xsl:sort select="./@date" />
-          <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
-        </xsl:for-each>
-        </ul>
-      </div>
-      <h2 class="title"><xsl:value-of select="$pagecontent/title" /></h2>
-      <div class="text"><xsl:apply-templates select="$pagecontent/text" />
-        <xsl:for-each select="$pagecontent/text//note">
+        <div class="references">
+          <ul>
+            <xsl:for-each select="$pagecontent/references/reference">
+              <xsl:sort select="./date" />
+              <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+            </xsl:for-each>
+          </ul>
+        </div>
+        </div>
+        
+        <div id="appendix">
+        <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
+        <xsl:variable name="appendixtext">
+          <content id="{$pagecontent/@id}">
+            <text><xsl:copy-of select="$appendixcontent/text"/></text>
+          </content>
+        </xsl:variable>
+        <div class="text"><xsl:apply-templates select="$appendixtext/content/text" />
+        <xsl:for-each select="$appendixcontent/text//note">
           <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
         </xsl:for-each></div>
+        </div>
 
-      <div class="interviews">
-        <xsl:for-each select="$pagecontent/interviews/interview">
-          <div class="interview" id="{generate-id(.)}">
-            <div class="interview_short">
-              <img src="/images/{./who/@src}" />
-              <div class="description">
-                <span class="who"><xsl:value-of select="./who/@name" /></span>.
-                <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
-            </div>
-            <div class="interview_content">
-              <xsl:if test="./record">
-                <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
-                <div class="interview_record">
-                  <audio controls="controls">
-                    <source src="records/{./record}.ogg" type="audio/ogg" />
-                    <source src="records/{./record}.mp3" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio> 
-                </div>
-              </xsl:if>
-              <h4>Script</h4>
-              <xsl:apply-templates select="questions" />
-            </div>
-          </div>
-        </xsl:for-each>
-      </div>
-    
-      <div class="references">
-        <ul>
-          <xsl:for-each select="$pagecontent/references/reference">
-            <xsl:sort select="./date" />
-            <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
-          </xsl:for-each>
-        </ul>
-      </div>
-      </div>
-      
-      <div id="appendix">
-      <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
-      <xsl:variable name="appendixtext">
-        <content id="{$pagecontent/@id}">
-          <text><xsl:copy-of select="$appendixcontent/text"/></text>
-        </content>
-      </xsl:variable>
-      <div class="text"><xsl:apply-templates select="$appendixtext/content/text" />
-      <xsl:for-each select="$appendixcontent/text//note">
-        <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
-      </xsl:for-each></div>
-      </div>
-
-      <div id="image">
-        <img src="/images/{./image/@src}" />
-        <span class="caption"><xsl:value-of select="$pagecontent/image/." /></span>
-      </div>
-    <div class="clear"></div>
+        <div id="image">
+          <img src="/images/{./image/@src}" />
+          <span class="caption"><xsl:value-of select="$pagecontent/image/." /></span>
+        </div>
+      <div class="clear"></div>
+    </div>
     </body>
   </html>
 </xsl:result-document>

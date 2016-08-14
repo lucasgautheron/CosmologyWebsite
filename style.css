@@ -72,11 +72,17 @@ p { margin-bottom: 1em; }
 
 a { color: #BF1717; }
 
+div#main
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2em;
+}
+
 div#content, div#appendix, div#image
 {
     line-height: 1.4em;
-    margin: 5px;
-    padding: 10px;
+    margin: 1em 0;
 }
 
 div#content
@@ -91,9 +97,9 @@ div#appendix, div#image
     width: 32%;
 }
 
-@media all and (max-width: 850px)   {
+@media screen and (max-width: 850px)   {
     div#content, div#appendix, div#image {
-        width:100%;  
+        width: 100%;  
         float: none;
     }    
 }
@@ -108,7 +114,7 @@ div#navigation
 
 div.meta
 {
-    padding: 1em 2em;
+    padding: 1em 0;
     max-width: 1024px;
     text-align: justify;
 }
