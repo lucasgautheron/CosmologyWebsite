@@ -99,7 +99,7 @@ div#appendix, div#image
     padding-left: 2em;
 }
 
-@media screen and (max-width: 850px)   {
+@media screen and (max-width: 1000px)  {
     div#content, div#appendix, div#image {
         width: 100%;  
         float: none;
