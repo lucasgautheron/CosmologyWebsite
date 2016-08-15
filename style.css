@@ -8,7 +8,8 @@ body
     margin: 0 auto;
     width: 100%;
     font-family: "DejaVu Serif", serif;
-    font-size: 14px;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 ul,    ol    { list-style-position: inside; margin: 5px; }
@@ -72,11 +73,16 @@ p { margin-bottom: 1em; }
 
 a { color: #BF1717; }
 
+div#main
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2em;
+}
+
 div#content, div#appendix, div#image
 {
-    line-height: 1.4em;
-    margin: 5px;
-    padding: 10px;
+    margin: 1em 0;
 }
 
 div#content
@@ -89,11 +95,13 @@ div#appendix, div#image
 {
     float: left;
     width: 32%;
+    box-sizing: border-box;
+    padding-left: 2em;
 }
 
-@media all and (max-width: 850px)   {
+@media screen and (max-width: 1000px)  {
     div#content, div#appendix, div#image {
-        width:100%;  
+        width: 100%;  
         float: none;
     }    
 }
@@ -108,7 +116,7 @@ div#navigation
 
 div.meta
 {
-    padding: 1em 2em;
+    padding: 1em 0;
     max-width: 1024px;
     text-align: justify;
 }
@@ -127,8 +135,8 @@ div.figure img, div.feynman div.diagram
     margin: 0 auto;
 }
 
-div.figure .label { margin: 5px; font-weight: bold; }
-div.figure .caption { margin: 5px; text-align: left; font-size: 80%; }
+div.figure .label { margin: 0.5em; font-weight: bold; }
+div.figure .caption { margin: 0.5em; text-align: left; font-size: 80%; }
 
 div.spoiler
 {
@@ -142,12 +150,12 @@ div.spoiler div
     display: none;
 }
 
-span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
+span.caption { width: 100%; padding: 0.5em; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
 
 div.quote
 {
-    margin: 10px 10px 10px 20px;
-    padding: 10px;
+    margin: 1em 1em 1em 2em;
+    padding: 1em;
     border-left: 2px solid gray;
 }
 
@@ -172,7 +180,7 @@ div.note
     background-color: #FF9D7D;
     border: 1px solid black;
     position: absolute;
-    padding: 10px;
+    padding: 1em;
     z-index: 1000;
     max-width: 500px;
 }
@@ -180,13 +188,13 @@ div.note
 div.text
 {
     text-align: justify;
-    padding: 5px 0;
+    padding: 0.5em 0;
 }
 
 div.interview
 {
     text-align: justify;
-    padding: 5px;
+    padding: 0.5em;
 }
 
 div.interview_short
