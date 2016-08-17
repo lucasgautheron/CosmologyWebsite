@@ -506,7 +506,7 @@
           </content>
         </xsl:variable>
         <div class="text"><xsl:apply-templates select="$appendixtext/content/text" />
-        <xsl:for-each select="$appendixcontent/text//note">
+          <xsl:for-each select="$appendixtext/content/text//note">
           <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
         </xsl:for-each></div>
         </div>
