@@ -511,7 +511,7 @@
         </xsl:for-each></div>
         </div>
 
-        <div id="image">
+        <div id="image" class="hidden">
           <img src="/images/{./image/@src}" />
           <span class="caption"><xsl:value-of select="$pagecontent/image/." /></span>
         </div>
