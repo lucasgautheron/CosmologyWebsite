@@ -71,7 +71,7 @@ ul#timeline
 
 p { margin-bottom: 1em; }
 
-a { color: #BF1717; }
+a { color: #BF1717; text-decoration: none; }
 
 div#main
 {
