@@ -72,6 +72,7 @@ ul#timeline
 p { margin-bottom: 1em; }
 
 a { color: #BF1717; text-decoration: none; }
+a:hover { color: #891010; }
 
 div#main
 {
