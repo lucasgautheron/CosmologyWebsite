@@ -484,13 +484,30 @@
     	<title>Réapparition de la nucléosynthèse primordiale</title>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
-          <p>
-            
-          </p>
     	    <p>
-    	        Problème de l'hélium. Regain d'intérêt pour la nucléosynthèse primordiale. Doutes : http://adsabs.harvard.edu/full/1967QJRAS...8..313T.
+    	        Momentanément oubliée après le succès de la nucléosynthèse stellaire, la nucléosynthèse primordiale, c'est-à-dire la formation de noyaux ayant eu lieu durant le Big-Bang, a connu un grand regain d'intérêt après la découverte du fond diffus cosmologique. Non seulement celui-ci confirme que l'Univers était beaucoup plus chaud dans le passé, et probablement suffisamment pour que des réactions nucléaires aient eu lieu à grande échelle, mais en plus la mesure de sa température est une contrainte expérimentale supplémentaire utile pour mieux tester ces modèles.
+    	    </p>
+    	    <p>
+    	        Au début des années 1960, les travaux d'Alpher, Follin et Hermann, ainsi que ceux d'Hayashi, ont permis d'obtenir une bonne description de la physique de l'Univers pour une température de l'ordre de la centaine de MeV - au-delà, la physique des particules n'est alors pas encore assez bien connue pour obtenir une meilleure description. A ces températures, l'Univers était constitué de protons et de neutrons (les baryons), d'électrons, de photons, et de neutrinos et antineutrinos.
+    	        Les réactions entre ces différents constituants étaient suffisantes pour les maintenant en équilibre thermodynamique, et donc une compréhension des phénomènes physiques antérieurs à $\sim$ 100 MeV n'est pas nécessaire. L'Univers est alors décrit par un nombre limité de paramètres, les "conditions initiales", comme le ratio baryons/photons ($=(n_p + n_n)/n_{\gamma}$).
+    	    </p>
+    	    <p>
+    	        Avec le refroidissement de l'Univers, certaines réactions maintenant l'équilibre thermique sont interrompues. Le ratio protons/neutrons est ainsi constant, et n'évolue plus que par la désintégration spontanée des neutrons d'un temps de demi-vie de l'ordre de la dizaine de minutes.
+    	        Une fois la température abaissée au dixième de MeV, les réactions nucléaires deviennent prédominantes, c'est le début à proprement parler de la nucléosynthèse primordiale. Afin d'estimer les abondances d'éléments résultantes, il faut alors intégrer toutes les réactions nucléaires et leur sections-efficaces aux calculs. C'est ce travail qui a été repoussé pendant plusieurs années après les derniers apports de Fermi et Turkevich.
+    	    </p>
+    	    <p>
+    	        
     	    </p>
     	</text>
+        <references>
+          <reference>
+            <title></title>
+            <author></author>
+            <text></text>
+            <date></date>
+            <file></file>
+          </reference>
+        </references>
     </content>
     
       <content id="decouverte-matiere-noire" uid="dark-matter-discovery" type="timeline">
