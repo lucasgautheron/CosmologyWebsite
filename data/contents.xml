@@ -318,7 +318,7 @@
                     <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
                     <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
                     <li>Processus $p$ : Capture protonique. Explique la formation d'éléments relativement riches en protons.</li>
-                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}H$, $^{3}He$, $^{4}He$ et $^{7}Li$. </li>
+                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}\textrm{H}$, $^{3}\textrm{He}$, $^{4}\textrm{He}$ et $^{7}\textrm{Li}$. </li>
                 </ul>
                 L'ensemble de ces mécanismes de formation d'éléments au sein des étoiles est regroupé sous le nom de "nucléosynthèse stellaire". 
                 Le succès de ce modèle est que les étoiles évoluant lentement, elles offrent une variétés de conditions physiques et donc de processus différents qui peuvent s'effectuer pendant un temps suffisant pour former une grande variété d'éléments.
@@ -496,6 +496,50 @@
     	        Une fois la température abaissée au dixième de MeV, les réactions nucléaires deviennent prédominantes, c'est le début à proprement parler de la nucléosynthèse primordiale. Afin d'estimer les abondances d'éléments résultantes, il faut alors intégrer toutes les réactions nucléaires et leur sections-efficaces aux calculs. C'est ce travail qui a été repoussé pendant plusieurs années après les derniers apports de Fermi et Turkevich.
     	    </p>
     	    <p>
+    	        Après la découverte du fond diffus cosmologique, la donne change donc très vite. Le Big-Bang parait beaucoup plus vraisemblable et dont la nucléosynthèse primordiale aussi.
+    	        Par ailleurs, l'abondance des éléments ${}^2_1\textrm{H}$ ${}^3_2\textrm{He}$, ${}^4_2\textrm{He}$ et ${}^{7}\textrm{Li}$, n'a pas encore d'explication satisfaisante, ce qui constitue une autre raison d'envisager des modes de production des éléments autre que la nucléosynthèse stellaire.
+    	        
+    	        En 1964, Hoyle et Tayler publient un article intitulé "The mystery of helium abundance" <!--  10.1038/2031108a0 -->, dans lequel ils évaluent la vraisemblance d'une explication de l'abondance observée de l'hélium par une synthèse durant un Big-Bang chaud, donc via le mécanisme qu'Alpher et Hermann ont été les premiers à proposer.
+    	        Ils soulignent, en plus de sa valeur trop élevée pour les mécanismes stellaires classiques de formation, l'homogénéité de l'abondance observée de l'hélium. Le fait que celle-ci dépende très peu de l'objet observé, et donc qu'elle soit similaire proche ou loin des sites de production stellaires, et insensible à leur âge, semble indiquer une origine différente. L'abondance observée est grossièrement en accord avec une production d'origine cosmologique selon leurs calculs, qui prédisent $\textrm{He}/\textrm{H} \sim 0.14$.
+    	        Ils concluent alors que l'hélium a du être produit à très haute température, comme cela est possible dans le cadre du Big-Bang chaud, ou bien dans des étoiles supermassives. 
+    	        
+    	         
+    	        
+    	        
+    	        <table>
+    	            <tr>
+    	                <th>Observation</th>
+    	                <th>$\mbox{He}/\mbox{H}$</th>
+    	            </tr>
+    	            <tr>
+    	                <td>Nébuleuse d'Orion</td>
+    	                <td>0.091</td>
+    	            </tr>
+    	            <tr>
+    	                <td>NGC 604 (M33)</td>
+    	                <td>0.102</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Petit Nuage de Magellan</td>
+    	                <td>0.11</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Etoiles de type B</td>
+    	                <td>0.16</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Nébuleuses planétaires</td>
+    	                <td>0.09-0.19</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Rayonnement solaire</td>
+    	                <td>0.09</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Modèle d'évolution solaire</td>
+    	                <td>0.091</td>
+    	            </tr>
+    	        </table>
     	        
     	    </p>
     	</text>
