@@ -39,23 +39,23 @@
             Les résultats indiquèrent que la prédiction correcte était donnée par la Relativité Générale, cependant leur significance fut remise en cause. (Voir l'activité "<contentlink id="15" />").
             </p>
             </text>
-            <references>
-              <reference>
+            <further-readings>
+              <further-reading>
                   <title>Sur l'électrodynamique des corps en mouvement</title>
                   <author>Albert Einstein</author>
                   <text>Traduction anglais de la publication originale d'Einstein sur sa théorie de la Relativité Restreinte.</text>
                   <date>1905</date>
                 <file>einstein_1905.pdf</file>
-              </reference>
+              </further-reading>
 
-              <reference>
+              <further-reading>
                 <title>General covariance and the foundations of general relativity : eight decades of dispute </title>
                 <author>John D. Norton</author>
                 <text>Ce texte montre comment l'idée de "covariance générale" a guidé Einstein dans le développement de la relativité générale.</text>
                 <date>1993</date>
                 <file>relativity_origin.pdf</file>
-              </reference>
-            </references>
+              </further-reading>
+            </further-readings>
     </content>
     
     <content id="decouverte-fuite-galaxies" uid="galaxy-drift-discovery" type="timeline" ready="1" reviewed="1">
@@ -71,15 +71,15 @@
         
         <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre elles. Le résultat est étonnant : seules 4 parmi les 25 se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Slipher trouve des vitesses dépassant 1000 km/s : il est clair que ces "spirales nébuleuses" sont des objets indépendants de notre galaxie, la Voie Lactée.</p></text>
 
-        <references>
-          <reference>
+        <further-readings>
+          <further-reading>
             <title>The radial velocity of the Andromeda Nebula</title>
             <author>Vesto Slipher</author>
             <text>Publication de V. Slipher sur sa mesure par effet doppler de la vitesse radiale d'Andromède.</text>
             <date>1912</date>
             <file>slipher_1912.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     <content id="cosmologie-relativiste" uid="relativistic-cosmology" type="timeline" ready="1" reviewed="0">
@@ -95,23 +95,23 @@
         v = \left (\dfrac{c}{R} \dfrac{dR}{dt} \right ) d \textrm{ si } \ v \ll c \textrm{ càd } \ \ d \ll R
         \end{equation}
         Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{c\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
-       <references>
-         <reference>
+       <further-readings>
+         <further-reading>
            <title>On the curvature of space</title>
            <author>Alexandre Friedmann</author>
            <text>Publication de A. Friedmann donnant les solutions des équations d'Einstein pour un Univers de géométrie sphérique avec constante cosmologique et matière non relativiste.</text>
            <date>1922</date>
            <file>friedmann_1922.pdf</file>
-         </reference>
+         </further-reading>
     
-      <reference>
+      <further-reading>
           <title>Un univers homogène de masse constante et de rayon variable rendant compte de la vitesse radiale des nébuleuses</title>
           <author>Georges Lemaitre</author>
           <text>Article de Georges Lemaitre dans lequel il décrit un modèle similaire à celui de Friedmann (univers d'einstein non statique) et où il prédit la loi de Hubble donnant ainsi une explication théorique de la fuite des galaxies observée par Slipher.</text>
           <date>1927</date>
           <file>lemaitre_1927.pdf</file>
-      </reference>
-      </references>
+      </further-reading>
+      </further-readings>
     </content>
     
     <content id="decouverte-expansion-univers" uid="universe-expansion-discovery" type="timeline" ready="1">
@@ -126,39 +126,39 @@
         
             <figure src="hubble_law.png" title="Figure issue du papier d'Hubble en 1929.">Légende originale traduite : <b>Relation vitesse-distance pour les nébuleuses extra-galactiques</b>. 
                 Les vitesses radiales, corrigées du mouvement du Soleil, sont représentées en fonction des distances estimées à partir des étoiles contenues et des luminosités moyennes des nébuleuses d'un amas. Les disques noirs et le trait plein représentent la solution pour un mouvement solaire estimé en se basant sur les données individuelles des nébuleuses ; les cercles et la ligne pointillée représentent la solution obtenue et regroupant les nébuleuses en 9 groupes distincts ; la croix représente la vitesse moyenne et la distance moyenne de 22 nébuleuses dont les distances n'ont pu être estimées inidividuellement. </figure></p></text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
                 <title>A relation between distance and radial velocity among extra-galactic nebulae</title>
                 <author>Edwin Hubble</author>
                 <text>Article d'Edwin Hubble dans lequel il montre la proportionnalité entre la vitesse radiale des galaxies spirales et leur distance.</text>
                 <date>1929</date>
                 <file>hubble_1929.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>Pulsation theory of cepheides variables</title>
                 <author>Eddington</author>
                 <text>Dans ce papier de 1917, Eddington propose une explication du mécanisme à l'origine de la périodicité de la luminosité des céphéides, et de l'existence d'une relation luminosité-période.</text>
                 <date>1917</date>
                 <file>cepheides_eddington.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>1777 variables in the Magellanic clouds</title>
                 <author>Henrietta Leavitt</author>
                 <text>Catalogue d'étoiles variables dans les nuages de Magellan réalisé par H. Leavitt en 1908.</text>
                 <date>1908</date>
                 <file>cepheides_leavitt.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>The period-Luminosity relation : an historical review</title>
                 <author>J.D. Fernie</author>
                 <text>Texte reprenant l'histoire autour de la découverte de la relation période-luminosité des céphéides.</text>
                 <date>1969</date>
                 <file>cepheides_Hertzsprung.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     <content id="bigbang-vs-eternel" uid="bigbang-vs-steadystate" type="timeline" ready="1">
@@ -194,23 +194,23 @@
                 Hoyle critiquera également la théorie de Lemaître de l'atome primitif et l'idée d'un état initial très dense de l'Univers en général par des arguments notamment philosophiques : il apparente la théorie de Lemaître - qui est par ailleurs prêtre - à la Création biblique. Il fera référence à ce modèle qu'il conteste sous le nom de "Big Bang". C'est le premier emploi de cette dénomination dans la cosmologie. Les observations disponibles à l'époque ne permettant pas d'éliminer l'une de ces théories, et le débat prend une tournure philosophique.
             </p>
         </text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
                 <title>On the relation between the expansion and the mean density of the Universe</title>
                 <author>Einstein / de Sitter</author>
                 <text>Dans cet article Einstein et de Sitter proposent un modèle cosmologique en expansion minimal qu'ils mettent en relation avec le contenu de l'Univers</text>
                 <date>1932</date>
                 <file>einstein-de-sitter_1932.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>A new model for the expanding Universe</title>
                 <author>F. Hoyle</author>
                 <text>Cet article de Fred Hoyle décrit sa théorie de l'état-stationnaire d'un Univers éternellement semblable.</text>
                 <date>1948</date>
                 <file>hoyle_1948.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     
@@ -273,31 +273,31 @@
                 Grâce aux travaux d'Alpher, Gamow et Herman, on sait décrire dès le début des années 1950 un Univers en évolution de type Big Bang dans son jeune âge. On sait que dans un contexte de refroidissement rapide depuis des températures très élevées des éléments légers peuvent se former (jusqu'à $A = 5$) par le biais d'un réseau de réactions nucléaires, mais pas des éléments plus lourds a priori. On sait par ailleurs qu'il doit subsister, d'après ce modèle, une densité de rayonnement non nulle à notre époque, équivalente à un rayonnement de corps noir dont la température actuelle devrait être de l'ordre de grandeur $1-10 K$. Cependant, à l'époque, l'idée de Big Bang demeure assez spéculative et souffre de plusieurs problèmes<note>cosmic age problem</note> et la nucléosynthèse primordiale semble être une impasse puisqu'elle échoue apparemment à donner une explication exhaustive de la courbe d'abondance des éléments. Pour ces raisons, ces résultats n'attirent pas vraiment l'attention au moment de leur publication.
             </p>
         </text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
                 <title>Discovery of the Hot Big-Bang : What happened in 1948</title>
                 <author>P. J. E. Peebles</author>
                 <text>Peebles retrace dans ce texte les différents papier publiés par le trio Alpher, Herman et Gamow en 1948 à propos de la nucléosynthèse primordiale. </text>
                 <date>2013</date>
                 <file>hot_bigbang_1948.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>Expanding Universe and the origin of Elements</title>
                 <author>Gamow</author>
                 <text></text>
                 <date>1946</date>
                 <file>gamow_1946.pdf</file>
-            </reference>
+            </further-reading>
             
-            <reference>
+            <further-reading>
                 <title>Physical conditions in the initials stages of the expanding universe</title>
                 <author>Alpher, Herman, Follin</author>
                 <text>Dans ce texte les auteurs récapitulent leur théorie de la nucléosynthèse primordiale dans le cadre d'un "Big Bang"</text>
                 <date>1953</date>
                 <file>alpher_herman_follin_1953.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     <content type="timeline" id="nucleosynthese-stellaire" uid="stellar-nucleosynthesis">
@@ -331,23 +331,23 @@
                La nucléosynthèse stellaire parait donc très satisfaisante, même si elle échoue apparemment à expliquer la formation de l'hélium. Cependant, l'abondance de cet élément n'étant pas clairement établie, le besoin de faire appel à d'autres processus de synthèse ne l'est pas non plus.
             </p>
         </text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
                 <title>Synthesis of the Elements in Stars</title>
                 <author>Geoffrey Burbidge</author>
                 <text>Article rétrospectif de Geoffrey Burbidge à propos du papier de 1957 et de son impact dans le domaine de la cosmologie.</text>
                 <date>2007</date>
                 <file>burbidge_2007.pdf</file>
-            </reference>
+            </further-reading>
             
-             <reference>
+             <further-reading>
                 <title>B2FH, The CMB and Cosmology</title>
                 <author>G. Burbidge, M. Burbidge, Fowler, Hoyle</author>
                 <text>Papier "B2FH" original de 1957 expliquant la formation de la plupart des éléments par des processus nucléaires au sein des étoiles.</text>
                 <date>1957</date>
                 <file>B2FH_1957.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
        <content id="decouverte-fond-diffus-cosmologique" uid="cmb-discovery" type="timeline" ready="1">
@@ -389,23 +389,23 @@
             TODO sach wolf = début de la cosmologie non homogène
             -->
     	</text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
               <title>Cosmic Black-Body Radiation</title>
               <author>Dicke, Peebles, Roll et Wilkinson</author>
               <text>Texte dans lequel les 4 physiciens réétablissent le lien entre Big Bang chaud et fond de rayonnement, et évoquent le statut expérimental sur ce sujet</text>
               <date>1965</date>
               <file>dicke_1965.pdf</file>
-            </reference>
+            </further-reading>
             
-             <reference>
+             <further-reading>
               <title>A measurement of excess antenna temperature at 4080 Mc/s</title>
               <author>Penzias et Wilson</author>
               <text>Papier dans lequel les deux astronomes donnent les caractéristiques de l'excès de rayonnement qu'ils ont décelé, qui s'avère être le fameux fond diffus cosmologique.</text>
               <date>1965</date>
               <file>penzias_1965.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     <content id="succes-bigbang" uid="bigbang-success" type="timeline" ready="1">
@@ -462,22 +462,22 @@
             En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
         </p>
       </text>
-      <references>
-         <reference>
+      <further-readings>
+         <further-reading>
           <title>The Period-Luminosity relation of the Cepheids</title>
           <author>Walter Baade</author>
           <text>Dans cet article, W. Baade fait le point sur l'utilisation des étoiles variables comme chandelles standard.</text>
           <date>1956</date>
           <file>baade_1956.pdf</file>
-        </reference>
-        <reference>
+        </further-reading>
+        <further-reading>
           <title>Current problems in the extra-galactic distance scale</title>
           <author>Allan Sandage</author>
           <text>Ce papier tente de corriger un certain nombre d'erreurs faites jusqu'alors en évaluant les distances d'objets extra-galactiques, et met en évidence les points qui reste à éclaircir. La valeur de $H_0$ est estimée entre 50 et 100 km/s/Mpc.</text>
           <date>1958</date>
           <file>sandage_1958.pdf</file>
-        </reference>
-      </references>
+        </further-reading>
+      </further-readings>
     </content>
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
@@ -590,15 +590,15 @@
     	        \end{equation}-->
     	    </p>
     	</text>
-        <references>
-         <reference>
+        <further-readings>
+         <further-reading>
           <title>Rotational properties of 21 Sc galaxies with a large range of luminosities and radii</title>
           <author>Kent Ford, Vera Rubin</author>
           <text>Article dans lequel Vera Rubin et Kent Ford montrent que les galaxies qu'ils ont étudiées possèdent des courbes de vitesses de rotation croissantes et non képleriennes, suggérant la présence de masse invisible.</text>
           <date>1980</date>
           <file>rubin_1980.pdf</file>
-        </reference>
-        </references>
+        </further-reading>
+        </further-readings>
     </content>
     
      <content id="inflation" uid="inflation" type="timeline">
@@ -645,15 +645,15 @@
     	        <!--La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier-->
     	    </p>
     	</text>
-        <references>
-            <reference>
+        <further-readings>
+            <further-reading>
                 <title>Inflationary universe: A possible solution to the horizon and flatness problems</title>
                 <author>Alan Guth</author>
                 <text>Article dans lequel Guth expose rapidement les problèmes de l'horizon et de la platitude et expose une solution basée sur une phase d'expansion très rapide au début du big bang</text>
                 <date>1981</date>
                 <file>guth_1981.pdf</file>
-            </reference>
-        </references>
+            </further-reading>
+        </further-readings>
     </content>
     
     <content id="decouverte-acceleration-expansion" uid="expansion-acceleration-discovery" type="timeline">
@@ -691,15 +691,15 @@
                 </figure>
             </p>
     	</text>
-        <references>
-          <reference>
+        <further-readings>
+          <further-reading>
           <title>Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant</title>
           <author>Adam Riess</author>
           <text>Article dans lequel les données collectées sur les supernovae de type Ia sont employées pour contraindre différents modèles cosmologiques, et suggérant que l'Univers est principalement constitué d'énergie du vide et donc que son expansion s'accélère</text>
           <date>1998</date>
           <file>snIa_1998.pdf</file>
-        </reference>
-        </references>
+        </further-reading>
+        </further-readings>
     </content>
     
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
@@ -791,7 +791,7 @@
 
                 <question>D'après le site de l'université d'Adélaïde, vous êtes à la fois membre des collaborations ATLAS et CTA ?</question>
 
-                <answer>Oui, en réalité je n'ai rien fait d'utile pour CTA pour le moment mais je suis techniquement bien un membre de la collaboration, donc nous avons reçu de l'argent et nous l'avons dépensé sur des composants du télescope. Pour le moment, nous sommes en train de nous organiser pour la suite, et j'ai profité de ma venue à Paris pour parler avec Agnieszka qui un membre important de HESS puisqu'elle a dirigé la recherche de matière noire au sein de cette expérience quelque temps, et lui demander ce qu'elle faisait pour CTA, et elle m'a répondu qu'elle n'avait rien fait d'utile non plus pour le moment et j'espère que nous allons trouver quelque chose dans les années qui viennent.</answer>
+                  <answer>Oui, en réalité je n'ai rien fait d'utile pour CTA pour le moment (rires) mais je suis techniquement bien un membre de la collaboration, et à ce titre nous avons reçu de l'argent et nous l'avons dépensé sur des composants du télescope. Pour le moment, nous sommes en train de nous organiser pour la suite, et j'ai profité de ma venue à Paris pour parler avec Agnieszka qui un membre important de HESS puisqu'elle a dirigé la recherche de matière noire au sein de cette expérience quelque temps, et lui demander ce qu'elle faisait pour CTA, et elle m'a répondu qu'elle n'avait rien fait d'utile non plus pour le moment (rires) et nous espérons nous impliquer davantage dans les années qui viennent.</answer>
 
                 <question>Pouvez-vous en dire plus sur votre implication dans ATLAS ?</question>
 
@@ -853,15 +853,15 @@
            </interview>
          </interviews>
 
-         <references>
-             <reference>
+         <further-readings>
+             <further-reading>
               <title>"Indirect and direct search for dark matter" (statut de la recherche sur la matière noire)</title>
               <author>M. Klasen, M. Pohl, G. Sigl</author>
               <text>Dans cet article, les auteurs présentent le statut actuel de la recherche de la matière noire, les différents candidats, et les différents canaux de recherche (directs et indirects)</text>
               <date>2015</date>
               <file>dm_review_2015.pdf</file>
-            </reference>
-         </references>
+            </further-reading>
+         </further-readings>
     </content>
 
 <!--
