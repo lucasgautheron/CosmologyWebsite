@@ -61,8 +61,41 @@
   </xsl:template>
   
   <xsl:template match="ref">
+    <xsl:variable name="maxauthors" select="3" />
     <xsl:variable name="safedoi" select="replace(./@doi, '/', '_')" />
-    <xsl:copy-of select="document(concat('./ref_', $safedoi, '.xml'))" />
+    <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
+    
+    <a href="#doi-{$safedoi}">(
+      <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
+        <xsl:if test="not(position() > $maxauthors)">
+          <xsl:value-of select="./given_name" /> <xsl:value-of select="./surname" />
+          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+        </xsl:if>
+      </xsl:for-each>
+        <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
+        et al.
+      </xsl:if>
+      &#160;<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />)
+      </a>
+  </xsl:template>
+  
+  <xsl:template name="ref-description">
+    <xsl:param name="doi" />
+    
+    <xsl:variable name="maxauthors" select="4" />
+    <xsl:variable name="safedoi" select="replace($doi, '/', '_')" />
+    <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
+    <a name="doi-{$safedoi}"></a>
+    <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
+      <xsl:if test="not(position() > $maxauthors)">
+        <xsl:value-of select="./given_name" /> <xsl:value-of select="./surname" />
+        <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+      </xsl:if>
+    </xsl:for-each>
+    <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
+      et al.
+    </xsl:if> &#160;(<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />),
+    <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i>
   </xsl:template>
   
   <xsl:template match="figure">
@@ -399,6 +432,19 @@
             </div>
           </xsl:for-each>
         </div>
+        
+        <h3>Références</h3>
+        <div class="further-readings">
+          <ul>
+            <xsl:for-each-group select="./text//ref" group-by="@doi">
+              <li>
+                <xsl:call-template name="ref-description">
+                  <xsl:with-param name="doi" select="./@doi" />
+                </xsl:call-template>
+              </li>
+            </xsl:for-each-group>
+          </ul>
+        </div>
       
         <h3>En savoir plus</h3>
         <div class="further-readings">
@@ -493,6 +539,19 @@
               </div>
             </div>
           </xsl:for-each>
+        </div>
+        
+        <h3>Références</h3>
+        <div class="further-readings">
+          <ul>
+          <xsl:for-each-group select="$pagecontent/text//ref" group-by="@doi">
+            <li>
+              <xsl:call-template name="ref-description">
+                <xsl:with-param name="doi" select="./@doi" />
+              </xsl:call-template>
+            </li>
+          </xsl:for-each-group>
+          </ul>
         </div>
       
         <h3>En savoir plus</h3>

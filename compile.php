@@ -18,33 +18,34 @@ $files[0] = strip_decl(file_get_contents("data/events.xml"));
 $files[1] = strip_decl(file_get_contents("data/contents.xml"));
 $files[2] = strip_decl(file_get_contents("data/appendices.xml"));
 
-file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>{$files[0]}{$files[1]}{$files[2]}</root>");
+file_put_contents('tmp/cache.xml', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>{$files[0]}{$files[1]}{$files[2]}</root>");
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:refs.xsl -o:refs -ext:on' . $redirect, $output, $return_code);
+exec('saxonb-xslt -s:tmp/cache.xml -xsl:refs.xsl -o:tmp/refs -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 
-$refs = file('refs');
+$refs = file('tmp/refs');
 foreach($refs as $ref)
 {
     $ref = trim($ref);
     $safedoi = str_replace('/', '_', $ref);
-    $outfile = "ref_$safedoi.xml";
+    $outfile = "tmp/ref_$safedoi.xml";
     if(!file_exists($outfile)) exec("curl --location --header \"Accept: application/unixref+xml\" http://dx.doi.org/$ref -o $outfile ");
 }
 echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:index.html -ext:on' . $redirect, $output, $return_code);
+exec('saxonb-xslt -s:tmp/cache.xml -xsl:layout.xsl -o:index.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "HTML generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:graph.html -ext:on' . $redirect, $output, $return_code);
+exec('saxonb-xslt -s:tmp/cache.xml -xsl:graph.xsl -o:graph.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
-@unlink('data/cache');
+@unlink('tmp/cache.xml');
+@unlink('tmp/refs');
 
 // simulations
 if($perform_simulations)
