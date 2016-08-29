@@ -21,6 +21,20 @@ $files[2] = strip_decl(file_get_contents("data/appendices.xml"));
 file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>{$files[0]}{$files[1]}{$files[2]}</root>");
 
 $start_time = microtime(true);
+exec('saxonb-xslt -s:data/cache -xsl:refs.xsl -o:refs -ext:on' . $redirect, $output, $return_code);
+$return |= $return_code;
+
+$refs = file('refs');
+foreach($refs as $ref)
+{
+    $ref = trim($ref);
+    $safedoi = str_replace('/', '_', $ref);
+    $outfile = "ref_$safedoi.xml";
+    if(!file_exists($outfile)) exec("curl --location --header \"Accept: application/unixref+xml\" http://dx.doi.org/$ref -o $outfile ");
+}
+echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
+
+$start_time = microtime(true);
 exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:index.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "HTML generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";

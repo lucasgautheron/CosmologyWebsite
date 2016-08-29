@@ -1,7 +1,8 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:doc="http://sciencestechniques.fr"
+  xmlns:doc="http://cosmology.education"
+  xmlns:shell="java:java.lang.Runtime"
   exclude-result-prefixes="xs doc">
   
   <xsl:variable name="linkwords" select="//appendices/appendix/linkwords/linkword"/>
@@ -57,6 +58,11 @@
     <p>
       <xsl:apply-templates />
     </p>  
+  </xsl:template>
+  
+  <xsl:template match="ref">
+    <xsl:variable name="safedoi" select="replace(./@doi, '/', '_')" />
+    <xsl:copy-of select="document(concat('./ref_', $safedoi, '.xml'))" />
   </xsl:template>
   
   <xsl:template match="figure">
