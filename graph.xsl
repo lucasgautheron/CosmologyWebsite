@@ -1,7 +1,7 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:doc="http://sciencestechniques.fr"
+    xmlns:doc="http://cosmology.education"
     exclude-result-prefixes="xs doc">
 
     <xsl:template match="/">
