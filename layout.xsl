@@ -394,11 +394,12 @@
           </xsl:for-each>
         </div>
       
-        <div class="references">
+        <h3>En savoir plus</h3>
+        <div class="further-readings">
           <ul>
-            <xsl:for-each select="./references/reference">
+            <xsl:for-each select="./further-readings/further-reading">
               <xsl:sort select="./date" />
-              <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+              <li><i><a href="documents/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
             </xsl:for-each>
           </ul>
         </div>
@@ -407,7 +408,7 @@
         <div id="appendix" class="hidden">
           <h2 class="title"></h2>
           <div class="text"></div>
-          <div class="references"></div>
+          <div class="further-readings"></div>
         </div>
 
         <div id="image">
@@ -488,11 +489,12 @@
           </xsl:for-each>
         </div>
       
-        <div class="references">
+        <h3>En savoir plus</h3>
+        <div class="further-readings">
           <ul>
-            <xsl:for-each select="$pagecontent/references/reference">
+            <xsl:for-each select="$pagecontent/further-readings/further-reading">
               <xsl:sort select="./date" />
-              <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+              <li><i><a href="further-readings/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
             </xsl:for-each>
           </ul>
         </div>
