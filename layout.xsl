@@ -399,7 +399,7 @@
           <ul>
             <xsl:for-each select="./further-readings/further-reading">
               <xsl:sort select="./date" />
-              <li><i><a href="documents/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+              <li><i><a href="/documents/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
             </xsl:for-each>
           </ul>
         </div>
@@ -494,7 +494,7 @@
           <ul>
             <xsl:for-each select="$pagecontent/further-readings/further-reading">
               <xsl:sort select="./date" />
-              <li><i><a href="further-readings/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+              <li><i><a href="/documents/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
             </xsl:for-each>
           </ul>
         </div>
