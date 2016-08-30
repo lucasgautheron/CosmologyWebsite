@@ -68,7 +68,7 @@
     <a href="#doi-{$safedoi}">(
       <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
         <xsl:if test="not(position() > $maxauthors)">
-          <xsl:value-of select="./given_name" /> <xsl:value-of select="./surname" />
+          <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
           <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
         </xsl:if>
       </xsl:for-each>
@@ -88,7 +88,7 @@
     <a name="doi-{$safedoi}"></a>
     <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
       <xsl:if test="not(position() > $maxauthors)">
-        <xsl:value-of select="./given_name" /> <xsl:value-of select="./surname" />
+        <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
         <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
       </xsl:if>
     </xsl:for-each>

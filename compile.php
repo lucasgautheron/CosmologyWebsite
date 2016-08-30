@@ -30,7 +30,11 @@ foreach($refs as $ref)
     $ref = trim($ref);
     $safedoi = str_replace('/', '_', $ref);
     $outfile = "tmp/ref_$safedoi.xml";
-    if(!file_exists($outfile)) exec("curl --location --header \"Accept: application/unixref+xml\" http://dx.doi.org/$ref -o $outfile ");
+    if(!file_exists($outfile))
+    {
+        exec("curl --location --header \"Accept: application/unixref+xml\" http://dx.doi.org/$ref -o $outfile " . $redirect, $output, $return_code);
+        $return |= $return_code;
+    }
 }
 echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
