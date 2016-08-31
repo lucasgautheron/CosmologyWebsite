@@ -455,11 +455,11 @@
         
         <p>
             Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
-            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. <ref doi="10.1086/126870" /> 
             
             Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
             Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
-            En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
+            En 1958, Sandage publie un papier <ref doi="10.1086/146483" /> dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
         </p>
       </text>
       <further-readings>
@@ -481,7 +481,7 @@
     </content>
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
-    	<title>Réapparition de la nucléosynthèse primordiale</title>
+    	<title>Réintroduction de la nucléosynthèse primordiale</title>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
     	    <p>
@@ -500,15 +500,13 @@
     	        Par ailleurs, l'abondance des éléments ${}^2_1\textrm{H}$ ${}^3_2\textrm{He}$, ${}^4_2\textrm{He}$ et ${}^{7}\textrm{Li}$, n'a pas encore d'explication satisfaisante, ce qui constitue une autre raison d'envisager des modes de production des éléments autre que la nucléosynthèse stellaire.
     	        
     	        En 1964, Hoyle et Tayler publient un article intitulé "The mystery of helium abundance" <ref doi="10.1038/2031108a0" />, dans lequel ils évaluent la vraisemblance d'une explication de l'abondance observée de l'hélium par une synthèse durant un Big-Bang chaud, donc via le mécanisme qu'Alpher et Hermann ont été les premiers à proposer.
-    	        Ils soulignent, en plus de sa valeur trop élevée pour les mécanismes stellaires classiques de formation, l'homogénéité de l'abondance observée de l'hélium. Le fait que celle-ci dépende très peu de l'objet observé, et donc qu'elle soit similaire proche ou loin des sites de production stellaires, et insensible à leur âge, semble indiquer une origine différente. L'abondance observée est grossièrement en accord avec une production d'origine cosmologique selon leurs calculs, qui prédisent $\textrm{He}/\textrm{H} \sim 0.14$.
+    	        Ils soulignent, en plus de sa valeur trop élevée ($\textrm{He}/\textrm{H}\sim 0,01$) pour les mécanismes stellaires classiques de formation, l'homogénéité de l'abondance observée de l'hélium. Le fait que celle-ci dépende très peu de l'objet observé, et donc qu'elle soit similaire proche ou loin des sites de production stellaires, et insensible à leur âge, semble indiquer une origine différente. L'abondance observée est très grossièrement en accord avec une production d'origine cosmologique selon leurs calculs, qui prédisent $\textrm{He}/\textrm{H} \sim 0,14$ au minimum (une légère tension avec la valeur expérimentale un peu trop faible est tout de même observée).
     	        Ils concluent alors que l'hélium a du être produit à très haute température, comme cela est possible dans le cadre du Big-Bang chaud, ou bien dans des étoiles supermassives. 
     	        
-    	         
-    	        
-    	        
-    	        <table>
+    	        <!--
+    	               	        <table>
     	            <tr>
-    	                <th>Observation</th>
+    	                <th>Observation (avant 1964)</th>
     	                <th>$\mbox{He}/\mbox{H}$</th>
     	            </tr>
     	            <tr>
@@ -540,7 +538,45 @@
     	                <td>0.091</td>
     	            </tr>
     	        </table>
+    	        -->
     	        
+    	        D'autres études similaires sont menées en accord avec ce résultat.
+    	        En 1967, Robert Wagoner, qui travaille à Caltech auprès de Fowler et Hoyle, publie les résultats d'une simulation impliquant 41 noyaux et 79 réactions faibles et nucléaires <ref doi="10.1086/149126" />.
+    	        Les sections efficaces de toutes ces réactions n'étant pas aiser à déterminer, certaines sont estimées à partir d'autres données (comme les énergies de liaison).
+    	        
+    	        <figure src="nucleosynthesis_network.png" title="Réseau de réactions nucléaires employé par Wagoner">
+    	            Réseau de réactions nucléaires employé par Wagoner. A gauche, l'ensemble des réactions (pour les élements $A\leq 23$) est représenté.
+    	            A droite, seules les réactions entre éléments légers sont présentées, de façon détaillée.
+    	        </figure>
+    	        
+    	        Les résultats indiquent un bon accord avec les observations d'abondance des éléments légers de l'époque pour une densité baryonique $\rho_b \simeq 2 \times 10^{-28} \textrm{kg}.\textrm{m}^{-3}$, ce qui est raisonnablement proche de la densité critique connue à l'époque ($\rho_c \simeq 10^{-26}\textrm{kg}.\textrm{m}^{-3}$).
+    	        
+    	        <figure src="primordial_abundances_1967.png" title="Résultats des calculs d'abondance des éléments de Wagoner en fonction de la densité baryonique actuelle">
+    	            Le graphe représente l'abondance des éléments (en terme de fraction massique) en fonction de $\rho_b/\theta$ où $\theta = T_0/(\textrm{3 K}$ où $T_0$ est la température du fond diffus cosmologique (donc assez proche de 3 K).
+    	        </figure>
+    	        
+    	        Fort de meilleures données nucléaires, Wagoner publie des résultats améliorés en 1973 <ref doi="10.1086/151873" />. Wagoner débute cet article en donnant 3 arguments en faveur de la nucléosynthèse primordiale :
+    	        <ul>
+    	            <li>
+    	                La découverte de galaxies naines bleues jeunes<ref doi="10.1086/151447" /> et pauvres en $\textrm{O}$ et $\textrm{Ne}$ mais avec une abondance en hélium similaire aux valeurs pour des objets plus anciens.
+    	            </li>
+    	            <li>
+    	                Aucun processus astrophysique ne semble capable de produire autant d'hélium et de lithium qu'observé.
+    	            </li>
+    	            <li>
+    	                L'isotropie constatée du fond de rayonnement désormais mesuré à 2,7$\pm$0,1 K <ref doi="10.1088/0034-4885/51/5/002" /> et la nature de corps noir de son spectre sont des arguments très forts en faveur d'une interprétation comsologique. 
+    	            </li>
+    	        </ul>
+    	        Le tableau suivant résume la situation expérimentale en 1973 :
+    	        <figure src="abundances_comparison.png" title="Abondance d'éléments légers">
+    	            Données sur les abondances d'éléments dont la synthèse n'est pas bien expliquée par la nucléosynthèse stellaire seule.<ref doi="10.1086/151873" />.
+    	        </figure>
+    	        
+    	        Wagoner trouve par ailleurs les résultats suivants :
+    	        <figure src="predicted_abundances.png" title="Prédictions d'abondance par Wagoner">
+    	            Prédictions d'abondance <ref doi="10.1086/151873" />.
+    	        </figure>
+    	        L'accord avec les valeurs expérimentales est correct et permet de placer une limite supérieure sur la densité baryonique $\rho_b$. Celle-ci doit alors être inférieure à $\rho_b \simeq 7 \times 10^{-27} \textrm{kg}.\textrm{m}^{-3}$, insuffisant pour que $\rho_b = \rho_c$ (densité critique égale à la densité baryonique). Ainsi, d'après ces résultats, l'Univers ne peut-être plat s'il est constitué de matière baryonique seule. 
     	    </p>
     	</text>
         <references>
