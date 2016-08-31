@@ -318,7 +318,7 @@
                     <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
                     <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
                     <li>Processus $p$ : Capture protonique. Explique la formation d'éléments relativement riches en protons.</li>
-                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}H$, $^{3}He$, $^{4}He$ et $^{7}Li$. </li>
+                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}\textrm{H}$, $^{3}\textrm{He}$, $^{4}\textrm{He}$ et $^{7}\textrm{Li}$. </li>
                 </ul>
                 L'ensemble de ces mécanismes de formation d'éléments au sein des étoiles est regroupé sous le nom de "nucléosynthèse stellaire". 
                 Le succès de ce modèle est que les étoiles évoluant lentement, elles offrent une variétés de conditions physiques et donc de processus différents qui peuvent s'effectuer pendant un temps suffisant pour former une grande variété d'éléments.
@@ -455,11 +455,11 @@
         
         <p>
             Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
-            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. <ref doi="10.1086/126870" /> 
             
             Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
             Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
-            En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
+            En 1958, Sandage publie un papier <ref doi="10.1086/146483" /> dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
         </p>
       </text>
       <further-readings>
@@ -481,16 +481,113 @@
     </content>
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
-    	<title>Réapparition de la nucléosynthèse primordiale</title>
+    	<title>Réintroduction de la nucléosynthèse primordiale</title>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
-          <p>
-            
-          </p>
     	    <p>
-    	        Problème de l'hélium. Regain d'intérêt pour la nucléosynthèse primordiale. Doutes : http://adsabs.harvard.edu/full/1967QJRAS...8..313T.
+    	        Momentanément oubliée après le succès de la nucléosynthèse stellaire, la nucléosynthèse primordiale, c'est-à-dire la formation de noyaux ayant eu lieu durant le Big-Bang, a connu un grand regain d'intérêt après la découverte du fond diffus cosmologique. Non seulement celui-ci confirme que l'Univers était beaucoup plus chaud dans le passé, et probablement suffisamment pour que des réactions nucléaires aient eu lieu à grande échelle, mais en plus la mesure de sa température est une contrainte expérimentale supplémentaire utile pour mieux tester ces modèles.
+    	    </p>
+    	    <p>
+    	        Au début des années 1960, les travaux d'Alpher, Follin et Hermann, ainsi que ceux d'Hayashi, ont permis d'obtenir une bonne description de la physique de l'Univers pour une température de l'ordre de la centaine de MeV - au-delà, la physique des particules n'est alors pas encore assez bien connue pour obtenir une meilleure description. A ces températures, l'Univers était constitué de protons et de neutrons (les baryons), d'électrons, de photons, et de neutrinos et antineutrinos.
+    	        Les réactions entre ces différents constituants étaient suffisantes pour les maintenant en équilibre thermodynamique, et donc une compréhension des phénomènes physiques antérieurs à $\sim$ 100 MeV n'est pas nécessaire. L'Univers est alors décrit par un nombre limité de paramètres, les "conditions initiales", comme le ratio baryons/photons ($=(n_p + n_n)/n_{\gamma}$).
+    	    </p>
+    	    <p>
+    	        Avec le refroidissement de l'Univers, certaines réactions maintenant l'équilibre thermique sont interrompues. Le ratio protons/neutrons est ainsi constant, et n'évolue plus que par la désintégration spontanée des neutrons d'un temps de demi-vie de l'ordre de la dizaine de minutes.
+    	        Une fois la température abaissée au dixième de MeV, les réactions nucléaires deviennent prédominantes, c'est le début à proprement parler de la nucléosynthèse primordiale. Afin d'estimer les abondances d'éléments résultantes, il faut alors intégrer toutes les réactions nucléaires et leur sections-efficaces aux calculs. C'est ce travail qui a été repoussé pendant plusieurs années après les derniers apports de Fermi et Turkevich.
+    	    </p>
+    	    <p>
+    	        Après la découverte du fond diffus cosmologique, la donne change donc très vite. Le Big-Bang parait beaucoup plus vraisemblable et dont la nucléosynthèse primordiale aussi.
+    	        Par ailleurs, l'abondance des éléments ${}^2_1\textrm{H}$ ${}^3_2\textrm{He}$, ${}^4_2\textrm{He}$ et ${}^{7}\textrm{Li}$, n'a pas encore d'explication satisfaisante, ce qui constitue une autre raison d'envisager des modes de production des éléments autre que la nucléosynthèse stellaire.
+    	        
+    	        En 1964, Hoyle et Tayler publient un article intitulé "The mystery of helium abundance" <ref doi="10.1038/2031108a0" />, dans lequel ils évaluent la vraisemblance d'une explication de l'abondance observée de l'hélium par une synthèse durant un Big-Bang chaud, donc via le mécanisme qu'Alpher et Hermann ont été les premiers à proposer.
+    	        Ils soulignent, en plus de sa valeur trop élevée ($\textrm{He}/\textrm{H}\sim 0,01$) pour les mécanismes stellaires classiques de formation, l'homogénéité de l'abondance observée de l'hélium. Le fait que celle-ci dépende très peu de l'objet observé, et donc qu'elle soit similaire proche ou loin des sites de production stellaires, et insensible à leur âge, semble indiquer une origine différente. L'abondance observée est très grossièrement en accord avec une production d'origine cosmologique selon leurs calculs, qui prédisent $\textrm{He}/\textrm{H} \sim 0,14$ au minimum (une légère tension avec la valeur expérimentale un peu trop faible est tout de même observée).
+    	        Ils concluent alors que l'hélium a du être produit à très haute température, comme cela est possible dans le cadre du Big-Bang chaud, ou bien dans des étoiles supermassives. 
+    	        
+    	        <!--
+    	               	        <table>
+    	            <tr>
+    	                <th>Observation (avant 1964)</th>
+    	                <th>$\mbox{He}/\mbox{H}$</th>
+    	            </tr>
+    	            <tr>
+    	                <td>Nébuleuse d'Orion</td>
+    	                <td>0.091</td>
+    	            </tr>
+    	            <tr>
+    	                <td>NGC 604 (M33)</td>
+    	                <td>0.102</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Petit Nuage de Magellan</td>
+    	                <td>0.11</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Etoiles de type B</td>
+    	                <td>0.16</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Nébuleuses planétaires</td>
+    	                <td>0.09-0.19</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Rayonnement solaire</td>
+    	                <td>0.09</td>
+    	            </tr>
+    	            <tr>
+    	                <td>Modèle d'évolution solaire</td>
+    	                <td>0.091</td>
+    	            </tr>
+    	        </table>
+    	        -->
+    	        
+    	        D'autres études similaires sont menées en accord avec ce résultat.
+    	        En 1967, Robert Wagoner, qui travaille à Caltech auprès de Fowler et Hoyle, publie les résultats d'une simulation impliquant 41 noyaux et 79 réactions faibles et nucléaires <ref doi="10.1086/149126" />.
+    	        Les sections efficaces de toutes ces réactions n'étant pas aiser à déterminer, certaines sont estimées à partir d'autres données (comme les énergies de liaison).
+    	        
+    	        <figure src="nucleosynthesis_network.png" title="Réseau de réactions nucléaires employé par Wagoner">
+    	            Réseau de réactions nucléaires employé par Wagoner. A gauche, l'ensemble des réactions (pour les élements $A\leq 23$) est représenté.
+    	            A droite, seules les réactions entre éléments légers sont présentées, de façon détaillée.
+    	        </figure>
+    	        
+    	        Les résultats indiquent un bon accord avec les observations d'abondance des éléments légers de l'époque pour une densité baryonique $\rho_b \simeq 2 \times 10^{-28} \textrm{kg}.\textrm{m}^{-3}$, ce qui est raisonnablement proche de la densité critique connue à l'époque ($\rho_c \simeq 10^{-26}\textrm{kg}.\textrm{m}^{-3}$).
+    	        
+    	        <figure src="primordial_abundances_1967.png" title="Résultats des calculs d'abondance des éléments de Wagoner en fonction de la densité baryonique actuelle">
+    	            Le graphe représente l'abondance des éléments (en terme de fraction massique) en fonction de $\rho_b/\theta$ où $\theta = T_0/(\textrm{3 K}$ où $T_0$ est la température du fond diffus cosmologique (donc assez proche de 3 K).
+    	        </figure>
+    	        
+    	        Fort de meilleures données nucléaires, Wagoner publie des résultats améliorés en 1973 <ref doi="10.1086/151873" />. Wagoner débute cet article en donnant 3 arguments en faveur de la nucléosynthèse primordiale :
+    	        <ul>
+    	            <li>
+    	                La découverte de galaxies naines bleues jeunes<ref doi="10.1086/151447" /> et pauvres en $\textrm{O}$ et $\textrm{Ne}$ mais avec une abondance en hélium similaire aux valeurs pour des objets plus anciens.
+    	            </li>
+    	            <li>
+    	                Aucun processus astrophysique ne semble capable de produire autant d'hélium et de lithium qu'observé.
+    	            </li>
+    	            <li>
+    	                L'isotropie constatée du fond de rayonnement désormais mesuré à 2,7$\pm$0,1 K et la nature de corps noir de son spectre sont des arguments très forts en faveur d'une interprétation comsologique. 
+    	            </li>
+    	        </ul>
+    	        Le tableau suivant résume la situation expérimentale en 1973 :
+    	        <figure src="abundances_comparison.png" title="Abondance d'éléments légers">
+    	            Données sur les abondances d'éléments dont la synthèse n'est pas bien expliquée par la nucléosynthèse stellaire seule.<ref doi="10.1086/151873" />.
+    	        </figure>
+    	        
+    	        Wagoner trouve par ailleurs les résultats suivants :
+    	        <figure src="predicted_abundances.png" title="Prédictions d'abondance par Wagoner">
+    	            Prédictions d'abondance <ref doi="10.1086/151873" />.
+    	        </figure>
+    	        L'accord avec les valeurs expérimentales est correct et permet de placer une limite supérieure sur la densité baryonique $\rho_b$. Celle-ci doit alors être inférieure à $\rho_b \simeq 7 \times 10^{-27} \textrm{kg}.\textrm{m}^{-3}$, insuffisant pour que $\rho_b = \rho_c$ (densité critique égale à la densité baryonique). Ainsi, d'après ces résultats, l'Univers ne peut-être plat s'il est constitué de matière baryonique seule. 
     	    </p>
     	</text>
+        <references>
+          <reference>
+            <title></title>
+            <author></author>
+            <text></text>
+            <date></date>
+            <file></file>
+          </reference>
+        </references>
     </content>
     
       <content id="decouverte-matiere-noire" uid="dark-matter-discovery" type="timeline">

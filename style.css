@@ -74,6 +74,8 @@ p { margin-bottom: 1em; }
 a { color: #BF1717; text-decoration: none; }
 a:hover { color: #891010; }
 
+a.reference { font-size: 80%; }
+
 div#main
 {
     width: 100%;
