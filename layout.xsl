@@ -61,11 +61,11 @@
   </xsl:template>
   
   <xsl:template match="ref">
-    <xsl:variable name="maxauthors" select="3" />
+    <xsl:variable name="maxauthors" select="2" />
     <xsl:variable name="safedoi" select="replace(./@doi, '/', '_')" />
     <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
     
-    <a href="#doi-{$safedoi}">(
+    <a href="#doi-{$safedoi}" class="reference">(
       <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
         <xsl:if test="not(position() > $maxauthors)">
           <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
