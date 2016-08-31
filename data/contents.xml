@@ -773,8 +773,8 @@
               <p>
                   Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
                   Leur prédiction repose sur le fait que selon le modèle standard, le neutron possède un moment dipolaire électrique $d_n$ non nul, proportionnel à un paramètre sans dimension noté $\bar{\theta}$. La mesure de $d_n$ est obtenue en comparant la fréquence de précession de Larmor de neutrons plongés dans un des champs (E,B) parallèles ou de sens opposés. La valeur ainsi obtenue donne $\bar{\theta}  &lt; 10^{-10}$.
-                  Cette valeur étant très faible, Roberto Peccei et Helen Quinn ont suggéré en 1977 qu'il puisse prendre son origine dans un champ scalaire (le champ d'axion) associé à une nouvelle symétrie $U(1)$. Le paramètre $\bar{\theta}$ serait proportionnel à la valeur moyenne de ce champ qui tendrait vers 0, et dont l'équation d'état serait celle d'un condensat de pression nulle, donc équivalent à de la matière noire froide.
-                  Le couplage des actions avec la matière entraîne des prédictions testables, notamment dans des processus stellaires.
+                  Cette valeur étant très faible, Roberto Peccei et Helen Quinn ont suggéré en 1977 <ref doi="10.1103/PhysRevLett.38.1440" /> qu'il puisse prendre son origine dans un champ scalaire (le champ d'axion) associé à une nouvelle symétrie $U(1)$. Le paramètre $\bar{\theta}$ serait proportionnel à la valeur moyenne de ce champ qui tendrait vers 0, et dont l'équation d'état serait celle d'un condensat de pression nulle, donc équivalent à de la matière noire froide.
+                  Le couplage des actions avec la matière entraîne des prédictions testables, notamment dans des processus stellaires <ref doi="10.1007/978-3-540-73518-2_3" />.
               </p>
               
               <h4>MACHOs</h4>
@@ -783,7 +783,7 @@
                 Leur dénomination est un clin d'oeil aux WIMPs (ou l'inverse), "wimp" signifiant mauviette en anglais.
                 Leur recherche repose notamment sur l'effet de micro lentille gravitationnelle.
                 <figure src="machos_constraints.svg" title="Limites sur la fraction de matière noire explicable par les MACHOs.">
-                  Limites supérieures sur la portion de matière noire ($f = \Omega_{MACHOs} / \Omega_{DM}$) pouvant être contenue sous forme de MACHOs, et l'origine de ces limites. Source : <a href="https://arxiv.org/abs/1605.03665" target="_blank">arXiv:1605.03665</a>
+                    Limites supérieures sur la portion de matière noire ($f = \Omega_{MACHOs} / \Omega_{DM}$) pouvant être contenue sous forme de MACHOs, et l'origine de ces limites. Source : <ref doi="10.3847/2041-8205/824/2/L31" />
                 </figure>
               </p>
 
@@ -809,7 +809,7 @@
               S = \int \dfrac{c^4}{16\pi G} f(R) \sqrt{-g} d^4x
               \end{equation}
               Les équations du mouvements (équation d'Einstein) s'obtiennent alors par application du principe de moindre action, avec $f(R) = R$.
-              L'idée des théories $f(R)$ est d'utiliser une fonction différente pour $f$, par exemple $f(R) = R-\alpha R^2$. Bien que de nombreuses motivations théoriques existent, ces modèles ne peuvent expliquer de fraction significative de la matière noire sans introduire d'effets incompatibles avec les observations.
+              L'idée des théories $f(R)$ est d'utiliser une fonction différente pour $f$, par exemple $f(R) = R-\alpha R^2$. Ces modifications pourraient avoir un effet semblable à la présence de matière noire en relativité générale <ref doi="10.1016/j.astropartphys.2008.04.003" />, <ref doi="10.1103/PhysRevLett.102.141301" />. Bien que de nombreuses motivations théoriques existent, ces modèles ne peuvent expliquer de fraction significative de la matière noire sans introduire d'effets incompatibles avec les observations.
               </p>
     	</text>
         <interviews>
