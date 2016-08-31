@@ -229,7 +229,7 @@
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
         <a href="/a-propos/">A propos du site</a> | 
-        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="/graph.html" target="_blank">ici</a>.
       </div>
 
       <div id="main">
@@ -297,7 +297,7 @@
       <div id="navigation">
         <a href="/" id="show_timeline">Frise</a> |
         <a href="/a-propos/">A propos du site</a> | 
-        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="/graph.html" target="_blank">ici</a>.
       </div>
 
       <div id="main">
@@ -387,7 +387,7 @@
         <xsl:if test="./following-sibling::content[1]/@id">
           <a href="/{./following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="/graph.html" target="_blank">ici</a>.
       </div>
       
     <div id="main">
@@ -496,7 +496,7 @@
         <xsl:if test="$pagecontent/following-sibling::content[1]/@id">
           <a href="/{$pagecontent/following-sibling::content[1]/@id}">Suivant</a> |
         </xsl:if>
-        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="graph.html" target="_blank">ici</a>.
+        Cette version est une <b>ébauche</b>. L'avancement de la relecture est disponible <a href="/graph.html" target="_blank">ici</a>.
       </div>
     <div id="main"> 
       <div id="content">
