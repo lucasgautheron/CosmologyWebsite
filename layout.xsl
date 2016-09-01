@@ -65,8 +65,8 @@
     <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
     <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
     
-    <a href="#doi-{$safedoi}" class="reference">(
-      <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
+    <a href="#doi-{$safedoi}" class="reference">
+      (<xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
         <xsl:if test="not(position() > $maxauthors)">
           <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
           <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
