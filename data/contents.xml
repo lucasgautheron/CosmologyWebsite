@@ -382,8 +382,12 @@
     	       Cette découverte est majeure, puisqu'elle a deux conséquences immédiates :
     	       <ul>
     	           <li>Remise en cause de la théorie de l'état stationnaire au profit du Big Bang</li>
-    	           <li>Nouvelles perspectives observationnelles en Cosmologie puisque la mesure du CMB (température, spectre, anisotropies) est riche en informations</li>
+    	           <li>Nouvelles perspectives observationnelles en Cosmologie puisque la mesure du CMB (température, spectre, isotropie) est riche en informations</li>
     	       </ul>
+    	    </p>
+    	    
+    	    <p>
+    	        Pour que l'origine cosmologique du fond de rayonnement soit validée, il faut s'assurer que son spectre est bien celui d'un corps noir et que son isotropie est suffisante. Ces deux caractéristiques sont très vite vérifiées dans les années qui suivent<ref doi="10.1016/0003-4916(67)90179-0" />.
     	    </p>
             <!--
             TODO sach wolf = début de la cosmologie non homogène

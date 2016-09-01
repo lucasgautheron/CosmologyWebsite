@@ -62,7 +62,7 @@
   
   <xsl:template match="ref">
     <xsl:variable name="maxauthors" select="2" />
-    <xsl:variable name="safedoi" select="replace(./@doi, '/', '_')" />
+    <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
     <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
     
     <a href="#doi-{$safedoi}" class="reference">(
@@ -83,7 +83,7 @@
     <xsl:param name="doi" />
     
     <xsl:variable name="maxauthors" select="4" />
-    <xsl:variable name="safedoi" select="replace($doi, '/', '_')" />
+    <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
     <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
     <a name="doi-{$safedoi}"></a>
     <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
