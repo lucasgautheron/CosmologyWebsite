@@ -25,12 +25,13 @@
     <event date="1963" content-id="bigbang-success">Maarten Schmidt découvre un nouveau type d'objet astronomique plus tard appelé "Quasar". Les observations montrent qu'on en trouve surtout à une distance importante, ce sont donc des objets anciens, en contradiction avec le principe cosmologique parfait, ce qui porte un coup au modèle stationnaire de l'Univers.  </event>
     <event date="1964" content-id="cmb-discovery">Découverte fond diffus cosmologique par Arno Penzias et Robert Wilson.</event>
     <event date="1966" content-id="cmb-discovery">Rainer K. Sachs et Arthur M. Wolfe décrivent l'effet Sachs-Wolfe, qui relie les fluctuations directionnelles de densité de matière aux fluctuations de température du rayonnement fossile</event>
+    <event date="1973" content-id="primordial-nucleosynthesis-2">Robert Wagoner publie les résultats les plus précis alors sur la production d'hélium et de lithium par nucléosynthèse primordiale.</event>
     <event date="1980" content-id="dark-matter-discovery">Les travaux menés par Kent Ford et Vera Rubin montrent que la plupart des galaxies qu'ils ont pu étudier sont principalement constituées de matière noire</event>
     <event date="1980" content-id="inflation">Alan Guth suggère un scénario d'expansion très rapide de l'Univers à son commencement qu'il appelle "Inflation". Ce scénario vise à résoudre plusieurs problèmes comme celui de l'ajustement fin de la densité ou encore de l'homogénéité de l'Univers incluant des régions causalement séparées.</event>
-    <event date="1990" content-id="cmb-discovery">Des expériences menées grâce au satellite COBE permettent une mesure précise du spectre du fond diffus cosmologique</event>
+    <event date="1990" content-id="cobe-experiment">L'expérience COBE permet mesure précise du spectre du fond diffus cosmologique et l'établissement de la première carte de ses anisotropies</event>
     <event date="1998" content-id="expansion-acceleration-discovery">Découverte de l'accélération de l'expansion de l'Univers</event>
-    <event date="1998" content-id="14">Introduction de la notion d'"Énergie sombre" par Dragan Huterer et Michael S. Turner pour expliquer l'accélération de l'expansion. Ceci comprend entre autres hypothèses la réintroduction de la constante cosmologique.</event>
-    <event date="2015" content-id="15">Les résultats de l'expérience Planck permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
+    <event date="1998" content-id="expansion-acceleration-discovery">Introduction de la notion d'"Énergie sombre" par Dragan Huterer et Michael S. Turner pour expliquer l'accélération de l'expansion. Ceci comprend entre autres hypothèses la réintroduction de la constante cosmologique.</event>
+    <event date="2015" content-id="planck-experiment">Les résultats de l'expérience Planck permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
     <event date="Aujourd'hui" content-id="dark-matter-search">Rercherche de la matière noire</event>
     <!--<event date="Aujourd'hui" content-id="17">Energie noire</event>-->
 </events>
