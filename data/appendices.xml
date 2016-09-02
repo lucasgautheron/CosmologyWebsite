@@ -281,16 +281,16 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         
         Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
         
-        TODO ajouter plots
         <ul>
             <li>Pour un Univers plat ($k/R^2 = 0$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  $a^{3/2}(t) = 1 + \dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t$
                 Cet univers "nait" à $t= - \dfrac{2}{3}\sqrt{\dfrac{3c^2}{8\pi G \rho_0}}$ et ne cesse de s'expandre depuis. Il a donc un âge fini $T = \sqrt{\dfrac{c^2}{6\pi G \rho_0}}$.</li>
-            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
-            Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
+            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors : 
+                <!--TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
+            Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$-->
             \begin{equation}
             \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
             \end{equation} _et_ périodique</li>
-            <li>\begin{equation}
+            <li>Pour un Univers hyperbolique : \begin{equation}
                 \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
                 \end{equation}</li>
         </ul>
