@@ -302,7 +302,9 @@
     
     <content type="timeline" id="nucleosynthese-stellaire" uid="stellar-nucleosynthesis">
         <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
-        <image>nucleosynthese_stellaire.jpg</image>
+        <image src="pleiades.jpg">
+            Les Pléïades par l'observatoire de Yerkes.
+        </image>
         <color>#0562a3</color>
         <text>
 
