@@ -698,7 +698,9 @@
     
     <content id="experience-cobe" uid="cobe-experiment" type="timeline">
         <title>Expérience COBE</title>
-        <image>cobe.png</image>
+        <image src="cobe.png">
+            From wikipedia.
+        </image>
         <color>#ca28a6</color>
         <text>
             <p>
