@@ -1637,7 +1637,8 @@ Et
                     incoming: {i1: '10,60'},
                     outgoing: {o1: '190,60'},
                     vertex: {v1: '58.5,60', v2: '141.5,60'},
-                    scalar: {line: 'i1-v1,v2-o1', loop: 'v2-v1'},
+                    scalar: {line: 'i1-v1,v2-o1'},
+                    fermion: {loop: 'v2-v1'},
                     label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
                     t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
                 </feynman>
@@ -1683,7 +1684,8 @@ Et
      <appendix id="supersymetrie" uid="supersymmetry">
       <title>Supersymétrie</title>
       <text>
-         <p>La supersymétrie est une théorie en physique des particules visant à compléter le Modèle Standard. TODO explain</p>
+         <p>La supersymétrie est une théorie en physique des particules qui complète le modèle standard en associant à chaque particule une autre particule appelée superpartenaire. Les superpartenaires ont la propriété d'être des fermions si leur partenaire est un boson et vice-et-versa.
+         La supersymétrie repose sur une extension de l'algèbre de Poincarré au super-algèbre de Poincarré qui inclut une transformation étant grossièrement la "racine" de l'opération de translation. La supersymétrie pourrait résoudre le problème hiérarchique. Si c'est le cas, il est attendue qu'on puisse en détecter la trace via certaines des particules qu'elle prédit dans des accélérateurs comme le LHC. Il existe d'autres tests possibles de supersymétrie comme la mesure du moment dipolaire électrique de l'électron.</p>
       </text>
       <linkwords>
            <linkword>SUSY</linkword>
