@@ -1093,7 +1093,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
                 D'où on tire le spectre de puissance :
                 \begin{equation}
-                C_l = \sum_{-l \leq m \geq l} \dfrac{|a_{lm}|^2}{2l+1}
+                C_l = \sum_{-l \leq m \leq l} \dfrac{|a_{lm}|^2}{2l+1}
                 \end{equation}
                 
                 Le multipôle $l$ représente une échelle angulaire $\pi/l$, donc les coefficients à bas $l$ indiquent la corrélation entre des portions du ciel de grande envergure.
