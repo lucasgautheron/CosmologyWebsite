@@ -352,7 +352,9 @@
     
        <content id="decouverte-fond-diffus-cosmologique" uid="cmb-discovery" type="timeline" ready="1">
     	<title>Découverte du fond diffus cosmologique</title>
-    	<image>cmb.jpg</image>
+    	<image src="penzias_wilson.jpg">
+    	    Arno Penzias et Robert Wilson auprès de l'antenne d'Holmdel.
+    	</image>
     	<color>#e4ee86</color>
     	<text>
     	    <p>
