@@ -791,6 +791,21 @@
         </further-readings>
     </content>
     
+    <content id="experiences-cmb" uid="cmb-experiments" type="timeline">
+        <title>Expériences WMAP et Planck</title>
+        <image src="planck.jpg">
+            ESA. "Le satellite Planck au Centre européen de recherche et technologie spatiale (ESTEC) à Noordwijk aux Pays-Bas. 31 Mars 2018."
+        </image>
+        <color>#28ca94</color>
+        <text>
+            <p>
+                L'expérience COBE qui a accompli ses objectifs a été un grand succès, mais il y a encore beaucoup de marge pour des expériences de meilleures précisions. En 2001, le satellite WMAP (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre. 
+            </p>
+        </text>
+        <further-readings>
+        </further-readings>
+    </content>
+    
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
     	<title>Recherche de la matière noire</title>
         <image src="dark_matter.jpg">
