@@ -700,7 +700,9 @@
     
     <content id="decouverte-acceleration-expansion" uid="expansion-acceleration-discovery" type="timeline">
     	<title>Découverte de l'accélération de l'expansion de l'Univers</title>
-    	<image>acceleration_expansion.jpg</image>
+    	<image src="SN_1006.jpg">
+    	    Restes de la supernova thermonucléaire (Ia) de l'an 1006. Source: pbs.org.
+    	</image>
     	<color>#a9680d</color>
     	<text>
             <p>
