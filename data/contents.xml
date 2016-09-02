@@ -696,6 +696,52 @@
         </further-readings>
     </content>
     
+    <content id="experience-cobe" uid="cobe-experiment" type="timeline">
+        <title>Inflation</title>
+        <image>inflation.jpg</image>
+        <color>#ca28a6</color>
+        <text>
+            <p>
+                En 1974, John C. Mather lance l'idée avec d'autres physiciens d'un satellite mesurant les propriétés du fond diffus cosmologique. Le projet est validé sous le nom COBE (pour COsmic Background Explorer) et comprend trois instruments :
+                <ul>
+                    <li>
+                        <b>DIRBE</b> : "Diffuse Infrared Background Experiment". Réalise une mesure du spectre de rayonnement sur 10 longueurs d'onde, comprises entre 1,25 $\mu m$ et 240 $\mu m$. 
+                    </li>
+                    <li>
+                        <b>FIRAS</b> : "Far Infrared Absolute Spectrophotometer". Réalise des mesures d'intensité entre $\lambda = 0,1$ mm et $\lambda = 5$ mm. 
+                    </li>
+                    <li>
+                        <b>DMR</b> :  "Differential Microwave Radiometers". 6 radiomètres différentiels mesurent la différence de rayonnement entre deux directions séparées de 60° avec une ouverture de 7°, à trois longueurs d'onde pour lesquels la pollution galactique est réduite (31 GHz, 53 GHz, 90 GHz). 
+                    </li>
+                </ul>
+                
+                Le satellite est lancé en 1990 et placé en orbite à 900 km d'altitude.
+                Alors que l'accord avec un spectre de corps noir est très vite vérifié, les données sont collectées pendant deux ans pour affiner la carte des anisotropies.
+                
+                La tâche n'est pas simple, puisqu'aux photons issus du fond diffus cosmologique s'ajoute l'émission directe par des sources ou par diffusion dans le plan galactique notamment, ainsi que la diffusion par de la poussière interstellaire. Ces formes de bruits doivent être soustraites pour reconstituer le CMB.
+                
+                Les résultats sont publiés en 1992 <ref doi="10.1086/186504" />. 
+                
+                Cette expérience vaudra l'attribution du prix Nobel 2006 aux physiciens à John C. Mather and Georges F. Smoot
+            </p>
+            <p>
+                <figure src="cobe_temperature.png" title="Spectre du CMB comparé à un corps noir à 2.7 K d'après COBE">
+                    Le spectre du CMB relevé à l'aide FIRAS est comparé à celui d'un corps noir à la température donnant le meilleur accord. La compatibilité est excellente ce qui confirme que le fond de rayonnement est bien issu d'un équilibre thermique parfait, donc en très bon accord avec l'interprétation cosmologique.
+                </figure>
+            </p>
+            
+            <p>
+                <figure src="cobe_map.png" title="Carte du CMB">
+                    Carte du CMB relevée par l'instrument DMR de COBE, pour diverses longueurs d'onde. A gauche, les cartes représentent les mesures brutes. A droite, les effets des sources galactiques et de la poussière ont été soustraits. C'est la carte du CMB à proprement parler.
+                </figure>
+            </p>
+            
+            
+        </text>
+        <further-readings>
+        </further-readings>
+    </content>
+    
     <content id="decouverte-acceleration-expansion" uid="expansion-acceleration-discovery" type="timeline">
     	<title>Découverte de l'accélération de l'expansion de l'Univers</title>
     	<image>acceleration_expansion.jpg</image>
