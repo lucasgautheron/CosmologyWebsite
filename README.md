@@ -19,7 +19,7 @@ git clone https://github.com/lucasgautheron/CosmologyWebsite.git
  * Install the dependencies :
  
 ```
-apt-get install libsaxonb-java gnuplot default-jre
+apt-get install default-jre gnuplot libcurl3 libsaxonb-java php-cli
 ```
 
 In order to generate the animations and run the simulations the following packages are also required :
