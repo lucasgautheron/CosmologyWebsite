@@ -799,8 +799,30 @@
         <color>#28ca94</color>
         <text>
             <p>
-                L'expérience COBE qui a accompli ses objectifs a été un grand succès, mais il y a encore beaucoup de marge pour des expériences de meilleures précisions. En 2001, le satellite WMAP (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre. 
+                L'expérience COBE qui a accompli ses objectifs a été un grand succès, mais il y a encore beaucoup de marge pour des expériences de meilleures précisions.
             </p>
+            
+            <h3>L'expérience WMAP</h3>
+            
+            <p>
+                En 2001, le satellite WMAP (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre.
+                Ce satellite utilise des radiomètres différentiels pour mesurer les différences d'intensité du flux électromagnétique entre deux directions angulaires sur 5 bandes de fréquences comprises entre 22 et 90 GHz.
+                Le diamètre des réflecteurs employés est d'environ 1,5 m.
+                L'appareil est capable de mesurer des différences de température à une précision de 20 $\mu K$ et avec une résolution angulaire comprise entre 0,2° et 1° selon la longueur d'onde observée.
+                La prise de données dure 9 ans, jusqu'en 2010, et fournit les cartes de température du fond diffus cosmologique les plus précises alors. Une description complète de l'expérience est disponible à l'adresse <a href="http://map.gsfc.nasa.gov/mission/">http://map.gsfc.nasa.gov/mission/</a>.
+            </p>
+            <p>
+                La carte finale est représentée sur la figure suivante
+                <figure src="wmap_9years.svg" title="Carte de température du fond diffus cosmologique par WMAP">
+                    Carte de température du fond diffus cosmologique par WMAP, après 9 ans de collecte de données.
+                </figure>
+                
+                <figure src="wmap_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique relevé par WMAP et modèle standard">
+                    Comparaison entre le spectre de puissance du fond diffus cosmologique mesuré par WMAP et la courbe théorique correspondant au jeu de paramètres du modèle standard de la cosmologie ($\Lambda$CDM)donnant le meilleur accord.
+                    Cela permet une mesure simultanée de nombreux paramètres cosmologiques, et montrer l'accord excellent entre observation et modèle théorique.
+                </figure>
+            </p>
+            
         </text>
         <further-readings>
         </further-readings>
