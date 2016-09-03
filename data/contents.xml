@@ -121,8 +121,8 @@
         <text><p>D'après les mesures de vitesse des nébuleuses spirales dues à Slipher, ces objets ne semblent pas appartenir à la Voie Lactée : ils se déplacent trop vite par rapport à elle pour y être liées gravitationnellement. Il est donc naturel pour mettre fin à ce débat de se demander à quelle distance celles-ci se trouvent. Les mesures de distance classiques comme la parallaxe ne s'appliquent pas à des objets si lointains : il faut trouver une autre méthode.</p>
         <p>La solution au problème de mesure de distance de ces objets lointains sera apportée par l'étude des céphéides. Les céphéides sont des étoiles variables périodiques : la puissance lumineuse qu'elles rayonnent varie avec une période $T$ de l'ordre de grandeur du jour. En 1908, l'astronome Henrietta Leavitt découvre une relation entre la luminosité de ces étoiles et leur période. Elle fait cette découverte à partir d'observations réalisées à l'observatoire de l'université d'Harvard sur des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (des galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède). Ce résultat est très important : il permet de calculer la luminosité d'une céphéide à partir de sa seule période (qui est facilement mesurable). Or, connaissant la luminosité intrinsèque $L$ d'une étoile ainsi que le flux que l'on en reçoit par unité de surface sur Terre $F$ on peut en déduire sa distance $d$. ($F \propto L/d^2$). <!--TODO:(optionnel car rallonge) expliquer le travail de Hertzsprung et Harlow Shapley qui a calibré la relation de Leavitt puisque celle-ci faisait intervenir la magnitude apparente et non absolue ne connaissant pas la distance des nuages de magellan)--></p>
         <p>Edwin Hubble, un physicien américain, comprend très vite l'intérêt de cette méthode d'évaluation des distances. Durant les années 20, il applique cette méthode d'observation à des nébuleuses spirales suffisamment proches pour identifier individuellement des céphéides et appliquer la relation luminosité-distance alors connue. Connaissant la distance, il peut calculer la luminosité intrinsèque des plus brillantes des étoiles de ces nébuleuses. Il fit l'hypothèse que cette luminosité maximale devait être la même dans toutes les autres plus éloignées pour lesquelles il était impossible d'identifier les céphéides de façon individuelle. Ce faisant il disposait d'une nouvelle référence (la luminosité absolue des étoiles les plus brillantes) pour calculer la distance de chaque nébuleuse. En 1924, il annonce ainsi qu'il estime la distance d'Andromède à 900 000 années-lumière. Ce résultat met fin à la question du "grand débat" : les spirales nébuleuses sont bien des galaxies au même titre que la Voie Lactée à laquelle elles n'appartiennent pas.</p>
-        <p>Dans son papier de 1927, Lemaître propose un modèle de l'Univers dans lequel les galaxies environnantes peuvent paraitre s'éloigner avec une vitesse proportionnelle à leur distance du fait d'une expansion. A l'aide des premiers résultats combinés de mesures de distances d'Hubble et de vitesses radiales il établit même une estimation la valeur du coefficient de proportionnalité : $v = Kd$ et $K \sim $ 625 km/s/Mpc, mais les données lui manquent alors pour établir qu'il y a bien proportionnalité. Cette publication passe inaperçue*.</p>
-        <p>En 1929, Hubble publie "A relation between distance and radial velocity among extra-galactic nebulae" (Une relation entre la distance et la vitesse radiale des nébuleuses extra-galactiques). Son article montre à partir de mesures de distances et vitesses radiales portant sur 46 nébuleuses qu'il existe une proportionnalité entre les deux. Hubble trouve donc $v = Kd$ où il estime la valeur de $K$ à 530 km/s/Mpc. Ce résultat, aujourd'hui appelé "Loi de Hubble", constitue la preuve de l'expansion de l'Univers, même aux yeux d'Einstein qui renonce alors à son modèle statique. La constante $K$ est aujourd'hui appelée "constante de Hubble" et notée $H_0$ ("H" pour Hubble, et "0" pour faire indiquer qu'il s'agit de la valeur de la constante au temps présent).
+        <p>Dans son papier de 1927, Lemaître propose un modèle de l'Univers dans lequel les galaxies environnantes peuvent paraitre s'éloigner avec une vitesse proportionnelle à leur distance du fait d'une expansion. A l'aide des premiers résultats combinés de mesures de distances d'Hubble et de vitesses radiales il établit même une estimation la valeur du coefficient de proportionnalité : $v = Kd$ et $K \sim $ 625 km/s/Mpc, mais les données lui manquent alors pour établir qu'il y a bien proportionnalité. Cette publication passe inaperçue.</p>
+            <p>En 1929, Hubble publie "A relation between distance and radial velocity among extra-galactic nebulae" <ref doi="10.1073/pnas.15.3.168" />(Une relation entre la distance et la vitesse radiale des nébuleuses extra-galactiques). Son article montre à partir de mesures de distances et vitesses radiales portant sur 46 nébuleuses qu'il existe une proportionnalité entre les deux. Hubble trouve donc $v = Kd$ où il estime la valeur de $K$ à 530 km/s/Mpc. Ce résultat, aujourd'hui appelé "Loi de Hubble", constitue la preuve de l'expansion de l'Univers, même aux yeux d'Einstein qui renonce alors à son modèle statique. La constante $K$ est aujourd'hui appelée "constante de Hubble" et notée $H_0$ ("H" pour Hubble, et "0" pour souligner qu'il s'agit de la valeur de la constante au temps présent).
         
             <figure src="hubble_law.png" title="Figure issue du papier d'Hubble en 1929.">Légende originale traduite : <b>Relation vitesse-distance pour les nébuleuses extra-galactiques</b>. 
                 Les vitesses radiales, corrigées du mouvement du Soleil, sont représentées en fonction des distances estimées à partir des étoiles contenues et des luminosités moyennes des nébuleuses d'un amas. Les disques noirs et le trait plein représentent la solution pour un mouvement solaire estimé en se basant sur les données individuelles des nébuleuses ; les cercles et la ligne pointillée représentent la solution obtenue et regroupant les nébuleuses en 9 groupes distincts ; la croix représente la vitesse moyenne et la distance moyenne de 22 nébuleuses dont les distances n'ont pu être estimées inidividuellement. </figure></p></text>
@@ -165,7 +165,7 @@
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
         <image>bigbang.jpg</image>
         <color>#108b57</color>
-        <text><p>Après la découverte de l'expansion de l'Univers par Hubble, Einstein, qui était jusqu'alors sceptique au sujet des travaux de Friedmann et Lemaître sur des modèles cosmologiques non statiques, comprend leur valeur. Ainsi, au début des années 1930, il aide à répandre ces idées parmi les physiciens. En 1932, lui-même et De Sitter proposent un modèle cosmologique minimal, auquel on réfère aujourd'hui par le nom d'espace d'Einstein-de Sitter, conforme aux observations de l'époque : 
+        <text><p>Après la découverte de l'expansion de l'Univers par Hubble, Einstein, qui était jusqu'alors sceptique au sujet des travaux de Friedmann et Lemaître sur des modèles cosmologiques non statiques, comprend leur valeur. Ainsi, au début des années 1930, il aide à répandre ces idées parmi les physiciens. En 1932, lui-même et De Sitter proposent un modèle cosmologique minimal<ref doi="10.1126/science.75.1945.384" />, auquel on réfère aujourd'hui par le nom d'espace d'Einstein-de Sitter, conforme aux observations de l'époque : 
             <ul>
                 <li>Géométrie plate</li>
                 <li>Uniquement constitué de matière non-relativiste, de pression nulle (pas de rayonnement)</li>
@@ -183,7 +183,7 @@
                     <li>Problème de la formation des galaxies : selon Hoyle, les galaxies n'ont pu se former que lorsque l'expansion est devenue suffisamment lente pour que l'attraction gravitationnelle l'emporte localement, ce qui est inconsistent avec leur âge tel qu'estimé</li>
                     <!-- TODO EXPAND <li>http://www.iac.es/congreso/isapp2012/media/Longair-lectures/Longair3.pdf TODO</li>-->
                 </ul>
-                Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. 
+                Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" <ref doi="10.1093/mnras/108.5.372" /> visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. 
             </p>
             <p>
                 En 1950 on peut donc considérer qu'il existe deux classes de théories principales :
@@ -214,7 +214,7 @@
     </content>
     
     
-    <content id="indications-matiere-noire" uid="dark-matter-hints">
+    <!--<content id="indications-matiere-noire" uid="dark-matter-hints">
         <title>Premières indications matière noire</title>
         <image>dm.jpg</image>
         <color>#e5d223</color>
@@ -222,7 +222,7 @@
             <p>oort etc.</p>
             <p>TODO: mettre le truc classique avec l'application du viriel en ressource.</p>
         </text>
-    </content>
+    </content>-->
     
     <content id="nucleosynthese-primordiale-1" uid="primordial-nucleosynthesis-1" type="timeline" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
@@ -234,7 +234,7 @@
             <p>Au début des années 1940, une hypothèse à l'étude est l'abondance relative des atomes dans l'Univers s'explique par un équilibre thermique rapide ayant eu lieu à une température $T$ qui aurait gelé les proportions des différentes espèces. Très approximativement, ces proportions devraient suivre une distribution de type Maxwell-Boltzmann $n \propto e^{-E/(k_B T)}$ où $E$ est leur énergie nucléaire de liaison. L'énergie de liaison augmentant linéairement avec la masse atomique, l'abondance des espèces devrait décroitre exponentiellement avec celle-ci. Mais ce n'est pas ce qu'on observe : au lieu de cela, l'abondance des espèces lourdes est à peu près constante. L'idée d'un équilibre thermique rapide est donc rejetée.
                 <spoiler><figure src="thermal_equilibrium_abundance.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="abondance_equilibre_thermique"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
                 <!--TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)--></figure></spoiler></p>
-            <p>A partir de 1946, Gamow propose, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
+            <p>A partir de 1946, Gamow propose <ref doi="10.1103/PhysRev.70.572.2" />, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
             <!--<p>TODO parler de l'hélium
             </p>-->
             <ol>
@@ -248,7 +248,7 @@
             </p>
             
             <h3>L'univers jeune dominé par les photons</h3>
-            <p>En 1948, Gamow, Alpher et Herman publient de nombreux papiers dans le cadre de cette théorie. Ils comprennent que pour expliquer la présence importante d'hydrogène, il est nécessaire que les protons issus de la désintégration des neutrons libres n'aient pas tous formé avec eux du deutéron (noyau constitué d'un proton et d'un neutron). Ils proposent alors que la formation du deutéron soit en fait un équilibre :
+            <p>En 1948, Gamow, Alpher et Herman publient de nombreux papiers dans le cadre de cette théorie <ref doi="10.1103/PhysRev.73.803" />. Ils comprennent que pour expliquer la présence importante d'hydrogène, il est nécessaire que les protons issus de la désintégration des neutrons libres n'aient pas tous formé avec eux du deutéron (noyau constitué d'un proton et d'un neutron). Ils proposent alors que la formation du deutéron soit en fait un équilibre :
             \begin{equation}
             n+p \rightleftharpoons d+\gamma 
             \end{equation}
@@ -263,7 +263,7 @@
             \end{equation}
             Ainsi, Hayashi trouve un ratio protons/neutrons $n_p/n_n \sim 4$ au lieu de $1/7$ environ comme estimé par Gamow, Alpher et Herman en ne considérant que la désintégration des neutrons. Or, cette valeur ne permet pas de rendre compte de l'abondance observée des éléments pour une nucléosynthèse par capture neutronique successive. 
             
-            Puisque la détermination de ce ratio $p/n$ est cruciale pour déterminer la vraisemblance de la nucléosynthèse par capture neutronique, Alpher, Herman et Follin publient un papier en 1953 visant à estimer l'état initial de l'Univers avant la nucléosynthèse, selon les développements théoriques à leur disposition (qui leur permettent de décrire assez précisemment les phénomènes en jeu jusqu'à une température d'environ 100 MeV ~ $10^{12}$ K) et en étudiant la dépendance en certaines valeurs expérimentales mal connues (par exemple, le temps de demie-vie du neutron). Ils estiment que $p/n$ est compris entre $4,5$ et $6$, ce qui remet en effet en cause la nucléosynthèse par capture neutronique. Ce papier constitue cependant une base importante en tant que description alors la plus détaillée des premiers instants d'un big bang chaud.
+            Puisque la détermination de ce ratio $p/n$ est cruciale pour déterminer la vraisemblance de la nucléosynthèse par capture neutronique, Alpher, Herman et Follin publient un papier en 1953 visant à estimer l'état initial de l'Univers avant la nucléosynthèse <ref doi="10.1103/PhysRev.92.1347" />, selon les développements théoriques à leur disposition (qui leur permettent de décrire assez précisemment les phénomènes en jeu jusqu'à une température d'environ 100 MeV ~ $10^{12}$ K) et en étudiant la dépendance en certaines valeurs expérimentales mal connues (par exemple, le temps de demie-vie du neutron). Ils estiment que $p/n$ est compris entre $4,5$ et $6$, ce qui remet en effet en cause la nucléosynthèse par capture neutronique. Ce papier constitue cependant une base importante en tant que description alors la plus détaillée des premiers instants d'un big bang chaud.
             <figure src="1953_bigbang_timetable.png" title="Récapitulatif des différentes étapes du Big Bang selon Alpher-Hermann-Follin 1953" width="300">
                 
             </figure>
@@ -303,7 +303,7 @@
     <content type="timeline" id="nucleosynthese-stellaire" uid="stellar-nucleosynthesis">
         <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
         <image src="pleiades.jpg">
-            Les Pléïades par l'observatoire de Yerkes.
+            Les Pléiades par l'observatoire de Yerkes.
         </image>
         <color>#0562a3</color>
         <text>
@@ -313,7 +313,7 @@
             </p>
             <!--<p>TODO FIXME parler ici de Fermi/Turkevich ?</p>-->
             <p>
-                En 1957, Geoffrey Burbidge, Margarett Burbidge, William Fowler et Fred Hoyle publient un article très détaillé intitulé "Synthesis of the Elements in Stars", dans lequel ils classent et décrivent très précisément différents processus nucléaires possibles dans les étoiles, afin d'expliquer la formation de la plupart des éléments naturels, des plus légers aux plus lourds (jusqu'à l'Uranium), à partir de l'hydrogène seulement. On peut résumer très rapidement cette classification ainsi :
+                En 1957, Geoffrey Burbidge, Margarett Burbidge, William Fowler et Fred Hoyle publient un article très détaillé intitulé "Synthesis of the Elements in Stars" <ref doi="10.1103/RevModPhys.29.547" />, dans lequel ils classent et décrivent très précisément différents processus nucléaires possibles dans les étoiles, afin d'expliquer la formation de la plupart des éléments naturels, des plus légers aux plus lourds (jusqu'à l'Uranium), à partir de l'hydrogène seulement. On peut résumer très rapidement cette classification ainsi :
                 <ul>
                     <li>Hydrogen Burning, Helium Burning et Processus $\alpha$ : Fusions consécutives d'éléments $X_i$ et d'hydrogène ou d'hélium. Formation d'éléments plutôt légers $A \leq 25$, notamment le carbone et l'oxygène. </li>
                     <li>Processus $e$ : Atteinte d'un état d'équilibre thermique des protons et neutrons qui s'associent en partie pour former de façon privilégiée des éléments très stables (autour du Fer, $45 \leq A \leq 65$, intervalle dans laquelle elle domine)</li>
@@ -335,7 +335,7 @@
         </text>
         <further-readings>
             <further-reading>
-                <title>Synthesis of the Elements in Stars</title>
+                <title>B2FH, The CMB and Cosmology</title>
                 <author>Geoffrey Burbidge</author>
                 <text>Article rétrospectif de Geoffrey Burbidge à propos du papier de 1957 et de son impact dans le domaine de la cosmologie.</text>
                 <date>2007</date>
@@ -343,7 +343,7 @@
             </further-reading>
             
              <further-reading>
-                <title>B2FH, The CMB and Cosmology</title>
+                <title>Synthesis of the Elements in Stars</title>
                 <author>G. Burbidge, M. Burbidge, Fowler, Hoyle</author>
                 <text>Papier "B2FH" original de 1957 expliquant la formation de la plupart des éléments par des processus nucléaires au sein des étoiles.</text>
                 <date>1957</date>
@@ -612,7 +612,7 @@
     	        Le problème est que, si l'on fait ce calcul, par exemple pour la Voie Lactée, on trouve que $M_L$ ne représente qu'un dixième de $M_G$ ! Il semble donc qu'une composante essentielle de la masse soit "invisible". 
     	        
     	        Dans les années 1970, Vera Rubin mène des recherches avec l'aide de Kent Ford qui avait mis au point un nouveau spectrographe très performant afin d'étudier la distribution de vitesses orbitales des galaxies en fonction de la distance au centre.
-                En 1980, les deux physiciens publient dans un papier le résultat de leurs mesures portées sur 21 galaxies Sc (galaxies spirales à plus de deux bras, dans la séquence de Hubble). Ils trouvent systématiquement une courbe de vitesse devenant plate à des distances importantes du centre galactique.
+    	        En 1980, les deux physiciens publient dans un papier <ref doi="10.1086/158003" /> le résultat de leurs mesures portées sur 21 galaxies Sc (galaxies spirales à plus de deux bras, dans la séquence de Hubble). Ils trouvent systématiquement une courbe de vitesse devenant plate à des distances importantes du centre galactique.
                 
                 <figure src="rotation_curves.jpg" title="Courbes de vitesse rotationnelle">
                     Légende originale traduite : "vitesses moyennes dans le plan galactique, en fonction de la distance au noyau pour 21 galaxies Sc, classées par rayon croissant. La courbe  dessinée est la courbe de rotation obtenue à partir de la moyenne des vitesses de chaque côté de l'axe principale. [...] Les tirets proches du noyau galactique indiquent les régions dans lesquelles les vitesses ne sont pas disponibles pour des raisons d'échelle. Les tirets à grande distance du noyau indiquent une vitesse chutant plus vite que la loi Képlerienne ($r^{-1/2}$)"
@@ -684,7 +684,7 @@
                 A. Guth et ses collaborateurs remarquent que les théories GUT prédisent dans le cadre de la théorie du Big Bang de l'époque la création de monopôles magnétiques en très grande quantité (TODO donner ordres de grandeurs) ce qui n'est <i>a priori</i> pas possible puisque ceux-ci n'ont pour l'instant pas été observés.
                 Pour l'expliquer, ils suggèrent une phase de refroidissement très rapide. (TODO expliquer impact. requiert d'expliquer champ scalaire ?). Or, Guth remarque que cela équivaut à une expansion dramatiquement rapide de l'Univers ; de plus, il comprend que cette expansion très rapide permet à la fois de résoudre le problème de la platitude, ainsi que celui de l'Horizon !
                 
-                
+                <ref doi="10.1103/PhysRevD.23.347" />
     	        
     	        <!--La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier-->
     	    </p>
@@ -723,7 +723,7 @@
                 Ainsi, observer la courbe de luminosité des SN Ia permet d'en déduire leur magnitude absolue et donc leur distance de luminosité. On peut par ailleurs mesurer leur redshift. Or, la relation entre distance de luminosité et redshift est fixée pour un modèle cosmologique donné. 
                 
                 Deux équipes sont alors formées pour recenser ces évènements et en déduire les paramètres de densité de notre Univers : la High-Z Supernovae search team menée par Brian Schimdt et la Supernova Cosmology Project menée par Saul Perlmutter. 
-                En 1998, les deux projets font part de leurs résultats, après étude d'une quarantaine de SN Ia. Ils parviennent ainsi à contraindre :
+                En 1998, les deux projets font part de leurs résultats <ref doi="10.1086/300499" /> <ref doi="10.1086/307221" />, après étude d'une quarantaine de SN Ia. Ils parviennent ainsi à contraindre :
                 <ul>
                     <li>La constante de Hubble</li>
                     <li>La densité de matière froide $\Omega_m$</li>
