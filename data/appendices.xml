@@ -1039,10 +1039,10 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="fond-diffus-cosmologique">
+    <appendix id="fond-diffus-cosmologique" uid="cosmic-microwave-background">
         <title>Fond diffus cosmologique</title>
         <text>
-            <p>Le fond diffus cosmologique (ou "cosmic microwave background", souvent abbrégé CMB) est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière. Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone. Il prend son origine dans l'état chaud de l'Univers, et a été libéré lorsque la densité de protons et électrons est devenue suffisamment faible avec le refroidissement pour que les photons interagissent peu avec la matière et voyagent librement. Cette transition est appelée "découplage" et est survenue à $z = 1100$ environ.</p>
+            <p>Le fond diffus cosmologique (ou "cosmic microwave background", souvent abbrégé CMB) est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière (environ 375 000 ans après le début du Big-Bang). Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone. Il prend son origine dans l'état chaud de l'Univers, et a été libéré lorsque la densité de protons et électrons est devenue suffisamment faible avec le refroidissement pour que les photons interagissent peu avec la matière et voyagent librement. Cette transition est appelée "découplage" et est survenue à $z = 1100$ environ.</p>
             <p>Le CMB est décrit comme la plus ancienne image de l'Univers. En effet, les photons émis avant le découplage interagissaient très rapidement avec les particules chargées du milieu (électrons, protons), et leur libre parcours moyen était donc très faible. Après le découplage, les interactions deviennent rares et le libre parcours moyen deviant supérieur à la taille de l'Univers. Les photons peuvent ainsi voyager librement, et le rayonnement de fond observé aujourd'hui correspond assez fidèlement à l'image des photons émis alors.</p>
             <h3>Premières observations et prédictions</h3>
             <p>Avant les travaux de Alpher, Gamow et Herman à la fin des années 1940, on pense que le rayonnement dans l'Univers est essentiellement d'origine stellaire (interprétation d'Eddington). La température du milieu interstellaire serait donc la température d'équilibre d'un objet dans ce milieu avec le rayonnement provenant des étoiles. Cette température vérifierait donc :
@@ -1081,11 +1081,73 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 La première observation du CMB considérée comme une découverte fut réalisée à une seule longueur d'onde (7,35 cm, soit 4080 MHz) avec l'antenne d'Holmdel. Il était alors possible d'en déduire la température d'un corps noir correspondant mais pas de vérifier que le spectre du rayonnement était bien celui d'un corps noir. 
                 Rapidement Penzias et Wilson réalisent une nouvelle mesure avec le même dispositif cette fois à une longueur d'onde 
             </p>
+            <h3>Anisotropies du fond diffus cosmologique</h3>
+            <p>
+                Le fond diffus cosmologique n'est, comme notre Univers, par parfaitement homogène. La carte qu'on en dresse contient donc des anisotropies. Leur mesure peut nous renseigner sur de nombreux paramètres cosmologiques classiques (contenu de l'Univers, constante de Hubble) mais aussi sur les fluctuations primordiales de densité, ces déviations initiales par rapport à l'homogénéité, qui ont donné naissance aux grandes structures de l'Univers.
+                
+                Afin d'exploiter statistiquement les anistropies du CMB, on utilise leur spectre de puissance. Celui-ci provient de la décomposition de la carte de températures en harmoniques sphériques :
+                
+                \begin{equation}
+                a_{lm} = \int T(\theta,\phi) Y_{lm}^{*} (\theta,\phi) d^2 \Omega  
+                \end{equation}
+                
+                D'où on tire le spectre de puissance :
+                \begin{equation}
+                C_l = \sum_{-l \leq m \leq l} \dfrac{|a_{lm}|^2}{2l+1}
+                \end{equation}
+                
+                Le multipôle $l$ représente une échelle angulaire $\pi/l$, donc les coefficients à bas $l$ indiquent la corrélation entre des portions du ciel de grande envergure.
+                Lorsque $l$ est petit, la somme se fait sur un nombre petit de termes, car peu de 'modes $m$' indépendants sont disponibles.
+                Cela implique une erreur statistique de l'ordre de $\sqrt{2/(2l+1)}$ sur $C_l$, qui est indépassable par l'expérience. C'est la variance cosmique.
+                
+            </p>
         </text>
         <linkwords>
             <linkword>fond diffus cosmologique</linkword>
             <linkword>CMB</linkword>
             <linkword>cosmic microwave background</linkword>
+        </linkwords>
+    </appendix>
+    
+    <appendix id="reionisation" uid="reionization">
+        <title>Réionisation</title>
+        <text>
+            <p>
+                La réionisation correspond à l'époque où l'hydrogène produit lors de la 'recombinaison' - lorsque les électrons et les protons se sont associés à $z \simeq $ 1100 libérant le fond diffus cosmologique - a été reionisé.
+                Au cours de l'expansion de l'Univers, la condensation des grandes structures a donné naissance à des régions de fortes densités dans lesquelles se sont formés des objets compacts, libérant beaucoup d'énergie, et ionisant ainsi le gaz d'hydrogène.
+                Une grande fraction de l'hydrogène est alors devenu un plasma de faible densité.
+                
+                Cette transition s'est déroulée entre $z = 11$ et $z = 7$. Il est souvent fait l'approximation qu'elle était courte à l'échelle de l'âge de l'Univers à des fins simplificatrices ($\Delta z \ll 1$).
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>Réionisation</linkword>
+            <linkword>réionisation</linkword>
+        </linkwords>
+    </appendix>
+    
+    
+    <appendix id="epaisseur-optique" uid="optical-depth">
+        <title>Épaisseur optique</title>
+        <text>
+            <p>
+                L'épaisseur optique $\tau(t)$ est une mesure de la fraction de photons du CMB absorbé par l'Univers au cours de leur propagation depuis la recombinaison (libération du fond diffus comsologique à $z \sim $ 1100) à un instant $t$ donné.
+                Cette valeur augmente avec le temps, puisque le chemin parcouru par les photons augmente également. Elle augmente d'autant plus vite au cours du temps que le milieu est susceptible de réagir avec des photons.
+                
+                L'intensité du fond diffus cosmologique est alors donnée par $I(t) = I_0 e^{-\tau(t)}$.
+                
+                La contribution essentielle à $\tau$ provient de l'interaction avec les électrons libres du milieu :
+                \begin{equation}
+                \tau = c \int_{t_0}^{t} n_e(t) \sigma(t) dt  
+                \end{equation}
+                
+                Où $n_e$ est la densité d'électrons et $\sigma$ la section-efficace de diffusion de Thomson. 
+            </p>
+        </text>
+        <linkwords>
+            <linkword>Épaisseur optique</linkword>
+            <linkword>épaisseur optique</linkword>
         </linkwords>
     </appendix>
     
