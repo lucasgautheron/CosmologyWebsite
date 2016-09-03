@@ -164,7 +164,7 @@
     <content id="bigbang-vs-eternel" uid="bigbang-vs-steadystate" type="timeline" ready="1">
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
         <image src="fred_hoyle.jpg">
-            Fred Hoyle
+            Fred Hoyle, physicien connu pour avoir théorisé et défendu l'Univers stationnaire pendant de longues années.
         </image>
         <color>#108b57</color>
         <text><p>Après la découverte de l'expansion de l'Univers par Hubble, Einstein, qui était jusqu'alors sceptique au sujet des travaux de Friedmann et Lemaître sur des modèles cosmologiques non statiques, comprend leur valeur. Ainsi, au début des années 1930, il aide à répandre ces idées parmi les physiciens. En 1932, lui-même et De Sitter proposent un modèle cosmologique minimal<ref doi="10.1126/science.75.1945.384" />, auquel on réfère aujourd'hui par le nom d'espace d'Einstein-de Sitter, conforme aux observations de l'époque : 
@@ -665,7 +665,7 @@
      <content id="inflation" uid="inflation" type="timeline">
     	<title>Inflation</title>
     	<image src="alan_guth.jpg">
-    	    Alan Guth. En arrière plan, les équations d'un champ scalaire de type Higgs dans un Univers en expansion. 
+    	    Alan Guth, reconnu comme l'un des pères de la théorie de l'inflation. En arrière plan, les équations d'un champ scalaire de type Higgs dans un Univers en expansion. 
     	</image>
     	<color>#46c4e5</color>
     	<text>
