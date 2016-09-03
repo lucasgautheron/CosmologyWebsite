@@ -613,7 +613,9 @@
     
       <content id="decouverte-matiere-noire" uid="dark-matter-discovery" type="timeline">
     	<title>Découverte de la matière noire</title>
-    	<image>matierenoire.jpg</image>
+    	<image src="vera_rubin.jpg">
+    	    Vera Rubin en 1970.
+    	</image>
     	<text>
     	    <p>
     	        Depuis les années 1930 avec Yann Oort, plusieurs physiciens ont suggéré qu'il exisait dans l'Univers une certaine quantité de matière "invisible" afin d'expliquer la dynamique des galaxies observées. Cette idée reposait sur le fait qu'on peut estimer la masse d'une galaxie de deux façons différentes :
