@@ -460,17 +460,6 @@
             
             Dans les années 1950, une équipe d'astronomes de Cambridge publient plusieurs catalogues de sources d'ondes radio. On découvre alors parmi ces sources les quasars, des objects très caractéristiques (compacts, très lumineux). Martin Ryle argue à partir de ces résultats, que la relation $\log S \to \log N$ présente une pente plus forte que prédite par la théorie de l'état stationnaire (environ -2.5 au lieu de -1.5). Cependant après plusieurs corrections successives Ryle révise son estimation à environ -1.8. D'autres travaux conduisent mêmes à des valeurs proches de -1.5. Il s'ensuit alors une controverse entre Hoyle et Ryle, le premier jugeant irrecevable les conclusions établies à partir de ces observations.
         </p>
-          
-        <h3>Identification des quasars</h3>
-        <p>
-            En 1963, Maarten Schmidt identifie à l'aide du téléscope Hale à l'observatoire du Mont Palomar un objet nommé 3C 273 extrêmement brillant anormalement éloigné ($z \sim $ 0.16) <ref doi="10.1038/1971040a0" />. Ce décalage spectral (redshift) était si élevé qu'il ne fut pas compris tout de suite que la nature inhabituelle du spectre de cet objet était attribuable à un effet doppler. Pour être à la fois si distant et si lumineux, 3C 273 doit émettre $10^{12}$ fois plus de lumière que le Soleil.
-            Dans les années qui suivent les quasar sont identifiés de façon privilégiée à des distances élevées, contestant la nature stationnaire de l'Univers (ce sont des objets anciens).
-            
-            
-            <figure src="3C273.jpg" title="3C 273, le premier quasar identifié">
-                 
-            </figure>
-        </p>
         
         <h3>Nouvelles mesures de la constante de Hubble</h3>
         
@@ -481,6 +470,17 @@
             Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
             Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
             En 1958, Sandage publie un papier <ref doi="10.1086/146483" /> dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
+        </p>
+          
+        <h3>Identification des quasars</h3>
+        <p>
+            En 1963, Maarten Schmidt identifie à l'aide du téléscope Hale à l'observatoire du Mont Palomar un objet nommé 3C 273 extrêmement brillant anormalement éloigné ($z \sim $ 0.16) <ref doi="10.1038/1971040a0" />. Ce décalage spectral (redshift) était si élevé qu'il ne fut pas compris tout de suite que la nature inhabituelle du spectre de cet objet était attribuable à un effet doppler. Pour être à la fois si distant et si lumineux, 3C 273 doit émettre $10^{12}$ fois plus de lumière que le Soleil.
+            Dans les années qui suivent les quasar sont identifiés de façon privilégiée à des distances élevées, contestant la nature stationnaire de l'Univers (ce sont des objets anciens).
+          
+          
+            <figure src="3C273.jpg" title="3C 273, le premier quasar identifié">
+              
+            </figure>
         </p>
       </text>
       <further-readings>
