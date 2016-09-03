@@ -662,7 +662,9 @@
     
      <content id="inflation" uid="inflation" type="timeline">
     	<title>Inflation</title>
-    	<image>inflation.jpg</image>
+    	<image src="alan_guth.jpg">
+    	    Alan Guth. En arrière plan, les équations d'un champ scalaire de type Higgs dans un Univers en expansion. 
+    	</image>
     	<color>#46c4e5</color>
     	<text>
     	TODO Parler de zeldovic
