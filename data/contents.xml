@@ -418,7 +418,9 @@
     
     <content id="succes-bigbang" uid="bigbang-success" type="timeline" ready="1">
       <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
-      <image>bigbang.jpg</image>
+      <image src="hale_telescope.jpg">
+          Site du "Hale Telescope" (500 cm) à l'observatoire du Mont Palomar, en construction (1937). Il permit en 1963 la découverte dans le domaine visible des quasars. Photo de Lee A. Farnsworth, Jr. 
+      </image>
       <color>#8681f0</color>
       <text>
         <p>Entre les années 1950 et 1960, les données expérimentales vont s'accumuler en faveur du Big Bang, excluant de plus en plus la théorie de l'état stationnaire. 
@@ -457,6 +459,17 @@
             <!-- Résultat sur la pente : S est corrélé négativement au redshift. Comment ? Ds tous les cas c'est déjà a priori suffisant pour conclure que cela "aplatit la pente". --></note>
             
             Dans les années 1950, une équipe d'astronomes de Cambridge publient plusieurs catalogues de sources d'ondes radio. On découvre alors parmi ces sources les quasars, des objects très caractéristiques (compacts, très lumineux). Martin Ryle argue à partir de ces résultats, que la relation $\log S \to \log N$ présente une pente plus forte que prédite par la théorie de l'état stationnaire (environ -2.5 au lieu de -1.5). Cependant après plusieurs corrections successives Ryle révise son estimation à environ -1.8. D'autres travaux conduisent mêmes à des valeurs proches de -1.5. Il s'ensuit alors une controverse entre Hoyle et Ryle, le premier jugeant irrecevable les conclusions établies à partir de ces observations.
+        </p>
+          
+        <h3>Identification des quasars</h3>
+        <p>
+            En 1963, Maarten Schmidt identifie à l'aide du téléscope Hale à l'observatoire du Mont Palomar un objet nommé 3C 273 extrêmement brillant anormalement éloigné ($z \sim $ 0.16) <ref doi="10.1038/1971040a0" />. Ce décalage spectral (redshift) était si élevé qu'il ne fut pas compris tout de suite que la nature inhabituelle du spectre de cet objet était attribuable à un effet doppler. Pour être à la fois si distant et si lumineux, 3C 273 doit émettre $10^{12}$ fois plus de lumière que le Soleil.
+            Dans les années qui suivent les quasar sont identifiés de façon privilégiée à des distances élevées, contestant la nature stationnaire de l'Univers (ce sont des objets anciens).
+            
+            
+            <figure src="3C273.jpg" title="3C 273, le premier quasar identifié">
+                 
+            </figure>
         </p>
         
         <h3>Nouvelles mesures de la constante de Hubble</h3>
