@@ -1109,6 +1109,46 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
+    <appendix id="reionisation" uid="reionization">
+        <title>Réionisation</title>
+        <text>
+            <p>
+                La réionisation correspond à l'époque où l'hydrogène produit lors de la 'recombinaison' - lorsque les électrons et les protons se sont associés à $z \simeq $ 1100 libérant le fond diffus cosmologique - a été reionisé.
+                Au cours de l'expansion de l'Univers, la condensation des grandes structures a donné naissance à des régions de fortes densités dans lesquelles se sont formés des objets compacts, libérant beaucoup d'énergie, et ionisant ainsi le gaz d'hydrogène.
+                Une grande fraction de l'hydrogène est alors devenu un plasma de faible densité.
+                
+                Cette transition s'est déroulée entre $z = 11$ et $z = 7$. Il est souvent fait l'approximation qu'elle était courte à l'échelle de l'âge de l'Univers à des fins simplificatrices ($\Delta z \ll 1$).
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>réionisation</linkword>
+        </linkwords>
+    </appendix>
+    
+    
+    <appendix id="epaisseur-optique" uid="optical-depth">
+        <title>Épaisseur optique</title>
+        <text>
+            <p>
+                L'épaisseur optique $\tau(t)$ est une mesure de la fraction de photons du CMB absorbé par l'Univers au cours de leur propagation depuis la recombinaison (libération du fond diffus comsologique à $z \sim $ 1100) à un instant $t$ donné.
+                Cette valeur augmente avec le temps, puisque le chemin parcouru par les photons augmente également. Elle augmente d'autant plus vite au cours du temps que le milieu est susceptible de réagir avec des photons.
+                
+                L'intensité du fond diffus cosmologique est alors donnée par $I(t) = I_0 e^{-\tau(t)}$.
+                
+                La contribution essentielle à $\tau$ provient de l'interaction avec les électrons libres du milieu :
+                \begin{equation}
+                \tau = c \int_{t_0}^{t} n_e(t) \sigma(t) dt  
+                \end{equation}
+                
+                Où $n_e$ est la densité d'électrons et $\sigma$ la section-efficace de diffusion de Thomson. 
+            </p>
+        </text>
+        <linkwords>
+            <linkword>épaisseur optique</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="supernovae-ia" uid="ia-supernovae">
         <title>Supernovas Ia</title>
         <text>

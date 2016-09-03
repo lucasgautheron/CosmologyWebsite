@@ -31,8 +31,8 @@
     <event date="1990" content-id="cobe-experiment">L'expérience COBE permet mesure précise du spectre du fond diffus cosmologique et l'établissement de la première carte de ses anisotropies</event>
     <event date="1998" content-id="expansion-acceleration-discovery">Découverte de l'accélération de l'expansion de l'Univers</event>
     <event date="1998" content-id="expansion-acceleration-discovery">Introduction de la notion d'"Énergie sombre" par Dragan Huterer et Michael S. Turner pour expliquer l'accélération de l'expansion. Ceci comprend entre autres hypothèses la réintroduction de la constante cosmologique.</event>
-    <event date="2001" content-id="cmb-experiments">Lancement de la mission WMAP qui doit mesurer avec une haute précision la carte du fond diffus cosmologique.</event>
-    <event date="2015" content-id="cmb-experiments">Les résultats de l'expérience Planck sur le fond diffus cosmologique permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
+    <event date="2001" content-id="lambda-cdm-cmb">Lancement de la mission WMAP qui doit mesurer avec une haute précision la carte du fond diffus cosmologique.</event>
+    <event date="2015" content-id="lambda-cdm-cmb">Les résultats de l'expérience Planck sur le fond diffus cosmologique permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
     <event date="Aujourd'hui" content-id="dark-matter-search">Rercherche de la matière noire</event>
     <!--<event date="Aujourd'hui" content-id="17">Energie noire</event>-->
 </events>

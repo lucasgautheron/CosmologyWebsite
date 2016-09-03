@@ -791,35 +791,83 @@
         </further-readings>
     </content>
     
-    <content id="experiences-cmb" uid="cmb-experiments" type="timeline">
-        <title>Expériences WMAP et Planck</title>
+    <content id="cmb-lambda-cdm" uid="lambda-cdm-cmb" type="timeline">
+        <title>Expériences WMAP et Planck, tests du modèle $\Lambda$CDM</title>
         <image src="planck.jpg">
             ESA. "Le satellite Planck au Centre européen de recherche et technologie spatiale (ESTEC) à Noordwijk aux Pays-Bas. 31 Mars 2018."
         </image>
         <color>#28ca94</color>
         <text>
+            
+            <h3>Modèle standard de la cosmologie : le modèle $\Lambda$CDM</h3>
             <p>
                 L'expérience COBE qui a accompli ses objectifs a été un grand succès, mais il y a encore beaucoup de marge pour des expériences de meilleures précisions.
+                
+                Par ailleurs, les récents développements, comme la découverte de l'accélération de l'Univers, et la mise au point de théories inflationnaires, suggèrent un modèle cosmologique standard appelé modèle $\Lambda$CDM.
+                Ce modèle suppose que l'Univers est aujourd'hui exclusivement constitué (à l'exception du rayonnement du fond diffus cosmologique) de matière froide ($P=0$) et d'énergie du vide (d'équation d'état $P = -\rho$), en proportions telles que l'Univers soit plat.
+                
+                <table>
+                    <tr>
+                        <th>Paramètre</th>
+                        <th>Notation</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Âge de l'Univers</td>
+                        <td>$t_0$</td>
+                        <td>Temps écoulé depuis la singularité du Big-Bang.</td>
+                    </tr>
+                    <tr>
+                        <td>Paramètre de densité baryonique</td>
+                        <td>$\Omega_b h^2$</td>
+                        <td>Paramètre de densité de baryons (matière ordinaire), d'équation d'état $P=0$.</td>
+                    </tr>
+                    <tr>
+                        <td>Paramètre de densité de matière noire</td>
+                        <td>$\Omega_{dm} h^2$</td>
+                        <td>Paramètre de densité de la matière noire, d'équation d'état $P=0$.</td>
+                    </tr>
+                    <tr>
+                        <td>Amplitude des fluctuations primordiales de courbure</td>
+                        <td>$\Delta R^2$</td>
+                        <td>Amplitude des fluctutions primordiales de la courbure scalaire.</td>
+                    </tr>
+                    <tr>
+                        <td>Indice spectral scalaire</td>
+                        <td>$n_s$</td>
+                        <td>Les fluctuations primordiales de densité sont définies comme $\delta(x) = (\rho(x)-\bar{\rho})/\bar{\rho}$. Les modèles d'inflation prédisent que leur composantes de fourier vérifient :\begin{equation}\langle \delta_k \delta_{k'} \propto \dfrac{2\pi}{k^3} \delta(k-k') \left(\dfrac{k}{k_0}\right)^{n_s - 1}\end{equation} Un indice $n_s$ égal à 1 signifie que les fluctuations ont un spectre identique à toute échelle ("scale invariance"). </td>
+                    </tr>
+                    <tr>
+                        <td>Épaisseur optique à la réionisation.</td>
+                        <td>$\tau$</td>
+                        <td>L'épaisseur optique fait référence au taux d'absorption des photons du CMB entre leur émission et un instant donné au cours de l'expansion. Ce taux d'absorption augmente avec la distance parcourue par les photons du fond diffus cosmologique et donc avec le temps. La valeur de l'épaisseur optique de réionisation renseigne donc sur l'instant où celle-ci est survenue. Ce paramètre affecte naturellement l'aspect du CMB, et est laissé libre dans le modèle.</td>
+                    </tr>
+                </table>
+                
             </p>
             
             <h3>L'expérience WMAP</h3>
             
             <p>
                 En 2001, le satellite WMAP (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre.
-                Ce satellite utilise des radiomètres différentiels pour mesurer les différences d'intensité du flux électromagnétique entre deux directions angulaires sur 5 bandes de fréquences comprises entre 22 et 90 GHz.
+                Ce satellite utilise des radiomètres différentiels pour mesurer les différences d'intensité du flux électromagnétique entre deux directions angulaires sur 5 bandes de fréquences comprises entre 22 et 90 GHz. Ceux-ci réalisent des mesures dans deux directions de polarisation différentes.
                 Le diamètre des réflecteurs employés est d'environ 1,5 m.
                 L'appareil est capable de mesurer des différences de température à une précision de 20 $\mu K$ et avec une résolution angulaire comprise entre 0,2° et 1° selon la longueur d'onde observée.
-                La prise de données dure 9 ans, jusqu'en 2010, et fournit les cartes de température du fond diffus cosmologique les plus précises alors. Une description complète de l'expérience est disponible à l'adresse <a href="http://map.gsfc.nasa.gov/mission/">http://map.gsfc.nasa.gov/mission/</a>.
+                La prise de données dure 9 ans, jusqu'en 2010, et fournit les cartes de température du fond diffus cosmologique les plus précises alors. Une description très complète de l'expérience est disponible à l'adresse <a href="http://map.gsfc.nasa.gov/mission/">http://map.gsfc.nasa.gov/mission/</a>.
             </p>
             <p>
                 La carte finale est représentée sur la figure suivante
                 <figure src="wmap_9years.svg" title="Carte de température du fond diffus cosmologique par WMAP">
-                    Carte de température du fond diffus cosmologique par WMAP, après 9 ans de collecte de données.
+                    Carte de température du fond diffus cosmologique par WMAP, après 9 ans de collecte de données <ref doi="10.1088/0067-0049/208/2/20" />.
                 </figure>
-                
+            </p>
+            
+            <p>
                 <figure src="wmap_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique relevé par WMAP et modèle standard">
-                    Comparaison entre le spectre de puissance du fond diffus cosmologique mesuré par WMAP et la courbe théorique correspondant au jeu de paramètres du modèle standard de la cosmologie ($\Lambda$CDM)donnant le meilleur accord.
+                    Comparaison entre le spectre de puissance du fond diffus cosmologique mesuré par WMAP et la courbe théorique correspondant au jeu de paramètres du modèle standard de la cosmologie ($\Lambda$CDM)donnant le meilleur accord <ref doi="10.1088/0067-0049/208/2/20" />.
                     Cela permet une mesure simultanée de nombreux paramètres cosmologiques, et montrer l'accord excellent entre observation et modèle théorique.
+                    
+                    
                 </figure>
             </p>
             
