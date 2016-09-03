@@ -792,7 +792,7 @@
     </content>
     
     <content id="cmb-lambda-cdm" uid="lambda-cdm-cmb" type="timeline">
-        <title>Expériences WMAP et Planck, tests du modèle $\Lambda$CDM</title>
+        <title>Missions WMAP et Planck, tests du modèle $\Lambda$CDM</title>
         <image src="planck.jpg">
             ESA. "Le satellite Planck au Centre européen de recherche et technologie spatiale (ESTEC) à Noordwijk aux Pays-Bas. 31 Mars 2018."
         </image>
@@ -808,7 +808,7 @@
                 
                 <table>
                     <tr>
-                        <th>Paramètre</th>
+                        <th width="20%">Paramètre</th>
                         <th>Notation</th>
                         <th>Description</th>
                     </tr>
@@ -835,7 +835,7 @@
                     <tr>
                         <td>Indice spectral scalaire</td>
                         <td>$n_s$</td>
-                        <td>Les fluctuations primordiales de densité sont définies comme $\delta(x) = (\rho(x)-\bar{\rho})/\bar{\rho}$. Les modèles d'inflation prédisent que leur composantes de fourier vérifient :\begin{equation}\langle \delta_k \delta_{k'} \propto \dfrac{2\pi}{k^3} \delta(k-k') \left(\dfrac{k}{k_0}\right)^{n_s - 1}\end{equation} Un indice $n_s$ égal à 1 signifie que les fluctuations ont un spectre identique à toute échelle ("scale invariance"). </td>
+                        <td>Les fluctuations primordiales de densité sont définies comme $\delta(x) = (\rho(x)-\bar{\rho})/\bar{\rho}$. Les modèles d'inflation prédisent que leur composantes de fourier vérifient :\begin{equation}\langle \delta_k \delta_{k'} \rangle \propto \dfrac{2\pi}{k^3} \delta(k-k') \left(\dfrac{k}{k_0}\right)^{n_s - 1}\end{equation} Un indice $n_s$ égal à 1 signifie que les fluctuations ont un spectre identique à toute échelle ("scale invariance"). </td>
                     </tr>
                     <tr>
                         <td>Épaisseur optique à la réionisation.</td>
@@ -844,12 +844,13 @@
                     </tr>
                 </table>
                 
+                Des expériences plus précises que COBE sont capables de comparer les données d'observations du fond diffus cosmologique et de les comparer aux résultats attendu pour un jeu de ces paramètres. Cela permet de les mesurer via ces observations, et bien sûr de vérifier la validité du modèle $\Lambda$CDM. C'est l'objectif de la mission WMAP.
             </p>
             
             <h3>L'expérience WMAP</h3>
             
             <p>
-                En 2001, le satellite WMAP (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre.
+                En 2001, le satellite WMAP, pour une mission organisée par la NASA, (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre.
                 Ce satellite utilise des radiomètres différentiels pour mesurer les différences d'intensité du flux électromagnétique entre deux directions angulaires sur 5 bandes de fréquences comprises entre 22 et 90 GHz. Ceux-ci réalisent des mesures dans deux directions de polarisation différentes.
                 Le diamètre des réflecteurs employés est d'environ 1,5 m.
                 L'appareil est capable de mesurer des différences de température à une précision de 20 $\mu K$ et avec une résolution angulaire comprise entre 0,2° et 1° selon la longueur d'onde observée.
@@ -866,11 +867,39 @@
                 <figure src="wmap_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique relevé par WMAP et modèle standard">
                     Comparaison entre le spectre de puissance du fond diffus cosmologique mesuré par WMAP et la courbe théorique correspondant au jeu de paramètres du modèle standard de la cosmologie ($\Lambda$CDM)donnant le meilleur accord <ref doi="10.1088/0067-0049/208/2/20" />.
                     Cela permet une mesure simultanée de nombreux paramètres cosmologiques, et montrer l'accord excellent entre observation et modèle théorique.
-                    
-                    
                 </figure>
+                
+                L'accord entre modèle et observation est plus que satisfaisant. Les mesures des paramètres cosmologiques fournies par WMAP sont par ailleurs les plus précises à ce jour.
+                
+                <figure src="wmap_9years_parameters.png" title="Mesure des paramètres cosmologiques par WMAP">
+                    Après 9 ans de prise de données, WMAP réalise des mesures simultanées de haute précision des paramètres du modèle $\Lambda$CDM et de paramètres dérivés. 
+                </figure>
+                
+                Les hypothèses de départ sont très bien vérifiées. En particulier, la platitude de l'Univers est confirmée à 0,4 % près (15 % avant WMAP!).
             </p>
             
+            <h3>L'expérience Planck</h3>
+            <p>
+                L'expérience Planck, organisée par l'agence spatiale européenne, vise à confirmer les résultats de WMAP et améliorer encore leur précision.
+                Lancé en 2009 à Kourou, le satellite Planck a collecté des données jusqu'en 2013, avec une extrême précision.
+                Il est constitué de deux appareils de mesures principaux, le premier étant le Low Frequency Instrument mesurant l'intensité électromagnétique à des fréquences similaires à celles détectées par COBE et WMAP (30, 44 et 70 GHz) et un instrument haute fréquence (6 fréquences entre 100 et 857 GHz).
+                Pour atteindre le degré de précision requis, certains appareils sont refroidis à une température de 0,1 K. 
+                La précision angulaire est comprise entre 0,1° et 0.5° selon la fréquence d'observation.
+            </p>
+            
+            <p>
+                La mission est un grand succès et les résultats sont les plus précis à ce jour. Ils exploitent toute l'information cosmologique contenue dans le spectre de puissance du fond diffus cosmologique disponible à 'bas' multipôles (erreur systématique inférieure à la variance cosmique).
+                
+                <figure src="planck_final.jpg" title="Carte finale des anisotropies du fond diffus cosmologique par Planck">
+                    <ref doi="10.1051/0004-6361/201321529" />
+                </figure>
+                
+                <figure src="planck_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique comparé au modèle $\Labmda$CDM">
+                    <ref doi="10.1051/0004-6361/201525830" />
+                </figure>
+                
+                
+            </p>
         </text>
         <further-readings>
         </further-readings>
