@@ -163,7 +163,9 @@
     
     <content id="bigbang-vs-eternel" uid="bigbang-vs-steadystate" type="timeline" ready="1">
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
-        <image>bigbang.jpg</image>
+        <image src="fred_hoyle.jpg">
+            Fred Hoyle
+        </image>
         <color>#108b57</color>
         <text><p>Après la découverte de l'expansion de l'Univers par Hubble, Einstein, qui était jusqu'alors sceptique au sujet des travaux de Friedmann et Lemaître sur des modèles cosmologiques non statiques, comprend leur valeur. Ainsi, au début des années 1930, il aide à répandre ces idées parmi les physiciens. En 1932, lui-même et De Sitter proposent un modèle cosmologique minimal<ref doi="10.1126/science.75.1945.384" />, auquel on réfère aujourd'hui par le nom d'espace d'Einstein-de Sitter, conforme aux observations de l'époque : 
             <ul>
