@@ -5,6 +5,8 @@
   xmlns:shell="java:java.lang.Runtime"
   exclude-result-prefixes="xs doc">
   
+  <xsl:variable name="baseurl" select="'https://cosmology.education'" />
+  
   <xsl:variable name="linkwords" select="//appendices/appendix/linkwords/linkword"/>
   <xsl:function name="doc:find-matching-linkword">
     <xsl:param name="cid"/>
@@ -182,6 +184,36 @@
 
   <xsl:template name="common-header">
     <meta charset="utf-8" />
+    
+    <meta name="description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Histoire de la Cosmologie" />
+    <meta itemprop="description" content="Le site " />
+    <meta itemprop="image" content="{$baseurl}/website.jpg" />
+          
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lucasgautheron" />
+    <meta name="twitter:title" content="Histoire de la Cosmologie" />
+    <meta name="twitter:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
+    <meta name="twitter:creator" content="@lucasgautheron" />
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="{$baseurl}/website.jpg" />
+                      
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Histoire de la Cosmologie" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{$baseurl}" />
+    <meta property="og:image" content="{$baseurl}/website.jpg" />
+    <meta property="og:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui" />
+    <meta property="og:site_name" content="cosmology.education" />
+    <meta property="article:published_time" content="{current-dateTime()}"/>
+    <meta property="article:modified_time" content="{current-dateTime()}" />
+    <meta property="article:section" content="Frise chronologique" />
+    <meta property="article:tag" content="frise" />
+    <!--<meta property="fb:admins" content="Facebook numberic ID" />--> 
+                      
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/feynman.js"></script>
