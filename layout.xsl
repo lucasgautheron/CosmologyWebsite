@@ -416,6 +416,8 @@
                   <xsl:value-of select="./description" />.<br /><a href="#" class="interview-link" data-iid="{generate-id(.)}">Lire l'interview</a>.</div>
               </div>
               <div class="interview_content">
+                <h4>Script</h4>
+                <xsl:apply-templates select="questions" />
                 <xsl:if test="./record">
                   <h4>Interview record (<xsl:value-of select="./record/@language" />)</h4>
                   <div class="interview_record">
@@ -426,8 +428,6 @@
                     </audio> 
                   </div>
                 </xsl:if>
-                <h4>Script</h4>
-                <xsl:apply-templates select="questions" />
               </div>
             </div>
           </xsl:for-each>
