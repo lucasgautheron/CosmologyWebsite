@@ -711,7 +711,7 @@
                 <ol>
                     <li>
                         Un champ scalaire $\phi$ de potentiel $V(\phi)$ représenté sur la figure ci-dessous se trouve initialement dans un état de faux-vide (minimum d'énergie local, $\phi = 0$, mais qui n'est pas un minimum global).
-                        <figure src="scalar_field.svg" plot="scalar_field" title="Potentel du champ scalaire responsable de l'inflation">
+                        <figure src="scalar_field.svg" plot="scalar_field" title="Potentiel du champ scalaire responsable de l'inflation">
                             $\phi = 0$ correspond au "faux-vide", minimum <i>local</i> du potentiel. Le véritable minimum correspond au "vrai vide". Lorsque l'Univers refroidit, survient une transition de phase du premier état à l'autre de plus basse énergie.
                         </figure>
                         Sa valeur est telle que c'est son énergie qui domine l'expansion de l'Univers, avec une équation d'état similaire à $P=-\rho$. Cela induit un expansion exponentielle de l'Univers, l'inflation.
