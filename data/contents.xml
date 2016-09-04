@@ -663,7 +663,7 @@
     </content>
     
      <content id="inflation" uid="inflation" type="timeline">
-    	<title>Inflation</title>
+    	<title>Inflation et physique des particules</title>
     	<image src="alan_guth.jpg">
     	    Alan Guth, reconnu comme l'un des pères de la théorie de l'inflation. En arrière plan, les équations d'un champ scalaire de type Higgs dans un Univers en expansion. 
     	</image>
@@ -725,7 +725,18 @@
                     </li>
                 </ol>
     	        
+    	        En parallèle du développement des théories inflationnaires, les théoriciens s'attaquent à d'autres curiosités de l'Univers, comme l'asymétrie entre matière et anti-matière.
+    	        A l'époque on sait grâce à Sakharov <ref doi="10.1070/PU1991v034n05ABEH002497" /> que cette asymétrie manifeste nécessite trois conditions préalables : 
     	        
+    	        <ul>
+    	            <li>Violation du nombre baryonique ($B = n_b - n_{\bar{b}}$ ne doit pas être constant, notamment s'il est initialement nul)</li>
+    	            <li>Violation des symétries C et CP, afin que les processus physiquent puissent privilégier un type de matière</li>
+    	            <li>Baryogénèse hors équilibre thermique, sans quoi les équilibres entre réactions directes et indirectes supprimeraient l'asymétrie</li>
+    	        </ul>
+    	        
+    	        L'astrophyicien russe Zeldovich publie en 1981 une importante synthèse sur le lien entre Big-Bang et physique des particules <ref doi="10.1103/RevModPhys.53.1" />.
+                    
+                    
     	    </p>
     	</text>
         <further-readings>
