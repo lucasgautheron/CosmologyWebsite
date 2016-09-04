@@ -2,6 +2,7 @@
 <contents>
     <content id="relativite-generale" uid="general-relativity" type="timeline" ready="1">
         <title>Développement de la relativité</title>
+        <description>Développement de la relativité restreinte puis de la relativité générale par Einstein (1905-1919).</description>
         <image src="einstein.jpg">
             Einstein en 1916, photographié par Paul Ehrenfest.
         </image>
@@ -60,6 +61,7 @@
     
     <content id="decouverte-fuite-galaxies" uid="galaxy-drift-discovery" type="timeline" ready="1" reviewed="1">
         <title>Découverte de l'éloignement des galaxies</title>
+        <description>Découverte par Vesto Slipher de l'éloignement rapide de la plupart des galaxies (à l'époques appelées 'nébuleuses spirales').</description>
         <image src="nebulae.jpg">Nébuleuse spirale M51</image>
         <color>#8d0e01</color>
         <text><p>En 1912, Vesto Slipher mesure la vitesse de la galaxie Andromède par rapport à nous. Pour cela, il utilise la spectroscopie : en étudiant le spectre d'Andromède, il observe que certaines raies d'émission associées à des atomes bien connus sont légèrement déplacées. C'est le cas par exemple de la raie $H\alpha$ qui correspond à une transition électronique particulière dans l'atome d'hydrogène, qui émet à une longueur d'onde de 656,3 nm mais qui est observée à une longeur d'onde légèrement inférieure (un décalage d'un millième en valeur relative !). V. Slipher pense que cet écart est dû à l'effet Doppler : une onde émise par une source en mouvement est perçue à une longueur d'onde différente de la longueur d'onde d'émission. Il connait aussi la relation entre la vitesse radiale d'éloignement de la source et la différence de longueur d'onde :
@@ -84,6 +86,7 @@
     
     <content id="cosmologie-relativiste" uid="relativistic-cosmology" type="timeline" ready="1" reviewed="0">
         <title>Débuts de la Cosmologie relativiste</title>
+        <description>Premières applications de la relativité générale à l'Univers dans son ensemble et naissance de la cosmologie moderne avec les équations de Friedmann-Lemaître.</description>
         <image src="lemaitre.jpg">Georges Lemaître</image>
         <color>#79136f</color>
         <text><p>Une première application de la théorie de la relativité à la cosmologie est due à Einstein lui-même, en 1917. Il suppose que l'Univers respecte le principe cosmologique, c'est-à-dire qu'il est homogène et isotrope. Il suppose de plus que celui-ci est statique, et qu'il ne contient que de la matière non relativiste. Il réalise que pour concilier ces hypothèses, il faut introduire un nouveau terme dans l'équation d'Einstein : c'est ainsi qu'il ajoute à son modèle la constante cosmologique. Il trouve par ailleurs qu'un tel Univers doit avoir une courbure positive, c'est-à-dire une géométrie sphérique. Ce modèle, appelé Univers d'Einstein, présente quelques problèmes : d'abord, il est instable. D'autre part, la constante cosmologique, introduite comme paramètre, doit prendre une valeur très précise pour que l'Univers demeure statique.</p>
@@ -116,6 +119,7 @@
     
     <content id="decouverte-expansion-univers" uid="universe-expansion-discovery" type="timeline" ready="1">
         <title>Découverte de l'expansion de l'Univers</title>
+        <description>Découverte de l'expansion de l'Univers par Hubble.</description>
         <image src="edwin_hubble.jpg">Edwin Hubble</image>
         <color>#c14630</color>
         <text><p>D'après les mesures de vitesse des nébuleuses spirales dues à Slipher, ces objets ne semblent pas appartenir à la Voie Lactée : ils se déplacent trop vite par rapport à elle pour y être liées gravitationnellement. Il est donc naturel pour mettre fin à ce débat de se demander à quelle distance celles-ci se trouvent. Les mesures de distance classiques comme la parallaxe ne s'appliquent pas à des objets si lointains : il faut trouver une autre méthode.</p>
@@ -163,6 +167,7 @@
     
     <content id="bigbang-vs-eternel" uid="bigbang-vs-steadystate" type="timeline" ready="1">
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
+        <description>Confrontation entre deux modèles cosmologiques, le Big-Bang et l'univers stationnaire.</description>
         <image src="fred_hoyle.jpg">
             Fred Hoyle, physicien connu pour avoir théorisé et défendu l'Univers stationnaire pendant de longues années.
         </image>
@@ -228,6 +233,7 @@
     
     <content id="nucleosynthese-primordiale-1" uid="primordial-nucleosynthesis-1" type="timeline" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
+        <description>Premiers travaux sur la physique de l'univers alors qu'il était dense et chaud dans un modèle de type Big-Bang. Première proposition d'explication de la formation des noyaux atomiques par des réactions nucléaires ayant eu lieu à cet époque.</description>
         <image>nucleosynthese.jpg</image>
         <color>#32a818</color>
         <text>
@@ -304,6 +310,7 @@
     
     <content type="timeline" id="nucleosynthese-stellaire" uid="stellar-nucleosynthesis">
         <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
+        <description>Proposition de la nucléosynthèse stellaire comme explication de l'abondance observée de la plupart des éléments (1957).</description>
         <image src="pleiades.jpg">
             Les Pléiades par l'observatoire de Yerkes.
         </image>
@@ -356,6 +363,7 @@
     
        <content id="decouverte-fond-diffus-cosmologique" uid="cmb-discovery" type="timeline" ready="1">
     	<title>Découverte du fond diffus cosmologique</title>
+        <description>Découverte du fond diffus cosmologique par Penzias et Wilson en 1964.</description>
     	<image src="penzias_wilson.jpg">
     	    Arno Penzias et Robert Wilson auprès de l'antenne d'Holmdel.
     	</image>
@@ -420,6 +428,7 @@
     
     <content id="succes-bigbang" uid="bigbang-success" type="timeline" ready="1">
       <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
+      <description>Abandon progressif du modèle de l'univers stationnaire au profit du Big-Bang (1950-1970).</description>
       <image src="hale_telescope.jpg">
           Site du "Hale Telescope" (500 cm) à l'observatoire du Mont Palomar, en construction (1937). Il permit en 1963 la découverte dans le domaine visible des quasars. Photo de Lee A. Farnsworth, Jr. 
       </image>
@@ -505,6 +514,7 @@
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
     	<title>Réintroduction de la nucléosynthèse primordiale</title>
+        <description>Premiers calculs précis de nucléosynthèse primordiale suivant la découverte du fond diffus cosmologique (1964-1973).</description>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
     	    <p>
@@ -615,6 +625,7 @@
     
       <content id="decouverte-matiere-noire" uid="dark-matter-discovery" type="timeline">
     	<title>Découverte de la matière noire</title>
+        <description>Découverte de la matière noire par Vera Rubin à travers les courbes de rotation des galaxies. (1970-1980)</description>
     	<image src="vera_rubin.jpg">
     	    Vera Rubin en 1970.
     	</image>
@@ -664,6 +675,7 @@
     
      <content id="inflation" uid="inflation" type="timeline">
     	<title>Inflation</title>
+        <description>Introduction de la théorie de l'inflation (1980)</description>
     	<image src="alan_guth.jpg">
     	    Alan Guth, reconnu comme l'un des pères de la théorie de l'inflation. En arrière plan, les équations d'un champ scalaire de type Higgs dans un Univers en expansion. 
     	</image>
@@ -721,6 +733,7 @@
     
     <content id="experience-cobe" uid="cobe-experiment" type="timeline">
         <title>Expérience COBE</title>
+        <description>L'expérience COBE donne les premières mesures de précision du fond diffus cosmologique.</description>
         <image src="cobe.jpg">
             From wikipedia.
         </image>
@@ -770,6 +783,7 @@
     
     <content id="decouverte-acceleration-expansion" uid="expansion-acceleration-discovery" type="timeline">
     	<title>Découverte de l'accélération de l'expansion de l'Univers</title>
+        <description>L'observation des supernova thermonucléaires, en tant que chandelles standard, permet d'établir que l'expansion de l'Univers s'accélère.</description>
     	<image src="SN_1006.jpg">
     	    Restes de la supernova thermonucléaire (Ia) de l'an 1006. Source: pbs.org.
     	</image>
@@ -818,6 +832,7 @@
     
     <content id="cmb-lambda-cdm" uid="lambda-cdm-cmb" type="timeline">
         <title>Missions WMAP et Planck, tests du modèle $\Lambda$CDM</title>
+        <description>Les missions WMAP et Planck donnent les meilleures mesures des paramètres du modèle standard de la cosmologie.</description>
         <image src="planck.jpg">
             ESA. "Le satellite Planck au Centre européen de recherche et technologie spatiale (ESTEC) à Noordwijk aux Pays-Bas. 31 Mars 2018."
         </image>
@@ -932,6 +947,7 @@
     
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
     	<title>Recherche de la matière noire</title>
+        <description>Recherches actuellement menées sur la matière noire.</description>
         <image src="dark_matter.jpg">
             Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
         </image>

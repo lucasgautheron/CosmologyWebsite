@@ -185,33 +185,6 @@
   <xsl:template name="common-header">
     <meta charset="utf-8" />
     
-    <meta name="description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
-    
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Histoire de la Cosmologie" />
-    <meta itemprop="description" content="Le site " />
-    <meta itemprop="image" content="{$baseurl}/website.jpg" />
-          
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lucasgautheron" />
-    <meta name="twitter:title" content="Histoire de la Cosmologie" />
-    <meta name="twitter:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
-    <meta name="twitter:creator" content="@lucasgautheron" />
-    <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image:src" content="{$baseurl}/website.jpg" />
-                      
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Histoire de la Cosmologie" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{$baseurl}" />
-    <meta property="og:image" content="{$baseurl}/website.jpg" />
-    <meta property="og:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui" />
-    <meta property="og:site_name" content="cosmology.education" />
-    <meta property="article:published_time" content="{current-dateTime()}"/>
-    <meta property="article:modified_time" content="{current-dateTime()}" />
-    <meta property="article:section" content="Frise chronologique" />
-    <meta property="article:tag" content="frise" />
     <!--<meta property="fb:admins" content="Facebook numberic ID" />--> 
                       
     <link rel="stylesheet" type="text/css" href="/style.css" />
@@ -255,6 +228,35 @@
   <html>
     <head>
       <xsl:call-template name="common-header"/>
+      
+      <meta name="description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
+      
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="Histoire de la Cosmologie" />
+      <meta itemprop="description" content="Le site " />
+      <meta itemprop="image" content="{$baseurl}/website.jpg" />
+      
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@lucasgautheron" />
+      <meta name="twitter:title" content="Histoire de la Cosmologie" />
+      <meta name="twitter:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui." />
+      <meta name="twitter:creator" content="@lucasgautheron" />
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="{$baseurl}/website.jpg" />
+      
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Histoire de la Cosmologie" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{$baseurl}" />
+      <meta property="og:image" content="{$baseurl}/website.jpg" />
+      <meta property="og:description" content="Histoire de la Cosmologie moderne, d'Einstein à aujourd'hui" />
+      <meta property="og:site_name" content="cosmology.education" />
+      <meta property="article:published_time" content="{current-dateTime()}"/>
+      <meta property="article:modified_time" content="{current-dateTime()}" />
+      <meta property="article:section" content="Frise chronologique" />
+      <meta property="article:tag" content="frise" />
+      
       <title>Chronologie - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -407,6 +409,35 @@
   <html>
     <head>
       <xsl:call-template name="common-header" />
+      
+      <meta name="description" content="{./description}" />
+      
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="{./title} - Histoire de la Cosmologie" />
+      <meta itemprop="description" content="{./description}" />
+      <meta itemprop="image" content="{$baseurl}/images/{./image/@src}" />
+      
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@lucasgautheron" />
+      <meta name="twitter:title" content="{./title} - Histoire de la Cosmologie" />
+      <meta name="twitter:description" content="{./description}" />
+      <meta name="twitter:creator" content="@lucasgautheron" />
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="{$baseurl}/images/{./image/@src}" />
+      
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{./title} - Histoire de la Cosmologie" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{$baseurl}/{./@id}/" />
+      <meta property="og:image" content="{$baseurl}/images/{./image/@src}" />
+      <meta property="og:description" content="{./description}" />
+      <meta property="og:site_name" content="cosmology.education" />
+      <meta property="article:published_time" content="{current-dateTime()}"/>
+      <meta property="article:modified_time" content="{current-dateTime()}" />
+      <meta property="article:section" content="Articles" />
+      <meta property="article:tag" content="{./@id}" />
+      
       <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -516,6 +547,35 @@
   <html>
     <head>
       <xsl:call-template name="common-header"/>
+      
+      <meta name="description" content="{$pagecontent/description}" />
+      
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="{$pagecontent/title} - Histoire de la Cosmologie" />
+      <meta itemprop="description" content="{$pagecontent/description}" />
+      <meta itemprop="image" content="{$baseurl}/images/{$pagecontent/image/@src}" />
+      
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@lucasgautheron" />
+      <meta name="twitter:title" content="{$pagecontent/title} - Histoire de la Cosmologie" />
+      <meta name="twitter:description" content="{$pagecontent/description}" />
+      <meta name="twitter:creator" content="@lucasgautheron" />
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="{$baseurl}/images/{./image/@src}" />
+      
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{$pagecontent/title} - Histoire de la Cosmologie" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{$baseurl}/{$pagecontent/@id}/" />
+      <meta property="og:image" content="{$baseurl}/images/{$pagecontent/image/@src}" />
+      <meta property="og:description" content="{$pagecontent/description}" />
+      <meta property="og:site_name" content="cosmology.education" />
+      <meta property="article:published_time" content="{current-dateTime()}"/>
+      <meta property="article:modified_time" content="{current-dateTime()}" />
+      <meta property="article:section" content="Articles" />
+      <meta property="article:tag" content="{$pagecontent/@id}" />
+      
       <title><xsl:value-of select="$pagecontent/title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
