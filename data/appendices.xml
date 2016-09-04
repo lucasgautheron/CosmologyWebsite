@@ -1536,23 +1536,19 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
           </p>
           
          <p>
-         On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
+         On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{\dfrac{H_0 t}{2}}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
          
                    
-          La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang jusqu'à $t_0$ est :
+          La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang (aussi appelé "horizon des particules") jusqu'à $t_0$ est :
           \begin{equation}
-          l(0,t_0) = a(t) \int_{0}^{t_0} \dfrac{c dt'}{a(t')}
+          l(0,t_0) = a(t_0) \int_{0}^{t_0} \dfrac{c dt'}{a(t')} = 2 ct_0
           \end{equation}
           En comparaison, la taille à $t_0$ d'une région de taille $L$ à $t$ est 
           \begin{equation}
           L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
           \end{equation}
           
-          De là : 
-          \begin{equation}
-          l(0,t_0) = 2 ct_0
-          \end{equation}
-          et
+          et donc : 
           \begin{equation}
            \dfrac{l(t_0)}{L(t_0)} = \dfrac{2ct_0}{L} \sqrt{\dfrac{t}{t_0}} = 2 \sqrt{\dfrac{t_0}{t}}
           \end{equation}
@@ -1563,12 +1559,12 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
           \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 =2 \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^3
           \end{equation}
           
-          Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{32}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
+          Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-46}$. Des rayons lumineux émis au début du Big-Bang n'auraient ainsi pu parcourir qu'une fraction ridicule de l'Univers observable ($l \ll L$). Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{46}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
           C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.
           
-          <spoiler>
+          <!--<spoiler>
           TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
-          </spoiler>
+          </spoiler>-->
           
           <!--Et donc : 
           \begin{equation}
@@ -1577,7 +1573,32 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
           </p>
           <h3>Solution au problème</h3>
           <p>
-              Une solution à ce problème peut être apportée par la théorie de l'inflation cosmique.
+              Une solution à ce problème peut être apportée par la théorie de l'inflation cosmique. Celle-ci suggère grossièrement une phase d'expansion exponentielle :
+              \begin{equation}
+              a(t) \propto \exp (t/\tau)
+              \end{equation}
+              
+              
+              On a alors entre le début $t_i = 0$ et la fin $t_f$ de l'inflation :
+              \begin{equation}
+              l(0,t_f) = c\tau
+              \end{equation}
+              
+              Et on écrit :
+              
+              \begin{equation}
+              L(t_i,t_f) = L(t_f) 10^{-N}
+              \end{equation}
+              
+              Ou $N$ est un nombre valant quelques dizaines, l'expansion ayant été extrêmement importante durant la phase d'inflation.
+              
+              De là : 
+              
+              \begin{equation}
+              \dfrac{l(0,t_f)}{L(0, t_f)} = \dfrac{c\tau}{L(t_f)} 10^N
+              \end{equation}
+              
+              L'horizon des particules est alors augmenté d'un énorme facteur ($10^{N}$), suffisant pour qu'une région de taille $L$ à la fin de l'inflation ayant conduit à l'Univers observable aujourd'hui ait été entièrement causalement connectée avant l'inflation.              
           </p>
       </text>
       <linkwords>
@@ -1650,7 +1671,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
          \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu  - iqA_\mu  \right ) \psi + mc \bar{\psi} \psi - \dfrac{1}{4\mu_0 c} F_{\mu\nu}F^{\mu\nu}
          \end{equation}
          
-         TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!
+         Note : $F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} $ respecte bien cette invariance, tout comme $j_\mu A^\mu$.
 
         <h3>Invariance SU(2) et interaction faible</h3>
 

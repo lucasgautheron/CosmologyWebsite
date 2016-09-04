@@ -690,22 +690,42 @@
                 </p>
                 <p>
                 
-                Parallèlement à ces problèmes relevant du domaine de la Cosmologie, la physique des particules connait de très grands progrès durant les années 1970, qui virent en effet le modèle standard prendre forme. La découverte des courants neutres (interactions avec des neutrinos ne faisant par intervenir de charge électrique) en 1973 supporta largement la théorie d'unification des interactions faible et électromagnétique construite à la décennie précédente par Sheldon Glashow, Abdus Salam et Steven Weinberg, ce qui leur valut le prix nobel en 1979. De même, la théorie de la chromodynamique quantique dont le but est de décrire l'interaction forte prend alors forme et en 1979 l'expérience PETRA confirme l'existence des gluons. TODO expliquer mieux.
+                Parallèlement à ces problèmes relevant du domaine de la Cosmologie, la physique des particules connait de très grands progrès durant les années 1970, qui virent en effet le modèle standard prendre forme. La découverte des courants neutres (interactions avec des neutrinos ne faisant par intervenir de charge électrique) en 1973 supporta largement la théorie d'unification des interactions faible et électromagnétique construite à la décennie précédente par Sheldon Glashow, Abdus Salam et Steven Weinberg, ce qui leur valut le prix nobel en 1979. De même, la théorie de la chromodynamique quantique dont le but est de décrire l'interaction forte prend alors forme et en 1979 l'expérience PETRA confirme l'existence des gluons.
 
-                Le modèle standard qui se construit requiert un nombre importants de paramètres, et certaines symétries ne sont pas bien expliquées (par exemple, l'égalité en valeur absolue de la charge de l'électron et du proton). Il est alors proposé (TODO citer noms) que les différentes interactions du modèle standard soient la manifestation d'une brisure de symétrie à partir d'une configuration plus simple. TODO rephrase. Les théories qui visent à unifier ces interactions sont appelées "Théories de Grande Unification".
+                Le modèle standard qui se construit requiert un nombre importants de paramètres, et certaines symétries ne sont pas bien expliquées (par exemple, l'égalité en valeur absolue de la charge de l'électron et du proton). Il est alors proposé <ref doi="10.1103/PhysRevLett.32.438" /> <ref doi="10.1016/0550-3213(78)90214-6" /> que les différentes interactions du modèle standard soient la manifestation d'une brisure de symétrie à partir d'une structure plus simple. Les théories qui visent à unifier ces interactions sont appelées "Théories de Grande Unification".
                 </p>
                 <p>
                 Par ailleurs, plusieurs théories de grande unification suggèrent l'existence de monopôles magnétiques (des particules qui possédraient une "charge magnétique" ayant le même effet sur le champ $\vec{B}$ qu'une charge électrique a sur le champ $\vec{E}$).
-                Cependant, il est attendu qu'il n'y a pas vraiment espoir de détecter de telles particules - si elles existent - dans des accélérateurs. Le physicien Henry Tye suggère alors à son collègue Alan Guth, qui a déjà travaillé sur les monopôles magnétiques, de réfléchir à leur éventuelle production et existence au début du Big Bang, lorsque la température de l'Univers était suffisante.
+                Cependant, il est attendu qu'il n'y a pas vraiment espoir de produire de telles particules - si elles existent - dans des accélérateurs. Le physicien Henry Tye suggère alors à son collègue Alan Guth, qui a déjà travaillé sur les monopôles magnétiques, de réfléchir à leur éventuelle production et existence au début du Big Bang, lorsque la température de l'Univers était suffisante.
                 Incidemment, Alan Guth assiste à un séminaire donné par R. Dicke dans lequel celui-ci expose le problème de la platitude.
                 </p>
                 <p>
-                A. Guth et ses collaborateurs remarquent que les théories GUT prédisent dans le cadre de la théorie du Big Bang de l'époque la création de monopôles magnétiques en très grande quantité (TODO donner ordres de grandeurs) ce qui n'est <i>a priori</i> pas possible puisque ceux-ci n'ont pour l'instant pas été observés.
-                Pour l'expliquer, ils suggèrent une phase de refroidissement très rapide. (TODO expliquer impact. requiert d'expliquer champ scalaire ?). Or, Guth remarque que cela équivaut à une expansion dramatiquement rapide de l'Univers ; de plus, il comprend que cette expansion très rapide permet à la fois de résoudre le problème de la platitude, ainsi que celui de l'Horizon !
+                A. Guth et ses collaborateurs remarquent que les théories GUT prédisent dans le cadre de la théorie du Big Bang de l'époque la création de monopôles magnétiques en très grande quantité ce qui n'est <i>a priori</i> pas possible puisque ceux-ci n'ont pour l'instant pas été observés.
+                Pour l'expliquer, ils suggèrent une phase de refroidissement très rapide due à une transition de phase d'un champ scalaire pendant les tous premiers instants du Big-Bang, ce qui équivaut à une expansion dramatiquement rapide de l'Univers, de telle sorte que les monopôles magnétiques sont tellement dilués qu'inobservables. De plus, il comprend que cette expansion très rapide permet à la fois de résoudre le problème de la platitude, ainsi que celui de l'Horizon !
+                En effet, si l'on reprend le problème de la platitude, on observe qu'il apparait parce que dans un scénario sans inflation, l'écart à la platitude de l'Univers est inversement proportionnelle à $\rho a^2$ et donc proportionnelle à $1/T^2$ durant l'ère radiative. Cela est du au fait que la densité diminue fortement avec l'expansion.
+                Or, pour un champ scalaire, sous certaines conditions, cette densité demeure à peu près constante (voir énergie du vide). Dès lors $\Omega_k \propto 1/a^2 \propto T^2$. Si l'Univers était dominé par une forme d'énergie du vide et a subi une forte expansion (donc de refroidissement) avant l'ère radiative, alors il a été fortement aplati. 
                 
-                <ref doi="10.1103/PhysRevD.23.347" />
+                C'est ainsi qu'Alan Guth suggère le recours à l'inflation pour résoudre ces difficultés du Big-Bang<ref doi="10.1103/PhysRevD.23.347" />.
+                Le mécanisme initialement proposé est donc le suivant :
+                
+                <ol>
+                    <li>
+                        Un champ scalaire $\phi$ de potentiel $V(\phi)$ représenté sur la figure ci-dessous se trouve initialement dans un état de faux-vide (minimum d'énergie local, $\phi = 0$, mais qui n'est pas un minimum global).
+                        <figure src="scalar_field.svg" title="Potentel du champ scalaire responsable de l'inflation">
+                            $\phi = 0$ correspond au "faux-vide", minimum <i>local</i> du potentiel. Le véritable minimum correspond au "vrai vide". Lorsque l'Univers refroidit, survient une transition de phase du premier état à l'autre de plus basse énergie.
+                        </figure>
+                        Sa valeur est telle que c'est son énergie qui domine l'expansion de l'Univers, avec une équation d'état similaire à $P=-\rho$. Cela induit un expansion exponentielle de l'Univers, l'inflation.
+                    </li>
+                    <li>
+                        Avec son expansion, l'Univers se refroidit et une transition de phase a lieu entre le faux-vide et le vrai-vide. Finalement l'effet du champ scalaire sur l'expansion devient négligeable.
+                    </li>
+                    <li>
+                        Au cours de cette expansion rapide, l'Univers a été fortement aplati, ce qui résoud le problème de la platitude. Par ailleurs, la phase d'expansion exponentielle induit que l'Univers observable est issu d'une même région causale avant l'inflation, ce qui résoud le problème de l'Horizon.
+                        Enfin, la dilution occasionnée par cette expansion rend inobservables d'éventuels monopôles magnétiques.
+                    </li>
+                </ol>
     	        
-    	        <!--La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier-->
+    	        
     	    </p>
     	</text>
         <further-readings>
