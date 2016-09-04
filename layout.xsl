@@ -103,10 +103,10 @@
       <a href="/images/{./@src}" target="_blank">
         <xsl:choose>
           <xsl:when test="string(./@width)">
-            <img src="/images/{./@src}" title="{.}" width="{./@width}" />
+            <img src="/images/{./@src}" alt="{./@title}" title="{.}" width="{./@width}" />
           </xsl:when>
           <xsl:otherwise>
-            <img src="/images/{./@src}" title="{.}" />
+            <img src="/images/{./@src}" alt="{./@title}" title="{.}" />
           </xsl:otherwise>
         </xsl:choose>
       </a>
