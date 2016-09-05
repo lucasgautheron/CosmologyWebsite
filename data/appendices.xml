@@ -899,6 +899,24 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     Mesures de la constante de Hubble au cours du temps. Valeurs tirées de <ref doi="10.1086/146483" />, <ref doi="10.1086/300499" />, <ref doi="10.1086/320638" />, <ref doi="10.1086/505291" />, <ref doi="10.1088/0067-0049/208/2/20" />, <ref doi="10.1051/0004-6361/201321529" />, <ref doi="10.3847/0004-637X/826/1/56" />.  
                 </figure>
             </p>
+            
+            
+            <p>
+                Je me souviens d'un post très drôle sur Futura-Sciences (mais plus de son auteur) qui disait en substance, en réponse à une personne qui demandait si la constante de Hubble était variable (cette personne confondait bien-sûr le paramètre de Hubble $H(t)$ et la constante de Hubble qui est sa valeur au temps présent donc bien une constante) :
+                <quote author="Inconnu" title="Futura-Sciences">
+                    La constante de Hubble a plus changé au cours du siècle passé que pendant les quelques dernières milliards d'années! 
+                </quote>
+                
+                C'est assez drôle mais assez vrai. La première valeur de Hubble était près de dix fois trop grande, et après les travaux de Sandage (qui restreignait $H_0$ à l'intervalle 50-100 km/s/Mpc), il fallut encore plusieurs décennies pour décider à quelques pourcents près. 
+                
+                <figure src="hubble_constant_measurements_full.svg" plot="hubble_constant_measurements_full">
+                    Données tirées de <a href="https://www.cfa.harvard.edu/~dfabricant/huchra/hubble/">https://www.cfa.harvard.edu/~dfabricant/huchra/hubble/</a>.
+                </figure>
+                
+                <figure src="hubble_constant_measurements_full_recent.svg" plot="hubble_constant_measurements_full_recent">
+                    Données tirées de <a href="https://www.cfa.harvard.edu/~dfabricant/huchra/hubble/">https://www.cfa.harvard.edu/~dfabricant/huchra/hubble/</a>.
+                </figure>
+            </p>
         </text>
         <linkwords>
             <linkword>constante de Hubble</linkword>
