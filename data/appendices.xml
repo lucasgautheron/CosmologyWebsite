@@ -896,7 +896,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Aujourd'hui, les mesures employent des méthodes assez diverses (plus uniquement l'utilisation de céphéïdes comme chandelles standard), et les valeurs sont en assez bon accord, malgré une petite tension :
                 
                 <figure src="hubble_constant_measurements.svg" plot="hubble_constant_measurements">
-                    Mesures de la constante de Hubble au cours du temps. <ref doi="10.1086/146483" /> <ref doi="10.1086/300499" /> <ref doi="10.1086/320638" /> <ref doi="10.1086/505291" /> <ref doi="10.1088/0067-0049/208/2/20" /> <ref doi="10.1051/0004-6361/201321529" /> <ref doi="10.3847/0004-637X/826/1/56" />  
+                    Mesures de la constante de Hubble au cours du temps. Valeurs tirées de <ref doi="10.1086/146483" />, <ref doi="10.1086/300499" />, <ref doi="10.1086/320638" />, <ref doi="10.1086/505291" />, <ref doi="10.1088/0067-0049/208/2/20" />, <ref doi="10.1051/0004-6361/201321529" />, <ref doi="10.3847/0004-637X/826/1/56" />.  
                 </figure>
             </p>
         </text>
