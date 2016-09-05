@@ -1160,6 +1160,19 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
+    <appendix id="baryogenese" uid="baryogenesis">
+        <title>Baryogénèse</title>
+        <text>
+            <p>
+                Le terme baryogénèse désigne l'époque du Big-Bang durant laquelle les baryons (particules composées de quarks) ont été synthétisés. L'asymétrie entre matière et anti-matière requiert que le nombre baryonique, égal à $n_b - n_{\bar{b}}$, c'est-à-dire la différence entre baryons et antibaryons, soit non nul. La baryogénèse doit pouvoir l'expliquer. Cette violation du nombre baryonique pourrait être expliquée par le modèle standard de la physique des particules, mais aussi par des théories de grande unification qui en rapprochant leptons et baryons questionnent nécessairement la notion de conservation des nombres leptoniques et baryoniques. Aujourd'hui, aucune explication n'est favorisée pour la baryogénèse.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>Baryogénèse</linkword>
+            <linkword>baryogénèse</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="supernovae-ia" uid="ia-supernovae">
         <title>Supernovas Ia</title>
         <text>
