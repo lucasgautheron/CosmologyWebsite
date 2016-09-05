@@ -1730,7 +1730,30 @@ Et
       <appendix id="lentille-gravitationnelle" uid="gravitational-lensing">
       <title>Lentille gravitationnelle</title>
       <text>
-         <p>TODO</p>
+         <p>L'effet de lentille gravitationnelle est la déviation de rayons lumineux approchant un astre massif. Cet effet, correctement prédit par la relativité générale, a été observé en 1919 par Eddington pendant une éclipse solaire.
+         Le terme de lentille provient de la tendance à la légère focalisation des rayons comme dans la situation des rayons lumineux rasants le Soleil.</p>
+          <h3>Effet d'une masse ponctuelle</h3>
+          <p>
+              Un rayon lumineux approchant une masse $M$ avec un paramètre d'impact $b$ (distance entre la trajectoire non déviée et l'objet) est dévié d'un angle $\Delta \phi$ donné par :
+              \begin{equation}
+              \Delta \phi = \dfrac{4GM}{bc^2}
+              \end{equation}
+              
+              (La démonstration à partir des équations d'Einstein est disponible dans le cours de <people name="richard-taillet">Richard Taillet</people>, voir les vidéos suivante : <a href="http://podcast.grenet.fr/episode/cours-12-3/" target="_blank">Métrique de Schwarzschild 1</a>, <a href="http://podcast.grenet.fr/episode/cours-13-3/" target="_blank">Métrique de Schwarzschild 2</a>, <a href="http://podcast.grenet.fr/episode/cours-14-3/" target="_blank">Équations du mouvement</a>, <a href="http://podcast.grenet.fr/episode/cours-15-3/" target="_blank">Déviation de la lumière</a>).
+          </p>
+          <h3>Équation des lentilles</h3>
+          <p>
+              La lumière qui nous parvient de sources lointaines a pu subir l'influence de multiples masses étendues.
+              La déviation par rapport à l'axe de visée est alors donnée par :
+              \begin{equation}
+              \Delta \vec{\phi} = \dfrac{2}{c^2} \int \nabla_{\perp} \Phi dz
+              \end{equation}
+              L'intégrale est ici prise le long du chemin parcouru par la lumière, qui est dans la limite des champs faibles, à peu près similaire au chemin non dévié.
+          </p>
+          <h3>En savoir plus</h3>
+          <p>
+              L'ouvrage <i>Cosmologie Primordiale</i> (P. Peter, J.P. Uzan) est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
+          </p>
       </text>
       <linkwords>
            <linkword>lentille gravitationnelle</linkword>
