@@ -28,12 +28,47 @@ $refs = file('tmp/refs');
 foreach($refs as $ref)
 {
     $ref = trim($ref);
-    $safedoi = str_replace(')', '_', str_replace('(', '_', str_replace('/', '_', $ref)));
-    $outfile = "tmp/ref_$safedoi.xml";
-    if(!file_exists($outfile))
+    if(strpos($ref, 'doi:') === 0)
     {
-        exec("curl --location --header \"Accept: application/unixref+xml\" \"http://dx.doi.org/$ref\" -o \"$outfile\" " . $redirect, $output, $return_code);
-        $return |= $return_code;
+        $ref = substr($ref, strlen('doi:'));
+        $safedoi = str_replace(')', '_', str_replace('(', '_', str_replace('/', '_', $ref)));
+        $outfile = "tmp/ref_$safedoi.xml";
+        if(!file_exists($outfile))
+        {
+            exec("curl --location --header \"Accept: application/unixref+xml\" \"http://dx.doi.org/$ref\" -o \"$outfile\" " . $redirect, $output, $return_code);
+            $return |= $return_code;
+        }
+    }
+    else if(strpos($ref, 'isbn:') === 0)
+    {
+        $ref = substr($ref, strlen('isbn:'));
+        $isbn = $ref;
+        $outfile = "tmp/ref_$isbn.xml";
+        if(file_exists($outfile))
+            continue;
+            
+        $response = file_get_contents('https://www.googleapis.com/books/v1/volumes?q=isbn:' . $isbn);
+        $results = json_decode($response);
+        if(!isset($results->items) || !count($results->items))
+        {
+            $return |= 1;
+            continue;
+        }
+        $book = $results->items[0];
+        $fp = fopen($outfile, 'w+');
+        fwrite($fp, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<book>\n");
+        fwrite($fp, "<title>{$book->volumeInfo->title}</title>\n");
+        fwrite($fp, "<year>" . date('Y', strtotime($book->volumeInfo->publishedDate)) . "</year>\n");
+        fwrite($fp, "<link>" . htmlspecialchars($book->volumeInfo->canonicalVolumeLink) . "</link>\n");
+        fwrite($fp, "<authors>\n");
+        foreach($book->volumeInfo->authors as $author)
+        {
+            fwrite($fp, "<author>$author</author>\n");
+        }
+        fwrite($fp, "</authors>\n");
+        fwrite($fp, "</book>\n");
+        fclose($fp);
+        
     }
 }
 echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";

@@ -60,12 +60,12 @@
     </p>  
   </xsl:template>
   
-  <xsl:template match="ref">
+  <xsl:template match="ref[@doi]">
     <xsl:variable name="maxauthors" select="2" />
     <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
     <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
     
-    <a href="#doi-{$safedoi}" class="reference">
+    <a href="#ref-{$safedoi}" class="reference">
       (<xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
         <xsl:if test="not(position() > $maxauthors)">
           <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
@@ -79,23 +79,63 @@
       </a>
   </xsl:template>
   
+  <xsl:template match="ref[@isbn]">
+    <xsl:variable name="maxauthors" select="2" />
+    <xsl:variable name="ref" select="document(concat('./tmp/ref_', ./@isbn, '.xml'))" />
+    
+    <a href="#ref-{./@isbn}" class="reference">
+      (<xsl:for-each select="$ref//authors/author">
+        <xsl:if test="not(position() > $maxauthors)">
+          <xsl:value-of select="." />
+          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:if test="count($ref//authors/author) > $maxauthors">
+        et al.
+      </xsl:if>
+      &#160;<xsl:value-of select="$ref//book/year" />)
+    </a>
+  </xsl:template>
+  
   <xsl:template name="ref-description">
     <xsl:param name="doi" />
+    <xsl:param name="isbn" />
     
     <xsl:variable name="maxauthors" select="4" />
-    <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
-    <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
-    <a name="doi-{$safedoi}"></a>
-    <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
-      <xsl:if test="not(position() > $maxauthors)">
-        <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
-        <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
-      </xsl:if>
-    </xsl:for-each>
-    <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
-      et al.
-    </xsl:if> &#160;(<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />),
-    <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i>
+    
+    <xsl:choose>
+      <xsl:when test="$doi">
+        <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
+        <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
+        <a name="ref-{$safedoi}"></a>
+        <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
+          <xsl:if test="not(position() > $maxauthors)">
+            <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
+            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+          </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
+          et al.
+        </xsl:if> &#160;(<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />),
+        <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i>
+      </xsl:when>
+      <xsl:when test="$isbn">
+        <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))" />
+        <a name="ref-{$isbn}"></a>
+        <xsl:for-each select="$ref//authors/author">
+          <xsl:if test="not(position() > $maxauthors)">
+            <xsl:value-of select="." />
+            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+          </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="count($ref//authors/author) > $maxauthors">
+          et al.
+        </xsl:if> &#160;(<xsl:value-of select="$ref/book/year" />),
+        <i><a href="{$ref/book/link}"><xsl:value-of select="$ref/book/title" /></a></i>
+        <a name="ref-{$isbn}"></a>
+      </xsl:when>
+    </xsl:choose>
+    
   </xsl:template>
   
   <xsl:template match="figure">
@@ -435,10 +475,19 @@
         <h3>Références</h3>
         <div class="further-readings">
           <ul>
-            <xsl:for-each-group select="./text//ref" group-by="@doi">
+            <xsl:for-each-group select="./text//ref[@doi]" group-by="@doi">
               <li>
                 <xsl:call-template name="ref-description">
                   <xsl:with-param name="doi" select="./@doi" />
+                  <xsl:with-param name="isbn" select="''" />
+                </xsl:call-template>
+              </li>
+            </xsl:for-each-group>
+            <xsl:for-each-group select="./text//ref[@isbn]" group-by="@isbn">
+              <li>
+                <xsl:call-template name="ref-description">
+                  <xsl:with-param name="doi" select="''" />
+                  <xsl:with-param name="isbn" select="./@isbn" />
                 </xsl:call-template>
               </li>
             </xsl:for-each-group>
@@ -543,7 +592,7 @@
         <h3>Références</h3>
         <div class="further-readings">
           <ul>
-          <xsl:for-each-group select="$pagecontent/text//ref" group-by="@doi">
+          <xsl:for-each-group select="$pagecontent/text//ref[@doi]" group-by="@doi">
             <li>
               <xsl:call-template name="ref-description">
                 <xsl:with-param name="doi" select="./@doi" />
