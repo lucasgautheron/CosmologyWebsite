@@ -1691,7 +1691,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </figure>
                 
                 L'état symétrique $\phi = 0$ est instable.
-                Les états d'équilibre $\phi = \pm \phi_0$ sont stables, et $\phi_0 = \sqrt{\mu^2/\lambda}.
+                Les états d'équilibre $\phi = \pm \phi_0$ sont stables, et $\phi_0 = \sqrt{\mu^2/\lambda}$.
                 
                 Si le champ est confiné au voisinage d'une des positions d'équilibres, alors $\phi = \pm \phi_0 + \delta \phi$ et :
                 \begin{equation}
