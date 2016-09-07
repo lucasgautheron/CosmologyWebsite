@@ -1,16 +1,12 @@
-sudo: false
+sudo: required
 
 language: php
 
 cache: apt
 
-addons:
-  apt:
-    packages:
-    - libsaxonb-java
-    - gnuplot
-    - default-jre
-    - libcurl3
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -y libsaxonb-java gnuplot default-jre libcurl3 basex
 
 script: php compile.php -V
 
