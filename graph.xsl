@@ -25,6 +25,7 @@
                 <ul>
                     <xsl:for-each select="root/contents/content">
                         <xsl:variable name="id" select="./@id"/>
+                        <xsl:variable name="uid" select="./@uid"/>
                         <xsl:variable name="text" select="./text"/>
 
                         <li><h3><a href="/{$id}/"><xsl:value-of select="./title" /></a></h3>
@@ -46,7 +47,7 @@
                         </xsl:choose><br />
                             <h4>Evènements</h4>
                             <ul>
-                                <xsl:for-each select="//root/events/event[@content-id=$id]">
+                                <xsl:for-each select="//root/events/event[@content-id=$uid]">
                                     <li><xsl:value-of select="."/></li>
                                 </xsl:for-each>
                             </ul>
