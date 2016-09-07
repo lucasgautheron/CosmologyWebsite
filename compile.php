@@ -47,28 +47,7 @@ foreach($refs as $ref)
         if(file_exists($outfile))
             continue;
             
-        $response = file_get_contents('https://www.googleapis.com/books/v1/volumes?q=isbn:' . $isbn);
-        $results = json_decode($response);
-        if(!isset($results->items) || !count($results->items))
-        {
-            $return |= 1;
-            continue;
-        }
-        $book = $results->items[0];
-        $fp = fopen($outfile, 'w+');
-        fwrite($fp, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<book>\n");
-        fwrite($fp, "<title>{$book->volumeInfo->title}</title>\n");
-        fwrite($fp, "<year>" . date('Y', strtotime($book->volumeInfo->publishedDate)) . "</year>\n");
-        fwrite($fp, "<link>" . htmlspecialchars($book->volumeInfo->canonicalVolumeLink) . "</link>\n");
-        fwrite($fp, "<authors>\n");
-        foreach($book->volumeInfo->authors as $author)
-        {
-            fwrite($fp, "<author>$author</author>\n");
-        }
-        fwrite($fp, "</authors>\n");
-        fwrite($fp, "</book>\n");
-        fclose($fp);
-        
+        exec("basex -q 'let " . '$url' . " := \"https://www.googleapis.com/books/v1/volumes?q=isbn:$isbn\" return json-to-xml(fetch:text(" . '$url' . "))' > $outfile");
     }
 }
 echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";

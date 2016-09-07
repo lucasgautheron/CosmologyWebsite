@@ -3,6 +3,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:doc="http://cosmology.education"
   xmlns:shell="java:java.lang.Runtime"
+  xmlns:fn="http://www.w3.org/2005/xpath-functions"
   exclude-result-prefixes="xs doc">
   
   <xsl:variable name="linkwords" select="//appendices/appendix/linkwords/linkword"/>
@@ -81,19 +82,17 @@
   
   <xsl:template match="ref[@isbn]">
     <xsl:variable name="maxauthors" select="2" />
-    <xsl:variable name="ref" select="document(concat('./tmp/ref_', ./@isbn, '.xml'))" />
+    <xsl:variable name="ref" select="document(concat('./tmp/ref_', ./@isbn, '.xml'))//fn:map[@key='volumeInfo'][1]" />
     
     <a href="#ref-{./@isbn}" class="reference">
-      (<xsl:for-each select="$ref//authors/author">
-        <xsl:if test="not(position() > $maxauthors)">
-          <xsl:value-of select="." />
-          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
-        </xsl:if>
+      (<xsl:for-each select="$ref//fn:array[@key='authors']/fn:string[position() &lt;= $maxauthors]">
+        <xsl:value-of select="." />
+        <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
       </xsl:for-each>
-      <xsl:if test="count($ref//authors/author) > $maxauthors">
+      <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
         et al.
       </xsl:if>
-      &#160;<xsl:value-of select="$ref//book/year" />)
+      &#160;<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />)
     </a>
   </xsl:template>
   
@@ -108,11 +107,9 @@
         <xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />
         <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
         <a name="ref-{$safedoi}"></a>
-        <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author']">
-          <xsl:if test="not(position() > $maxauthors)">
-            <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
-            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
-          </xsl:if>
+        <xsl:for-each select="$ref//contributors/person_name[@contributor_role='author'][position() &lt;= $maxauthors]">
+          <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
+          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
         </xsl:for-each>
         <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
           et al.
@@ -120,18 +117,16 @@
         <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i>
       </xsl:when>
       <xsl:when test="$isbn">
-        <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))" />
+        <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))//fn:map[@key='volumeInfo'][1]" />
         <a name="ref-{$isbn}"></a>
-        <xsl:for-each select="$ref//authors/author">
-          <xsl:if test="not(position() > $maxauthors)">
-            <xsl:value-of select="." />
-            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
-          </xsl:if>
+        <xsl:for-each select="$ref//fn:array[@key='authors']/fn:string[position() &lt;= $maxauthors]">
+          <xsl:value-of select="." />
+          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
         </xsl:for-each>
-        <xsl:if test="count($ref//authors/author) > $maxauthors">
+        <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
           et al.
-        </xsl:if> &#160;(<xsl:value-of select="$ref/book/year" />),
-        <i><a href="{$ref/book/link}"><xsl:value-of select="$ref/book/title" /></a></i>
+        </xsl:if> &#160;(<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />),
+        <i><a href="{$ref/book/link}"><xsl:value-of select="$ref//fn:string[@key='title']" /></a></i>
         <a name="ref-{$isbn}"></a>
       </xsl:when>
     </xsl:choose>
