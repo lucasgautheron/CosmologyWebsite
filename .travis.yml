@@ -5,7 +5,8 @@ language: php
 cache: apt
 
 before_install:
-- sudo apt-get update -qq libsaxonb-java gnuplot default-jre libcurl3 basex
+ - sudo apt-get update -qq
+ - sudo apt-get install -y libsaxonb-java gnuplot default-jre libcurl3 basex
 
 script: php compile.php -V
 
