@@ -669,7 +669,7 @@
     	</image>
     	<color>#46c4e5</color>
     	<text>
-    	TODO Parler de zeldovic
+    	    <h3>Caractéristiques intrigantes du Big-Bang</h3>
     	    <p>
     	        Vers la fin des années 1970, le modèle du Big Bang fait consensus. Pourtant, il soulève déjà plusieurs problèmes :
     	        <ul>
@@ -688,6 +688,8 @@
     	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et soient "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
     	        </ul>
                 </p>
+    	    
+    	    <h3>Les théories de grande unification</h3>
                 <p>
                 
                 Parallèlement à ces problèmes relevant du domaine de la Cosmologie, la physique des particules connait de très grands progrès durant les années 1970, qui virent en effet le modèle standard prendre forme. La découverte des courants neutres (interactions avec des neutrinos ne faisant par intervenir de charge électrique) en 1973 supporta largement la théorie d'unification des interactions faible et électromagnétique construite à la décennie précédente par Sheldon Glashow, Abdus Salam et Steven Weinberg, ce qui leur valut le prix nobel en 1979. De même, la théorie de la chromodynamique quantique dont le but est de décrire l'interaction forte prend alors forme et en 1979 l'expérience PETRA confirme l'existence des gluons.
@@ -699,6 +701,7 @@
                 Cependant, il est attendu qu'il n'y a pas vraiment espoir de produire de telles particules - si elles existent - dans des accélérateurs. Le physicien Henry Tye suggère alors à son collègue Alan Guth, qui a déjà travaillé sur les monopôles magnétiques, de réfléchir à leur éventuelle production et existence au début du Big Bang, lorsque la température de l'Univers était suffisante.
                 Incidemment, Alan Guth assiste à un séminaire donné par R. Dicke dans lequel celui-ci expose le problème de la platitude.
                 </p>
+    	    <h3>Émergence de la théorie de l'inflation</h3>
                 <p>
                 A. Guth et ses collaborateurs remarquent que les théories GUT prédisent dans le cadre de la théorie du Big Bang de l'époque la création de monopôles magnétiques en très grande quantité ce qui n'est <i>a priori</i> pas possible puisque ceux-ci n'ont pour l'instant pas été observés.
                 Pour l'expliquer, ils suggèrent une phase de refroidissement très rapide due à une transition de phase d'un champ scalaire pendant les tous premiers instants du Big-Bang, ce qui équivaut à une expansion dramatiquement rapide de l'Univers, de telle sorte que les monopôles magnétiques sont tellement dilués qu'inobservables. De plus, il comprend que cette expansion très rapide permet à la fois de résoudre le problème de la platitude, ainsi que celui de l'Horizon !
@@ -720,19 +723,35 @@
                         Avec son expansion, l'Univers se refroidit et une transition de phase a lieu entre le faux-vide et le vrai-vide. Finalement l'effet du champ scalaire sur l'expansion devient négligeable.
                     </li>
                     <li>
+                        A la fin de l'inflation, l'énergie du champ scalaire est convertie en énergie thermique, et l'Univers se réchauffe à des températures très élevées. Le Big-Bang se poursuit, l'expansion gouvernée par la matière ultrarelativiste refroidissant l'Univers.
                         Au cours de cette expansion rapide, l'Univers a été fortement aplati, ce qui résoud le problème de la platitude. Par ailleurs, la phase d'expansion exponentielle induit que l'Univers observable est issu d'une même région causale avant l'inflation, ce qui résoud le problème de l'Horizon.
                         Enfin, la dilution occasionnée par cette expansion rend inobservables d'éventuels monopôles magnétiques.
                     </li>
                 </ol>
+                    
+               <h3>Insuffisance du scénario d'Alan Guth, nouveaux modèles inflationnaires</h3>
+                <p>
+                    
+                </p>
+                    
+               <h3>D'autres problèmes cosmologiques des théories de grande unification</h3>
     	        
-    	        En parallèle du développement des théories inflationnaires, les théoriciens s'attaquent à d'autres curiosités de l'Univers, comme l'asymétrie entre matière et anti-matière.
-    	        A l'époque on sait grâce à Sakharov <ref doi="10.1070/PU1991v034n05ABEH002497" /> que cette asymétrie manifeste nécessite trois conditions préalables : 
+    	        En parallèle, les théories de grande unification doivent apporter des réponses à plusieurs autres problèmes :
     	        
-    	        <ul>
-    	            <li>Violation du nombre baryonique ($B = n_b - n_{\bar{b}}$ ne doit pas être constant, notamment s'il est initialement nul)</li>
-    	            <li>Violation des symétries C et CP, afin que les processus physiquent puissent privilégier un type de matière</li>
-    	            <li>Baryogénèse hors équilibre thermique, sans quoi les équilibres entre réactions directes et indirectes supprimeraient l'asymétrie</li>
-    	        </ul>
+    	        <ol>
+    	            <li> L'<b>assymétrie matière-antimatière</b>. 
+    	                A l'époque on sait grâce à Sakharov <ref doi="10.1070/PU1991v034n05ABEH002497" /> que cette asymétrie manifeste - la matière domine clairement dans notre univers observable - nécessite trois conditions préalables : 
+       	              <ul>
+        	              <li>Violation du nombre baryonique ($B = n_b - n_{\bar{b}}$ ne doit pas être constant, notamment s'il est initialement nul)</li>
+        	              <li>Violation des symétries C et CP, afin que les processus physiquent puissent privilégier un type de matière</li>
+        	              <li>Baryogénèse hors équilibre thermique, sans quoi les équilibres entre réactions directes et indirectes supprimeraient l'asymétrie</li>
+    	               </ul>
+    	            </li>
+    	            <li>Les <b>murs de domaine</b>. Certaines théories de grande unification comme SU(5) prédisent des brisures de symétrie discrète. Des interfaces entre des régions basculées dans des directions différentes après brisure (voir l'exemple de l'annexe brisure de symétrie), à cause de la forte discontinuité engendrée, devraient créer des phénomènes violents (par exemple l'émission d'ondes gravitationnelles très intenses). Ceci est en conflit avec les observations et exclue bon nombre de théories. </li>
+    	        </ol>
+
+    	        
+
     	        
     	        L'astrophyicien russe Zeldovich publie en 1981 une importante synthèse sur le lien entre Big-Bang et physique des particules <ref doi="10.1103/RevModPhys.53.1" />.
                     

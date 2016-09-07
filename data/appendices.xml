@@ -1667,6 +1667,46 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
       </linkwords>
     </appendix>
     
+    <appendix id="brisure-symetrie" uid="symmetry-breaking">
+        <title>Brisure de symétrie</title>
+        <text>
+            <p>Une brisure de symétrie est un mécanisme qui comprend le passage d'un état très symétrique à un état avec un degré de symétrie inférieur. Cette transition conduit à la préférence aléatoire d'un certain état arbitraire pour la nature.
+                
+                Ce genre de mécanisme permet ainsi de lever l'arbitraire d'une théorie en suggérant qu'elle découle d'une théorie sous-jascente plus symétrique qui autorise une perte spontanée de degré de symétrie avec préférence d'une direction particulière.
+                
+                Un exemple souvent cité est celui d'un crayon maintenu à la verticale que l'on lâcherait. Dans cette situation, aucune direction dans le plan horizontal n'est privilégiée (symétrie de rotation autour de l'axe vertical). Mais cette position est instable, et le crayon tombera en le lâchant. Ce faisait, l'extrêmité par laquelle il était maintenu pointera dans une direction aléatoire, et la symétrie de rotation sera perdue. 
+            
+             La suite de cette annexe s'inspire largement du chapitre 'Symmetry Breaking' de l'excellent ouvrage de A. Zee. <!--<ref isbn="0691140340" />--></p>
+            <h3>Champ scalaire avec brisure de symétrie discrète</h3>
+            <p>
+                On considère un champ scalaire $\phi$ de lagrangien de type $\phi^4$ usuel :
+                \begin{equation}
+                \mathcal{L} = \dfrac{1}{2} \partial_\mu \phi \partial^\mu \phi - V(\phi) = \dfrac{1}{2} \partial_\mu \phi \partial^\mu \phi + \dfrac{1}{2} \mu^2 \phi^2 - \dfrac{1}{4}\lambda \phi^4
+                \end{equation}
+                
+                Ce lagrangien est invariant par la transformation $\phi \to -\phi$. Son potentiel $V(\phi) = \mu^2 \phi^2/2 - \lambda \phi^4/4$ a pour forme :
+                
+                <figure src="scalar_field_breaking_1d.svg" plot="scalar_field_breaking_1d" title="Potentiel du champ scalaire">
+                    Potentiel du champ scalaire avec $\mu = 2$, $\lambda = 4$. Ce champ est invariant par la transformation $\phi \to -\phi$ (symétrie par parité). Il existe deux positions d'équilibres instables $\pm \phi_0$ et une instable qui respecte la symétrie par parité : $\phi = 0$ (ni la 'gauche' ni la 'droite' du graphe ne sont privilégiés et l'état symétrique est 0).
+                </figure>
+                
+                L'état symétrique $\phi = 0$ est instable.
+                Les états d'équilibre $\phi = \pm \phi_0$ sont stables, et $\phi_0 = \sqrt{\mu^2/\lambda}.
+                
+                Si le champ est confiné au voisinage d'une des positions d'équilibres, alors $\phi = \pm \phi_0 + \delta \phi$ et :
+                \begin{equation}
+                \mathcal{L} = \dfrac{\mu^4}{4\lambda} + \dfrac{1}{2} \partial_\mu \delta \phi \partial^\mu \delta \phi - \mu^2 \delta \phi^2 + \mathcal{O}(\delta \phi^3)
+                \end{equation}
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>brisure de symétrie</linkword>
+            <linkword>brisure spontanée de symétrie</linkword>
+            <linkword>boson de Nambu-Goldstone</linkword>
+        </linkwords>
+    </appendix>
+    
   <appendix id="invariance-de-jauge" uid="gauge-invariance">
       <title>Invariance de Jauge</title>
       <text>
@@ -1713,13 +1753,14 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
          
          Note : $F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} $ respecte bien cette invariance, tout comme $j_\mu A^\mu$.
 
-        <h3>Invariance SU(2) et interaction faible</h3>
+         </p>
+        <!--<h3>Invariance SU(2) et interaction faible</h3>
 
 Et
 
 \begin{equation}
 \mathcal{L} = ...
-\end{equation}</p>
+\end{equation}-->
       </text>
       <linkwords>
            <linkword>Invariance de jauge</linkword>
