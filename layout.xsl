@@ -92,7 +92,7 @@
       <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
         et al.
       </xsl:if>
-      &#160;<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />)
+      &#160;<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 1, 4)" />)
     </a>
   </xsl:template>
   
@@ -125,7 +125,7 @@
         </xsl:for-each>
         <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
           et al.
-        </xsl:if> &#160;(<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />),
+        </xsl:if> &#160;(<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 1, 4)" />),
         <i><a href="{$ref//fn:string[@key='canonicalVolumeLink']}"><xsl:value-of select="$ref//fn:string[@key='title']" /></a></i>
         <a name="ref-{$isbn}"></a>
       </xsl:when>
