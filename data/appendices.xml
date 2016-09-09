@@ -1645,6 +1645,51 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
            <linkword>Problème de l'Horizon</linkword>
       </linkwords>
     </appendix>
+    
+    <appendix id="modele-standard" uid="standard-model">
+        <title>Modèle standard de la physique des particules</title>
+        <text>
+            <p>Le modèle standard de la physique des particules est le modèle inscrit dans le cadre de la théorie quantique des champs qui décrit les interactions électromagnétique, faible et forte.</p>
+            <h3>Contenu</h3>
+            <p>
+                <figure src="standard_model.png" title="Élements du modèle standard">
+                    Particules élémentaires du modèle standard. 
+                    Source : <a href="http://www.physik.uzh.ch/">physik.uzh.ch</a>.
+                </figure>
+            </p>
+            <h3>Lagrangien du modèle standard</h3>
+            <p>
+                La physique du modèle standard peut-être résumée de façon condensée dans l'expression de son lagrangien :
+                
+                <figure src="standard_model_lagrangian.png" title="Lagrangien du modèle standard">
+                    Lagrangien du modèle standard exprimé en fonction des champs de ses diverses particules. 
+                    Source : <a href="http://blogs.discovermagazine.com/cosmicvariance/2006/11/23/thanksgiving/#.V9L-09E2fCI">cosmic variance</a>.
+                </figure>
+                
+                <!--\begin{equation}
+                \mathcal{L}_{MS} = \mathcal{L}_{fermions} + \mathcal{L}_{mass} + \mathcal{L}_{gauge} + \mathcal{L}_{int}
+                \end{equation}
+                
+                Avec :
+                \begin{equation}
+                \mathcal{L}_{fermions} = \sum_{f \in \textrm{quarks,leptons}} i\phi^f_L \slashed{\partial} \phi^f_L + i\phi^f_R \slashed{\partial} \phi^f_R +\sum_{\nu \in (e,\mu,\tau)} i\nu^f_L \slashed{\partial} \nu^f_L
+                \end{equation}
+                
+                \begin{equation}
+                \mathcal{L}_{mass} = -v \left [ \sum_{f \in \textrm{quarks,leptons}} \lambda_ \right ]
+                \end{equation}-->
+                
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>modèle standard de la physique des particules</linkword>
+            <linkword>quarks</linkword>
+            <linkword>neutrinos</linkword>
+            <linkword>leptons</linkword>
+            <linkword>boson de Higgs</linkword>
+        </linkwords>
+    </appendix>
 
   <appendix id="theorie-grande-unification" uid="grand-unified-theory">
       <title>Théorie de Grande Unification</title>
