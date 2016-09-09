@@ -54,7 +54,7 @@
                             <h4>appendices</h4>
                             <ul>
                                 <xsl:for-each-group select="//appendices/appendix/linkwords/linkword[contains($text, .)]" group-by="../../@id">
-                                    <li><a href="/{$id}/{../../@id}/"><xsl:value-of select="."/></a></li>
+                                    <li><a href="/{$id}/{../../@id}/"><xsl:value-of select="../../title"/></a></li>
                                 </xsl:for-each-group>
                             </ul>
                             <h4>Références</h4>
