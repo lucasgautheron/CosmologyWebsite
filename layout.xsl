@@ -241,6 +241,15 @@
     <xsl:variable name="id" select="./@id"/>
     <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
   </xsl:template>
+  
+  <xsl:template name="disclaimer">
+    <xsl:param name="article" />
+    <xsl:if test="not($article/@ready=1 and $article/@reviewed=1)">
+      <div class="warning">
+        La rédaction de contenu n'est pas achevée. Les informations peuvent être incomplètes ou contenir des erreurs.
+      </div>
+    </xsl:if>
+  </xsl:template>
 
   <xsl:template name="common-header">
     <meta charset="utf-8" />
@@ -453,6 +462,9 @@
       
     <div id="main">
       <div id="content">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="." />
+        </xsl:call-template>
         <div id="horizontal-timeline">
           <ul>
           <xsl:for-each select="/root/events/event[@content-id=$uid]">
@@ -552,6 +564,9 @@
       </div>
     <div id="main"> 
       <div id="content">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="$pagecontent" />
+        </xsl:call-template>
         <div id="horizontal-timeline">
           <ul>
           <xsl:for-each select="/root/events/event[@content-id=$cuid]">
@@ -609,6 +624,9 @@
         </div>
         
         <div id="appendix">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="$appendixcontent" />
+        </xsl:call-template>
         <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
         <xsl:variable name="appendixtext">
           <content id="{$pagecontent/@id}">
@@ -647,6 +665,9 @@
   </head>
   <body>
     <div id="appendix">
+      <xsl:call-template name="disclaimer">
+        <xsl:with-param name="article" select="." />
+      </xsl:call-template>
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" />
       <xsl:for-each select="./text//note">
