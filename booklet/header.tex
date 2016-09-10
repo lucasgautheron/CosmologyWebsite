@@ -1,0 +1,74 @@
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{eqnarray}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{esvect}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[french,english]{babel}
+\usepackage{endnotes}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\usepackage{float}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[outdir=./]{epstopdf}
+\usepackage{psfrag}
+\usepackage{subfig}
+
+\usepackage{feynmp-auto}
+
+\makeatletter
+\def\endfmffile{%
+  \fmfcmd{\p@rcent\space the end.^^J%
+          end.^^J%
+          endinput;}%
+  \if@fmfio
+    \immediate\closeout\@outfmf
+  \fi
+  \IfFileExists{\thefmffile.mp}{\immediate\write18{mpost \thefmffile}}{}
+  \let\thefmffile\relax
+}
+\makeatother
+
+% Déclarations
+
+
+
+% Commandes
+
+% d droit
+\newcommand{\dd}{ \mathop{}\mathopen{}\mathrm{d}}
+
+% opérateurs vectoriels
+\newcommand{\grad}{\vec{\nabla}}
+%\newcommand{\div}{\nabla \cdot}
+\newcommand{\rot}{\vec{\nabla} \times }
+
+% bra ket
+\newcommand{\ket}[1]{|{#1}\rangle}
+\newcommand{\bra}[1]{\langle{#1}|}
+
+\newcommand{\sket}[1]{{#1}\rangle}
+\newcommand{\sbra}[1]{\langle{#1}}
+
+% Résidus
+\DeclareMathOperator*{\res}{Res}
+
+% displaystyle
+\newcommand{\dint}{\displaystyle \int}
+\newcommand{\dsum}{\displaystyle \sum}
+
+% frame
+\tdplotsetmaincoords{60}{110}
+
+%define polar coordinates for some vector
+%TODO: look into using 3d spherical coordinate system
+\pgfmathsetmacro{\rvec}{.8}
+\pgfmathsetmacro{\thetavec}{-30}
+\pgfmathsetmacro{\phivec}{-90}

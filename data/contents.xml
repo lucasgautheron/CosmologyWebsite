@@ -772,7 +772,7 @@
                         <b>FIRAS</b> : "Far Infrared Absolute Spectrophotometer". Réalise des mesures d'intensité entre $\lambda = 0,1$ mm et $\lambda = 5$ mm. 
                     </li>
                     <li>
-                        <b>DMR</b> :  "Differential Microwave Radiometers". 6 radiomètres différentiels mesurent la différence de rayonnement entre deux directions séparées de 60° avec une ouverture de 7°, à trois longueurs d'onde pour lesquels la pollution galactique est réduite (31 GHz, 53 GHz, 90 GHz). 
+                        <b>DMR</b> :  "Differential Microwave Radiometers". 6 radiomètres différentiels mesurent la différence de rayonnement entre deux directions séparées de 60$^{\circ}$ avec une ouverture de 7$^{\circ}$, à trois longueurs d'onde pour lesquels la pollution galactique est réduite (31 GHz, 53 GHz, 90 GHz). 
                     </li>
                 </ul>
                 
@@ -914,7 +914,7 @@
                 En 2001, le satellite WMAP, pour une mission organisée par la NASA, (Wilkinson Microwave Anisotropy Probe) est lancé et mis sur obite au point de Lagrange L2, à environ 1,5 million de kilomètres de la Terre.
                 Ce satellite utilise des radiomètres différentiels pour mesurer les différences d'intensité du flux électromagnétique entre deux directions angulaires sur 5 bandes de fréquences comprises entre 22 et 90 GHz. Ceux-ci réalisent des mesures dans deux directions de polarisation différentes.
                 Le diamètre des réflecteurs employés est d'environ 1,5 m.
-                L'appareil est capable de mesurer des différences de température à une précision de 20 $\mu K$ et avec une résolution angulaire comprise entre 0,2° et 1° selon la longueur d'onde observée.
+                L'appareil est capable de mesurer des différences de température à une précision de 20 $\mu K$ et avec une résolution angulaire comprise entre 0,2$^{\circ}$ et 1$^{\circ}$ selon la longueur d'onde observée.
                 La prise de données dure 9 ans, jusqu'en 2010, et fournit les cartes de température du fond diffus cosmologique les plus précises alors. Une description très complète de l'expérience est disponible à l'adresse <a href="http://map.gsfc.nasa.gov/mission/">http://map.gsfc.nasa.gov/mission/</a>.
             </p>
             <p>
@@ -945,7 +945,7 @@
                 Lancé en 2009 à Kourou, le satellite Planck a collecté des données jusqu'en 2013, avec une extrême précision.
                 Il est constitué de deux appareils de mesures principaux, le premier étant le Low Frequency Instrument mesurant l'intensité électromagnétique à des fréquences similaires à celles détectées par COBE et WMAP (30, 44 et 70 GHz) et un instrument haute fréquence (6 fréquences entre 100 et 857 GHz).
                 Pour atteindre le degré de précision requis, certains appareils sont refroidis à une température de 0,1 K. 
-                La précision angulaire est comprise entre 0,1° et 0.5° selon la fréquence d'observation.
+                La précision angulaire est comprise entre 0,1$^{\circ}$ et 0.5$^{\circ}$ selon la fréquence d'observation.
             </p>
             
             <p>
@@ -955,7 +955,7 @@
                     <ref doi="10.1051/0004-6361/201321529" />
                 </figure>
                 
-                <figure src="planck_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique comparé au modèle $\Lamdda$CDM">
+                <figure src="planck_power_spectrum.svg" title="Spectre de puissance du fond diffus cosmologique comparé au modèle $\Lambda$CDM">
                     <ref doi="10.1051/0004-6361/201525830" />
                 </figure>
                 
