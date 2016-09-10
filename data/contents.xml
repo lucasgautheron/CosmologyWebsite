@@ -228,7 +228,9 @@
     
     <content id="nucleosynthese-primordiale-1" uid="primordial-nucleosynthesis-1" type="timeline" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
-        <image>nucleosynthese.jpg</image>
+        <image src="george_gamow.jpg">
+            George Gamow, précurseur de la nucléosynthèse primordiale.
+        </image>
         <color>#32a818</color>
         <text>
             <h3>La synthèse des éléments</h3>
@@ -505,7 +507,7 @@
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
     	<title>Réintroduction de la nucléosynthèse primordiale</title>
-    	<image>nucleosynthese_bigbang.jpg</image>
+    	<image src="wagoner.jpg">De gauche à droite : Robert Wagoner, William Fowler, Fred Hoyle, Donald Clayton (Caltech).</image>
     	<text>
     	    <p>
     	        Momentanément oubliée après le succès de la nucléosynthèse stellaire, la nucléosynthèse primordiale, c'est-à-dire la formation de noyaux ayant eu lieu durant le Big-Bang, a connu un grand regain d'intérêt après la découverte du fond diffus cosmologique. Non seulement celui-ci confirme que l'Univers était beaucoup plus chaud dans le passé, et probablement suffisamment pour que des réactions nucléaires aient eu lieu à grande échelle, mais en plus la mesure de sa température est une contrainte expérimentale supplémentaire utile pour mieux tester ces modèles.
