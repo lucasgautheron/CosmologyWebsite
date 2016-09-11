@@ -249,6 +249,17 @@
     \frontmatter                            % only in book class (roman page #s)
     \maketitle  
     % Print title page.
+    
+    \chapter*{Remerciements}
+    
+    \begin{itemize}
+    \item \href{http://lapth.cnrs.fr/pg-nomin/taillet/}{Richard Taillet}, bien sûr, qui m'a encadré pendant plusieurs mois et qui a permis de lancer ce projet.
+    \item \href{https://www.scalawilliam.com/}{William Vykintas Narmontas}, pour ses précieux conseils lors de la réalisation technique du site.
+    \item \href{http://www.coepp.org.au/people/martin-white}{Martin White}, qui a accepté de répondre à mes questions, malgré un calendrier chargé.
+    \item Le \href{http://lapth.in2p3.fr/}{LAPTh}, le \href{http://lapp.in2p3.fr/}{LAPP} et le \href{http://lpnhe.in2p3.fr/}{LPNHE} pour leur accueil.
+    \end{itemize}
+    
+    
     \chapter*{Avant-Propos}
     
     \section*{Pourquoi la cosmologie ?}
