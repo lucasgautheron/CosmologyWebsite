@@ -1712,11 +1712,21 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \end{equation}
                 
             </p>
+            <h3>Couplage de Yukawa et terme de masse, mécanisme de Brout-Englert-Higgs</h3>
+            <p>
+                Soit un champ fermionique $\psi$ couplé à un champ scalaire $\phi$ via un terme de Yukawa dans le Lagrangian, $\mathcal{L} \supset - g\psi \phi \bar{\psi}$. Alors autour d'une position d'équilibre $\phi_0$, en effecutant la transformation $\phi \to \phi_0 + \phi$, ce terme devient :
+                \begin{equation}
+                -g\phi_0 \psi \bar{\psi} - g\phi \psi \bar{\psi} 
+                \end{equation}
+                
+                Le premier terme est équivalent à une terme de masse $m = g\phi_0$. C'est par ce mécanisme (mécanisme de Brout-Englert-Higgs) que le Higgs donne une masse aux fermions, avec $\phi_0 = v = $ 246 GeV, la 'vacuum expectation value' du Higgs. 
+            </p>
         </text>
         <linkwords>
             <linkword>brisure de symétrie</linkword>
             <linkword>brisure spontanée de symétrie</linkword>
             <linkword>boson de Nambu-Goldstone</linkword>
+            <linkword>mécanisme de Brout-Englert-Higgs</linkword>
         </linkwords>
     </appendix>
     
