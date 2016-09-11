@@ -92,7 +92,7 @@
       <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
         et al.
       </xsl:if>
-      &#160;<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />)
+      &#160;<xsl:value-of select="substring(($ref//fn:string[@key='publishedDate'])[1], 1, 4)" />)
     </a>
   </xsl:template>
   
@@ -125,12 +125,39 @@
         </xsl:for-each>
         <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
           et al.
-        </xsl:if> &#160;(<xsl:value-of select="substring($ref//fn:string[@key='publishedDate'], 0, 5)" />),
+        </xsl:if> &#160;(<xsl:value-of select="substring(($ref//fn:string[@key='publishedDate'])[1], 1, 4)" />),
         <i><a href="{$ref//fn:string[@key='canonicalVolumeLink']}"><xsl:value-of select="$ref//fn:string[@key='title']" /></a></i>
         <a name="ref-{$isbn}"></a>
       </xsl:when>
     </xsl:choose>
     
+  </xsl:template>
+  
+  <xsl:template name="list-references">
+    <xsl:param name="text" />
+    <xsl:if test="count($text//ref)">
+      <h3>Références</h3>
+      <div class="further-readings">
+        <ul>
+          <xsl:for-each-group select="$text//ref[@doi]" group-by="@doi">
+            <li>
+              <xsl:call-template name="ref-description">
+                <xsl:with-param name="doi" select="./@doi" />
+                <xsl:with-param name="isbn" select="''" />
+              </xsl:call-template>
+            </li>
+          </xsl:for-each-group>
+          <xsl:for-each-group select="$text//ref[@isbn]" group-by="@isbn">
+            <li>
+              <xsl:call-template name="ref-description">
+                <xsl:with-param name="doi" select="''" />
+                <xsl:with-param name="isbn" select="./@isbn" />
+              </xsl:call-template>
+            </li>
+          </xsl:for-each-group>
+        </ul>
+      </div>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="figure">
@@ -213,6 +240,15 @@
   <xsl:template match="contentlink">
     <xsl:variable name="id" select="./@id"/>
     <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
+  </xsl:template>
+  
+  <xsl:template name="disclaimer">
+    <xsl:param name="article" />
+    <xsl:if test="not($article/@ready=1 and $article/@reviewed=1)">
+      <div class="warning">
+        La rédaction de contenu n'est pas achevée. Les informations peuvent être incomplètes ou contenir des erreurs.
+      </div>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="common-header">
@@ -426,6 +462,9 @@
       
     <div id="main">
       <div id="content">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="." />
+        </xsl:call-template>
         <div id="horizontal-timeline">
           <ul>
           <xsl:for-each select="/root/events/event[@content-id=$uid]">
@@ -467,27 +506,9 @@
           </xsl:for-each>
         </div>
         
-        <h3>Références</h3>
-        <div class="further-readings">
-          <ul>
-            <xsl:for-each-group select="./text//ref[@doi]" group-by="@doi">
-              <li>
-                <xsl:call-template name="ref-description">
-                  <xsl:with-param name="doi" select="./@doi" />
-                  <xsl:with-param name="isbn" select="''" />
-                </xsl:call-template>
-              </li>
-            </xsl:for-each-group>
-            <xsl:for-each-group select="./text//ref[@isbn]" group-by="@isbn">
-              <li>
-                <xsl:call-template name="ref-description">
-                  <xsl:with-param name="doi" select="''" />
-                  <xsl:with-param name="isbn" select="./@isbn" />
-                </xsl:call-template>
-              </li>
-            </xsl:for-each-group>
-          </ul>
-        </div>
+        <xsl:call-template name="list-references">
+          <xsl:with-param name="text" select="./text" />
+        </xsl:call-template>
       
         <h3>En savoir plus</h3>
         <div class="further-readings">
@@ -543,6 +564,9 @@
       </div>
     <div id="main"> 
       <div id="content">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="$pagecontent" />
+        </xsl:call-template>
         <div id="horizontal-timeline">
           <ul>
           <xsl:for-each select="/root/events/event[@content-id=$cuid]">
@@ -584,18 +608,9 @@
           </xsl:for-each>
         </div>
         
-        <h3>Références</h3>
-        <div class="further-readings">
-          <ul>
-          <xsl:for-each-group select="$pagecontent/text//ref[@doi]" group-by="@doi">
-            <li>
-              <xsl:call-template name="ref-description">
-                <xsl:with-param name="doi" select="./@doi" />
-              </xsl:call-template>
-            </li>
-          </xsl:for-each-group>
-          </ul>
-        </div>
+        <xsl:call-template name="list-references">
+          <xsl:with-param name="text" select="$pagecontent/text" />
+        </xsl:call-template>
       
         <h3>En savoir plus</h3>
         <div class="further-readings">
@@ -609,6 +624,9 @@
         </div>
         
         <div id="appendix">
+        <xsl:call-template name="disclaimer">
+          <xsl:with-param name="article" select="$appendixcontent" />
+        </xsl:call-template>
         <h2 class="title"><xsl:value-of select="$appendixcontent/title" /></h2>
         <xsl:variable name="appendixtext">
           <content id="{$pagecontent/@id}">
@@ -618,7 +636,11 @@
         <div class="text"><xsl:apply-templates select="$appendixtext/content/text" />
           <xsl:for-each select="$appendixtext/content/text//note">
           <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
-        </xsl:for-each></div>
+        </xsl:for-each>
+        </div>
+        <xsl:call-template name="list-references">
+          <xsl:with-param name="text" select="$appendixcontent/text" />
+        </xsl:call-template>
         </div>
 
         <div id="image" class="hidden">
@@ -643,11 +665,19 @@
   </head>
   <body>
     <div id="appendix">
+      <xsl:call-template name="disclaimer">
+        <xsl:with-param name="article" select="." />
+      </xsl:call-template>
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" />
       <xsl:for-each select="./text//note">
         <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
-      </xsl:for-each></div>
+      </xsl:for-each>
+      
+        <xsl:call-template name="list-references">
+          <xsl:with-param name="text" select="./text" />
+        </xsl:call-template>
+      </div>
     </div>
   </body>
 </html>

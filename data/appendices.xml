@@ -4,7 +4,7 @@
     <!-- PHYSICISTS -->
     <!--            -->
 
-    <appendix id="albert-einstein" uid="albert-einstein">
+    <appendix id="albert-einstein" uid="albert-einstein" ready="1" reviewed="1">
         <title>Albert Einstein</title>
         <text><p>1879-1965. Physicien d'abord Allemand puis Helvético-Américain.</p>
         
@@ -17,7 +17,7 @@
     </appendix>
     
     
-    <appendix id="vesto-slipher" uid="vesto-slipher">
+    <appendix id="vesto-slipher" uid="vesto-slipher" ready="1" reviewed="1">
         <title>Vesto Slipher</title>
         <text><p>1875-1969. Astrononome Américain. </p>
         
@@ -28,7 +28,7 @@
         </linkwords>
     </appendix>
     
-    <appendix id="henrietta-leavitt" uid="henrietta-leavitt">
+    <appendix id="henrietta-leavitt" uid="henrietta-leavitt" ready="1" reviewed="1">
         <title>Henrietta Leavitt</title>
         <text><p>1868-1921. Astrononome Américaine. </p>
             
@@ -81,7 +81,7 @@
         </linkwords>
     </appendix>
     
-       <appendix id="fred-hoyle" uid="fred-hoyle">
+       <appendix id="fred-hoyle" uid="fred-hoyle" ready="1" reviewed="1">
         <title>Fred Hoyle</title>
         <text><p>1915-2001. Physicien britannique. </p>
             
@@ -99,7 +99,7 @@
     <!-- EQUATIONS -->
     <!--           -->
 
-    <appendix id="equation-einstein" uid="einstein-equation">
+    <appendix id="equation-einstein" uid="einstein-equation" ready="1">
         <title>Équation d'Einstein</title>
         <text><p>L'équation d'Einstein est l'équation centrale de la Relativité Générale : elle relie le tenseur énergie-impulsion $T^{\mu\nu}$ à la géométrie de l'espace-temps et plus exactement à sa courbure via le tenseur de Ricci $R^{\mu\nu}$. Dans sa forme générale l'équation prend la forme suivante :
 
@@ -114,7 +114,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
 
-    <appendix id="tenseur-energie-impulsion" uid="stress-energy-tensor">
+    <appendix id="tenseur-energie-impulsion" uid="stress-energy-tensor" ready="1">
         <title>Tenseur Énergie-Impulsion</title>
         <text><p>Le tenseur énergie-impulsion est, en relativité, un tenseur, ou plus exactement un champ tensoriel, représentant l'énergie et son flux en un point de l'espace-temps. Il s'agit d'un tenseur de rang 2, en général noté $T^{\mu\nu}$. La composante $T^{\mu\nu}$ est en fait le flux à travers une hypersurface normale à l'axe $\nu$ de la composante $\mu$ du quadrivecteur énergie-impulsion. </p>
           <h3>Exemples</h3>
@@ -153,7 +153,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
 
-    <appendix id="tenseur-ricci" uid="ricci-tensor">
+    <appendix id="tenseur-ricci" uid="ricci-tensor" ready="1">
         <title>Tenseur de Ricci</title>
         <text><p>Le tenseur est Ricci, noté $R^{\mu\nu}$, est, en géométrie Riemanienne, un tenseur de rang 2 décrivant la courbure d'une variété Riemanienne (objet mathématique représentant l'espace-temps).</p>
             <h3>Définition</h3>
@@ -179,7 +179,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
 
-    <appendix id="transformation-lorentz" uid="lorentz-transformation">
+    <appendix id="transformation-lorentz" uid="lorentz-transformation" ready="1">
         <title>Transformation de Lorentz</title>
         <text><p>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. Elle découle naturellement de l'hypothèse selon laquelle un corps se déplaçant à la vitesse de la lumière $c$ dans un tel référentiel doit se déplacer à cette vitesse dans tous ces référentiels.</p>
         
@@ -223,7 +223,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="equations-friedmann" uid="friedmann-equations">
+    <appendix id="equations-friedmann" uid="friedmann-equations" ready="1">
         <title>Équations de Friedmann</title>
         <text><p>Les équations de Friedmann sont les équations qui décrivent un Univers homogène isotrope obéissant aux équations d'Einstein. Pour un univers de facteur d'échelle $a$, de rayon de courbure $R$ et constitué de différentes formes d'énergie de densités $\rho_i$, de pression $P_i$ et d'équation d'état $f_i(\rho_i,P_i) = 0$ :\begin{equation}\left\{\begin{matrix}
             \dot{a}^2-\dfrac{8 \pi G}{3c^2} \displaystyle \sum_i \rho_i a^2 &amp; = &amp; \dfrac{kc^2}{R^2}  &amp; \mbox{ (1)}\\ 
@@ -442,39 +442,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-<!--    <appendix id="104_poussiere">
-        <title>Univers de poussière</title>
-        <text><p>Dans un tel univers, $P=0$. L'équation (2) donne par ailleurs $\rho a^3 = \mbox{ cste } = \rho_0$. De là le facteur d'échelle obéit à l'équation :
-            \begin{equation}
-            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
-            \end{equation}
-            Cette équation ressemble beaucoup à l'équation newtonienne du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ :
-            
-            \begin{equation}
-            \dfrac{1}{2}\dot{x}^2 - \dfrac{GM}{x} = E
-            \end{equation}
-            
-            Cela est naturel puisque la matière froide interagit uniquement de façon gravitationnelle et non relativiste ce qui correspond au champ d'application de la mécanique newtonienne.
-            
-            Il y a alors 3 solutions possibles :
-            <ul>
-                <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a(t) = \left [ a_i^{3/2} + \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i) \right ]^{2/3}
-                    Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" </li>
-                <li>Pour un Univers hyperbolique ($k&lt;0$), la solution est alors :
-                \begin{equation}
-                \end{equation}</li>
-                <li>Pour un Univers hyperbolique ($k&lt;0$), la solution est alors :
-                    \begin{equation}
-                    \end{equation}</li>
-            </ul>
-        </p>
-        </text>
-        <linkwords>
-            <linkword>Univers de poussière</linkword>
-        </linkwords>
-    </appendix>-->
-    
-    <appendix id="principe-cosmologique" uid="cosmic-principle">
+    <appendix id="principe-cosmologique" uid="cosmic-principle" ready="1">
         <title>Principe Cosmologique</title>
         <text><p>Le principe cosmologique est un ensemble d'hypothèses faites sur l'Univers à grande échelle. Ces hypothèses sont les suivantes :</p> 
         <p><b>L'Univers est homogène</b> : A chaque instant les propriétés de l'Univers sont identiques en tout point de l'espace</p>
@@ -486,7 +454,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="univers-einstein" uid="einstein-universe">
+    <appendix id="univers-einstein" uid="einstein-universe" ready="1">
         <title>L'Univers d'Einstein</title>
         <text><p>L'univers d'Einstein (aussi appelé "modèle A") est un modèle d'Univers statique essentiellement constitué de matière non relativiste. On montre (par exemple en partant des équations de Friedmann) que dans un tel Univers, avec constante cosmologique, le facteur d'échelle $a$ vérifie l'équation :
         \begin{equation}
@@ -515,7 +483,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="facteur-d-echelle" uid="scale-factor">
+    <appendix id="facteur-d-echelle" uid="scale-factor" ready="1">
         <title>Facteur d'échelle</title>
         <text><p>Le facteur d'échelle à l'instant $t$ noté $a(t)$ est le rapport entre la distance séparant deux points immobiles dans l'espace homogène isotrope à l'instant $t$ et cette distance à un instant de référence $t_0$ tel que $a(t_0)=1$. Ainsi, dans un univers en expansion, $a$ augmente.</p>
             <p>Dans une métrique homogène isotrope, le facteur d'échelle intervient dans le tenseur métrique. L'intervalle $ds^2$ est alors donné par :
@@ -548,7 +516,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="univers-einstein-de-sitter" uid="einstein-de-sitter-universe">
+    <appendix id="univers-einstein-de-sitter" uid="einstein-de-sitter-universe" ready="1">
         <title>Univers d'Einstein-de Sitter </title>
         <text><p>L'Univers d'Enstein-De Sitter est un modèle cosmologique minimal proposé au début des années 1930 par les deux physiciens ayant pour but de répondre aux observations faites à l'époque. Un tel Univers doit être en expansion, plat (pas de signe de courbure à l'époque), constitué uniquement de matière non relativiste et sans constante cosmologique.</p>
             <p>La solution est donnée par les équations de Friedmann :
@@ -608,7 +576,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="distance-luminosite" uid="luminosity-distance">
+    <appendix id="distance-luminosite" uid="luminosity-distance" ready="1">
         <title>Distance de luminosité</title>
         <text>
             <p>
@@ -747,7 +715,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="distances-en-cosmologie" uid="distances-in-cosmology">
+    <appendix id="distances-en-cosmologie" uid="distances-in-cosmology" ready="1">
         <title>Distances en cosmologie</title>
         <text>
             <p>En cosmologie, la notion générale de "distance" devient floue. Il est facile de s'en rendre compte en remarquant déjà que dans un Univers en expansion, si deux objets sont "immobiles" par rapport à l'expansion (leurs coordonnées comobiles ne changent pas, comme les coordonnées angulaires d'un point à la surface d'un ballon qui gonfle ne changent pas), leur distance en terme de ces coordonnées (dites "comobile") ne doit pas varier. Pourtant, du fait de l'expansion, la distance effective entre ces deux objets augmente. 
@@ -780,7 +748,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="modele-lambda-cdm" uid="lambda-cdm-model">
+    <appendix id="modele-lambda-cdm" uid="lambda-cdm-model" ready="1">
         <title>Modèle Lambda CDM</title>
         <text>
             <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Deux composantes dominent : la constante cosmologique (équivalente à une énergie du vide appelée "énergie noire"), et de la matière à pression nulle (cold) n'interragissant pas avec les photons du fond diffus cosmologique (dark matter).</p>
@@ -791,7 +759,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="tenseur-de-riemann" uid="riemann-tensor">
+    <appendix id="tenseur-de-riemann" uid="riemann-tensor" ready="1">
         <title>Tenseur de Riemann</title>
         <text><p>Le tenseur de Riemann est un tenseur d'ordre 4 et décrit la courbure d'une variété Riemanienne. Pour une surface infinitésimal $dS^{\alpha\beta}$, la composante $\mu$ d'un vecteur $X$ varie de par transport parallèle le long du contour de cette surface d'une quantité :
         \begin{equation}
@@ -807,7 +775,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <!-- CONSTANTS -->
     <!--           -->
 
-    <appendix id="constante-cosmologique" uid="cosmological-constant">
+    <appendix id="constante-cosmologique" uid="cosmological-constant" ready="1">
         <title>Constante cosmologique</title>
         <text><p>La constante cosmologique notée $\Lambda$ est un paramètre introduit par Einstein dans son équation afin qu'elle autorise un Univers fait de matière non relativiste à demeurer <i>statique</i>. L'équation d'Einstein en présence de cette constante devient :
             \begin{equation}
@@ -848,7 +816,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
-    <appendix id="constante-de-hubble" uid="hubble-constant">
+    <appendix id="constante-de-hubble" uid="hubble-constant" ready="1">
         <title>Constante de Hubble</title>
         <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z=\lambda_{rec}/\lambda_{em}$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v/c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
             <p>Démonstration de la relation entre taux d'expansion et distance et de la loi de Hubble
@@ -923,7 +891,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
 
-    <appendix id="parametre-de-deceleration" uid="deceleration-parameter">
+    <appendix id="parametre-de-deceleration" uid="deceleration-parameter" ready="1">
         <title>Paramètre de décélération</title>
         <text>
           <p>Le paramètre de décélération noté $q$ est défini comme :
@@ -984,7 +952,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <!-- EXPERIMENTS -->
     <!--             -->
 
-    <appendix id="experience-michelson-morley" uid="michelson-morley-experiment">
+    <appendix id="experience-michelson-morley" uid="michelson-morley-experiment" ready="1">
         <title>Expérience de Michelson-Morley</title>
         <text><p>L'expérience de Michelson-Morley est une expérience interférométrique réalisée par Michelson et Morley et qui avait pour but à l'époque de calculer la vitesse de la Terre par rapport à un hypothétique "éther". Le résultat négatif, à savoir que tout se passait comme si la Terre était immobile dans l'éther, conduisit avec d'autres constatations expérimentales à l'invention de la relativité restreinte.</p>
         <!--<p>TODO: calculs + schémas. relier aux déplacements attendus etc</p>-->
@@ -995,7 +963,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
 
-    <appendix id="atlas" uid="atlas">
+    <appendix id="atlas" uid="atlas" ready="1">
         <title>ATLAS</title>
         <text><p><b>ATLAS</b> (A Toroidal Large ApparatuS) est un détecteur installé sur le LHC (Large Hadron Collider), le plus grand accélérateur de particules au monde. Cette expérience étudie les produits de collisions entre deux faisceaux de protons à une énergie de centre de masse de plusieurs TeV (8 TeV jusqu'en 2012, 13 TeV à partir de 2015). Cette expérience a notamment permis la découverte du boson de Higgs en 2012 conjointement avec CMS, un autre détecteur du LHC.</p>
         <h4>Recherche de matière noire</h4>
@@ -1023,7 +991,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     <!-- EFFECTS -->
     <!--         -->
     
-    <appendix id="effet-doppler" uid="doppler-effect">
+    <appendix id="effet-doppler" uid="doppler-effect" ready="1">
         <title>Effet Doppler</title>
         <text><p>L'effet Doppler caractérise le fait qu'un observateur en mouvement par rapport à une source émettant une onde perçoit celle-ci à une fréquence différente de la fréquence d'émission. Cet effet concerne aussi bien les ondes mécaniques comme les ondes sonores que les ondes électromagnétiques (donc la lumière). Si la source et l'observateur se rapprochent, la fréquence de réception est supérieure à la fréquence d'émission. Si au contraire la source s'éloigne de l'observateur, alors la fréquence du signal reçue est inférieure à celle perçue par la source. <figure src="doppler_effect.gif" title="Représentation graphique de l'effet Doppler.">Source : <a href="https://commons.wikimedia.org/wiki/File:Doppler_Effect.gif">Wikipédia</a></figure></p>
             <p>Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v constante par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que : 
@@ -1046,7 +1014,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     <!-- OBJECTS -->
     <!--         -->
     
-    <appendix id="cepheides" uid="cepheides">
+    <appendix id="cepheides" uid="cepheides" ready="1">
         <title>Céphéides</title>
         <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
         <p>La luminosité intrinsèque (c'est-à-dire la puissance rayonnée) des céphéides présente la particularité de ne dépendre que de leur période de variation lumineuse (la relation dépendant en revanche du type de céphéide dont il s'agit). Or, le flux reçu par unité de surface à une distance $d$ d'une source lumineuse est égal à $\Phi = L/(4\pi d^2)$ où $L$ est sa luminosité. En observant une céphéide, on connait à la fois $L$ par le biais de sa période $T$ facilement observable (de l'ordre de grandeur de la journée) et d'autre part  la puissance reçue par unité de surface. Cela donne donc la distance $d = \sqrt{\dfrac{L}{4 \pi \Phi}}$. On appelle de tels objets, pour lesquel la luminosité intrinsèque est connue, des "chandelles standards". </p>
@@ -1066,7 +1034,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="fond-diffus-cosmologique" uid="cosmic-microwave-background">
+    <appendix id="fond-diffus-cosmologique" uid="cosmic-microwave-background" ready="1">
         <title>Fond diffus cosmologique</title>
         <text>
             <p>Le fond diffus cosmologique (ou "cosmic microwave background", souvent abbrégé CMB) est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière (environ 375 000 ans après le début du Big-Bang). Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone. Il prend son origine dans l'état chaud de l'Univers, et a été libéré lorsque la densité de protons et électrons est devenue suffisamment faible avec le refroidissement pour que les photons interagissent peu avec la matière et voyagent librement. Cette transition est appelée "découplage" et est survenue à $z = 1100$ environ.</p>
@@ -1155,7 +1123,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     </appendix>
     
     
-    <appendix id="epaisseur-optique" uid="optical-depth">
+    <appendix id="epaisseur-optique" uid="optical-depth" ready="1">
         <title>Épaisseur optique</title>
         <text>
             <p>
@@ -1178,7 +1146,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="baryogenese" uid="baryogenesis">
+    <appendix id="baryogenese" uid="baryogenesis" ready="1">
         <title>Baryogénèse</title>
         <text>
             <p>
@@ -1191,7 +1159,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="supernovae-ia" uid="ia-supernovae">
+    <appendix id="supernovae-ia" uid="ia-supernovae" ready="1">
         <title>Supernovas Ia</title>
         <text>
            <h3></h3>
@@ -1455,7 +1423,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     <!--  MISC   -->
     <!--         -->
     
-    <appendix id="grand-debat" uid="great-debate">
+    <appendix id="grand-debat" uid="great-debate" ready="1">
         <title>Le grand débat</title>
         <text><p>Le "grand débat" (en anglais: "great debate") fait référence à un débat donné en 1920 entre les astronomes Heber Curtis et Harlow Shapley à propos de la situation des "nébuleuses spirales" (qu'on appelle aujourd'hui "galaxies spirales") vis à vis de la Voie Lactée. Pour premier, ces nébuleuses étaient des galaxies indépendantes semblables à la Voie Lactée. Pour le second, elles appartenaient au contraire à la Voie Lactée qui aurait en fait été l'ensemble de l'Univers. La raison pour laquelle la réponse n'était pas évidente à l'époque était l'impossibilité de déterminer la distance de tels objets. Très vite cependant, les travaux d'Hubble permirent de trancher grâce à l'observation des céphéides : les nébuleuses spirales étaient bien plus distantes que les autres objets alors observés, bien au-delà du plan galactique de la Voie Lactée.</p>
         </text>
@@ -1464,7 +1432,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="principe-d-equivalence" uid="equivalence-principle">
+    <appendix id="principe-d-equivalence" uid="equivalence-principle" ready="1">
         <title>Principe d'équivalence</title>
         <text><p>Le principe d'équivalence formule de façon générale l'idée selon laquelle la nature d'un objet n'affecte pas la façon dont il se meut dans un champ de gravitation. Cette idée était déjà présente en mécanique Newtonienne, dans laquelle un corps de masse $m$ dans un champ de gravitation $\vec{g}$ obéit à la troisième loi de Newton $m_i\dfrac{d\vec{v}}{dt} = m_g\vec{g}$. La masse inertielle $m_i$ étant considérée comme identique à la masse $m_g$ chez Newton, il vient que pour tout corps $\dfrac{d\vec{v}}{dt} = \vec{g}$. 
         </p>
@@ -1480,7 +1448,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="magnitude" uid="magnitude">
+    <appendix id="magnitude" uid="magnitude" ready="1">
         <title>Magnitude</title>
         <text><p>La <b>magnitude apparente</b> $m$ d'un objet céleste est une quantité mesurant le rapport entre le flux lumineux qu'un appareil reçoit de cet objet et un flux lumineux de référence (la définition actuelle est le flux émis par l'étoile Vega reçu sur Terre).
             Plus exactement :
@@ -1509,7 +1477,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="probleme-platitude" uid="flatness-problem">
+    <appendix id="probleme-platitude" uid="flatness-problem" ready="1">
       <title>Problème de la platitude</title>
       <text>
           <p>
@@ -1562,7 +1530,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
       </linkwords>
     </appendix>
     
-     <appendix id="probleme-horizon" uid="horizon-problem">
+    <appendix id="probleme-horizon" uid="horizon-problem" ready="1">
       <title>Problème de l'Horizon</title>
       <text>
          <p>
@@ -1645,6 +1613,51 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
            <linkword>Problème de l'Horizon</linkword>
       </linkwords>
     </appendix>
+    
+    <appendix id="modele-standard" uid="standard-model" ready="1">
+        <title>Modèle standard de la physique des particules</title>
+        <text>
+            <p>Le modèle standard de la physique des particules est le modèle inscrit dans le cadre de la théorie quantique des champs qui décrit les interactions électromagnétique, faible et forte.</p>
+            <h3>Contenu</h3>
+            <p>
+                <figure src="standard_model.png" title="Élements du modèle standard">
+                    Particules élémentaires du modèle standard. 
+                    Source : <a href="http://www.physik.uzh.ch/">physik.uzh.ch</a>.
+                </figure>
+            </p>
+            <h3>Lagrangien du modèle standard</h3>
+            <p>
+                La physique du modèle standard peut-être résumée de façon condensée dans l'expression de son lagrangien :
+                
+                <figure src="standard_model_lagrangian.png" title="Lagrangien du modèle standard">
+                    Lagrangien du modèle standard exprimé en fonction des champs de ses diverses particules. 
+                    Source : <a href="http://blogs.discovermagazine.com/cosmicvariance/2006/11/23/thanksgiving/#.V9L-09E2fCI">cosmic variance</a>.
+                </figure>
+                
+                <!--\begin{equation}
+                \mathcal{L}_{MS} = \mathcal{L}_{fermions} + \mathcal{L}_{mass} + \mathcal{L}_{gauge} + \mathcal{L}_{int}
+                \end{equation}
+                
+                Avec :
+                \begin{equation}
+                \mathcal{L}_{fermions} = \sum_{f \in \textrm{quarks,leptons}} i\phi^f_L \slashed{\partial} \phi^f_L + i\phi^f_R \slashed{\partial} \phi^f_R +\sum_{\nu \in (e,\mu,\tau)} i\nu^f_L \slashed{\partial} \nu^f_L
+                \end{equation}
+                
+                \begin{equation}
+                \mathcal{L}_{mass} = -v \left [ \sum_{f \in \textrm{quarks,leptons}} \lambda_ \right ]
+                \end{equation}-->
+                
+                
+            </p>
+        </text>
+        <linkwords>
+            <linkword>modèle standard de la physique des particules</linkword>
+            <linkword>quarks</linkword>
+            <linkword>neutrinos</linkword>
+            <linkword>leptons</linkword>
+            <linkword>boson de Higgs</linkword>
+        </linkwords>
+    </appendix>
 
   <appendix id="theorie-grande-unification" uid="grand-unified-theory">
       <title>Théorie de Grande Unification</title>
@@ -1707,7 +1720,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-  <appendix id="invariance-de-jauge" uid="gauge-invariance">
+    <appendix id="invariance-de-jauge" uid="gauge-invariance" ready="1">
       <title>Invariance de Jauge</title>
       <text>
          <p>Une invariance de jauge est la propriété d'un champ de pouvoir subir une transformation mathématique sans que cela n'en change les manifestations physiques. Les invariances imposent une certaine structure au champ et induisent des lois de conservations conformément au théorème de Noether.</p>
@@ -1768,7 +1781,7 @@ Et
       </linkwords>
     </appendix>
     
-      <appendix id="lentille-gravitationnelle" uid="gravitational-lensing">
+    <appendix id="lentille-gravitationnelle" uid="gravitational-lensing" ready="1">
       <title>Lentille gravitationnelle</title>
       <text>
          <p>L'effet de lentille gravitationnelle est la déviation de rayons lumineux approchant un astre massif. Cet effet, correctement prédit par la relativité générale, a été observé en 1919 par Eddington pendant une éclipse solaire.
@@ -1801,7 +1814,7 @@ Et
       </linkwords>
     </appendix>
     
-    <appendix id="probleme-hierarchie" uid="hierarchy-problem">
+    <appendix id="probleme-hierarchie" uid="hierarchy-problem" ready="1">
         <title>Problème de la hiérarchie</title>
         <text>
             <p>Le problème de la hiérarchie fait référence à la différence d'échelle d'énergie extrêmement élevée entre l'interaction électrofaible ($\sim$ 100 GeV) et l'interaction gravitationnelle ($\sim M_{planck} \sim 10^{19} $ GeV).
@@ -1853,8 +1866,7 @@ Et
                     fermion: {line: 'i1-v1-v2-o1'},
                     photon: {arc: 'v2-v1'},
                     symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
-                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
-                    t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
+                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p']}
                 </feynman>
             </p>
         </text>
@@ -1868,7 +1880,7 @@ Et
     <!-- THEORIES -->
     <!--          -->
 
-     <appendix id="supersymetrie" uid="supersymmetry">
+    <appendix id="supersymetrie" uid="supersymmetry" ready="1">
       <title>Supersymétrie</title>
       <text>
          <p>La supersymétrie est une théorie en physique des particules qui complète le modèle standard en associant à chaque particule une autre particule appelée superpartenaire. Les superpartenaires ont la propriété d'être des fermions si leur partenaire est un boson et vice-et-versa.
@@ -1882,7 +1894,7 @@ Et
       </linkwords>
     </appendix>
 
-     <appendix id="wimp" uid="wimp">
+    <appendix id="wimp" uid="wimp" ready="1">
       <title>WIMP</title>
       <text>
          <p>Les WIMP (Weakly Interacting Massive Particles, particules massives interagissant faiblement) sont des particules postulées afin de donner une réponse au problème de la matière noire, et en sont même des candidats privilégiés. En effet, leur masse ne doit pas être très éloignée de l'échelle électrofaible (au plus quelques centaines de TeV) et leur section-efficace d'interaction de l'ordre l'interaction faible : c'est le "miracle WIMP". A ce titre il existe un espoir de détecteur leur présence dans des accélérateurs de particules par exemple. De telles particules sont prédites par différentes théories telles que la supersymétrie.</p>
@@ -1967,7 +1979,7 @@ Et
       </linkwords>
      </appendix>
 
-     <appendix id="axions" uid="axions">
+    <appendix id="axions" uid="axions" ready="1">
       <title>Axions</title>
       <text>
         <p>

@@ -228,7 +228,9 @@
     
     <content id="nucleosynthese-primordiale-1" uid="primordial-nucleosynthesis-1" type="timeline" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
-        <image>nucleosynthese.jpg</image>
+        <image src="george_gamow.jpg">
+            George Gamow, précurseur de la nucléosynthèse primordiale.
+        </image>
         <color>#32a818</color>
         <text>
             <h3>La synthèse des éléments</h3>
@@ -364,7 +366,7 @@
     	    <p>
     	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
     	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique, par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
-    	        Malgré toutes ces précautions, les deux phyisiciens observèrent en mesurant le signal à une longueur d'onde de 7,35cm (4080 MHz) un bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
+    	        Malgré toutes ces précautions, les deux phyisiciens observèrent en mesurant le signal à une longueur d'onde de 7,35cm (4080 MHz) un bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique <ref isbn="0521372135" />.
     	    </p>
     	    
     	    <figure title="Antenne d'Holmdel" src="holmdel_antenna.jpg">
@@ -505,7 +507,7 @@
     
       <content id="nucleosynthese-primordiale-2" uid="primordial-nucleosynthesis-2" type="timeline">
     	<title>Réintroduction de la nucléosynthèse primordiale</title>
-    	<image>nucleosynthese_bigbang.jpg</image>
+    	<image src="wagoner.jpg">De gauche à droite : Robert Wagoner, William Fowler, Fred Hoyle, Donald Clayton (Caltech).</image>
     	<text>
     	    <p>
     	        Momentanément oubliée après le succès de la nucléosynthèse stellaire, la nucléosynthèse primordiale, c'est-à-dire la formation de noyaux ayant eu lieu durant le Big-Bang, a connu un grand regain d'intérêt après la découverte du fond diffus cosmologique. Non seulement celui-ci confirme que l'Univers était beaucoup plus chaud dans le passé, et probablement suffisamment pour que des réactions nucléaires aient eu lieu à grande échelle, mais en plus la mesure de sa température est une contrainte expérimentale supplémentaire utile pour mieux tester ces modèles.
@@ -564,7 +566,7 @@
     	        -->
     	        
     	        D'autres études similaires sont menées en accord avec ce résultat.
-    	        En 1967, Robert Wagoner, qui travaille à Caltech auprès de Fowler et Hoyle, publie les résultats d'une simulation impliquant 41 noyaux et 79 réactions faibles et nucléaires <ref doi="10.1086/149126" />.
+    	        En 1967, Robert Wagoner, qui travaille à Caltech auprès de Fowler et Hoyle <ref isbn="0521372135" />, publie les résultats d'une simulation impliquant 41 noyaux et 79 réactions faibles et nucléaires <ref doi="10.1086/149126" />.
     	        Les sections efficaces de toutes ces réactions n'étant pas aisées à déterminer, certaines sont estimées à partir d'autres données (comme les énergies de liaison).
     	        
     	        <figure src="nucleosynthesis_network.png" title="Réseau de réactions nucléaires employé par Wagoner">
@@ -751,9 +753,10 @@
     	            <li>Les <b>murs de domaine</b>. Certaines théories de grande unification comme SU(5) prédisent des brisures de symétrie discrète. Des interfaces entre des régions basculées dans des directions différentes après brisure (voir l'exemple de l'annexe brisure de symétrie), à cause de la forte discontinuité engendrée, devraient créer des phénomènes violents (par exemple l'émission d'ondes gravitationnelles très intenses). Ceci est en conflit avec les observations et exclue bon nombre de théories. </li>
     	        </ol>
 
-    	        
-
-                    <ref isbn="3718604906" /> <ref isbn="9780199665150" />  
+                    <ref doi="10.1103/RevModPhys.53.1" />.
+                    <!--<ref isbn="9783718604906" />--><ref doi="10.1063/1.881088" />
+                    <ref isbn="9780199665150" />
+                    <ref isbn="9780201328400" />
     	    </p>
     	</text>
         <further-readings>

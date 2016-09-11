@@ -143,6 +143,7 @@ div.figure img, div.feynman div.diagram
 
 div.figure .label { margin: 0.5em; font-weight: bold; }
 div.figure .caption { margin: 0.5em; text-align: left; font-size: 80%; }
+span.caption { width: 100%; padding: 0.5em; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
 
 div.spoiler
 {
@@ -156,7 +157,12 @@ div.spoiler div
     display: none;
 }
 
-span.caption { width: 100%; padding: 0.5em; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
+div.warning
+{
+    background-color: #FFDD00;
+    padding: 0.75em;
+    border: 2px dashed orange;
+}
 
 div.quote
 {

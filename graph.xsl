@@ -31,7 +31,7 @@
                         <li><h3><a href="/{$id}/"><xsl:value-of select="./title" /></a></h3>
                         <xsl:choose>
                         <xsl:when test="./@ready">
-                           <span class="label-color" style="background-color: #fcfc29;" title="ready">ready</span>
+                           <span class="label-color" style="background-color: blue;" title="ready">ready</span>
                         </xsl:when>
                         <xsl:otherwise>
                         </xsl:otherwise>
@@ -51,10 +51,28 @@
                                     <li><xsl:value-of select="."/></li>
                                 </xsl:for-each>
                             </ul>
-                            <h4>appendices</h4>
+                            <h4>Annexes</h4>
                             <ul>
                                 <xsl:for-each-group select="//appendices/appendix/linkwords/linkword[contains($text, .)]" group-by="../../@id">
-                                    <li><a href="/{$id}/{../../@id}/"><xsl:value-of select="."/></a></li>
+                                    <li><a href="/{$id}/{../../@id}/"> <xsl:value-of select="../../title"/></a>
+                                        <span class="label-color"></span>
+                                        
+                                        <xsl:choose>
+                                            <xsl:when test="../../@ready">
+                                                <span class="label-color" style="background-color: blue;" title="ready">ready</span>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        
+                                        <xsl:choose>
+                                            <xsl:when test="../../@reviewed">
+                                                <span class="label-color" style="background-color: #29fc29;" title="relecture faite">relecture faite</span>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <span class="label-color" style="background-color: #fc2929;" title="relecture en attente">relecture en attente</span>
+                                            </xsl:otherwise>
+                                        </xsl:choose></li>
                                 </xsl:for-each-group>
                             </ul>
                             <h4>Références</h4>
