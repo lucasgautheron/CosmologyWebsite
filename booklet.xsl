@@ -58,6 +58,20 @@
       <xsl:apply-templates />
       
   </xsl:template>
+  
+  <xsl:template match="ul">
+    \begin{itemize}
+    <xsl:apply-templates />
+    \end{itemize}
+  </xsl:template>
+  
+  <xsl:template match="ol">
+    \begin{enumerate}
+    <xsl:apply-templates />
+    \end{enumerate}
+  </xsl:template>
+  
+  <xsl:template match="li">\item <xsl:apply-templates /></xsl:template>
     
   <xsl:template match="a">\href{<xsl:value-of select="./@href" />}{<xsl:value-of select="." />}</xsl:template>
   
