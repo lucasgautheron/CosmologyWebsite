@@ -137,9 +137,14 @@
       \begin{figure}[H]
       \centering
       <xsl:variable name="extension" select="substring(./@src, string-length(./@src)-2, 3)" />
-      <xsl:if test="$extension = 'jpg' or $extension = 'png'">
-      \includegraphics[width=0.9\textwidth]{../images/<xsl:value-of select="./@src" />}
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="$extension = 'jpg' or $extension = 'png'">
+          \includegraphics[width=0.9\textwidth]{../images/<xsl:value-of select="./@src" />}
+        </xsl:when>
+        <xsl:when test="$extension = 'svg'">
+          \includesvg[width=0.9\textwidth]{../images/<xsl:value-of select="substring(./@src, 1, string-length(./@src)-4)" />}
+        </xsl:when>
+      </xsl:choose>
       \caption{\textbf{<xsl:value-of select="./@title" />}. <xsl:apply-templates select="text()" />}
       \end{figure}
   </xsl:template>
@@ -212,6 +217,7 @@
     \usepackage[T1]{fontenc}
     \usepackage{import}
     \subimport{.}{header}
+    \setsvg{svgpath = ../images/}
     
     
     \parindent0pt  \parskip10pt             % make block paragraphs
@@ -244,7 +250,16 @@
     \mainmatter                             % only in book class (arabic page #s)
     
     <xsl:for-each select="root/contents/content">
+        <xsl:variable name="cuid" select="./@uid"/>
         \chapter{<xsl:value-of select="./title" />}
+      
+        \begin{itemize}
+        <xsl:for-each select="/root/events/event[@content-id=$cuid]">
+            <xsl:sort select="./@date" />
+            \item \textbf{<xsl:value-of select="./@date" />} : <xsl:value-of select="." />
+        </xsl:for-each>
+        \end{itemize}
+      
         <xsl:apply-templates select="./text" />        
     </xsl:for-each>
     
