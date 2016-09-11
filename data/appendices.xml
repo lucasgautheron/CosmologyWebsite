@@ -117,7 +117,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <appendix id="tenseur-energie-impulsion" uid="stress-energy-tensor" ready="1">
         <title>Tenseur Énergie-Impulsion</title>
         <text><p>Le tenseur énergie-impulsion est, en relativité, un tenseur, ou plus exactement un champ tensoriel, représentant l'énergie et son flux en un point de l'espace-temps. Il s'agit d'un tenseur de rang 2, en général noté $T^{\mu\nu}$. La composante $T^{\mu\nu}$ est en fait le flux à travers une hypersurface normale à l'axe $\nu$ de la composante $\mu$ du quadrivecteur énergie-impulsion. </p>
-          <h3>Exemples</h3>
+          <h4>Exemples</h4>
           <p><b>Tenseur énergie-impulsion d'un fluide parfait</b> : Un fluide parfait à l'équilibre thermodynamique de densité d'énergie $\rho$ et de pression $p$ possède un tenseur énergie impulsion de la forme :  \begin{equation}T^{\mu\nu} = \left ( \rho + p \right) v^\mu v^\nu /c^2 + p g^{\mu\nu} \end{equation}</p>
 
             <p><b>Tenseur énergie-impulsion d'une particule libre</b> de masse $m$ et trajectoire $t\mapsto \vec{q}(t)$:
@@ -130,7 +130,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 T^{\mu\nu} = \dfrac{\partial \mathcal{L}}{\partial (\partial_{\mu}\vec{\phi})} \partial_{\nu} \vec{\phi} - g^{\mu\nu} \mathcal{L}
                 \end{equation}
                 (Obtenu en variant l'action par une translation infinitésimale locale de l'espace temps $x^{\mu} \to x^{\mu} + \epsilon^{\mu}(x^\mu)$, pour des champs classiques, solutions des équations du mouvements (les équations d'Euler-Lagrange) (dits "on-shell").</p>
-            <h3>Conservation locale et symétrie</h3>
+            <h4>Conservation locale et symétrie</h4>
             <p>
                 Le tenseur énergie-impulsion d'un champ, d'un fluide, ou d'une particule, en négligeant les interactions gravitationnelles, vérifie l'équation de conservation locale (divergence nulle) :
                 \begin{equation}
@@ -156,7 +156,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <appendix id="tenseur-ricci" uid="ricci-tensor" ready="1">
         <title>Tenseur de Ricci</title>
         <text><p>Le tenseur est Ricci, noté $R^{\mu\nu}$, est, en géométrie Riemanienne, un tenseur de rang 2 décrivant la courbure d'une variété Riemanienne (objet mathématique représentant l'espace-temps).</p>
-            <h3>Définition</h3>
+            <h4>Définition</h4>
         <p>Ce tenseur $R$ peut-être défini mathématiquement à partir de la connexion de Levi-Civita $\nabla$. La connexion de Levi-Civita est elle même définie pour deux champs vectoriels $A^{\mu}$ et $B^{\mu}$ comme la dérivée de $B$ dans la direction $A$ notée $\nabla_{A}B$.
             On a alors :
             \begin{equation}
@@ -237,7 +237,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique. Selon l'équation (2), $\rho = \mbox{cste} = \rho_0$. </li>
                 <li>De façon plus générale, pour une énergie d'équation d'état $P=w\rho$ où $w$ est une constante, alors l'équation (2) implique $\rho a^{3(1+w)} = \mbox{cste}$</li>
             </ul></p>
-        <h3>Paramètres de densité</h3>
+        <h4>Paramètres de densité</h4>
         <p>On divise l'équation (1) par le carré de la constante de Hubble actuelle $H_0 = \dot{a}/a (t=0)$, puis on la redivise par $a^2$. On trouve alors :
             \begin{equation}
             \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} =  \dfrac{kc^2}{R^2 H_0^2 a^2}
@@ -262,9 +262,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             Cette équation signifie que la courbure de l'Univers est imposée différence entre la densité critique et la densité totale $\rho_{total}$. Une densité totale inférieure à $\rho_c$ implique $\Omega_k > 0$ et donc un Univers hyperbolique. A l'inverse, $\rho_{total} &lt; \rho_c$ implique une géométrie sphérique. Le cas d'égalité correspond à un Univers plat. 
         </p>   
-        <h3>Démonstration</h3>
+        <h4>Démonstration</h4>
         <p><spoiler>...</spoiler></p>
-        <h3>Solutions particulières de l'équation de Friedmann</h3>
+        <h4>Solutions particulières de l'équation de Friedmann</h4>
         <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
         <p><b>Univers de poussière</b> : 
         Dans un tel univers, $P=0$. De là le facteur d'échelle obéit à l'équation :
@@ -542,9 +542,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             Plus tard on découvre qu'en fait, la Terre est plus vieille, et qu'il y a donc un problème soit avec la valeur de $H_0$ soit avec le modèle utilisé.
             D'autre part, la densité de matière froide est en fait de l'ordre de $3 \times 10^{-27} \mbox{ kg.m}^3$. 
             </p>
-            <h3>Singularité initiale ?</h3>
+            <h4>Singularité initiale ?</h4>
             <p>Ce modèle a la particularité de faire apparaitre une "singularité", un état de densité infinie. Ceci fait apparaitre un âge maximal pour l'Univers, mais on ne sait pas dans les années 1930-1940 si celui-ci est vraiment "né" de cet état particulier. Certains physiciens rejettent alors cette idée pour des raisons philosophiques (un tel scénario rappelant certaines thèses religieuses). </p>
-            <h3>Abandon de la constante cosmologique</h3>
+            <h4>Abandon de la constante cosmologique</h4>
             <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus absolument nécessaire à Einstein et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoretically for the existence of a fiinite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
             Einstein dira plus tard que son introduction était "la plus grande erreur de sa vie".</p>
             <figure src="einstein-ds_universe.svg" title="Evolution du facteur d'échelle" plot="einstein-ds_universe">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
@@ -565,9 +565,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \end{equation}
             
             Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). </p>
-            <h3>Formalisme</h3>
+            <h4>Formalisme</h4>
             <p></p>
-            <h3>Échecs du modèle</h3>
+            <h4>Échecs du modèle</h4>
             <p>Voir l'article <contentlink id="succes-bigbang" /></p>
         </text>
         <linkwords>
@@ -590,7 +590,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Pour de grandes distances, dans un Univers en expansion, $d_L$ évolue de façon particulière : le redshift (décalage vers le rouge) et l'augmentation du temps de parcours de la lumière avec le temps diluent l'énergie de la source ; par ailleurs l'expansion affecte directement la taille du front d'onde lumineux. Pour un modèle cosmologique donné, on peut calculer la distance $d_L$ à partir du seul redshift $z$ d'un objet céleste. Or, le redshift $z$ est également accessible expérimentalement. Cela permet de contraindre ou rejeter des modèles d'expansion.
                 
             </p>
-            <h3>Calcul de $z \mapsto d_L(z)$ </h3>
+            <h4>Calcul de $z \mapsto d_L(z)$ </h4>
             <p>
                 Soit une source $A$ comobile émettant $\Delta N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
                 La puissance émise est alors $L = \dfrac{\Delta N}{\Delta t_e} h \nu_e$.
@@ -661,7 +661,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{dz'}{\sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
                 \end{equation}
             </p>
-            <h3>Comparaison entre modèles d'Univers</h3>
+            <h4>Comparaison entre modèles d'Univers</h4>
             <p>
                 Dans le graphe ci-dessous, la relation $z\mapsto d_L(z)$ est calculée pour 3 modèles différents. Pour des valeurs suffisantes de $z$ les divergences permettent de contraindre les paramètres cosmologiques.
                 <figure src="dl.svg" title="Distance de luminosité en fonction du redshift" plot="dl" source="luminosity_distance">
@@ -684,7 +684,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 </video>
             </p>
             
-            <h3>Découverte de l'accélération de l'expansion de l'Univers</h3>
+            <h4>Découverte de l'accélération de l'expansion de l'Univers</h4>
             <p>
                En 1998 blabla
             </p>
@@ -720,17 +720,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text>
             <p>En cosmologie, la notion générale de "distance" devient floue. Il est facile de s'en rendre compte en remarquant déjà que dans un Univers en expansion, si deux objets sont "immobiles" par rapport à l'expansion (leurs coordonnées comobiles ne changent pas, comme les coordonnées angulaires d'un point à la surface d'un ballon qui gonfle ne changent pas), leur distance en terme de ces coordonnées (dites "comobile") ne doit pas varier. Pourtant, du fait de l'expansion, la distance effective entre ces deux objets augmente. 
             Il convient donc de définir très méticuleusement toutes les distances que l'on introduit. </p>
-            <h3>Distance comobile</h3>
+            <h4>Distance comobile</h4>
             <p>La distance comobile $\chi$ entre deux points est ... Elle est constante entre deux objets comobiles, c'est-à-dire qui ne possèdent pas de mouvement propre par rapport à l'expansion.<note>rephrase?</note></p>
-            <h3>Distance physique</h3>
+            <h4>Distance physique</h4>
             <p>La distance physique est la distance entre deux objets telle qu'elle pourrait être mesurée à l'aide d'une "règle" fictive (en comptant le nombre d'atomes qu'il faudrait aligner pour rattacher ces deux points). Evidemment ceci est impossible pour des objets astronomiques et cette distance n'est pas directement accessible expérimentalement. Pour deux objets comobiles, cette distance évolue avec l'expansion, proportionnellement au facteur d'échelle $a(t)$.</p>
-            <h3>Distance de luminosité</h3>
+            <h4>Distance de luminosité</h4>
             <p>La distance de luminosité d'une source irradiant de la lumière est la distance $d_L$ telle que le flux $F$ que l'on en reçoit est égal à :
                 \begin{equation}
                 F = \dfrac{L}{4\pi d_L^2}
                 \end{equation}
                 Où $L$ est la luminosité (en W) de la source.</p>
-            <h3>Distance de angulaire</h3>
+            <h4>Distance de angulaire</h4>
             <p></p>
             <p>
                 <video width="320" height="512" source="animations_expansion" mp4="accelerated_redshift.mp4"  webm="accelerated_redshift.webm">
@@ -786,9 +786,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = \dfrac{8\pi G}{c^4} \tilde{T}^{\mu\nu}
                 \end{equation}
                 Et dans ce cas le tenseur $T_{vide}^{\mu\nu}$ est le tenseur énergie impulsion d'un fluide parfait tel que $P_v = -\rho_v = -\dfrac{\Lambda c^4}{8\pi G}$</p>
-            <h3>Effet sur l'Univers</h3>
+            <h4>Effet sur l'Univers</h4>
             <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
-            <h3>Formes possibles d'énergie du vide :</h3>
+            <h4>Formes possibles d'énergie du vide :</h4>
             <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
             \begin{equation}
             T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
@@ -808,7 +808,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
             </p>
-            <h3>Constante cosmologique et théorie quantique des champs</h3>
+            <h4>Constante cosmologique et théorie quantique des champs</h4>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
@@ -858,7 +858,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 </spoiler>
             </p>
-            <h3>Mesures de la constante de Hubble</h3>
+            <h4>Mesures de la constante de Hubble</h4>
             <p>
                 Avant les années 1990, la valeur de la constante de Hubble était très mal connue. De cette époque on a maintenu l'habitude d'employer par commodité le paramètre sans dimension $h = \dfrac{H_0}{\textrm{100 km/s/Mpc}}$ qu'on s'attendait valoir entre 0.5 et 1.
                 Aujourd'hui, les mesures employent des méthodes assez diverses (plus uniquement l'utilisation de céphéïdes comme chandelles standard), et les valeurs sont en assez bon accord, malgré une petite tension :
@@ -1039,7 +1039,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         <text>
             <p>Le fond diffus cosmologique (ou "cosmic microwave background", souvent abbrégé CMB) est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière (environ 375 000 ans après le début du Big-Bang). Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone. Il prend son origine dans l'état chaud de l'Univers, et a été libéré lorsque la densité de protons et électrons est devenue suffisamment faible avec le refroidissement pour que les photons interagissent peu avec la matière et voyagent librement. Cette transition est appelée "découplage" et est survenue à $z = 1100$ environ.</p>
             <p>Le CMB est décrit comme la plus ancienne image de l'Univers. En effet, les photons émis avant le découplage interagissaient très rapidement avec les particules chargées du milieu (électrons, protons), et leur libre parcours moyen était donc très faible. Après le découplage, les interactions deviennent rares et le libre parcours moyen deviant supérieur à la taille de l'Univers. Les photons peuvent ainsi voyager librement, et le rayonnement de fond observé aujourd'hui correspond assez fidèlement à l'image des photons émis alors.</p>
-            <h3>Premières observations et prédictions</h3>
+            <h4>Premières observations et prédictions</h4>
             <p>Avant les travaux de Alpher, Gamow et Herman à la fin des années 1940, on pense que le rayonnement dans l'Univers est essentiellement d'origine stellaire (interprétation d'Eddington). La température du milieu interstellaire serait donc la température d'équilibre d'un objet dans ce milieu avec le rayonnement provenant des étoiles. Cette température vérifierait donc :
             \begin{equation}
             \sigma T_{univers}^4 = p
@@ -1058,7 +1058,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             La différence majeure avec l'interprétation stellaire du fond de rayonnement est le spectre de celui-ci. Dans le cas d'un rayonnement issu des étoiles, le spectre est globalement autour du visible. Dans l'interprétation d'un rayonnement relique du Big Bang, le spectre est celui d'un corps noir à la température du fond (quelques K). Ainsi, cette température peut être mesurée en trouvant la température $T$ telle qu'un corps noir à cette température corresponde au fond diffus (attendu dans les micro-ondes). Cette valeur doit être plus homogène encore que la température d'équilibre stellaire d'Eddington puisqu'elle ne dépend pas de la position relative de l'observateur avec les étoiles.</p>
             <!--<p>TODO évoquer les premières "découvertes" non officiellement admises comme telles e.g. emile le roux.</p>-->
             
-            <h3>Découverte de 1964</h3>
+            <h4>Découverte de 1964</h4>
             <p>Voir l'article <contentlink id="decouverte-fond-diffus-cosmologique" /></p>
     	    <p>
     	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
@@ -1071,12 +1071,12 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     	    Penzias finit par avoir vent de leurs recherches, et finit par contacter Dicke par téléphone pour lui exposer leur problème. Celui-ci comprend que le bruit mesuré par Penzias et Wilson doit être ce fameux rayonnement qu'ils cherchaient à mesurer.
     	    En 1965, les deux groupes publient simultanément un papier tenant compte de leurs résultats, marquant la découverte du fond diffus cosmologique ou CMB (pour Cosmic Microwave Background).
     	    </p>
-            <h3>De nouvelles mesures</h3>
+            <h4>De nouvelles mesures</h4>
             <p>
                 La première observation du CMB considérée comme une découverte fut réalisée à une seule longueur d'onde (7,35 cm, soit 4080 MHz) avec l'antenne d'Holmdel. Il était alors possible d'en déduire la température d'un corps noir correspondant mais pas de vérifier que le spectre du rayonnement était bien celui d'un corps noir. 
                 Rapidement Penzias et Wilson réalisent une nouvelle mesure avec le même dispositif cette fois à une longueur d'onde 
             </p>
-            <h3>Anisotropies du fond diffus cosmologique</h3>
+            <h4>Anisotropies du fond diffus cosmologique</h4>
             <p>
                 Le fond diffus cosmologique n'est, comme notre Univers, par parfaitement homogène. La carte qu'on en dresse contient donc des anisotropies. Leur mesure peut nous renseigner sur de nombreux paramètres cosmologiques classiques (contenu de l'Univers, constante de Hubble) mais aussi sur les fluctuations primordiales de densité, ces déviations initiales par rapport à l'homogénéité, qui ont donné naissance aux grandes structures de l'Univers.
                 
@@ -1162,9 +1162,9 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     <appendix id="supernovae-ia" uid="ia-supernovae" ready="1">
         <title>Supernovas Ia</title>
         <text>
-           <h3></h3>
-            <h3>Masse de Chandrasekhar</h3>
-                <h3>Démonstration</h3>
+           <h4></h4>
+            <h4>Masse de Chandrasekhar</h4>
+                <h4>Démonstration</h4>
                 <h4>Equation d'état du gaz d'électrons</h4>
                 <p>
                 On considère l'ensemble des électrons qui constituent l'étoile. Ceux-ci sont confinés à d'importantes pressions et densités, et leur comportement est à la fois quantique et relativiste. 
@@ -1483,7 +1483,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
           <p>
            Le problème de la platitude est la question soulevée par la nécessité dans un Univers en Big Bang que pour que l'Univers soit relativement plat aujourd'hui (ce qui semble être le cas), il a fallu qu'il le soit bien davantage encore à ses débuts. Le paramètre de courbure $\Omega_k$ est estimé avoir du être inférieur à $10^{-60}$ à un moment donné de l'histoire de l'Univers pour être compatible avec sa valeur actuelle estimée inférieure à $10^{-4}$. Cela requiert donc que ce paramètre prenne une valeur très particulière (ajustement fin) ce qui suggérerait que notre Univers a des caractéristiques improbables.
           </p>
-          <h3>Evaluation du problème</h3>
+          <h4>Evaluation du problème</h4>
           <p>
           En définissant  la densité critique à chaque instant donné de l'histoire de l'Univers $\rho_c(t) = \dfrac{3c^2 H(t)^2}{8\pi G}$, avec $H(t) = \dot{a}/a$, la première des équations de Friedmann peut s'écrire :
           \begin{equation}
@@ -1537,7 +1537,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
          Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques identiques alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
          </p>
          
-         <h3>Évaluation du problème</h3>
+         <h4>Évaluation du problème</h4>
          
           <p>
           On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").
@@ -1579,7 +1579,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
           \dfrac{l(t_0, t)}{L(t_0, t)} = \dfrac{c}{L}  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{dt'}{a(t')}
           \end{equation}-->
           </p>
-          <h3>Solution au problème</h3>
+          <h4>Solution au problème</h4>
           <p>
               Une solution à ce problème peut être apportée par la théorie de l'inflation cosmique. Celle-ci suggère grossièrement une phase d'expansion exponentielle :
               \begin{equation}
@@ -1618,14 +1618,14 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         <title>Modèle standard de la physique des particules</title>
         <text>
             <p>Le modèle standard de la physique des particules est le modèle inscrit dans le cadre de la théorie quantique des champs qui décrit les interactions électromagnétique, faible et forte.</p>
-            <h3>Contenu</h3>
+            <h4>Contenu</h4>
             <p>
                 <figure src="standard_model.png" title="Élements du modèle standard">
                     Particules élémentaires du modèle standard. 
                     Source : <a href="http://www.physik.uzh.ch/">physik.uzh.ch</a>.
                 </figure>
             </p>
-            <h3>Lagrangien du modèle standard</h3>
+            <h4>Lagrangien du modèle standard</h4>
             <p>
                 La physique du modèle standard peut-être résumée de façon condensée dans l'expression de son lagrangien :
                 
@@ -1664,13 +1664,13 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
       <text>
          <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer. SU(3) x SU(2) x U(1)</p>
           <p>TODO exemple. GUT scale energy. Modèle standard, paramètres libres etc.</p>
-          <h3>Interaction électrofaible : un exemple d'unification</h3>
+          <h4>Interaction électrofaible : un exemple d'unification</h4>
           <p>
             TODO exemple unification U(1) et SU(2) en U(1) x SU(2). champ de Higgs. Voir Zee
           </p>
-          <h3>GUT et monopôles magnétiques</h3>
+          <h4>GUT et monopôles magnétiques</h4>
           <p></p>
-          <h3>Lien avec l'inflation</h3>
+          <h4>Lien avec l'inflation</h4>
       </text>
       <linkwords>
            <linkword>Théorie de Grande Unification</linkword>
@@ -1690,7 +1690,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Un exemple souvent cité est celui d'un crayon maintenu à la verticale que l'on lâcherait. Dans cette situation, aucune direction dans le plan horizontal n'est privilégiée (symétrie de rotation autour de l'axe vertical). Mais cette position est instable, et le crayon tombera en le lâchant. Ce faisait, l'extrêmité par laquelle il était maintenu pointera dans une direction aléatoire, et la symétrie de rotation sera perdue. 
             
              La suite de cette annexe s'inspire largement du chapitre 'Symmetry Breaking' de l'excellent ouvrage de A. Zee. <!--<ref isbn="0691140340" />--></p>
-            <h3>Champ scalaire avec brisure de symétrie discrète</h3>
+            <h4>Champ scalaire avec brisure de symétrie discrète</h4>
             <p>
                 On considère un champ scalaire $\phi$ de lagrangien de type $\phi^4$ usuel :
                 \begin{equation}
@@ -1712,7 +1712,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \end{equation}
                 
             </p>
-            <h3>Couplage de Yukawa et terme de masse, mécanisme de Brout-Englert-Higgs</h3>
+            <h4>Couplage de Yukawa et terme de masse, mécanisme de Brout-Englert-Higgs</h4>
             <p>
                 Soit un champ fermionique $\psi$ couplé à un champ scalaire $\phi$ via un terme de Yukawa dans le Lagrangian, $\mathcal{L} \supset - g\psi \phi \bar{\psi}$. Alors autour d'une position d'équilibre $\phi_0$, en effecutant la transformation $\phi \to \phi_0 + \phi$, ce terme devient :
                 \begin{equation}
@@ -1734,7 +1734,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
       <title>Invariance de Jauge</title>
       <text>
          <p>Une invariance de jauge est la propriété d'un champ de pouvoir subir une transformation mathématique sans que cela n'en change les manifestations physiques. Les invariances imposent une certaine structure au champ et induisent des lois de conservations conformément au théorème de Noether.</p>
-         <h3>Exemple : invariance U(1) et électromagnétisme</h3>
+         <h4>Exemple : invariance U(1) et électromagnétisme</h4>
          <p>
          Le Lagrangien pour un fermion (par exemple un électron) libre de masse $m$ est le lagrangien de Dirac :
          \begin{equation}
@@ -1796,7 +1796,7 @@ Et
       <text>
          <p>L'effet de lentille gravitationnelle est la déviation de rayons lumineux approchant un astre massif. Cet effet, correctement prédit par la relativité générale, a été observé en 1919 par Eddington pendant une éclipse solaire.
          Le terme de lentille provient de la tendance à la légère focalisation des rayons comme dans la situation des rayons lumineux rasants le Soleil.</p>
-          <h3>Effet d'une masse ponctuelle</h3>
+          <h4>Effet d'une masse ponctuelle</h4>
           <p>
               Un rayon lumineux approchant une masse $M$ avec un paramètre d'impact $b$ (distance entre la trajectoire non déviée et l'objet) est dévié d'un angle $\Delta \phi$ donné par :
               \begin{equation}
@@ -1805,7 +1805,7 @@ Et
               
               (La démonstration à partir des équations d'Einstein est disponible dans le cours de <people name="richard-taillet">Richard Taillet</people>, voir les vidéos suivante : <a href="http://podcast.grenet.fr/episode/cours-12-3/" target="_blank">Métrique de Schwarzschild 1</a>, <a href="http://podcast.grenet.fr/episode/cours-13-3/" target="_blank">Métrique de Schwarzschild 2</a>, <a href="http://podcast.grenet.fr/episode/cours-14-3/" target="_blank">Équations du mouvement</a>, <a href="http://podcast.grenet.fr/episode/cours-15-3/" target="_blank">Déviation de la lumière</a>).
           </p>
-          <h3>Équation des lentilles</h3>
+          <h4>Équation des lentilles</h4>
           <p>
               La lumière qui nous parvient de sources lointaines a pu subir l'influence de multiples masses étendues.
               La déviation par rapport à l'axe de visée est alors donnée par :
@@ -1814,7 +1814,7 @@ Et
               \end{equation}
               L'intégrale est ici prise le long du chemin parcouru par la lumière, qui est dans la limite des champs faibles, à peu près similaire au chemin non dévié.
           </p>
-          <h3>En savoir plus</h3>
+          <h4>En savoir plus</h4>
           <p>
               L'ouvrage <i>Cosmologie Primordiale</i> (P. Peter, J.P. Uzan) est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
           </p>
@@ -1830,7 +1830,7 @@ Et
             <p>Le problème de la hiérarchie fait référence à la différence d'échelle d'énergie extrêmement élevée entre l'interaction électrofaible ($\sim$ 100 GeV) et l'interaction gravitationnelle ($\sim M_{planck} \sim 10^{19} $ GeV).
                 Cette différence est jugée problématique puisqu'on attend en général des théories physiques qu'elles fassent intervenir des paramètres libres sans dimension d'un ordre de grandeur proche de l'unité (la <b>naturalité</b>), ce qui n'est pas le cas de $M_{planck}/M_{H} \sim 10^{17}$ par exemple.
             Ce problème est parfois formulé comme l'extrême faiblesse de l'intensité de l'interaction gravitationnelle en comparaison des autres interactions connues, l'échelle de Planck étant si élevée.</p>
-            <h3>Correction de masse du Higgs</h3>
+            <h4>Correction de masse du Higgs</h4>
             <p>
                 Dans le modèle Standard, le boson de Higgs de champ $\phi$ intervient dans le lagrangien via des termes de la forme :
                 \begin{equation}
