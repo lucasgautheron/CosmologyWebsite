@@ -211,7 +211,7 @@
   </xsl:template>
   
 <xsl:template match="/">
-    \documentclass[11pt,french]{book}              % Book class in 11 points
+    \documentclass[11pt,french,titlepage]{book}              % Book class in 11 points
     \usepackage[french]{babel}
     \usepackage[utf8]{inputenc} 
     \usepackage[T1]{fontenc}
@@ -224,6 +224,7 @@
     %\raggedright                            % do not right justify
     
     \title{\bf Histoire de la cosmologie \\
+    \ \\
     \large De la Relativité Générale à la première détection d'ondes gravitationnelles}    % Supply information
     \author{Lucas Gautheron}              %   for the title page.
     \date{\today}                           %   Use current date. 
