@@ -189,11 +189,11 @@
   </xsl:template>
 
   <xsl:template match="question">
-    <p class="question"><b><xsl:value-of select="../../by/@initials" />: </b> <xsl:apply-templates /></p>
+    \textbf{<xsl:value-of select="../../by/@initials" />: } <xsl:apply-templates />
   </xsl:template>
 
   <xsl:template match="answer">
-    <p class="answer"><b><xsl:value-of select="../../who/@initials" />: </b> <xsl:apply-templates /></p>
+    \textbf{<xsl:value-of select="../../who/@initials" />: } <xsl:apply-templates />
   </xsl:template>
   
   <xsl:template match="contentlink">
@@ -261,7 +261,25 @@
         </xsl:for-each>
         \end{itemize}
       
-        <xsl:apply-templates select="./text" />        
+        <xsl:apply-templates select="./text" /> 
+      
+      <xsl:if test="./interviews/interview">
+      \section{Interviews}
+      <xsl:for-each select="./interviews/interview">
+        \subsection{<xsl:value-of select="./who/@name" />}
+        
+        \begin{wrapfigure}{R}{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.25\textwidth]{../images/<xsl:value-of select="./who/@src" />}
+        \end{wrapfigure}
+        
+        \textbf{<xsl:value-of select="./who/@name" />}. <xsl:value-of select="./description" />
+        
+        \begin{quotation}
+        <xsl:apply-templates select="./questions" />
+        \end{quotation}
+      </xsl:for-each>
+      </xsl:if>
     </xsl:for-each>
     
     \chapter{Annexes}
