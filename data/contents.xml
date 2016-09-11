@@ -731,15 +731,17 @@
                     </li>
                 </ol>
                     
-               <h3>Insuffisance du scénario d'Alan Guth, nouveaux modèles inflationnaires</h3>
+                <h3>Insuffisance du scénario d'Alan Guth, nouveaux modèles inflationnaires</h3>
                 <p>
-                    
+                    Le scénario premièrement suggéré par Alan Guth repose sur la brisure de symétrie d'un champ scalaire, associée à une transition de phase. Lors de celle-ci, des "bulles" de vrai-vide du champ se forment et grandissent, de la même façon que des bulles de vapeur se forment lors de l'ébullition de l'eau. Les collisions entre ces bulles auraient des conséquences importantes sur la structure de l'Univers (en particulier cela le rendrait fortement inhomogène et anistrope).
+                    Un modèle alternatif<ref doi="10.1063/1.881088" /> est suggéré dans lequel le potentiel du champ scalaire décroit de façon monotone vers son minimum et suffisamment lentement pour que la transition soit également lente devant la vitesse d'expansion $H$ durant l'inflation. Alors, les bulles sont formées assez peu rapidement pour qu'elles soient largement diluées par l'expansion concurrente.
+                    Les collisions entre bulles sont alors bien plus rares, et le problème d'homogénéité est résolu. N'étant par ailleurs plus assez fréquentes pour expliquer le réchauffement à la fin de l'inflation, la hausse de température est alors expliquée par l'amortissement des oscillations du champ autour de sa position d'équilibre, le transfert d'énergie était responsable de la création de particules et du "reheating".
                 </p>
                     
-               <h3>D'autres problèmes cosmologiques des théories de grande unification</h3>
+                <h3>D'autres problèmes cosmologiques des théories de grande unification</h3>
     	        
-    	        Une des principales figures travaillant sur la connexion entre physique des particules et cosmologie est l'astrophyicien russe Zeldovich qui publie en 1981 une importante synthèse de la physique des particules dans un univers en Big-Bang. <ref doi="10.1103/RevModPhys.53.1" />.
-    	        Les enjeux qu'ils soulèvent dans ce papier ainsi que les théories de grande unification développer en parallèle suggèrent d'autres problèmes, parmi lesquels :
+    	        <p>Une des principales figures travaillant sur la connexion entre physique des particules et cosmologie est l'astrophyicien russe Zeldovich qui publie en 1981 une importante synthèse de la physique des particules dans un univers en Big-Bang. <ref doi="10.1103/RevModPhys.53.1" />.
+    	        Les enjeux qu'ils soulèvent dans ce papier ainsi que les théories de grande unification développer en parallèle suggèrent d'autres problèmes, parmi lesquels :</p>
     	        
     	        <ol>
     	            <li> L'<b>assymétrie matière-antimatière</b>. 
@@ -754,7 +756,7 @@
     	        </ol>
 
                     <ref doi="10.1103/RevModPhys.53.1" />.
-                    <!--<ref isbn="9783718604906" />--><ref doi="10.1063/1.881088" />
+                    <!--<ref isbn="9783718604906" />-->
                     <ref isbn="9780199665150" />
                     <ref isbn="9780201328400" />
     	    </p>
