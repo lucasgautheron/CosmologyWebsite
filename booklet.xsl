@@ -49,17 +49,9 @@
     <xsl:apply-templates />
   </xsl:template>
   
- <xsl:template match="b">
-    \textbf{
-      <xsl:apply-templates />
-    } 
-  </xsl:template>
+  <xsl:template match="b">\textbf{<xsl:apply-templates />}</xsl:template>
   
-  <xsl:template match="i">
-    \textit{
-      <xsl:apply-templates />
-    } 
-  </xsl:template>
+  <xsl:template match="i">\textit{<xsl:apply-templates />}</xsl:template>
   
    <xsl:template match="p">
     
@@ -188,9 +180,7 @@
       (<xsl:value-of select="./@author" />, <xsl:value-of select="./@date" />)
   </xsl:template>
   
-  <xsl:template match="note">
-    \footnote{<xsl:value-of select="." />}
-  </xsl:template>
+  <xsl:template match="note">\footnote{<xsl:value-of select="." />}</xsl:template>
   
   <xsl:template match="video">
     <div class="video">
@@ -234,24 +224,40 @@
   </xsl:template>
   
 <xsl:template match="/">
-    \documentclass[11pt]{book}              % Book class in 11 points
+    \documentclass[11pt,french]{book}              % Book class in 11 points
+    \usepackage[french]{babel}
     \usepackage[utf8]{inputenc} 
     \usepackage[T1]{fontenc}
     \usepackage{import}
     \subimport{.}{header}
-    \selectlanguage{french}
+    
     
     \parindent0pt  \parskip10pt             % make block paragraphs
-    \raggedright                            % do not right justify
+    %\raggedright                            % do not right justify
     
-    \title{\bf Histoire de la cosmologie}    % Supply information
+    \title{\bf Histoire de la cosmologie \\
+    \large De la Relativité Générale à la première détection d'ondes gravitationnelles}    % Supply information
     \author{Lucas Gautheron}              %   for the title page.
     \date{\today}                           %   Use current date. 
     
     % Note that book class by default is formatted to be printed back-to-back.
     \begin{document}                        % End of preamble, start of text.
+    
     \frontmatter                            % only in book class (roman page #s)
-    \maketitle                              % Print title page.
+    \maketitle  
+    % Print title page.
+    \chapter*{Avant-Propos}
+    
+    \section*{Pourquoi la cosmologie ?}
+    
+    D'abord, elle a la première qualité d'être une synthèse de toute la physique moderne. Donc, étudier la cosmologie et ses enjeux, cela implique d'aborder la relativité générale, la physique statistique et la thermodynamique, la théorie quantique des champs, le modèle standard, et même certaines de ses extensions. La cosmologie s'est toujours construite sur les dernières avancées dans tous ces domaines, et contribue même à leur développement.
+    
+    Une autre excellente raison de s'intéresser à la cosmologie est justement son emploi pour sonder des domaines de la physique encore inexplorés. La physique contemporaine est aujourd'hui heurtée à un mur que constitue la limite en énergie de la plupart des expériences réalisables, qu'elles exploitent des collisions dans des accélérateurs de particules ou des sources astrophysique. En revanche, l'Univers ayant atteint des températures extrêmes à ses débuts, on s'attend à ce que la cosmologie soit peut-être la plus capable d'apporter des informations nouvelles et précieuses sur de la nouvelle physique aux hautes énergies.
+    
+    Par ailleurs, l'histoire de la cosmologie représente en elle-même un sujet passionnant. Il est d'abord fascinant de constater la façon dont notre vision de l'Univers a radicalement changé en un siècle, au fil de découvertes majeures, parfois accidentelles, parfois nécessitant des moyens fantastiques. C'est aussi un excellent sujet pour la sociologie des sciences, tant la nouveauté des idées physiques soulevées et leurs enjeux ont pu déstabiliser la communauté scientifique et susciter parfois des débats d'ordre plutôt philosophiques. Aujourd'hui encore, cette science toujours jeune mais très prometteuse suscite parfois des controverses.
+    
+    Enfin, l'histoire de la physique est une dimension de la discipline à part entière qui mérite d'être étudiée. Il est très enrichissant pour un étudiant voué à la recherche, de mieux approcher l'histoire de l'invention des théories physiques, de mieux comprendre leurs origines, et la longue lutte de l'esprit humain pour décrire l'Univers qui est le sien. Ceci n'est pas toujours facile à retrouver dans les livres qui fournissent plutôt une photographie des connaissances à un instant donné, en manquant parfois les errances de leur construction, qui font de la physique une aventure passionnante.
+    
     \tableofcontents                        % Print table of contents
     \mainmatter                             % only in book class (arabic page #s)
     

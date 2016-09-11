@@ -67,9 +67,9 @@ if(in_array('-B', $_SERVER['argv']))
     $start_time = microtime(true);
     exec('saxonb-xslt -s:tmp/cache.xml -xsl:booklet.xsl -o:booklet/booklet.tex -ext:on' . $redirect, $output, $return_code);
     $return |= $return_code;
-    exec('cd booklet; pdflatex booklet.tex', $output, $return_code);
+    exec('cd booklet; pdflatex -interaction=nonstopmode booklet.tex', $output, $return_code);
     exec('cd booklet; bibtex booklet', $output, $return_code);
-    exec('cd booklet; pdflatex booklet.tex', $output, $return_code);
+    exec('cd booklet; pdflatex -interaction=nonstopmode booklet.tex', $output, $return_code);
     echo "booklet generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 }
 
