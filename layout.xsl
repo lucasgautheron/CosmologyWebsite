@@ -409,6 +409,7 @@
               <li>Autant que possible, les <b>graphiques</b> ont été produits spécialement pour le site, et le <b>code</b> des simulations utilisé pour les générer est <b>téléchargeable</b>.</li>
               <li>Des <b>interviews</b> de physiciens permettent de mieux saisir les enjeux de la recherche actuelle, et le travail concret de chercheur.</li>
               <li>Des liens vers des <b>papiers</b> ayant joué un rôle important sont proposés, et leur lecture est très riche d'enseignement sur la pensée de leurs auteurs à l'époque de leur écriture.</li>
+              <li>Un livret du contenu est <a href="/booklet/booklet.pdf">téléchargeable ici</a>.</li>
             </ul>
           </p>
 
