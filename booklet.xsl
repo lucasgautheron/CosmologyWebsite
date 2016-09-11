@@ -239,7 +239,9 @@
     
     \title{\bf Histoire de la cosmologie \\
     \ \\
-    \large De la Relativité Générale à la première détection d'ondes gravitationnelles}    % Supply information
+    \large Du développement de la Relativité Générale à la mission Planck
+    \\
+    \textit{(en cours d'écriture)}}    % Supply information
     \author{Lucas Gautheron}              %   for the title page.
     \date{\today}                           %   Use current date. 
     
