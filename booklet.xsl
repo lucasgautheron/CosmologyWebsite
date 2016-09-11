@@ -58,6 +58,8 @@
       <xsl:apply-templates />
       
   </xsl:template>
+    
+  <xsl:template match="a">\href{<xsl:value-of select="./@href" />}{<xsl:value-of select="." />}</xsl:template>
   
   <xsl:template match="ref[@doi]"><xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />\cite{ref-<xsl:value-of select="$safedoi" />}</xsl:template>
   
@@ -132,34 +134,14 @@
   </xsl:template>
   
   <xsl:template match="figure">
-    <div class="figure">
-      <a href="/images/{./@src}" target="_blank">
-        <xsl:choose>
-          <xsl:when test="string(./@width)">
-            <img src="/images/{./@src}" alt="{./@title}" title="{.}" width="{./@width}" />
-          </xsl:when>
-          <xsl:otherwise>
-            <img src="/images/{./@src}" alt="{./@title}" title="{.}" />
-          </xsl:otherwise>
-        </xsl:choose>
-      </a>
-      <div class="label">
-        <xsl:value-of select="./@title" />
-        <xsl:choose>
-           <xsl:when test="./@source and ./@plot">
-                (<a href="/plots/{./@plot}.gnuplot">gnuplot</a> | <a href="/simulations/{./@source}.tar.gz">source</a>)
-           </xsl:when>
-           <xsl:when test="./@plot">
-                (<a href="/plots/{./@plot}.gnuplot">gnuplot</a>)
-           </xsl:when>
-           <xsl:when test="./@source">
-                (<a href="/simulations/{./@source}.tar.gz">source</a>)
-           </xsl:when>
-           </xsl:choose>
-      </div>
-      <div class="caption">
-        <xsl:apply-templates />
-      </div></div>
+      \begin{figure}[H]
+      \centering
+      <xsl:variable name="extension" select="substring(./@src, string-length(./@src)-2, 3)" />
+      <xsl:if test="$extension = 'jpg' or $extension = 'png'">
+      \includegraphics[width=0.9\textwidth]{../images/<xsl:value-of select="./@src" />}
+      </xsl:if>
+      \caption{\textbf{<xsl:value-of select="./@title" />}. <xsl:apply-templates select="text()" />}
+      \end{figure}
   </xsl:template>
   
   <xsl:template match="feynman">
