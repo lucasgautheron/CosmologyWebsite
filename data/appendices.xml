@@ -1922,7 +1922,7 @@ Et
        \begin{equation}
        \chi+\chi \rightleftharpoons \mbox{ SM }
        \end{equation}</p>
-       Il s'agit donc d'un équilibre entre annihilation des particules WIMP ("\chi") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
+       Il s'agit donc d'un équilibre entre annihilation des particules WIMP ("$\chi$") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
        \begin{equation}
        \Gamma_{ann} \sim n_{\chi} \langle \sigma v \rangle
        \end{equation}
