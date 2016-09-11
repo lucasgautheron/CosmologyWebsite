@@ -70,6 +70,7 @@ if(in_array('-B', $_SERVER['argv']))
     exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
     exec('cd booklet; bibtex booklet', $output, $return_code);
     exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
+    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
     echo "booklet generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 }
 
