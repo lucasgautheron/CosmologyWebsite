@@ -94,7 +94,7 @@
         title = "<xsl:value-of select="$ref//journal_article/titles/title[1]" />",
         author = "<xsl:for-each select="$ref//contributors/person_name[@contributor_role='author'][position() &lt;= $maxauthors]">
             <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
-            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+            <xsl:if test="position() != last() and not(position() >= $maxauthors) "> and </xsl:if>
         </xsl:for-each>
           <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
               et al.
@@ -108,7 +108,7 @@
           title = "<xsl:value-of select="$ref//fn:string[@key='title']" />",
           author = "<xsl:for-each select="$ref//fn:array[@key='authors']/fn:string[position() &lt;= $maxauthors]">
               <xsl:value-of select="." />
-              <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+              <xsl:if test="position() != last() and not(position() >= $maxauthors) "> and </xsl:if>
           </xsl:for-each>
           <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
               et al.
