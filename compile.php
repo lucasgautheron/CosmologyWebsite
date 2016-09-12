@@ -62,21 +62,6 @@ exec('saxonb-xslt -s:tmp/cache.xml -xsl:graph.xsl -o:graph.html -ext:on' . $redi
 $return |= $return_code;
 echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
-if(in_array('-B', $_SERVER['argv']))
-{
-    $start_time = microtime(true);
-    exec('saxonb-xslt -s:tmp/cache.xml -xsl:booklet.xsl -o:booklet/booklet.tex -ext:on' . $redirect, $output, $return_code);
-    $return |= $return_code;
-    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
-    exec('cd booklet; bibtex booklet', $output, $return_code);
-    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
-    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
-    echo "booklet generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
-}
-
-@unlink('tmp/cache.xml');
-@unlink('tmp/refs');
-
 // simulations
 if($perform_simulations)
 {
@@ -121,8 +106,22 @@ foreach($plots as $plot)
 if(is_file('tmp')) unlink('tmp');
 
 echo "plot generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
-
 chdir('..');
+
+if(in_array('-B', $_SERVER['argv']))
+{
+    $start_time = microtime(true);
+    exec('saxonb-xslt -s:tmp/cache.xml -xsl:booklet.xsl -o:booklet/booklet.tex -ext:on' . $redirect, $output, $return_code);
+    $return |= $return_code;
+    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
+    exec('cd booklet; bibtex booklet', $output, $return_code);
+    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
+    exec('cd booklet; pdflatex --shell-escape -interaction=nonstopmode booklet.tex', $output, $return_code);
+    echo "booklet generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
+}
+
+@unlink('tmp/cache.xml');
+@unlink('tmp/refs');
 
 if($archive)
 {
