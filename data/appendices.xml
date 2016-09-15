@@ -1159,13 +1159,28 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
+    <appendix id="oscillations-acoustiques-baryons" uid="baryon-acoustic-oscillations">
+        <title>Oscillations acoustiques des baryons</title>
+        <text>
+            <p>
+                 
+            </p>
+        </text>
+        <linkwords>
+            <linkword>Oscillations acoustiques des baryons</linkword>
+            <linkword>oscillations acoustiques des baryons</linkword>
+            <linkword>baryon acoustic oscillations</linkword>
+            <linkword>BAO</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="supernovae-ia" uid="ia-supernovae" ready="1">
         <title>Supernovas Ia</title>
         <text>
            <h4></h4>
             <h4>Masse de Chandrasekhar</h4>
                 <h4>Démonstration</h4>
-                <h4>Equation d'état du gaz d'électrons</h4>
+                <h5>Equation d'état du gaz d'électrons</h5>
                 <p>
                 On considère l'ensemble des électrons qui constituent l'étoile. Ceux-ci sont confinés à d'importantes pressions et densités, et leur comportement est à la fois quantique et relativiste. 
                 On cherche à établir l'équation d'état du gaz d'électrons.
@@ -1342,7 +1357,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
 
                 </p>
                 
-                <h4>Résistance à la gravité</h4>
+                <h5>Résistance à la gravité</h5>
                 
                 <p>Dans une naine blanche, la force qui compense la pression de dégénérescence des électrons est la gravité. On peut montrer à partir de la relativité générale que l'équilibre se traduit par l'équation de Tolman-Oppenheimer :</p>
                 <p>\begin{equation}
@@ -1414,7 +1429,8 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </p>
         </text>
         <linkwords>
-            <linkword>supernovas Ia</linkword>
+            <linkword>SN de type I</linkword>
+            <linkword>supernovae Ia</linkword>
             <linkword>supernovae de type Ia</linkword>
         </linkwords>
     </appendix>
