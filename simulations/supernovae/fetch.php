@@ -7,7 +7,7 @@ function getlightcurve($data, $band)
 
     foreach($data['maxband'] as $n => $b)
     {
-        if($b['value'] == $band)
+        if($b['value'] == $band) // galactic absorption might be band dependent ?
         {
             $max_absmag = $data['maxabsmag'][$n]['value'];
             $max_appmag = $data['maxappmag'][$n]['value'];
