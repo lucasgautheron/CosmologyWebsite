@@ -1022,6 +1022,9 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
              <b>Découverte de la relation luminosité-période</b> : La découverte de l'existence d'une relation entre luminosité et période des céphéides et due à Henrietta Leavitt. En 1908, cette astronome de l'observatoire de l'université d'Harvard étudie des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (deux galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède) et mesure leur magnitude apparente (grandeur plus pratique en Astronomie pour représenter la brillance que le flux lumineux en $W/m^2$)  et leur période. Elle suppose alors que toutes les étoiles d'un "nuage" sont approximativement à la même distance de la Terre, ce qui entraine que la différence entre leur magnitude apparente et absolue (qui ne dépend que de la distance entre elles et la Terre) est une constante : $m-M = C$. Elle remarque que la magnitude apparente de certaines de ces étoiles variables est une fonction de leur période, autrement dit, $m_{magellan} = m_{magellan}(T)$.
              <figure src="luminosity_period.png" title="Magnitude des céphéides en fonction de leur période (Leavitt 1912)">La courbe de gauche donne les magnitudes apparentes maximale et minimale des étoiles en fonction de leur période. La courbe de droite donne les mêmes magnitudes en fonction du logarithme de la période.</figure>
              Cependant, ce n'est pas suffisant pour mesurer des distances. En effet, ceci requiert de connaitre la luminosité <i>intrinsèque</i> ou encore la magnitude <i>absolue</i> en fonction de la période, sans quoi la relation ainsi obtenue ne permet d'évaluer que le rapport entre la distance d'une céphéide avec la distance de celles qui ont permis d'établir cette relation (qui est inconnue). Il faut alors attendre les travaux de Hertzsprung et Shapley dans les années qui suivent pour étalonner cette relation et obtenir la courbe de la magnitude absolue cette fois. Pour cela, ces astronomes ont mesuré la magnitude et la période d'une céphéide proche dont la distance était connue (par la méthode de la parallaxe). Ils ont ainsi pu calculer sa magnitude absolue $M$. En reportant cette mesure dans la courbe de Leavitt, ils ont pu déterminer quelle était la constante $C$ qui séparait $m_{magellan}$ et $M$. De là ils en ont déduit la loi $T\mapsto M(T)$. </p>
+            <p>
+                La relation entre période et magnitude absolue n'est pas tout à fait univoque, probablement parce que d'autres paramètres peuvent différer d'une céphéide variable à une autre avec un impact relativement faible. Ceci limite le pouvoir prédictif de la relation luminosité période de $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
+            </p>
         <p>
             <b>Explication théorique par Eddington</b> :
         </p>
@@ -1187,7 +1190,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
            </p>
             <h4>Les naines blanches, masse de Chandrasekhar</h4>
             <p>
-                Les naines blanches sont des étoiles très compactes ($m\sim M_{\odot}$ et $R \sim 1\% \cdot R_{\odot}$) qui ne résistent à l'effondrement gravitationnel non pas par des réactions thermonucléaires en leur sein, mais grâce à la pression de dégénérescence de leurs électrons, d'origine quantique. La suite de ce paragraphe consiste à montrer l'existence d'une masse limite pour ces objets, appelée masse de Chandrasekhar, au-delà de laquelle cette pression de dégénérescence est insuffisante pour soutenir le poids de la naine blanche.
+                Les naines blanches sont des étoiles très compactes ($m\sim M_{\odot}$ et $R \sim 1\% \cdot R_{\odot}$), principalement constituées de carbone et d'oxygène, qui ne résistent à l'effondrement gravitationnel non pas par des réactions thermonucléaires en leur sein puisque celles-ci ne sont plus prédominantes, mais grâce à la pression de dégénérescence de leurs électrons, d'origine quantique. La suite de ce paragraphe consiste à montrer l'existence d'une masse limite pour ces objets, appelée masse de Chandrasekhar, au-delà de laquelle cette pression de dégénérescence est insuffisante pour soutenir le poids de la naine blanche.
             </p>
                 <h5>Equation d'état du gaz d'électrons</h5>
                 <p>
@@ -1418,7 +1421,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \end{equation}
                 </p>
                 
-                <h4>Résultat</h4>
+                <h5>Résultat</h5>
                 <p>Les équations d'équilibre sont résolues (Relativité générale ou gravitation newtonienne) et conduisent au résultat suivant :</p>
                 <p>
                 	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon." plot="wd_mass_radius" source="white_dwarfs">
@@ -1432,10 +1435,41 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 	</figure>
                 </p>
                 
-                <h4>Implications</h4>
+                <h4>Effondrement et supernova</h4>
                 <p>
-                     
+                    On estime que le mécanisme d'effondrement d'une naine blanche donnant lieu a une supernova de type Ia est le suivant : <ref doi="10.1086/146963" />
                 </p>
+            
+                 <ol>
+                     <li>La naine blanche accrète de la matière en général d'une étoile compagnon telle qu'une géante rouge. Sa masse augmente jusqu'à devenir suffisamment proche de la limite de Chandrasekhar. Celle-ci devient alors instable (la pression de dégénerescence ne permet plus de contrer la gravité).</li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ol>
+                
+            
+                <h4>Emploi comme chandelles standards</h4>
+            <p>
+                De façon empirique, on sait au début des années 1990 que les supernovae de type Ia ont une magnitude maximale similaire, et des courbes de luminosité ($t\mapsto L(t)$) semblables.
+                Ces courbes montrent toute une augmentation rapide jusqu'à l'atteinte d'une maximum puis une diminution plus lente.
+                
+                <figure src="SNIa_lightcurves.svg" plot="SNIa_lightcurves" source="SNIa_lightcurves">
+                    Courbes de lumière dans la bande B de plusieurs supernovae de type Ia, en magnitude absolue.
+                </figure>
+                
+                De là, elles possèdent un certain potentiel en tant que chandelles standard. Une bonne chandelle standard doit avoir une dispersion en magnitude faible $\Delta M$ faible, pour que la méthode soit précise. Les céphéides variables par exemple, peuvent avoir des magnitudes absolues très différentes, mais celle-ci est fortement corrélée avec leur période - qui est facilement mesurable - si bien qu'on peut déduire leur magnitude intrinsèque avec une dispersion $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
+                
+                En 1993, Phillips montre à partir de mesures effectuées sur 9 SNe Ia proches <ref doi="10.1086/322460" /> que celles-ci possèdent une dispersion en magnitude maximale intrinsèque de l'ordre de $\pm 0.6$ dans la bande V. Il cite notamment le cas de la supernova SN 1991bg qui est significativement moins lumineuses que les autres. Il note aussi que sa courbe de luminosité dans la bande B au cours du temps semble décroître plus rapidement. 
+                
+                
+                
+                <ref doi="10.1086/322460" />
+                
+                <ref doi="10.1086/300499" /> <ref doi="10.1086/307221" />
+
+
+                
+            </p>
         </text>
         <linkwords>
             <linkword>SN de type I</linkword>
@@ -1451,7 +1485,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     
     <appendix id="grand-debat" uid="great-debate" ready="1">
         <title>Le grand débat</title>
-        <text><p>Le "grand débat" (en anglais: "great debate") fait référence à un débat donné en 1920 entre les astronomes Heber Curtis et Harlow Shapley à propos de la situation des "nébuleuses spirales" (qu'on appelle aujourd'hui "galaxies spirales") vis à vis de la Voie Lactée. Pour premier, ces nébuleuses étaient des galaxies indépendantes semblables à la Voie Lactée. Pour le second, elles appartenaient au contraire à la Voie Lactée qui aurait en fait été l'ensemble de l'Univers. La raison pour laquelle la réponse n'était pas évidente à l'époque était l'impossibilité de déterminer la distance de tels objets. Très vite cependant, les travaux d'Hubble permirent de trancher grâce à l'observation des céphéides : les nébuleuses spirales étaient bien plus distantes que les autres objets alors observés, bien au-delà du plan galactique de la Voie Lactée.</p>
+        <text><p>Le "grand débat" (en anglais: "great debate") fait référence à un débat donné en 1920 entre les astronomes Heber Curtis et Harlow Shapley<ref isbn="0521372135" /> à propos de la situation des "nébuleuses spirales" (qu'on appelle aujourd'hui "galaxies spirales") vis à vis de la Voie Lactée. Pour premier, ces nébuleuses étaient des galaxies indépendantes semblables à la Voie Lactée. Pour le second, elles appartenaient au contraire à la Voie Lactée qui aurait en fait été l'ensemble de l'Univers. La raison pour laquelle la réponse n'était pas évidente à l'époque était l'impossibilité de déterminer la distance de tels objets. Très vite cependant, les travaux d'Hubble permirent de trancher grâce à l'observation des céphéides : les nébuleuses spirales étaient bien plus distantes que les autres objets alors observés, bien au-delà du plan galactique de la Voie Lactée.</p>
         </text>
         <linkwords>
             <linkword>le grand débat</linkword>
