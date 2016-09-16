@@ -114,7 +114,7 @@
         <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
           et al.
         </xsl:if> &#160;(<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />),
-        <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i>
+        <i><a href="{$ref//doi_data/resource[1]}"><xsl:value-of select="$ref//journal_article/titles/title[1]" /></a></i> in <i><xsl:value-of select="($ref//journal_metadata/full_title)[1]" /></i>
       </xsl:when>
       <xsl:when test="$isbn">
         <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))//fn:map[@key='volumeInfo'][1]" />
