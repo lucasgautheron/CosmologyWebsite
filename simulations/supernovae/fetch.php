@@ -1,5 +1,5 @@
 <?php
-$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2014J', 'SN2012fr', 'SN1998aq');
+$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2012fr', 'SN1998aq', 'SN1971I', 'SN1980N', 'SN1981B', 'SN1986G', 'SN1989B', 'SN1990N', 'SN1991T', 'SN1992A');
 
 function getlightcurve($data, $band)
 {
@@ -37,6 +37,7 @@ function getlightcurve($data, $band)
 
     foreach($entries as &$entry)
     {
+        $entry['apparent_magnitude'] = $entry['magnitude'];
         @$entry['magnitude'] += $max_absmag - $max_appmag;
         $entry['time_since_maximum'] = (float)$entry['time'] - (float)$peak_time;
     }
@@ -46,6 +47,8 @@ function getlightcurve($data, $band)
 
 
 $curves = array();
+$fp_deltam15= fopen("../../plots/data/SNIa_deltam15.res", "w+");
+
 foreach($supernovae as $supernova)
 {
     $json = "../../tmp/$supernova.json";
@@ -62,13 +65,32 @@ foreach($supernovae as $supernova)
     $z = $data['redshift'];
 
     $curves[$supernova]['B'] = getlightcurve($data, 'B');
-}
+    $curve = $curves[$supernova];
 
-
-foreach($curves as $SN => $curve)
-{
-    $fp = fopen("../../plots/data/{$SN}_lightcurve.res", "w+");
+    $fp = fopen("../../plots/data/{$supernova}_lightcurve.res", "w+");
     foreach($curve['B'] as $datapoint) fwrite($fp, "{$datapoint['time_since_maximum']} {$datapoint['magnitude']}\n");
+    fclose($fp);
+
+    $max_absmag = $max_appmag = 0;
+    foreach($data['maxband'] as $n => $b)
+    {
+        if($b['value'] == 'B') // galactic absorption might be band dependent ?
+        {
+            $max_absmag = $data['maxabsmag'][$n]['value'];
+            $max_appmag = $data['maxappmag'][$n]['value'];
+        }
+    }
+
+    foreach($curve['B'] as $datapoint)
+    {
+        if($datapoint['time_since_maximum'] >= 15)
+        {
+            $delta = $datapoint['apparent_magnitude'] - $max_appmag;
+            fwrite($fp_deltam15, "$delta {$max_absmag} {$datapoint['time_since_maximum']} $supernova\n");
+            break;
+        }
+    }
+
 }
-fclose($fp);
+fclose($fp_deltam15);
 ?>

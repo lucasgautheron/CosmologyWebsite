@@ -1454,18 +1454,13 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Ces courbes montrent toute une augmentation rapide jusqu'à l'atteinte d'une maximum puis une diminution plus lente.
                 
                 <figure src="SNIa_lightcurves.svg" plot="SNIa_lightcurves" source="SNIa_lightcurves">
-                    Courbes de lumière dans la bande B de plusieurs supernovae de type Ia, en magnitude absolue.
-                    
+                    Courbes de lumière dans la bande B de plusieurs supernovae de type Ia, en magnitude absolue. Données extraites de <a href="https://sne.space/">sne.space</a>.
                 </figure>
                 
-                De là, elles possèdent un certain potentiel en tant que chandelles standard. Une bonne chandelle standard doit avoir une dispersion en magnitude faible $\Delta M$ faible, pour que la méthode soit précise. Les céphéides variables par exemple, peuvent avoir des magnitudes absolues très différentes, mais celle-ci est fortement corrélée avec leur période - qui est facilement mesurable - si bien qu'on peut déduire leur magnitude intrinsèque avec une dispersion $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
+                De là, elles possèdent un certain potentiel en tant que chandelles standard. Une bonne chandelle standard doit avoir une dispersion en magnitude $\Delta M$ faible, pour que la méthode soit précise. Les céphéides variables par exemple, peuvent avoir des magnitudes absolues très différentes, mais celle-ci est fortement corrélée avec leur période - qui est facilement mesurable - si bien qu'on peut déduire leur magnitude intrinsèque avec une dispersion $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
                 
-                En 1993, Phillips montre à partir de mesures effectuées sur 9 SNe Ia proches <ref doi="10.1086/322460" /> que celles-ci possèdent une dispersion en magnitude maximale intrinsèque de l'ordre de $\pm 0.6$ dans la bande V. Il cite notamment le cas de la supernova SN 1991bg qui est significativement moins lumineuses que les autres. Il note aussi que sa courbe de luminosité dans la bande B au cours du temps semble décroître plus rapidement. 
-                
-                
-                
-                <ref doi="10.1086/322460" />
-                
+                En 1993, Phillips montre à partir de mesures effectuées sur 9 SNe Ia proches <ref doi="10.1086/186970" /> que celles-ci possèdent une dispersion en magnitude maximale intrinsèque de l'ordre de $\pm 0,6$ dans la bande V, et $\pm 0,8$ dans la bande B. Il cite notamment le cas de la supernova SN 1991bg qui est significativement moins lumineuses que les autres. Il note aussi que sa courbe de luminosité dans la bande B au cours du temps semble décroître plus rapidement. Des corrélations sont alors recherchées afin de déterminer si l'estimation de la luminosité maximale peut être affinée à l'aide d'autres observables. Dans la poursuite de l'idée des travaux de Pskovskii en 1984, Phillips teste l'hypothèse d'une corrélation entre rapidité du déclin de la luminosité des supernovae Ia et leur luminosité maximale. Il définit dans ce but un paramètre de déclin noté $\Delta m_{15}(B)$ qui correspond à la variation de magnitude apparente entre le pic de luminosité et 15 jours plus tard. 
+                Par la suite cette méthode est encore améliorée, à l'aide de templates ou de remises à l'échelle appliquées aux courbes de lumière <ref doi="10.1086/322460" />.
                 <ref doi="10.1086/300499" /> <ref doi="10.1086/307221" />
 
 
