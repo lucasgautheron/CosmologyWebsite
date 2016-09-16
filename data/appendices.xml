@@ -937,7 +937,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
           En particulier, pour un Univers exclusivement composé de matière froide et d'énergie du vide :
           \begin{equation}
-          q_0 = \dfrac{\Omega_m}{2} \Omega_m - \Omega_v
+          q_0 = \dfrac{\Omega_m}{2} - \Omega_v
           \end{equation}
 
           On retrouve bien que la matière froide (poussière) tend à ralentir l'expansion, alors que l'énergie du vide l'accélère.              
@@ -1175,11 +1175,20 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     </appendix>
     
     <appendix id="supernovae-ia" uid="ia-supernovae" ready="1">
-        <title>Supernovas Ia</title>
+        <title>Supernovae Ia</title>
         <text>
-           <h4></h4>
-            <h4>Masse de Chandrasekhar</h4>
-                <h4>Démonstration</h4>
+           <p>Une supernova de type Ia (thermonucléaire) est le phénomène très lumineux d'explosion d'une naine blanche lorsque celle-ci en accrétant de la matière devient trop massives pour demeurer stable. Les supernovae Ia sont très intéressantes en cosmologie, car ce sont des chandelles standard, similairement aux céphéides. Elles permettent donc d'effectuer des mesures de distance de luminosité. Étant très lumineuses, elles sont détectables même étant lointaines, jusqu'à des redshift dépassant 1. Or, à ces redshift, la dépendance de la distance de luminosité avec le redshift dépend beaucoup du modèle cosmologique, et donc les supernovae permettent de mesurer assez précisément des paramètres cosmologiques. C'est par leur étude que fut découverte l'accélération de l'expansion de l'Univers.</p>
+           <p>
+               TODO
+               <ul>
+                   <li>Naines blanches et masse de Chandrasekhar</li>
+                   <li>Effondremment.</li>
+               </ul>
+           </p>
+            <h4>Les naines blanches, masse de Chandrasekhar</h4>
+            <p>
+                Les naines blanches sont des étoiles très compactes ($m\sim M_{\odot}$ et $R \sim 1\% \cdot R_{\odot}$) qui ne résistent à l'effondrement gravitationnel non pas par des réactions thermonucléaires en leur sein, mais grâce à la pression de dégénérescence de leurs électrons, d'origine quantique. La suite de ce paragraphe consiste à montrer l'existence d'une masse limite pour ces objets, appelée masse de Chandrasekhar, au-delà de laquelle cette pression de dégénérescence est insuffisante pour soutenir le poids de la naine blanche.
+            </p>
                 <h5>Equation d'état du gaz d'électrons</h5>
                 <p>
                 On considère l'ensemble des électrons qui constituent l'étoile. Ceux-ci sont confinés à d'importantes pressions et densités, et leur comportement est à la fois quantique et relativiste. 
@@ -1432,6 +1441,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             <linkword>SN de type I</linkword>
             <linkword>supernovae Ia</linkword>
             <linkword>supernovae de type Ia</linkword>
+            <linkword>supernova de type Ia</linkword>
         </linkwords>
     </appendix>
     
