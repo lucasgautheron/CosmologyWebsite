@@ -1489,10 +1489,15 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         <title>Principe d'équivalence</title>
         <text><p>Le principe d'équivalence formule de façon générale l'idée selon laquelle la nature d'un objet n'affecte pas la façon dont il se meut dans un champ de gravitation. Cette idée était déjà présente en mécanique Newtonienne, dans laquelle un corps de masse $m$ dans un champ de gravitation $\vec{g}$ obéit à la troisième loi de Newton $m_i\dfrac{d\vec{v}}{dt} = m_g\vec{g}$. La masse inertielle $m_i$ étant considérée comme identique à la masse $m_g$ chez Newton, il vient que pour tout corps $\dfrac{d\vec{v}}{dt} = \vec{g}$. 
         </p>
-        <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
+            
+            <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi <ref doi="10.1007/3-540-40988-2_10" /> : 
+            <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
+            
         <p>On distingue deux formulations type du principe d'équivalence :</p>
             <p><b>Principe d'équivalence faible</b>: Des masses "tests" (d'influence gravitationnelle négligeable) se meuvent de la même façon dans un champ gravitationnel indépendamment de leur nature : leur mouvement ne dépend que de leur position et vitesse initiale dans l'espace-temps.</p>
+            
             <p><b>Principe d'équivalence fort</b>: Le résultat de toute expérience physique, pouvant inclure notamment la gravitation elle-même, est le même dans tout référentiel en chute libre, quelque soit sa position dans l'espace-temps..</p>
+            
             <p><b>Du principe d'équivalence au formalisme tensoriel :</b> Le principe d'équivalence suggère une formulation particulière de la gravitation. En particulier, si tous les objets en chute libre suivent la même trajectoire, cette trajectoire a un caractère universel. En relativité générale, celle-ci est une géodésique dans une variété riemannienne.
             </p>
         </text>
