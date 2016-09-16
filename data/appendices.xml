@@ -1455,6 +1455,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
                 <figure src="SNIa_lightcurves.svg" plot="SNIa_lightcurves" source="SNIa_lightcurves">
                     Courbes de lumière dans la bande B de plusieurs supernovae de type Ia, en magnitude absolue.
+                    
                 </figure>
                 
                 De là, elles possèdent un certain potentiel en tant que chandelles standard. Une bonne chandelle standard doit avoir une dispersion en magnitude faible $\Delta M$ faible, pour que la méthode soit précise. Les céphéides variables par exemple, peuvent avoir des magnitudes absolues très différentes, mais celle-ci est fortement corrélée avec leur période - qui est facilement mesurable - si bien qu'on peut déduire leur magnitude intrinsèque avec une dispersion $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.

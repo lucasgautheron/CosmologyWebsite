@@ -1,5 +1,5 @@
 <?php
-$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2014J', 'SN2012fr');
+$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2014J', 'SN2012fr', 'SN1998aq');
 
 function getlightcurve($data, $band)
 {
