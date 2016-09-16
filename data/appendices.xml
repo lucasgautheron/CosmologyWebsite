@@ -1256,10 +1256,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Enfin, la densité d'électrons $n$ vaut simplement $N/L^3$ et donc :
                 \begin{equation}
                 n =\dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} f(E(p)) p^2 dp
-                \end{equation}
-                
-                Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. Cette relation est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. 
-                
+                \end{equation}            
                 
                 L'énergie totale du système $U$ est donnée par la somme des énergies moyennes de chaque état $U_i = f_i E_i$. En sommant sur tous les états autorisés on trouve :
                 
@@ -1267,7 +1264,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 U = g \displaystyle \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty}  f \left (E(p_x, p_y, p_z)\right )  E(n_x, n_y, n_z) 
                 \end{equation}
                 
-                Cette somme peut être transformée en intégrale par le même processus de continuisation que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale :
+                Cette somme peut être transformée en intégrale par le même processus de continuisation que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale : <note>Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. Cette relation est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. </note>
                 
                 \begin{equation}
                 U = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} f \left (E(p)\right )  E(p) p^2 dp

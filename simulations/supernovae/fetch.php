@@ -1,5 +1,5 @@
 <?php
-$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2012fr', 'SN1998aq', 'SN1971I', 'SN1980N', 'SN1981B', 'SN1986G', 'SN1989B', 'SN1990N', 'SN1991T', 'SN1992A');
+$supernovae = array('SN1991bg', 'SN1999ee', 'SN2011fe', 'SN2012fr', 'SN1998aq', 'SN1971I', 'SN1980N', 'SN1981B', 'SN1986G', 'SN1989B', 'SN1990N', 'SN1991T', 'SN1992A', 'SN2000cx', 'SN1999ee', 'SN1998bu', 'SN2007af', 'SN2009dc', 'SN2004eo', 'SN1991T', 'SN2002bo');
 
 function getlightcurve($data, $band)
 {
@@ -42,6 +42,8 @@ function getlightcurve($data, $band)
         $entry['time_since_maximum'] = (float)$entry['time'] - (float)$peak_time;
     }
 
+    echo "max: {$peak_mag} {$max_appmag}\n";
+
     return $entries;
 }
 
@@ -81,12 +83,17 @@ foreach($supernovae as $supernova)
         }
     }
 
-    foreach($curve['B'] as $datapoint)
+    foreach($curve['B'] as $n => $datapoint)
     {
         if($datapoint['time_since_maximum'] >= 15)
         {
             $delta = $datapoint['apparent_magnitude'] - $max_appmag;
-            fwrite($fp_deltam15, "$delta {$max_absmag} {$datapoint['time_since_maximum']} $supernova\n");
+            $a = ($curve['B'][$n-1]['apparent_magnitude']-$curve['B'][$n]['apparent_magnitude'])/($curve['B'][$n]['time_since_maximum']-$curve['B'][$n-1]['time_since_maximum']);
+            $b = $curve['B'][$n]['apparent_magnitude'];
+            $delta_interpol = $a * ($curve['B'][$n]['time_since_maximum']-15) + $b - $max_appmag;
+           
+            fwrite($fp_deltam15, "$delta_interpol {$max_absmag} {$datapoint['time_since_maximum']} $supernova\n");
+            
             break;
         }
     }
