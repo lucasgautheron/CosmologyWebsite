@@ -838,7 +838,7 @@
                     <li>Les <b>SN de type II</b> : Elles sont dues à l'effondrement d'une plus grande variétés d'étoiles lorsque notamment celles-ci ne produisent plus suffisamment d'énergie à partir des réactions nucléaires en leur sein.</li>
                 </ul>
                 Parmi les premières, les supernovae de type Ia présentent la caractéristique de contenir du silicium dans leur spectre.
-                Elles ont surtout une autre propriété majeur : elles possèdent des luminosités intrinsèques proches ! Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe, et plus particulièrement le temps typique qui la caractérise, permet de remonter encore plus précisément à leur luminosité intrinsèque maximale, comme découvert en 1993 <ref doi="10.1086/186970" />. Pour les SN Ia, la forme de cette courbe (notamment la vitesse à laquelle elle décroit) permet de remonter encore plus précisément à leur luminosité intrinsèque maximale. Cela signifie que l'on peut connaitre leur magnitude absolue sans connaitre leur distance !
+                Elles ont surtout une autre propriété majeur : elles possèdent des luminosités intrinsèques proches. Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe, et plus particulièrement la vitesse à laquelle elle décroit, permet de remonter encore plus précisément à leur luminosité intrinsèque maximale, comme découvert en 1993 <ref doi="10.1086/186970" />. Cela signifie que l'on peut connaitre leur magnitude absolue sans connaitre leur distance !
                 Les supernovae Ia sont donc des "chandelles standard", à la manière des céphéides variables, mais leur importante luminosité permet de mesurer des distances plus lointaines. Ce constat est supporté par des modélisations et il y a de bonnes raisons d'avoir confiance en le potentiel des SN Ia en tant que chandelles standard. 
                 
                 Ainsi, observer la courbe de luminosité des SN Ia permet d'en déduire leur magnitude absolue et donc leur distance de luminosité. On peut par ailleurs mesurer leur redshift. Or, la relation entre distance de luminosité et redshift est fixée pour un modèle cosmologique donné. 
@@ -857,6 +857,9 @@
                     La gauche de la figure montre les courbes de luminosité de 10 supernovae Ia, dans deux bandes différentes, en fonction du temps. La forme de la courbe est utilisée pour affiner l'estimation de la luminosité maximale. La courbe de droite représente la relation distance de luminosité-redshift observée, confrontée à plusieurs modèles cosmologiques. Le meilleur fit correspond à $(\Omega_m = 0,24, \Omega_\Lambda = 0,76)$ pour un Univers plat. $(\Omega_m = 1, \Omega_\Lambda = 0)$ (Univers plat et sans constante cosmologique, conforme au modèle $S-CDM$) est exclus. Ces figures sont tirées de <ref doi="10.1086/300499" />.
                 </figure>
             </p>
+    	    <p>
+    	        Cette découverte majeure est récompensée en 2011 par l'attribution du prix Nobel à Saul Perlmutter, Brian P. Schmidt et Adam G. Riess.
+    	    </p>
     	</text>
         <further-readings>
           <further-reading>

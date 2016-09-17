@@ -1182,10 +1182,11 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         <text>
            <p>Une supernova de type Ia (thermonucléaire) est le phénomène très lumineux d'explosion d'une naine blanche lorsque celle-ci en accrétant de la matière devient trop massives pour demeurer stable. Les supernovae Ia sont très intéressantes en cosmologie, car ce sont des chandelles standard, similairement aux céphéides. Elles permettent donc d'effectuer des mesures de distance de luminosité. Étant très lumineuses, elles sont détectables même étant lointaines, jusqu'à des redshift dépassant 1. Or, à ces redshift, la dépendance de la distance de luminosité avec le redshift dépend beaucoup du modèle cosmologique, et donc les supernovae permettent de mesurer assez précisément des paramètres cosmologiques. C'est par leur étude que fut découverte l'accélération de l'expansion de l'Univers.</p>
            <p>
-               TODO
+               Cette annexe est divisée en trois parties : 
                <ul>
                    <li>Naines blanches et masse de Chandrasekhar</li>
-                   <li>Effondremment.</li>
+                   <li>Effondremment</li>
+                   <li>Emploi comme chandelles standards</li>
                </ul>
            </p>
             <h4>Les naines blanches, masse de Chandrasekhar</h4>
@@ -1450,7 +1451,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 De façon empirique, on sait au début des années 1990 que les supernovae de type Ia ont une magnitude maximale similaire, et des courbes de luminosité ($t\mapsto L(t)$) semblables.
                 Ces courbes montrent toute une augmentation rapide jusqu'à l'atteinte d'une maximum puis une diminution plus lente.
                 
-                <figure src="SNIa_lightcurves.svg" plot="SNIa_lightcurves" source="SNIa_lightcurves">
+                <figure src="SNIa_lightcurves.svg" plot="SNIa_lightcurves" source="supernovae">
                     Courbes de lumière dans la bande B de plusieurs supernovae de type Ia, en magnitude absolue. Données extraites de <a href="https://sne.space/">sne.space</a>.
                 </figure>
                 
