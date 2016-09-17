@@ -290,6 +290,12 @@
     </script>
   </xsl:template>
   
+  <xsl:template name="common-footer">
+    <div id="footer">
+      Histoire de la cosmologie, de la relativité d'Einstein aux résultats de la mission Planck.
+    </div>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>
@@ -354,6 +360,7 @@
           </ul>
         </div>      
       </div>
+      <xsl:call-template name="common-footer"/>
     </body>
   </html>
 
@@ -435,6 +442,7 @@
           </p>
         </div>
       </div>
+      <xsl:call-template name="common-footer"/>
     </body>
   </html>
 </xsl:result-document>
@@ -534,6 +542,7 @@
         </div>
       <div class="clear"></div>
     </div>
+    <xsl:call-template name="common-footer"/>
     </body>
   </html>
 </xsl:result-document>
@@ -650,6 +659,7 @@
         </div>
       <div class="clear"></div>
     </div>
+    <xsl:call-template name="common-footer"/>
     </body>
   </html>
 </xsl:result-document>

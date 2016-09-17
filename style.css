@@ -114,7 +114,7 @@ div#appendix, div#image
 
 div#image img { width: 100%; }
 
-div#navigation
+div#navigation, div#footer
 {
     padding: 1em;
     background-color: #BBB;
