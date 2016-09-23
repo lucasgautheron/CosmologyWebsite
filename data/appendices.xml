@@ -1177,6 +1177,22 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
+    <appendix id="supernovae-effondrement-coeur" uid="baryogenesis" ready="1">
+        <title>Supernovae à effondrement de coeur</title>
+        <text>
+            <p>
+               Une supernova à effondrement de coeur est l'explosion qui suit l'effondrement d'une étoile massive (dont la masse excède environ 10 masses solaires), qui survient lorsque la production de fer commence dans son coeur. Une étoile résiste normalement à l'effondrement par gravité grâce aux réactions thermonucléaires exothermiques en son sein. Or, le fer est l'élément le plus stable et sa formation dans le coeur implique que seules des réactions endothermiques peuvent avoir lieu. Ces réactions sont principalement la photo-désintégration, et lorsque le coeur atteint la masse de chandrasekhar, la capture électronique qui combine électrons et protons pour former des neutrons. Cette capture, avec la création de paires électron-positron, est responsable de l'émission de grandes quantités de neutrinos. Alors, le coeur qui n'était supporté plus que par la pression de dégénérescence des électrons s'effondre jusqu'à ce que le caractère répulsif de l'interaction forte soit assez intense pour résister à la gravité (ce qui se produit lorsque la densité dépasse celle d'un noyau <ref doi="10.1038/nphys172" />). Cet arrêt abrupt de l'effondrement crée une onde de choc qui se propage vers l'extérieur et s'atténue progressivement pour ne se propager que jusqu'à une centaine de kilomètres dans l'étoile à cause des pertes énergétiques <ref doi="10.1086/163343" /> <ref doi="10.1016/j.nuclphysbps.2013.04.036" />. Puis, la partie intérieure de l'étoile s'effondre en un objet compact, alors que la partie extérieure est plutôt accélérée dans le sens opposé après avoir été réchauffée par l'absorption de neutrinos. Ainsi, entre ces deux régions se forme une zone intermédiaires de faible densité et dominée par du rayonnement propice à l'éjection de la matière située dans les couches plus externes (la supernova).
+            </p>
+
+            <p>
+En plus de l'émission de neutrinos et de photons, une supernova à effondrement de coeur peut aussi être la source de rayonnement gravitationnel. Le moment quadrupolaire du coeur peut augmenter pendant son effondrement <ref doi="10.12942/lrr-2003-2" />, and la magnitude ainsi que le court temps typique ($\sim$ 1 s) de cet événement sont propices à l'émission d'ondes gravitationnelles très intenses.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>supernovae à effondrement de coeur</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="supernovae-ia" uid="ia-supernovae" ready="1">
         <title>Supernovae Ia</title>
         <text>
@@ -1466,7 +1482,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             </p>
         </text>
         <linkwords>
-            <linkword>SN de type I</linkword>
+            <linkword>supernovae thermonucléaires</linkword>
             <linkword>supernovae Ia</linkword>
             <linkword>supernovae de type Ia</linkword>
             <linkword>supernova de type Ia</linkword>
