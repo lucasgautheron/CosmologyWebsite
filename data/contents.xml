@@ -176,7 +176,7 @@
             Il s'agit donc d'un Univers de Lemaître-Friedmann à constante cosmologique nulle. 
             Ce modèle permet de déduire la densité de matière dans l'Univers directement à partir de la constante de Hubble $H_0$. On trouve ainsi avec les données de l'époque une densité de $10^{-25} \mbox{ kg.m}^{-3}$. Or il se trouve qu'il s'agit de l'ordre de grandeur de la densité telle qu'évaluée à partir des estimations de distances et masses des galaxies.
             Un élément majeur de ce modèle est qu'il implique l'apparition d'une singularité initiale : l'Univers semble naitre d'un état de densité infinie (facteur d'échelle nul), et ce il y a un peu plus d'un milliard d'années.
-            Lemaître qui avait déjà remarqué ce fait suggère en 1931 une explication. Il propose que l'Univers soit né de la désintégration d'un "atome", un état lié de la matière qui en se pulvérisant aurait engendré l'expansion. Il considère que ceci donne une explication aux rayons cosmiques et que la présence d'autres particules parmi ce rayonnement (alors non prouvée) en accréditerait la vraisemblance. Ainsi, pour Lemaître, cette singularité est tout à fait physique.
+            Lemaître qui avait déjà remarqué ce fait suggère en 1931 une explication. Il propose que l'Univers soit né de la désintégration d'un "atome" <ref doi="10.1038/127706b0" />, un état lié de la matière qui en se pulvérisant aurait engendré l'expansion. Il considère que ceci donne une explication aux rayons cosmiques et que la présence d'autres particules parmi ce rayonnement (alors non prouvée) en accréditerait la vraisemblance. Ainsi, pour Lemaître, cette singularité est tout à fait physique.
             </p> 
             <p>
                 En 1948, F. Hoyle pointe quelques problèmes qui suggèrent le besoin de formuler une autre théorie pour l'Univers :
@@ -1185,9 +1185,19 @@
             </p>
             <p>
                 Depuis, les données ont été accumulées et ont permis de contrôler l'écart entre la prédiction de la relativité générale et l'observation à moins de 0,2 $\%$.
+            </p>
+            <p>
                 <figure src="pulsar_B1913_16.svg" title="Variation de la période orbitale du système PSR B1913+16 depuis 1975">
                     Courbe de $\Delta T$, la variation de la période orbitale de PSR B1913+16 depuis 1975. Les données sont superposées à la prédiction de la relativité générale. La diminution due aux ondes gravitationnelles est bien observée et l'accord avec la théorie est excellent.
                 </figure>
+            </p>
+            <p>
+                En 1993, R. Hulse et J. Taylor ont reçu le prix Nobel pour leur découverte de ce pulsar qui a permis de tester précisément la relativité générale.
+            </p>
+            
+            <h3>Les détecteurs interférométriques LIGO et VIRGO</h3>
+            <p>
+                Au début des années 1970, Rainer Weiss travaille au MIT sur la possibilité de détecter des ondes gravitationnelles à l'aide d'un interféromètre de type michelson éclairé par un laser. Parallèlement, à Caltech, Kip Thorne étudie 
             </p>
         </text>
     </content>
