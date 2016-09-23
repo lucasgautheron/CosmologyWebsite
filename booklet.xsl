@@ -159,7 +159,7 @@
           \includesvg[width=0.9\textwidth]{../images/<xsl:value-of select="substring(./@src, 1, string-length(./@src)-4)" />}
         </xsl:when>
       </xsl:choose>
-      \caption{\textbf{<xsl:value-of select="./@title" />}. <xsl:apply-templates select="text()" />}
+      \caption{\textbf{<xsl:value-of select="./@title" />}. <xsl:apply-templates select="node()" />}
       \end{figure}
   </xsl:template>
   
@@ -316,6 +316,7 @@
         <xsl:apply-templates select="./text" />        
     </xsl:for-each>
     
+    %\nocite{*}
     \bibliographystyle{ieeetr}
     \bibliography{booklet}
     
