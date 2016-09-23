@@ -2087,7 +2087,7 @@ Et
           </p>
           <h4>Axions</h4>
           <p>
-              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn.
+              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn <ref doi="10.1103/PhysRevLett.38.1440" /> <ref doi="10.1007/978-3-540-73518-2_1" />.
               Un champ scalaire associé $\phi_a$ est introduit, ainsi qu'un paramètre $f_a$, de sorte que la transformation $U(1)_{PQ}$ d'angle $\alpha$ le transforme en :
               \begin{equation}
               \phi_a \to \phi_a + \alpha f_a
