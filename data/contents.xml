@@ -1156,7 +1156,33 @@
         </image>
         <color>#b5328d</color>
         <text>
-            
+            <h3>Prédiction et caractéristiques</h3>
+            <p>
+                Les ondes gravitationnelles sont une prédiction établie par Einstein en 1916 en tant que conséquence de la relativité générale. Ce sont une solution particulière des équations d'Einstein qui se traduisent par la propagation à la vitesse de la lumière d'une onde transverse $h$ telle que la métrique devient localement :
+                \begin{equation}
+                g^{\mu\nu} = \eta^{\mu\nu} + h^{\mu\nu}
+                \end{equation}
+                Il existe deux modes de polarisation possibles pour une telle onde, notés $+$ et $\times$. La forme de $h^{\mu\nu}$ est, pour une onde plane se propageant la direction spatiale $z$ :
+                $\begin{bmatrix}0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; h^{+} &amp; h^{\times} &amp; 0\\ 0 &amp; h^{\times} &amp; h^{+} &amp; 0\\ 0 &amp; 0  &amp; 0 &amp; 0 \end{bmatrix}$
+                
+                Une distribution de masse accélérée dissymétrique émet des ondes gravitationnelles.
+                L'amplitude de l'onde perçue à grande distance $r$ d'une source est donnée par : <ref isbn="9781292026633" /> 
+                \begin{equation}
+                h^{ij}(t, r) = \dfrac{1}{r} \dfrac{2G}{c^4} \ddot{I}^{ij}(t-r/c) \textrm{ pour } (i,j \in \{1,2,3\})
+                \end{equation}
+                
+                Où $I^{ij} = \int_{\textrm{source}} (3 r^i r^j - \vec{r}^2) \rho d^{3}\vec{r} \textrm{ pour } (i,j \in \{1,2,3\})$.
+                
+                Le facteur $1/r$ est la décroissance de l'amplitude avec la distance. Le préfacteur $G/c^4$ vaut environ $10^{-44}$ m/J. Le moment quadrupolaire $I$ est nul pour une distribution à symétrie sphérique. La dérivée seconde signifie que les masses doivent être accélérées pour émettre des ondes gravitationnelles, de façon analogue à l'émission d'ondes électromagnétiques par des charges accélérées. Enfin le terme $t-r/c$ traduit le fait que l'onde gravitationnelle se propage à $c$.
+                
+                Cette formule indique que des ondes gravitationnelles peuvent être émises par un système binaire, ou un object compact en rotation avec des écarts à la sphéricité par exemple.
+                
+                Une des conséquences de cette émission est qu'un tel système perd de l'énergie. Ainsi, un système binaire de deux étoiles suffisamment proche et de demi-grand axe $a$ (avec une rotation rapide selon la loi de Kepler $T^2 \propto a^3$ et donc fortement accélérées) tendra à se rapprocher jusqu'à fusionner puisqu'en perdant de l'énergie les masses se rapprochent ($a \propto -1/E$).
+            </p>
+            <h3>Découverte indirecte</h3>
+            <p>
+                
+            </p>
         </text>
     </content>
 

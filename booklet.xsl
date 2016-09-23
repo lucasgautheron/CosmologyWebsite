@@ -316,7 +316,7 @@
         <xsl:apply-templates select="./text" />        
     </xsl:for-each>
     
-    \bibliographystyle{plain}
+    \bibliographystyle{ieeetr}
     \bibliography{booklet}
     
     \end{document}                          % The required last line
