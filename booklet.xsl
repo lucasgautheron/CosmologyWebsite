@@ -20,7 +20,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        \hyperref[ann:<xsl:value-of select="$linkword[1]" />]{<xsl:value-of select="$linkword[2]" />}
+        \hyperref[ann:<xsl:value-of select="$linkword[1]" />]{<xsl:value-of select="$linkword[2]" />} (p. \pageref{ann:<xsl:value-of select="$linkword[1]" />})
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
