@@ -837,8 +837,8 @@
                     <li>Les <b>supernovae thermonucléaires</b> (aussi appelées supernovae de type Ia) : Elles sont dues à l'effondrement de naines blanches (des étoiles compactes de masse proche de celle du Soleil mais de rayon 100 fois plus petit) maintenues en équilibre contre l'effondrement gravitationnel par la pression de dégénérescence de leurs électrons<note>La pression de dégénérescence d'un gaz d'électron est la pression de ces électrons du au principe d'exclusion de Pauli qui en interdisant deux fermions d'être dans le même état quantique entraine que pour une pression donnée la densité d'électrons ne peut dépasser une certaine valeur.</note></li>
                     <li>Les <b>supernovae à effondrement de coeur</b> : Elles sont dues à l'effondrement d'une plus grande variétés d'étoiles massives (masse supérieure à une dizaine de masses solaires) dès lors que leur coeur produit du Fer.</li>
                 </ul>
-                Parmi les premières, les supernovae de type Ia présentent la caractéristique de contenir du silicium dans leur spectre.
-                Elles ont surtout une autre propriété majeur : elles possèdent des luminosités intrinsèques proches. Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe, et plus particulièrement la vitesse à laquelle elle décroit, permet de remonter encore plus précisément à leur luminosité intrinsèque maximale, comme découvert en 1993 <ref doi="10.1086/186970" />. Cela signifie que l'on peut connaitre leur magnitude absolue sans connaitre leur distance !
+                
+                Les supernovae de type Ia se différencient des autres supernovae de type I par la présence de silicium dans leur spectre. Elles sont surtout comme propriété majeure de posséder des luminosités intrinsèques proches. Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe, et plus particulièrement la vitesse à laquelle elle décroit, permet de remonter encore plus précisément à leur luminosité intrinsèque maximale, comme découvert en 1993 <ref doi="10.1086/186970" />. Cela signifie que l'on peut connaitre leur magnitude absolue assez précisément sans connaitre leur distance !
                 Les supernovae Ia sont donc des "chandelles standard", à la manière des céphéides variables, mais leur importante luminosité permet de mesurer des distances plus lointaines. Ce constat est supporté par des modélisations et il y a de bonnes raisons d'avoir confiance en le potentiel des SN Ia en tant que chandelles standard. 
                 
                 Ainsi, observer la courbe de luminosité des SN Ia permet d'en déduire leur magnitude absolue et donc leur distance de luminosité. On peut par ailleurs mesurer leur redshift. Or, la relation entre distance de luminosité et redshift est fixée pour un modèle cosmologique donné. 
@@ -1179,9 +1179,15 @@
                 
                 Une des conséquences de cette émission est qu'un tel système perd de l'énergie. Ainsi, un système binaire de deux étoiles suffisamment proche et de demi-grand axe $a$ (avec une rotation rapide selon la loi de Kepler $T^2 \propto a^3$ et donc fortement accélérées) tendra à se rapprocher jusqu'à fusionner puisqu'en perdant de l'énergie les masses se rapprochent ($a \propto -1/E$).
             </p>
-            <h3>Découverte indirecte</h3>
+            <h3>Première observation indirecte</h3>
             <p>
-                
+                En 1974, Russel Hulse et Joseph Taylor découvrent le pulsar binaire "PSR B1913+16" <ref doi="10.1086/181708" /> composé a priori d'une étoile à neutron émettant dans notre direction avec une période de rotation 59 millisecondes et d'un compagnon compact, a priori une autre étoile à neutron. Ils mesurent entre autres le demi-grand axe du système ($2\times 10^{6}$ km) et sa période orbitale (27 900 s environ). En 1975 Robert Wagoner suggère que puisque d'après la relativité générale un tel système perd une quantité significative d'énergie par émission d'ondes gravitationnelles, alors son demi-grand axe doit diminuer et sa période orbitale aussi dans des proportions mesurables <ref doi="10.1086/181745" />. Ce système permettrait donc de tester la réalité des ondes gravitationnelles. En 1979, Joseph Taylor donne les résultats de cette mesure de $\dot{T}$ (le taux de diminution de la période) et trouve $\dot{T}^{obs}/\dot{T}^{th} = 1,3 \pm 0,3$ <ref doi="10.1038/277437a0" /> <ref doi="10.1088/0264-9381/32/12/124009" />, confirmant ainsi de façon assez convaincante l'existence des ondes gravitationnelles.
+            </p>
+            <p>
+                Depuis, les données ont été accumulées et ont permis de contrôler l'écart entre la prédiction de la relativité générale et l'observation à moins de 0,2 $\%$.
+                <figure src="pulsar_B1913_16.svg" title="Variation de la période orbitale du système PSR B1913+16 depuis 1975">
+                    Courbe de $\Delta T$, la variation de la période orbitale de PSR B1913+16 depuis 1975. Les données sont superposées à la prédiction de la relativité générale. La diminution due aux ondes gravitationnelles est bien observée et l'accord avec la théorie est excellent.
+                </figure>
             </p>
         </text>
     </content>
