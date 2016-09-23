@@ -1151,13 +1151,12 @@
     
     <content id="astronomie-gravitationelle" uid="gravitational-wave-astronomy">
         <title>Astronomie avec les ondes gravitationnelles</title>
-        <image src="">
-            
+        <image src="virgo.jpg">
+            Le détecteur Virgo. Source : wikipedia.
         </image>
-        <color>#e5d223</color>
+        <color>#b5328d</color>
         <text>
-            <p>oort etc.</p>
-            <p>TODO: mettre le truc classique avec l'application du viriel en ressource.</p>
+            
         </text>
     </content>
 
