@@ -1036,9 +1036,9 @@
                 </figure>
               </p>
 
-              <h4>Trous noirs primordiaux</h4>
+              <h3>Trous noirs primordiaux</h3>
               <p>
-                Les trous noirs primordiaux sont des trous noirs qui se seraient formés au début du Big-Bang. Encore non observés, ils demeurent cependant un bon candidat pour la matière noire.
+                Les trous noirs primordiaux sont des trous noirs qui se seraient formés au début du Big-Bang et constituent un type spécifique de MACHO. Encore non observés, ils demeurent cependant un éventuel candidat pour la matière noire.
                 Un mécanisme de formation possible est l'effondrement de fluctuations de densité de l'ordre de la distance d'Horizon à l'époque de formation, antérieure à la nucléosynthèse primordiale. Une autre est la fusion et l'effondrement de "bulles de vide" formées lors d'une transition de premier ordre d'un champ d'un équilibre métastable (un "faux-vide" avec une énergie moyenne $> 0$) et le "vrai-vide" (état stable d'énergie nulle).
                 Le processus de formation détermine la distribution de leur masse attendue notée $M_{PBH}$, qui peut s'étaler sur un très grand spectre a priori. Des trous noirs primordiaux de masse $M_{PBH}$ inférieure à $\sim 10^{-16} M_{\odot}$ se seraient déjà évaporés, un intervalle de plusieurs dizaines d'ordre de grandeurs au-dessus de ce seuil est encore permis.
                 En raison de l'importance de cet intervalle des techniques très différentes sont employées pour en contraindre des régions particulières. L'état de la recherche sur le sujet est représenté par la figure suivante :
@@ -1197,7 +1197,18 @@
             
             <h3>Les détecteurs interférométriques LIGO et VIRGO</h3>
             <p>
-                Au début des années 1970, Rainer Weiss travaille au MIT sur la possibilité de détecter des ondes gravitationnelles à l'aide d'un interféromètre de type michelson éclairé par un laser. Parallèlement, à Caltech, Kip Thorne étudie 
+                Au début des années 1970, Rainer Weiss travaille au MIT sur la possibilité de détecter des ondes gravitationnelles à l'aide d'un interféromètre de type michelson éclairé par un laser, en étudiant les différentes sources de bruit potentielles.
+                Un tel détecteur repose sur le principe suivant : lors du passage d'une onde gravitationnelle, la métrique est perturbée différemment dans des directions perpendiculaires. En entrant dans un interféromètre de Michelson, celle-ci affecte donc la longueur $L$ de ses deux bras perpendiculaires. La différence de longueur induite $\delta L$ modifie la figure d'interférences en sortie de l'interféromètre, rendant détectable le passage de l'onde. Pour une configuration optimale<note>Onde de polarisation $+$ et de direction de propagation normale au plan de l'interféromètre</note>, la variation de longueur est de :
+                \begin{equation}
+                \delta L = \dfrac{1}{2} h L
+                \end{equation}
+                
+                <figure src="gw_interferometer.png" title="Schéma d'un détecteur d'onde gravitationnel par interférométrie">
+                    Le détecteur est un interféromètre de Michelson réglé en anti-coincidence. Un laser émet un faisceau divisé en deux par une lame semi-réfléchissante. La lumière se propage alors simultanément dans les deux bras perpendiculaires et est réfléchie par les miroirs en bout de bras. Les faisceaux réfléchis se superposent à la sortie de l'interféromètre. Les figures d'interférences renseignent sur la différence de chemin optique entre les deux bras : lors du passage d'une onde gravitationnelle, cette différence varie, le système quitte l'état d'anti-coincidence (franges sombres), ce qui permet d'en réaliser la détection. <ref doi="10.1016/j.nima.2010.07.089" />.
+                </figure>
+            </p>
+                
+            <p>Parallèlement, à Caltech, Kip Thorne et son équipe travaillent sur les sources astrophysiques d'ondes gravitationnelles et le potentiel de détection par une expérience du type de celle envisagée par Weiss. Deux projets expérimentaux sont alors lancés, celui du MIT mené par Weiss, celui de Caltech mené par Ronald Drever et Stan Whitcomb. Des prototypes de petite taille sont conçus et la faisabilité d'un détecteur de plusieurs kilomètres est envisagée. En 1984 Caltech et le MIT unissent leurs efforts et conçoivent le projet LIGO de détecteur interférométrique avec des bras de plusieurs kilomètres de long. 
             </p>
         </text>
     </content>
