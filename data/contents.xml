@@ -1219,7 +1219,22 @@
               </figure>
             </p>
             
-            <p>Parallèlement,</p>
+            <p>Parallèlement au développement de LIGO aux États-Unis, le projet d'un interféromètre européen est lancé au milieu des années 1990 par le CNRS et l'INFN. Construit non loin de Pise, des prises de données ont été effectuées entre 2007 et 2011, sans qu'un événément ne sont détecté. Un projet d'amélioration visant à augmenter la sensibilité de l'expérience est alors entrepris (Advanced Virgo) avec pour objectif de nouvelles prises de données dès fin 2016.
+            Le fonctionnement concurrentiel de plusieurs détecteurs permet de mieux reconstruire la direction de la source par triangulation, et donc de chercher la présence de signaux complémentaires (lumière, neutrinos) dans cette direction.</p>
+            
+            <h3>Perspectives et cosmologie</h3>
+            
+            <p>
+              De façon générale, la détection d'ondes gravitationnelles offre une fenêtre d'observation indépendante du canal électromagnétique habituel et permet d'accéder à une grande variété de phénomènes. Plusieurs recherches sont ainsi effectuées par LIGO :            
+            </p>
+            
+            <ul>
+                <li><b>Coalescence d'objets compacts : </b> Recherche de fusions de systèmes binaires d'objects compacts (trou-noir/trou-noir, étoile à neutron/trou-noir, étoile à neutron/étoile à neutron). Ceci permet de mesurer leurs masses initiale, la masse de l'objet final, leur distance de luminosité et redshift.</li>
+                <li><b>Supernovae à effondrement de coeur : </b> Recherche d'ondes gravitationnelles en coincidence avec des supernovae à effondrement de coeur, afin de mieux comprendre les mécanismes en jeu.</li>
+                <li><b>Fond stochastique : </b> Recherche d'un fond stochastique d'origine cosmologique, tel que motivé par certaines théories comme la théorie des cordes <ref doi="10.1103/PhysRevLett.98.111101" />.</li>
+            </ul>
+            
+            <p>La recherche d'événements transitoires permettant d'accéder à leur distance de luminosité et leur redshift, il est possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards. Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV.</p>
         </text>
     </content>
 
