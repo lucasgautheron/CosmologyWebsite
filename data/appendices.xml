@@ -545,8 +545,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h4>Singularité initiale ?</h4>
             <p>Ce modèle a la particularité de faire apparaitre une "singularité", un état de densité infinie. Ceci fait apparaitre un âge maximal pour l'Univers, mais on ne sait pas dans les années 1930-1940 si celui-ci est vraiment "né" de cet état particulier. Certains physiciens rejettent alors cette idée pour des raisons philosophiques (un tel scénario rappelant certaines thèses religieuses). </p>
             <h4>Abandon de la constante cosmologique</h4>
-            <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus absolument nécessaire à Einstein et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoretically for the existence of a fiinite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
-            Einstein dira plus tard que son introduction était "la plus grande erreur de sa vie".</p>
+            <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus absolument nécessaire à Einstein et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoretically for the existence of a finite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
+            Einstein dira plus tard que l'introduction de cette constante était "la plus grande erreur de sa vie".</p>
             <figure src="einstein-ds_universe.svg" title="Evolution du facteur d'échelle" plot="einstein-ds_universe">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
         </text>
         <linkwords>
@@ -2087,7 +2087,7 @@ Et
           </p>
           <h4>Axions</h4>
           <p>
-              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn.
+              Peccei et Quinn ont proposé un mécanisme résolvant le problème CP-fort. Il s'agit de requérir une nouvelle symétrie globale et axiale $U(1)_{PQ}$spontanément brisée, dite de Peccei-Quinn <ref doi="10.1103/PhysRevLett.38.1440" /> <ref doi="10.1007/978-3-540-73518-2_1" />.
               Un champ scalaire associé $\phi_a$ est introduit, ainsi qu'un paramètre $f_a$, de sorte que la transformation $U(1)_{PQ}$ d'angle $\alpha$ le transforme en :
               \begin{equation}
               \phi_a \to \phi_a + \alpha f_a
