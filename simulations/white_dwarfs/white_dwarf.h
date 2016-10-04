@@ -2,25 +2,25 @@
 
 #define max(a,b) ((a)>(b)? (a) : (b))
 
-double pressure(double x)
+inline double pressure(double x)
 {
     double root = pow(x, 1.0/3.0);
     return (3.0/8.0) * log(root + sqrt(root*root+1)) + sqrt(1+root*root) * (0.25 * x - (3.0/8.0) * root); 
     
 }
 
-double energy(double x)
+inline double energy(double x)
 {
     double root = pow(x, 1.0/3.0);
     return (1.0/8.0) * ( log(root + sqrt(root*root+1)) + sqrt(1+root*root) * (2 * x - root) ); 
 }
 
-double dpressure(double x)
+inline double dpressure(double x)
 {
     return pow(x, 2.0/3.0)/(3.0*sqrt( 1 + pow(x, 2.0/3.0) ));
 }
 
-double find_x_from_pressure(double p, double x0 = 1)
+inline double find_x_from_pressure(double p, double x0 = 1)
 {
     const double max_error = 1e-10;
     const int max_iterations = 1000;
