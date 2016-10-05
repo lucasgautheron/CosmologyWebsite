@@ -686,7 +686,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             <h4>Découverte de l'accélération de l'expansion de l'Univers</h4>
             <p>
-               En 1998 blabla
+                La mesure de la relation distance de luminosité-redshift a permis en 1998 la découverte de l'accélération de l'expansion de l'Univers (voir <contentlink id="decouverte-acceleration-expansion" />). 
             </p>
             <p>Les supernovas de type Ia constituent de bonnes chandelles standard. On connait donc à la fois leur magnitude absolue et apparente ce qui donne leur distance de luminosité $d_L$. Un fit est réalisé ci-dessous dans le cadre d'un Univers plat constitué de matière froide et d'énergie noire.
             <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle $\Lambda$CDM" plot="SNIa">

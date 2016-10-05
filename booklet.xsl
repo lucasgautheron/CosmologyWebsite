@@ -20,7 +20,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        \hyperref[ann:<xsl:value-of select="$linkword[1]" />]{<xsl:value-of select="$linkword[2]" />} (p. \pageref{ann:<xsl:value-of select="$linkword[1]" />})
+        \hyperref[appendix:<xsl:value-of select="$linkword[1]" />]{<xsl:value-of select="$linkword[2]" />} (p. \pageref{appendix:<xsl:value-of select="$linkword[1]" />})
         <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -212,7 +212,7 @@
   
   <xsl:template match="contentlink">
     <xsl:variable name="id" select="./@id"/>
-    <a class="content-link" href="/{./@id}/" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
+    \hyperref[chapter:<xsl:value-of select="$id" />]{<xsl:value-of select="/root/contents/content[@id=$id][1]/title" />} (p. \pageref{chapter:<xsl:value-of select="$id" />})
   </xsl:template>
   
   <xsl:template name="disclaimer">
@@ -277,8 +277,9 @@
     \mainmatter                             % only in book class (arabic page #s)
     
     <xsl:for-each select="root/contents/content">
-        <xsl:variable name="cuid" select="./@uid"/>
+        <xsl:variable name="cuid" select="./@uid"/>   
         \chapter{<xsl:value-of select="./title" />}
+        \label{chapter:<xsl:value-of select="./@id" />}
       
         \begin{itemize}
         <xsl:for-each select="/root/events/event[@content-id=$cuid]">
@@ -312,7 +313,7 @@
     
     <xsl:for-each select="root/appendices/appendix">
         \section{<xsl:value-of select="./title" />}
-        \label{ann:<xsl:value-of select="./@id" />}
+        \label{appendix:<xsl:value-of select="./@id" />}
         <xsl:apply-templates select="./text" />        
     </xsl:for-each>
     
