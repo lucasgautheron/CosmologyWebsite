@@ -818,7 +818,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <appendix id="constante-de-hubble" uid="hubble-constant" ready="1">
         <title>Constante de Hubble</title>
-        <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z=\lambda_{rec}/\lambda_{em}$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v/c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
+        <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z=\lambda_{rec}/\lambda_{em}$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v = z c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
             <p>Démonstration de la relation entre taux d'expansion et distance et de la loi de Hubble
                 <spoiler>
                 Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
