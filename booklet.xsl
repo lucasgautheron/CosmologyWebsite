@@ -91,15 +91,18 @@
         <xsl:variable name="ref" select="document(concat('./tmp/ref_', $safedoi, '.xml'))" />
         
         @article{ref-<xsl:value-of select="$safedoi" />,
-        title = "<xsl:value-of select="$ref//journal_article/titles/title[1]" />",
-        author = "<xsl:for-each select="$ref//contributors/person_name[@contributor_role='author'][position() &lt;= $maxauthors]">
+        title = {<xsl:value-of select="$ref//journal_article/titles/title[1]" />},
+        author = {<xsl:for-each select="$ref//contributors/person_name[@contributor_role='author'][position() &lt;= $maxauthors]">
             <xsl:value-of select="./given_name" />&#160;<xsl:value-of select="./surname" />
             <xsl:if test="position() != last() and not(position() >= $maxauthors) "> and </xsl:if>
         </xsl:for-each>
           <xsl:if test="count($ref//contributors/person_name[@contributor_role='author']) > $maxauthors">
               et al.
-          </xsl:if>",
-          year = "<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />"
+          </xsl:if>},
+          year = {<xsl:value-of select="$ref/doi_records/doi_record/crossref/journal/journal_article/publication_date[1]/year" />},
+          journal = {<xsl:value-of select="($ref//journal_metadata/full_title)[1]" />},
+          journaltitle = {<xsl:value-of select="($ref//journal_metadata/full_title)[1]" />},
+          url={<xsl:value-of select="($ref//doi_data/resource)[1]" />}
         }
       </xsl:when>
       <xsl:when test="$isbn">
@@ -318,8 +321,8 @@
     </xsl:for-each>
     
     %\nocite{*}
-    \bibliographystyle{ieeetr}
-    \bibliography{booklet}
+    \bibliographystyle{IEEEtran}
+    \bibliography{IEEEabrv,booklet}
     
     \end{document}                          % The required last line
     
