@@ -440,6 +440,21 @@
               <li>Le <a href="http://lapth.in2p3.fr/">LAPTh</a>, le <a href="http://lapp.in2p3.fr/">LAPP</a> et le <a href="http://lpnhe.in2p3.fr/">LPNHE</a> pour leur accueil.</li>
             </ul>
           </p>
+          
+          <h2>Bibliographie</h2>
+          <h3>Lectures conseillées</h3>
+          <p>
+            <ul>
+              <li><i>Modern Cosmology in Retrospect</i> de 	B. Bertotti, R. Balbinot, S. Bergia, A. Messina <ref isbn="9780521372138" />. Cet ouvrage regroupe les témoignages de plusieurs physiciens parmi lesquels Alpher, Herman, Hoyle et Wagoner, à propos des développements de la cosmologie du début du 20ème siècle à la fin des années 1980. Cet ouvrage très accessible éclaire efficacement la construction parallèle des théories du Big-Bang et l'univers stationnaire puis la façon dont le Big-Bang s'est imposé.</li>
+              <li></li>
+            </ul>
+          </p>
+          
+          <div>
+            <xsl:call-template name="list-references">
+              <xsl:with-param name="text" select="/" />
+            </xsl:call-template>
+          </div>
         </div>
       </div>
       <xsl:call-template name="common-footer"/>
