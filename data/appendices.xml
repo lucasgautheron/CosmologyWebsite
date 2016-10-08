@@ -1099,6 +1099,32 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Cela implique une erreur statistique de l'ordre de $\sqrt{2/(2l+1)}$ sur $C_l$, qui est indépassable par l'expérience. C'est la variance cosmique.
                 
             </p>
+            <h4>Spectre de puissance et paramètres du modèle standard de la cosmologie</h4>
+            <p>
+                <figure src="cmb_spectrum_hubble.svg" title="Spectre TT et constante de Hubble $H_0$" source="CMB" plot="cmb_spectrum_hubble">
+                    
+                </figure>
+                
+                <figure src="cmb_spectrum_ombh2.svg" title="Spectre TT et densité baryonique $\Omega_b h^2$" source="CMB" plot="cmb_spectrum_ombh2">
+                    
+                </figure>
+                
+                <figure src="cmb_spectrum_omch2.svg" title="Spectre TT et densité de matière noire $\Omega_{cdm} h^2$" source="CMB" plot="cmb_spectrum_omch2">
+                    
+                </figure>
+                
+                <figure src="cmb_spectrum_optical_depth.svg" title="Spectre TT et épaisseur optique $\tau$" source="CMB" plot="cmb_spectrum_optical_depth">
+                    
+                </figure>
+                
+                <figure src="cmb_spectrum_scalar_amp.svg" title="Spectre TT et amplitude des perturbations primordiales de courbure $\Delta R^2$" source="CMB" plot="cmb_spectrum_scalar_amp">
+                    
+                </figure>
+                
+                <figure src="cmb_spectrum_scalar_index.svg" title="Spectre TT et indice spectral des perturbations primordiales scalaires" source="CMB" plot="cmb_spectrum_scalar_index">
+                    
+                </figure>
+            </p>
         </text>
         <linkwords>
             <linkword>fond diffus cosmologique</linkword>
@@ -1922,8 +1948,7 @@ Et
                     incoming: {i1: '10,60'},
                     outgoing: {o1: '190,60'},
                     vertex: {v1: '58.5,60', v2: '141.5,60'},
-                    scalar: {line: 'i1-v1,v2-o1'},
-                    fermion: {loop: 'v2-v1'},
+                    scalar: {line: 'i1-v1,v2-o1', loop: 'v2-v1'},
                     label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
                     t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
                 </feynman>
@@ -1939,7 +1964,7 @@ Et
                 Dans ce cas, le terme $\mu^2$ doit être extrêmement élevé, de l'ordre de l'échelle de Planck, mais ajusté très finement de façon à ce que la différence avec le terme d'auto-interaction soit inférieure de 17 ordres de grandeur.
                 Cet ajustement très fin semble contraire au principe de naturalité. Cela suggère l'émergence de nouvelle physique en-deça de l'échelle de Planck.
                 
-                Notons que cette divergence n'intervient qu'avec le Higgs, les corrections d'énergie d'auto-interaction des fermions n'étant que logarithmique en le cut-off $\Lambda$ et donc l'ajustement négligeable. C'est le cas pour l'électron par exemple :
+                Notons que cette divergence n'intervient qu'avec le Higgs, les corrections d'énergie d'auto-interaction des fermions n'étant que logarithmiques en le cut-off $\Lambda$ et donc l'ajustement négligeable. C'est le cas pour l'électron par exemple :
                 
                 <feynman id="fermion-one-loop-mass" title="Energie d'auto-interaction de l'électron à boucle simple">
                     description: 'One-loop electron self-energy diagram in QED',
