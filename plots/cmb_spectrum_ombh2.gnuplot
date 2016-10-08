@@ -9,5 +9,3 @@ set xrange [0:2500]
 set yrange [0:]
 
 plot for [file in files] file u 1:2 title system("head -n 1 ".file." | cut -d '#' -f 2") w l
-
-pause -1
