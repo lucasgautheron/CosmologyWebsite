@@ -1118,15 +1118,15 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </figure>
                 
                 <figure src="cmb_spectrum_optical_depth.svg" title="Spectre TT et épaisseur optique $\tau$" source="CMB" plot="cmb_spectrum_optical_depth">
-                    
+                    L'épaisseur optique mesure l'atténuation du rayonnement fossile par interaction avec la matière de l'Univers. Ainsi, plus $\tau$ est grand, plus cette atténuation est importante et plus le spectre est diminué. L'effet de l'épaisseur optique sur la courbe du spectre de puissance est globalement sa diminution d'un facteur $\sim e^{-2\tau}$.
                 </figure>
                 
                 <figure src="cmb_spectrum_scalar_amp.svg" title="Spectre TT et amplitude des perturbations primordiales de courbure $\Delta R^2$" source="CMB" plot="cmb_spectrum_scalar_amp">
-                    
+                    Spectre de puissance $TT$ pour différentes valeurs d'amplitude des perturbations primordiales de courbure $\Delta R^2$. Comme le souligne l'échelle verticale logarithmique, multiplier la valeur de cette amplitude d'une certaine quantité a pour effet principal de multiplier le spectre de puissance de la même quantité.
                 </figure>
                 
                 <figure src="cmb_spectrum_scalar_index.svg" title="Spectre TT et indice spectral des perturbations primordiales scalaires" source="CMB" plot="cmb_spectrum_scalar_index">
-                    
+                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. $k$k est l'image de $l$ (et de $1/\Delta \theta$) si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$) alors qu'une valeur de $n_s$ plus petite favorise les grandes échelles angulaires. 
                 </figure>
             </p>
         </text>
