@@ -9,6 +9,7 @@ function default_params()
     $params['omch2'] = 0.112;
     $params['hubble'] = 70;
     $params['re_optical_depth'] = 0.09;
+    $params['omk'] = 0;
 
     $params['output_root'] = 'test';
     return $params;
@@ -44,4 +45,6 @@ build_template("omch2", "{/Symbol O}_{cdm} h^2", array(0.05, 0.112, 0.15));
 
 build_template("re_optical_depth", "{/Symbol t}", array(0.01, 0.09, 0.18));
 
-build_template("hubble", "H_{0}", array(60, 70, 80));
+build_template("hubble", "h", array(60, 70, 80));
+
+build_template("omk", "{\Symbol O}_{k}", array(-0.2, 0, 0.2));
