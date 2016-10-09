@@ -108,15 +108,16 @@
       <xsl:when test="$isbn">
           <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))//fn:map[@key='volumeInfo'][1]" />
         @book{ref-<xsl:value-of select="$isbn" />,
-          title = "<xsl:value-of select="$ref//fn:string[@key='title']" />",
-          author = "<xsl:for-each select="$ref//fn:array[@key='authors']/fn:string[position() &lt;= $maxauthors]">
+          title = {<xsl:value-of select="$ref//fn:string[@key='title']" />},
+          author = {<xsl:for-each select="$ref//fn:array[@key='authors']/fn:string[position() &lt;= $maxauthors]">
               <xsl:value-of select="." />
               <xsl:if test="position() != last() and not(position() >= $maxauthors) "> and </xsl:if>
           </xsl:for-each>
           <xsl:if test="count($ref//fn:array[@key='authors']/fn:string) > $maxauthors">
               et al.
-          </xsl:if>",
-          year="<xsl:value-of select="substring(($ref//fn:string[@key='publishedDate'])[1], 1, 4)" />"
+          </xsl:if>},
+          year={<xsl:value-of select="substring(($ref//fn:string[@key='publishedDate'])[1], 1, 4)" />},
+          url={<xsl:value-of select="$ref//fn:string[@key='canonicalVolumeLink']" />}
         }
       </xsl:when>
     </xsl:choose>

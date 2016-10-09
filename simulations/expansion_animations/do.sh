@@ -8,11 +8,17 @@ mkdir -p files
 
 ./expansion
 
-./luminosity_video.sh acc 4 40
-./luminosity_video.sh dec 4 40
+printf "Generating luminosity distance in accelerated expansion anim...\n"
+./luminosity_video.sh acc 4 40 > /dev/null
 
-./velocity_video.sh acc 4 40
-./velocity_video.sh dec 4 40
+printf "Generating luminosity distance in decelerated expansion anim...\n"
+./luminosity_video.sh dec 4 40 > /dev/null
+
+printf "Generating recession velocity in accelerated expansion anim...\n"
+./velocity_video.sh acc 4 40 > /dev/null
+
+printf "Generating recession velocity in decelerated expansion anim...\n"
+./velocity_video.sh dec 4 40 > /dev/null
 #./velocity_video.sh dec 5 15
 
 rm -f *.res

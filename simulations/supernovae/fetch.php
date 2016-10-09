@@ -20,6 +20,7 @@ function getlightcurve($data, $band)
 
     foreach($data['photometry'] as $entry)
     {
+        if(!array_key_exists('band', $entry)) continue;
         if($entry['band'] == $band)
         {
             $entry['time'] = is_array($entry['time']) ? array_sum($entry['time'])/count($entry['time']) : $entry['time'];
@@ -53,6 +54,8 @@ $fp_deltam15= fopen("../../plots/data/SNIa_deltam15.res", "w+");
 
 foreach($supernovae as $supernova)
 {
+    echo "Extracting data from $supernova...\n";
+
     $json = "../../tmp/$supernova.json";
     if(!file_exists($json))
     {

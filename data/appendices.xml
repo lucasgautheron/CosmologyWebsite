@@ -1082,6 +1082,21 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             <h4>Anisotropies du fond diffus cosmologique</h4>
             <p>
                 Le fond diffus cosmologique n'est, comme notre Univers, par parfaitement homogène. La carte qu'on en dresse contient donc des anisotropies. Leur mesure peut nous renseigner sur de nombreux paramètres cosmologiques classiques (contenu de l'Univers, constante de Hubble) mais aussi sur les fluctuations primordiales de densité, ces déviations initiales par rapport à l'homogénéité, qui ont donné naissance aux grandes structures de l'Univers.
+            </p>
+            
+            <p>
+                A l'origine, les inhomogénéités de l'Univers prennent leur source dans ce qu'on appelle les fluctuations primordiales de densité. Ces fluctuations sont représentées par des perturbations au premier ordre de la densité, de la vitesse locale de la matière et du potentiel $\phi$ :
+                \begin{equation}
+                \left\{\begin{matrix}
+                \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)+ \delta\rho (t,\vec{x}) \\
+                \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)(1+\delta(t,\vec{x}) \\
+                \vec{v}(t, \vec{x) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x})$ et $\phi(t,\vec{x}) = \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})  
+                \end{matrix}\right.
+                \end{equation}
+                Où $\vec{x}$ sont les coordonnées comobiles.
+            </p>
+            
+            <p>
                 
                 Afin d'exploiter statistiquement les anistropies du CMB, on utilise leur spectre de puissance. Celui-ci provient de la décomposition de la carte de températures en harmoniques sphériques :
                 
@@ -1126,7 +1141,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </figure>
                 
                 <figure src="cmb_spectrum_scalar_index.svg" title="Spectre TT et indice spectral des perturbations primordiales scalaires" source="CMB" plot="cmb_spectrum_scalar_index">
-                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. $k$k est l'image de $l$ (et de $1/\Delta \theta$) si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$) alors qu'une valeur de $n_s$ plus petite favorise les grandes échelles angulaires. 
+                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. $k$ est l'image de $l$ (et de $1/\Delta \theta$) si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$) alors qu'une valeur de $n_s$ plus petite favorise les grandes échelles angulaires. 
                 </figure>
             </p>
         </text>
