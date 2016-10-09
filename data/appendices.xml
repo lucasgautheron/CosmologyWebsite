@@ -1086,13 +1086,11 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             
             <p>
                 A l'origine, les inhomogénéités de l'Univers prennent leur source dans ce qu'on appelle les fluctuations primordiales de densité. Ces fluctuations sont représentées par des perturbations au premier ordre de la densité, de la vitesse locale de la matière et du potentiel $\phi$ :
-                \begin{equation}
-                \left\{\begin{matrix}
+                \begin{equation}\left\{\begin{matrix}
                 \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)+ \delta\rho (t,\vec{x}) \\
                 \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)(1+\delta(t,\vec{x}) \\
-                \vec{v}(t, \vec{x) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x})$ et $\phi(t,\vec{x}) = \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})  
-                \end{matrix}\right.
-                \end{equation}
+                \vec{v}(t, \vec{x) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x})$ et $\phi(t,\vec{x}) = \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})\\
+                \end{matrix}\right.\end{equation}
                 Où $\vec{x}$ sont les coordonnées comobiles.
             </p>
             
