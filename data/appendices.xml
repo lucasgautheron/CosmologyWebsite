@@ -1090,7 +1090,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)+ \delta\rho (t,\vec{x}) \\
                 \vec{v}(t, \vec{x}) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x}) \\
                 \phi(t,\vec{x}) &amp; = &amp; \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})\\
-                \end{matrix}\right.\end{equation}\end{equation}
+                \end{matrix}\right.\end{equation}
                 Où $\vec{x}$ sont les coordonnées comobiles.
                 
                 On peut en déduire une solution perturbative au premier ordre en ces variations en injectant ces définitions dans les équations qui régissent le fluide, à savoir les équations d'Euler et de poisson suivantes :
@@ -1098,7 +1098,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \dot{\rho} + \nabla \cdot (\rho \vec{v}) = 0 \mbox{ (équation de continuité) } \\
                 \dot{\vec{v}} + (\vec{v} \cdot \nabla) \vec{v} = -\nabla (\phi + \dfrac{P}{\rho}) \mbox{ (principe fondamental de la dynamique) }\\
                 \nabla^2 \phi = 4\pi G \rho \mbox{ (équation de Poisson) }\\
-                \end{matrix}\right.\end{equation}\end{equation}
+                \end{matrix}\right.\end{equation}
                 
                 Il apparait alors que la solution dans l'espace "fréquentiel" (après transformée de fourier spatiale $\vec{x}\to\vec{k}$ de $\delta \rho$) est :
                 \begin{equation}
