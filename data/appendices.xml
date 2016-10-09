@@ -1086,12 +1086,30 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             
             <p>
                 A l'origine, les inhomogénéités de l'Univers prennent leur source dans ce qu'on appelle les fluctuations primordiales de densité. Ces fluctuations sont représentées par des perturbations au premier ordre de la densité, de la vitesse locale de la matière et du potentiel $\phi$ :
-                \begin{equation}\left\{\begin{matrix}
+                \begin{equation}\begin{equation}\left\{\begin{matrix}
                 \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)+ \delta\rho (t,\vec{x}) \\
-                \rho(t, \vec{x}) &amp; = &amp; \bar{\rho}(t)(1+\delta(t,\vec{x}) \\
-                \vec{v}(t, \vec{x) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x})$ et $\phi(t,\vec{x}) = \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})\\
-                \end{matrix}\right.\end{equation}
+                \vec{v}(t, \vec{x}) &amp; = &amp; \vec{\bar{v}}(t,\vec{x}) + \vec{\delta v}(t,\vec{x}) \\
+                \phi(t,\vec{x}) &amp; = &amp; \bar{\phi}(\vec{x}) + \delta \phi(t,\vec{x})\\
+                \end{matrix}\right.\end{equation}\end{equation}
                 Où $\vec{x}$ sont les coordonnées comobiles.
+                
+                On peut en déduire une solution perturbative au premier ordre en ces variations en injectant ces définitions dans les équations qui régissent le fluide, à savoir les équations d'Euler et de poisson suivantes :
+                \begin{equation}\begin{equation}\left\{\begin{matrix}
+                \dot{\rho} + \nabla \cdot (\rho \vec{v}) = 0 \mbox{ (équation de continuité) } \\
+                \dot{\vec{v}} + (\vec{v} \cdot \nabla) \vec{v} = -\nabla (\phi + \dfrac{P}{\rho}) \mbox{ (principe fondamental de la dynamique) }\\
+                \nabla^2 \phi = 4\pi G \rho \mbox{ (équation de Poisson) }\\
+                \end{matrix}\right.\end{equation}\end{equation}
+                
+                Il apparait alors que la solution dans l'espace "fréquentiel" (après transformée de fourier spatiale $\vec{x}\to\vec{k}$ de $\delta \rho$) est :
+                \begin{equation}
+                \ddot{\delta\rho}(\vec{k}) + 2 H \dot{\delta\rho}(\vec{k}) + \left ( \dfrac{v_s^2 \vec{k}^2}{a^2} - 4\pi G\bar{\rho}\right ) \delta\rho(\vec{k}) = 0 
+                \end{equation}
+                
+                On en déduit deux types de solutions :
+                <ul>
+                    <li>Si $k &lt; a\sqrt{4\pi G\bar{\rho}}/v_s$, alors les solution sont une croissance sans fin des perturbations.</li>
+                    <li>Sinon, les solutions sont des oscillations amorties avec une "constante" de temps $1/H$.</li>
+                </ul>
             </p>
             
             <p>
