@@ -32,6 +32,7 @@ div#timeline-container h1
 ul#timeline
 {
   list-style-position: outside;
+  list-style-type: none;
   margin-left: 10px; 
 }
 #timeline > li
