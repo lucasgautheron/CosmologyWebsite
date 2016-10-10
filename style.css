@@ -20,7 +20,7 @@ h2 { margin: 0.7em 0; font-size: 150%; }
 h3 { margin: 0.4em 0; font-size: 120%; }
 
 table { text-align: left; border-collapse: collapse; }
-table tr td { padding: 0.5em; border: 1px solid black; }
+table tr td, table tr th { padding: 0.5em; border: 1px solid black; }
 
 .hidden { display: none; }
 
