@@ -553,7 +553,7 @@
 
         <div id="image">
           <img src="/images/{./image/@src}" />
-          <span class="caption"><xsl:value-of select="./image/." /></span>
+          <span class="caption"><xsl:apply-templates select="./image/." /></span>
         </div>
       <div class="clear"></div>
     </div>
@@ -670,7 +670,7 @@
 
         <div id="image" class="hidden">
           <img src="/images/{./image/@src}" />
-          <span class="caption"><xsl:value-of select="$pagecontent/image/." /></span>
+          <span class="caption"><xsl:apply-templates select="$pagecontent/image/." /></span>
         </div>
       <div class="clear"></div>
     </div>
