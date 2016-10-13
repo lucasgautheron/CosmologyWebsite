@@ -993,6 +993,24 @@
         </further-readings>
     </content>
     
+    <content id="pic-acoustique-baryons" uid="baryon-acoustic-peak" type="timeline">
+        <title>Oscillations acoustiques des baryons et première détection du pic</title>
+        <image src="sdss.jpg">
+            
+        </image>
+        <color>#94ca28</color>
+        <text>
+            <p>
+                
+            </p>
+            <p>
+                <ref doi="10.1086/466512" />
+            </p>
+        </text>
+        <further-readings>
+        </further-readings>
+    </content>
+    
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
     	<title>Recherche de la matière noire</title>
         <image src="dark_matter.jpg">
