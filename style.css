@@ -47,13 +47,13 @@ ul#timeline
 {
   text-align: right;
   width: 110px;
-  padding: 0 15px 0 0;
+  padding: 0.3em 15px 0 0;
   float: left;
   margin: 0;
 }
 #timeline .timeline-content
 {
-  padding: 0;
+  padding: 0.3em 0;
   margin: 0;
   width: 75%;
   float: left;
@@ -71,6 +71,7 @@ ul#timeline
   left: 120px;
   top: 5px;
   border-radius: 100%;
+  margin: 0.3em 0;
 }
 
 p { margin-bottom: 1em; }
