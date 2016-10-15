@@ -156,6 +156,9 @@
       \centering
       <xsl:variable name="extension" select="substring(./@src, string-length(./@src)-2, 3)" />
       <xsl:choose>
+        <xsl:when test="./@plot">
+          \resizebox{0.9\linewidth}{!}{\input{../images/<xsl:value-of select="./@plot" />}}
+        </xsl:when>
         <xsl:when test="$extension = 'jpg' or $extension = 'png'">
           \includegraphics[width=0.9\textwidth]{../images/<xsl:value-of select="./@src" />}
         </xsl:when>

@@ -94,12 +94,31 @@ if($perform_simulations)
 
 // gnuplot
 $start_time = microtime(true);
+
+function translate_latex($gnuplot)
+{
+    $symbols = array("\alpha" => "{/Symbol a}",
+                 "\beta" => "{/Symbol b}",
+                 "\delta" => "{/Symbol d}",
+                 "\Delta" => "{/Symbol D}",
+                 "\gamma" => "{/Symbol g}",
+                 "\omega" => "{/Symbol o}",
+                 "\Omega" => "{/Symbol O}",
+                 "\phi" => "{/Symbol p}",
+                 "\tau" => "{/Symbol t}");
+    
+    foreach($symbols as $tex => $svg) $gnuplot = str_replace($tex, $svg, $gnuplot);
+    return $gnuplot;
+} 
+
 chdir('plots/');
 $plots = glob("*.gnuplot");
 foreach($plots as $plot)
 {
     $plot = preg_replace('/\\.(gnuplot)/', '', $plot);
-    file_put_contents("tmp", "set term svg enhanced dynamic dashed font 'DejaVuSerif,14'; set out '../images/$plot.svg'; \n" . file_get_contents("$plot.gnuplot"));
+    file_put_contents("tmp", "set term svg enhanced dynamic dashed font 'DejaVuSerif,14'; set out '../images/$plot.svg'; \n" . translate_latex(file_get_contents("$plot.gnuplot")));
+    exec('gnuplot tmp' . $redirect, $output, $return_code);
+    file_put_contents("tmp", "set term epslatex; set out '../images/$plot.tex'; \n" . file_get_contents("$plot.gnuplot"));
     exec('gnuplot tmp' . $redirect, $output, $return_code);
     $return |= $return_code;
 }
