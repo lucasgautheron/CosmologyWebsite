@@ -1,8 +1,8 @@
 set xrange [-1.75:1.75]
 set yrange [0:4]
 
-set xlabel '{/Symbol p}'
-set ylabel 'V({/Symbol p})'
+set xlabel '\phi'
+set ylabel 'V(\phi)'
 
 # set format x " " 
 # set format y " "

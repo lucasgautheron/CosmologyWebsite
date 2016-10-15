@@ -5,13 +5,12 @@ function getlightcurve($data, $band)
 {
     $max_absmag = $max_appmag = 0;
 
-    foreach($data['maxband'] as $n => $b)
+    foreach($data['maxvisualband'] as $n => $b)
     {
-        if($b['value'] == $band) // galactic absorption might be band dependent ?
-        {
-            $max_absmag = $data['maxabsmag'][$n]['value'];
-            $max_appmag = $data['maxappmag'][$n]['value'];
-        }
+        $max_absmag = $data['maxvisualabsmag'][$n]['value'];
+        $max_appmag = $data['maxvisualappmag'][$n]['value'];
+
+        if($b['value'] == $band) break; // galactic absorption might be band dependent ?
     }
 
     $entries = array();
@@ -77,13 +76,12 @@ foreach($supernovae as $supernova)
     fclose($fp);
 
     $max_absmag = $max_appmag = 0;
-    foreach($data['maxband'] as $n => $b)
+    foreach($data['maxvisualband'] as $n => $b)
     {
-        if($b['value'] == 'B') // galactic absorption might be band dependent ?
-        {
-            $max_absmag = $data['maxabsmag'][$n]['value'];
-            $max_appmag = $data['maxappmag'][$n]['value'];
-        }
+        $max_absmag = $data['maxvisualabsmag'][$n]['value'];
+        $max_appmag = $data['maxvisualappmag'][$n]['value'];
+
+        if($b['value'] == 'B') break; // galactic absorption might be band dependent ?
     }
 
     foreach($curve['B'] as $n => $datapoint)
