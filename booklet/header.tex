@@ -17,6 +17,8 @@
 \usepackage{svg}
 \usepackage{wrapfig}
 \usepackage{epstopdf}
+\usepackage{calc}
+\usepackage{mdframed}
 
 \usepackage{float}
 
@@ -69,3 +71,8 @@
 \pgfmathsetmacro{\rvec}{.8}
 \pgfmathsetmacro{\thetavec}{-30}
 \pgfmathsetmacro{\phivec}{-90}
+
+\setlength{\fboxsep}{10pt}
+\fbox{%
+  \rule{4cm}{3cm}
+}

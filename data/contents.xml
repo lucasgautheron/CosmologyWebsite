@@ -1026,7 +1026,7 @@
                   <li><b>Courbes de rotation des galaxies </b> : La distribution des vitesses observée au sein des galaxies indique une présence de masse significativement plus importante que celle estimée à partir des ondes électromagnétiques qu'elles émettent ("lumière"), et s'étendant aux-delà des bords visibles.</li>  
                   <li><b>Densité de matière froide de l'Univers</b> : Les observations cosmologiques et la structure de l'Univers révèlent que parmi la matière "froide" (non relativiste) qui compose l'Univers, un peu moins de 20 % seulement est visible (étoiles, planètes, gaz interstellaire). Le reste est inexpliqué !</li>
                   <li><b>Effet de lentille gravitationnelle</b> : Des rayons lumineux passant près d'une masse importante sont déviés. Cet effet dit de "lentille gravitationnelle" permet donc de déceler la présence de matière même si celle-ci est invisible directement (voir image ci-contre).</li>
-                  <li><b>Matière baryonique et nucléosynthèse primordiale</b> : Bien que nombreuses et complexes, les réactions nucléaires quit ont eu lieu alors que la température de l'Univers était de l'ordre de 0,1 MeV qui ont conduit à la formation des éléments légers (Deutérium, Hélium) peuvent être résolues numériquement. On trouve alors que pour être en accord avec les observations expérimentales, la densité de matière baryonique $\Omega_B$ doit être inférieure à $0,04$ ($\rho_{B} \sim 4 \times 10^{-27} \textrm{kg}.\textrm{m}^{-3}$) <ref doi="10.1126/science.7809624" />. Ceci ne représente que 4 $\%$ de la densité critique<note>densité de fermeture</note>, et donc de la matière de l'Univers puisque celui-ci est très plat.</li>
+                  <li><b>Matière froide et matière baryonique</b> : Bien que nombreuses et complexes, les réactions nucléaires quit ont eu lieu alors que la température de l'Univers était de l'ordre de 0,1 MeV qui ont conduit à la formation des éléments légers (Deutérium, Hélium) peuvent être résolues numériquement. On trouve alors que pour être en accord avec les observations expérimentales, la densité de matière baryonique $\Omega_B$ doit être inférieure à $0,04$ ($\rho_{B} \sim 4 \times 10^{-27} \textrm{kg}.\textrm{m}^{-3}$) <ref doi="10.1126/science.7809624" />. Ceci ne représente que 4 $\%$ de la densité critique<note>densité de fermeture</note>, en accord avec d'autres estimations obtenue à l'aide de la mesure des anisotropies du fond diffus cosmologique par exemple. Pourtant, la matière "froide" doit représenter environ 30$\%$ de la densité critique d'après de nombreuses mesures indépendantes.</li>
               </ul>          
             </p>
              <h3>Candidats pour la matière noire</h3>
@@ -1035,6 +1035,7 @@
                De façon générale, les différents candidats se classent en plusieurs catégories, qui sont la matière noire chaude, tiède et froide.
                La matière noire chaude fait référence à des particules relativistes ($P/\rho \to 1/3$) et la matière froide à des particules non relativistes ($P\to 0$).
                Les neutrinos sont de bons candidats à la matière noire chaude, dont l'existence est déjà démontrée. Il est en effet difficile de connaître précisément leur abondance dans l'Univers. Cependant, la formation des structures et les paramètres cosmologiques décrivant le mieux l'évolution de l'Univers nécessitent une part importante de matière noire froide, et c'est sous cette forme que sont la plupart des candidats.
+               Il existe également des candidats impliquant une modification de la gravitation, comme MOND ou les théories $f(R)$.
              </p>
                 <h4>WIMPs</h4>
               <p>
@@ -1085,6 +1086,36 @@
               \end{equation}
               Les équations du mouvements (équation d'Einstein) s'obtiennent alors par application du principe de moindre action, avec $f(R) = R$.
               L'idée des théories $f(R)$ est d'utiliser une fonction différente pour $f$, par exemple $f(R) = R-\alpha R^2$. Ces modifications pourraient avoir un effet semblable à la présence de matière noire en relativité générale <ref doi="10.1016/j.astropartphys.2008.04.003" />, <ref doi="10.1103/PhysRevLett.102.141301" />. Bien que de nombreuses motivations théoriques existent, ces modèles ne peuvent expliquer de fraction significative de la matière noire sans introduire d'effets incompatibles avec les observations.
+              </p>
+            
+              <h4>MOND (MOdified Newtonian Dynamics)</h4>
+              <p>
+              Une des observations à l'origine du problème de la "matière noire" est celle de la courbe de rotation des galaxies et notamment les travaux Vera Rubin à la fin des années 1970.
+              Ces courbes indiquent une vitesse "trop rapide" à distance du centre des galaxies, avec une courbe de vitesse en "plateau" alors qu'elles devraient diminuer comme $1/\sqrt{r}$ loin du centre. ($v \sim \sqrt{\dfrac{GM}{r}}$ loin des zones de forte densité).
+              En 1983, Mordehai Milgrom montre qu'une modification du principe fondamental de la dynamique ($F=ma$) permettrait de résoudre ce problème <ref doi="10.1086/161130" />. Il suggère de la réécrire comme :
+                  \begin{equation}
+                  \vec{F} = \mu(a/a_0) m\vec{a}
+                  \end{equation}
+                  Où $a_0$ est une nouvelle constante qui doit être ajustée aux données et $\mu$ une fonction proche de 1 lorsque $a/a_0 \gg 1$ et proche de l'identité lorsque $a/a_0 \ll 1$. Dans ce cas, elle se réécrit alors :
+                  \begin{equation}
+                  \vec{F} \simeq a/a_0 m\vec{a}
+                  \end{equation}
+                  
+                  La vitesse à large distance du centre galactique d'une masse test $m$ est alors donnée par :
+                  
+                  \begin{equation}
+                  \dfrac{GMm}{r^2} \simeq  \mu(v^2/r/a_0) m\dfrac{v^2}{r}
+                  \end{equation}
+                  
+                  En effet, $a = v^2/r$ pour un mouvement circulaire uniformément accéléré. Dans le cas où cette accélération est faible (loin du centre) on trouve :
+                  
+                  \begin{equation}
+                  v \simeq (a_0 GM)^{1/4}
+                  \end{equation}
+                  
+                  Ceci ne dépend pas de $r$ et expliquerait le plateau observé par Vera Rubin sur le tracé de $r\mapsto v(r)$.
+              
+                  La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" />. Des observations récentes portées sur 153 galaxies semblent favoriser cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies").
               </p>
     	</text>
         <interviews>

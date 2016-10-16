@@ -243,17 +243,31 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} =  \dfrac{kc^2}{R^2 H_0^2 a^2}
             \end{equation}
             
-            Où $\rho_c = \dfrac{3c^2 H_0^2}{8\pi G}$ est une nouvelle constante appelée densité critique.
+            Où l'on a introduit la densité critique $\rho_c$ :
+            \begin{equation}
+            \rho_c = \dfrac{3c^2 H_0^2}{8\pi G}
+            \end{equation}
             
             On suppose que l'Univers est constitué de matière froide ($\rho_m = \rho_m^0/a^3$), de rayonnement ($\rho_r = \rho_r^0/a^4$), d'énergie du vide ($\rho_v = \rho_v^0$) et d'une espèce telle que $P = w\rho$ donc $\rho_w = \rho_w^0 a^{-3(1+w)}$.
             
-            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2}$, l'équation devient :
+            On définit le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle comme :
+            
+            \begin{equation}
+            \Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}
+            \end{equation}
+            
+            On définit par ailleurs le paramètre de courbure $\Omega_k$ tel que :
+            \begin{equation}
+            \Omega_k = \dfrac{kc^2}{R^2 H_0^2}
+            \end{equation}
+            
+            Alors la dynamique du facteur d'échelle est donnée par :
             
             \begin{equation}
             \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \Omega_v + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
             \end{equation}
             
-            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus utilisées que les densités elles mêmes. Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
+            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus souvent utilisées que les densités elles mêmes. Leur valeur indique la proportion d'énergie contenue sous une forme précise.
             En évaluant l'équation à $t=0$ il vient :
             
             \begin{equation}
@@ -264,12 +278,14 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </p>   
         <h4>Démonstration</h4>
         <p><spoiler>...</spoiler></p>
+            
         <h4>Solutions particulières de l'équation de Friedmann</h4>
         <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
-        <p><b>Univers de poussière</b> : 
+        <h5>Univers de poussière</h5>
+        <p>
         Dans un tel univers, $P=0$. De là le facteur d'échelle obéit à l'équation :
         \begin{equation}
-        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
+        \dot{a}^2 - H_0^2\dfrac{\Omega_m}{a} = \dfrac{kc^2}{R^2} = H_0^2 \Omega_k = H_0^2 (1-\Omega_m)
         \end{equation}
         Cette équation ressemble beaucoup à l'équation du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ (problème à deux corps) :
         
@@ -282,46 +298,59 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
         
         <ul>
-            <li>Pour un Univers plat ($k/R^2 = 0$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  $a^{3/2}(t) = 1 + \dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t$
-                Cet univers "nait" à $t= - \dfrac{2}{3}\sqrt{\dfrac{3c^2}{8\pi G \rho_0}}$ et ne cesse de s'expandre depuis. Il a donc un âge fini $T = \sqrt{\dfrac{c^2}{6\pi G \rho_0}}$.</li>
+            <li>Pour un Univers plat ($k/R^2 = 0$, $\Omega_m = 1$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  
+                \begin{equation}
+                a^{3/2}(t) = 1 + \dfrac{3}{2} H_0 t
+                \end{equation}
+                
+                Cet univers "nait" à $t= - \dfrac{2}{3} H_0$ et ne cesse de s'expandre depuis. Son âge est donc $T = \dfrac{2}{3} H_0$.
+            </li>
             <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors : 
                 <!--TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
             Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$-->
             \begin{equation}
-            \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
-            \end{equation} _et_ périodique</li>
-            <li>Pour un Univers hyperbolique : \begin{equation}
-                \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
+            \sqrt{\Omega_m} H_0(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
+            \end{equation}
+            </li>
+            <li>Pour un Univers hyperbolique :
+                \begin{equation}
+                \sqrt{\Omega_m} H_0(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
                 \end{equation}</li>
         </ul>
+        <b>Preuve : </b>
+            
         <spoiler>
             En univers plat en expansion : ($\dot{a} \geq 0$) 
             \begin{equation}
-            \dot{a} \sqrt{a} = \alpha = \sqrt{\dfrac{8\pi G}{3c^2}}
+            \dot{a} \sqrt{a} = \alpha = H_0
             \end{equation}
             Donc 
             \begin{equation}
-            a^{3/2} (t) = a(0) + \sqrt{\dfrac{8\pi G}{3c^2}} t
+            a^{3/2} (t) = a(0) + \dfrac{3}{2} H_0 t
             \end{equation}
         </spoiler>
         </p>
-        <p><b>Univers de lumière</b> : Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
+        <h5>Univers de lumière</h5>
+        <p>Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
         Alors l'équation à résoudre est :
         \begin{equation}
-        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
+        \dot{a}^2 - H_0^2 \dfrac{\Omega_r}{a^2} = H_0^2(1-\Omega_r)
         \end{equation}
+        
+        On suppose par ailleurs $\dot{a} > 0$.
+        
             <ul>
-                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{32\pi G\rho_0}{3c^2}} t$</li>
-                <li>Pour $k \neq 0$ 
+                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = 2 H_0 t$</li>
+                <li>Pour $k \neq 0$ ($\Omega_r \neq 1$) 
                    
                     \begin{equation}
-                    \dfrac{R}{c} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
+                    \dfrac{1}{\sqrt{1-\Omega_r}} \left [ \sqrt{a^2+\dfrac{\Omega_r}{1-\Omega_r}} - \sqrt{1 +\dfrac{\Omega_r}{1-\Omega_r}} \right ]  \\ = H_0 t
                 \end{equation}
                 
-                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $T = \sqrt{\dfrac{kc^2}{R^2}+\dfrac{8
-                \pi G \rho_0}{3c^2}}$.
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal.
                 
-                Preuve : 
+                <b>Preuve : </b>
+                    
                 <spoiler>
                     On réécrit l'équation sous la forme :
                     \begin{equation}
@@ -343,33 +372,34 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             </ul>
         </p>
             
-            <p><b>Univers d'énergie du vide :</b>
+            <h5>Univers d'énergie du vide</h5>
+            <p>
             L'énergie du vide a pour équation d'état $P=-\rho$ ce qui après résolution de (2) donne $\rho = \mbox{ cste } = \rho_0$. Dès lors :
             \begin{equation}
-            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \rho_0 a^2 = \dfrac{kc^2}{R^2}
+            \dot{a}^2 - H_0^2 \Omega_{\Lambda} a^2 = H_0^2 (1-\Omega_{\Lambda})
             \end{equation}
             <ul>
                 <li>La solution en Univers plat est alors :
                     \begin{equation}
-                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{3c^2}{8 \pi G \rho_0} } 
+                    a(t) = \exp{\left( H_0 t\right )}
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
                 <li>$k>0$ (géométrie hyperbolique) : 
                     
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\cosh \left [ (t-T)/\tau \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
+                    a(t) = &amp;A\cosh \left [ H_0 \sqrt{\Omega_{\Lambda}} (t-T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}}} \\
                     A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
                 <li>$k&lt;0$ (géométrie sphérique)
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\sinh \left [ (t-T)/\tau \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
-                    A = &amp;-\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) = &amp;A\sinh \left [  H_0 \sqrt{\Omega_{\Lambda}}(t-T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
+                    A = &amp;\dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
+                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
                 </li>
@@ -422,20 +452,23 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
                 </spoiler>
+                
+                Notons que si l'énergie du vide est l'effet d'une constante cosmologique $\Lambda$ non nulle alors $\Omega_{\Lambda} = \Lambda c^2/3H_0^2$.
             
             </ul></p>
-            <p><b>Univers vide :</b>
+            <h5>Univers vide</h5>
+            <p>
             Un univers vide vérifie simplement l'équation 
             \begin{equation}
-            \dot{a}^2 = \dfrac{kc^2}{R^2}
+            \dot{a}^2 = H_0^2 \Omega_{k} = H_0^2
             \end{equation}
-            Un tel Univers ne peut être de géométrie sphérique !
-            La solution est alors ($k \geq 0$) :
+            Un tel Univers ne peut être de géométrie sphérique ! Il est hyperbolique ou plat en l'absence d'expansion. 
+            La solution est alors :
             \begin{equation}
-            a(t) = \pm \dfrac{c}{R} t + 1
+            a(t) = \pm H_0 t + 1
             \end{equation}
             
-            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c$. Un Univers plat et vide est statique. </p>
+            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c = 1/H_0$. Un Univers plat et vide est statique. </p>
         </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>

@@ -178,7 +178,9 @@
   </xsl:template>
   
   <xsl:template match="spoiler">
-    <xsl:apply-templates />
+   \begin{mdframed}
+      <xsl:apply-templates />
+   \end{mdframed}
   </xsl:template>
   
   <xsl:template match="quote">
