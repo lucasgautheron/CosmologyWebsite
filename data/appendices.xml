@@ -496,7 +496,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}\left\{\begin{matrix}
             r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
             r &amp; = &amp; \chi \mbox{ si } k=0\\ 
-            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            r &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
             \end{matrix}\right.\end{equation}
             
             On écrit parfois :
@@ -508,7 +508,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
              \begin{equation}\left\{\begin{matrix}
             S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
             S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
-            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
             \end{matrix}\right.\end{equation}</p>
         </text>
         <linkwords>
@@ -1131,10 +1131,16 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
             </p>
             <h4>Spectre de puissance et paramètres du modèle standard de la cosmologie</h4>
+            <p>La mesure du spectre de puissance des anisotropies du fond diffus cosmologique permet d'en déduire les valeurs des paramètres cosmologiques du modèle standard. Cette section montre comment ces paramètres impactent la forme du spectre. Les graphiques ont été générés à l'aide du programme CAMB <ref doi="10.1103/PhysRevD.71.103010" />. </p>
             <p>
+                
+                <h5>Constante de Hubble</h5>
+                
                 <figure src="cmb_spectrum_hubble.svg" title="Spectre TT et constante de Hubble $H_0$" source="CMB" plot="cmb_spectrum_hubble">
                     
                 </figure>
+                
+                <h5>Répartition de l'énergie</h5>
                 
                 <figure src="cmb_spectrum_ombh2.svg" title="Spectre TT et densité baryonique $\Omega_b h^2$" source="CMB" plot="cmb_spectrum_ombh2">
                     
@@ -1148,21 +1154,54 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                     
                 </figure>
                 
+                <h5>Courbure</h5>
+                
                 <figure src="cmb_spectrum_omk.svg" title="Spectre TT et courbure $\Omega_{k}$" source="CMB" plot="cmb_spectrum_omk">
-                    
+                    Les mesures les plus précises du paramètre de courbure $\Omega_k$ sont compatibles avec un Univers plat. Le spectre de puissance TT est représenté ici pour différentes valeurs de $\Omega_k$ correspondant à un univers à géométrie sphérique (-0.2), plat (0), et hyperbolique (+0.2). $\Omega_k$ étant fixé par la somme $\Omega_{m}+\Omega_{\Lambda}$, c'est le paramètre $\Omega_{\Lambda}$ qui varie ici.
                 </figure>
+                
+                Les photons du CMB suivent grossièrement des géodésiques de la métrique FLRW après la recombinaison. Ces géodésiques convergent dans le cas d'une géométrie sphérique, et divergent pour une géométrie hyperbolique. La taille angulaire $\Delta \theta$ d'une fluctuation originant d'une perturbation de taille $\Delta L$ vérifie grossièrement $\Delta \theta \sim \Delta L/d_A(z_{recomb})$ où $d_A(z_{recomb})$ est la distance angulaire d'un objet de taille $\Delta L$ à la recombinaison et vaut :
+                \begin{equation}
+                d_A(z_{recomb}) = c a(t_{recomb}) S_k(\int_{t_{recomb}}^{t_0} \dfrac{dt}{a(t)})
+                \end{equation}
+                
+                L'expression de $S_k$ dépend de la géométrie de l'Univers. La valeur de l'intégrale est principalement déterminée par l'ère pendant laquelle $a$ était petit après la recombinaison, et alors la matière dominait. Cette intégrale vaut alors simplement $ \int_{t_{recomb}}^{t_0} \dfrac{dt}{a(t)} = \int_{0}^{z_{recomb}} \dfrac{dz}{H_0\sqrt{\Omega_m} (1+z)^{3/2}} \simeq 2/H_0\sqrt{\Omega_m}$.
+                
+                Par ailleurs :
+                \begin{equation}\left\{\begin{matrix}
+                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+                S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+                S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                Et $R = \dfrac{c}{H_0\sqrt{|\Omega_k|}}$ si bien que :
+                
+                \begin{equation}\left\{\begin{matrix}
+                \Delta \theta &amp; \propto &amp; \sqrt{|\Omega_k|}/\sin 2\sqrt{\dfrac{|\Omega_k|}{\Omega_m}} \mbox{ si } k&lt;0\\ 
+                \Delta \theta &amp; \propto &amp; \sqrt{\Omega_m}/2 \mbox{ si } k=0\\ 
+                \Delta \theta &amp; \propto &amp; {\sqrt{|\Omega_k}|}/\sinh 2\sqrt{\dfrac{|\Omega_k|}{\Omega_m}} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                
+                Ainsi, une géométrie sphérique ($\Omega_k &lt; 0$) augmente la taille angulaire des anisotropies, et donc déplace le spectre de puissance vers la gauche, à l'inverse d'une géométrie hyperbolique.
+                
+                <h5>Épaisseur optique</h5>
                 
                 <figure src="cmb_spectrum_optical_depth.svg" title="Spectre TT et épaisseur optique $\tau$" source="CMB" plot="cmb_spectrum_optical_depth">
                     L'épaisseur optique mesure l'atténuation du rayonnement fossile par interaction avec la matière de l'Univers. Ainsi, plus $\tau$ est grand, plus cette atténuation est importante et plus le spectre est diminué. L'effet de l'épaisseur optique sur la courbe du spectre de puissance est globalement sa diminution d'un facteur $\sim e^{-2\tau}$.
                 </figure>
                 
+                <h5>Fluctuations primordiales</h5>
+                
                 <figure src="cmb_spectrum_scalar_amp.svg" title="Spectre TT et amplitude des perturbations primordiales de courbure $\Delta R^2$" source="CMB" plot="cmb_spectrum_scalar_amp">
-                    Spectre de puissance $TT$ pour différentes valeurs d'amplitude des perturbations primordiales de courbure $\Delta R^2$. Comme le souligne l'échelle verticale logarithmique, multiplier la valeur de cette amplitude d'une certaine quantité a pour effet principal de multiplier le spectre de puissance de la même quantité.
+                    Spectre de puissance $TT$ pour différentes valeurs d'amplitude des perturbations primordiales de courbure $\Delta R^2$. 
                 </figure>
                 
+                Comme le souligne l'échelle verticale logarithmique, multiplier la valeur de cette amplitude d'une certaine quantité a pour effet principal de multiplier le spectre de puissance de la même quantité.
+                
                 <figure src="cmb_spectrum_scalar_index.svg" title="Spectre TT et indice spectral des perturbations primordiales scalaires" source="CMB" plot="cmb_spectrum_scalar_index">
-                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. $k$ est l'image de $l$ (et de $1/\Delta \theta$) si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$) alors qu'une valeur de $n_s$ plus petite favorise les grandes échelles angulaires. 
+                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. 
                 </figure>
+                
+                Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. Des petites valeurs de $k$ sont corrélées à des grandes échelles angulaires, si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$). Au contraire, une valeur de $n_s$ inférieure favorise les grandes échelles angulaires. 
             </p>
         </text>
         <linkwords>
