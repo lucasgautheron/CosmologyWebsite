@@ -388,7 +388,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     \begin{equation}\left\{\begin{matrix}
                     a(t) = &amp;A\cosh \left [ H_0 \sqrt{\Omega_{\Lambda}} (t-T) \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}}}} \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}}} \\
                     A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
                     \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
@@ -397,7 +397,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>$k&lt;0$ (géométrie sphérique)
                     \begin{equation}\left\{\begin{matrix}
                     a(t) = &amp;A\sinh \left [  H_0 \sqrt{\Omega_{\Lambda}}(t-T) \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}}} \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
                     A = &amp;\dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
                     \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
