@@ -183,11 +183,32 @@
    \end{mdframed}
   </xsl:template>
   
+  <xsl:template name="oq">
+    <xsl:choose>
+      <xsl:when test="$language = 'english'">``</xsl:when>
+      <xsl:when test="$language = 'french'">\og</xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template name="cq">
+    <xsl:choose>
+      <xsl:when test="$language = 'english'">''</xsl:when>
+      <xsl:when test="$language = 'french'">\fg</xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
   <xsl:template match="quote">
       \begin{quote}
-      <xsl:apply-templates />
+        <xsl:call-template name="oq" /><xsl:apply-templates /><xsl:call-template name="cq" />
       \end{quote}
-      (<xsl:value-of select="./@author" />, <xsl:value-of select="./@date" />)
+      <xsl:choose>
+        <xsl:when test="./@date">
+          (<xsl:value-of select="./@author" />, <xsl:value-of select="./@date" />)
+        </xsl:when>
+        <xsl:otherwise>
+          (<xsl:value-of select="./@author" />)
+        </xsl:otherwise>
+      </xsl:choose>
   </xsl:template>
   
   <xsl:template match="note">\footnote{<xsl:value-of select="." />}</xsl:template>
@@ -233,15 +254,16 @@
     </xsl:if>
   </xsl:template>
   
+<xsl:variable name="language" select="'french'" />
+  
 <xsl:template match="/">
-    \documentclass[11pt,french,titlepage]{book}              % Book class in 11 points
+    \documentclass[11pt,<xsl:value-of select="$language" />,titlepage]{book}              % Book class in 11 points
     \usepackage[french]{babel}
     \usepackage[utf8]{inputenc} 
     \usepackage[T1]{fontenc}
     \usepackage{import}
     \subimport{.}{header}
     \setsvg{svgpath = ../images/}
-    
     
     \parindent0pt  \parskip10pt             % make block paragraphs
     \raggedbottom

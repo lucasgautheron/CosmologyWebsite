@@ -330,7 +330,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \end{equation}
         </spoiler>
         </p>
-        <h5>Univers de lumière</h5>
+        <h5>Univers de rayonnement (ou de lumière)</h5>
         <p>Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
         Alors l'équation à résoudre est :
         \begin{equation}
@@ -344,7 +344,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>Pour $k \neq 0$ ($\Omega_r \neq 1$) 
                    
                     \begin{equation}
-                    \dfrac{1}{\sqrt{1-\Omega_r}} \left [ \sqrt{a^2+\dfrac{\Omega_r}{1-\Omega_r}} - \sqrt{1 +\dfrac{\Omega_r}{1-\Omega_r}} \right ]  \\ = H_0 t
+                    \dfrac{1}{1-\Omega_r} \left [ \sqrt{(1-\Omega_r) a^2+ \Omega_r} - 1 \right ]  \\ = H_0 t
                 \end{equation}
                 
                 Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal.
@@ -364,11 +364,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     Ce qui intégré entre $a(t=0)=1$ et $a(t)$ donne :
                     \begin{equation}
-                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) \\ = \dfrac{1}{\sqrt{\alpha}} \left ( \sqrt{a^2 + \dfrac{\beta}{\alpha}} - \sqrt{1+\dfrac{\beta}{\alpha}} \right )  = t
+                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) = t
                     \end{equation}
                     
                      Cet Univers existe tant que $a^2 \geq - \dfrac{\alpha}{\beta}$. Si $k&lt;0$, alors ceci requiert $a \geq \sqrt{\dfrac{-\alpha}{\beta}} = a_{min}$. Ce facteur d'échelle minimum est atteint pour $t = -\sqrt{\alpha+\beta}$.  
                 </spoiler></li>
+                
+                <figure src="scale_factor_radiation.svg" title="Facteur d'échelle d'un univers dominé par le rayonnement" plot="scale_factor_radiation">
+                    Évolution du facteur d'échelle pour un Univers dominé par le rayonnement pour différentes valeurs de $\Omega_r$.
+                </figure>
             </ul>
         </p>
             
@@ -384,24 +388,24 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     a(t) = \exp{\left( H_0 t\right )}
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
-                <li>$k>0$ (géométrie hyperbolique) : 
-                    
+                <li>$k>0$, $\Omega_{\Lambda} &lt; 1$ (géométrie hyperbolique)
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\cosh \left [ H_0 \sqrt{\Omega_{\Lambda}} (t-T) \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}}} \\
-                    A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
-                    \end{matrix}\right.\end{equation}
-                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
-                </li>
-                <li>$k&lt;0$ (géométrie sphérique)
-                    \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\sinh \left [  H_0 \sqrt{\Omega_{\Lambda}}(t-T) \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
-                    A = &amp;\dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}} \\
+                    a(t) = &amp;A\sinh \left [  H_0 \sqrt{\Omega_{\Lambda}}(t+T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \sqrt{\Omega_{\Lambda}} \\
+                    A = &amp;\sqrt{\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}} \\
                     \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
+                </li>
+                <li>$k&lt;0$, $\Omega_{\Lambda} > 1$(géométrie sphérique) : 
+                    
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) = &amp;A\cosh \left [ H_0 \sqrt{\Omega_{\Lambda}} (t+T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} 1/\sqrt{\Omega_{\Lambda}} \\
+                    A = &amp;\sqrt{\dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}}} \\
+                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
                 
                 Preuve 
@@ -430,30 +434,34 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     On veut mettre ceci sous la forme $a(t) = A \cosh {\sqrt{\beta}(t-T)}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
                     On a alors :
                     \begin{equation}
-                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} + A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} - A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
                     \end{equation}
                     De cela on tire à la fois $A\cosh {\sqrt{\beta}T} = 1$ et $\pm A\sinh{\sqrt{\beta}T} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
                     Ce qui entraine :
                     \begin{equation}\left\{\begin{matrix}
-                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
-                    A = &amp; -\dfrac{\alpha}{\beta}
+                    T = &amp; \mp \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                    A = &amp; \sqrt{-\dfrac{\alpha}{\beta}}
                     \end{matrix}\right.\end{equation}
                     
                     Ceci n'est donc possible que si $\alpha &lt; 0$. Dans ce cas on a bien :
                     \begin{equation}
-                    a(t) = -\dfrac{\alpha}{\beta} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
+                    a(t) = -\sqrt{\dfrac{\alpha}{\beta}} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
                     \end{equation}
                     
                     Dans le cas $\alpha &gt; 0$, on peut écrire $a(t)$ sous la forme $A \sinh {\sqrt{\beta}(t-T)}$. On invoque cette fois l'égalité $\sinh (x+y) = \sinh(x)\cosh(y) + \sinh(y)\cosh(x)$. Cette fois il apparait que :
                     \begin{equation}\left\{\begin{matrix}
-                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
-                    A = &amp; +\dfrac{\alpha}{\beta}
+                    T = &amp; \mp \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
+                    A = &amp; \sqrt{+\dfrac{\alpha}{\beta}}
                     \end{matrix}\right.\end{equation}
                     
                     Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
                 </spoiler>
                 
                 Notons que si l'énergie du vide est l'effet d'une constante cosmologique $\Lambda$ non nulle alors $\Omega_{\Lambda} = \Lambda c^2/3H_0^2$.
+                
+                <figure src="scale_factor_cc.svg" title="Facteur d'échelle d'un univers dominé par la constante cosmologique" plot="scale_factor_cc">
+                    Évolution du facteur d'échelle pour un Univers dominé par la constante cosmologique (ou l'énergie du vide si $w=-1$) pour différentes valeurs de $\Omega_\Lambda$.
+                </figure>
             
             </ul></p>
             <h5>Univers vide</h5>
@@ -903,9 +911,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             
             <p>
-                Je me souviens d'un post très drôle sur Futura-Sciences (mais plus de son auteur) qui disait en substance, en réponse à une personne qui demandait si la constante de Hubble était variable (cette personne confondait bien-sûr le paramètre de Hubble $H(t)$ et la constante de Hubble qui est sa valeur au temps présent donc bien une constante) :
-                <quote author="Inconnu" title="Futura-Sciences">
-                    La constante de Hubble a plus changé au cours du siècle passé que pendant les quelques derniers milliards d'années! 
+                Je me souviens d'un post très drôle de LPFR sur Futura-Sciences qui disait en substance, en réponse à une personne qui demandait si la constante de Hubble était variable (cette personne confondait bien-sûr le paramètre de Hubble $H(t)$ et la constante de Hubble qui est sa valeur au temps présent donc bien une constante) :
+                <quote author="LPFR" date="2012" title="Futura-Sciences">
+                    La constante de Hubble a beaucoup plus changé au cours des décennies qui ont suivi sa découverte que depuis le Big-Bang.
                 </quote>
                 
                 C'est assez drôle mais assez vrai. La première valeur de Hubble était près de dix fois trop grande, et après les travaux de Sandage (qui restreignait $H_0$ à l'intervalle 50-100 km/s/Mpc), il fallut encore plusieurs décennies pour décider à quelques pourcents près. 
