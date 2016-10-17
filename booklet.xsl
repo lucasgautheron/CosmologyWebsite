@@ -244,6 +244,7 @@
     
     
     \parindent0pt  \parskip10pt             % make block paragraphs
+    \raggedbottom
     
     \title{\bf Histoire de la cosmologie \\
     \ \\
