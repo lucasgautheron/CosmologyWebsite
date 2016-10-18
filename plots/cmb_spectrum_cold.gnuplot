@@ -1,9 +1,10 @@
 files = system('ls data/output_ombh2-omch2_*.res')
 samplefile = system("ls data/output_ombh2-omch2_*.res | head -1| awk '{print $NF}'")
-param = "{/Symbol O}_{b} h^2, {/Symbol O}_{cdm} h^2"
+param = "\\Omega_{b} h^2, \\Omega_{cdm} h^2"
 
-set xlabel param
-set ylabel ''
+set title param
+set xlabel 'l'
+set ylabel 'D_{l}'
 
 set xrange [0:2500]
 set yrange [0:]

@@ -305,30 +305,98 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Cet univers "nait" à $t= - \dfrac{2}{3} H_0$ et ne cesse de s'expandre depuis. Son âge est donc $T = \dfrac{2}{3} H_0$.
             </li>
-            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors : 
-                <!--TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
-            Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$-->
-            \begin{equation}
-            \sqrt{\Omega_m} H_0(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
-            \end{equation}
-            </li>
-            <li>Pour un Univers hyperbolique :
+            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$, $\Omega_m > 1$), la solution est alors : 
                 \begin{equation}
-                \sqrt{\Omega_m} H_0(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
+                \left ( \dfrac{\Omega_m}{\Omega_m-1}\right)^{3/2} \left [ u\sqrt{1-u^2}-\sin^{-1} u\right ]_{ \sqrt{(\Omega_m-1)/\Omega_m}}^{ \sqrt{a(\Omega_m-1)/\Omega_m}} = \mp \sqrt{\Omega_m} t  
+                \end{equation}
+            </li>
+            <li>Pour un Univers hyperbolique ($\Omega_m &lt; 1$) :
+                \begin{equation}
+                \left ( \dfrac{\Omega_m}{(1-\Omega_m)}\right)^{3/2} \left [ u\sqrt{1+u^2}-\sinh^{-1} u\right ]_{ \sqrt{(1-\Omega_m)/\Omega_m}}^{ \sqrt{a(1-\Omega_m)/\Omega_m}} = \pm \sqrt{\Omega_m} t  
                 \end{equation}</li>
         </ul>
         <b>Preuve : </b>
             
         <spoiler>
-            En univers plat en expansion : ($\dot{a} \geq 0$) 
+            On réécrit l'équation sous la forme :
             \begin{equation}
-            \dot{a} \sqrt{a} = \alpha = H_0
+            \left (\dfrac{da}{dt}\right)^2 - \dfrac{\beta}{a(t)} = \alpha   
             \end{equation}
-            Donc 
+            
+            Puis par séparation des variables on en déduit :
+            
             \begin{equation}
-            a^{3/2} (t) = a(0) + \dfrac{3}{2} H_0 t
+            \dfrac{da}{\sqrt{\dfrac{1}{a}+\dfrac{\alpha}{\beta}}} = \pm \sqrt{\beta} dt   
             \end{equation}
+            
+            Ceci vaut par ailleurs :
+            
+            \begin{equation}
+            \dfrac{\sqrt{a}da}{\sqrt{1+a\dfrac{\alpha}{\beta}}} = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            Si maintenant $\alpha > 0$ :
+            
+            On réalise le changement de variable $a\dfrac{\alpha}{\beta} = \sinh^2 x$ (bien défini car $\alpha/\beta > 0$ et par bijection de $\sinh^2$ de $\mathbb{R}^+$ dans $\mathbb{R}^+$).
+            
+            De là $\sqrt{1+a\dfrac{\alpha}{\beta}} = \cosh x$. Par ailleurs, $\sqrt{a} = \sinh(x) \sqrt{\beta/\alpha}$.
+            
+            L'équation différentielle à variables séparées devient :
+            \begin{equation}
+            \dfrac{|\sinh(x)| \sqrt{\beta/\alpha} 2 \beta \cosh x \sinh x dx}{\alpha \cosh x} = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            C'est-à-dire :
+            
+            \begin{equation}
+            2\left ( \dfrac{\beta}{\alpha}\right)^{3/2} \sinh^2(x)dx = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            Or, $\sinh^2(x) = (\cosh(2x)-1)/2$ si bien que cette équation s'intègre simplement :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ \dfrac{1}{2}\sinh(2x)-x\right ]_{\sinh^{-1} \sqrt{\alpha/\beta}}^{\sinh^{-1} \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            Or ceci est équivalent à :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ \sinh(x)\cosh(x)-x\right ]_{\sinh^{-1} \sqrt{\alpha/\beta}}^{\sinh^{-1} \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            
+            Et finalement, en remarquant que $\cosh(\sinh^{-1}(u)) = \sqrt{1+u^2}$ :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ u\sqrt{1+u^2}-\sinh^{-1} u\right ]_{ \sqrt{\alpha/\beta}}^{ \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            
+            Ce qui est la solution recherchée, sous une forme implicite.
+            
+            Si maintenant $\alpha &lt; 0$ :
+            On réalise désormais le changement de variable $a\dfrac{\alpha}{\beta} = -\sin^2 x$. Ceci est possible car la positivité de $\dot{a}^2$ entraine que $a \leq -\dfrac{\beta}{\alpha}$ donc $0 \geq a\dfrac{\alpha}{\beta} \geq -1$.
+            
+            De façon analogue au cas $\alpha > 0$ on peut alors montrer que :
+            
+            \begin{equation}
+            2\left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \sin^2(x)dx = \mp \sqrt{\beta} dt   
+            \end{equation}
+            
+            Et de là :
+            
+            \begin{equation}
+            \left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \left [ x-\dfrac{1}{2}\sin(2x)\right ]_{\sin^{-1} \sqrt{-\alpha/\beta}}^{\sin^{-1} \sqrt{-a\alpha/\beta}} = \mp \sqrt{\beta} t  
+            \end{equation}
+            
+            D'où l'on tire la solution :
+            
+            \begin{equation}
+            \left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \left [ u\sqrt{1-u^2}-\sin^{-1} u\right ]_{ \sqrt{-\alpha/\beta}}^{ \sqrt{-a\alpha/\beta}} = \mp \sqrt{\beta} t  
+            \end{equation}
+            
         </spoiler>
+            
+            <figure src="scale_factor_matter.svg" title="Facteur d'échelle d'un univers dominé par de la matière non relativiste" plot="scale_factor_matter">
+                Évolution du facteur d'échelle pour un Univers dominé par la poussière et pour différentes valeurs de $\Omega_m$.
+            </figure>
         </p>
         <h5>Univers de rayonnement (ou de lumière)</h5>
         <p>Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
@@ -344,10 +412,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>Pour $k \neq 0$ ($\Omega_r \neq 1$) 
                    
                     \begin{equation}
-                    \dfrac{1}{1-\Omega_r} \left [ \sqrt{(1-\Omega_r) a^2+ \Omega_r} - 1 \right ]  \\ = H_0 t
+                    \dfrac{1}{1-\Omega_r} \left [ \sqrt{(1-\Omega_r) a^2+ \Omega_r} - 1 \right ] = H_0 t
                 \end{equation}
                 
-                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal.
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers atteint une densité minimale ($a \leq \sqrt{\dfrac{\Omega_r}{\Omega_r-1}}$) puis se recontracte.
                 
                 <b>Preuve : </b>
                     
@@ -1158,7 +1226,12 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Afin d'exploiter statistiquement les anistropies du CMB, on utilise leur spectre de puissance. Celui-ci provient de la décomposition de la carte de températures en harmoniques sphériques :
                 
                 \begin{equation}
-                a_{lm} = \int T(\theta,\phi) Y_{lm}^{*} (\theta,\phi) d^2 \Omega  
+                a_{lm} = \int \Theta(\theta,\phi) Y_{lm}^{*} (\theta,\phi) d^2 \Omega  
+                \end{equation}
+                
+                Ici, $\Theta$ est l'écart à la température moyenne dans une direction donnée : 
+                \begin{equation}
+                \Theta(\theta,\phi) = \dfrac{T(\theta,\phi)-\bar{T}}{\bar{T}}
                 \end{equation}
                 
                 D'où on tire le spectre de puissance :
@@ -1172,7 +1245,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
             </p>
             <h4>Spectre de puissance et paramètres du modèle standard de la cosmologie</h4>
-            <p>La mesure du spectre de puissance des anisotropies du fond diffus cosmologique permet d'en déduire les valeurs des paramètres cosmologiques du modèle standard. Cette section montre comment ces paramètres impactent la forme du spectre. Les graphiques ont été générés à l'aide du programme CAMB <ref doi="10.1103/PhysRevD.71.103010" />. </p>
+            <p>La mesure du spectre de puissance des anisotropies du fond diffus cosmologique permet d'en déduire les valeurs des paramètres cosmologiques du modèle standard. Cette section montre comment ces paramètres impactent la forme du spectre. Les graphiques ont été générés à l'aide du programme CAMB <ref doi="10.1103/PhysRevD.71.103010" />. Il représentent la courbe $l\mapsto D_l = l(l+1)C_l/2\pi$.</p>
             <p>
                 
                 <h5>Constante de Hubble</h5>
