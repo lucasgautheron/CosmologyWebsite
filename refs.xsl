@@ -8,6 +8,9 @@
       <xsl:for-each-group select=".//ref[@doi]" group-by="@doi">
           doi:<xsl:value-of select="./@doi" />
       </xsl:for-each-group>
+      <xsl:for-each-group select=".//ref[@arxiv]" group-by="@arxiv">
+          arxiv:<xsl:value-of select="./@arxiv" />
+      </xsl:for-each-group>
       <xsl:for-each-group select=".//ref[@isbn]" group-by="@isbn">
           isbn:<xsl:value-of select="./@isbn" />
       </xsl:for-each-group>

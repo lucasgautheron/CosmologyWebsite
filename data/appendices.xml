@@ -1245,6 +1245,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
             </p>
             <h4>Spectre de puissance et paramètres du modèle standard de la cosmologie</h4>
+            <p><ref arxiv="astro-ph/9511148" /></p>
             <p>La mesure du spectre de puissance des anisotropies du fond diffus cosmologique permet d'en déduire les valeurs des paramètres cosmologiques du modèle standard. Cette section montre comment ces paramètres impactent la forme du spectre. Les graphiques ont été générés à l'aide du programme CAMB <ref doi="10.1103/PhysRevD.71.103010" />. Il représentent la courbe $l\mapsto D_l = l(l+1)C_l/2\pi$.</p>
             <p>
                 

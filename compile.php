@@ -49,6 +49,17 @@ foreach($refs as $ref)
             
         exec("basex -q 'let " . '$url' . " := \"https://www.googleapis.com/books/v1/volumes?q=isbn:$isbn\" return json-to-xml(fetch:text(" . '$url' . "))' > $outfile");
     }
+    else if(strpos($ref, 'arxiv:') === 0)
+    {
+        $ref = substr($ref, strlen('arxiv:'));
+        $safearxiv = str_replace(')', '_', str_replace('(', '_', str_replace('/', '_', $ref)));
+        $outfile = "tmp/ref_$safearxiv.xml";
+        if(!file_exists($outfile))
+        {
+            file_put_contents($outfile, file_get_contents("http://export.arxiv.org/api/query?search_query=$ref&start=0&max_results=1;"));
+            $return |= $return_code;
+        }
+    }
 }
 echo "REFS generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 

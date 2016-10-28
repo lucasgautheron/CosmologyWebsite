@@ -4,6 +4,7 @@
   xmlns:doc="http://cosmology.education"
   xmlns:shell="java:java.lang.Runtime"
   xmlns:fn="http://www.w3.org/2005/xpath-functions"
+  xmlns:atom="http://www.w3.org/2005/Atom"
   exclude-result-prefixes="xs doc">
   <xsl:output encoding="UTF-8" method="text" omit-xml-declaration="yes" indent="no"/>
   
@@ -76,12 +77,15 @@
   <xsl:template match="a">\href{<xsl:value-of select="./@href" />}{<xsl:value-of select="." />}</xsl:template>
   
   <xsl:template match="ref[@doi]"><xsl:variable name="safedoi" select="replace(replace(replace(./@doi, '/', '_'), '\(', '_'), '\)', '_')" />\cite{ref-<xsl:value-of select="$safedoi" />}</xsl:template>
+
+  <xsl:template match="ref[@arxiv]"><xsl:variable name="safearxiv" select="replace(replace(replace(./@arxiv, '/', '_'), '\(', '_'), '\)', '_')" />\cite{ref-<xsl:value-of select="$safearxiv" />}</xsl:template>
   
   <xsl:template match="ref[@isbn]">\cite{ref-<xsl:value-of select="./@isbn" />}</xsl:template>
   
   <xsl:template name="ref-description">
-    <xsl:param name="doi" />
-    <xsl:param name="isbn" />
+    <xsl:param name="doi" select="''" />
+    <xsl:param name="arxiv" select="''" />
+    <xsl:param name="isbn" select="''" />
     
     <xsl:variable name="maxauthors" select="4" />
     
@@ -105,6 +109,23 @@
           url={<xsl:value-of select="($ref//doi_data/resource)[1]" />}
         }
       </xsl:when>
+      <xsl:when test="$arxiv">
+        <xsl:variable name="safearxiv" select="replace(replace(replace($arxiv, '/', '_'), '\(', '_'), '\)', '_')" />
+        <xsl:variable name="ref" select="(document(concat('./tmp/ref_', $safearxiv, '.xml'))//atom:entry)[1]" />
+
+        @article{ref-<xsl:value-of select="$safearxiv" />,
+          title = {<xsl:value-of select="$ref//atom:title" />},
+          author = {<xsl:for-each select="$ref//atom:author[position() &lt;= $maxauthors]">
+              <xsl:value-of select="./atom:name" />
+              <xsl:if test="position() != last() and not(position() >= $maxauthors) "> and </xsl:if>
+          </xsl:for-each>
+          <xsl:if test="count($ref//atom:author) > $maxauthors">
+              et al.
+          </xsl:if>},
+          year={<xsl:value-of select="substring(($ref//atom:published)[1], 1, 4)" />},
+          url={<xsl:value-of select="$ref//atom:link[@type='text/html']/@href" />}
+        }
+      </xsl:when> 
       <xsl:when test="$isbn">
           <xsl:variable name="ref" select="document(concat('./tmp/ref_', $isbn, '.xml'))//fn:map[@key='volumeInfo'][1]" />
         @book{ref-<xsl:value-of select="$isbn" />,
@@ -122,33 +143,6 @@
       </xsl:when>
     </xsl:choose>
     
-  </xsl:template>
-  
-  <xsl:template name="list-references">
-    <xsl:param name="text" />
-    <xsl:if test="count($text//ref)">
-      <h3>Références</h3>
-      <div class="further-readings">
-        <ul>
-          <xsl:for-each-group select="$text//ref[@doi]" group-by="@doi">
-            <li>
-              <xsl:call-template name="ref-description">
-                <xsl:with-param name="doi" select="./@doi" />
-                <xsl:with-param name="isbn" select="''" />
-              </xsl:call-template>
-            </li>
-          </xsl:for-each-group>
-          <xsl:for-each-group select="$text//ref[@isbn]" group-by="@isbn">
-            <li>
-              <xsl:call-template name="ref-description">
-                <xsl:with-param name="doi" select="''" />
-                <xsl:with-param name="isbn" select="./@isbn" />
-              </xsl:call-template>
-            </li>
-          </xsl:for-each-group>
-        </ul>
-      </div>
-    </xsl:if>
   </xsl:template>
   
   <xsl:template match="figure">
@@ -359,12 +353,15 @@
         <xsl:for-each-group select="/root//ref[@doi]" group-by="@doi">
             <xsl:call-template name="ref-description">
                 <xsl:with-param name="doi" select="./@doi" />
-                <xsl:with-param name="isbn" select="''" />
+            </xsl:call-template>
+        </xsl:for-each-group>
+        <xsl:for-each-group select="/root//ref[@arxiv]" group-by="@arxiv">
+            <xsl:call-template name="ref-description">
+                <xsl:with-param name="arxiv" select="./@arxiv" />
             </xsl:call-template>
         </xsl:for-each-group>
         <xsl:for-each-group select="/root//ref[@isbn]" group-by="@isbn">
             <xsl:call-template name="ref-description">
-                <xsl:with-param name="doi" select="''" />
                 <xsl:with-param name="isbn" select="./@isbn" />
             </xsl:call-template>
         </xsl:for-each-group>
