@@ -685,6 +685,26 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
+    <appendix id="densite-critique" uid="critical-density">
+        <title>Densité critique</title>
+        <text>
+            <p>
+            La densité critique est une densité caractéristique d'énergie de l'Univers. Elle est liée à la constante de Hubble par la relation :
+            \begin{equation}
+            \rho_c = \dfrac{3 (H_0 c)^2}{8\pi G}
+            \end{equation}
+            Elle est parfois exprimée en $\textrm{kg.m}^{-3}$ plutôt qu'en $\textrm{J.m}^{-3}$ auquel cas elle s'écrit simplement $3H_0^2/8\pi G$. Sa valeur est d'environ $9 \times 10^{-27} \textrm{ kg.m}^{-3}$.
+            </p>
+            <p>
+            La différence entre la densité d'énergie totale de l'Univers et sa densité critique détermine sa courbure. Si $\rho = \rho_c$, l'Univers est plat. Si $\rho &lt; \rho_c$, l'Univers est hyperbolique. Sinon, il est sphérique.
+            Ce résultat découle directement des équations de Friedmann.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>densité critique</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="distance-luminosite" uid="luminosity-distance" ready="1">
         <title>Distance de luminosité</title>
         <text>
