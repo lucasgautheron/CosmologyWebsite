@@ -2254,7 +2254,7 @@ Et
 
             <figure src="wimp_abundance.svg" plot="wimp_abundance" source="WIMP" title="Densité massique normalisée d'un WIMP en fonction de $mc^2/k_B T$">
                 Densité massique de WIMP pour divers hypothèses de masse, avec $\langle \sigma v \rangle = 2 \times 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Cette densité est comparée à la densité d'équilibre. On observe très clairement une rupture de l'équilibre thermodynamique (freeze-out) pour $T \sim m/20$.
-                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
+                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux <ref doi="10.1103/PhysRevLett.64.615" />, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
             </figure>
 
 
