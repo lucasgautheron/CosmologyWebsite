@@ -2,8 +2,9 @@ files = system('ls data/output_omch2_*.res')
 samplefile = system("ls data/output_omch2_*.res | head -1| awk '{print $NF}'")
 param = system('head -n 1 ' . samplefile . ' | cut -d "#" -f 2 | cut -d "=" -f 1')
 
-set xlabel param
-set ylabel ''
+set title param
+set xlabel 'l'
+set ylabel 'D_{l}'
 
 set xrange [0:2500]
 set yrange [0:]

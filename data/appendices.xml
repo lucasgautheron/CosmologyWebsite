@@ -243,17 +243,31 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} =  \dfrac{kc^2}{R^2 H_0^2 a^2}
             \end{equation}
             
-            Où $\rho_c = \dfrac{3c^2 H_0^2}{8\pi G}$ est une nouvelle constante appelée densité critique.
+            Où l'on a introduit la densité critique $\rho_c$ :
+            \begin{equation}
+            \rho_c = \dfrac{3c^2 H_0^2}{8\pi G}
+            \end{equation}
             
             On suppose que l'Univers est constitué de matière froide ($\rho_m = \rho_m^0/a^3$), de rayonnement ($\rho_r = \rho_r^0/a^4$), d'énergie du vide ($\rho_v = \rho_v^0$) et d'une espèce telle que $P = w\rho$ donc $\rho_w = \rho_w^0 a^{-3(1+w)}$.
             
-            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2}$, l'équation devient :
+            On définit le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle comme :
+            
+            \begin{equation}
+            \Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}
+            \end{equation}
+            
+            On définit par ailleurs le paramètre de courbure $\Omega_k$ tel que :
+            \begin{equation}
+            \Omega_k = \dfrac{kc^2}{R^2 H_0^2}
+            \end{equation}
+            
+            Alors la dynamique du facteur d'échelle est donnée par :
             
             \begin{equation}
             \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \Omega_v + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
             \end{equation}
             
-            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus utilisées que les densités elles mêmes. Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
+            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus souvent utilisées que les densités elles mêmes. Leur valeur indique la proportion d'énergie contenue sous une forme précise.
             En évaluant l'équation à $t=0$ il vient :
             
             \begin{equation}
@@ -264,12 +278,14 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </p>   
         <h4>Démonstration</h4>
         <p><spoiler>...</spoiler></p>
+            
         <h4>Solutions particulières de l'équation de Friedmann</h4>
         <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
-        <p><b>Univers de poussière</b> : 
+        <h5>Univers de poussière</h5>
+        <p>
         Dans un tel univers, $P=0$. De là le facteur d'échelle obéit à l'équation :
         \begin{equation}
-        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
+        \dot{a}^2 - H_0^2\dfrac{\Omega_m}{a} = \dfrac{kc^2}{R^2} = H_0^2 \Omega_k = H_0^2 (1-\Omega_m)
         \end{equation}
         Cette équation ressemble beaucoup à l'équation du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ (problème à deux corps) :
         
@@ -282,46 +298,127 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
         
         <ul>
-            <li>Pour un Univers plat ($k/R^2 = 0$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  $a^{3/2}(t) = 1 + \dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t$
-                Cet univers "nait" à $t= - \dfrac{2}{3}\sqrt{\dfrac{3c^2}{8\pi G \rho_0}}$ et ne cesse de s'expandre depuis. Il a donc un âge fini $T = \sqrt{\dfrac{c^2}{6\pi G \rho_0}}$.</li>
-            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors : 
-                <!--TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5021225 !
-            Faire équivalence : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$-->
-            \begin{equation}
-            \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
-            \end{equation} _et_ périodique</li>
-            <li>Pour un Univers hyperbolique : \begin{equation}
-                \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
-                \end{equation}</li>
-        </ul>
-        <spoiler>
-            En univers plat en expansion : ($\dot{a} \geq 0$) 
-            \begin{equation}
-            \dot{a} \sqrt{a} = \alpha = \sqrt{\dfrac{8\pi G}{3c^2}}
-            \end{equation}
-            Donc 
-            \begin{equation}
-            a^{3/2} (t) = a(0) + \sqrt{\dfrac{8\pi G}{3c^2}} t
-            \end{equation}
-        </spoiler>
-        </p>
-        <p><b>Univers de lumière</b> : Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
-        Alors l'équation à résoudre est :
-        \begin{equation}
-        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
-        \end{equation}
-            <ul>
-                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{32\pi G\rho_0}{3c^2}} t$</li>
-                <li>Pour $k \neq 0$ 
-                   
-                    \begin{equation}
-                    \dfrac{R}{c} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
+            <li>Pour un Univers plat ($k/R^2 = 0$, $\Omega_m = 1$), en expansion, la solution est alors, si $a(0) = 1$ où $t=0$ désigne l'époque actuelle :  
+                \begin{equation}
+                a^{3/2}(t) = 1 + \dfrac{3}{2} H_0 t
                 \end{equation}
                 
-                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $T = \sqrt{\dfrac{kc^2}{R^2}+\dfrac{8
-                \pi G \rho_0}{3c^2}}$.
+                Cet univers "nait" à $t= - \dfrac{2}{3} H_0$ et ne cesse de s'expandre depuis. Son âge est donc $T = \dfrac{2}{3} H_0$.
+            </li>
+            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$, $\Omega_m > 1$), la solution est alors : 
+                \begin{equation}
+                \left ( \dfrac{\Omega_m}{\Omega_m-1}\right)^{3/2} \left [ u\sqrt{1-u^2}-\sin^{-1} u\right ]_{ \sqrt{(\Omega_m-1)/\Omega_m}}^{ \sqrt{a(\Omega_m-1)/\Omega_m}} = \mp \sqrt{\Omega_m} t  
+                \end{equation}
+            </li>
+            <li>Pour un Univers hyperbolique ($\Omega_m &lt; 1$) :
+                \begin{equation}
+                \left ( \dfrac{\Omega_m}{(1-\Omega_m)}\right)^{3/2} \left [ u\sqrt{1+u^2}-\sinh^{-1} u\right ]_{ \sqrt{(1-\Omega_m)/\Omega_m}}^{ \sqrt{a(1-\Omega_m)/\Omega_m}} = \pm \sqrt{\Omega_m} t  
+                \end{equation}</li>
+        </ul>
+        <b>Preuve : </b>
+            
+        <spoiler>
+            On réécrit l'équation sous la forme :
+            \begin{equation}
+            \left (\dfrac{da}{dt}\right)^2 - \dfrac{\beta}{a(t)} = \alpha   
+            \end{equation}
+            
+            Puis par séparation des variables on en déduit :
+            
+            \begin{equation}
+            \dfrac{da}{\sqrt{\dfrac{1}{a}+\dfrac{\alpha}{\beta}}} = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            Ceci vaut par ailleurs :
+            
+            \begin{equation}
+            \dfrac{\sqrt{a}da}{\sqrt{1+a\dfrac{\alpha}{\beta}}} = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            Si maintenant $\alpha > 0$ :
+            
+            On réalise le changement de variable $a\dfrac{\alpha}{\beta} = \sinh^2 x$ (bien défini car $\alpha/\beta > 0$ et par bijection de $\sinh^2$ de $\mathbb{R}^+$ dans $\mathbb{R}^+$).
+            
+            De là $\sqrt{1+a\dfrac{\alpha}{\beta}} = \cosh x$. Par ailleurs, $\sqrt{a} = \sinh(x) \sqrt{\beta/\alpha}$.
+            
+            L'équation différentielle à variables séparées devient :
+            \begin{equation}
+            \dfrac{|\sinh(x)| \sqrt{\beta/\alpha} 2 \beta \cosh x \sinh x dx}{\alpha \cosh x} = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            C'est-à-dire :
+            
+            \begin{equation}
+            2\left ( \dfrac{\beta}{\alpha}\right)^{3/2} \sinh^2(x)dx = \pm \sqrt{\beta} dt   
+            \end{equation}
+            
+            Or, $\sinh^2(x) = (\cosh(2x)-1)/2$ si bien que cette équation s'intègre simplement :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ \dfrac{1}{2}\sinh(2x)-x\right ]_{\sinh^{-1} \sqrt{\alpha/\beta}}^{\sinh^{-1} \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            Or ceci est équivalent à :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ \sinh(x)\cosh(x)-x\right ]_{\sinh^{-1} \sqrt{\alpha/\beta}}^{\sinh^{-1} \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            
+            Et finalement, en remarquant que $\cosh(\sinh^{-1}(u)) = \sqrt{1+u^2}$ :
+            
+            \begin{equation}
+            \left ( \dfrac{\beta}{\alpha}\right)^{3/2} \left [ u\sqrt{1+u^2}-\sinh^{-1} u\right ]_{ \sqrt{\alpha/\beta}}^{ \sqrt{a\alpha/\beta}} = \pm \sqrt{\beta} t  
+            \end{equation}
+            
+            Ce qui est la solution recherchée, sous une forme implicite.
+            
+            Si maintenant $\alpha &lt; 0$ :
+            On réalise désormais le changement de variable $a\dfrac{\alpha}{\beta} = -\sin^2 x$. Ceci est possible car la positivité de $\dot{a}^2$ entraine que $a \leq -\dfrac{\beta}{\alpha}$ donc $0 \geq a\dfrac{\alpha}{\beta} \geq -1$.
+            
+            De façon analogue au cas $\alpha > 0$ on peut alors montrer que :
+            
+            \begin{equation}
+            2\left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \sin^2(x)dx = \mp \sqrt{\beta} dt   
+            \end{equation}
+            
+            Et de là :
+            
+            \begin{equation}
+            \left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \left [ x-\dfrac{1}{2}\sin(2x)\right ]_{\sin^{-1} \sqrt{-\alpha/\beta}}^{\sin^{-1} \sqrt{-a\alpha/\beta}} = \mp \sqrt{\beta} t  
+            \end{equation}
+            
+            D'où l'on tire la solution :
+            
+            \begin{equation}
+            \left ( -\dfrac{\beta}{\alpha}\right)^{3/2} \left [ u\sqrt{1-u^2}-\sin^{-1} u\right ]_{ \sqrt{-\alpha/\beta}}^{ \sqrt{-a\alpha/\beta}} = \mp \sqrt{\beta} t  
+            \end{equation}
+            
+        </spoiler>
+            
+            <figure src="scale_factor_matter.svg" title="Facteur d'échelle d'un univers dominé par de la matière non relativiste" plot="scale_factor_matter">
+                Évolution du facteur d'échelle pour un Univers dominé par la poussière et pour différentes valeurs de $\Omega_m$.
+            </figure>
+        </p>
+        <h5>Univers de rayonnement (ou de lumière)</h5>
+        <p>Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
+        Alors l'équation à résoudre est :
+        \begin{equation}
+        \dot{a}^2 - H_0^2 \dfrac{\Omega_r}{a^2} = H_0^2(1-\Omega_r)
+        \end{equation}
+        
+        On suppose par ailleurs $\dot{a} > 0$.
+        
+            <ul>
+                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = 2 H_0 t$</li>
+                <li>Pour $k \neq 0$ ($\Omega_r \neq 1$) 
+                   
+                    \begin{equation}
+                    \dfrac{1}{1-\Omega_r} \left [ \sqrt{(1-\Omega_r) a^2+ \Omega_r} - 1 \right ] = H_0 t
+                \end{equation}
                 
-                Preuve : 
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers atteint une densité minimale ($a \leq \sqrt{\dfrac{\Omega_r}{\Omega_r-1}}$) puis se recontracte.
+                
+                <b>Preuve : </b>
+                    
                 <spoiler>
                     On réécrit l'équation sous la forme :
                     \begin{equation}
@@ -335,43 +432,48 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     Ce qui intégré entre $a(t=0)=1$ et $a(t)$ donne :
                     \begin{equation}
-                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) \\ = \dfrac{1}{\sqrt{\alpha}} \left ( \sqrt{a^2 + \dfrac{\beta}{\alpha}} - \sqrt{1+\dfrac{\beta}{\alpha}} \right )  = t
+                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) = t
                     \end{equation}
                     
                      Cet Univers existe tant que $a^2 \geq - \dfrac{\alpha}{\beta}$. Si $k&lt;0$, alors ceci requiert $a \geq \sqrt{\dfrac{-\alpha}{\beta}} = a_{min}$. Ce facteur d'échelle minimum est atteint pour $t = -\sqrt{\alpha+\beta}$.  
                 </spoiler></li>
+                
+                <figure src="scale_factor_radiation.svg" title="Facteur d'échelle d'un univers dominé par le rayonnement" plot="scale_factor_radiation">
+                    Évolution du facteur d'échelle pour un Univers dominé par le rayonnement pour différentes valeurs de $\Omega_r$.
+                </figure>
             </ul>
         </p>
             
-            <p><b>Univers d'énergie du vide :</b>
+            <h5>Univers d'énergie du vide</h5>
+            <p>
             L'énergie du vide a pour équation d'état $P=-\rho$ ce qui après résolution de (2) donne $\rho = \mbox{ cste } = \rho_0$. Dès lors :
             \begin{equation}
-            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \rho_0 a^2 = \dfrac{kc^2}{R^2}
+            \dot{a}^2 - H_0^2 \Omega_{\Lambda} a^2 = H_0^2 (1-\Omega_{\Lambda})
             \end{equation}
             <ul>
                 <li>La solution en Univers plat est alors :
                     \begin{equation}
-                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{3c^2}{8 \pi G \rho_0} } 
+                    a(t) = \exp{\left( H_0 t\right )}
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
-                <li>$k>0$ (géométrie hyperbolique) : 
-                    
+                <li>$k>0$, $\Omega_{\Lambda} &lt; 1$ (géométrie hyperbolique)
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\cosh \left [ (t-T)/\tau \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
-                    A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
-                    \end{matrix}\right.\end{equation}
-                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
-                </li>
-                <li>$k&lt;0$ (géométrie sphérique)
-                    \begin{equation}\left\{\begin{matrix}
-                    a(t) = &amp;A\sinh \left [ (t-T)/\tau \right ] \\
-                    T = &amp;\pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
-                    A = &amp;-\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) = &amp;A\sinh \left [  H_0 \sqrt{\Omega_{\Lambda}}(t+T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \sqrt{\Omega_{\Lambda}} \\
+                    A = &amp;\sqrt{\dfrac{1-\Omega_{\Lambda}}{\Omega_{\Lambda}}} \\
+                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
+                </li>
+                <li>$k&lt;0$, $\Omega_{\Lambda} > 1$(géométrie sphérique) : 
+                    
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) = &amp;A\cosh \left [ H_0 \sqrt{\Omega_{\Lambda}} (t+T) \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} 1/\sqrt{\Omega_{\Lambda}} \\
+                    A = &amp;\sqrt{\dfrac{\Omega_{\Lambda}-1}{\Omega_{\Lambda}}} \\
+                    \tau = &amp; 1/H_0 \sqrt{\Omega_{\Lambda}} \\
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
                 
                 Preuve 
@@ -400,42 +502,49 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     On veut mettre ceci sous la forme $a(t) = A \cosh {\sqrt{\beta}(t-T)}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
                     On a alors :
                     \begin{equation}
-                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} + A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} - A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
                     \end{equation}
                     De cela on tire à la fois $A\cosh {\sqrt{\beta}T} = 1$ et $\pm A\sinh{\sqrt{\beta}T} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
                     Ce qui entraine :
                     \begin{equation}\left\{\begin{matrix}
-                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
-                    A = &amp; -\dfrac{\alpha}{\beta}
+                    T = &amp; \mp \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                    A = &amp; \sqrt{-\dfrac{\alpha}{\beta}}
                     \end{matrix}\right.\end{equation}
                     
                     Ceci n'est donc possible que si $\alpha &lt; 0$. Dans ce cas on a bien :
                     \begin{equation}
-                    a(t) = -\dfrac{\alpha}{\beta} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
+                    a(t) = -\sqrt{\dfrac{\alpha}{\beta}} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
                     \end{equation}
                     
                     Dans le cas $\alpha &gt; 0$, on peut écrire $a(t)$ sous la forme $A \sinh {\sqrt{\beta}(t-T)}$. On invoque cette fois l'égalité $\sinh (x+y) = \sinh(x)\cosh(y) + \sinh(y)\cosh(x)$. Cette fois il apparait que :
                     \begin{equation}\left\{\begin{matrix}
-                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
-                    A = &amp; +\dfrac{\alpha}{\beta}
+                    T = &amp; \mp \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
+                    A = &amp; \sqrt{+\dfrac{\alpha}{\beta}}
                     \end{matrix}\right.\end{equation}
                     
                     Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
                 </spoiler>
+                
+                Notons que si l'énergie du vide est l'effet d'une constante cosmologique $\Lambda$ non nulle alors $\Omega_{\Lambda} = \Lambda c^2/3H_0^2$.
+                
+                <figure src="scale_factor_cc.svg" title="Facteur d'échelle d'un univers dominé par la constante cosmologique" plot="scale_factor_cc">
+                    Évolution du facteur d'échelle pour un Univers dominé par la constante cosmologique (ou l'énergie du vide si $w=-1$) pour différentes valeurs de $\Omega_\Lambda$.
+                </figure>
             
             </ul></p>
-            <p><b>Univers vide :</b>
+            <h5>Univers vide</h5>
+            <p>
             Un univers vide vérifie simplement l'équation 
             \begin{equation}
-            \dot{a}^2 = \dfrac{kc^2}{R^2}
+            \dot{a}^2 = H_0^2 \Omega_{k} = H_0^2
             \end{equation}
-            Un tel Univers ne peut être de géométrie sphérique !
-            La solution est alors ($k \geq 0$) :
+            Un tel Univers ne peut être de géométrie sphérique ! Il est hyperbolique ou plat en l'absence d'expansion. 
+            La solution est alors :
             \begin{equation}
-            a(t) = \pm \dfrac{c}{R} t + 1
+            a(t) = \pm H_0 t + 1
             \end{equation}
             
-            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c$. Un Univers plat et vide est statique. </p>
+            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c = 1/H_0$. Un Univers plat et vide est statique. </p>
         </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>
@@ -496,7 +605,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}\left\{\begin{matrix}
             r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
             r &amp; = &amp; \chi \mbox{ si } k=0\\ 
-            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            r &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
             \end{matrix}\right.\end{equation}
             
             On écrit parfois :
@@ -508,7 +617,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
              \begin{equation}\left\{\begin{matrix}
             S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
             S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
-            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
             \end{matrix}\right.\end{equation}</p>
         </text>
         <linkwords>
@@ -573,6 +682,26 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <linkwords>
             <linkword>théorie de l'état stationnaire</linkword>
             <linkword>steady-state universe</linkword>
+        </linkwords>
+    </appendix>
+    
+    <appendix id="densite-critique" uid="critical-density">
+        <title>Densité critique</title>
+        <text>
+            <p>
+            La densité critique est une densité caractéristique d'énergie de l'Univers. Elle est liée à la constante de Hubble par la relation :
+            \begin{equation}
+            \rho_c = \dfrac{3 (H_0 c)^2}{8\pi G}
+            \end{equation}
+            Elle est parfois exprimée en $\textrm{kg.m}^{-3}$ plutôt qu'en $\textrm{J.m}^{-3}$ auquel cas elle s'écrit simplement $3H_0^2/8\pi G$. Sa valeur est d'environ $9 \times 10^{-27} \textrm{ kg.m}^{-3}$.
+            </p>
+            <p>
+            La différence entre la densité d'énergie totale de l'Univers et sa densité critique détermine sa courbure. Si $\rho = \rho_c$, l'Univers est plat. Si $\rho &lt; \rho_c$, l'Univers est hyperbolique. Sinon, il est sphérique.
+            Ce résultat découle directement des équations de Friedmann.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>densité critique</linkword>
         </linkwords>
     </appendix>
     
@@ -870,9 +999,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             
             <p>
-                Je me souviens d'un post très drôle sur Futura-Sciences (mais plus de son auteur) qui disait en substance, en réponse à une personne qui demandait si la constante de Hubble était variable (cette personne confondait bien-sûr le paramètre de Hubble $H(t)$ et la constante de Hubble qui est sa valeur au temps présent donc bien une constante) :
-                <quote author="Inconnu" title="Futura-Sciences">
-                    La constante de Hubble a plus changé au cours du siècle passé que pendant les quelques derniers milliards d'années! 
+                Je me souviens d'un post très drôle de LPFR sur Futura-Sciences qui disait en substance, en réponse à une personne qui demandait si la constante de Hubble était variable (cette personne confondait bien-sûr le paramètre de Hubble $H(t)$ et la constante de Hubble qui est sa valeur au temps présent donc bien une constante) :
+                <quote author="LPFR" date="2012" title="Futura-Sciences">
+                    La constante de Hubble a beaucoup plus changé au cours des décennies qui ont suivi sa découverte que depuis le Big-Bang.
                 </quote>
                 
                 C'est assez drôle mais assez vrai. La première valeur de Hubble était près de dix fois trop grande, et après les travaux de Sandage (qui restreignait $H_0$ à l'intervalle 50-100 km/s/Mpc), il fallut encore plusieurs décennies pour décider à quelques pourcents près. 
@@ -1117,7 +1246,12 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 Afin d'exploiter statistiquement les anistropies du CMB, on utilise leur spectre de puissance. Celui-ci provient de la décomposition de la carte de températures en harmoniques sphériques :
                 
                 \begin{equation}
-                a_{lm} = \int T(\theta,\phi) Y_{lm}^{*} (\theta,\phi) d^2 \Omega  
+                a_{lm} = \int \Theta(\theta,\phi) Y_{lm}^{*} (\theta,\phi) d^2 \Omega  
+                \end{equation}
+                
+                Ici, $\Theta$ est l'écart à la température moyenne dans une direction donnée : 
+                \begin{equation}
+                \Theta(\theta,\phi) = \dfrac{T(\theta,\phi)-\bar{T}}{\bar{T}}
                 \end{equation}
                 
                 D'où on tire le spectre de puissance :
@@ -1131,10 +1265,17 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 
             </p>
             <h4>Spectre de puissance et paramètres du modèle standard de la cosmologie</h4>
+            <p><ref arxiv="astro-ph/9511148" /></p>
+            <p>La mesure du spectre de puissance des anisotropies du fond diffus cosmologique permet d'en déduire les valeurs des paramètres cosmologiques du modèle standard. Cette section montre comment ces paramètres impactent la forme du spectre. Les graphiques ont été générés à l'aide du programme CAMB <ref doi="10.1103/PhysRevD.71.103010" />. Il représentent la courbe $l\mapsto D_l = l(l+1)C_l/2\pi$.</p>
             <p>
+                
+                <h5>Constante de Hubble</h5>
+                
                 <figure src="cmb_spectrum_hubble.svg" title="Spectre TT et constante de Hubble $H_0$" source="CMB" plot="cmb_spectrum_hubble">
                     
                 </figure>
+                
+                <h5>Répartition de l'énergie</h5>
                 
                 <figure src="cmb_spectrum_ombh2.svg" title="Spectre TT et densité baryonique $\Omega_b h^2$" source="CMB" plot="cmb_spectrum_ombh2">
                     
@@ -1144,21 +1285,58 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                     
                 </figure>
                 
-                <figure src="cmb_spectrum_omk.svg" title="Spectre TT et courbure $\Omega_{k}$" source="CMB" plot="cmb_spectrum_omk">
+                <figure src="cmb_spectrum_cold.svg" title="Spectre TT et répartition de la matière non relativiste$" source="CMB" plot="cmb_spectrum_cold">
                     
                 </figure>
+                
+                <h5>Courbure</h5>
+                
+                <figure src="cmb_spectrum_omk.svg" title="Spectre TT et courbure $\Omega_{k}$" source="CMB" plot="cmb_spectrum_omk">
+                    Les mesures les plus précises du paramètre de courbure $\Omega_k$ sont compatibles avec un Univers plat. Le spectre de puissance TT est représenté ici pour différentes valeurs de $\Omega_k$ correspondant à un univers à géométrie sphérique (-0.2), plat (0), et hyperbolique (+0.2). $\Omega_k$ étant fixé par la somme $\Omega_{m}+\Omega_{\Lambda}$, c'est le paramètre $\Omega_{\Lambda}$ qui varie ici.
+                </figure>
+                
+                Les photons du CMB suivent grossièrement des géodésiques de la métrique FLRW après la recombinaison. Ces géodésiques convergent dans le cas d'une géométrie sphérique, et divergent pour une géométrie hyperbolique. La taille angulaire $\Delta \theta$ d'une fluctuation originant d'une perturbation de taille $\Delta L$ vérifie grossièrement $\Delta \theta \sim \Delta L/d_A(z_{recomb})$ où $d_A(z_{recomb})$ est la distance angulaire d'un objet de taille $\Delta L$ à la recombinaison et vaut :
+                \begin{equation}
+                d_A(z_{recomb}) = c a(t_{recomb}) S_k(\int_{t_{recomb}}^{t_0} \dfrac{dt}{a(t)})
+                \end{equation}
+                
+                L'expression de $S_k$ dépend de la géométrie de l'Univers. La valeur de l'intégrale est principalement déterminée par l'ère pendant laquelle $a$ était petit après la recombinaison, et alors la matière dominait. Cette intégrale vaut alors simplement $ \int_{t_{recomb}}^{t_0} \dfrac{dt}{a(t)} = \int_{0}^{z_{recomb}} \dfrac{dz}{H_0\sqrt{\Omega_m} (1+z)^{3/2}} \simeq 2/H_0\sqrt{\Omega_m}$.
+                
+                Par ailleurs :
+                \begin{equation}\left\{\begin{matrix}
+                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+                S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+                S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                Et $R = \dfrac{c}{H_0\sqrt{|\Omega_k|}}$ si bien que :
+                
+                \begin{equation}\left\{\begin{matrix}
+                \Delta \theta &amp; \propto &amp; \sqrt{|\Omega_k|}/\sin 2\sqrt{\dfrac{|\Omega_k|}{\Omega_m}} \mbox{ si } k&lt;0\\ 
+                \Delta \theta &amp; \propto &amp; \sqrt{\Omega_m}/2 \mbox{ si } k=0\\ 
+                \Delta \theta &amp; \propto &amp; {\sqrt{|\Omega_k}|}/\sinh 2\sqrt{\dfrac{|\Omega_k|}{\Omega_m}} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                
+                Ainsi, une géométrie sphérique ($\Omega_k &lt; 0$) augmente la taille angulaire des anisotropies, et donc déplace le spectre de puissance vers la gauche, à l'inverse d'une géométrie hyperbolique.
+                
+                <h5>Épaisseur optique</h5>
                 
                 <figure src="cmb_spectrum_optical_depth.svg" title="Spectre TT et épaisseur optique $\tau$" source="CMB" plot="cmb_spectrum_optical_depth">
                     L'épaisseur optique mesure l'atténuation du rayonnement fossile par interaction avec la matière de l'Univers. Ainsi, plus $\tau$ est grand, plus cette atténuation est importante et plus le spectre est diminué. L'effet de l'épaisseur optique sur la courbe du spectre de puissance est globalement sa diminution d'un facteur $\sim e^{-2\tau}$.
                 </figure>
                 
+                <h5>Fluctuations primordiales</h5>
+                
                 <figure src="cmb_spectrum_scalar_amp.svg" title="Spectre TT et amplitude des perturbations primordiales de courbure $\Delta R^2$" source="CMB" plot="cmb_spectrum_scalar_amp">
-                    Spectre de puissance $TT$ pour différentes valeurs d'amplitude des perturbations primordiales de courbure $\Delta R^2$. Comme le souligne l'échelle verticale logarithmique, multiplier la valeur de cette amplitude d'une certaine quantité a pour effet principal de multiplier le spectre de puissance de la même quantité.
+                    Spectre de puissance $TT$ pour différentes valeurs d'amplitude des perturbations primordiales de courbure $\Delta R^2$. 
                 </figure>
                 
+                Comme le souligne l'échelle verticale logarithmique, multiplier la valeur de cette amplitude d'une certaine quantité a pour effet principal de multiplier le spectre de puissance de la même quantité.
+                
                 <figure src="cmb_spectrum_scalar_index.svg" title="Spectre TT et indice spectral des perturbations primordiales scalaires" source="CMB" plot="cmb_spectrum_scalar_index">
-                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. $k$ est l'image de $l$ (et de $1/\Delta \theta$) si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$) alors qu'une valeur de $n_s$ plus petite favorise les grandes échelles angulaires. 
+                    Spectre de puissance $TT$ pour différentes valeurs de l'indice spectral des perturbations primordiales $n_s$. 
                 </figure>
+                
+                Les modèles inflationnaires prédisent des perturbations primordiales de la forme $P(k) \propto k^{-3} \left (\frac{k}{k_0}\right) ^{n_s-1}$. Des petites valeurs de $k$ sont corrélées à des grandes échelles angulaires, si bien qu'une valeur de $n_s$ plus grande augmente les perturbations à petite échelle angulaire (haut $l$). Au contraire, une valeur de $n_s$ inférieure favorise les grandes échelles angulaires. 
             </p>
         </text>
         <linkwords>
@@ -2096,7 +2274,7 @@ Et
 
             <figure src="wimp_abundance.svg" plot="wimp_abundance" source="WIMP" title="Densité massique normalisée d'un WIMP en fonction de $mc^2/k_B T$">
                 Densité massique de WIMP pour divers hypothèses de masse, avec $\langle \sigma v \rangle = 2 \times 10^{-26} \mbox{cm}^2.\mbox{s}^{-1}$. Cette densité est comparée à la densité d'équilibre. On observe très clairement une rupture de l'équilibre thermodynamique (freeze-out) pour $T \sim m/20$.
-                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
+                La densité finale dépend peu de la masse, mais $\langle \sigma v \rangle \propto m^{-2}$ au-mieux <ref doi="10.1103/PhysRevLett.64.615" />, et donc pour des masses trop élevées, l'annihilation est trop lente et les WIMP trop abondants pour tenir compte des observations.
             </figure>
 
 

@@ -4,3 +4,5 @@ git pull
 make
 cd ..
 php run.php
+rm -rf CAMB
+rm params_*.ini
