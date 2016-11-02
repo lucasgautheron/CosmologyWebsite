@@ -2175,17 +2175,31 @@ Et
                 Le terme en $-\mu^2$ est le terme de masse. 
                 Le terme d'auto-interaction ($\propto \lambda$) donne lieu à des corrections d'ordre $> 0$ du propagateur (amplitude pour un Higgs de "passer" de $x$ à $y$). Un diagramme de Feynman possible pour une correction d'ordre 1 avec boucle est :
                 
-                <feynman id="higgs-one-loop-mass" title="Energie d'auto-interaction du Higgs à boucle simple">
-                    description: 'One-loop Higgs self-energy diagram',
-                    width: 200,
-                    height: 120,
-                    incoming: {i1: '10,60'},
-                    outgoing: {o1: '190,60'},
-                    vertex: {v1: '58.5,60', v2: '141.5,60'},
-                    scalar: {line: 'i1-v1,v2-o1', loop: 'v2-v1'},
-                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
-                    t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
-                </feynman>
+                <website>
+                    <feynman id="higgs-one-loop-mass" title="Energie d'auto-interaction du Higgs à boucle simple">
+                        description: 'One-loop Higgs self-energy diagram',
+                        width: 200,
+                        height: 120,
+                        incoming: {i1: '10,60'},
+                        outgoing: {o1: '190,60'},
+                        vertex: {v1: '58.5,60', v2: '141.5,60'},
+                        scalar: {line: 'i1-v1,v2-o1', loop: 'v2-v1'},
+                        label: {t1: ['35,105', 'p'], t2: ['165,105', 'p'],
+                        t3: ['100,108', 'k'], t4: ['100,25', 'p&#8202;&#8722;&#8202;k']}
+                    </feynman>
+                </website>
+                
+                <booklet>
+                    <feynman id="higgs-one-loop-mass" title="Energie d'auto-interaction du Higgs à boucle simple">
+                        \begin{fmfgraph}(120,75)
+                        \fmfleft{i}
+                        \fmfright{o}
+                        \fmf{dashes}{i,v1}
+                        \fmf{dashes,left,tension=0.4}{v1,v2,v1}
+                        \fmf{dashes}{v2,o}
+                        \end{fmfgraph}
+                    </feynman>
+                </booklet>
                 
                 L'amplitude associée à la boucle est de l'ordre de : 
                 \begin{equation}
@@ -2200,18 +2214,33 @@ Et
                 
                 Notons que cette divergence n'intervient qu'avec le Higgs, les corrections d'énergie d'auto-interaction des fermions n'étant que logarithmiques en le cut-off $\Lambda$ et donc l'ajustement négligeable. C'est le cas pour l'électron par exemple :
                 
-                <feynman id="fermion-one-loop-mass" title="Energie d'auto-interaction de l'électron à boucle simple">
-                    description: 'One-loop electron self-energy diagram in QED',
-                    width: 200,
-                    height: 120,
-                    incoming: {i1: '10,90'},
-                    outgoing: {o1: '190,90'},
-                    vertex: {v1: '58.5,90', v2: '141.5,90'},
-                    fermion: {line: 'i1-v1-v2-o1'},
-                    photon: {arc: 'v2-v1'},
-                    symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
-                    label: {t1: ['35,105', 'p'], t2: ['165,105', 'p']}
-                </feynman>
+                <website>
+                    <feynman id="fermion-one-loop-mass" title="Energie d'auto-interaction de l'électron à boucle simple">
+                        description: 'One-loop electron self-energy diagram in QED',
+                        width: 200,
+                        height: 120,
+                        incoming: {i1: '10,90'},
+                        outgoing: {o1: '190,90'},
+                        vertex: {v1: '58.5,90', v2: '141.5,90'},
+                        fermion: {line: 'i1-v1-v2-o1'},
+                        photon: {arc: 'v2-v1'},
+                        symbol: {s1: ['91,35', 0, 'arrow', 16, 24]},
+                        label: {t1: ['35,105', 'p'], t2: ['165,105', 'p']}
+                    </feynman>
+                </website>
+                
+                <booklet>
+                    <feynman id="fermion-one-loop-mass" title="Energie d'auto-interaction de l'électron à boucle simple">
+                        \begin{fmfgraph}(120,75)
+                        \fmfleft{i}
+                        \fmfright{o}
+                        \fmf{fermion}{i,v1}
+                        \fmf{photon,left=1,tension=0.2}{v1,v2}
+                        \fmf{fermion}{v1,v2}
+                        \fmf{fermion}{v2,o}
+                        \end{fmfgraph}
+                    </feynman>
+                </booklet>
             </p>
         </text>
         <linkwords>

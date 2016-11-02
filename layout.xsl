@@ -44,6 +44,12 @@
     <xsl:apply-templates />
   </xsl:template>
   
+  <xsl:template match="website">
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <xsl:template match="booklet"></xsl:template>
+  
  <xsl:template match="b">
     <span style="font-weight:bold;">
       <xsl:apply-templates />

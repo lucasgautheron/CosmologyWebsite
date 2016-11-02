@@ -50,6 +50,12 @@
     <xsl:apply-templates />
   </xsl:template>
   
+  <xsl:template match="website" />
+  
+  <xsl:template match="booklet">
+    <xsl:apply-templates />
+  </xsl:template>
+  
   <xsl:template match="b">\textbf{<xsl:apply-templates />}</xsl:template>
   
   <xsl:template match="i">\textit{<xsl:apply-templates />}</xsl:template>
@@ -165,10 +171,13 @@
   </xsl:template>
   
   <xsl:template match="feynman">
-    <div class="feynman" data-fid="{./@id}"><div class="diagram"></div><span class="caption"><b><xsl:value-of select="./@title" /> </b></span></div>
-    <script>
-      $('.feynman[data-fid="<xsl:value-of select="./@id" />"] .diagram').feyn({<xsl:value-of select="." />});
-    </script>
+    \begin{figure}
+    \centering
+    \begin{fmffile}{<xsl:value-of select="./@id" />}
+    <xsl:apply-templates />
+    \end{fmffile}
+    \caption{<xsl:value-of select="./@title" />}
+    \end{figure}
   </xsl:template>
   
   <xsl:template match="spoiler">
