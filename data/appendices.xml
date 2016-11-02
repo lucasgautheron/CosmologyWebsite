@@ -625,6 +625,27 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </appendix>
     
+    <appendix id="temps-conforme" uid="conformal-time">
+        <title>Temps conforme</title>
+        <text>
+            <p>Le temps conforme $\eta$ est un choix de coordonnée temporelle qui est relié au temps cosmologique et au facteur d'échelle par la relation :
+            \begin{equation}
+            d\eta = \dfrac{dt}{a(t)}
+            \end{equation}
+            Avec ce choix de coordonée temporelle, et des coordonées spatiales appropriées, la métrique s'écrit alors :
+            \begin{equation}
+            g_{\mu\nu} = \begin{bmatrix}a^2(\eta) &amp; 0 &amp; 0 &amp; 0\\0 &amp; -a^2(\eta) &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; -a^2(\eta) &amp; 0\\ 0 &amp; 0  &amp; 0 &amp; -a^2(\eta) \end{bmatrix}
+            \end{equation}
+            </p>
+            <p>
+                Une propriété du temps conforme est que la lumière parcoure une distance comobile toujours égale à $c d\eta$ pendant un intervalle $d\eta$.
+            </p>
+        </text>
+        <linkwords>
+            <linkword>temps conforme</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="univers-einstein-de-sitter" uid="einstein-de-sitter-universe" ready="1">
         <title>Univers d'Einstein-de Sitter </title>
         <text><p>L'Univers d'Enstein-De Sitter est un modèle cosmologique minimal proposé au début des années 1930 par les deux physiciens ayant pour but de répondre aux observations faites à l'époque. Un tel Univers doit être en expansion, plat (pas de signe de courbure à l'époque), constitué uniquement de matière non relativiste et sans constante cosmologique.</p>
@@ -1166,7 +1187,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </linkwords>
     </appendix>
     
-    <appendix id="fond-diffus-cosmologique" uid="cosmic-microwave-background" ready="1">
+    <appendix id="fond-diffus-cosmologique" uid="cosmic-microwave-background" ready="0">
         <title>Fond diffus cosmologique</title>
         <text>
             <p>Le fond diffus cosmologique (ou "cosmic microwave background", souvent abbrégé CMB) est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière (environ 375 000 ans après le début du Big-Bang). Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Ce rayonnement a été observé pour la première fois dans les micro-ondes, d'où son appellation anglophone. Il prend son origine dans l'état chaud de l'Univers, et a été libéré lorsque la densité de protons et électrons est devenue suffisamment faible avec le refroidissement pour que les photons interagissent peu avec la matière et voyagent librement. Cette transition est appelée "découplage" et est survenue à $z = 1100$ environ.</p>
