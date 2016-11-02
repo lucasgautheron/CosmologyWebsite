@@ -19,12 +19,12 @@ git clone https://github.com/lucasgautheron/CosmologyWebsite.git
  * Install the dependencies :
  
 ```
-apt-get install basex default-jre gnuplot libcurl3 libsaxonb-java php-cli
+apt-get install basex default-jre gnuplot libcurl3 libsaxonb-java php-cli texlive-full
 ```
 
 In order to generate the animations and run the simulations the following packages are also required :
 ```
-apt-get install ffmpeg build-essential
+apt-get install ffmpeg build-essential gfortran 
 ```
 
 ### Compiling
@@ -36,6 +36,8 @@ git pull
 # For the first build or if a simulation has to be re-run
 php compile.php -V -S
 # otherwise
-php compile -V
+php compile.php -V
+# generate booklet as well
+php compile.php -V -B
 ```
 
