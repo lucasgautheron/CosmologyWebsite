@@ -248,15 +248,6 @@
     \hyperref[chapter:<xsl:value-of select="$id" />]{<xsl:value-of select="/root/contents/content[@id=$id][1]/title" />} (p. \pageref{chapter:<xsl:value-of select="$id" />})
   </xsl:template>
   
-  <xsl:template name="disclaimer">
-    <xsl:param name="article" />
-    <xsl:if test="not($article/@ready=1 and $article/@reviewed=1)">
-      <div class="warning">
-        La rédaction de contenu n'est pas achevée. Les informations peuvent être incomplètes ou contenir des erreurs.
-      </div>
-    </xsl:if>
-  </xsl:template>
-  
 <xsl:variable name="language" select="'french'" />
   
 <xsl:template match="/">
@@ -310,6 +301,16 @@
     
     \tableofcontents                        % Print table of contents
     \mainmatter                             % only in book class (arabic page #s)
+    
+    \chapter{Chronologie}
+    \renewcommand\arraystretch{1.4}
+    \begin{longtable}{@{\,}r &lt;{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{10cm}}
+    <xsl:for-each select="root/events/event[not(@hidden=1)]">
+      <xsl:sort select="./@date" />
+      <xsl:variable name="cid" select="./@content-id"/>
+      <xsl:value-of select="./@date" /> &amp; \hyperref[chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />]{<xsl:value-of select="." />} (p. \pageref{chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />})\\
+    </xsl:for-each>
+    \end{longtable}
     
     <xsl:for-each select="root/contents/content">
         <xsl:variable name="cuid" select="./@uid"/>   

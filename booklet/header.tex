@@ -8,9 +8,12 @@
 \usepackage{esvect}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage[x11names]{xcolor}
+\usepackage{colortbl}
 \usepackage[french]{babel}
 \usepackage{endnotes}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{cite}
@@ -43,6 +46,8 @@
 \makeatother
 
 % Definitions
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
 
 % derivative operator
 \newcommand{\dd}{ \mathop{}\mathopen{}\mathrm{d}}
