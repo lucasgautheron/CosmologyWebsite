@@ -308,7 +308,7 @@
     <xsl:for-each select="root/events/event[not(@hidden=1)]">
       <xsl:sort select="./@date" />
       <xsl:variable name="cid" select="./@content-id"/>
-      <xsl:value-of select="./@date" /> &amp; \hyperref[chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />]{<xsl:value-of select="." />} (p. \pageref{chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />})\\
+      <xsl:value-of select="./@date" /> &amp; \hyperref[chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />]{<xsl:value-of select="." />} \dotfill \pageref{chapter:<xsl:value-of select="/root/contents/content[@uid=$cid][1]/@id" />}\\
     </xsl:for-each>
     \end{longtable}
     
