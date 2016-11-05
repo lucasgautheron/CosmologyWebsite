@@ -1,6 +1,8 @@
 #export GH_USER="lucasgautheron"
 #export GITHUB_TOKEN=""
 
+.PHONY: all clean simulations website booklet deploy
+
 all:
 	php compile.php -V -B -S
 
@@ -8,6 +10,7 @@ clean:
 	find tmp/ ! -name '.gitignore' -type f -exec rm -f {} +
 	find . -name "*.html" -type f -delete
 	find . -type d -empty -delete
+	rm booklet/booklet.pdf
 
 simulations:
 	php compile.php -V -B
