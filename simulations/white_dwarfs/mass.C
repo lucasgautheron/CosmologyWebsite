@@ -42,7 +42,7 @@ int main()
     for(int i = 0; i < N; ++i)
     {
         x0[i] = pow(10, -1.5+8.5*double(i)/double(N));
-        double dchi = x0[i] > 1e4 ? 0.000001 : 0.0001;
+        double dchi = x0[i] > 1e4 ? 0.00001 : 0.0001;
         if(x0[i] > 1e6) dchi /= 2;
         
         calculate_star(x0[i], dchi, true, radius[i], mass[i], external_mass[i]);
