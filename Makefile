@@ -30,7 +30,10 @@ deploy:
 	cd deployment/public && \
 	make all && \
 	rm -rf data && \
-	rm -rf tmp
+	rm -rf *.xsl && \
+	rm -rf tmp && \
+	find booklet/ ! -name 'booklet.pdf' -type f -exec rm -f {} +
+	
 	
 	cd deployment && \
 	firebase --project cosmology-c47d4 deploy && \
