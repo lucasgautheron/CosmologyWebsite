@@ -1206,6 +1206,47 @@
          </further-readings>
     </content>
     
+    <content id="recherche-energie-noire" uid="dark-energy-search" type="timeline">
+        <title>Recherche de l'énergie noire</title>
+        <image src="">
+            
+        </image>
+        <color>#7A1EF2</color>
+        <text>
+            <p>Aujourd'hui, l'accélération de l'expansion de l'Univers est un fait bien établi, grâce à plusieurs observations :</p>
+            <ul>
+                <li>
+                    La relation distance de luminosité - redshift des supernovae thermonucléaires. 
+                </li>
+                <li>
+                    Les observations du fond diffus cosmologique et de ses anisotropies.
+                </li>
+                <li>
+                    Les catalogues de galaxies, leur fonction de corrélation.
+                </li>
+            </ul>
+            <p>Toutes ces observations semblent indiquer, dans le cadre de la relativité générale, l'existence d'une constante cosmologique $\Lambda$ positive, dont la valeur est d'environ TODO. L'équation d'Einstein se voit modifiée pour devenir :
+            \begin{equation}
+            G_{\mu\nu} + \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4} T_{\mu\nu}
+            \end{equation}
+            Où $G$ est le tenseur d'Einstein, qui contient l'information sur la géométrie de l'espace-temps, et $T$ le tenseur-énergie impulsion qui contient l'information sur son contenu (énergie et pression du contenu de l'Univers). Le terme du à la constante cosmologique peut être intégré dans le tenseur énergie impulsion, et alors celle-ci s'interprète comme une forme d'énergie particulière d'équation d'état $P = w\rho$. Comme cette "énergie" échappe à une détection directe, à la manière de la matière noire, on l'appelle énergie noire. La valeur de $\Lambda$ implique que celle-ci représente environ 75 $\%$ de la densité critique. Pour être parfaitement équivalente à une constante cosmologique, il faudrait $w = -1$ soit $P=-\rho$.
+            </p>
+            <p>
+                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie du vide d'un champ scalaire variant faiblement. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie minimale d'un champ quantique, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante <ref arxiv="1502.05296" />. L'énergie du vide d'un tel champ devrait être de l'ordre de $\rho \sim M_{pl}^4$. En effet, pour un champ obéissant à l'équation de Klein-Gordon par exemple (e.g. un champ scalaire sans auto-interaction), on a :
+                \begin{equation}
+                \rho_{vacuum} = \int \hbar \omega_\vec{k} d^3 k = 4\pi \int \hbar k^2 \omega_k d k 
+                \end{equation}
+            </p>
+            
+            <p><ref doi="10.1103/PhysRevD.70.043528" /></p>
+        </text>
+        <further-readings>
+            <further-reading>
+                
+            </further-reading>
+        </further-readings>
+    </content>
+    
     <content id="astronomie-gravitationelle" uid="gravitational-wave-astronomy">
         <title>Astronomie avec les ondes gravitationnelles</title>
         <image src="virgo.jpg">

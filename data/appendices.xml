@@ -939,7 +939,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h4>Effet sur l'Univers</h4>
             <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
             <h4>Formes possibles d'énergie du vide :</h4>
-            <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
+            <h5>Champ scalaire classique</h5>
+            <p>Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
             \begin{equation}
             T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
             \end{equation}
@@ -952,13 +953,35 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire homogène :
             \begin{equation}
             \partial_\mu \partial^\mu \phi + V'(\phi) = 0 \mbox{ donc } \ \ddot{\phi} + 3 H \dot{\phi} + c^2 V'(\phi) = 0
-            \end{equation}<!--TODO FIXME http://physics.princeton.edu/~steinh/steinhardt.pdf-->
+            \end{equation}<!--TODO FIXME http://physics.princeton.edu/~steinh/steinhardt.pdf-->   
             </p>
-            <p><b>Création de matière</b> :
+            
+            
+            <h5>Création de matière</h5> :
+            <p>
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
             </p>
-            <h4>Constante cosmologique et théorie quantique des champs</h4>
+            <h5>Le problème de la constante cosmologique</h5>
+            <p>Pour un champ associé à une particule de masse $m$ obéissant à l'équation de Klein Gordon (cas particulier du champ scalaire ci-dessus pour $V(\phi) = \dfrac{1}{2}m^2 \phi^2$), l'énergie de point zéro, c'est-à-dire l'énergie de l'état de plus basse énergie de son champ (sans particule) est ($\hbar = c = 1$) :
+                \begin{equation}
+                E_{vacuum} = V\int \dfrac{1}{2} \dfrac{d^3 p}{(2\pi)^3} \omega_\vec{p} = V\int \dfrac{dp}{(2\pi)^2} \dfrac{1}{2} p^2 \sqrt{p^2+m^2}  
+                \end{equation}
+                De là :
+                \begin{equation}
+                \rho_{vacuum} = \dfrac{E_{vacuum}}{V} \propto \int p^3 \sqrt{1+\dfrac{m^2}{p^2}} dp
+                \end{equation}
+                
+                Cette intégrale est divergente. Cependant, on s'attend à ce la théorie ne décrive pas les hautes-énergies, et on effectue en général une coupure (cut-off) au-delà d'un certain seuil d'énergie $\Lambda_{cut-off}$. On a alors, en ordre de grandeur :
+                \begin{equation}
+                \rho_{vacuum} \sim \Lambda_{cut-off}^4
+                \end{equation}
+                Le modèle standard de la physique des particules étant bien vérifié jusqu'au TeV, on doit avoir $\Lambda_{cut-off} > 10^{12}$ eV, soit $\rho_{vacuum} \sim 10^{48} \textrm{ eV}^4$. Il existe de nombreuses contributions à l'énergie du vide selon le modèle standard, mais l'ordre de grandeur de la plupart d'entre elles devrait être celle obtenue par ce calcul simple. </p>
+            <p>Par ailleurs, les observations cosmologiques donnent $\rho_{\Lambda} \simeq 10^{-16} \textrm{ eV}^4$. On a alors :
+            \begin{equation}
+            \rho_{vacuum} \sim 10^{64} \rho_{\Lambda}
+            \end{equation}
+            Soit une différence de 64 ordres de grandeur ! Clairement, quelque chose ne va pas. Le problème s'aggrave si le cut-off est augmenté, par exemple à l'échelle de Planck ($10^{28}$ eV). Dans ce cas, $\rho_{vacuum} \sim 10^{128} \rho_{\Lambda}$ !</p>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
