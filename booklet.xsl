@@ -66,6 +66,16 @@
       
   </xsl:template>
   
+  <xsl:template match="table">
+    \begin{longtabu} to \textwidth {|<xsl:for-each select="./tr[1]/(td|th)">X|</xsl:for-each>}\hline
+      <xsl:apply-templates />
+    \end{longtabu}
+  </xsl:template>
+   
+  <xsl:template match="td"><xsl:apply-templates /> <xsl:if test="count(following-sibling::td) != 0">&amp; </xsl:if></xsl:template>
+  <xsl:template match="th">\textbf{<xsl:apply-templates />} <xsl:if test="count(following-sibling::th) != 0">&amp; </xsl:if></xsl:template>
+  <xsl:template match="tr"><xsl:apply-templates /> \\ \hline</xsl:template>
+  
   <xsl:template match="ul">
     \begin{itemize}
     <xsl:apply-templates />
