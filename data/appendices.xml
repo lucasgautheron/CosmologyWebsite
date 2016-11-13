@@ -965,7 +965,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h4>Le problème de la constante cosmologique</h4>
             <p>Pour un champ associé à une particule de masse $m$ obéissant à l'équation de Klein Gordon (cas particulier du champ scalaire ci-dessus pour $V(\phi) = \dfrac{1}{2}m^2 \phi^2$), l'énergie de point zéro, c'est-à-dire l'énergie de l'état de plus basse énergie de son champ (sans particule) est ($\hbar = c = 1$) :
                 \begin{equation}
-                E_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int d^3 x\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi^2 \dfrac{Vc}{(2\pi \hbar)^3} \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
+                E_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int d^3 x\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi \dfrac{Vc}{(2\pi \hbar)^3} \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
                 \end{equation}
                 De là :
                 \begin{equation}
