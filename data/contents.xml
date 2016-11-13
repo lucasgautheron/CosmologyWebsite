@@ -236,8 +236,8 @@
             <h3>La synthèse des éléments</h3>
             <p>Introduire un peu formation des éléments etc. + parler de hoyle </p>
             <p>Au début des années 1940, une hypothèse à l'étude est l'abondance relative des atomes dans l'Univers s'explique par un équilibre thermique rapide ayant eu lieu à une température $T$ qui aurait gelé les proportions des différentes espèces. Très approximativement, ces proportions devraient suivre une distribution de type Maxwell-Boltzmann $n \propto e^{-E/(k_B T)}$ où $E$ est leur énergie nucléaire de liaison. L'énergie de liaison augmentant linéairement avec la masse atomique, l'abondance des espèces devrait décroitre exponentiellement avec celle-ci. Mais ce n'est pas ce qu'on observe : au lieu de cela, l'abondance des espèces lourdes est à peu près constante. L'idée d'un équilibre thermique rapide est donc rejetée.
-                <spoiler><figure src="thermal_equilibrium_abundance.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="thermal_equilibrium_abundance"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
-                <!--TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)--></figure></spoiler></p>
+                <spoiler><figure src="thermal_equilibrium_abundance.svg" title="Logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="thermal_equilibrium_abundance"> Un fit naif est réalisé sur la portion $0 \leq A \leq 80$ de la courbe<!--, et comparé à un fit plus sophistiqué selon l'équation de Saha\footnote{}<ref isbn="9780521422703" /> <ref doi="10.1016/j.physrep.2007.02.002" />-->. La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
+                TODO: vrai fit avec </figure></spoiler></p>
             <p>A partir de 1946, Gamow propose <ref doi="10.1103/PhysRev.70.572.2" />, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
             <!--<p>TODO parler de l'hélium
             </p>-->
@@ -248,7 +248,7 @@
                <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations.</li>
             </ol>
             
-                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<note>Alpher et Herman, Physical Review 22.153</note> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
+                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<ref doi="10.1103/RevModPhys.22.153" /> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
             </p>
             
             <h3>L'univers jeune dominé par les photons</h3>
@@ -1229,14 +1229,34 @@
             \begin{equation}
             G_{\mu\nu} + \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4} T_{\mu\nu}
             \end{equation}
-            Où $G$ est le tenseur d'Einstein, qui contient l'information sur la géométrie de l'espace-temps, et $T$ le tenseur-énergie impulsion qui contient l'information sur son contenu (énergie et pression du contenu de l'Univers). Le terme du à la constante cosmologique peut être intégré dans le tenseur énergie impulsion, et alors celle-ci s'interprète comme une forme d'énergie particulière d'équation d'état $P = w\rho$. Comme cette "énergie" échappe à une détection directe, à la manière de la matière noire, on l'appelle énergie noire. La valeur de $\Lambda$ implique que celle-ci représente environ 75 $\%$ de la densité critique. Pour être parfaitement équivalente à une constante cosmologique, il faudrait $w = -1$ soit $P=-\rho$.
+            Où $G$ est le tenseur d'Einstein, qui contient l'information sur la géométrie de l'espace-temps, et $T$ le tenseur énergie-impulsion qui contient l'information sur son contenu (énergie et pression du contenu de l'Univers). Le terme du à la constante cosmologique peut être intégré dans le tenseur énergie impulsion, et alors celle-ci s'interprète comme une forme d'énergie particulière d'équation d'état $P = w\rho$. Comme cette "énergie" échappe à une détection directe, à la manière de la matière noire, on l'appelle énergie noire. La valeur de $\Lambda$ implique que celle-ci représente environ 75 $\%$ de la densité critique. Pour être parfaitement équivalente à une constante cosmologique, il faudrait $w = -1$ soit $P=-\rho$.
+            </p>
+            <h3>Les problèmes posés par la constante cosmologique</h3>
+            <p>
+                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie d'un champ stationnaire. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie du vide des champs du modèle standard de la physique des particules, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante. En effet, la densité d'énergie prédite selon cette hypothèse est bien trop grande. La contribution d'un champ sans masse à l'énergie du vide peut être estimée par analogie avec les niveaux d'énergie d'un oscillateur quantique. Ces niveaux sont $E_n = \hbar \omega_{\vec{p}} (\frac{1}{2}+n)$ où $n$ est un entier et $\hbar\omega = pc$. Le niveau fondamental $E_0$ correspond donc à une énergie $\frac{1}{2}\hbar \omega_{\vec{p}}$. Reste alors à sommer la contribution de chaque mode $\vec{p}$ :
+                \begin{equation}
+                \rho_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi^2 \dfrac{c}{(2\pi \hbar)^3} \int p^3 dp
+                \end{equation}
+                Cette somme est divergente, mais on peut supposer que l'intégrande est valide jusqu'à une certaine échelle $\Lambda$ appelée "cut-off". Cette échelle est nécessairement supérieure au TeV puisque le modèle standard de la physique des particules est très bien vérifié en dessous de cette énergie. Elle est par ailleurs probablement inférieure à l'échelle de Planck $M_{pl} = 10^{19}$ GeV. Dans ce cas, $\Lambda = M_{pl}$ et, en unités naturelles ($\hbar = c = 1$), l'expression précédente donne donc une densité d'énergie du vide $\rho_{vacuum} \sim \Lambda^4$.
+                \begin{equation}
+                \rho_{vacuum} \sim M_{pl}^4 = 10^{112} \textrm{eV}^4
+                \end{equation}
+                Les observations cosmologiques donnent $\rho_{\Lambda} = \Omega_{\Lambda} \rho_c \sim 10^{-16} \textrm{ eV}^4$. De là :
+                \begin{equation}
+                \dfrac{\rho_{\Lambda}}{\rho_{vacuum}} \sim 10^{128}
+                \end{equation}
+                Ainsi la prédiction théorique est supérieure de plus de 120 ordres de grandeur à la valeur expérimentale. Il y a clairement un problème ! Dans le meilleur des cas, en abaissant le cut-off à l'échelle électrofaible (1 TeV), l'excès est toujours énorme (plus de 60 ordres de grandeur). Le fait que la contribution à la constante cosmologique due à l'énergie de point zéro des champs du modèle standard soit bien trop large par rapport à sa valeur réelle est appelé "problème de la constante cosmologique".
             </p>
             <p>
-                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie du vide d'un champ scalaire variant faiblement. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie minimale d'un champ quantique, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante <ref arxiv="1502.05296" />. L'énergie du vide d'un tel champ devrait être de l'ordre de $\rho \sim M_{pl}^4$. En effet, pour un champ obéissant à l'équation de Klein-Gordon par exemple (e.g. un champ scalaire sans auto-interaction), on a :
-                \begin{equation}
-                \rho_{vacuum} = \int \hbar \omega_\vec{k} d^3 k = 4\pi \int \hbar k^2 \omega_k d k 
-                \end{equation}
+                Il existe un autre problème plus discutable avec la constante cosmologique, qui consiste à savoir pourquoi sa valeur aujourd'hui est-elle que $\rho_{\Lambda}$ soit du même ordre de grandeur que la densité critique $\rho_c$. Ceci n'étant pas vrai à toute époque ($\rho_\Lambda$ est constante si parfaitement équivalente à une constante cosmologique, alors que $\rho_c$ diminue avec l'expansion), il revient à se demander si le fait que l'on mesure <i>aujourd'hui</i> un paramètre de densité $\Omega_{\Lambda} \equiv \rho_{\Lambda}/\rho_c$ de l'ordre de l'unité est une coincidence.
             </p>
+            <p>
+                Ces problèmes peuvent avoir plusieurs implications :
+            </p>
+            <ul>
+                <li>L'énergie de point zéro des champs quantiques ne contribuent pas comme on le pense à $\rho_{\Lambda}$. Cela signifierait, en terme de physique des particules, que le graviton </li>
+            </ul>
+            <h3></h3>
             
             <p><ref doi="10.1103/PhysRevD.70.043528" /></p>
         </text>

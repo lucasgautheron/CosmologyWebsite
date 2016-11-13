@@ -957,31 +957,31 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             </p>
             
             
-            <h5>Création de matière</h5> :
+            <h5>Création de matière</h5>
             <p>
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
             </p>
-            <h5>Le problème de la constante cosmologique</h5>
+            <h4>Le problème de la constante cosmologique</h4>
             <p>Pour un champ associé à une particule de masse $m$ obéissant à l'équation de Klein Gordon (cas particulier du champ scalaire ci-dessus pour $V(\phi) = \dfrac{1}{2}m^2 \phi^2$), l'énergie de point zéro, c'est-à-dire l'énergie de l'état de plus basse énergie de son champ (sans particule) est ($\hbar = c = 1$) :
                 \begin{equation}
-                E_{vacuum} = V\int \dfrac{1}{2} \dfrac{d^3 p}{(2\pi)^3} \omega_\vec{p} = V\int \dfrac{dp}{(2\pi)^2} \dfrac{1}{2} p^2 \sqrt{p^2+m^2}  
+                E_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int d^3 x\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi^2 \dfrac{Vc}{(2\pi \hbar)^3} \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
                 \end{equation}
                 De là :
                 \begin{equation}
-                \rho_{vacuum} = \dfrac{E_{vacuum}}{V} \propto \int p^3 \sqrt{1+\dfrac{m^2}{p^2}} dp
+                \rho_{vacuum} = \dfrac{E_{vacuum}}{V} \propto \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
                 \end{equation}
                 
                 Cette intégrale est divergente. Cependant, on s'attend à ce la théorie ne décrive pas les hautes-énergies, et on effectue en général une coupure (cut-off) au-delà d'un certain seuil d'énergie $\Lambda_{cut-off}$. On a alors, en ordre de grandeur :
                 \begin{equation}
                 \rho_{vacuum} \sim \Lambda_{cut-off}^4
                 \end{equation}
-                Le modèle standard de la physique des particules étant bien vérifié jusqu'au TeV, on doit avoir $\Lambda_{cut-off} > 10^{12}$ eV, soit $\rho_{vacuum} \sim 10^{48} \textrm{ eV}^4$. Il existe de nombreuses contributions à l'énergie du vide selon le modèle standard, mais l'ordre de grandeur de la plupart d'entre elles devrait être celle obtenue par ce calcul simple. </p>
+                Le modèle standard de la physique des particules étant bien vérifié jusqu'au TeV, on doit avoir $\Lambda_{cut-off} > 10^{12}$ eV, soit $\rho_{vacuum} \sim 10^{48} \textrm{ eV}^4$. Il existe de nombreuses contributions à l'énergie du vide selon le modèle standard, mais l'ordre de grandeur de la plupart d'entre elles devrait être celle obtenue par ce calcul simple <ref arxiv="hep-th/0012253" /> <ref arxiv="1502.05296" />. </p>
             <p>Par ailleurs, les observations cosmologiques donnent $\rho_{\Lambda} \simeq 10^{-16} \textrm{ eV}^4$. On a alors :
             \begin{equation}
             \rho_{vacuum} \sim 10^{64} \rho_{\Lambda}
             \end{equation}
-            Soit une différence de 64 ordres de grandeur ! Clairement, quelque chose ne va pas. Le problème s'aggrave si le cut-off est augmenté, par exemple à l'échelle de Planck ($10^{28}$ eV). Dans ce cas, $\rho_{vacuum} \sim 10^{128} \rho_{\Lambda}$ !</p>
+            Soit une différence de 64 ordres de grandeur ! Clairement, quelque chose ne va pas. Le problème s'aggrave si le cut-off est augmenté, par exemple à l'échelle de Planck ($10^{28}$ eV). Dans ce cas, $\rho_{vacuum} \sim 10^{128} \rho_{\Lambda}$ ! C'est le problème de la constante cosmologique.</p>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
@@ -2147,6 +2147,45 @@ Et
            <linkword>Invariance de jauge</linkword>
            <linkword>Gauge Invariance</linkword>
       </linkwords>
+    </appendix>
+    
+    <appendix id="unites-naturelles" uid="natural-units">
+        <title>Unités naturelles</title>
+        <text>
+            <p>Le système d'unités naturelles est un système d'unités dans lequel $\hbar = 1$, $c = 1$ et $k_B = 1$. 
+            Dans ce système, toutes les unités de longueur, temps, masse et température (et les unités dérivées) peuvent s'exprimer à l'aide de puissance de l'électron-Volt (eV), une unité d'énergie. Ce choix d'unité est particulièrement commode et très utilisé en physique des particules.</p>
+            <table>
+                <tr>
+                    <th>Unités SI - mks</th>
+                    <th>Unités cgs</th>
+                    <th>Unités naturelles</th>
+                </tr>
+                <tr>
+                    <td>m</td>
+                    <td>100 cm</td>
+                    <td>$1,97 \times 10^{-7} \textrm{ GeV}^{-1}$</td>
+                </tr>
+                <tr>
+                    <td>kg</td>
+                    <td>1000 g</td>
+                    <td>$5,61 \times 10^{35} \textrm{ eV}^{1}$</td>
+                </tr>
+                <tr>
+                    <td>s</td>
+                    <td>s</td>
+                    <td>$6,58 \times 10^{-16}$ GeV</td>
+                </tr>
+                <tr><td>J</td><td>$10^{7} \textrm{erg}$</td><td>$6,24 \times 10^{18} \textrm{eV}$</td></tr>
+                <tr>
+                    <td>K</td>
+                    <td>K</td>
+                    <td>$8,62 \times 10^{-5} \textrm{GeV}$</td>
+                </tr>
+            </table>
+        </text>
+        <linkwords>
+            <linkword>unités naturelles</linkword>
+        </linkwords>
     </appendix>
     
     <appendix id="lentille-gravitationnelle" uid="gravitational-lensing" ready="1">
