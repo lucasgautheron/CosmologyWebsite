@@ -1270,7 +1270,7 @@
                         outgoing: {o1: '190,60'},
                         vertex: {v1: '58.5,60', v2: '141.5,60'},
                         scalar: {loop: 'v2-v1'},
-                        photon: {line: 'v1-o1'}
+                        photon: {line: 'v2-o1'}
                     </feynman>
                 </website>
                 
