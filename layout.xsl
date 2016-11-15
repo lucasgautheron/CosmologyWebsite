@@ -147,8 +147,10 @@
         <xsl:variable name="ref" select="(document(concat('./tmp/ref_', $safearxiv, '.xml'))//atom:entry)[1]" />
         <a name="ref-{$safearxiv}"></a>
         <xsl:for-each select="$ref//atom:author">
-          <xsl:value-of select="./atom:name" />
-          <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+          <xsl:if test="not(position() > $maxauthors)">
+            <xsl:value-of select="./atom:name" />
+            <xsl:if test="position() != last() and not(position() >= $maxauthors) ">, </xsl:if>
+          </xsl:if>
         </xsl:for-each>
         <xsl:if test="count($ref//atom:author) > $maxauthors">
           et al.
