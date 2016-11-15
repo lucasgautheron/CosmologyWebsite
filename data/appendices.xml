@@ -1330,7 +1330,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </figure>
                 
                 <figure src="cmb_spectrum_cold.svg" title="Spectre TT et répartition de la matière non relativiste$" source="CMB" plot="cmb_spectrum_cold">
-                    
+                    TODO odd bump enhancement due to DM
                 </figure>
                 
                 <h5>Courbure</h5>

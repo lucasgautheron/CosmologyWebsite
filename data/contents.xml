@@ -1114,8 +1114,10 @@
                   \end{equation}
                   
                   Ceci ne dépend pas de $r$ et expliquerait le plateau observé par Vera Rubin sur le tracé de $r\mapsto v(r)$.
+                  Un bon accord avec les courbes de rotation est trouvé pour $a_0 \sim 10^{-10} \textrm{ cm.s}^{-2}$. Cette valeur est intriguante car du même ordre de grandeur que $cH_0$.
+                  MOND est parfois formulé en terme de modification de la gravité, avec une décroissance en $1/r$ plutôt que $1/r^2$ à large distance.
               
-                  La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" />. Des observations récentes portées sur 153 galaxies semblent favoriser cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies").
+                  La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" />. Des observations récentes portées sur 153 galaxies semblent encourager cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies"). MOND est en revanche très peu attrayante d'un point de vue théorique et échoue à l'échelle des clusters de galaxie.
               </p>
     	</text>
         <interviews>
@@ -1216,7 +1218,7 @@
             <p>Aujourd'hui, l'accélération de l'expansion de l'Univers est un fait bien établi, grâce à plusieurs observations :</p>
             <ul>
                 <li>
-                    La relation distance de luminosité - redshift des supernovae thermonucléaires. 
+                    La relation distance de luminosité - redshift des supernovae thermonucléaires. Cette relation dès qu'elle est mesurée semble clairement indiquer que l'Univers accélère son expansion malgré des doutes sur les analyses récompensées par le prix Nobel 2011 <ref doi="10.1038/srep35596" />.
                 </li>
                 <li>
                     Les observations du fond diffus cosmologique et de ses anisotropies.
@@ -1305,6 +1307,8 @@
                 \begin{equation}
                 w(\phi) = \dfrac{\frac{1}{2}\dot{\phi}^2-V(\phi)}{\frac{1}{2}\dot{\phi}^2+V(\phi)}
                 \end{equation}
+                Si le champ varie lentement ($\dot{\phi}^2 \ll V(\phi)$) on a bien $w\to 1$.
+                
                 A partir de cette dépendance, des paramétrisations plus spécifiques de $a\mapsto w(a)$ peuvent être établies permettant l'obtention de meilleurs contraintes sur les paramètres physiques du modèle <ref doi="10.1088/0004-637X/726/2/64" />.
                 
                 Certaines analyses tentent aussi de reconstruire $w$ en fonction de $z = 1/a-1$, "bin à bin", comme sur la figure suivante :
@@ -1312,7 +1316,15 @@
                     L'évolution de $w$ en fonction du redshift est retracée de façon assez grossière (4 intervalles de valeurs de $z$ seulement). L'erreur verticale sur $w$ est par ailleurs assez large.
                 </figure>
                 Cette méthode a l'avantage de requérir très peu d'hypothèses, mais la contrepartie est d'offrir des résultats très peu contraints.
-               
+            </p>
+            
+            <h3>Futures expériences</h3>
+            <p>
+                Plusieurs expériences 
+            </p>
+            <h4>Euclid</h4>
+            <p>
+                <ref arxiv="1110.3193" />
             </p>
         </text>
         <further-readings>
