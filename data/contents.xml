@@ -1225,6 +1225,11 @@
                     Les catalogues de galaxies, leur fonction de corrélation.
                 </li>
             </ul>
+            
+            <figure src="dark_energy_measurements.svg" plot="dark_energy_measurements" title="Mesures de la densité d'énergie noire d'un univers plat $\Omega_m+\Omega_{\Lambda} = 1$">
+                Les mesures de la constante cosmologique ont commencé avec l'usage des supernovae Ia comme chandelles standard et la découverte de l'accélération de l'expansion de l'Univers. Des mesures indépendantes ont confirmé les premiers résultats avec WMAP, Planck, et les mesures d'oscillations acoustiques des baryons.
+            </figure>
+            
             <p>Toutes ces observations semblent indiquer, dans le cadre de la relativité générale, l'existence d'une constante cosmologique $\Lambda$ positive, dont la valeur est d'environ TODO. L'équation d'Einstein se voit modifiée pour devenir :
             \begin{equation}
             G_{\mu\nu} + \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4} T_{\mu\nu}
@@ -1245,20 +1250,70 @@
                 \begin{equation}
                 \dfrac{\rho_{\Lambda}}{\rho_{vacuum}} \sim 10^{128}
                 \end{equation}
-                Ainsi la prédiction théorique est supérieure de plus de 120 ordres de grandeur à la valeur expérimentale. Il y a clairement un problème ! Dans le meilleur des cas, en abaissant le cut-off à l'échelle électrofaible (1 TeV), l'excès est toujours énorme (plus de 60 ordres de grandeur). Le fait que la contribution à la constante cosmologique due à l'énergie de point zéro des champs du modèle standard soit bien trop large par rapport à sa valeur réelle est appelé "problème de la constante cosmologique".
+                Ainsi la prédiction théorique est supérieure de plus de 120 ordres de grandeur à la valeur expérimentale. Il y a clairement un problème ! Dans le meilleur des cas, en abaissant le cut-off à l'échelle électrofaible (1 TeV), l'excès est toujours énorme (plus de 60 ordres de grandeur) <ref arxiv="1203.0307" />. Le fait que la contribution à la constante cosmologique due à l'énergie de point zéro des champs du modèle standard soit bien trop large par rapport à l'ordre de grandeur attendu est appelé "problème d'ajustement fin de la constante cosmologique". Il est assez extraordinaire, si cette interprétation est correcte, que les contributions de chaque champ à l'énergie du vide se compensent miraculeusement pour atteindre une valeur totale si particulière. 
             </p>
             <p>
                 Il existe un autre problème plus discutable avec la constante cosmologique, qui consiste à savoir pourquoi sa valeur aujourd'hui est-elle que $\rho_{\Lambda}$ soit du même ordre de grandeur que la densité critique $\rho_c$. Ceci n'étant pas vrai à toute époque ($\rho_\Lambda$ est constante si parfaitement équivalente à une constante cosmologique, alors que $\rho_c$ diminue avec l'expansion), il revient à se demander si le fait que l'on mesure <i>aujourd'hui</i> un paramètre de densité $\Omega_{\Lambda} \equiv \rho_{\Lambda}/\rho_c$ de l'ordre de l'unité est une coincidence.
             </p>
             <p>
-                Ces problèmes peuvent avoir plusieurs implications :
+            En réponse à ces problèmes, diverses solutions ont été suggéré, qui restent encore à tester.
             </p>
-            <ul>
-                <li>L'énergie de point zéro des champs quantiques ne contribuent pas comme on le pense à $\rho_{\Lambda}$. Cela signifierait, en terme de physique des particules, que le graviton </li>
-            </ul>
-            <h3></h3>
             
-            <p><ref doi="10.1103/PhysRevD.70.043528" /></p>
+            <h3>Modification de la gravité</h3>
+            <p>
+                Il est possible que l'énergie de point zéro des champs quantiques ne contribue pas comme on le pense à $\rho_{\Lambda}$. Elle peut s'annuler parfaitement, ou bien peut-être nos hypothèses sur l'interaction gravitationnelles sont incorrectes (voir le diagramme de Feynman suivant qui suppose que l'hypothétique graviton se couple avec des boucles qui donnent naissance à l'énergie du vide).
+                <website>
+                    <feynman id="vacuum-energy-graviton" title="Énergie du vide et graviton">
+                        description: 'Scalar vacuum energy diagram',
+                        width: 200,
+                        height: 120,
+                        outgoing: {o1: '190,60'},
+                        vertex: {v1: '58.5,60', v2: '141.5,60'},
+                        scalar: {loop: 'v2-v1'},
+                        photon: {line: 'v1-o1'}
+                    </feynman>
+                </website>
+                
+                <booklet>
+                    <feynman id="vacuum-energy-graviton" title="Énergie du vide et graviton">
+                        \begin{fmfgraph*}(120,75)
+                        \fmfleft{i}
+                        \fmfright{o}
+                        \fmf{dashes,left,tension=0.4}{v1,v2,v1}
+                        \fmf{phantom}{i,v1}
+                        \fmf{photon,label=$g$}{v2,o}
+                        \end{fmfgraph*}
+                    </feynman>
+                </booklet>
+                
+                Dans ce cas, la constante cosmologique pourrait être la manifestation d'écarts à la relativité générale, que prédisent par exemple les théories $f(R)$. Ces théories, comme expliquée dans l'article <contentlink id="recherche-matiere-noire" />, proposent de modifier l'action d'Einstein-Hilbert équivalente à l'équation d'Einstein $S=\int R \sqrt{-g}d^4 x$ par $S=\int f(R)\sqrt{-g}d^4 x$. En 2004, Sean Caroll a publié un papier sur le sujet ayant reçu beaucoup d'attention <ref doi="10.1103/PhysRevD.70.043528" />. Dans son article il montrer que l'ajout d'un terme de la forme $1/R^n$ (donc prédominant lorsque la gravité devient faible, tout comme la constante cosmologique dont l'effet sur l'expansion domine lorsque la densité des autres formes d'énergie devient négligeable) serait une explication plausible évitant le recours à la notion d'énergie noire. Une mesure très précise de $w = P/\rho$ permettrait de trancher. Ces théories peuvent aussi être invalidées par des tests non cosmologiques de la relativité générale <ref doi="10.1103/PhysRevD.92.044009" /> <ref doi="10.1103/PhysRevD.77.024040" />.
+            </p>
+            
+            <h3>Le "landscape" des théories des cordes</h3>
+            <p>
+                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors 
+                <ref isbn="0224076051" />
+            </p>
+            
+            <h3>Résultats expérimentaux</h3>
+            <p>
+                La caractérisation de l'énergie noire passe principalement par l'étude de son équation d'état. Si le paramètre $w=P/\rho$ de l'énergie noire est laissé libre dans le modèle standard de la cosmologie, alors les derniers résultats de Planck donnent un meilleur "fit" pour $w = -1,006 \pm 0,045$ <ref doi="10.1051/0004-6361/201525830" />, tout à fait compatible avec une constant cosmologique ($w=-1$). Si l'énergie noire est due à un fluide non stationnaire, sa valeur pourrait varier. Le problème est qu'a priori celle-ci n'a d'impact sur l'expansion qu'assez tard dans l'histoire de l'Univers, alors que le facteur d'échelle évolue peu. Une paramétrisation phénoménologique habituelle est une dépendance affine de $w$ avec le facteur d'échelle <ref doi="10.1051/0004-6361/201525814" /> :
+                \begin{equation}
+                w(a) = w_0 + w_a(1-a)
+                \end{equation}
+                Celle-ci est vraiment très générique puisqu'elle correspond à un développement de Taylor de $w$ en tant que fonction de $a$. Cependant il existe des modèles assez génériques mais davantage motivés par la théorie, par exemple celui du "slow-rolling scalar field", c'est-à-dire d'un champ scalaire $\phi$ évoluant lentement dans un potentiel $V(\phi)$  pour lesquels on a :
+                \begin{equation}
+                w(\phi) = \dfrac{\frac{1}{2}\dot{\phi}^2-V(\phi)}{\frac{1}{2}\dot{\phi}^2+V(\phi)}
+                \end{equation}
+                A partir de cette dépendance, des paramétrisations plus spécifiques de $a\mapsto w(a)$ peuvent être établies permettant l'obtention de meilleurs contraintes sur les paramètres physiques du modèle <ref doi="10.1088/0004-637X/726/2/64" />.
+                
+                Certaines analyses tentent aussi de reconstruire $w$ en fonction de $z = 1/a-1$, "bin à bin", comme sur la figure suivante :
+                <figure src="w_bin_planck.svg" title="Reconstruction 'Bin-to-bin' de $w(z)$">
+                    L'évolution de $w$ en fonction du redshift est retracée de façon assez grossière (4 intervalles de valeurs de $z$ seulement). L'erreur verticale sur $w$ est par ailleurs assez large.
+                </figure>
+                Cette méthode a l'avantage de requérir très peu d'hypothèses, mais la contrepartie est d'offrir des résultats très peu contraints.
+               
+            </p>
         </text>
         <further-readings>
             <further-reading>

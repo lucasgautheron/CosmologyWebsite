@@ -181,7 +181,7 @@
   </xsl:template>
   
   <xsl:template match="feynman">
-    \begin{figure}
+    \begin{figure}[H]
     \centering
     \begin{fmffile}{<xsl:value-of select="./@id" />}
     <xsl:apply-templates />
