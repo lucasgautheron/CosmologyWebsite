@@ -1324,7 +1324,24 @@
             </p>
             <h4>Euclid</h4>
             <p>
-                <ref arxiv="1110.3193" />
+                Euclid est un projet de téléscope spatial doté d'un miroir de 1,2m de diamètre validé par l'Agence Spatiale Européenne (ESA) en 2011 <ref arxiv="1110.3193" />. Il doit être lancé en 2020. Il comportera deux instruments :
+                
+            </p>
+            <ul>
+                <li>Le Near Infrared Spectrometer and Photometer (<b>NISP</b>), sensible aux longueurs d'onde entre 1 et 2 $\mu$m avec une résolution angulaire de l'ordre de 0,3''. Le spectromètre permettra une mesure précise du redshift des objets observés.</li>
+                <li>Le Visible instrument (<b>VIS</b>) doté d'une caméra CCD sensible à l'intervalle de longueurs d'ondes 550-900 nm et d'une résolution de 0,1'' par pixel.</li>
+            </ul>
+            <p>
+                Ces mesures devraient permettre de constituer un catalogue sans précédent d'objets à haut redshift (galaxies, quasars, supernovae). Le volume de détection sera multiplié par 500 par rapport au SDSS. Toutes ces données devraient contribuer à améliorer de façon significative les contraintes sur certains paramètres cosmologiques via l'observation des oscillations acoustiques de baryons et de l'effet de lentille gravitationnelle faible. On attend par exemple une amélioration de la limite sur $w_a$ d'un facteur $\sim$ 50 et de celle sur la somme des masses de neutrinos d'un facteur $\sim$ 30.
+            </p>
+            
+            <h4>Le LSST (Large Synoptic Survey Telescope)</h4>
+            <p>
+                
+            </p>
+            <h4>WFIRST</h4>
+            <p>
+                
             </p>
         </text>
         <further-readings>

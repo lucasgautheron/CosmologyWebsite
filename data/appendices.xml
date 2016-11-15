@@ -2207,17 +2207,23 @@ Et
               La lumière qui nous parvient de sources lointaines a pu subir l'influence de multiples masses étendues.
               La déviation par rapport à l'axe de visée est alors donnée par :
               \begin{equation}
-              \Delta \vec{\phi} = \dfrac{2}{c^2} \int \nabla_{\perp} \Phi dz
+              \Delta \vec{\alpha} = \dfrac{2}{c^2} \int \nabla_{\perp} \Phi dz
               \end{equation}
               L'intégrale est ici prise le long du chemin parcouru par la lumière, qui est dans la limite des champs faibles, à peu près similaire au chemin non dévié.
           </p>
+          <h4>Cisaillement cosmique</h4>
+          <p>
+              Le cisaillement cosmique est un exemple particulier d'effet de lentille gravitationnelle faible <ref doi="10.1088/0034-4885/78/8/086901" />. 
+          </p>
+          
           <h4>En savoir plus</h4>
           <p>
-              L'ouvrage <i>Cosmologie Primordiale</i> (P. Peter, J.P. Uzan) est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
+              L'ouvrage <i>Cosmologie Primordiale</i> <ref isbn="9780199665150" /> est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
           </p>
       </text>
       <linkwords>
            <linkword>lentille gravitationnelle</linkword>
+           <linkword>cisaillement cosmique</linkword>
       </linkwords>
     </appendix>
     
