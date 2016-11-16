@@ -1210,8 +1210,8 @@
     
     <content id="recherche-energie-noire" uid="dark-energy-search" type="timeline">
         <title>Recherche de l'énergie noire</title>
-        <image src="">
-            
+        <image src="wfirst.jpg">
+            A travers l'observation d'une large nombre de galaxies distantes, de supernovae de type Ia et de quasars, la mission WFIRST devrait permettre des mesures cosmologiques de précision et contribuer à une meilleure compréhension de l'énergie noire.
         </image>
         <color>#7A1EF2</color>
         <text>
@@ -1328,27 +1328,23 @@
                 
             </p>
             <ul>
-                <li>Le Near Infrared Spectrometer and Photometer (<b>NISP</b>), sensible aux longueurs d'onde entre 1 et 2 $\mu$m avec une résolution angulaire de l'ordre de 0,3''. Le spectromètre permettra une mesure précise du redshift des objets observés.</li>
+                <li>Le Near Infrared Spectrometer and Photometer (<b>NISP</b>), sensible aux longueurs d'onde entre 1 et 2 $\mu$m avec une résolution angulaire de l'ordre de 0,3''. Le spectromètre permettra une mesure précise du redshift des objets observés, avec une résolution spectrale $\lambda/\Delta \lambda \sim 250$.</li>
                 <li>Le Visible instrument (<b>VIS</b>) doté d'une caméra CCD sensible à l'intervalle de longueurs d'ondes 550-900 nm et d'une résolution de 0,1'' par pixel.</li>
             </ul>
             <p>
-                Ces mesures devraient permettre de constituer un catalogue sans précédent d'objets à haut redshift (galaxies, quasars, supernovae). Le volume de détection sera multiplié par 500 par rapport au SDSS. Toutes ces données devraient contribuer à améliorer de façon significative les contraintes sur certains paramètres cosmologiques via l'observation des oscillations acoustiques de baryons et de l'effet de lentille gravitationnelle faible. On attend par exemple une amélioration de la limite sur $w_a$ d'un facteur $\sim$ 50 et de celle sur la somme des masses de neutrinos d'un facteur $\sim$ 30.
+                Ces mesures devraient permettre de constituer un catalogue sans précédent d'objets à haut redshift (galaxies, quasars, supernovae). Le volume de détection sera multiplié par 500 par rapport au SDSS. Toutes ces données devraient contribuer à améliorer de façon significative les contraintes sur certains paramètres cosmologiques via l'observation des oscillations acoustiques de baryons et de l'effet de lentille gravitationnelle faible. On attend par exemple une amélioration de la limite sur $w_a$ d'un facteur $\sim$ 50 et de celle sur la somme des masses de neutrinos d'un ordre de grandeur. L'observation de quasars à haut redshift ($z \sim 6 - 8$) devrait apporter des renseignements précieux sur la réionisation.
             </p>
             
             <h4>Le LSST (Large Synoptic Survey Telescope)</h4>
             <p>
                 
             </p>
+            
             <h4>WFIRST</h4>
             <p>
-                
+                <b>WFIRST</b> (Wild Field Infrared Survey Telescope) est une mission de la NASA validée en 2016 consistant en un téléscope spatial devant être lancé au cours de la prochaine décennie. Le téléscope consistera en un miroir de 2,4m, et ses instruments détecteront des longueurs d'onde comprises entre 0,2 et 1,7 $\mu$m. Il devrait être capable de voir des objets légèrement moins lumineux qu'Euclid (<a href="http://subarutelescope.org/Science/SubaruUM/SubaruUM2015/files/Jan21/Jan21_Takada_Yamada.pdf" >gain de +2 en magnitude</a>). Il viendra donc compléter la mission scientifique d'Euclid. Par ailleurs, il sera doté d'un coronographe, facilitant l'observation d'exoplanètes.
             </p>
         </text>
-        <further-readings>
-            <further-reading>
-                
-            </further-reading>
-        </further-readings>
     </content>
     
     <content id="astronomie-gravitationelle" uid="gravitational-wave-astronomy">
