@@ -1015,7 +1015,7 @@
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
     	<title>Recherche de la matière noire</title>
         <image src="dark_matter.jpg">
-            Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
+            Collision de deux amas, dont celui dit de la "Balle" (Bullet cluster), où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
         </image>
     	<color>#a9F00d</color>
     	<text>
@@ -1117,7 +1117,7 @@
                   Un bon accord avec les courbes de rotation est trouvé pour $a_0 \sim 10^{-10} \textrm{ cm.s}^{-2}$. Cette valeur est intriguante car du même ordre de grandeur que $cH_0$.
                   MOND est parfois formulé en terme de modification de la gravité, avec une décroissance en $1/r$ plutôt que $1/r^2$ à large distance.
               
-                  La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" />. Des observations récentes portées sur 153 galaxies semblent encourager cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies"). MOND est en revanche très peu attrayante d'un point de vue théorique et échoue à l'échelle des clusters de galaxie.
+              La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" /> dont TeVeS, proposée par Bekenstein <ref doi="10.1103/PhysRevD.70.083509" />. Des observations récentes portées sur 153 galaxies semblent encourager cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies"). MOND est en revanche très peu attrayante d'un point de vue théorique et échoue à l'échelle des clusters de galaxie.
               </p>
     	</text>
         <interviews>
@@ -1324,7 +1324,7 @@
             </p>
             <h4>Euclid</h4>
             <p>
-                Euclid est un projet de téléscope spatial doté d'un miroir de 1,2m de diamètre validé par l'Agence Spatiale Européenne (ESA) en 2011 <ref arxiv="1110.3193" />. Il doit être lancé en 2020. Il comportera deux instruments :
+                Euclid est un projet de télescope spatial doté d'un miroir de 1,2m de diamètre validé par l'Agence Spatiale Européenne (ESA) en 2011 <ref arxiv="1110.3193" />. Il doit être lancé en 2020. Il comportera deux instruments :
                 
             </p>
             <ul>
@@ -1335,14 +1335,14 @@
                 Ces mesures devraient permettre de constituer un catalogue sans précédent d'objets à haut redshift (galaxies, quasars, supernovae). Le volume de détection sera multiplié par 500 par rapport au SDSS. Toutes ces données devraient contribuer à améliorer de façon significative les contraintes sur certains paramètres cosmologiques via l'observation des oscillations acoustiques de baryons et de l'effet de lentille gravitationnelle faible. On attend par exemple une amélioration de la limite sur $w_a$ d'un facteur $\sim$ 50 et de celle sur la somme des masses de neutrinos d'un ordre de grandeur. L'observation de quasars à haut redshift ($z \sim 6 - 8$) devrait apporter des renseignements précieux sur la réionisation.
             </p>
             
-            <h4>Le LSST (Large Synoptic Survey Telescope)</h4>
+            <!--<h4>Le LSST (Large Synoptic Survey Telescope)</h4>
             <p>
-                
-            </p>
+                Le LSST est un télescope actuellement en construction au Chili. Il est remarquable de par la taille de son miroir primaire (8,4m de diamètre) et de sa caméra CCD (3 gigapixels). Il devrait être pleinement opérationnel dès 2023.
+            </p>-->
             
-            <h4>WFIRST</h4>
+            <h4>Wild Field Infrared Survey Telescope (WFIRST)</h4>
             <p>
-                <b>WFIRST</b> (Wild Field Infrared Survey Telescope) est une mission de la NASA validée en 2016 consistant en un téléscope spatial devant être lancé au cours de la prochaine décennie. Le téléscope consistera en un miroir de 2,4m, et ses instruments détecteront des longueurs d'onde comprises entre 0,2 et 1,7 $\mu$m. Il devrait être capable de voir des objets légèrement moins lumineux qu'Euclid (<a href="http://subarutelescope.org/Science/SubaruUM/SubaruUM2015/files/Jan21/Jan21_Takada_Yamada.pdf" >gain de +2 en magnitude</a>). Il viendra donc compléter la mission scientifique d'Euclid. Par ailleurs, il sera doté d'un coronographe, facilitant l'observation d'exoplanètes.
+                WFIRST est une mission de la NASA validée en 2016 consistant en un télescope spatial devant être lancé au cours de la prochaine décennie. Le téléscope consistera en un miroir de 2,4m, et ses instruments détecteront des longueurs d'onde comprises entre 0,2 et 1,7 $\mu$m. Il devrait être capable de voir des objets légèrement moins lumineux qu'Euclid (<a href="http://subarutelescope.org/Science/SubaruUM/SubaruUM2015/files/Jan21/Jan21_Takada_Yamada.pdf" >gain de +2 en magnitude</a>). Il viendra donc compléter la mission scientifique d'Euclid. Par ailleurs, il sera doté d'un coronographe, facilitant l'observation d'exoplanètes.
             </p>
         </text>
     </content>
