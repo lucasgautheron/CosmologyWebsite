@@ -236,8 +236,8 @@
             <h3>La synthèse des éléments</h3>
             <p>Introduire un peu formation des éléments etc. + parler de hoyle </p>
             <p>Au début des années 1940, une hypothèse à l'étude est l'abondance relative des atomes dans l'Univers s'explique par un équilibre thermique rapide ayant eu lieu à une température $T$ qui aurait gelé les proportions des différentes espèces. Très approximativement, ces proportions devraient suivre une distribution de type Maxwell-Boltzmann $n \propto e^{-E/(k_B T)}$ où $E$ est leur énergie nucléaire de liaison. L'énergie de liaison augmentant linéairement avec la masse atomique, l'abondance des espèces devrait décroitre exponentiellement avec celle-ci. Mais ce n'est pas ce qu'on observe : au lieu de cela, l'abondance des espèces lourdes est à peu près constante. L'idée d'un équilibre thermique rapide est donc rejetée.
-                <spoiler><figure src="thermal_equilibrium_abundance.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="thermal_equilibrium_abundance"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
-                <!--TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)--></figure></spoiler></p>
+                <spoiler><figure src="thermal_equilibrium_abundance.svg" title="Logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="thermal_equilibrium_abundance"> Un fit naif est réalisé sur la portion $0 \leq A \leq 80$ de la courbe<!--, et comparé à un fit plus sophistiqué selon l'équation de Saha\footnote{}<ref isbn="9780521422703" /> <ref doi="10.1016/j.physrep.2007.02.002" />-->. La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
+                TODO: vrai fit avec </figure></spoiler></p>
             <p>A partir de 1946, Gamow propose <ref doi="10.1103/PhysRev.70.572.2" />, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
             <!--<p>TODO parler de l'hélium
             </p>-->
@@ -248,7 +248,7 @@
                <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations.</li>
             </ol>
             
-                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<note>Alpher et Herman, Physical Review 22.153</note> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
+                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<ref doi="10.1103/RevModPhys.22.153" /> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
             </p>
             
             <h3>L'univers jeune dominé par les photons</h3>
@@ -1015,7 +1015,7 @@
         <content id="recherche-matiere-noire" uid="dark-matter-search" type="timeline">
     	<title>Recherche de la matière noire</title>
         <image src="dark_matter.jpg">
-            Collision de deux clusters, où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
+            Collision de deux amas, dont celui dit de la "Balle" (Bullet cluster), où la matière vue par rayonnement X est représentée en rose, et la matière vue par effet de lentille gravitationnelle (donc qui inclut la matière noire) est représentée en bleu. Credits : X-ray: NASA/CXC/CfA/M.Markevitch et al.; Optical: NASA/STScI; Magellan/U.Arizona/D.Clowe et al.; Lensing Map: NASA/STScI; ESO WFI; Magellan/U.Arizona/D.Clowe et al.
         </image>
     	<color>#a9F00d</color>
     	<text>
@@ -1114,8 +1114,10 @@
                   \end{equation}
                   
                   Ceci ne dépend pas de $r$ et expliquerait le plateau observé par Vera Rubin sur le tracé de $r\mapsto v(r)$.
+                  Un bon accord avec les courbes de rotation est trouvé pour $a_0 \sim 10^{-10} \textrm{ cm.s}^{-2}$. Cette valeur est intriguante car du même ordre de grandeur que $cH_0$.
+                  MOND est parfois formulé en terme de modification de la gravité, avec une décroissance en $1/r$ plutôt que $1/r^2$ à large distance.
               
-                  La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" />. Des observations récentes portées sur 153 galaxies semblent favoriser cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies").
+              La théorie MOND a évolué et des versions relativistes existent <ref doi="10.1139/cjp-2014-0211" /> dont TeVeS, proposée par Bekenstein <ref doi="10.1103/PhysRevD.70.083509" />. Des observations récentes portées sur 153 galaxies semblent encourager cette hypothèse plutôt que celle d'une masse manquante ("Radial acceleration relation in rotationally supported galaxies"). MOND est en revanche très peu attrayante d'un point de vue théorique et échoue à l'échelle des clusters de galaxie.
               </p>
     	</text>
         <interviews>
@@ -1204,6 +1206,145 @@
               <file>dm_review_2015.pdf</file>
             </further-reading>
          </further-readings>
+    </content>
+    
+    <content id="recherche-energie-noire" uid="dark-energy-search" type="timeline">
+        <title>Recherche de l'énergie noire</title>
+        <image src="wfirst.jpg">
+            A travers l'observation d'une large nombre de galaxies distantes, de supernovae de type Ia et de quasars, la mission WFIRST devrait permettre des mesures cosmologiques de précision et contribuer à une meilleure compréhension de l'énergie noire. Source : <a href="https://fr.wikipedia.org/wiki/Fichier:WFIRST_Design_-_December_2015.jpg">Wikipédia</a>.
+        </image>
+        <color>#7A1EF2</color>
+        <text>
+            <p>Aujourd'hui, l'accélération de l'expansion de l'Univers est un fait bien établi, grâce à plusieurs observations :</p>
+            <ul>
+                <li>
+                    La relation distance de luminosité - redshift des supernovae thermonucléaires. Cette relation dès qu'elle est mesurée semble clairement indiquer que l'Univers accélère son expansion malgré des doutes sur les analyses récompensées par le prix Nobel 2011 <ref doi="10.1038/srep35596" />.
+                </li>
+                <li>
+                    Les observations du fond diffus cosmologique et de ses anisotropies.
+                </li>
+                <li>
+                    Les catalogues de galaxies, leur fonction de corrélation.
+                </li>
+            </ul>
+            
+            <figure src="dark_energy_measurements.svg" plot="dark_energy_measurements" title="Mesures de la densité d'énergie noire d'un univers plat $\Omega_m+\Omega_{\Lambda} = 1$">
+                Les mesures de la constante cosmologique ont commencé avec l'usage des supernovae Ia comme chandelles standard et la découverte de l'accélération de l'expansion de l'Univers. Des mesures indépendantes ont confirmé les premiers résultats avec WMAP, Planck, et les mesures d'oscillations acoustiques des baryons.
+            </figure>
+            
+            <p>Toutes ces observations semblent indiquer, dans le cadre de la relativité générale, l'existence d'une constante cosmologique $\Lambda$ positive, dont la valeur est d'environ TODO. L'équation d'Einstein se voit modifiée pour devenir :
+            \begin{equation}
+            G_{\mu\nu} + \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4} T_{\mu\nu}
+            \end{equation}
+            Où $G$ est le tenseur d'Einstein, qui contient l'information sur la géométrie de l'espace-temps, et $T$ le tenseur énergie-impulsion qui contient l'information sur son contenu (énergie et pression du contenu de l'Univers). Le terme du à la constante cosmologique peut être intégré dans le tenseur énergie impulsion, et alors celle-ci s'interprète comme une forme d'énergie particulière d'équation d'état $P = w\rho$. Comme cette "énergie" échappe à une détection directe, à la manière de la matière noire, on l'appelle énergie noire. La valeur de $\Lambda$ implique que celle-ci représente environ 75 $\%$ de la densité critique. Pour être parfaitement équivalente à une constante cosmologique, il faudrait $w = -1$ soit $P=-\rho$.
+            </p>
+            <h3>Les problèmes posés par la constante cosmologique</h3>
+            <p>
+                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie d'un champ stationnaire. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie du vide des champs du modèle standard de la physique des particules, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante. En effet, la densité d'énergie prédite selon cette hypothèse est bien trop grande. La contribution d'un champ sans masse à l'énergie du vide peut être estimée par analogie avec les niveaux d'énergie d'un oscillateur quantique. Ces niveaux sont $E_n = \hbar \omega_{\vec{p}} (\frac{1}{2}+n)$ où $n$ est un entier et $\hbar\omega = pc$. Le niveau fondamental $E_0$ correspond donc à une énergie $\frac{1}{2}\hbar \omega_{\vec{p}}$. Reste alors à sommer la contribution de chaque mode $\vec{p}$ :
+                \begin{equation}
+                \rho_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi \dfrac{c}{(2\pi \hbar)^3} \int p^3 dp
+                \end{equation}
+                Cette somme est divergente, mais on peut supposer que l'intégrande est valide jusqu'à une certaine échelle $\Lambda$ appelée "cut-off". Cette échelle est nécessairement supérieure au TeV puisque le modèle standard de la physique des particules est très bien vérifié en dessous de cette énergie. Elle est par ailleurs probablement inférieure à l'échelle de Planck $M_{pl} = 10^{19}$ GeV. Dans ce cas, $\Lambda = M_{pl}$ et, en unités naturelles ($\hbar = c = 1$), l'expression précédente donne donc une densité d'énergie du vide $\rho_{vacuum} \sim \Lambda^4$.
+                \begin{equation}
+                \rho_{vacuum} \sim M_{pl}^4 = 10^{112} \textrm{eV}^4
+                \end{equation}
+                Les observations cosmologiques donnent $\rho_{\Lambda} = \Omega_{\Lambda} \rho_c \sim 10^{-16} \textrm{ eV}^4$. De là :
+                \begin{equation}
+                \dfrac{\rho_{\Lambda}}{\rho_{vacuum}} \sim 10^{128}
+                \end{equation}
+                Ainsi la prédiction théorique est supérieure de plus de 120 ordres de grandeur à la valeur expérimentale. Il y a clairement un problème ! Dans le meilleur des cas, en abaissant le cut-off à l'échelle électrofaible (1 TeV), l'excès est toujours énorme (plus de 60 ordres de grandeur) <ref arxiv="1203.0307" />. Le fait que la contribution à la constante cosmologique due à l'énergie de point zéro des champs du modèle standard soit bien trop large par rapport à l'ordre de grandeur attendu est appelé "problème d'ajustement fin de la constante cosmologique". Il est assez extraordinaire, si cette interprétation est correcte, que les contributions de chaque champ à l'énergie du vide se compensent miraculeusement pour atteindre une valeur totale si particulière. 
+            </p>
+            <p>
+                Il existe un autre problème plus discutable avec la constante cosmologique, qui consiste à savoir pourquoi sa valeur aujourd'hui est-elle que $\rho_{\Lambda}$ soit du même ordre de grandeur que la densité critique $\rho_c$. Ceci n'étant pas vrai à toute époque ($\rho_\Lambda$ est constante si parfaitement équivalente à une constante cosmologique, alors que $\rho_c$ diminue avec l'expansion), il revient à se demander si le fait que l'on mesure <i>aujourd'hui</i> un paramètre de densité $\Omega_{\Lambda} \equiv \rho_{\Lambda}/\rho_c$ de l'ordre de l'unité est une coincidence.
+            </p>
+            <p>
+            En réponse à ces problèmes, diverses solutions ont été suggéré, qui restent encore à tester.
+            </p>
+            
+            <h3>Modification de la gravité</h3>
+            <p>
+                Il est possible que l'énergie de point zéro des champs quantiques ne contribue pas comme on le pense à $\rho_{\Lambda}$. Elle peut s'annuler parfaitement, ou bien peut-être nos hypothèses sur l'interaction gravitationnelles sont incorrectes (voir le diagramme de Feynman suivant qui suppose que l'hypothétique graviton se couple avec des boucles qui donnent naissance à l'énergie du vide).
+                <website>
+                    <feynman id="vacuum-energy-graviton" title="Énergie du vide et graviton">
+                        description: 'Scalar vacuum energy diagram',
+                        width: 200,
+                        height: 120,
+                        outgoing: {o1: '190,60'},
+                        vertex: {v1: '58.5,60', v2: '141.5,60'},
+                        scalar: {loop: 'v2-v1'},
+                        photon: {line: 'v2-o1'}
+                    </feynman>
+                </website>
+                
+                <booklet>
+                    <feynman id="vacuum-energy-graviton" title="Énergie du vide et graviton">
+                        \begin{fmfgraph*}(120,75)
+                        \fmfleft{i}
+                        \fmfright{o}
+                        \fmf{dashes,left,tension=0.4}{v1,v2,v1}
+                        \fmf{phantom}{i,v1}
+                        \fmf{photon,label=$g$}{v2,o}
+                        \end{fmfgraph*}
+                    </feynman>
+                </booklet>
+                
+                Dans ce cas, la constante cosmologique pourrait être la manifestation d'écarts à la relativité générale, que prédisent par exemple les théories $f(R)$. Ces théories, comme expliquée dans l'article <contentlink id="recherche-matiere-noire" />, proposent de modifier l'action d'Einstein-Hilbert équivalente à l'équation d'Einstein $S=\int R \sqrt{-g}d^4 x$ par $S=\int f(R)\sqrt{-g}d^4 x$. En 2004, Sean Caroll a publié un papier sur le sujet ayant reçu beaucoup d'attention <ref doi="10.1103/PhysRevD.70.043528" />. Dans son article il montrer que l'ajout d'un terme de la forme $1/R^n$ (donc prédominant lorsque la gravité devient faible, tout comme la constante cosmologique dont l'effet sur l'expansion domine lorsque la densité des autres formes d'énergie devient négligeable) serait une explication plausible évitant le recours à la notion d'énergie noire. Une mesure très précise de $w = P/\rho$ permettrait de trancher. Ces théories peuvent aussi être invalidées par des tests non cosmologiques de la relativité générale <ref doi="10.1103/PhysRevD.92.044009" /> <ref doi="10.1103/PhysRevD.77.024040" />.
+            </p>
+            
+            <h3>Le "landscape" des théories des cordes</h3>
+            <p>
+                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors 
+                <ref isbn="0224076051" />
+            </p>
+            
+            <h3>Résultats expérimentaux</h3>
+            <p>
+                La caractérisation de l'énergie noire passe principalement par l'étude de son équation d'état. Si le paramètre $w=P/\rho$ de l'énergie noire est laissé libre dans le modèle standard de la cosmologie, alors les derniers résultats de Planck donnent un meilleur "fit" pour $w = -1,006 \pm 0,045$ <ref doi="10.1051/0004-6361/201525830" />, tout à fait compatible avec une constant cosmologique ($w=-1$). Si l'énergie noire est due à un fluide non stationnaire, sa valeur pourrait varier. Le problème est qu'a priori celle-ci n'a d'impact sur l'expansion qu'assez tard dans l'histoire de l'Univers, alors que le facteur d'échelle évolue peu. Une paramétrisation phénoménologique habituelle est une dépendance affine de $w$ avec le facteur d'échelle <ref doi="10.1051/0004-6361/201525814" /> :
+                \begin{equation}
+                w(a) = w_0 + w_a(1-a)
+                \end{equation}
+                Celle-ci est vraiment très générique puisqu'elle correspond à un développement de Taylor de $w$ en tant que fonction de $a$. Cependant il existe des modèles assez génériques mais davantage motivés par la théorie, par exemple celui du "slow-rolling scalar field", c'est-à-dire d'un champ scalaire $\phi$ évoluant lentement dans un potentiel $V(\phi)$  pour lesquels on a :
+                \begin{equation}
+                w(\phi) = \dfrac{\frac{1}{2}\dot{\phi}^2-V(\phi)}{\frac{1}{2}\dot{\phi}^2+V(\phi)}
+                \end{equation}
+                Si le champ varie lentement ($\dot{\phi}^2 \ll V(\phi)$) on a bien $w\to 1$.
+                
+                A partir de cette dépendance, des paramétrisations plus spécifiques de $a\mapsto w(a)$ peuvent être établies permettant l'obtention de meilleurs contraintes sur les paramètres physiques du modèle <ref doi="10.1088/0004-637X/726/2/64" />.
+                
+                Certaines analyses tentent aussi de reconstruire $w$ en fonction de $z = 1/a-1$, "bin à bin", comme sur la figure suivante :
+                <figure src="w_bin_planck.svg" title="Reconstruction 'Bin-to-bin' de $w(z)$">
+                    L'évolution de $w$ en fonction du redshift est retracée de façon assez grossière (4 intervalles de valeurs de $z$ seulement). L'erreur verticale sur $w$ est par ailleurs assez large.
+                </figure>
+                Cette méthode a l'avantage de requérir très peu d'hypothèses, mais la contrepartie est d'offrir des résultats très peu contraints.
+            </p>
+            
+            <h3>Futures expériences</h3>
+            <p>
+                Plusieurs expériences 
+            </p>
+            <h4>Euclid</h4>
+            <p>
+                Euclid est un projet de télescope spatial doté d'un miroir de 1,2m de diamètre validé par l'Agence Spatiale Européenne (ESA) en 2011 <ref arxiv="1110.3193" />. Il doit être lancé en 2020. Il comportera deux instruments :
+                
+            </p>
+            <ul>
+                <li>Le Near Infrared Spectrometer and Photometer (<b>NISP</b>), sensible aux longueurs d'onde entre 1 et 2 $\mu$m avec une résolution angulaire de l'ordre de 0,3''. Le spectromètre permettra une mesure précise du redshift des objets observés, avec une résolution spectrale $\lambda/\Delta \lambda \sim 250$.</li>
+                <li>Le Visible instrument (<b>VIS</b>) doté d'une caméra CCD sensible à l'intervalle de longueurs d'ondes 550-900 nm et d'une résolution de 0,1'' par pixel.</li>
+            </ul>
+            <p>
+                Ces mesures devraient permettre de constituer un catalogue sans précédent d'objets à haut redshift (galaxies, quasars, supernovae). Le volume de détection sera multiplié par 500 par rapport au SDSS. Toutes ces données devraient contribuer à améliorer de façon significative les contraintes sur certains paramètres cosmologiques via l'observation des oscillations acoustiques de baryons et de l'effet de lentille gravitationnelle faible. On attend par exemple une amélioration de la limite sur $w_a$ d'un facteur $\sim$ 50 et de celle sur la somme des masses de neutrinos d'un ordre de grandeur. L'observation de quasars à haut redshift ($z \sim 6 - 8$) devrait apporter des renseignements précieux sur la réionisation.
+            </p>
+            
+            <!--<h4>Le LSST (Large Synoptic Survey Telescope)</h4>
+            <p>
+                Le LSST est un télescope actuellement en construction au Chili. Il est remarquable de par la taille de son miroir primaire (8,4m de diamètre) et de sa caméra CCD (3 gigapixels). Il devrait être pleinement opérationnel dès 2023.
+            </p>-->
+            
+            <h4>Wild Field Infrared Survey Telescope (WFIRST)</h4>
+            <p>
+                WFIRST est une mission de la NASA validée en 2016 consistant en un télescope spatial devant être lancé au cours de la prochaine décennie. Le téléscope consistera en un miroir de 2,4m, et ses instruments détecteront des longueurs d'onde comprises entre 0,2 et 1,7 $\mu$m. Il devrait être capable de voir des objets légèrement moins lumineux qu'Euclid (<a href="http://subarutelescope.org/Science/SubaruUM/SubaruUM2015/files/Jan21/Jan21_Takada_Yamada.pdf" >gain de +2 en magnitude</a>). Il viendra donc compléter la mission scientifique d'Euclid. Par ailleurs, il sera doté d'un coronographe, facilitant l'observation d'exoplanètes.
+            </p>
+        </text>
     </content>
     
     <content id="astronomie-gravitationelle" uid="gravitational-wave-astronomy">

@@ -939,7 +939,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h4>Effet sur l'Univers</h4>
             <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
             <h4>Formes possibles d'énergie du vide :</h4>
-            <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
+            <h5>Champ scalaire classique</h5>
+            <p>Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur énergie-impulsion associé à ce champ a pour expression :
             \begin{equation}
             T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
             \end{equation}
@@ -952,13 +953,35 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire homogène :
             \begin{equation}
             \partial_\mu \partial^\mu \phi + V'(\phi) = 0 \mbox{ donc } \ \ddot{\phi} + 3 H \dot{\phi} + c^2 V'(\phi) = 0
-            \end{equation}<!--TODO FIXME http://physics.princeton.edu/~steinh/steinhardt.pdf-->
+            \end{equation}<!--TODO FIXME http://physics.princeton.edu/~steinh/steinhardt.pdf-->   
             </p>
-            <p><b>Création de matière</b> :
+            
+            
+            <h5>Création de matière</h5>
+            <p>
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <!--<spoiler>TODO: expliquer champ C etc calculs.</spoiler>-->
             </p>
-            <h4>Constante cosmologique et théorie quantique des champs</h4>
+            <h4>Le problème de la constante cosmologique</h4>
+            <p>Pour un champ associé à une particule de masse $m$ obéissant à l'équation de Klein Gordon (cas particulier du champ scalaire ci-dessus pour $V(\phi) = \dfrac{1}{2}m^2 \phi^2$), l'énergie de point zéro, c'est-à-dire l'énergie de l'état de plus basse énergie de son champ (sans particule) est ($\hbar = c = 1$) :
+                \begin{equation}
+                E_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int d^3 x\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi \dfrac{Vc}{(2\pi \hbar)^3} \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
+                \end{equation}
+                De là :
+                \begin{equation}
+                \rho_{vacuum} = \dfrac{E_{vacuum}}{V} \propto \int p^3 \sqrt{1+\dfrac{m^2c^2}{p^2}} dp
+                \end{equation}
+                
+                Cette intégrale est divergente. Cependant, on s'attend à ce la théorie ne décrive pas les hautes-énergies, et on effectue en général une coupure (cut-off) au-delà d'un certain seuil d'énergie $\Lambda_{cut-off}$. On a alors, en ordre de grandeur :
+                \begin{equation}
+                \rho_{vacuum} \sim \Lambda_{cut-off}^4
+                \end{equation}
+                Le modèle standard de la physique des particules étant bien vérifié jusqu'au TeV, on doit avoir $\Lambda_{cut-off} > 10^{12}$ eV, soit $\rho_{vacuum} \sim 10^{48} \textrm{ eV}^4$. Il existe de nombreuses contributions à l'énergie du vide selon le modèle standard, mais l'ordre de grandeur de la plupart d'entre elles devrait être celle obtenue par ce calcul simple <ref arxiv="hep-th/0012253" /> <ref arxiv="1502.05296" />. </p>
+            <p>Par ailleurs, les observations cosmologiques donnent $\rho_{\Lambda} \simeq 10^{-16} \textrm{ eV}^4$. On a alors :
+            \begin{equation}
+            \rho_{vacuum} \sim 10^{64} \rho_{\Lambda}
+            \end{equation}
+            Soit une différence de 64 ordres de grandeur ! Clairement, quelque chose ne va pas. Le problème s'aggrave si le cut-off est augmenté, par exemple à l'échelle de Planck ($10^{28}$ eV). Dans ce cas, $\rho_{vacuum} \sim 10^{128} \rho_{\Lambda}$ ! C'est le problème de la constante cosmologique.</p>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
@@ -1307,7 +1330,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 </figure>
                 
                 <figure src="cmb_spectrum_cold.svg" title="Spectre TT et répartition de la matière non relativiste$" source="CMB" plot="cmb_spectrum_cold">
-                    
+                    TODO odd bump enhancement due to DM
                 </figure>
                 
                 <h5>Courbure</h5>
@@ -2126,6 +2149,45 @@ Et
       </linkwords>
     </appendix>
     
+    <appendix id="unites-naturelles" uid="natural-units">
+        <title>Unités naturelles</title>
+        <text>
+            <p>Le système d'unités naturelles est un système d'unités dans lequel $\hbar = 1$, $c = 1$ et $k_B = 1$. 
+            Dans ce système, toutes les unités de longueur, temps, masse et température (et les unités dérivées) peuvent s'exprimer à l'aide de puissance de l'électron-Volt (eV), une unité d'énergie. Ce choix d'unité est particulièrement commode et très utilisé en physique des particules.</p>
+            <table>
+                <tr>
+                    <th>Unités SI - mks</th>
+                    <th>Unités cgs</th>
+                    <th>Unités naturelles</th>
+                </tr>
+                <tr>
+                    <td>m</td>
+                    <td>100 cm</td>
+                    <td>$1,97 \times 10^{-7} \textrm{ GeV}^{-1}$</td>
+                </tr>
+                <tr>
+                    <td>kg</td>
+                    <td>1000 g</td>
+                    <td>$5,61 \times 10^{35} \textrm{ eV}^{1}$</td>
+                </tr>
+                <tr>
+                    <td>s</td>
+                    <td>s</td>
+                    <td>$6,58 \times 10^{-16}$ GeV</td>
+                </tr>
+                <tr><td>J</td><td>$10^{7} \textrm{erg}$</td><td>$6,24 \times 10^{18} \textrm{eV}$</td></tr>
+                <tr>
+                    <td>K</td>
+                    <td>K</td>
+                    <td>$8,62 \times 10^{-5} \textrm{GeV}$</td>
+                </tr>
+            </table>
+        </text>
+        <linkwords>
+            <linkword>unités naturelles</linkword>
+        </linkwords>
+    </appendix>
+    
     <appendix id="lentille-gravitationnelle" uid="gravitational-lensing" ready="1">
       <title>Lentille gravitationnelle</title>
       <text>
@@ -2145,17 +2207,23 @@ Et
               La lumière qui nous parvient de sources lointaines a pu subir l'influence de multiples masses étendues.
               La déviation par rapport à l'axe de visée est alors donnée par :
               \begin{equation}
-              \Delta \vec{\phi} = \dfrac{2}{c^2} \int \nabla_{\perp} \Phi dz
+              \Delta \vec{\alpha} = \dfrac{2}{c^2} \int \nabla_{\perp} \Phi dz
               \end{equation}
               L'intégrale est ici prise le long du chemin parcouru par la lumière, qui est dans la limite des champs faibles, à peu près similaire au chemin non dévié.
           </p>
+          <h4>Cisaillement cosmique</h4>
+          <p>
+              Le cisaillement cosmique est un exemple particulier d'effet de lentille gravitationnelle faible <ref doi="10.1088/0034-4885/78/8/086901" />. 
+          </p>
+          
           <h4>En savoir plus</h4>
           <p>
-              L'ouvrage <i>Cosmologie Primordiale</i> (P. Peter, J.P. Uzan) est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
+              L'ouvrage <i>Cosmologie Primordiale</i> <ref isbn="9780199665150" /> est excellent à ce sujet ; non seulement les auteurs y travaillent les calculs de déviation et les comparent aux figures de lentilles gravitationnelles (e.g. croix d'Einstein) mais ils précisent aussi les implications cosmologiques.
           </p>
       </text>
       <linkwords>
            <linkword>lentille gravitationnelle</linkword>
+           <linkword>cisaillement cosmique</linkword>
       </linkwords>
     </appendix>
     
