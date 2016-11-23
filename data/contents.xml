@@ -1031,7 +1031,7 @@
             </p>
              <h3>Candidats pour la matière noire</h3>
              <p>
-               Les théories proposées pour expliquer l'origine de la matière noire sont nombreuses. La liste suivante n'est pas exhaustive mais regroupe certaines des suggestions faisant l'objet du plus d'attention, ainsi que d'autres suggestions alternatives afin d'illustrer la variété des alternatives.
+               Les théories proposées pour expliquer l'origine de la matière noire sont nombreuses. La liste suivante n'est pas exhaustive mais regroupe certaines des suggestions suscitant ou ayant suscité le plus d'attention, afin d'illustrer la variété des alternatives.
                De façon générale, les différents candidats se classent en plusieurs catégories, qui sont la matière noire chaude, tiède et froide.
                La matière noire chaude fait référence à des particules relativistes ($P/\rho \to 1/3$) et la matière froide à des particules non relativistes ($P\to 0$).
                Les neutrinos sont de bons candidats à la matière noire chaude, dont l'existence est déjà démontrée. Il est en effet difficile de connaître précisément leur abondance dans l'Univers. Cependant, la formation des structures et les paramètres cosmologiques décrivant le mieux l'évolution de l'Univers nécessitent une part importante de matière noire froide, et c'est sous cette forme que sont la plupart des candidats.
@@ -1232,7 +1232,7 @@
                 Les mesures de la constante cosmologique ont commencé avec l'usage des supernovae Ia comme chandelles standard et la découverte de l'accélération de l'expansion de l'Univers. Des mesures indépendantes ont confirmé les premiers résultats avec WMAP, Planck, et les mesures d'oscillations acoustiques des baryons.
             </figure>
             
-            <p>Toutes ces observations semblent indiquer, dans le cadre de la relativité générale, l'existence d'une constante cosmologique $\Lambda$ positive, dont la valeur est d'environ TODO. L'équation d'Einstein se voit modifiée pour devenir :
+            <p>Toutes ces observations semblent indiquer, dans le cadre de la relativité générale, l'existence d'une constante cosmologique $\Lambda$ positive, dont la valeur est d'environ $10^{-69} \textrm{ m}^{-2}$. L'équation d'Einstein se voit modifiée pour devenir :
             \begin{equation}
             G_{\mu\nu} + \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4} T_{\mu\nu}
             \end{equation}
@@ -1240,7 +1240,7 @@
             </p>
             <h3>Les problèmes posés par la constante cosmologique</h3>
             <p>
-                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie d'un champ stationnaire. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie du vide des champs du modèle standard de la physique des particules, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante. En effet, la densité d'énergie prédite selon cette hypothèse est bien trop grande. La contribution d'un champ sans masse à l'énergie du vide peut être estimée par analogie avec les niveaux d'énergie d'un oscillateur quantique. Ces niveaux sont $E_n = \hbar \omega_{\vec{p}} (\frac{1}{2}+n)$ où $n$ est un entier et $\hbar\omega = pc$. Le niveau fondamental $E_0$ correspond donc à une énergie $\frac{1}{2}\hbar \omega_{\vec{p}}$. Reste alors à sommer la contribution de chaque mode $\vec{p}$ :
+                Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie d'un champ stationnaire. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie du vide des champs du modèle standard de la physique des particules, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante. En effet, la densité d'énergie prédite selon cette hypothèse est bien trop grande. La contribution d'un champ sans masse à l'énergie du vide peut être estimée par analogie avec les niveaux d'énergie d'un oscillateur quantique. Ces niveaux sont $E_n = \hbar \omega_{\vec{p}} (\frac{1}{2}+n)$ où $n$ est un entier correspondant au nombre de particules et $\hbar\omega = pc$. Le niveau fondamental $E_0$ correspond donc à une énergie $\frac{1}{2}\hbar \omega_{\vec{p}}$. Reste alors à sommer la contribution de chaque mode $\vec{p}$ :
                 \begin{equation}
                 \rho_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi \dfrac{c}{(2\pi \hbar)^3} \int p^3 dp
                 \end{equation}
@@ -1291,9 +1291,9 @@
                 Dans ce cas, la constante cosmologique pourrait être la manifestation d'écarts à la relativité générale, que prédisent par exemple les théories $f(R)$. Ces théories, comme expliquée dans l'article <contentlink id="recherche-matiere-noire" />, proposent de modifier l'action d'Einstein-Hilbert équivalente à l'équation d'Einstein $S=\int R \sqrt{-g}d^4 x$ par $S=\int f(R)\sqrt{-g}d^4 x$. En 2004, Sean Caroll a publié un papier sur le sujet ayant reçu beaucoup d'attention <ref doi="10.1103/PhysRevD.70.043528" />. Dans son article il montrer que l'ajout d'un terme de la forme $1/R^n$ (donc prédominant lorsque la gravité devient faible, tout comme la constante cosmologique dont l'effet sur l'expansion domine lorsque la densité des autres formes d'énergie devient négligeable) serait une explication plausible évitant le recours à la notion d'énergie noire. Une mesure très précise de $w = P/\rho$ permettrait de trancher. Ces théories peuvent aussi être invalidées par des tests non cosmologiques de la relativité générale <ref doi="10.1103/PhysRevD.92.044009" /> <ref doi="10.1103/PhysRevD.77.024040" />.
             </p>
             
-            <h3>Le "landscape" des théories des cordes</h3>
+            <h3>Le principe anthropique et le "landscape" des théories des cordes</h3>
             <p>
-                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors 
+                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors la formation des galaxies aurait été impossible, et nous ne serions pas là pour parler de physique. Toutes les observations que nous faisons sont nécessairement compatibles avec l'existence de la vie humaine, et donc toutes les théories doivent l'être également. Si un paramètre est libre dans un modèle physique (c'est le cas de la constante cosmologique dans la relativité générale), et que nous sommes là pour le mesurer, alors sa valeur doit être telle que nous puissions exister, et donc compatible avec la formation des galaxies. Cette idée est désignée sous le nom de "principe anthropique". 
                 <ref isbn="0224076051" />
             </p>
             
@@ -1307,13 +1307,24 @@
                 \begin{equation}
                 w(\phi) = \dfrac{\frac{1}{2}\dot{\phi}^2-V(\phi)}{\frac{1}{2}\dot{\phi}^2+V(\phi)}
                 \end{equation}
-                Si le champ varie lentement ($\dot{\phi}^2 \ll V(\phi)$) on a bien $w\to 1$.
+                Si le champ varie lentement ($\dot{\phi}^2 \ll V(\phi)$) on a bien $w\to -1$.
                 
-                A partir de cette dépendance, des paramétrisations plus spécifiques de $a\mapsto w(a)$ peuvent être établies permettant l'obtention de meilleurs contraintes sur les paramètres physiques du modèle <ref doi="10.1088/0004-637X/726/2/64" />.
+                A partir de cette dépendance, des paramétrisations plus spécifiques de $a\mapsto w(a)$ peuvent être établies permettant l'obtention de meilleurs contraintes sur les paramètres physiques du modèle <ref doi="10.1088/0004-637X/726/2/64" />. Ceci permet d'exclure certains modèles simplistes <ref doi="10.1051/0004-6361/201525814" />.
+                
+                <website>
+                    <figure src="dark_energy_scalar_field_planck.svg" title="Contraintes de Planck dans l'hypothèse d'une énergie noire provenant d'un champ classique dynamique">
+                        Les zones colorées représentent les valeurs autorisées à 67 et 95 $\%$ pour les paramètres en abscisse ($\varepsilon_\infty$) et ordonnée ($\varepsilon_s$)
+                    </figure>
+                </website>
+                <booklet>
+                    <figure src="dark_energy_scalar_field_planck.png" title="Contraintes de Planck dans l'hypothèse d'une énergie noire provenant d'un champ classique dynamique">
+                        Les zones colorées représentent les valeurs autorisées à 67 et 95 $\%$ pour les paramètres en abscisse ($\varepsilon_\infty$) et ordonnée ($\varepsilon_s$) qui caractérisent le potentiel du champ scalaire hypothétiquement responsable de l'inflation vers le début du Big-Bang et l'époque actuelle respectivement. Plusieurs exemples de potentiel sont représentés sur la figure.
+                    </figure>
+                </booklet>
                 
                 Certaines analyses tentent aussi de reconstruire $w$ en fonction de $z = 1/a-1$, "bin à bin", comme sur la figure suivante :
                 <figure src="w_bin_planck.svg" title="Reconstruction 'Bin-to-bin' de $w(z)$">
-                    L'évolution de $w$ en fonction du redshift est retracée de façon assez grossière (4 intervalles de valeurs de $z$ seulement). L'erreur verticale sur $w$ est par ailleurs assez large.
+                    L'évolution de $w$ en fonction du redshift est retracée de façon assez grossière (4 intervalles de valeurs de $z$ seulement). L'erreur verticale sur $w$ est par ailleurs assez large <ref doi="10.1051/0004-6361/201525814" />.
                 </figure>
                 Cette méthode a l'avantage de requérir très peu d'hypothèses, mais la contrepartie est d'offrir des résultats très peu contraints.
             </p>
