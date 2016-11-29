@@ -1242,7 +1242,7 @@
             <p>
                 Cette équation d'état est a priori difficile à comprendre, mais elle correspond à celle de l'énergie d'un champ stationnaire. Une explication attrayante serait alors qu'elle est simplement égale à l'énergie du vide des champs du modèle standard de la physique des particules, aussi appelée énergie de point zéro, mais cette interprétation se heurte à une difficulté importante. En effet, la densité d'énergie prédite selon cette hypothèse est bien trop grande. La contribution d'un champ sans masse à l'énergie du vide peut être estimée par analogie avec les niveaux d'énergie d'un oscillateur quantique. Ces niveaux sont $E_n = \hbar \omega_{\vec{p}} (\frac{1}{2}+n)$ où $n$ est un entier correspondant au nombre de particules et $\hbar\omega = pc$. Le niveau fondamental $E_0$ correspond donc à une énergie $\frac{1}{2}\hbar \omega_{\vec{p}}$. Reste alors à sommer la contribution de chaque mode $\vec{p}$ :
                 \begin{equation}
-                \rho_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = 4\pi \dfrac{c}{(2\pi \hbar)^3} \int p^3 dp
+                \rho_{vacuum} = \dfrac{1}{(2\pi \hbar)^3}\int \dfrac{1}{2} \hbar \omega_{\vec{p}} d^3 p = \dfrac{4\pi c}{(2\pi \hbar)^3} \int p^3 dp
                 \end{equation}
                 Cette somme est divergente, mais on peut supposer que l'intégrande est valide jusqu'à une certaine échelle $\Lambda$ appelée "cut-off". Cette échelle est nécessairement supérieure au TeV puisque le modèle standard de la physique des particules est très bien vérifié en dessous de cette énergie. Elle est par ailleurs probablement inférieure à l'échelle de Planck $M_{pl} = 10^{19}$ GeV. Dans ce cas, $\Lambda = M_{pl}$ et, en unités naturelles ($\hbar = c = 1$), l'expression précédente donne donc une densité d'énergie du vide $\rho_{vacuum} \sim \Lambda^4$.
                 \begin{equation}
@@ -1293,8 +1293,15 @@
             
             <h3>Le principe anthropique et le "landscape" des théories des cordes</h3>
             <p>
-                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors la formation des galaxies aurait été impossible, et nous ne serions pas là pour parler de physique. Toutes les observations que nous faisons sont nécessairement compatibles avec l'existence de la vie humaine, et donc toutes les théories doivent l'être également. Si un paramètre est libre dans un modèle physique (c'est le cas de la constante cosmologique dans la relativité générale), et que nous sommes là pour le mesurer, alors sa valeur doit être telle que nous puissions exister, et donc compatible avec la formation des galaxies. Cette idée est désignée sous le nom de "principe anthropique". 
-                <ref isbn="0224076051" />
+                Si la constante cosmologique avait pris une valeur de plusieurs ordres de grandeur supérieure, alors la formation des galaxies aurait été impossible car l'effet de répulsion de $\Lambda$ s'oppose à la condensation gravitationnelle <ref doi="10.1103/PhysRevLett.59.2607" />, et nous ne serions pas là pour parler de physique. Toutes les observations que nous faisons sont nécessairement compatibles avec l'existence de la vie humaine, et donc toutes les théories doivent l'être également. Si un paramètre est libre dans un modèle physique (c'est le cas de la constante cosmologique dans la relativité générale), et que nous sommes là pour le mesurer, alors sa valeur doit être telle que nous puissions exister, et donc compatible avec la formation des galaxies. Cette idée est désignée sous le nom de "principe anthropique".
+                Par ailleurs, les travaux effectués sur les théories des cordes et la théorie de l'inflation semblent suggérer les choses suivantes :
+                <ol>
+                    <li>Les théories des cordes sont capables de prédire un très grand nombre d'états du vide stables ou meta-stables (vacua) <ref arxiv="1203.0307" /> qui peuvent par exemple ressembler à un espace de de-Sitter avec constante cosmologique <ref doi="10.1103/PhysRevD.68.046005" />. Donc, les théories des cordes semblent autoriser une très large quatnité de valeurs pour $\Lambda$. C'est le "landscape de la théorie des cordes".</li>
+                    <li>Un scénario envisageable est qu'une région de l'Univers puisse effectuer une transition vers un autre état du vide (avec une constante cosmologique différente), et grandir avec l'expansion. Ceci est tout à fait similaire au mécanisme original d'inflation proposé par Guth. Cette bulle qui s'expand devient un sous-univers avec sa propre valeur pour $\Lambda$ et d'autres paramètres physiques. Dans ce scénario, on appelle multivers l'ensemble de ces univers "enfants".</li>
+                </ol>
+                De ce point de vue, les théories des cordes pourraient expliquer la petitesse de la constante cosmologique : d'un part, elles prédisent tout un spectre pour $\Lambda$ qui incluerait la valeur observée. D'autre part, elle semble offrir un mécanisme qui permettrait d'atteindre cette valeur.
+                TODO schéma + explications sur la récursivité
+                <!--<ref isbn="0224076051" />-->
             </p>
             
             <h3>Résultats expérimentaux</h3>
