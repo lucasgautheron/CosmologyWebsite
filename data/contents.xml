@@ -1085,7 +1085,7 @@
               S = \int \dfrac{c^4}{16\pi G} f(R) \sqrt{-g} d^4x
               \end{equation}
               Les équations du mouvements (équation d'Einstein) s'obtiennent alors par application du principe de moindre action, avec $f(R) = R$.
-              L'idée des théories $f(R)$ est d'utiliser une fonction différente pour $f$, par exemple $f(R) = R-\alpha R^2$. Ces modifications pourraient avoir un effet semblable à la présence de matière noire en relativité générale <ref doi="10.1016/j.astropartphys.2008.04.003" />, <ref doi="10.1103/PhysRevLett.102.141301" />. Bien que de nombreuses motivations théoriques existent, ces modèles ne peuvent expliquer de fraction significative de la matière noire sans introduire d'effets incompatibles avec les observations.
+              L'idée des théories $f(R)$ est d'utiliser une fonction différente pour $f$, par exemple $f(R) = R-\alpha R^2$. Ces modifications pourraient avoir un effet semblable à la présence de matière noire en relativité générale <ref doi="10.1016/j.astropartphys.2008.04.003" />, <ref doi="10.1103/PhysRevLett.102.141301" />. Bien que de nombreuses motivations théoriques existent, ces modèles ne peuvent expliquer de fraction significative de la matière noire sans introduire d'effets incompatibles avec les observations. Ces modèles ont beaucoup de mal à se conformer aux observations des anisotropies du rayonnement fossile par exemple.
               </p>
             
               <h4>MOND (MOdified Newtonian Dynamics)</h4>
@@ -1388,6 +1388,8 @@
                 \end{equation}
                 
                 Où $I^{ij} = \int_{\textrm{source}} (3 r^i r^j - \vec{r}^2) \rho d^{3}\vec{r} \textrm{ pour } (i,j \in \{1,2,3\})$.
+                
+                <!--TODO expression utile, préférer ordre de grandeur : (c^5 / G) . (...) -->
                 
                 Le facteur $1/r$ est la décroissance de l'amplitude avec la distance. Le préfacteur $G/c^4$ vaut environ $10^{-44}$ m/J. Le moment quadrupolaire $I$ est nul pour une distribution à symétrie sphérique. La dérivée seconde signifie que les masses doivent être accélérées pour émettre des ondes gravitationnelles, de façon analogue à l'émission d'ondes électromagnétiques par des charges accélérées. Enfin le terme $t-r/c$ traduit le fait que l'onde gravitationnelle se propage à $c$.
                 

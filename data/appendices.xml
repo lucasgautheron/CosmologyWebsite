@@ -1385,6 +1385,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
         </text>
         <linkwords>
             <linkword>fond diffus cosmologique</linkword>
+            <linkword>rayonnement fossile</linkword>
             <linkword>CMB</linkword>
             <linkword>cosmic microwave background</linkword>
         </linkwords>
@@ -1953,18 +1954,18 @@ En plus de l'émission de neutrinos et de photons, une supernova à effondrement
               Et on écrit :
               
               \begin{equation}
-              L(t_i,t_f) = L(t_f) 10^{-N}
+              L(t_i,t_f) = L(t_f) e^{-N^{*}}
               \end{equation}
               
-              Ou $N$ est un nombre valant quelques dizaines, l'expansion ayant été extrêmement importante durant la phase d'inflation.
+              Où $N$, souvent appelé nombre de "e-folds", vaut quelques dizaines, l'expansion ayant été extrêmement importante durant la phase d'inflation.
               
               De là : 
               
               \begin{equation}
-              \dfrac{l(0,t_f)}{L(0, t_f)} = \dfrac{c\tau}{L(t_f)} 10^N
+              \dfrac{l(0,t_f)}{L(0, t_f)} = \dfrac{c\tau}{L(t_f)} e^{N^*}
               \end{equation}
               
-              L'horizon des particules est alors augmenté d'un énorme facteur ($10^{N}$), suffisant pour qu'une région de taille $L$ à la fin de l'inflation ayant conduit à l'Univers observable aujourd'hui ait été entièrement causalement connectée avant l'inflation.              
+              L'horizon des particules est alors augmenté d'un énorme facteur ($e^{N^*}$), suffisant pour qu'une région de taille $L$ à la fin de l'inflation ayant conduit à l'Univers observable aujourd'hui ait été entièrement causalement connectée avant l'inflation.              
           </p>
       </text>
       <linkwords>
