@@ -1299,7 +1299,7 @@
                     <li>Les théories des cordes sont capables de prédire un très grand nombre d'états du vide stables ou meta-stables (vacua) <ref arxiv="1203.0307" /> qui peuvent par exemple ressembler à un espace de de-Sitter avec constante cosmologique <ref doi="10.1103/PhysRevD.68.046005" />. Donc, les théories des cordes semblent autoriser une très large quatnité de valeurs pour $\Lambda$. C'est le "landscape de la théorie des cordes".</li>
                     <li>Un scénario envisageable est qu'une région de l'Univers puisse effectuer une transition vers un autre état du vide (avec une constante cosmologique différente), et grandir avec l'expansion. Ceci est tout à fait similaire au mécanisme original d'inflation proposé par Guth. Cette bulle qui s'expand devient un sous-univers avec sa propre valeur pour $\Lambda$ et d'autres paramètres physiques. Dans ce scénario, on appelle multivers l'ensemble de ces univers "enfants".</li>
                 </ol>
-                De ce point de vue, les théories des cordes pourraient expliquer la petitesse de la constante cosmologique : d'un part, elles prédisent tout un spectre pour $\Lambda$ qui incluerait la valeur observée. D'autre part, elle semble offrir un mécanisme qui permettrait d'atteindre cette valeur.
+                De ce point de vue, les théories des cordes pourraient expliquer la petitesse de la constante cosmologique : d'un part, elles prédisent tout un spectre pour $\Lambda$ qui incluerait la valeur observée. D'autre part, elle semble offrir un mécanisme qui permettrait d'atteindre dynamiquement cette valeur.
                 TODO schéma + explications sur la récursivité
                 <!--<ref isbn="0224076051" />-->
             </p>
@@ -1310,7 +1310,7 @@
                 \begin{equation}
                 w(a) = w_0 + w_a(1-a)
                 \end{equation}
-                Celle-ci est vraiment très générique puisqu'elle correspond à un développement de Taylor de $w$ en tant que fonction de $a$. Cependant il existe des modèles assez génériques mais davantage motivés par la théorie, par exemple celui du "slow-rolling scalar field", c'est-à-dire d'un champ scalaire $\phi$ évoluant lentement dans un potentiel $V(\phi)$  pour lesquels on a :
+                Celle-ci est vraiment très générique puisqu'elle correspond à un développement de Taylor de $w$ en tant que fonction de $a$. Cependant il existe des modèles spécifiques motivés par la théorie qui permettent de mieux évaluer la dépendance de $w$ attendue avec $a$. C'est le cas par exemple de celui du "slow-rolling scalar field", c'est-à-dire d'un champ scalaire $\phi$ évoluant lentement dans un potentiel $V(\phi)$ pour lequel on a :
                 \begin{equation}
                 w(\phi) = \dfrac{\frac{1}{2}\dot{\phi}^2-V(\phi)}{\frac{1}{2}\dot{\phi}^2+V(\phi)}
                 \end{equation}
