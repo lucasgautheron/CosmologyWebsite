@@ -1,7 +1,6 @@
 sudo: false
-
+dist: trusty
 language: php
-
 cache: apt
 
 addons:
@@ -9,9 +8,14 @@ addons:
     packages:
     - libsaxonb-java
     - gnuplot
+    - build-essential
+    - gfortran
     - default-jre
     - libcurl3
-    - basex
+
+install:
+    - wget http://files.basex.org/releases/8.6.1/BaseX861.zip && unzip BaseX861.zip
+    - export PATH=$PWD/basex/bin:$PATH
 
 script: make deploy
 
