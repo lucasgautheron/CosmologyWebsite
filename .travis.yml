@@ -1,7 +1,10 @@
 sudo: false
 dist: trusty
 language: php
-cache: apt
+cache:
+    apt: true
+    directories:
+        - $PWD/tmp
 
 addons:
   apt:
