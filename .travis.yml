@@ -13,7 +13,7 @@ addons:
     - libcurl3
     - basex
 
-script: php compile.php -V
+script: make deploy
 
 notifications:
   email:
