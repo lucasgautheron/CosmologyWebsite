@@ -12,6 +12,8 @@ addons:
     - libsaxonb-java
     - gnuplot
     - build-essential
+    - g++
+    - gcc
     - gfortran
     - default-jre
     - libcurl3
