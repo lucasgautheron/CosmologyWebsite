@@ -17,7 +17,7 @@ addons:
     - build-essential
     - g++
     - gcc
-    - gfortran-6
+    - gfortran
     - default-jre
     - libcurl3
 
