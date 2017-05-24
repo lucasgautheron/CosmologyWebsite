@@ -1,6 +1,9 @@
 sudo: false
 dist: trusty
-language: php
+language:
+    php: true
+    cpp: true
+
 cache:
     apt: true
     directories:
@@ -14,7 +17,7 @@ addons:
     - build-essential
     - g++
     - gcc
-    - gfortran
+    - gfortran-6
     - default-jre
     - libcurl3
 
