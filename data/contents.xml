@@ -1374,29 +1374,45 @@
         <text>
             <h3>Prédiction et caractéristiques</h3>
             <p>
-                Les ondes gravitationnelles sont une prédiction établie par Einstein en 1916 en tant que conséquence de la relativité générale. Ce sont une solution particulière des équations d'Einstein qui se traduisent par la propagation à la vitesse de la lumière d'une onde transverse $h$ telle que la métrique devient localement :
+                Les ondes gravitationnelles sont une prédiction établie par Einstein en 1916 en tant que conséquence de la relativité générale. Ce sont une solution particulière des équations d'Einstein qui se traduisent par la propagation à la vitesse de la lumière d'une perturbation de l'espace-temps, sous la forme d'une onde transverse d'amplitude généralement notée $h$. Un objet de longueur au repos $L$ voit ainsi varier sa longueur de $\pm hL$.
+
+                <spoiler>
+                Pour être plus précis, on note $h^{\mu\nu}$ le tenseur des perturbations, tel que :
+
                 \begin{equation}
                 g^{\mu\nu} = \eta^{\mu\nu} + h^{\mu\nu}
                 \end{equation}
                 Il existe deux modes de polarisation possibles pour une telle onde, notés $+$ et $\times$. La forme de $h^{\mu\nu}$ est, pour une onde plane se propageant la direction spatiale $z$ :
                 $\begin{bmatrix}0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; h^{+} &amp; h^{\times} &amp; 0\\ 0 &amp; h^{\times} &amp; h^{+} &amp; 0\\ 0 &amp; 0  &amp; 0 &amp; 0 \end{bmatrix}$
+                </spoiler>
                 
-                Une distribution de masse accélérée dissymétrique émet des ondes gravitationnelles.
-                L'amplitude de l'onde perçue à grande distance $r$ d'une source est donnée par : <ref isbn="9781292026633" /> 
+                Une distribution de masse accélérée dissymétrique émet des ondes gravitationnelles : c'est le cas par exemple de systèmes binaires d'étoiles ou de trous noirs, d'étoiles à neutrons oscillantes, ou encore de supernovae. Émises par ces ondes distances, ces sources se propagent jusqu'à la Terre, leur amplitude décroissant en $1/r$. Pour un système binaire de deux masses $M$ séparées d'une distance $a$ et situées à une distance $r$ de la Terre, l'ordre de grandeur de l'amplitude de la perturbation $h$ est donné par <ref arxiv="gr-qc/9710079" /> :
+                \begin{equation}
+                h \sim \frac{G^2}{c^4}\dfrac{M^2}{ar}
+                \end{equation}
+
+                Si $M \sim 10 M_{\odot}$ et $a$ est de l'ordre de 10 fois le rayon de Schwarzschild associé à $M$, et que le système est distant de 100 Mpc de la Terre, alors :
+    
+                \begin{equation}
+                h \sim 10^{-54} \times \dfrac{10^{62}}{10^{5} \times 10^{24}} \sim 10^{-21}
+                \end{equation}
+                
+                <!--L'amplitude de l'onde perçue à grande distance $r$ d'une source est donnée par : <ref isbn="9781292026633" /> 
                 \begin{equation}
                 h^{ij}(t, r) = \dfrac{1}{r} \dfrac{2G}{c^4} \ddot{I}^{ij}(t-r/c) \textrm{ pour } (i,j \in \{1,2,3\})
                 \end{equation}
                 
-                Où $I^{ij} = \int_{\textrm{source}} (3 r^i r^j - \vec{r}^2) \rho d^{3}\vec{r} \textrm{ pour } (i,j \in \{1,2,3\})$.
+                Où $I^{ij} = \int_{\textrm{source}} (3 r^i r^j - \vec{r}^2) \rho d^{3}\vec{r} \textrm{ pour } (i,j \in \{1,2,3\})$.-->
                 
                 <!--TODO expression utile, préférer ordre de grandeur : (c^5 / G) . (...) -->
                 
-                Le facteur $1/r$ est la décroissance de l'amplitude avec la distance. Le préfacteur $G/c^4$ vaut environ $10^{-44}$ m/J. Le moment quadrupolaire $I$ est nul pour une distribution à symétrie sphérique. La dérivée seconde signifie que les masses doivent être accélérées pour émettre des ondes gravitationnelles, de façon analogue à l'émission d'ondes électromagnétiques par des charges accélérées. Enfin le terme $t-r/c$ traduit le fait que l'onde gravitationnelle se propage à $c$.
+                Le facteur $1/r$ est la décroissance de l'amplitude avec la distance. Le préfacteur $G^2/c^4$ vaut environ $10^{-54} \textrm{kg}^{-2}.\textrm{m}^{2}$. La faiblesse de sa valeur numérique explique la petitesse de $h$. L'onde émise par ce système traversant la terre ne déforme un objet d'un mètre que d'une longueur de $10^{-21}$ m !<!-- Le moment quadrupolaire $I$ est nul pour une distribution à symétrie sphérique. La dérivée seconde signifie que les masses doivent être accélérées pour émettre des ondes gravitationnelles, de façon analogue à l'émission d'ondes électromagnétiques par des charges accélérées. Enfin le terme $t-r/c$ traduit le fait que l'onde gravitationnelle se propage à $c$.
                 
-                Cette formule indique que des ondes gravitationnelles peuvent être émises par un système binaire, ou un object compact en rotation avec des écarts à la sphéricité par exemple.
+                Cette formule indique que des ondes gravitationnelles peuvent être émises par un système binaire, ou un object compact en rotation avec des écarts à la sphéricité par exemple.-->
                 
-                Une des conséquences de cette émission est qu'un tel système perd de l'énergie. Ainsi, un système binaire de deux étoiles suffisamment proche et de demi-grand axe $a$ (avec une rotation rapide selon la loi de Kepler $T^2 \propto a^3$ et donc fortement accélérées) tendra à se rapprocher jusqu'à fusionner puisqu'en perdant de l'énergie les masses se rapprochent ($a \propto -1/E$).
+                Une des conséquences de cette émission d'ondes gravitationnelles est qu'un système binaire de cette sorte perd de l'énergie. Ainsi, deux étoiles en orbite l'une autour de l'autre de demi-grand axe $a$ suffisamment faible (avec une rotation rapide selon la loi de Kepler $T^2 \propto a^3$ et donc fortement accélérées) tendra à se rapprocher jusqu'à fusionner puisqu'en perdant de l'énergie les masses se rapprochent ($a \propto -1/E$). L'onde gravitationnelle émise est essentiellement de fréquence $f_{OG} \sim 2 f_{rot} \sim \dfrac{(GM)^{1/2}}{2\pi a^{3/2}}$. En utilisant les valeurs précédentes, on obtient $f_{OG} \sim $ 1000 Hz.
             </p>
+
             <h3>Première observation indirecte</h3>
             <p>
                 En 1974, Russel Hulse et Joseph Taylor découvrent le pulsar binaire "PSR B1913+16" <ref doi="10.1086/181708" /> composé a priori d'une étoile à neutron émettant dans notre direction avec une période de rotation 59 millisecondes et d'un compagnon compact, a priori une autre étoile à neutron. Ils mesurent entre autres le demi-grand axe du système ($2\times 10^{6}$ km) et sa période orbitale (27 900 s environ). En 1975 Robert Wagoner suggère que puisque d'après la relativité générale un tel système perd une quantité significative d'énergie par émission d'ondes gravitationnelles, alors son demi-grand axe doit diminuer et sa période orbitale aussi dans des proportions mesurables <ref doi="10.1086/181745" />. Ce système permettrait donc de tester la réalité des ondes gravitationnelles. En 1979, Joseph Taylor donne les résultats de cette mesure de $\dot{T}$ (le taux de diminution de la période) et trouve $\dot{T}^{obs}/\dot{T}^{th} = 1,3 \pm 0,3$ <ref doi="10.1038/277437a0" /> <ref doi="10.1088/0264-9381/32/12/124009" />, confirmant ainsi de façon assez convaincante l'existence des ondes gravitationnelles.
@@ -1420,6 +1436,8 @@
                 \begin{equation}
                 \delta L = \dfrac{1}{2} h L
                 \end{equation}
+
+                Comme on l'a vu, $h$ est très petit, ce qui rend cette variation très difficile à mesurer. L'objectif est donc d'obtenir des bras aussi longs que possible.
                 
                 <figure src="gw_interferometer.png" title="Schéma d'un détecteur d'onde gravitationnel par interférométrie">
                     Le détecteur est un interféromètre de Michelson réglé en anti-coincidence. Un laser émet un faisceau divisé en deux par une lame semi-réfléchissante. La lumière se propage alors simultanément dans les deux bras perpendiculaires et est réfléchie par les miroirs en bout de bras. Les faisceaux réfléchis se superposent à la sortie de l'interféromètre. Les figures d'interférences renseignent sur la différence de chemin optique entre les deux bras : lors du passage d'une onde gravitationnelle, cette différence varie, le système quitte l'état d'anti-coincidence (franges sombres), ce qui permet d'en réaliser la détection. <ref doi="10.1016/j.nima.2010.07.089" />.
@@ -1429,7 +1447,7 @@
             <p>Parallèlement, à Caltech, Kip Thorne et son équipe travaillent sur les sources astrophysiques d'ondes gravitationnelles et le potentiel de détection par une expérience du type de celle envisagée par Weiss. Deux projets expérimentaux sont alors lancés, celui du MIT mené par Weiss, celui de Caltech mené par Ronald Drever et Stan Whitcomb. Des prototypes de petite taille sont conçus et la faisabilité d'un détecteur de plusieurs kilomètres est envisagée. En 1984 Caltech et le MIT unissent leurs efforts et conçoivent le projet LIGO de détecteur interférométrique avec des bras de plusieurs kilomètres de long. 
             </p>
             
-            <p>Le projet LIGO est validé au début des années 1990 et 3 détecteurs sont construits, deux dans la même enceinte à Hanford, Washington, et pourvus de bras de 4 et 2 km ("H1" et "H2"), et un a Livingstone, Louisiane ("L1", avec des bras de 4 km). La construction prend fin en 2002. Des prises de données sont effectuées jusqu'en 2010, sans détection confirmée. Le projet aLIGO (advanced LIGO) validé au début des années 2000 est alors implémenté entre 2010 et 2014. En 2015, la sensibilité des détecteurs a été largement améliorée, et les prises de données recommencent. Le 14 septembre 2015, les détecteurs LIGO observent simultanément une onde gravitationnelle émise par la coalescence de deux trous noirs à une distance 400 Mpc, réalisant ainsi la première détection directe d'une telle onde <ref doi="10.1103/PhysRevLett.116.061102" />. L'événement est baptisé GW150914.</p>
+            <p>Le projet LIGO est validé au début des années 1990 et 3 détecteurs sont construits, deux dans la même enceinte à Hanford, Washington, et pourvus de bras de 4 et 2 km ("H1" et "H2"), et un a Livingstone, Louisiane ("L1", avec des bras de 4 km). La construction prend fin en 2002. Des prises de données sont effectuées jusqu'en 2010, sans détection confirmée. Le projet aLIGO (advanced LIGO) validé au début des années 2000 est alors implémenté entre 2010 et 2014. En 2015, la sensibilité des détecteurs a été largement améliorée, et les prises de données recommencent. Le 14 septembre 2015, les détecteurs LIGO observent simultanément une onde gravitationnelle émise par la coalescence de deux trous noirs à une distance 400 Mpc, réalisant ainsi la première détection directe d'une telle onde <ref doi="10.1103/PhysRevLett.116.061102" />. L'événement est baptisé GW150914. À ce jour (3 octobre 2017), LIGO a observé quatre trains d'ondes gravitationnelles, à chaque fois provenant de systèmes binaires de trous noirs en rotation.</p>
             
             <p>        
               <figure src="GW150914.svg" title="Signaux de GW150914 tels qu'observés par les détecteurs de LIGO">
@@ -1438,7 +1456,7 @@
             </p>
             
             <p>Parallèlement au développement de LIGO aux États-Unis, le projet d'un interféromètre européen est lancé au milieu des années 1990 par le CNRS et l'INFN. Construit non loin de Pise, des prises de données ont été effectuées entre 2007 et 2011, sans qu'un événément ne sont détecté. Un projet d'amélioration visant à augmenter la sensibilité de l'expérience est alors entrepris (Advanced Virgo) avec pour objectif de nouvelles prises de données dès fin 2016.
-            Le fonctionnement concurrentiel de plusieurs détecteurs permet de mieux reconstruire la direction de la source par triangulation, et donc de chercher la présence de signaux complémentaires (lumière, neutrinos) dans cette direction.</p>
+            Le fonctionnement concurrentiel de plusieurs détecteurs permet de mieux reconstruire la direction de la source par triangulation, et donc de chercher la présence de signaux complémentaires (lumière, neutrinos) dans cette direction. Le 14 août 2017, Virgo réalise sa première détection cojointe avec LIGO <ref arxiv="1709.09660" />. Les données de Virgo ont permis, pour cet événement, de réduire la zone de confiance à 90 % de la position dans le ciel de la source de 1160 $\textrm{deg}^2$ à 60 $\textrm{deg}^2$.</p>
             
             <h3>Perspectives et cosmologie</h3>
             
