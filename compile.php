@@ -35,6 +35,7 @@ foreach($refs as $ref)
         $outfile = "tmp/ref_$safedoi.xml";
         if(!file_exists($outfile))
         {
+            usleep(100000); // wait 100 ms to avoid failed requests
             exec("curl --location --header \"Accept: application/unixref+xml\" \"http://dx.doi.org/$ref\" -o \"$outfile\" " . $redirect, $output, $return_code);
             // retry in case of failure :
             if (!filesize($outfile))
