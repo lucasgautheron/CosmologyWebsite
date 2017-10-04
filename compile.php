@@ -37,7 +37,7 @@ foreach($refs as $ref)
         {
             exec("curl --location --header \"Accept: application/unixref+xml\" \"http://dx.doi.org/$ref\" -o \"$outfile\" " . $redirect, $output, $return_code);
             // retry in case of failure :
-            if (!file_size($outfile))
+            if (!filesize($outfile))
                 exec("curl --location --header \"Accept: application/unixref+xml\" \"http://dx.doi.org/$ref\" -o \"$outfile\" " . $redirect, $output, $return_code);
             $return |= $return_code;
         }
