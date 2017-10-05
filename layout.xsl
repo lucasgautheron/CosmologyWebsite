@@ -515,6 +515,15 @@
   <html>
     <head>
       <xsl:call-template name="common-header" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@lucasgautheron" />
+      <meta name="twitter:creator" content="@lucasgautheron" />
+      <meta property="og:title" content="{./title}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://cosmology.education/{./@id}/" />
+      <meta property="og:image" content="https://cosmology.education/{./image/@src}" />
+
       <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
@@ -619,6 +628,15 @@
   <html>
     <head>
       <xsl:call-template name="common-header"/>
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@lucasgautheron" />
+      <meta name="twitter:creator" content="@lucasgautheron" />
+      <meta property="og:title" content="{$pagecontent/title} - {$appendixcontent/title}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://cosmology.education/{$pagecontent/@id}/{$appendixcontent/@id}" />
+      <meta property="og:image" content="https://cosmology.education/{$pagecontent/image/@src}" />
+
       <title><xsl:value-of select="$pagecontent/title" /> - Histoire de la Cosmologie</title>
     </head>
     <body>
