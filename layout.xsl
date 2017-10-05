@@ -522,7 +522,7 @@
       <meta property="og:title" content="{./title}" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://cosmology.education/{./@id}/" />
-      <meta property="og:image" content="https://cosmology.education/{./image/@src}" />
+      <meta property="og:image" content="https://cosmology.education/images/{./image/@src}" />
 
       <title><xsl:value-of select="./title" /> - Histoire de la Cosmologie</title>
     </head>
@@ -635,7 +635,7 @@
       <meta property="og:title" content="{$pagecontent/title} - {$appendixcontent/title}" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://cosmology.education/{$pagecontent/@id}/{$appendixcontent/@id}" />
-      <meta property="og:image" content="https://cosmology.education/{$pagecontent/image/@src}" />
+      <meta property="og:image" content="https://cosmology.education/images/{$pagecontent/image/@src}" />
 
       <title><xsl:value-of select="$pagecontent/title" /> - Histoire de la Cosmologie</title>
     </head>
