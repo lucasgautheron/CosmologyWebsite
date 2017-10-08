@@ -1462,6 +1462,29 @@
             
             <p>Parallèlement au développement de LIGO aux États-Unis, le projet d'un interféromètre européen est lancé au milieu des années 1990 par le CNRS et l'INFN. Construit non loin de Pise, des prises de données ont été effectuées entre 2007 et 2011, sans qu'un événément ne sont détecté. Un projet d'amélioration visant à augmenter la sensibilité de l'expérience est alors entrepris (Advanced Virgo) avec pour objectif de nouvelles prises de données dès fin 2016.
             Le fonctionnement concurrentiel de plusieurs détecteurs permet de mieux reconstruire la direction de la source par triangulation, et donc de chercher la présence de signaux complémentaires (lumière, neutrinos) dans cette direction. Le 14 août 2017, Virgo réalise sa première détection cojointe avec LIGO <ref arxiv="1709.09660" />. Les données de Virgo ont permis, pour cet événement, de réduire la zone de confiance à 90 % de la position dans le ciel de la source de 1160 $\textrm{deg}^2$ à 60 $\textrm{deg}^2$.</p>
+
+            <h3>Limitations et prochaines générations de détecteurs</h3>
+
+
+            <h4>Sources de bruit</h4>
+
+            <p>La sensibilité des détecteurs actuels est limitée à basse fréquence ($\sim$ Hz) par le bruit sismique et à haute fréquence (kHz) par le bruit d'origine quantique, qui est la somme du bruit de grenaille (<em>shot noise</em>) et du bruit du aux fluctuations de pression de radiation des photons. Ils dépendent de la pression $P$ du Laser, de la longueur $L$ des bras et de la masse $M$ des miroirs de la façon suivante :
+            \begin{equation}
+            \tilde{h}_{grenaille} = \dfrac{1}{4\pi L} \sqrt{\dfrac{2h\lambda c}{\eta P}} \mbox{ et } \tidle{h}_{pression} = \dfrac{1}{ML}\sqrt{\dfrac{}{}} \dfrac{1}{f^2}
+            \end{equation}
+            
+            Varier la puissance d'un laser permet d'effectuer un <em>trade-off</em> entre bruit de grenaille et bruit de recul, et éventuellement d'optimiser la sensibilité pour certaines fréquences, mais pas plus. En revanche, le bruit quantique étant inversement proportionnel à $L$, il peut être supprimé à l'aide de plus longs bras.
+
+            <figure src="aligo_broadband.png" title="Sources de bruit du détecteur advanced LIGO">L'amplitude des différentes sources de bruit dans aLIGO. Leur somme, le bruit total, représente aussi la sensibilité de l'appareil, qui par définition est la courbe de $f \mapsto h(f)$ telle que le ratio signal/bruit vaut 1. Le bruit sismique domine de manière évidente à basse fréquence. Le bruit quantique domine à haute fréquence.</figure>
+            </p>
+            <h4>Futurs détecteurs</h4>
+            <p>
+                Pour dépasser ces limitations, les futurs détecteurs se répartiront en deux catégories :
+                <ul>
+                    <li><b>Les détecteurs dans l'espace</b> comme LISA qui s'affranchiront ainsi du bruit sismique et seront sensibles à des ondes gravitationnelles de basse fréquence, entre $10^{-4}$ et $10^{-1}$ Hz</li>
+                    <li><b>Les détecteurs terrestres de troisièmes génération</b> qui s'affranchiront du bruit quantique au moyen de bras plus longs, tels que le Einstein Telescope (10 km) ou le Cosmic Explorer (40 km).</li>
+                </ul>
+            </p>
             
             <h3>Perspectives</h3>
 
@@ -1473,13 +1496,17 @@
             
             <ul>
                 <li><b>Coalescence d'objets compacts : </b> Recherche de fusions de systèmes binaires d'objects compacts (trou-noir/trou-noir, étoile à neutron/trou-noir, étoile à neutron/étoile à neutron). Ceci permet de mesurer leurs masses initiale, la masse de l'objet final, leur distance de luminosité et redshift.</li>
-                <li><b>Supernovae à effondrement de coeur : </b> Recherche d'ondes gravitationnelles en coincidence avec des supernovae à effondrement de coeur, afin de mieux comprendre les mécanismes en jeu. La signature gravitationnelle de ces événements est mal comprise et difficile à modéliser, et ces observations seraient très précieuses. On considère que les détecteurs actuels sont capables de détecter ces supernovae dans la Voie Lactée et les nuages de Magellan, où elles surviennent à un taux de l'ordre d'une fois par siècle. Seules les prochaines générations de détecteurs ont donc des chances réalistes d'effectuer de telles détections.</li>
+                <li><b>Supernovae à effondrement de coeur : </b> Recherche d'ondes gravitationnelles en coincidence avec des supernovae à effondrement de coeur, afin de mieux comprendre les mécanismes en jeu. La signature gravitationnelle de ces événements est mal comprise et difficile à modéliser, et ces observations seraient très précieuses. On considère que les détecteurs actuels ne sont capables de détecter ces supernovae que dans la Voie Lactée et les nuages de Magellan, où elles surviennent à un taux de l'ordre d'une fois par siècle. Seules les prochaines générations de détecteurs ont donc des chances réalistes d'effectuer de telles détections.</li>
                 <li><b>Fond stochastique : </b> Recherche d'un fond stochastique d'origine cosmologique, tel que motivé par certaines théories comme la théorie des cordes <ref doi="10.1103/PhysRevLett.98.111101" />.</li>
             </ul>
 
             <h4>Cosmologie</h4>
             
-            <p>La recherche d'événements transitoires permettant d'accéder à leur distance de luminosité. En principe, pour des événements de type coalescence d'objets compacts (trous noirs et étoiles à neutrons), le redshift n'est pas mesurable facilement ou directement, à cause de ce qu'on appelle la dégénérescence masse-redshift. La conséquence de celle-ci est qu'on ne peut extraire que $M(1+z)$ à partir de la forme du signal (où $M$ est la masse au repos). Il existe cependant des méthodes imprécises (erreur de 10-20$\%$ sur $z$) ou rarement implicables pour remonter au redshift dans certains cas <ref doi="10.1103/PhysRevX.4.041004" />. Par ailleurs, les futures générations de détecteurs devraient permettre non seulement d'observer ces événements à des échecs cosmologiques ($z>1$), comme des coalescences de systèmes d'étoiles à neutrons y compris pendant la réionisation ($z \sim 6$), ainsi que la totalité des coalescences de trous noirs tels que $M \gtrsim 30 M_{\odot}$ dans l'univers observable (attendus jusqu'à $z \sim 10$) <ref arxiv="1607.08697" />. Il est donc en théorie possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards. Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV.</p>
+            <p>La détection de sources transitoires comme les coalescences d'objets compacts permet d'accéder à leur distance de luminosité. Les futures générations de détecteurs devraient permettre non seulement d'observer ces événements à des échecs cosmologiques ($z>1$), comme des coalescences de systèmes d'étoiles à neutrons y compris pendant la réionisation ($z \sim 6$), mais aussi la totalité des coalescences de trous noirs tels que $M \gtrsim 30 M_{\odot}$ dans l'univers observable (attendus jusqu'à $z \sim 10$) <ref arxiv="1607.08697" />. En principe, pour des événements de ce type, le redshift n'est pas mesurable facilement ou directement, à cause de ce qu'on appelle la dégénérescence masse-redshift. La conséquence de celle-ci est qu'on ne peut extraire que $M(1+z)$ à partir de la forme du signal (où $M$ est la masse au repos). Il existe cependant des méthodes imprécises (erreur de 10-20$\%$ sur $z$) pour remonter au redshift dans certains cas <ref doi="10.1103/PhysRevX.4.041004" />. On peut aussi espérer des signaux électromagnétiques associés qui permettraient une mesure précise de $z$. Il est donc en théorie possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards via la relation $z \mapsto d_L(z)$. <!--Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV. --></p>
+
+        <p>
+            <figure src="gw_future.png" title="Sensibilité des futures détecteurs d'ondes gravitationnelles et sources potentielles"></figure>
+        </p>
         </text>
     </content>
 
