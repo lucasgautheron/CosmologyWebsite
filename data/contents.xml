@@ -1470,7 +1470,7 @@
 
             <p>La sensibilité des détecteurs actuels est limitée à basse fréquence ($\sim$ Hz) par le bruit sismique et à haute fréquence (kHz) par le bruit d'origine quantique, qui est la somme du bruit de grenaille (<em>shot noise</em>) et du bruit du aux fluctuations de pression de radiation des photons. Ils dépendent de la pression $P$ du Laser, de la longueur $L$ des bras et de la masse $M$ des miroirs de la façon suivante :
             \begin{equation}
-            \tilde{h}_{grenaille} = \dfrac{1}{4\pi L} \sqrt{\dfrac{2h\lambda c}{\eta P}} \mbox{ et } \tidle{h}_{pression} = \dfrac{1}{ML}\sqrt{\dfrac{}{}} \dfrac{1}{f^2}
+            \tilde{h}_{grenaille} = \dfrac{1}{4\pi L} \sqrt{\dfrac{2h\lambda c}{\eta P}} \mbox{ et } \tilde{h}_{pression} = \dfrac{1}{ML}\sqrt{\dfrac{}{}} \dfrac{1}{f^2}
             \end{equation}
             
             Varier la puissance d'un laser permet d'effectuer un <em>trade-off</em> entre bruit de grenaille et bruit de recul, et éventuellement d'optimiser la sensibilité pour certaines fréquences, mais pas plus. En revanche, le bruit quantique étant inversement proportionnel à $L$, il peut être supprimé à l'aide de plus longs bras.
