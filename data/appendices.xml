@@ -1408,6 +1408,50 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             <linkword>réionisation</linkword>
         </linkwords>
     </appendix>
+
+    <appendix id="decouplage" uid="decoupling" ready="1">
+            <title>Découplage</title>
+            <text>
+                <p>
+                    Un « découplage » réfère à la rupture de l'équilibre thermique entre plusieurs particules suite à l'expansion de l'Univers. En effet, cette expansion éloignant les particules entre elles, leur taux d'interaction $\Gamma$ diminue jusqu'à devenir négligeable. Lorsque le libre parcours moyen $l^{*}$ des particules (la distance moyenne qu'ils parcourent entre chaque interaction) devient comparable à la taille de l'Univers, on considère qu'elles ont été libérées. C'est le cas des photons du fond diffus cosmologique, qui ont été libérés à $z = 1100$ et $T \sim $ 3000 K. Jusque là, ils étaient retenus par leurs interactions avec le plasma protons/électrons. Ce processus correspond à la « recombinaison », c'est-à-dire l'instant où protons et électrons se sont associés en Hydrogène. 
+
+                    Le découplage est aussi le mécanisme à l'origine du fond diffus de neutrinos, qui était maintenu en équilibre thermique par des processus de type électrofaibles jusqu'à son découplage. C'est par ailleurs également un mécanisme proposé pour les WIMP (Weakly Interacting Massive Particles), un candidat à la matière noire.
+
+                    La condition de découplage peut aussi s'écrire en terme de taux d'interaction $\Gamma$ sachant $l^{*} = c / \Gamma$ :
+                    \begin{equation}
+                    l^{*} \geq \dfrac{c}{H} \mbox{ ou } \Gamma \leq H 
+                    \end{equation}
+                </p>
+
+                <p>
+                    <!--On peut estimer la température au découplage des photons à partir de la section efficace d'interaction connaissant la section efficace des interactions avec le gaz d'électrons. En effet :
+                    \begin{equation}
+                    \Gamma = n_e \sigma_{T}
+                    \end{equation}
+                    Ici, $n_e$ est la densité d'électrons et $\sigma_{T}$ la section-efficace de Thomson qui vaut approximativement 0,002 MeV$^{-2}$.
+                    -->
+                </p> 
+
+                <p>
+                    <!--On peut estimer, en unités naturelles ($\hbar = c = 1$), la température de découplage des neutrinos connaissant l'ordre de grandeur de leur section efficace $\sigma$ (pour $T \ll m_W$) grâce à la constante de couplage de Fermi $G_F \sim 10^{-5} \mbox{ GeV}^{-2} $ :
+                    \begin{equation}
+                    \sigma \sim G_F^2 \langle E \rangle^2 \sim G_F^2 T^2
+                    \end{equation}
+
+                    Puisque le libre parcours moyen vaut $l^{*} = 1/(n\sigma)$ où $n$ est la densité de neutrinos, donnée par l'équation d'état du gaz de fermi ultrarelativiste, soit $n \sim T^3$. Dès lors :
+                    \begin{equation}
+                    G_F^2 T_{dec}^5 = H (T_{dec})
+                    \end{equation} 
+                    Par ailleurs, pendant l'ère dominée par la radiation, $H \sim T^2 / M_{Pl}$ (où $M_{pl} = 10^{19}$ GeV est la masse de Planck). Dès lors : 
+                    \begin{equation}
+                    G_F^2 T_{dec}^5 = T_{dec}^2 / M_{Pl} \mbox{ donc } T_{dec} = (G_F^2 M_{pl})^{-1/3} \sim (
+                    \end{equation}-->
+                </p>
+            </text>
+            <linkwords>
+                <linkword>céphéides</linkword>
+            </linkwords>
+        </appendix>
     
     
     <appendix id="epaisseur-optique" uid="optical-depth" ready="1">
@@ -1893,7 +1937,7 @@ En plus de l'émission de neutrinos et de photons, une supernova à effondrement
       <title>Problème de l'Horizon</title>
       <text>
          <p>
-         Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques identiques alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
+         Le problème de l'Horizon est un problème lié au modèle du Big Bang chaud gouverné par le rayonnement, d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques identiques alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
          </p>
          
          <h4>Évaluation du problème</h4>
@@ -1903,7 +1947,34 @@ En plus de l'émission de neutrinos et de photons, une supernova à effondrement
           </p>
           
          <p>
-         On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{\dfrac{H_0 t}{2}}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
+         La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang (aussi appelé "horizon des particules") jusqu'à $t_0$ est :
+          \begin{equation}
+          l(0,t_0) = \int_{0}^{t_0} \dfrac{c dt'}{a(t')}
+          \end{equation}
+
+          On peut réécrire cette intégrale :
+          \begin{equation}
+          l(0,t_0) = c \int_{0}^{a(t_0)} \dfrac{da}{a \dot{a}} = c a(t_0) \int_{0}^{a(t_0)} \dfrac{1}{a^2 H(a)} da
+          \end{equation}
+
+          L'équation de Friedmann permet d'exprimer la fonction $a \mapsto H(a)$ en fonction du contenu de l'Univers. Pour un fluide d'équation d'état $P = w\rho$, alors on a, pour un Univers plat :
+         \begin{equation}
+         H(a) = H_0 a^{-3(1+w)/2}
+         \end{equation}
+   
+         Et donc :
+          \begin{equation}
+          l(0,t_0) = c H_0 \int_{0}^{a(t_0)} a^{(3w-1)/2} da = \dfrac{c H_0}{1+3w} a(t_0)^{(1+3w)/2}
+          \end{equation}
+
+          Si 
+
+          En comparaison, la taille à $t_0$ d'une région de taille $L$ à $t$ est 
+          \begin{equation}
+          L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
+          \end{equation}
+
+         <!--On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{\dfrac{H_0 t}{2}}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
          
                    
           La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang (aussi appelé "horizon des particules") jusqu'à $t_0$ est :
@@ -1927,7 +1998,7 @@ En plus de l'émission de neutrinos et de photons, une supernova à effondrement
           \end{equation}
           
           Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-46}$. Des rayons lumineux émis au début du Big-Bang n'auraient ainsi pu parcourir qu'une fraction ridicule de l'Univers observable ($l \ll L$). Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{46}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
-          C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.
+          C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.-->
           
           <!--<spoiler>
           TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
