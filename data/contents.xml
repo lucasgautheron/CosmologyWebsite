@@ -1468,12 +1468,12 @@
 
             <h4>Sources de bruit</h4>
 
-            <p>La sensibilité des détecteurs actuels est limitée à basse fréquence ($\sim$ Hz) par le bruit sismique et à haute fréquence (kHz) par le bruit d'origine quantique, qui est la somme du bruit de grenaille (<em>shot noise</em>) et du bruit du aux fluctuations de pression de radiation des photons. Ils dépendent de la pression $P$ du Laser, de la longueur $L$ des bras et de la masse $M$ des miroirs de la façon suivante :
+            <p>La sensibilité des détecteurs actuels est limitée à basse fréquence ($\sim$ Hz) par le bruit sismique et à haute fréquence (kHz) par le bruit d'origine quantique, qui est la somme du bruit de grenaille (<i>shot noise</i>) et du bruit du aux fluctuations de pression de radiation des photons. Ils dépendent de la pression $P$ du Laser, de la longueur $L$ des bras et de la masse $M$ des miroirs de la façon suivante :
             \begin{equation}
-            \tilde{h}_{grenaille} = \dfrac{1}{4\pi L} \sqrt{\dfrac{2h\lambda c}{\eta P}} \mbox{ et } \tilde{h}_{pression} = \dfrac{1}{ML}\sqrt{\dfrac{}{}} \dfrac{1}{f^2}
+            \tilde{h}_{grenaille} = \dfrac{1}{4\pi L} \sqrt{\dfrac{2h\lambda c}{\eta P}} \mbox{ et } \tilde{h}_{pression} = \dfrac{1}{ML}\sqrt{\dfrac{hP}{2\pi^4 c\lambda}} \dfrac{1}{f^2}
             \end{equation}
             
-            Varier la puissance d'un laser permet d'effectuer un <em>trade-off</em> entre bruit de grenaille et bruit de recul, et éventuellement d'optimiser la sensibilité pour certaines fréquences, mais pas plus. En revanche, le bruit quantique étant inversement proportionnel à $L$, il peut être supprimé à l'aide de plus longs bras.
+            Varier la puissance d'un laser permet d'effectuer un <i>trade-off</i> entre bruit de grenaille et bruit de recul, et éventuellement d'optimiser la sensibilité pour certaines fréquences, mais pas plus. En revanche, le bruit quantique étant inversement proportionnel à $L$, il peut être supprimé à l'aide de plus longs bras.
 
             <figure src="aligo_broadband.png" title="Sources de bruit du détecteur advanced LIGO">L'amplitude des différentes sources de bruit dans aLIGO. Leur somme, le bruit total, représente aussi la sensibilité de l'appareil, qui par définition est la courbe de $f \mapsto h(f)$ telle que le ratio signal/bruit vaut 1. Le bruit sismique domine de manière évidente à basse fréquence. Le bruit quantique domine à haute fréquence.</figure>
             </p>
@@ -1481,8 +1481,8 @@
             <p>
                 Pour dépasser ces limitations, les futurs détecteurs se répartiront en deux catégories :
                 <ul>
-                    <li><b>Les détecteurs dans l'espace</b> comme LISA qui s'affranchiront ainsi du bruit sismique et seront sensibles à des ondes gravitationnelles de basse fréquence, entre $10^{-4}$ et $10^{-1}$ Hz</li>
-                    <li><b>Les détecteurs terrestres de troisièmes génération</b> qui s'affranchiront du bruit quantique au moyen de bras plus longs, tels que le Einstein Telescope (10 km) ou le Cosmic Explorer (40 km).</li>
+                    <li><b>Les détecteurs dans l'espace</b>, qui s'affranchiront ainsi du bruit sismique et seront sensibles à des ondes gravitationnelles de basse fréquence. C'est notamment le cas de LISA, dont les trois détecteurs seront distants de 2,5 millions de km et seront sensibles à des fréquences entre $10^{-4}$ et $10^{-1}$ Hz. D'autres expériences sont à l'étude, comme BBO (Big Bang Observer) et DECIGO (DECi-hertz Interferometer Gravitational wave Observatory) avec des bras de 10 000 à 50 000 km et 1 000 km de long respectivement. En effet, la sensibilité de LISA à certaines sources risque serait limitée par du bruit de confusion (c'est-à-dire la superposition de signaux impossible à résoudre individuellement) dans la zone des très basses fréquences <ref doi="10.1103/PhysRevD.70.122002" />. Cette limite « fondamentale » suggère d'explorer des intervalles de fréquences plus élevées, intermédiaires entre celui de LISA et ceux des détecteurs terrestres actuels ou futurs. Ces détecteurs ne pouvant résoudre des ondes de longueur d'onde bien plus courte que leurs bras, ceux-ci sont nécessairement plus courts.</li>
+                    <li><b>Les détecteurs terrestres de troisièmes génération</b> qui s'affranchiront du bruit quantique au moyen de bras plus longs, tels que le Einstein Telescope (10 km) ou le Cosmic Explorer (40 km). Ils pourront aussi être placés plus en profondeur pour contrôler le bruit sismique. L'Einstein Telescope diffère des détecteurs terrestres actuels par sa géométrie triangulaire.</li>
                 </ul>
             </p>
             
@@ -1502,10 +1502,27 @@
 
             <h4>Cosmologie</h4>
             
-            <p>La détection de sources transitoires comme les coalescences d'objets compacts permet d'accéder à leur distance de luminosité. Les futures générations de détecteurs devraient permettre non seulement d'observer ces événements à des échecs cosmologiques ($z>1$), comme des coalescences de systèmes d'étoiles à neutrons y compris pendant la réionisation ($z \sim 6$), mais aussi la totalité des coalescences de trous noirs tels que $M \gtrsim 30 M_{\odot}$ dans l'univers observable (attendus jusqu'à $z \sim 10$) <ref arxiv="1607.08697" />. En principe, pour des événements de ce type, le redshift n'est pas mesurable facilement ou directement, à cause de ce qu'on appelle la dégénérescence masse-redshift. La conséquence de celle-ci est qu'on ne peut extraire que $M(1+z)$ à partir de la forme du signal (où $M$ est la masse au repos). Il existe cependant des méthodes imprécises (erreur de 10-20$\%$ sur $z$) pour remonter au redshift dans certains cas <ref doi="10.1103/PhysRevX.4.041004" />. On peut aussi espérer des signaux électromagnétiques associés qui permettraient une mesure précise de $z$. Il est donc en théorie possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards via la relation $z \mapsto d_L(z)$. <!--Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV. --></p>
+            <p>La détection de sources transitoires comme les <b>coalescences d'objets compacts</b> permet d'accéder à leur distance de luminosité. Les futures générations de détecteurs devraient permettre non seulement d'observer ces événements à des échecs cosmologiques ($z>1$), comme des coalescences de systèmes d'étoiles à neutrons y compris pendant la réionisation ($z \sim 6$), mais aussi la totalité des coalescences de trous noirs tels que $M \gtrsim 30 M_{\odot}$ dans l'univers observable (attendus jusqu'à $z \sim 10$) <ref arxiv="1607.08697" />. En principe, pour des événements de ce type, le redshift n'est pas mesurable facilement ou directement, à cause de ce qu'on appelle la dégénérescence masse-redshift. La conséquence de celle-ci est qu'on ne peut extraire que $M(1+z)$ à partir de la forme du signal (où $M$ est la masse au repos). Il existe cependant des méthodes imprécises (erreur de 10-20$\%$ sur $z$) pour remonter au redshift dans certains cas <ref doi="10.1103/PhysRevX.4.041004" />. On peut aussi espérer des signaux électromagnétiques associés qui permettraient une mesure précise de $z$. Il est donc en théorie possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards via la relation $z \mapsto d_L(z)$. <!--Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV. --></p>
+
+        <p>En principe, les détecteurs sont capables de détecter un fond stochastique si un excès significatif de densité d'énergie est observé dans une certaine plage de fréquence. Comme les photons libérés au découplage vers $T \sim $ 3000 K, des ondes gravitationnelles produite dans les premiers instants de l'Univers ont pu être libérées par un découplage qu'on peut estimer avoir survenu à une température inférieur à la température de Planck ($10^{19}$ GeV). Elles pourraient donc contenir de la l'information sur la physique à très haute énergie. Par ailleurs, 
+
+            La densité d'énergie de ce fond est alors donnée par :
+            \begin{equation}
+            \rho_{GW} = \dfrac{1}{32\pi G}\langle \dot{h}_{ij}^{TT} \dot{h}^{ij}^{TT}\rangle
+            \end{equation}
+
+            (Où $i,j \in \{1,2,3\}$ et $TT$ désigne la jauge transerve à trace nulle pour $h$).
+
+            En décomposant $h$ en ondes planes de fréquences quelconques, on peut définir le paramètre de densité $\Omega_{GW}(f)$ à l'aide de la densité critique $\rho_c$ :
+            \begin{equation}
+            \Omega_{GW}(f) = \dfrac{1}{\rho_c} \dfrac{d\rho_{Gw}}{d\log f}
+            \end{equation}
+
+            
+            </p>
 
         <p>
-            <figure src="gw_future.png" title="Sensibilité des futures détecteurs d'ondes gravitationnelles et sources potentielles"></figure>
+            <figure src="gw_future.png" title="Sensibilité des futures détecteurs d'ondes gravitationnelles et sources potentielles">Source : <a href="http://rhcole.com/apps/GWplotter/">rhcole.com</a> (par le Gravitational Wave Group de l'Institute of Astronomy (université de Cambridge).</figure>
         </p>
         </text>
     </content>

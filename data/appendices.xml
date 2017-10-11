@@ -1413,7 +1413,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
             <title>Découplage</title>
             <text>
                 <p>
-                    Un « découplage » réfère à la rupture de l'équilibre thermique entre plusieurs particules suite à l'expansion de l'Univers. En effet, cette expansion éloignant les particules entre elles, leur taux d'interaction $\Gamma$ diminue jusqu'à devenir négligeable. Lorsque le libre parcours moyen $l^{*}$ des particules (la distance moyenne qu'ils parcourent entre chaque interaction) devient comparable à la taille de l'Univers, on considère qu'elles ont été libérées. C'est le cas des photons du fond diffus cosmologique, qui ont été libérés à $z = 1100$ et $T \sim $ 3000 K. Jusque là, ils étaient retenus par leurs interactions avec le plasma protons/électrons. Ce processus correspond à la « recombinaison », c'est-à-dire l'instant où protons et électrons se sont associés en Hydrogène. 
+                    Un « découplage » réfère à la rupture de l'équilibre thermique entre plusieurs particules suite à l'expansion de l'Univers. En effet, cette expansion éloignant les particules les unes des autres, tout en les refroidissant, leur taux d'interaction $\Gamma$ diminue jusqu'à devenir négligeable. Lorsque le libre parcours moyen $l^{*}$ des particules (la distance moyenne qu'ils parcourent entre chaque interaction) devient comparable à la taille de l'Univers, on considère qu'elles ont été libérées. C'est le cas des photons du fond diffus cosmologique, qui ont été libérés à $z = 1100$ et $T \sim $ 3000 K. Jusque là, ils étaient retenus par leurs interactions avec le plasma protons/électrons. Ce processus correspond à la « recombinaison », c'est-à-dire l'instant où protons et électrons se sont associés en Hydrogène. 
 
                     Le découplage est aussi le mécanisme à l'origine du fond diffus de neutrinos, qui était maintenu en équilibre thermique par des processus de type électrofaibles jusqu'à son découplage. C'est par ailleurs également un mécanisme proposé pour les WIMP (Weakly Interacting Massive Particles), un candidat à la matière noire.
 
@@ -1431,9 +1431,9 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                     Ici, $n_e$ est la densité d'électrons et $\sigma_{T}$ la section-efficace de Thomson qui vaut approximativement 0,002 MeV$^{-2}$.
                     -->
                 </p> 
-
+                <h4>Découplage des neutrinos</h4>
                 <p>
-                    <!--On peut estimer, en unités naturelles ($\hbar = c = 1$), la température de découplage des neutrinos connaissant l'ordre de grandeur de leur section efficace $\sigma$ (pour $T \ll m_W$) grâce à la constante de couplage de Fermi $G_F \sim 10^{-5} \mbox{ GeV}^{-2} $ :
+                    On peut estimer, en unités naturelles ($\hbar = c = 1$), la température de découplage des neutrinos connaissant l'ordre de grandeur de leur section efficace $\sigma$ (pour $T \ll m_W$) grâce à la constante de couplage de Fermi $G_F \sim 10^{-5} \mbox{ GeV}^{-2} $ :
                     \begin{equation}
                     \sigma \sim G_F^2 \langle E \rangle^2 \sim G_F^2 T^2
                     \end{equation}
@@ -1442,10 +1442,10 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                     \begin{equation}
                     G_F^2 T_{dec}^5 = H (T_{dec})
                     \end{equation} 
-                    Par ailleurs, pendant l'ère dominée par la radiation, $H \sim T^2 / M_{Pl}$ (où $M_{pl} = 10^{19}$ GeV est la masse de Planck). Dès lors : 
+                    Par ailleurs, d'après l'équation de Friedmann, $H^2 \sim M_{pl}^2 \rho(T)$, où $M_{pl} = 10^{19}$ GeV est la masse de Planck et $\rho(T) \sim T^4$ pendant l'ère radiative. Ainsi, $H \sim T^2 / M_{Pl}$ . Dès lors : 
                     \begin{equation}
-                    G_F^2 T_{dec}^5 = T_{dec}^2 / M_{Pl} \mbox{ donc } T_{dec} = (G_F^2 M_{pl})^{-1/3} \sim (
-                    \end{equation}-->
+                    G_F^2 T_{dec}^5 \leq T_{dec}^2 / M_{Pl} \mbox{ donc } T_{dec} \leq (G_F^2 M_{pl})^{-1/3} \sim 1 \mbox{ MeV}
+                    \end{equation}
                 </p>
             </text>
             <linkwords>
