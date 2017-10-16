@@ -1463,8 +1463,9 @@
             <p>Parallèlement au développement de LIGO aux États-Unis, le projet d'un interféromètre européen est lancé au milieu des années 1990 par le CNRS et l'INFN. Construit non loin de Pise, des prises de données ont été effectuées entre 2007 et 2011, sans qu'un événément ne sont détecté. Un projet d'amélioration visant à augmenter la sensibilité de l'expérience est alors entrepris (Advanced Virgo) avec pour objectif de nouvelles prises de données dès fin 2016.
             Le fonctionnement concurrentiel de plusieurs détecteurs permet de mieux reconstruire la direction de la source par triangulation, et donc de chercher la présence de signaux complémentaires (lumière, neutrinos) dans cette direction. Le 14 août 2017, Virgo réalise sa première détection cojointe avec LIGO <ref arxiv="1709.09660" />. Les données de Virgo ont permis, pour cet événement, de réduire la zone de confiance à 90 % de la position dans le ciel de la source de 1160 $\textrm{deg}^2$ à 60 $\textrm{deg}^2$.</p>
 
-            <h3>Limitations et prochaines générations de détecteurs</h3>
+            <p>Le 17 août 2017, LIGO et Virgon détectent, pour la première fois, la phase finale de la fusion de deux étoiles à neutrons <ref doi="10.3847/2041-8213/aa920c" />. Plusieurs instruments ont détecté incidemment un sursaut gamma (GRB 170817A) ayant survenu 1,7 s après l'instant de fusion mesuré par LIGO-Virgo. Cette découverte marque une nouvelle ère dans l'astronomie multi-messagers : dans ce cas, l'observation conjointe des ondes gravitationnelles et de la lumière émise par la source a permis, entre autre, l'identification de la galaxie hôte (NGC 4993) dont le redshift $z$ est connu avec une bonne précision. Or, l'objet étant relativement proche (par rapport à la taille de l'Univers), la relation de Hubble s'applique et $z = H_0 d / c$. Par ailleurs, LIGO donne une mesure indépendante de $d$, et cela permet donc d'en déduire une estimation de la constante de Hubble évaluée à $H_0 = 70.0\substack{+12.0 \\ -8.0}$ <ref doi="10.1038/nature24471" />.</p>
 
+            <h3>Limitations et prochaines générations de détecteurs</h3>
 
             <h4>Sources de bruit</h4>
 
@@ -1504,9 +1505,13 @@
             
             <p>La détection de sources transitoires comme les <b>coalescences d'objets compacts</b> permet d'accéder à leur distance de luminosité. Les futures générations de détecteurs devraient permettre non seulement d'observer ces événements à des échecs cosmologiques ($z>1$), comme des coalescences de systèmes d'étoiles à neutrons y compris pendant la réionisation ($z \sim 6$), mais aussi la totalité des coalescences de trous noirs tels que $M \gtrsim 30 M_{\odot}$ dans l'univers observable (attendus jusqu'à $z \sim 10$) <ref arxiv="1607.08697" />. En principe, pour des événements de ce type, le redshift n'est pas mesurable facilement ou directement, à cause de ce qu'on appelle la dégénérescence masse-redshift. La conséquence de celle-ci est qu'on ne peut extraire que $M(1+z)$ à partir de la forme du signal (où $M$ est la masse au repos). Il existe cependant des méthodes imprécises (erreur de 10-20$\%$ sur $z$) pour remonter au redshift dans certains cas <ref doi="10.1103/PhysRevX.4.041004" />. On peut aussi espérer des signaux électromagnétiques associés qui permettraient une mesure précise de $z$. Il est donc en théorie possible de vérifier par cette méthode indépendante les résultats obtenus à partir des supernovae thermonucléaires en tant que chandelles standards via la relation $z \mapsto d_L(z)$. <!--Par ailleurs la détection d'ondes gravitationnelles permet d'obtenir les meilleurs vérifications de la relativité générale <ref doi="10.1103/PhysRevLett.116.221101" />. L'événement GW150914 a même permis d'établir une borne supérieure pour la masse d'un hypothétique graviton à $10^{-22}$ eV. --></p>
 
-        <p>En principe, les détecteurs sont capables de détecter un fond stochastique si un excès significatif de densité d'énergie est observé dans une certaine plage de fréquence. Comme les photons libérés au découplage vers $T \sim $ 3000 K, des ondes gravitationnelles produite dans les premiers instants de l'Univers ont pu être libérées par un découplage qu'on peut estimer avoir survenu à une température inférieur à la température de Planck ($10^{19}$ GeV). Elles pourraient donc contenir de la l'information sur la physique à très haute énergie. Par ailleurs, 
+        <p>En principe, les détecteurs sont capables de détecter un fond stochastique si un excès significatif de densité d'énergie est observé dans une certaine plage de fréquence. Comme les photons libérés au découplage vers $T \sim $ 3000 K, des ondes gravitationnelles produite dans les premiers instants de l'Univers ont pu être libérées par un découplage qu'on peut estimer avoir survenu à une température inférieur à la température de Planck ($10^{19}$ GeV). Elles pourraient donc contenir de la l'information sur la physique à très haute énergie. Les détecteurs seraient capables de mesurer un paramètre de densité $\Omega_{GW}(f)$ défini à partir de la densité d'énergie d'ondes gravitationnelles selon :
+\begin{equation}
+            \Omega_{GW}(f) = \dfrac{1}{\rho_c} \dfrac{d\rho_{Gw}}{d\log f}
+            \end{equation}
+ Par exemple, les modèles d'inflation les plus simples prédisent un fond stochastique... (TODO)
 
-            La densité d'énergie de ce fond est alors donnée par :
+            <!--La densité d'énergie de ce fond est alors donnée par :
             \begin{equation}
             \rho_{GW} = \dfrac{1}{32\pi G}\langle \dot{h}_{ij}^{TT} \dot{h}^{ij}^{TT}\rangle
             \end{equation}
@@ -1516,7 +1521,7 @@
             En décomposant $h$ en ondes planes de fréquences quelconques, on peut définir le paramètre de densité $\Omega_{GW}(f)$ à l'aide de la densité critique $\rho_c$ :
             \begin{equation}
             \Omega_{GW}(f) = \dfrac{1}{\rho_c} \dfrac{d\rho_{Gw}}{d\log f}
-            \end{equation}
+            \end{equation}-->
 
             
             </p>
