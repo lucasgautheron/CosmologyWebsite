@@ -1316,9 +1316,11 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 <h5>Constante de Hubble</h5>
                 
                 <figure src="cmb_spectrum_hubble.svg" title="Spectre TT et constante de Hubble $H_0$" source="CMB" plot="cmb_spectrum_hubble">
-                    
+                    La constante de Hubble $H_0$ est la vitesse de l'expansion aujourd'hui.
                 </figure>
-                
+
+                On observe, d'après ces courbes, un décalage progressif vers la gauche de la courbe lorsque $H_0$ augmente. C'est assez facile à comprendre : plus la vitesse de l'expansion est élevée, plus les anisotropies grandissent rapidement. Par conséquent, pour une valeur de $H_0$ un peu plus élevée, une même fluctuation densité primordiale engendrera une "tâche" un peu plus grande, et apparaîtra un peu plus à gauche ($l \sim \pi / \theta$) sur le spectre.
+               
                 <h5>Répartition de l'énergie</h5>
                 
                 <figure src="cmb_spectrum_ombh2.svg" title="Spectre TT et densité baryonique $\Omega_b h^2$" source="CMB" plot="cmb_spectrum_ombh2">
