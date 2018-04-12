@@ -915,11 +915,13 @@ Autrement dit, la distance d'un objet en parsecs est égale à l'inverse de sa p
 </p>
 
 <p>
-La précision de cette méthode de mesure de distance est limitée par la précision angulaire $\Delta \theta$ du téléscope utilisé. Sur Terre, l'atmosphère contraint $\Delta \theta \sim$ 0,01 ce qui correspond à des distances de 100 pc. Le téléscope spatial Gaia atteint une précision de l'ordre de 10 $\mu$as pour une magnitude $m = 15$ et quelques centaines de $\mu$as pour $m = 20$, ce qui correspond à des distances comprises entre 10 et 100 kpc.
+La précision de cette méthode de mesure de distance est limitée par la précision angulaire $\Delta \theta$ du téléscope utilisé. Sur Terre, l'atmosphère contraint $\Delta \theta \sim$ 0,01 ce qui correspond à des distances de 100 pc. Le téléscope spatial Gaia atteint une précision de l'ordre de 10 $\mu$as pour une magnitude $m = 15$ et quelques centaines de $\mu$as pour $m = 20$ (<a href="https://www.cosmos.esa.int/web/gaia/science-performance">ESA</a>), ce qui correspond à des distances comprises entre 10 et 100 kpc, donc comparables à la taille de la Voie Lactée.
 </p>
+
+<p>Pour mesurer des distances supérieures, on peut utiliser la méthode des chandelles standards (grâce à des céphéides ou encore des supernovae de type Ia par exemple). Ces méthodes reposent en général sur des calibrations obtenues grâce à des mesures par parallaxe.</p>
         </text>
         <linkwords>
-            <linkword>distance angulaire</linkword>
+            <linkword>parallaxe</linkword>
         </linkwords>
     </appendix>
     
