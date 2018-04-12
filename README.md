@@ -1,6 +1,6 @@
 # History of Cosmology
 
-http://cosmology.education/
+http://cosmology.education/ (auto-deploy)
 
 Status : http://cosmology.education/graph.html
 
