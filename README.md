@@ -40,4 +40,3 @@ php compile.php -V
 # generate booklet as well
 php compile.php -V -B
 ```
-
