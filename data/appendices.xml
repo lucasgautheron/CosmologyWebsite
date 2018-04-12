@@ -2546,7 +2546,7 @@ Et
               \dfrac{d^2\phi_a'}{dt^2} + 3 H \dfrac{d\phi_a'}{dt} + \dfrac{m_a^2 c^2}{\hbar^2} \phi_a' = 0
               \end{equation}
               Il s'agit de l'équation d'un oscillateur amorti, donc le champ d'axion tend bien vers 0. Ce faisant, il oscille très rapidement : $m_a \sim \Lambda_{QCD}^2/f_a \sim 10^{-5}$ eV, donc $\omega_a = m_a c /\hbar \sim 10^{18} s^{-1} \gg H_0$
-              Par ailleurs la densité d'énergie moyenne de ce champ est $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 + \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle$, la somme des énergies cinétiques et potentielles, donc les valeur moyennes sont égales pour un oscillateur.
+              Par ailleurs la densité d'énergie moyenne de ce champ est $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 + \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle$, la somme des énergies cinétique et potentielle, donc les valeur moyennes sont égales pour un oscillateur.
               Cependant, la pression moyenne est donnée par $\langle \rho_a \rangle = \langle \dfrac{1}{2}(\dfrac{d\phi_a'}{dt})^2 - \dfrac{1}{2} \dfrac{m_a^2 c^2}{\hbar^2} \phi_a'^2\rangle \simeq 0$
               Donc le champ d'axion se refroidissant a l'équation d'état $P=0$, comme la matière froide : l'axion est un candidat à la matière froide.              
           </p>
