@@ -1196,6 +1196,16 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
              <figure src="luminosity_period.png" title="Magnitude des céphéides en fonction de leur période (Leavitt 1912)">La courbe de gauche donne les magnitudes apparentes maximale et minimale des étoiles en fonction de leur période. La courbe de droite donne les mêmes magnitudes en fonction du logarithme de la période.</figure>
              Cependant, ce n'est pas suffisant pour mesurer des distances. En effet, ceci requiert de connaitre la luminosité <i>intrinsèque</i> ou encore la magnitude <i>absolue</i> en fonction de la période, sans quoi la relation ainsi obtenue ne permet d'évaluer que le rapport entre la distance d'une céphéide avec la distance de celles qui ont permis d'établir cette relation (qui est inconnue). Il faut alors attendre les travaux de Hertzsprung et Shapley dans les années qui suivent pour étalonner cette relation et obtenir la courbe de la magnitude absolue cette fois. Pour cela, ces astronomes ont mesuré la magnitude et la période d'une céphéide proche dont la distance était connue (par la méthode de la parallaxe). Ils ont ainsi pu calculer sa magnitude absolue $M$. En reportant cette mesure dans la courbe de Leavitt, ils ont pu déterminer quelle était la constante $C$ qui séparait $m_{magellan}$ et $M$. De là ils en ont déduit la loi $T\mapsto M(T)$. </p>
             <p>
+                Les mesures du téléscope spatial Hubble pour 10 céphéides proches établissent la relation suivante entre la magnitude absolue dans la bande V et la période $P$ en jours <ref doi="10.1086/511980" /> :
+\begin{equation}
+M_V = \left (-\mbox{2,43} \pm \mbox{0,12} \right) \left ( \log P - 1 \right) - \mbox{4,05} \pm \mbox{0,02}
+\end{equation}
+
+Cette relation implique une relation de forme loi de puissance entre la luminosité intrinsèque $L$ et la période $P$, de la forme $L \propto P^{1+\epsilon}$.
+
+            <figure src="classical_cepheids.svg" title="Magnitude de 10 céphéides de type I dans différentes bandes en fonction de leur période et fits.">Les points correspondent aux valeurs de magnitude de 10 céphéides relevées dans quatre bandes différentes par Hubble, en fonction de leur période de luminosité. Les coefficients $a$ et $b$ sont obtenus par un ajustement linéaire de la forme $M = a+b(\log P - 1)$. La magnitude $W_{VI}$ est définie par $M_{VI} \equiv V-2,45(V-I)$.</figure>
+            </p>
+            <p>
                 La relation entre période et magnitude absolue n'est pas tout à fait univoque, probablement parce que d'autres paramètres peuvent différer d'une céphéide variable à une autre avec un impact relativement faible. Ceci limite le pouvoir prédictif de la relation luminosité période de $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
             </p>
         <p>
