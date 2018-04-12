@@ -164,4 +164,6 @@ if($archive)
     rename('../archive.tar.gz', 'archive.tar.gz');
 }
 
+echo "done.";
+
 exit((int)$return);
