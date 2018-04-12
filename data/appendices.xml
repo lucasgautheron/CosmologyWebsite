@@ -725,6 +725,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>densité critique</linkword>
         </linkwords>
     </appendix>
+
     
     <appendix id="distance-luminosite" uid="luminosity-distance" ready="1">
         <title>Distance de luminosité</title>
@@ -895,6 +896,30 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </text>
         <linkwords>
             <linkword>distances en cosmologie</linkword>
+        </linkwords>
+    </appendix>
+
+    <appendix id="methode-parallaxe" uid="parallax-method">
+        <title>Méthode de la parallaxe</title>
+        <text>
+            <p>En astronomie, la méthode de la parallaxe est une méthode de mesure de distance d'un objet céleste. Elle consiste à mesurer la position dans le ciel d'un objet pour différentes positions de l'observateur. En effet, si un observateur vise un objet, puis se déplace dans l'espace, il doit corriger sa visée d'un angle $\theta$ pour garder l'objet dans sa ligne de mire. Par exemple, on peut mesurer la position d'un objet à l'aphélie puis au périhélie. Ces deux points sont séparés d'une distance égale à 2 ua (soit $\sim$ 3 $\times 10^{11}$ m). La distance de l'objet observé est alors $d = \mbox{ua} \times \theta$ où $\theta$ est le décalage angulaire. </p>
+<p><figure src="parallax.png" title="Méthode de la parallaxe">Schéma illustrant la méthode de la parallaxe (source : Wikipédia).</figure></p>
+<p>
+Puisqu'un parsec est la distance depuis laquelle un objet d'une étendue de 1 ua est vu sous un angle d'une seconde d'arc (1 as), la relation entre la parallaxe $\theta$ et la distance est en général écrite :
+\begin{equation}
+d = \mbox{1 parsec} \times \dfrac{\mbox{1 as}}{p}
+\end{equation}
+
+Autrement dit, la distance d'un objet en parsecs est égale à l'inverse de sa parallaxe en secondes d'arc.
+
+</p>
+
+<p>
+La précision de cette méthode de mesure de distance est limitée par la précision angulaire $\Delta \theta$ du téléscope utilisé. Sur Terre, l'atmosphère contraint $\Delta \theta \sim$ 0,01 ce qui correspond à des distances de 100 pc. Le téléscope spatial Gaia atteint une précision de l'ordre de 10 $\mu$as pour une magnitude $m = 15$ et quelques centaines de $\mu$as pour $m = 20$, ce qui correspond à des distances comprises entre 10 et 100 kpc.
+</p>
+        </text>
+        <linkwords>
+            <linkword>distance angulaire</linkword>
         </linkwords>
     </appendix>
     
