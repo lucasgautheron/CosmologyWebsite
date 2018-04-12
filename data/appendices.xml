@@ -1471,6 +1471,7 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
                 \end{equation}
                 
                 Où $n_e$ est la densité d'électrons et $\sigma$ la section-efficace de diffusion de Thomson. 
+		    <!-- TODO: transfert radiatif -->
             </p>
         </text>
         <linkwords>
