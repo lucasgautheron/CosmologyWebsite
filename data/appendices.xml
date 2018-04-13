@@ -1232,7 +1232,7 @@ M_V = \left (-\mbox{2,43} \pm \mbox{0,12} \right) \left ( \log P - 1 \right) - \
 
 Cette relation implique une relation de forme loi de puissance entre la luminosité intrinsèque $L$ et la période $P$, de la forme $L \propto P^{1+\epsilon}$.
 
-            <figure src="classical_cepheids.svg" title="Magnitude de 10 céphéides de type I dans différentes bandes en fonction de leur période et fits.">Les points correspondent aux valeurs de magnitude de 10 céphéides relevées dans quatre bandes différentes par Hubble, en fonction de leur période de luminosité. Les coefficients $a$ et $b$ sont obtenus par un ajustement linéaire de la forme $M = a+b(\log P - 1)$. La magnitude $W_{VI}$ est définie par $M_{VI} \equiv V-2,45(V-I)$.</figure>
+            <figure src="classical_cepheids.png" title="Magnitude de 10 céphéides de type I dans différentes bandes en fonction de leur période et fits.">Les points correspondent aux valeurs de magnitude de 10 céphéides relevées dans quatre bandes différentes par Hubble, en fonction de leur période de luminosité. Les coefficients $a$ et $b$ sont obtenus par un ajustement linéaire de la forme $M = a+b(\log P - 1)$. La magnitude $W_{VI}$ est définie par $M_{VI} \equiv V-2,45(V-I)$.</figure>
             </p>
             <p>
                 La relation entre période et magnitude absolue n'est pas tout à fait univoque, probablement parce que d'autres paramètres peuvent différer d'une céphéide variable à une autre avec un impact relativement faible. Ceci limite le pouvoir prédictif de la relation luminosité période de $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
