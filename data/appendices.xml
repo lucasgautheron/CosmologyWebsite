@@ -1217,6 +1217,8 @@ E_T^{miss} = ||\sum_{i} \vec{p}_{i}^{\perp}||
     <appendix id="cepheides" uid="cepheides" ready="1">
         <title>Céphéides</title>
         <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
+        <h4>Usage en tant que chandelle standard</h4>
+        
         <p>La luminosité intrinsèque (c'est-à-dire la puissance rayonnée) des céphéides présente la particularité de ne dépendre que de leur période de variation lumineuse (la relation dépendant en revanche du type de céphéide dont il s'agit). Or, le flux reçu par unité de surface à une distance $d$ d'une source lumineuse est égal à $\Phi = L/(4\pi d^2)$ où $L$ est sa luminosité. En observant une céphéide, on connait à la fois $L$ par le biais de sa période $T$ facilement observable (de l'ordre de grandeur de la journée) et d'autre part  la puissance reçue par unité de surface. Cela donne donc la distance $d = \sqrt{\dfrac{L}{4 \pi \Phi}}$. On appelle de tels objets, pour lesquel la luminosité intrinsèque est connue, des "chandelles standards". </p>
          <p>
              <b>Découverte de la relation luminosité-période</b> : La découverte de l'existence d'une relation entre luminosité et période des céphéides et due à Henrietta Leavitt. En 1908, cette astronome de l'observatoire de l'université d'Harvard étudie des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (deux galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède) et mesure leur magnitude apparente (grandeur plus pratique en Astronomie pour représenter la brillance que le flux lumineux en $W/m^2$)  et leur période. Elle suppose alors que toutes les étoiles d'un "nuage" sont approximativement à la même distance de la Terre, ce qui entraine que la différence entre leur magnitude apparente et absolue (qui ne dépend que de la distance entre elles et la Terre) est une constante : $m-M = C$. Elle remarque que la magnitude apparente de certaines de ces étoiles variables est une fonction de leur période, autrement dit, $m_{magellan} = m_{magellan}(T)$.
@@ -1234,6 +1236,10 @@ Cette relation implique une relation de forme loi de puissance entre la luminosi
             </p>
             <p>
                 La relation entre période et magnitude absolue n'est pas tout à fait univoque, probablement parce que d'autres paramètres peuvent différer d'une céphéide variable à une autre avec un impact relativement faible. Ceci limite le pouvoir prédictif de la relation luminosité période de $\Delta M_{V} \sim $ 0,1 <ref doi="10.1023/A:1000850314001" />.
+            </p>
+
+            <p>
+            Cette méthode a permis de mesurer des distances de galaxies hôtes jusqu'à environ 30 Mpc <ref doi="10.1086/307764" /> <ref doi="10.1086/430497" />
             </p>
         <p>
             <b>Explication théorique par Eddington</b> :
